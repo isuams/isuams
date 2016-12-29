@@ -1,0 +1,17 @@
+[
+	{
+		"site": "Facebook",
+		"url": "https://www.facebook.com/groups/ISUAMS/",
+		"genericon": "facebook-alt"
+	},
+	{
+		"site": "Twitter",
+		"url": "https://twitter.com/ISUAMS",
+		"genericon": "twitter"
+	},
+	{
+		"site": "Contact Us",
+		"url": "http://www.meteor.iastate.edu/ams/contact-us/",
+		"genericon": "mail"
+	},
+]

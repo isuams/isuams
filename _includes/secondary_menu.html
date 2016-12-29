@@ -1,0 +1,19 @@
+<nav class="inner-nav secondary-nav">
+	<a class="active" href="about.html">About Us</a>
+	<ul>
+		{% for section in data.menu | where:"page", page.categories[0] %}
+			{% for subpage in section.subpages %}
+				<li>
+					<a href="{{subpage.permalink}}">{{subpage.name}}</a>
+					{% if subpage.has_subpages %}
+						<ul>
+							{% for subsubpage in subpage.subpages %}
+								<a href="{{subsubpage.permalink}}">{{subsubpage.name}}</a>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</li>
+			{% endfor %}
+		{% endfor %}
+	</ul>
+</nav>
