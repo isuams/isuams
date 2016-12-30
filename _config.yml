@@ -40,3 +40,6 @@ exclude:
 # Sass Settings
 sass:
   sass_dir: _sass
+
+# Misc Config
+recent_posts_limit: 5

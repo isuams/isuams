@@ -1,7 +1,7 @@
 <nav class="inner-nav secondary-nav">
-	<a class="active" href="about.html">About Us</a>
-	<ul>
-		{% for section in data.menu | where:"page", page.categories[0] %}
+	{% for section in data.menu | where:"page", page.categories[0] %}
+		<a class="active" href="{{section.permalink}}">{{section.name}}</a>
+		<ul>
 			{% for subpage in section.subpages %}
 				<li>
 					<a href="{{subpage.permalink}}">{{subpage.name}}</a>
@@ -14,6 +14,6 @@
 					{% endif %}
 				</li>
 			{% endfor %}
-		{% endfor %}
 	</ul>
+	{% endfor %}
 </nav>
