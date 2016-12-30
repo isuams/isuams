@@ -32,7 +32,7 @@
 				<div class="container">
 					<div class="title-area">
 						<!-- Screen Reader Title -->
-						<h1 class="sr-only">Iowa State University Student Chapter of the American Meteorological Society (ISU AMS)</h1>
+						<h1 class="sr-only">{{ site.title }}</h1>
 						<!-- Logo -->
 						<img src="{{ base_url }}/assets/isu_ams_web_logo_2.png" class="site-logo">
 					</div>
@@ -74,9 +74,9 @@
 						<ul class="nav navbar-nav">
 							{% for item in data.menu %}
 								{% if item.permalink == page.url %}
-									<li class="active"><a href="{{base_url}}{{item.permalink}}">{{item.name}}</a></li>
+									<li class="active"><a href="{{ base_url }}{{ item.permalink }}">{{ item.name }}</a></li>
 								{% else %}
-									<li><a href="{{base_url}}{{item.permalink}}">{{item.name}}</a></li>
+									<li><a href="{{ base_url }}{{ item.permalink }}">{{ item.name }}</a></li>
 								{% endif %}
 							{% endfor %}
 						</ul>
