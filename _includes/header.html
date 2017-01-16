@@ -1,3 +1,4 @@
+{% include base_path %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,16 +7,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<meta name="description" content="{{ site.description }}">
-		<link rel="icon" href="{{ base_url }}/favicon.ico">
+		<link rel="icon" href="{{ base_path }}/favicon.ico">
 
 		<title>{{ page.title }}</title>
 
 		<!-- Main CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-		<link href="{{ base_url }}/stylesheets/styles.css" rel="stylesheet">
+		<link href="{{ base_path }}/stylesheets/styles.css" rel="stylesheet">
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<link href="{{ base_url }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<link href="{{ base_path }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -34,7 +35,7 @@
 						<!-- Screen Reader Title -->
 						<h1 class="sr-only">{{ site.title }}</h1>
 						<!-- Logo -->
-						<img src="{{ base_url }}/assets/isu_ams_web_logo_2.png" class="site-logo">
+						<img src="{{ base_path }}/assets/isu_ams_web_logo_2.png" class="site-logo">
 					</div>
 					<div class="extras hidden-xs">
 						<div class="social-icons">
@@ -72,11 +73,11 @@
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							{% for item in data.menu %}
+							{% for item in site.data.menu %}
 								{% if item.permalink == page.url %}
-									<li class="active"><a href="{{ base_url }}{{ item.permalink }}">{{ item.name }}</a></li>
+									<li class="active"><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
 								{% else %}
-									<li><a href="{{ base_url }}{{ item.permalink }}">{{ item.name }}</a></li>
+									<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
 								{% endif %}
 							{% endfor %}
 						</ul>

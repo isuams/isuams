@@ -11,13 +11,19 @@
 		"name": "Events &amp; Activities",
 		"has_subpages": true,
 		"subpages": [
+			{
+				"page": "events-activities",
+				"permalink": "/events-activities/",
+				"name": "Events &amp; Activities",
+				"has_subpages": false
+			}
 		]
 	},
 	{
 		"page": "outreach",
 		"permalink": "/outreach/",
 		"name": "Outreach",
-		"has_subpages": true,
+		"has_subpages": false,
 		"subpages": [
 		]
 	},
@@ -25,7 +31,7 @@
 		"page": "resources",
 		"permalink": "/resources/",
 		"name": "Resources",
-		"has_subpages": true,
+		"has_subpages": false,
 		"subpages": [
 		]
 	},
@@ -33,7 +39,7 @@
 		"page": "news-features",
 		"permalink": "/news/",
 		"name": "News &amp; Features",
-		"has_subpages": true,
+		"has_subpages": false,
 		"subpages": [
 		]
 	},
@@ -43,6 +49,12 @@
 		"name": "About Us",
 		"has_subpages": true,
 		"subpages": [
+			{
+				"page": "events-activities",
+				"permalink": "/events-activities/",
+				"name": "Events &amp; Activities",
+				"has_subpages": false
+			}
 		]
 	}
 ]
