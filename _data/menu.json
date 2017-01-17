@@ -12,9 +12,21 @@
 		"has_subpages": true,
 		"subpages": [
 			{
-				"page": "events-activities",
-				"permalink": "/events-activities/",
-				"name": "Events &amp; Activities",
+				"page": "cys-eyes",
+				"permalink": "/events-activities/cys-eyes",
+				"name": "Cy's Eyes On the Skies",
+				"has_subpages": false
+			},
+			{
+				"page": "calendar",
+				"permalink": "/events-activities/calendar",
+				"name": "Event Calendar",
+				"has_subpages": false
+			},
+			{
+				"page": "nwa",
+				"permalink": "/events-activities/nwa",
+				"name": "National Weather Association",
 				"has_subpages": false
 			}
 		]
@@ -23,24 +35,120 @@
 		"page": "outreach",
 		"permalink": "/outreach/",
 		"name": "Outreach",
-		"has_subpages": false,
+		"has_subpages": true,
 		"subpages": [
+			{
+				"page": "contact",
+				"permalink": "/outreach/contact",
+				"name": "Contact",
+				"has_subpages": false
+			},
+			{
+				"page": "school-visits",
+				"permalink": "/outreach/school-visits",
+				"name": "School Visits",
+				"has_subpages": false
+			},
+			{
+				"page": "severe-weather-posters",
+				"permalink": "/outreach/severe-weather-posters",
+				"name": "Severe Weather Posters",
+				"has_subpages": false
+			},
+			{
+				"page": "trlt",
+				"permalink": "/outreach/trlt",
+				"name": "Taking the Road Less Traveled",
+				"has_subpages": false
+			},
+			{
+				"page": "community",
+				"permalink": "/outreach/community",
+				"name": "Community Weather Awareness",
+				"has_subpages": false
+			},
+			{
+				"page": "science-fair",
+				"permalink": "/outreach/science-fair",
+				"name": "Science Fair",
+				"has_subpages": false
+			}
 		]
 	},
 	{
 		"page": "resources",
 		"permalink": "/resources/",
 		"name": "Resources",
-		"has_subpages": false,
+		"has_subpages": true,
 		"subpages": [
+			{
+				"page": "weather-links",
+				"permalink": "/resources/weather-links",
+				"name": "Weather Links",
+				"has_subpages": false
+			},
+			{
+				"page": "alumni-connections",
+				"permalink": "/resources/alumni-connections",
+				"name": "Alumni Connections",
+				"has_subpages": false
+			},
+			{
+				"page": "academic-resources",
+				"permalink": "/resources/academic-resources",
+				"name": "Academic Resources",
+				"has_subpages": false
+			},
+			{
+				"page": "scholarships",
+				"permalink": "/resources/scholarships",
+				"name": "Scholarships",
+				"has_subpages": false
+			},
+			{
+				"page": "internship-reu",
+				"permalink": "/resources/internship-reu",
+				"name": "Internships and REU's",
+				"has_subpages": false
+			},
+			{
+				"page": "career-resources",
+				"permalink": "/resources/career-resources",
+				"name": "Career Resources",
+				"has_subpages": false
+			},
+			{
+				"page": "forecasting",
+				"permalink": "/resources/forecasting",
+				"name": "Forecasting",
+				"has_subpages": false
+			}
 		]
 	},
 	{
 		"page": "news-features",
 		"permalink": "/news/",
 		"name": "News &amp; Features",
-		"has_subpages": false,
+		"has_subpages": true,
 		"subpages": [
+			{
+				"page": "picture-of-the-month",
+				"permalink": "/news/picture-of-the-month",
+				"name": "Weather Links",
+				"has_subpages": false
+			},
+			{
+				"page": "spotlight-freshman",
+				"permalink": "/news/spotlight-freshman",
+				"name": "Spotlight Freshman/Transfer",
+				"has_subpages": false
+			},
+			{
+				"page": "presentations",
+				"permalink": "/news/presentations",
+				"name": "Presentations",
+				"has_subpages": false
+			}
 		]
 	},
 	{
@@ -50,9 +158,33 @@
 		"has_subpages": true,
 		"subpages": [
 			{
-				"page": "events-activities",
-				"permalink": "/events-activities/",
-				"name": "Events &amp; Activities",
+				"page": "contact-us",
+				"permalink": "/about/contact-us",
+				"name": "Contact Us",
+				"has_subpages": false
+			},
+			{
+				"page": "officers",
+				"permalink": "/about/officers",
+				"name": "Officers",
+				"has_subpages": false
+			},
+			{
+				"page": "meeting-minutes",
+				"permalink": "/about/meeting-minutes",
+				"name": "Meeting Minutes",
+				"has_subpages": false
+			},
+			{
+				"page": "constitution-bylaws",
+				"permalink": "/about/constitution-bylaws",
+				"name": "Constitution and Bylaws",
+				"has_subpages": false
+			},
+			{
+				"page": "awards",
+				"permalink": "/about/awards",
+				"name": "Awards",
 				"has_subpages": false
 			}
 		]
