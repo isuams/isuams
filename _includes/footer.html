@@ -37,6 +37,8 @@
 		<script src="{{ base_path }}/assets/javascripts/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="{{ base_path }}/assets/javascripts/ie10-viewport-bug-workaround.js"></script>
-
+		{% if page.include_js %}
+			{% include footer_scripts.html %}
+		{% endif %}
 	</body>
 </html> 

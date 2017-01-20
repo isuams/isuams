@@ -401,3 +401,16 @@ nav.inner-nav {
     display: block;
     margin-top: 10px;
 }
+
+/* FullCalendar Tweaks */
+.events-section .fc-unthemed .fc-divider, .events-section .fc-unthemed .fc-list-heading td, .events-section .fc-unthemed .fc-popover .fc-header {
+    background: rgba(240,240,240,0.2);
+}
+
+.events-section .fc-list-item:hover td {
+    background-color: rgba(240,240,240,0.2);
+}
+
+.events-section .fc-unthemed .fc-list-empty {
+    background-color: transparent;
+}

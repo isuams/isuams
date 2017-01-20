@@ -1,0 +1,49 @@
+<!-- FullCalendar JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/gcal.min.js"></script>
+{% if page.include_js == "calendar" %}
+	<script>
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,listMonth'
+				},
+				googleCalendarApiKey: 'AIzaSyClJ_7dZHKz1bzZwVOunCUsOkd0dZ0z7OA',
+				events: {
+					googleCalendarId: 'dbp17hpk5s76bur4g18v9msauo@group.calendar.google.com'
+				},
+				eventClick: function(event) {
+					// opens events in a popup window
+					window.open(event.url, 'gcalevent', 'width=700,height=600');
+					return false;
+				}
+			});
+		});
+	</script>
+{% elsif page.include_js == "home calendar" %}
+	<script>
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'title',
+					center: '',
+					right: 'prev,next'
+				},
+				googleCalendarApiKey: 'AIzaSyClJ_7dZHKz1bzZwVOunCUsOkd0dZ0z7OA',
+				events: {
+					googleCalendarId: 'dbp17hpk5s76bur4g18v9msauo@group.calendar.google.com'
+				},
+				height: 360,
+				defaultView: 'listMonth',
+				eventClick: function(event) {
+					// opens events in a popup window
+					window.open(event.url, 'gcalevent', 'width=700,height=600');
+					return false;
+				}
+			});
+		});
+	</script>
+{% endif %}
