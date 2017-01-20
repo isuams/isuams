@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="col-xs-12 col-sm-6 lead overview">
 			<h1>ISU AMS</h1>
-			<p class="welcome-text">A tagline will go here, or a sentence or two teaser. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, dolore. </p>
+			<p class="welcome-text">4-Time Chapter of the Year committed to community outreach and student involvement in social and academic activities.</p>
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<h2 class="events-list-title">Upcoming Events</h2>
@@ -31,10 +31,10 @@
 			<h2>What We Do</h2>
 			<p>Overview of what we do (public oriented). Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur facere ratione, repudiandae, doloribus, excepturi ut et dolores nostrum molestias eum quidem animi dolorem praesentium, voluptatem quasi fugiat ea dolor maiores.</p>
 			<div class="quick-links">
-				<a class="btn btn-default" href="#" role="button">Event Calendar</a>
-				<a class="btn btn-default" href="#" role="button">Resources</a>
-				<a class="btn btn-default" href="#" role="button">Chapter Info</a>
-				<a class="btn btn-default" href="#" role="button">Cy's Eyes on the Skies</a>
+				<a class="btn btn-primary" href="{{ site.baseurl }}{% link outreach/index.md %}" role="button">Outreach Information</a>
+				<a class="btn btn-default" href="{{ site.baseurl }}{% link events-activities/calendar.html %}" role="button">Event Calendar</a>
+				<a class="btn btn-default" href="{{ site.baseurl }}{% link about/index.md %}" role="button">Chapter Info</a>
+				<a class="btn btn-default" href="{{ site.baseurl }}{% link events-activities/cys-eyes.md %}" role="button">Cy's Eyes on the Skies</a>
 			</div>
 		</div>
 		<div class="col-sm-6">
@@ -44,12 +44,14 @@
 </section>
 
 <!-- Outreach Information Aside/call to action -->
+<!-- // For now, not included //
 <aside class="homepage-section outreach-call-to-action">
 	<div class="container">
 		<div class="col-xs-12 col-sm-9 col-md-6 col-md-offset-2 call-to-action-text">Interested in our weather education outreach programs?</div>
 		<div class="col-xs-12 col-sm-3 col-md-2 call-to-action-button"><a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a></div>
 	</div>
 </aside>
+-->
 
 <!-- Events and Activities Section -->
 <section class="homepage-section events-section">
@@ -57,11 +59,11 @@
 		<div class="col-sm-6">
 			<h2>Events and Activites</h2>
 			<p>A brief description of our events and activites (more geared toward members). Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe odit, sint necessitatibus! Cum eaque, exercitationem iste tenetur recusandae aliquid sit.</p>
-			<a class="btn btn-default" href="#" role="button">Full Calendar</a>
+			<a class="btn btn-default" href="{{ site.baseurl }}{% link events-activities/calendar.html %}" role="button">Full Calendar</a>
 			<br><br>
 		</div>
 		<div class="col-sm-6">
-			<div id="calendar" style="width: 100%; box-sizing: border-box; text-align: center;"></div>
+			<div id="calendar" style="width: 100%;"></div>
 		</div>
 	</div>
 </section>
@@ -72,22 +74,22 @@
 	    <h2 class="resources-title">Resources</h2>
 		<ul class="resources-list">
 			<li class="resource">
-				<h5><a href="#">Weather Links</a></h5>
+				<h5><a href="{{ site.baseurl }}{% link resources/weather-links.md %}">Weather Links</a></h5>
 			</li>
 			<li class="resource">
-				<h5><a href="#">Alumni Connections</a></h5>
+				<h5><a href="{{ site.baseurl }}{% link resources/alumni-connections.md %}">Alumni Connections</a></h5>
 			</li>
 			<li class="resource">
-				<h5><a href="#">Academic Resources</a></h5>
+				<h5><a href="{{ site.baseurl }}{% link resources/academic-resources.md %}">Academic Resources</a></h5>
 			</li>
 			<li class="resource">
-				<h5><a href="#">Scholarships</a></h5>
+				<h5><a href="{{ site.baseurl }}{% link resources/scholarships.html %}">Scholarships</a></h5>
 			</li>
 			<li class="resource">
-				<h5><a href="#">Internships and REU's</a></h5>
+				<h5><a href="{{ site.baseurl }}{% link resources/internship-reu.html %}">Internships and REU's</a></h5>
 			</li>
 			<li class="resource">
-				<h5><a href="#">Career Resources</a></h5>
+				<h5><a href="{{ site.baseurl }}{% link resources/career-resources.md %}">Career Resources</a></h5>
 			</li>
 		</ul>
 	</div>

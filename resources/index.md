@@ -4,9 +4,9 @@ layout: page
 categories: resources
 ---
 
-- [Weather Links]({{ base_path }}{% link resources/weather-links.md %})
-- [Alumni Connections]({{ base_path }}{% link resources/alumni-connections.md %})
-- [Academic Resources]({{ base_path }}{% link resources/academic-resources.md %})
-- [Scholarships]({{ base_path }}{% link resources/scholarships.md %})
-- [Internships and REU's]({{ base_path }}{% link resources/internship-reu.md %})
-- [Career Resources]({{ base_path }}{% link resources/career-resources.md %})
+- [Weather Links]({{ site.baseurl }}{% link resources/weather-links.md %})
+- [Alumni Connections]({{ site.baseurl }}{% link resources/alumni-connections.md %})
+- [Academic Resources]({{ site.baseurl }}{% link resources/academic-resources.md %})
+- [Scholarships]({{ site.baseurl }}{% link resources/scholarships.html %})
+- [Internships and REU's]({{ site.baseurl }}{% link resources/internship-reu.html %})
+- [Career Resources]({{ site.baseurl }}{% link resources/career-resources.md %})
