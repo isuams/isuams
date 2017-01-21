@@ -1,7 +1,7 @@
 ---
 title: Constitution and Bylaws
 layout: page
-categories: about
+section: about
 ---
 
 ### [ISU AMS Constitution]({{ site.baseurl }}{% link uploads/AMSConstitution.pdf %})

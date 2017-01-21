@@ -1,7 +1,7 @@
 ---
 title: School Visits
 layout: page
-categories: outreach
+section: outreach
 # @todo image as a file
 ---
 

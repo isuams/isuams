@@ -1,7 +1,7 @@
 ---
 title: Community Weather Awareness
 layout: page
-categories: outreach
+section: outreach
 # @todo image as a file
 ---
 

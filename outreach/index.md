@@ -1,7 +1,7 @@
 ---
 title: Outreach
 layout: page
-categories: outreach
+section: outreach
 # @todo need image as a file
 ---
 

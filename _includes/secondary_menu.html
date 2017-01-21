@@ -1,20 +1,22 @@
 {% include base_path %}
 <nav class="inner-nav secondary-nav">
-	{% for section in site.data.menu | where:"page", page.categories[0] %}
-		<a class="active" href="{{ base_path }}{{ section.permalink }}">{{ section.name }}</a>
-		<ul>
-			{% for subpage in section.subpages %}
-				<li>
-					<a href="{{ base_path }}{{ subpage.permalink }}">{{ subpage.name }}</a>
-					{% if subpage.has_subpages %}
-						<ul>
-							{% for subsubpage in subpage.subpages %}
-								<a href="{{ base_path }}{{ subsubpage.permalink }}">{{ subsubpage.name }}</a>
-							{% endfor %}
-						</ul>
-					{% endif %}
-				</li>
-			{% endfor %}
-	</ul>
+	{% for section in site.data.menu %}
+		{% if section.page == page.section %}
+			<a class="active" href="{{ base_path }}{{ section.permalink }}">{{ section.name }}</a>
+			<ul>
+				{% for subpage in section.subpages %}
+					<li>
+						<a href="{{ base_path }}{{ subpage.permalink }}">{{ subpage.name }}</a>
+						{% if subpage.has_subpages %}
+							<ul>
+								{% for subsubpage in subpage.subpages %}
+									<a href="{{ base_path }}{{ subsubpage.permalink }}">{{ subsubpage.name }}</a>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
 	{% endfor %}
 </nav>

@@ -1,7 +1,7 @@
 ---
 title: Events &amp; Activities
 layout: page
-categories: events-activities
+section: events-activities
 ---
 
 This is a basic content page.

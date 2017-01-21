@@ -1,7 +1,7 @@
 ---
 title: Weather Links
 layout: page
-categories: resources
+section: resources
 ---
 
 [National AMS](http://www.ametsoc.org/) <br>

@@ -1,7 +1,7 @@
 ---
 title: Science Fair
 layout: page
-categories: outreach
+section: outreach
 ---
 
 This is a basic content page.

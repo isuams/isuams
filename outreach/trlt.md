@@ -1,7 +1,7 @@
 ---
 title: Taking the Road Less Traveled
 layout: page
-categories: outreach
+section: outreach
 ---
 
 Taking the Road Less Traveled is a middle school and high school career conference sponsored by the Program for Women in Science and Engineering at Iowa State University. The event takes place in October and April each year. Since before 2004, the Iowa State AMS Chapter has been happy to help inspire young women to pursue careers in STEM fields. Discussions on weather and climate, forecasting, storm chasing, and weather safety all help serve the purpose of sparking interest in a career field that they may not have previously considered. Throughout the event members are happy to answer any questions about college, classes, and offer any advice on life as a student in a STEM field. Members answer based on their own experiences in the field and emphasize that it takes hard work and dedication to science to become a meteorologist.

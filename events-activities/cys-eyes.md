@@ -1,7 +1,7 @@
 ---
 title: Cy's Eyes on the Skies
 layout: page
-categories: events-activities
+section: events-activities
 # @todo Get the pictures
 ---
 

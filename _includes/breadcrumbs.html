@@ -2,19 +2,21 @@
 <ol class="breadcrumb">
   <li><a href="{{ base_path }}/index.html">Home</a></li>
 	{% for subpage1 in site.data.menu %}
-		{% if subpage1.page == page.categories[0] %}
+		{% if subpage1.page == page.section %}
 			<li><a href="{{ base_path }}{{subpage1.permalink}}">{{subpage1.name}}</a></li>
 			{% if subpage1.permalink == page.url %}
 				<li class="active">Home</li>
 			{% elsif subpage1.has_subpages %}
 				{% for subpage2 in subpage1.subpages %}
-					{% if subpage2.page == page.categories[1] %}
+					{% if subpage2.page == page.subsection %}
 						<li><a href="{{ base_path }}{{subpage2.permalink}}">{{subpage2.name}}</a></li>
 						{% if subpage1.permalink == page.url %}
 							<li class="active">Home</li>
 						{% else %}
 							<li class="active">{{page.title}}</li>
 						{% endif %}
+					{% elsif subpage2.name == page.title %}
+						<li class="active">{{page.title}}</li>
 					{% endif %}
 				{% endfor %}
 			{% else %}

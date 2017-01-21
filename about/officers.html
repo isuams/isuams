@@ -1,0 +1,55 @@
+---
+title: Officers
+layout: page
+section: about
+---
+
+<h3>Contact List</h3>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Office</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for officer in site.data.officers %}
+			<tr>
+				<td>{{ officer.position }}</td>
+				<td>{{ officer.name }}</td>
+				<td><a href="mailto:{{ officer.email }}">{{ officer.email }}</a></td>
+				<td><a href="#{{ officer.position | slugify }}">Bio</a></td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<h2>Officer Bios</h2>
+
+{% for officer in site.data.officers %}
+	<div class="officer-section">
+		<a id="{{ officer.position | slugify }}"></a>
+		<h3>{{ officer.name }} <small>{{ officer.position }}</small></h3>
+		<div class="row">
+			<div class="col-sm-3">
+				<img class="officer-img" src="{{ site.baseurl }}/uploads/current_officers/{{ officer.image }}">
+			</div>
+			<div class="col-sm-9 bio-info">
+				<strong>Email: </strong><span>{{ officer.email }}</span><br>
+				<strong>Year in School: </strong><span>{{ officer.year }}</span><br>
+				<strong>Hometown: </strong><span>{{ officer.hometown }}</span><br>
+				<strong>Favorite Class: </strong><span>{{ officer.fav_class }}</span><br>
+				<strong>Favorite Band/Musician: </strong><span>{{ officer.fav_music }}</span><br>
+				<strong>Favorite Movie: </strong><span>{{ officer.fav_movie }}</span><br>
+				<strong>Favorite Sport: </strong><span>{{ officer.fav_sport }}</span><br>
+				<strong>Other ISU Involvement/Activities: </strong><span>{{ officer.involvement }}</span><br>
+				<strong>Area of Meteorology Interested In: </strong><span>{{ officer.met_interest }}</span><br>
+				<strong>Favorite Weather Phenomenon: </strong><span>{{ officer.fav_weather }}</span><br>
+				<strong>Favorite Part About AMS: </strong><span>{{ officer.fav_ams }}</span><br>
+				<strong>Random Fun Fact: </strong><span>{{ officer.random }}</span>
+			</div>
+		</div>
+	</div>
+{% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: Resources
 layout: page
-categories: resources
+section: resources
 ---
 
 - [Weather Links]({{ site.baseurl }}{% link resources/weather-links.md %})
