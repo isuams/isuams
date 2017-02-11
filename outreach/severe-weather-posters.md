@@ -20,11 +20,11 @@ Tess B.
 
 ### Here are a few of the posters!
 
-[![](postercontest/IMG_1521.jpg)](postercontest/IMG_1521.jpg)
+[![](postercontest/IMG_1521.jpg)]({{ site.baseurl }}/uploads/postercontest/IMG_1521.jpg)
 
-[![](postercontest/IMG_5024.jpg)](postercontest/IMG_5024.jpg)
+[![](postercontest/IMG_5024.jpg)]({{ site.baseurl }}/uploads/postercontest/IMG_5024.jpg)
 
-[![](postercontest/IMG_6321.jpg)](postercontest/IMG_6321.jpg)
+[![](postercontest/IMG_6321.jpg)]({{ site.baseurl }}/uploads/postercontest/IMG_6321.jpg)
 
 Thanks for your interest, and if you have any questions please contact this years' poster contest coordinator:  
 
