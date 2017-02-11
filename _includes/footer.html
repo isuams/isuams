@@ -6,7 +6,7 @@
 					<h4>Quick Links</h4>
 					<ul>
 						{% for link in site.data.footer_links %}
-							<li><a href="{{ base_path }}{{link.permalink}}">{{link.name}}</a></li>
+							<li><a href="{{link.permalink}}">{{link.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</div>

@@ -1,22 +1,30 @@
 [	
 	{
 		"name": "Outreach Request Information",
-		"permalink": "/outreach/contact/"
+		"permalink": "http://www.meteor.iastate.edu/ams/outreach/contact/"
+	},
+	{
+		"name": "National Forecast Contest",
+		"permalink": "http://www.meteor.iastate.edu/ams/wxchallenge"
+	},
+	{
+		"name": "Class Forecast Contests",
+		"permalink": "http://www.meteor.iastate.edu/jportfolio/login.jsp"
 	},
 	{
 		"name": "Informational Weather Links",
-		"permalink": "/resources/weather-links/"
+		"permalink": "http://www.meteor.iastate.edu/ams/resources/weather-links/"
 	},
 	{
 		"name": "Meeting Minutes",
-		"permalink": "/about/meeting-minutes/"
+		"permalink": "http://www.meteor.iastate.edu/ams/about/meeting-minutes/"
 	},
 	{
 		"name": "Officer Contacts",
-		"permalink": "/about/officers/"
+		"permalink": "http://www.meteor.iastate.edu/ams/about/officers/"
 	},
 	{
 		"name": "Event Calendar",
-		"permalink": "/events-activities/calendar/"
+		"permalink": "http://www.meteor.iastate.edu/ams/events-activities/calendar/"
 	}
 ]

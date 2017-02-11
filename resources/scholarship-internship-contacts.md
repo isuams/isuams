@@ -4,8 +4,6 @@ layout: page
 section: resources
 ---
 
-## Member Scholarships and Internships
-
 ### Scholarships
 
 **Hollings**
