@@ -1,5 +1,7 @@
-ISU AMS Website (powered by Jekyll) Management Instructions
-===========================================================
+ISU AMS Website (powered by Jekyll) 
+===================================
+Management Instructions
+=======================
 
 **Right now, this file just contains notes. In the future, it will contain more useful resources**
 
