@@ -1,0 +1,40 @@
+/* Customizations for the Iowa State Weather Page */
+
+img.main-img {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.social-logo {
+    width: 25%;
+    float: left;
+}
+
+.social-logo img {
+    max-width: 100%;
+}
+
+.social-highlight-box {
+    float: left;
+    width: 50%;
+    padding: 5%;
+}
+
+.social-hightight-box .text {
+    float: left;
+    width: 75%;
+    font-size: 150%;
+    padding: 5%;
+}
+
+span.inline-img img {
+    max-width: 100%;
+}
+
+span.inline-img {
+    width: 150px;
+    display: inline-block;
+}
