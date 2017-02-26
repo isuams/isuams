@@ -1,0 +1,23 @@
+---
+title: Internships and REU's
+layout: page
+section: resources
+---
+
+{% for opp in site.data.opportunities.internships %}
+	<div class="opportunity-section">
+		<a id="{{ opp.name | slugify }}"></a>
+		<h3>
+			{{ opp.name }} <br>
+			<a href="{{ opp.link }}"><small>{{ opp.link }}</small></a>
+		</h3>
+		<div class="opp-info">
+			<strong>Organization: </strong><span>{{ opp.organization }}</span><br>
+			<strong>Location: </strong><span>{{ opp.location }}</span><br>
+			<strong>Eligibility: </strong>{{ opp.eligibility | markdownify }}
+			<strong>Description: </strong>{{ opp.description | markdownify }}
+			<strong>Additional Information: </strong>{{ opp.other_info | markdownify }}
+		</div>
+	</div>
+	<hr>
+{% endfor %}
