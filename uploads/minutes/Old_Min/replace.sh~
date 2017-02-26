@@ -1,0 +1,38 @@
+#!/bin/sh
+
+${oldheader} = '<div id="ams-main">\n\n<img src="../amslogo.jpg" ALT="Page Logo"><br>'
+${newheader} = '<?php include("includes/subheader.php"); ?>'
+
+
+${oldmenu} = '<table><tr><td><a href="../index.html">Home Page</a></td></tr>\n<tr><td><a href="../calendar.html">Calendar</a></td></tr>\n<tr><td><a href="../members.html">AMS Members</a></td></tr>\n<tr><td><a \nhref="http://weather.slincoln.com/cyseyes/">Cy\'s \nEyes</a></td></tr>\n\n<tr><td><a href="../awards.html">Awards</a></td></tr>\n<tr><td><a href="../presentations.html">Presentations</a></td></tr>\n<tr><td><a href="../minutes.html">Meeting Minutes</a></td></tr>\n<tr><td><a href="../album.html">Photo Album</a></td></tr>\n<tr><td><a href="../links.html">Links</a></td></tr>\n<tr><td><a href="../constitution.html">Constitution</a></td></tr>\n<tr><th><br>Forecasting Contests:</th></tr>\n<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a\nhref="http://www.meteor.iastate.edu/~miraje/NCWFC/">National\nContest</a></td></tr>\n<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a\nhref="http://www.meteor.iastate.edu/~miraje/AFC">ISU AMS\nContest</a></td></tr></table>\n</div></td>'
+${newmenu} = '<?php include("includes/menubar.php"); ?>'
+
+
+
+<tr><td><a href="../links.html">Links</a></td></tr>
+
+<tr><td><a href="../constitution.html">Constitution</a></td></tr>
+
+<tr><th><br>Forecasting Contests:</th></tr>
+
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+
+href="http://www.meteor.iastate.edu/~miraje/NCWFC/">National
+
+Contest</a></td></tr>
+
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+
+href="http://www.meteor.iastate.edu/~miraje/AFC">ISU AMS
+
+Contest</a></td></tr></table>
+
+</div></td>'
+
+
+for filename in *.htm*; do
+#    /bin/cp -f ${filename} ${filename}.old
+#    cat $filename  | sed -e 's/old string/new string/' > ${filename}.tmp
+#    /bin/mv -f ${filename}.tmp $filename
+    echo ${filename}
+done
