@@ -22,7 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ams.jont.cc" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: isuams
-github_username:  jthielen
+github_username:  isuams
 
 # Addt'n Config
 permalink: pretty
