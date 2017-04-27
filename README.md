@@ -5,4 +5,6 @@ This repo handles the new [ISU AMS](http://www.meteor.iastate.edu/ams/) website.
 
 Part of ISU AMS and want to help? Contact Jon at [webmaster.isuams](mailto:webmaster.isuams@iastate.edu)
 
+Hello! This is a test!
+
 [Test Site](http://ams.jont.cc)
