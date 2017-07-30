@@ -3,8 +3,6 @@ ISU AMS Website (powered by Jekyll)
 
 This repo handles the new [ISU AMS](http://www.meteor.iastate.edu/ams/) website. More info to come...
 
-Part of ISU AMS and want to help? Contact Jon at [webmaster.isuams](mailto:webmaster.isuams@iastate.edu)
+Part of ISU AMS and want to help? Contact the technology team at [technology.isuams@iastate.edu](mailto:technology.isuams@iastate.edu)
 
-Hello! This is a test!
-
-[Test Site](http://ams.jont.cc)
+[Current Test Site](http://ams.jont.cc)
