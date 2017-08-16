@@ -1,0 +1,37 @@
+---
+title: News and Features
+layout: page
+section: news
+# You can find the news articles in the _posts folder
+---
+
+<main class="post-list">
+	{% for post in paginator.posts %}
+		<article class="post">
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+			<p class="author">
+				<span class="date">{{ post.date }}</span>
+			</p>
+			<section class="content">{{ post.excerpt }}</section>
+		</article>
+	{% endfor %}
+</main>
+
+<!-- Pagination links -->
+<div class="pagination">
+
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+	{% else %}
+		<span class="previous">Previous</span>
+	{% endif %}
+
+	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+	{% else %}
+		<span class="next ">Next</span>
+	{% endif %}
+
+</div>

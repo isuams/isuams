@@ -11,8 +11,8 @@
 					</ul>
 				</div>
 				<div class="col-sm-4 affiliate-images">
-					<img src="{{ base_path }}/assets/amb_logo_sml.png">
-					<img src="{{ base_path }}/assets/isu_las_logo.png">
+					<a href="http://www.weather.gov/wrn/"><img src="{{ base_path }}/assets/amb_logo_sml.png"></a>
+					<a href="https://las.iastate.edu/"><img src="{{ base_path }}/assets/isu_las_logo.png"></a>
 				</div>
 				<div class="col-sm-4 twitter-box">
 					<a class="twitter-timeline" data-width="300" data-height="300" data-dnt="true" data-theme="light" href="https://twitter.com/ISUAMS">Tweets by ISUAMS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -20,7 +20,7 @@
 			</div>
 			<div class="container">
 				<div class="col-xs-12 fine-print">
-					© {{ page.date | date: "%Y" }} Iowa State University Student Chapter of the American Meteorological Society<br>
+					© {{ site.time | date: "%Y" }} Iowa State University Student Chapter of the American Meteorological Society<br>
 					Email the webmaster (<a href="mailto:webmaster.isuams@iastate.edu">webmaster.isuams@iastate.edu</a>) with any questions, comments, or suggestions.
 				</div>
 			</div>

@@ -1,5 +1,5 @@
 ---
-title: Events &amp; Activities
+title: Events and Activities
 layout: page
 section: events-activities
 ---

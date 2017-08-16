@@ -8,7 +8,7 @@
 	{
 		"page": "events-activities",
 		"permalink": "/events-activities/",
-		"name": "Events &amp; Activities",
+		"name": "Events and Activities",
 		"has_subpages": true,
 		"subpages": [
 			{
@@ -126,27 +126,15 @@
 		]
 	},
 	{
-		"page": "news-features",
+		"page": "news",
 		"permalink": "/news/",
-		"name": "News &amp; Features",
+		"name": "News and Features",
 		"has_subpages": true,
 		"subpages": [
 			{
-				"page": "picture-of-the-month",
-				"permalink": "/news/picture-of-the-month",
-				"name": "Weather Links",
-				"has_subpages": false
-			},
-			{
-				"page": "spotlight-freshman",
-				"permalink": "/news/spotlight-freshman",
-				"name": "Spotlight Freshman/Transfer",
-				"has_subpages": false
-			},
-			{
-				"page": "presentations",
-				"permalink": "/news/presentations",
-				"name": "Presentations",
+				"page": "iowa-state-weather",
+				"permalink": "/news/iowa-state-weather",
+				"name": "Iowa State Weather",
 				"has_subpages": false
 			}
 		]

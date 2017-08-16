@@ -32,6 +32,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -43,3 +44,5 @@ sass:
 
 # Misc Config
 recent_posts_limit: 5
+paginate: 10
+paginate_path: "/news/page:num/"
