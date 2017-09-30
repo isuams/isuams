@@ -4,13 +4,14 @@ layout: page
 section: about
 ---
 
-**Most recent:** [August 22, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/08-22-17.pdf) 
+**Most recent:** [[September 26, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/09-26-17.pdf) 
 
 ----
 
 **2017-2018**
 
- - [August 22, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/08-22-17.pdf) 
+  - [August 22, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/08-22-17.pdf)
+  - [September 26, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/09-26-17.pdf) 
 
 **2016-2017**
     
