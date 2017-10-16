@@ -9,4 +9,4 @@ The Iowa State Chapter of the American Meteorological Society strives to spread 
 
 Have any questions about outreach? Email [outreach.isuams@iastate.edu](mailto:outreach.isuams@iastate.edu) for more information!
 
-![Outreach Activity with Tornado Simulator]()
+
