@@ -4,7 +4,7 @@ layout: page
 section: events-activities
 ---
 
-<img src="https://github.com/isuams/isuams/blob/master/uploads/images/20170919_235803850_iOS.jpg?raw=true" alt="Cy's Eyes cast and production group photo" class="rotateimg90" style="width:50%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
+<img src="https://github.com/isuams/isuams/blob/master/uploads/images/cyseyescrew.jpg?raw=true" alt="Cy's Eyes cast and production group photo" class="rotateimg90" style="width:50%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
 
 Cy's Eyes on the Skies is the weather show at ISU and is the university's longest running television show. This completely student-run program meets twice weekly to produce a 15-minute weather broadcast. Founded in 1999, the main purpose of the show has been to give students wanting to pursue a career in broadcast meteorology a chance to practice their on-air skills by working with a green screen and gain experience making weather graphics. 
 
