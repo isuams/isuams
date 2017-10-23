@@ -12,4 +12,4 @@ making anemometers, the tornado simulator, cloud pictures, and tornado in a bott
 humble beginnings, the fair has grown over the last three years. If you have any questions feel
 free to contact us at sciencefairams@gmail.com.
 
-<img src="https://github.com/isuams/isuams/blob/master/uploads/scifair2.png?raw=true" alt="Science Fair 2017" style="width:80%; padding-left: 115px;">
+<div style="text-align: center;"><img src="https://github.com/isuams/isuams/blob/master/uploads/scifair2.png?raw=true" alt="Science Fair 2017" style="width:80%;"></div>
