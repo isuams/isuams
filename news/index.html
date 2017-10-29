@@ -8,11 +8,11 @@ section: news
 <main class="post-list">
 	{% for post in paginator.posts %}
 		<article class="post">
-			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+			<a href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 			<p class="author">
-				<span class="date">{{ post.date }}</span>
+				<span class="date">{{ post.date | date_to_string }}</span>
 			</p>
-			<section class="content">{{ post.excerpt }}</section>
+			<section class="content">{{ post.excerpt | markdownify }}</section>
 		</article>
 	{% endfor %}
 </main>
@@ -23,7 +23,7 @@ section: news
 	{% if paginator.previous_page %}
 		<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
 	{% else %}
-		<span class="previous">Previous</span>
+		<span class="previous">...</span>
 	{% endif %}
 
 	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
@@ -31,7 +31,7 @@ section: news
 	{% if paginator.next_page %}
 		<a href="{{ paginator.next_page_path }}" class="next">Next</a>
 	{% else %}
-		<span class="next ">Next</span>
+		<span class="next ">...</span>
 	{% endif %}
 
 </div>

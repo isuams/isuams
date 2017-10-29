@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to the New ISU AMS Site!"
-date:   2017-08-21 11:37:14 -0600
+date:   2017-10-28 11:37:14 -0600
 categories: news update
 ---
 

@@ -4,7 +4,7 @@ layout: page
 section: about
 ---
 
-**Most recent:** [[September 26, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/09-26-17.pdf) 
+**Most recent:** [September 26, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/09-26-17.pdf) 
 
 ----
 
