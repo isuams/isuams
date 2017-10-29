@@ -19,8 +19,8 @@ description: > # this means to ignore newlines until "baseurl:"
   The Iowa State University Student Chapter of the American Meteorological Society
   (ISU AMS) is an award-winning chapter committed to community outreach and student
   involvement in social and academic activities.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ams.jont.cc" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/ams" # the subpath of your site, e.g. /blog
+url: "http://www.meteor.iastate.edu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: isuams
 github_username:  isuams
 
