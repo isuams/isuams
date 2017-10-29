@@ -1,14 +1,7 @@
 {% include base_path %}
 <nav class="inner-nav secondary-nav">
-	{% for section in site.data.menu | where:"page", page.categories[0] %}
-		<a class="active" href="{{ base_path }}{{ section.permalink }}">{{ section.name }}</a>
-		<span class="recent-posts-label">Recent Articles</span>
-		<ul>
-			{% for post in site.categories limit:site.recent_posts_limit | where_exp:"post", "post.categories[0] == page.categories[0]" %}
-				<li>
-					<a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
-				</li>
-			{% endfor %}
-	</ul>
+	<h4 class="recent-posts-label">Recent Articles</h4>
+	{% for post in paginator.posts %}
+		<p><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></p>
 	{% endfor %}
 </nav>

@@ -401,3 +401,19 @@ nav.inner-nav {
 .events-section .fc-unthemed .fc-list-empty {
     background-color: transparent;
 }
+
+/* Google Seach Tweaks */
+.gsc-search-box * {
+    box-sizing: unset;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.gsc-search-box .gsc-input-box {
+    height: 30px;
+}
+
+.gsc-search-box input.gsc-search-button-v2 {
+    margin-bottom: -3px;
+    padding: 9px 12px;
+}
