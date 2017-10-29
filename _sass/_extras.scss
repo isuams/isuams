@@ -417,3 +417,10 @@ nav.inner-nav {
     margin-bottom: -3px;
     padding: 9px 12px;
 }
+
+@media (min-width: 768px){
+    .navbar-nav > li > a {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+}
