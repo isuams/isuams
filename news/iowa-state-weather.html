@@ -29,4 +29,47 @@ section: news
 	Watch <span class='inline-img'><img src="{{ site.baseurl }}/uploads/isuweather/logo.png"></span> Weekdays 7:45 AM
 </p>
 
-*Student-Run Account. Not an official forecasting account of the university. Brought to you by Iowa State University Student Chapter of the American Meteorological Society.
+<p>*Student-Run Account. Not an official forecasting account of the university. Brought to you by Iowa State University Student Chapter of the American Meteorological Society.</p>
+
+<h3>SkyCams</h3>
+<div class="skycam-boxes">
+	<div class="skycam-box">
+		<a href="{{ site.baseurl }}/news/skycam-1" style="text-decoration: none;">
+			<h5>Memorial Union (1)</h5>
+			<script>
+				var camera = 1;
+				var output = '<img src="{{ site.baseurl }}/news/static-pull.php?camera='+camera;
+				output += '&resolution=640x320';
+				output += '&dummy='+theDate.getTime().toString(10);
+				output += '" alt="Live Image" class="skycam-img">';
+				document.write(output);
+			</script>
+		</a>
+	</div>
+	<div class="skycam-box">
+		<a href="{{ site.baseurl }}/news/skycam-2" style="text-decoration: none;">
+			<h5>Curtis (2)</h5>
+			<script>
+				var camera = 2;
+				var output = '<img src="{{ site.baseurl }}/news/static-pull.php?camera='+camera;
+				output += '&resolution=640x320';
+				output += '&dummy='+theDate.getTime().toString(10);
+				output += '" alt="Live Image" class="skycam-img">';
+				document.write(output);
+			</script>
+		</a>
+	</div>
+	<div class="skycam-box">
+		<a href="{{ site.baseurl }}/news/skycam-3" style="text-decoration: none;">
+			<h5>Design (3)</h5>
+			<script>
+				var camera = 3;
+				var output = '<img src="{{ site.baseurl }}/news/static-pull.php?camera='+camera;
+				output += '&resolution=640x320';
+				output += '&dummy='+theDate.getTime().toString(10);
+				output += '" alt="Live Image" class="skycam-img">';
+				document.write(output);
+			</script>
+		</a>
+	</div>
+</div>

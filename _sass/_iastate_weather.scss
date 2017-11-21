@@ -38,3 +38,24 @@ span.inline-img {
     width: 150px;
     display: inline-block;
 }
+
+.skycam-img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 760px){
+    .skycam-box {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+@media all and (min-width: 761px){
+    .skycam-box {
+        box-sizing: border-box;
+        width: 33%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 20px;
+    }
+}
