@@ -15,6 +15,9 @@ section: about
   - [October 31, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/10-31-17.pdf)
   - [November 28, 2017]({{ site.baseurl }}/uploads/minutes/2017-18/11-28-17.pdf)
   - [January 30, 2018]({{ site.baseurl }}/uploads/minutes/2017-18/01-30-18.pdf)
+  
+----
+
 **2016-2017**
     
  - [August 23, 2016]({{ site.baseurl }}/uploads/minutes/2016-17/08-23-16.pdf)
