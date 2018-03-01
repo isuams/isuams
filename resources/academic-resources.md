@@ -4,7 +4,7 @@ layout: page
 section: resources
 ---
 
-[Meteorology Test Schedule Document (Fall 2017)](https://docs.google.com/a/iastate.edu/spreadsheets/d/11SKdy5qoB_znZw--BZk8txOz4ffH17YaAS0MRFUIj4M/edit?usp=sharing)
+[Meteorology Test Schedule Document (Spring 2018)](https://docs.google.com/spreadsheets/d/1x-qSpwBPWOiXRnrVbar5F3yA2Q5lfNxxFZ9vSBtqPNY/edit?usp=sharing)
 
 - The American Meteorological Society - The Iowa State University Student Chapter of the American Meteorological Society organizes free review sessions for meteorology courses run by meteorology students who have already taken the courses.
    - Contact the Academic Chair at [academic.isuams@iastate.edu](mailto:academic.isuams@iastate.edu).
