@@ -136,6 +136,12 @@
 				"permalink": "/news/iowa-state-weather",
 				"name": "Iowa State Weather",
 				"has_subpages": false
+			},
+			{
+				"page": "photo-gallery",
+				"permalink": "/news/photo-gallery",
+				"name": "Photo Gallery",
+				"has_subpages": false
 			}
 		]
 	},
@@ -164,9 +170,9 @@
 				"has_subpages": false
 			},
 			{
-				"page": "constitution-bylaws",
-				"permalink": "/about/constitution-bylaws",
-				"name": "Constitution and Bylaws",
+				"page": "constitution",
+				"permalink": "/about/constitution",
+				"name": "Constitution",
 				"has_subpages": false
 			},
 			{
