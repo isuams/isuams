@@ -136,7 +136,14 @@
 				"permalink": "/news/iowa-state-weather",
 				"name": "Iowa State Weather",
 				"has_subpages": false
-			}
+			},
+		        {
+                                "page": "photo-gallery",
+                                "permalink": "/news/photo-gallery",
+                                "name": "Photo Gallery",
+                                "has_subpages": false
+      			 }
+
 		]
 	},
 	{
