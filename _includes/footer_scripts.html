@@ -46,4 +46,26 @@
 			});
 		});
 	</script>
+{% elsif page.include_js == "academic" %}
+	<script>
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'listWeek, month'
+				},
+				googleCalendarApiKey: 'AIzaSyClJ_7dZHKz1bzZwVOunCUsOkd0dZ0z7OA',
+				events: {
+					googleCalendarId: 'mfhu7dgk47n7jhjdvestams6dg@group.calendar.google.com'
+				},
+				defaultView: 'listWeek',
+				eventClick: function(event) {
+					// opens events in a popup window
+					window.open(event.url, 'gcalevent', 'width=700,height=600');
+					return false;
+				}
+			});
+		});
+	</script>
 {% endif %}
