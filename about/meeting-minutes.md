@@ -9,8 +9,8 @@ section: about
 ----
 **2018-2019**
 
-  - [September 25, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/9-25-18.pdf)
   - [August 21, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/08-21-18.pdf)
+  - [September 25, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/9-25-18.pdf)
 
 **2017-2018**
 
