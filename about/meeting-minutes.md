@@ -4,7 +4,7 @@ layout: page
 section: about
 ---
 
-**Most recent:** [October 30, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/9-25-18.pdf)
+**Most recent:** [November 27, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/11-27-18.pdf)
 
 ----
 **2018-2019**
@@ -12,6 +12,7 @@ section: about
   - [August 21, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/08-21-18.pdf)
   - [September 25, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/9-25-18.pdf)
   - [October 30, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/9-25-18.pdf)
+  - [November 27, 2018]({{ site.baseurl }}/uploads/minutes/2018-19/11-27-18.pdf)
 
 **2017-2018**
 
