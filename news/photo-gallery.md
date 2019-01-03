@@ -7,7 +7,7 @@ section: news
 Our chapter has always had wonderful historians to help create a rich collection of photos showing what we've been up to over the last couple years.
 Check out these spectacular weather and social event photos!
 
-<h2>Photos of the Year 2017</h2>
+<h2>Photos of the Year 2018</h2>
 <div class="photos-of-the-year">
 	<img src="{{ site.baseurl }}/uploads/images/photooftheyear.png?raw=true" alt="Photo of the Year taken during AMS 2017" style="width: 100%; padding-bottom: 20px;">
 	<br>
