@@ -4,7 +4,7 @@ layout: page
 section: outreach
 ---
 
-Thank you for your interest and support of this past year's contest. Information for the 2018 contest will be available in the spring, but for the meantime, you can find the 2017 information below.
+Thank you for your interest and support of this past year's contest. Information for the 2019 contest will be available in the spring, but for the meantime, you can find the 2017 information below.
 
 ## 2017 Severe Weather Poster Contest
 
