@@ -1,7 +1,7 @@
 ---
 title: Fund ISU
 layout: page
-section: outreach
+section: news
 ---
 <img src="{{ site.baseurl }}/uploads/images/ISU AMS Chapter Poster.jpg?raw=true" alt="ISU AMS at the AMS Conference" style="width:50%; padding-left: 30px; float:right;">
 
