@@ -9,9 +9,9 @@ Check out these spectacular weather and social event photos!
 
 <h2>Photos of the Year 2018</h2>
 <div class="photos-of-the-year">
-	<img src="{{ site.baseurl }}/uploads/images/photooftheyear.png?raw=true" alt="Photo of the Year taken during AMS 2017" style="width: 100%; padding-bottom: 20px;">
+	<img src="{{ site.baseurl }}/uploads/images/(4) January.jpg?raw=true" alt="Photo of the Year taken during AMS 2018" style="width: 100%; padding-bottom: 20px;">
 	<br>
-	<img src="{{ site.baseurl }}/uploads/images/photooftheyear2.jpg?raw=true" alt="Weather Photo of the Year" style="width: 100%; padding-bottom: 20px;">
+	<img src="{{ site.baseurl }}/uploads/images/Anthony Baglione Weather Photo.jpg?raw=true" alt="Weather Photo of the Year" style="width: 100%; padding-bottom: 20px;">
 </div>
 <br>
 <br>
