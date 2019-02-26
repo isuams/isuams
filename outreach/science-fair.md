@@ -12,4 +12,4 @@ making anemometers, the tornado simulator, cloud pictures, and tornado in a bott
 humble beginnings, the fair has grown over the last four years. If you have any questions feel
 free to contact us at sciencefairams@gmail.com. To sign up for the science fair on April 27th, please submit this form: [https://tinyurl.com/yy73qtvw](https://tinyurl.com/yy73qtvw).
 
-<div style="text-align: center;"><img src="{{ site.baseurl }}/uploads/Flyer_2019.pdf?raw=true" alt="Science Fair 2019" style="width:80%;"></div>
+<div style="text-align: center;"><img src="{{ site.baseurl }}/uploads/Flyer_2019.jpg?raw=true" alt="Science Fair 2019" style="width:80%;"></div>
