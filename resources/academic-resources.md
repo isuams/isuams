@@ -17,7 +17,7 @@ include_js: academic
    - Contact the Academic Chair at [academic.isuams@iastate.edu](mailto:academic.isuams@iastate.edu).
 - Earth, Wind, and Fire Learning Community
    - Your peer mentor is an excellent resource for help in getting used to life as a college student at ISU. Keep in touch and do not be afraid to ask for any assistance that you may need.
-   - The Learning Community also offers FREE math tutoring! Check your emails early in the semester (or the weekly ISU AMS email) for tutoring times. Sessions typically start the second week of classes.
+   - The Learning Community also offers FREE math tutoring! Check your emails early in the semester (or the weekly ISU AMS email, or the schedule above) for tutoring times. Sessions typically start the second week of classes.
 - Academic Success Center - 
    - Tutoring - Students can request a tutor and be placed in a tutor group that meets twice a week for one hour sessions for a variety of Iowa State University courses.  Each session costs $4 and tutor groups are kept small. [http://www.asc.dso.iastate.edu/tutoring](http://www.asc.dso.iastate.edu/tutoring)
    - Academic Coaching - Students can meet with academic coaches to learn a variety techniques to improve academically.  Sessions are one-on-one and students typically meet with an academic coach 3-4 times a semester.  This is a free service provided year round to students at Iowa State.  Academic coaches also provide a free workshop series during the fall and spring semesters.
