@@ -33,4 +33,4 @@ include_js: academic
    - [SI Schedule](https://apps-dso.sws.iastate.edu/si/)
 - Writing and Media Center - At the Writing and Media Center, Communication Consultants assist undergraduates and graduates with written, oral, visual, and electronic communication.  Communication Consultants can assist with a project anywhere from the start to the end. [http://www.wmc.dso.iastate.edu](http://www.wmc.dso.iastate.edu)
 
-<div class='fake'></div>
+<div class='fake' style='display:none;'>Test</div>
