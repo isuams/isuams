@@ -7,11 +7,11 @@ section: news
 Our chapter has always had wonderful historians to help create a rich collection of photos showing what we've been up to over the last couple years.
 Check out these spectacular weather and social event photos!
 
-<h2>Photos of the Year 2018</h2>
+<h2>Photos of the Year 2019</h2>
 <div class="photos-of-the-year">
-	<img src="{{ site.baseurl }}/uploads/images/(4) January.jpg?raw=true" alt="Photo of the Year taken during AMS 2018" style="width: 100%; padding-bottom: 20px;">
+	<img src="{{ site.baseurl }}/uploads/images/(1) August - Jon Thielen.jpg?raw=true" alt="Weather Photo of the 2019" style="width: 100%; padding-bottom: 20px;">
 	<br>
-	<img src="{{ site.baseurl }}/uploads/images/Anthony Baglione Weather Photo.jpg?raw=true" alt="Weather Photo of the Year" style="width: 100%; padding-bottom: 20px;">
+	<img src="{{ site.baseurl }}/uploads/images/(3) October - Garrett Heyd.jpg?raw=true" alt="Photo of the Year taken during AMS 2019" style="width: 100%; padding-bottom: 20px;">
 </div>
 <br>
 <br>
