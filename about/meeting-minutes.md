@@ -4,12 +4,12 @@ layout: page
 section: about
 ---
 
-**Most recent:** [August 27, 2019]({{ site.baseurl }}/uploads/minutes/8-27-19.pdf)
+**Most recent:** [August 27, 2019]({{ site.baseurl }}/uploads/minutes/2019-2020/8-27-19.pdf)
 
 ----
 **2019-2020**
 
-  - [August 27, 2019]({{ site.baseurl }}/uploads/minutes/8-27-19.pdf)
+  - [August 27, 2019]({{ site.baseurl }}/uploads/minutes/2019-2020/8-27-19.pdf)
   
 **2018-2019**
 
