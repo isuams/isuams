@@ -14,4 +14,4 @@ If a student wishes to be involved but not go on air, extra assistance is always
 
 You can catch up with the latest happenings on Cy's Eyes [Twitter](https://twitter.com/CysEyes) or [Facebook](http://www.facebook.com/pages/Cys-Eyes-on-the-Skies/457085540998278) accounts, watch past shows on our [Youtube channel](https://www.youtube.com/user/CysEyesISU), or [watch Cy's Eyes live](https://www.greenlee.iastate.edu/greenlee-tv) on Tuesday and Thursday nights at 6:30. 
 
-Please contact the show's producers, Hannah Messier ([hmessier@iastate.edu](mailto:hmessier@iastate.edu)) and Jacob Vos ([jvos@iastate.edu](mailto:jvos@iastate.edu)) with any questions or comments. 
+Please contact the show's producers, Jacob Vos ([jvos@iastate.edu](mailto:jvos@iastate.edu)) or Benji Wyberg ([blwyberg@iastate.edu](mailto:blwyberg@iastate.edu)) with any questions or comments. 
