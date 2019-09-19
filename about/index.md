@@ -43,7 +43,7 @@ To join, simply attend a meeting and pay your dues to the treasurer.  While the 
 members are Meteorology majors, any current student at Iowa State University is eligible for
 membership. We encourage all weather fanatics to join! 
 
-Dues for 2018-2019:<br>
+Dues for 2019-2020:<br>
 National Members: $10<br>
 Regular Members: $15
 
