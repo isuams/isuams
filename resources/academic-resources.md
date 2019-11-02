@@ -5,7 +5,7 @@ section: resources
 include_js: academic
 ---
 
-[Meteorology Class List Document (Spring 2019)](https://docs.google.com/spreadsheets/d/1O-BoPLneCBCmjkLFyNJK3HdER71vyF3mV8XfK9vn2Ys/edit?usp=sharing)
+[Meteorology Class List Document (Fall 2019)](https://docs.google.com/spreadsheets/d/1CMkAdb8j2OGJKp5ayFp6sHBy6qbyCQC25FMiNhhpNu0/edit#gid=0)
 
 ---
 
