@@ -4,13 +4,14 @@ layout: page
 section: about
 ---
 
-**Most recent:** [September 24, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/9-24-19 Minutes.pdf)
+**Most recent:** [October 29, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/10-29-19 Minutes.pdf)
 
 ----
 **2019-2020**
 
   - [August 27, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/8-27-19Links.pdf)
   - [September 24, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/9-24-19 Minutes.pdf)
+  - [October 29, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/10-29-19 Minutes.pdf)
   
 **2018-2019**
 
