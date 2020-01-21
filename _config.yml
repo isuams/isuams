@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   (ISU AMS) is an award-winning chapter committed to community outreach and student
   involvement in social and academic activities.
 baseurl: "/ams" # the subpath of your site, e.g. /blog
-url: "http://www.meteor.iastate.edu" # the base hostname & protocol for your site, e.g. http://example.com
+url: "//www.meteor.iastate.edu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: isuams
 github_username:  isuams
 
