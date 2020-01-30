@@ -17,7 +17,7 @@ Check out these spectacular weather and social event photos!
 <br>
 <h4>Weather Photos on the Month</h4>
 <div class="weather-photos">
-	<iframe src="https://drive.google.com/embeddedfolderview?id=13AiXyiNd8BF8oA4MhhEgFQbDPVaANeTv#grid" style="width:100%; height:600px; border:0;"></iframe>
+	<iframe src="https://drive.google.com/embeddedfolderview?id=1dj2kf3xxviTmxhuNY3LZo5XtE_JANYTX#grid" style="width:100%; height:600px; border:0;"></iframe>
 </div>
 <h4>Photos of the Month</h4>
 <div class="social-photos">
