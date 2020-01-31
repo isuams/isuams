@@ -4,7 +4,7 @@ layout: page
 section: about
 ---
 
-**Most recent:** [December 3, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/12-03-19 Minutes.pdf)
+**Most recent:** [January 28, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/Meeting Minutes - 01_28_2020.pdf)
 
 ----
 **2019-2020**
@@ -13,6 +13,7 @@ section: about
   - [September 24, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/9-24-19 Minutes.pdf)
   - [October 29, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/10-29-19 Minutes.pdf)
   - [December 3, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/12-03-19 Minutes.pdf)
+  - [January 28, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/Meeting Minutes - 01_28_2020.pdf)
   
 **2018-2019**
 
