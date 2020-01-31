@@ -188,5 +188,11 @@
 				"has_subpages": false
 			}
 		]
+	},
+	{
+		"page": "meeting-minutes",
+		"permalink": "/about/meeting-minutes",
+		"name": "Meeting Minutes",
+		"has_subpages": false
 	}
 ]
