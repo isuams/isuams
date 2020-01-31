@@ -6,6 +6,38 @@
 		"has_subpages": false
 	},
 	{
+		"page": "about",
+		"permalink": "/about/",
+		"name": "About Us",
+		"has_subpages": true,
+		"subpages": [
+			{
+				"page": "contact-us",
+				"permalink": "/about/contact-us",
+				"name": "Contact Us",
+				"has_subpages": false
+			},
+			{
+				"page": "officers",
+				"permalink": "/about/officers",
+				"name": "Officers",
+				"has_subpages": false
+			},
+			{
+				"page": "constitution",
+				"permalink": "/about/constitution",
+				"name": "Constitution",
+				"has_subpages": false
+			},
+			{
+				"page": "awards",
+				"permalink": "/about/awards",
+				"name": "Awards",
+				"has_subpages": false
+			}
+		]
+	},
+	{
 		"page": "events-activities",
 		"permalink": "/events-activities/",
 		"name": "Events and Activities",
@@ -149,38 +181,6 @@
                                 "name": "Fund ISU",
                                 "has_subpages": false
 			}	
-		]
-	},
-	{
-		"page": "about",
-		"permalink": "/about/",
-		"name": "About Us",
-		"has_subpages": true,
-		"subpages": [
-			{
-				"page": "contact-us",
-				"permalink": "/about/contact-us",
-				"name": "Contact Us",
-				"has_subpages": false
-			},
-			{
-				"page": "officers",
-				"permalink": "/about/officers",
-				"name": "Officers",
-				"has_subpages": false
-			},
-			{
-				"page": "constitution",
-				"permalink": "/about/constitution",
-				"name": "Constitution",
-				"has_subpages": false
-			},
-			{
-				"page": "awards",
-				"permalink": "/about/awards",
-				"name": "Awards",
-				"has_subpages": false
-			}
 		]
 	},
 	{
