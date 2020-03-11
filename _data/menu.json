@@ -154,6 +154,12 @@
 				"permalink": "/resources/forecasting",
 				"name": "Forecasting",
 				"has_subpages": false
+			},
+			{
+				"page": "gpttc",
+				"permalink": "/resources/gpttc",
+				"name": "Great Plains Tornado Target Contest",
+				"has_subpages": false
 			}
 		]
 	},
