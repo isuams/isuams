@@ -15,7 +15,7 @@ section: about
   - [December 3, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/12-03-19 Minutes.pdf)
   - [January 28, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/Meeting Minutes - 01_28_2020.pdf)
   - [February 25, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/2-25-20 Minutes.pdf)
-  - [March 24, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/3-24-20 Agenda.pdf)
+  - [March 24 2020]({{ site.baseurl }}/uploads/minutes/2019-20/3-24-20 Agenda.pdf)
   
 **2018-2019**
 
