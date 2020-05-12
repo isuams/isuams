@@ -4,3 +4,4 @@ _site
 *.swp
 _config_dev.yml
 Gemfile*
+.jekyll-cache
