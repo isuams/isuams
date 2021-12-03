@@ -4,7 +4,7 @@ layout: page
 section: about
 ---
 
-**Most recent:** [October 26, 2021]({{site.baseurl }}/uploads/minutes/2021-22/10-26-21 AMS meeting minutes.pdf)
+**Most recent:** [November 30, 2021]({{site.baseurl }}/uploads/minutes/2021-22/11-30-21 AMS meeting minutes.pdf)
 
 ---
 **2021-2022**
@@ -12,6 +12,7 @@ section: about
 - [August 24, 2021]({{site.baseurl }}/uploads/minutes/2021-22/8-24-21 AMS meeting minutes.pdf)
 - [September 28, 2021]({{site.baseurl }}/uploads/minutes/2021-22/9-28-21 AMS meeting minutes.pdf)
 - [October 26, 2021]({{site.baseurl }}/uploads/minutes/2021-22/10-26-21 AMS meeting minutes.pdf)
+- [November 30, 2021]({{site.baseurl }}/uploads/minutes/2021-22/11-30-21 AMS meeting minutes.pdf)
 
 **2020-2021**
 
