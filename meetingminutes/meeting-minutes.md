@@ -4,7 +4,7 @@ layout: page
 section: about
 ---
 
-**Most recent:** [November 30, 2021]({{site.baseurl }}/uploads/minutes/2021-22/11-30-21 AMS meeting minutes.pdf)
+**Most recent:** [January 18, 2022]({{site.baseurl }}/uploads/minutes/2021-22/01-18-22 AMS meeting minutes.pdf)
 
 ---
 **2021-2022**
