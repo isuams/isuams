@@ -13,6 +13,7 @@ section: about
 - [September 28, 2021]({{site.baseurl }}/uploads/minutes/2021-22/9-28-21 AMS meeting minutes.pdf)
 - [October 26, 2021]({{site.baseurl }}/uploads/minutes/2021-22/10-26-21 AMS meeting minutes.pdf)
 - [November 30, 2021]({{site.baseurl }}/uploads/minutes/2021-22/11-30-21 AMS meeting minutes.pdf)
+- [January 18, 2022]({{site.baseurl }}/uploads/minutes/2021-22/01-18-22 AMS meeting minutes.pdf)
 
 **2020-2021**
 
