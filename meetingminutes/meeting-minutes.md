@@ -7,11 +7,11 @@ section: about
 **Most recent:** [January 31, 2023]({{site.baseurl }}/uploads/minutes/2022-23/January 31 2023 Minutes.pdf)
 ---
 **2022-2023**
--[August 23, 2022]({{site.baseurl }}/uploads/minutes/2022-23/August 23 2022 Minutes.pdf)
--[September 27, 2022]({{site.baseurl }}/uploads/minutes/2022-23/September 27 2022 Minutes.pdf)
--[October 25, 2022]({{site.baseurl }}/uploads/minutes/2022-23/October 25 2022 Minutes.pdf)
--[November 29, 2022]({{site.baseurl }}/uploads/minutes/2022-23/November 29 2022 Minutes.pdf)
--[January 31, 2023]({{site.baseurl }}/uploads/minutes/2022-23/January 31 2023 Minutes.pdf)
+- [August 23, 2022]({{site.baseurl }}/uploads/minutes/2022-23/August 23 2022 Minutes.pdf)
+- [September 27, 2022]({{site.baseurl }}/uploads/minutes/2022-23/September 27 2022 Minutes.pdf)
+- [October 25, 2022]({{site.baseurl }}/uploads/minutes/2022-23/October 25 2022 Minutes.pdf)
+- [November 29, 2022]({{site.baseurl }}/uploads/minutes/2022-23/November 29 2022 Minutes.pdf)
+- [January 31, 2023]({{site.baseurl }}/uploads/minutes/2022-23/January 31 2023 Minutes.pdf)
 
 **2021-2022**
 
