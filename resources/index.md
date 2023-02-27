@@ -4,10 +4,10 @@ layout: page
 section: resources
 ---
 
-- [Weather Links]({{ site.baseurl }}{% link resources/weather-links.md %})
-- [Alumni Connections]({{ site.baseurl }}{% link resources/alumni-connections.md %})
-- [Academic Resources]({{ site.baseurl }}{% link resources/academic-resources.md %})
-- [Scholarships]({{ site.baseurl }}{% link resources/scholarships.html %})
-- [Internships and REU's]({{ site.baseurl }}{% link resources/internship-reu.html %})
-- [Career Resources]({{ site.baseurl }}{% link resources/career-resources.md %})
+- [Weather Links](https://meteor.geol.iastate.edu/ams/resources/weather-links/)
+- [Alumni Connections](https://meteor.geol.iastate.edu/ams/resources/alumni-connections/)
+- [Academic Resources](https://meteor.geol.iastate.edu/ams/resources/academic-resources/)
+- [Scholarships](https://meteor.geol.iastate.edu/ams/resources/scholarships/)
+- [Internships and REU's](https://meteor.geol.iastate.edu/ams/resources/internship-reu/)
+- [Career Resources](https://meteor.geol.iastate.edu/ams/resources/forecasting/)
 - [Tornado Target Contest](https://sites.google.com/iastate.edu/ttc2022/home?authuser=0)
