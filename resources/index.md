@@ -10,4 +10,4 @@ section: resources
 - [Scholarships]({{ site.baseurl }}{% link resources/scholarships.html %})
 - [Internships and REU's]({{ site.baseurl }}{% link resources/internship-reu.html %})
 - [Career Resources]({{ site.baseurl }}{% link resources/career-resources.md %})
-- [Tornado Target Contest]({{ site.baseurl }}{% link resources/ttc.md %})
+- [Tornado Target Contest](https://sites.google.com/iastate.edu/ttc2022/home?authuser=0)
