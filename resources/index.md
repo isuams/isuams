@@ -10,4 +10,4 @@ section: resources
 - [Scholarships](https://meteor.geol.iastate.edu/ams/resources/scholarships/)
 - [Internships and REU's](https://meteor.geol.iastate.edu/ams/resources/internship-reu/)
 - [Career Resources](https://meteor.geol.iastate.edu/ams/resources/forecasting/)
-- [Tornado Target Contest](https://sites.google.com/iastate.edu/ttc2022/home?authuser=0)
+- [Tornado Target Contest](https://sites.google.com/iastate.edu/ttc23)
