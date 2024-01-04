@@ -21,7 +21,7 @@ The ISU Student Chapter continued its efforts and was honored by being selected 
 2005-2006&emsp;2009-2010&emsp;2011-2012&emsp;2012-2013&emsp;2016-2017
 <br>
 <br>
-<img src="https://github.com/isuams/isuams/blob/master/uploads/images/AMS_DEI_Award.jpg" alt="Outstanding Efforts: Diversity, Equity, Inclusion" style="width:30%;">
+<img src="https://github.com/isuams/isuams/blob/master/uploads/images/AMS_DEI_Award.jpg?raw=true" alt="Outstanding Efforts: Diversity, Equity, Inclusion" style="width:30%;">
 <br>
 <br>
 The ISU Student Chapter continued its work and was given the first-ever Outstanding Efforts: Diversity, Equity, Inclusion award by the Local Chapter Affairs Committee.
