@@ -24,7 +24,7 @@ The ISU Student Chapter continued its efforts and was honored by being selected 
 <img src="https://github.com/isuams/isuams/blob/master/uploads/images/AMS_DEI_Award.jpg?raw=true" alt="Outstanding Efforts: Diversity, Equity, Inclusion" style="width:30%;">
 <br>
 <br>
-The ISU Student Chapter continued its work and was given the first-ever Outstanding Efforts: Diversity, Equity, Inclusion award by the Local Chapter Affairs Committee.
+The ISU Student Chapter continued its work and was given the first-ever Outstanding Efforts: Diversity, Equity, Inclusion award by the Local Chapter Affairs Committee for the 2022-2023 year.
 <br>
 </div>
 
