@@ -5,7 +5,7 @@ section: resources
 include_js: academic
 ---
 
-<a href="https://docs.google.com/spreadsheets/d/1z4ZTsxg5SJ-M8NLG6_92pnKjby37usHaZ_QapLZNOJI/edit?usp=sharing" style="font-size: 20px;">Meteorology Class List Document (Spring 2024)</a>
+<a href="https://docs.google.com/spreadsheets/d/1z4ZTsxg5SJ-M8NLG6_92pnKjby37usHaZ_QapLZNOJI/edit?usp=sharing" style="font-size: 30px;">Meteorology Class List Document (Spring 2024)</a>
 
 
 - The American Meteorological Society - The Iowa State University Student Chapter of the American Meteorological Society organizes free review sessions for meteorology courses run by meteorology students who have already taken the courses.
