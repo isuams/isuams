@@ -4,4 +4,5 @@ layout: page
 section: about
 ---
 
-### [ISU AMS Constitution]({{ site.baseurl }}{% link uploads/Constitutions/AMS_Constitution_2023.pdf %})
+<a href="uploads/Constitutions/AMS_Constitution_2023.pdf" target="_blank">Click to Open PDF</a>
+
