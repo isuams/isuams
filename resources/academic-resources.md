@@ -5,13 +5,8 @@ section: resources
 include_js: academic
 ---
 
-[Meteorology Class List Document (Fall 2023)](https://docs.google.com/spreadsheets/d/1SrxzwnKQ-0oDV7U1SBaXcw1nZTpcoTb9ringPPHRazA/edit?usp=sharing)
+<a href="https://docs.google.com/spreadsheets/d/1z4ZTsxg5SJ-M8NLG6_92pnKjby37usHaZ_QapLZNOJI/edit?usp=sharing" style="font-size: 20px;">Meteorology Class List Document (Spring 2024)</a>
 
----
-
-<div id="calendar"></div>
-
----
 
 - The American Meteorological Society - The Iowa State University Student Chapter of the American Meteorological Society organizes free review sessions for meteorology courses run by meteorology students who have already taken the courses.
    - Contact the Academic Chair at [academic.isuams@iastate.edu](mailto:academic.isuams@iastate.edu).
