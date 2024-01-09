@@ -4,4 +4,5 @@ layout: page
 section: about
 ---
 
-<iframe src="path/to/ISU_AMS_Constitution.pdf" width="100%" height="600px"></iframe>
+<a href="uploads/Constituions/AMS_Constitution_2023.pdf" target="_blank">ISU AMS Constitution</a>
+
