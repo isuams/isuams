@@ -4,5 +4,6 @@ layout: page
 section: about
 ---
 
-<a href="Constitutions/AMS_2023_Constitution.htm" target="_blank">ISU AMS Constitution</a>
+<embed src="Constitutions/AMS_Constitution_2023.pdf" type="application/pdf" width="100%" height="600px" />
+
 
