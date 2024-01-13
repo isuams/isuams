@@ -20,3 +20,21 @@ section: resources
         </div>
     </div>
 </section>
+
+<section class="previous-winners-section">
+    <div class="container">
+        <h2>Previous Years Recipients</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>2022 Recipient</h3>
+                <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Marissa_2022.jpeg" alt="2022 Recipient: Marissa Osterloh">
+                <p>Marissa Osterloh</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>2023 Recipient</h3>
+                <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_AJ_2023.jpeg" alt="2023 Recipient: AJ Rickman">
+                <p>AJ Rickman</p>
+            </div>
+        </div>
+    </div>
+</section>
