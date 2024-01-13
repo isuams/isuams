@@ -6,10 +6,10 @@ section: resources
 
 <section class="aascholarship-section story-section">
 	<div class="container">
-		<div class="col-sm-4">
+		<div class="col-sm-6 col-md-4">
       			<img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Anderson.jpg" alt="Avery Anderson" width="100%">
 		</div>
-		<div class="col-sm-8">
+		<div class="col-sm-6 col-md-8">
      			 <h2>Avery's Story and Award</h2>
 			<p>Avery was born an Iowa State Cyclone. Avery’s lifelong passion for Iowa State led him to study meteorology at his beloved university. He was fascinated by storms and the science of weather from the age of three. Family and friends knew they could turn to Avery for a personal weather report at any time. He found his home in brotherhood and faith when he joined Beta Sigma Psi Fraternity. In his free time at Iowa State, he was also an enthusiastic member of the Cyclone Hockey Pep Band.</p>
 			<br>
@@ -22,4 +22,3 @@ section: resources
 		</div>
 	</div>
 </section>
-
