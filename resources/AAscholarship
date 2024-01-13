@@ -4,7 +4,7 @@ layout: page
 section: resources
 ---
 
-<section class="homepage-section events-section">
+<section class="aascholarship-section story-section">
 	<div class="container">
 		<div class="col-sm-4">
 			<img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Anderson.jpg" alt="Avery Anderson">
