@@ -7,7 +7,7 @@ section: resources
 <section class="aascholarship-section story-section">
 	<div class="container">
 		<div class="col-sm-6">
-      			<img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Anderson.jpg" alt="Avery Anderson" width="75%">
+      			<img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Anderson.jpg" alt="Avery Anderson">
 		</div>
 		<div class="col-sm-6">
      			<h2>Avery's Story and Award</h2>
