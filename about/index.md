@@ -5,7 +5,7 @@ permalink: /about/
 section: about
 ---
 
-<h4>Who Are We?</h4>
+<h3>Who Are We?</h3>
 <p>ISU AMS is a local student chapter of the American Meteorological Society and a non-profit,
 student-run organization at Iowa State University. Our organization seeks to achieve four main
 purposes: to promote interest in the atmospheric sciences and related fields of study, to provide
@@ -13,7 +13,7 @@ fellowship among students and faculty, to serve the interests of our members and
 meteorological community, and to provide the community with a social and scientific point of
 contact for meteorological interests, specifically through educational outreach.</p>
  
-<h4>What Do We Do?</h4>
+<h3>What Do We Do?</h3>
 <p>As the five-time winner of the Outstanding Student Chapter of the Year, ISU AMS knows a thing
 or two about how to have a good time! One of the primary goals of ISU AMS is to provide a
 welcoming environment for all of our members. Through a wide variety of social events, our
@@ -33,17 +33,17 @@ grades. Our academic chair hosts review sessions for all of the meteorology clas
 to weekly tutoring sessions for math classes. As a result, our chapter has been selected for the
 AMS Honor Roll nearly a dozen times.</p>
 
-<h4>When Is It?</h4>
+<h3>When Is It?</h3>
 <p>ISU AMS holds monthly meetings on the last Tuesday of each month at 7:00 PM. Meetings last
 for approximately one hour and will discuss the details of upcoming events (all of which will be
 listed on our calendar). Additionally, each meeting has food!</p>
  
-<h4>How Do I Join?</h4>
+<h3>How Do I Join?</h3>
 <p>To join, simply attend a meeting and pay your dues to the treasurer.  While the majority of our
 members are Meteorology majors, any current student at Iowa State University is eligible for
 membership. We encourage all weather fanatics to join!</p>
 
-<h4>AMS Dues:</h4>
-<p>National Members: $10
-Regular Members: $15</p>
+<h3>AMS Dues:</h3>
+<p>National Members: $10</p>
+<p>Regular Members: $15</p>
 
