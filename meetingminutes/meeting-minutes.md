@@ -39,7 +39,7 @@ section: about
   - [September 29, 2020]({{ site.baseurl }}/uploads/minutes/2020-21/9-29-20 Minutes.pdf)
   - [October 27, 2020]({{ site.baseurl }}/uploads/minutes/2020-21/10-27-20 Minutes.pdf)
   - [January 26, 2021]({{ site.baseurl }}/uploads/minutes/2020-21/1-26-20 Minutes.pdf)
-  - [February 23, 2021]({{ site.baseurl }}/uploads/minutes/2020-21/2-23-21 Minutes.pdf)
+  - [February 23, 2021]({{ site.baseurl }}uploads/minutes/2019-20/Meeting Minutes - 2-25-20.pdf)
   - [March 30, 2021]({{ site.baseurl }}/uploads/minutes/2020-21/3-30-21 Minutes.pdf)
 
 **2019-2020**
@@ -49,7 +49,7 @@ section: about
   - [October 29, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/10-29-19 Minutes.pdf)
   - [December 3, 2019]({{ site.baseurl }}/uploads/minutes/2019-20/12-03-19 Minutes.pdf)
   - [January 28, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/Meeting Minutes - 01_28_2020.pdf)
-  - [February 25, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/Meeting Minutes - 2-25-2020.pdf)
+  - [February 25, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/Meeting Minutes - 2-25-20.pdf)
   - [March 24, 2020]({{ site.baseurl }}/uploads/minutes/2019-20/3-24-20 Agenda.pdf)
   
 **2018-2019**
