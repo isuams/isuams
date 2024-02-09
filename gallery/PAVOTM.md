@@ -9,33 +9,32 @@ Each month, our chapter members vote for the best weather photo and club photo o
 <section class="photo-section">
     <div class="container">
         <h2>2018-2019 Photos of the Month</h2>
+        <h3>August Photos of the Month</h3>
         <div class="row">
-            <!-- August Photos -->
-            <div class="col-sm-6">
-                <!-- Center the photo within the column -->
+            <div class="col-sm-6 offset-sm-3">
                 <div class="text-center">
-                    <!-- Your photo for August -->
                     <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Aug_2018_Wx.jpg?raw=true" alt="Aug 2018 Wx Photo">
                     <p>Weather Photo of the Month</p>
                 </div>
             </div>
-            <!-- September Photos -->
-            <div class="col-sm-6">
-                <!-- Two photos for September -->
-                <div class="row">
-                    <div class="col-sm-6">
-                        <!-- Your photo for September -->
-                        <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Club.jpg?raw=true" alt="Sep 2018 Club Photo">
-                        <p>Club Photo of the Month</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <!-- Your photo for September -->
-                        <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Wx.jpeg?raw=true" alt="Sep 2019 Wx Photo">
-                        <p>Weather Photo of the Month</p>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- Repeat for subsequent months -->
     </div>
 </section>
+
+<section class="photo-section">
+    <div class="container">
+        <h3>September Photos of the Month</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Club.jpg?raw=true" alt="Sep 2018 Club Photo">
+                <p>Club Photo of the Month</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Wx.jpeg?raw=true" alt="Sep 2019 Wx Photo">
+                <p>Weather Photo of the Month</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Repeat the pattern for subsequent months -->
