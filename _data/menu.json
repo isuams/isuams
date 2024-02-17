@@ -120,6 +120,12 @@
 				"has_subpages": false
 			},
 			{
+				"page": "iowa-state-weather",
+				"permalink": "/resources/isu-wx",
+				"name": "Iowa State Weather",
+				"has_subpages": false
+			},
+			{
 				"page": "alumni-connections",
 				"permalink": "/resources/alumni-connections",
 				"name": "Alumni Connections",
@@ -199,26 +205,6 @@
                                 "name": "Yearly Scrapbooks",
                                 "has_subpages": false
       			 },
-		]
-	},
-	{
-		"page": "news",
-		"permalink": "/news/",
-		"name": "News and Features",
-		"has_subpages": true,
-		"subpages": [
-			{
-				"page": "iowa-state-weather",
-				"permalink": "/news/iowa-state-weather",
-				"name": "Iowa State Weather",
-				"has_subpages": false
-			},
-		        {
-                                "page": "photo-gallery",
-                                "permalink": "/news/photo-gallery",
-                                "name": "Photo Gallery",
-                                "has_subpages": false
-      			 }
 		]
 	},
 	{
