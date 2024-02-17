@@ -226,5 +226,11 @@
 		"permalink": "/meetingminutes/meeting-minutes",
 		"name": "Meeting Minutes",
 		"has_subpages": false
+	},
+	{
+		"page": "new-students",
+		"permalink": "/new_students/",
+		"name": "Prospective Students",
+		"has_subpages": false
 	}
 ]
