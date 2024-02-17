@@ -166,6 +166,12 @@
 				"permalink": "/resources/ttc",
 				"name": "Tornado Target Contest",
 				"has_subpages": false
+			},
+			{
+				"page": "fundisu",
+				"permalink": "/resources/fundisu",
+				"name": "Fund ISU",
+				"has_subpages": false
 			}
 		]
 	},
