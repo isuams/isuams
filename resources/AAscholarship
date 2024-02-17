@@ -17,7 +17,7 @@ section: resources
                 <a href="https://www.averyandersenfoundation.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Avery Anderson Foundation</a>
             </div>
             <div class="col-sm-3">
-                <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Anderson.jpg" alt="Avery Anderson" style="max-width: 100%; height: auto;">
+                <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Anderson.jpg?raw=true" alt="Avery Anderson" class="rotateimg90" style="width:50%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
             </div>
         </div>
     </div>
