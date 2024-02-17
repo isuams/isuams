@@ -8,8 +8,8 @@ Each year, our historian puts together a scrapbook of photos from throughout the
 
 <section>
   <h2>Most Recent Scrapbook</h2>
-  <a href="https://www.canva.com/design/DAFhWNmnq9U/1CWFLqNS9PwrhEIvtzA-xA/view?utm_content=DAFhWNmnq9U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary">2022-2023 Scrapbook</a>
+  <a href="https://www.canva.com/design/DAFhWNmnq9U/1CWFLqNS9PwrhEIvtzA-xA/view?utm_content=DAFhWNmnq9U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="btn btn-primary" target="_blank">2022-2023 Scrapbook</a>
 </section>
 
 <h2>Previous Years Scrapbooks</h2>
-<a href="https://www.canva.com/design/DAFhWNmnq9U/1CWFLqNS9PwrhEIvtzA-xA/view?utm_content=DAFhWNmnq9U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">2022-2023 Scrapbook</a>
+<a href="https://www.canva.com/design/DAFhWNmnq9U/1CWFLqNS9PwrhEIvtzA-xA/view?utm_content=DAFhWNmnq9U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">2022-2023 Scrapbook</a>
