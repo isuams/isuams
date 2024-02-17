@@ -226,11 +226,5 @@
 		"permalink": "/meetingminutes/meeting-minutes",
 		"name": "Meeting Minutes",
 		"has_subpages": false
-	},
-	{
-		"page": "tornado-contest",
-		"permalink": "/TTC/",
-		"name": "Tornado Contest",
-		"has_subpages": false
 	}
 ]
