@@ -11,18 +11,19 @@ section: resources
     <p>Avery knew you could be a person of faith and a scientist. He believed you could be a rabid sports fan and a devoted musician. He was well-rounded in his interests and we think that is important. Being inclusive was important to Avery and it is something we celebrate.</p>
     <p>On December 23rd, 2021, Avery was killed in a car accident near his home in Atlantic, Iowa. Avery squeezed every moment out of his 20 years on this earth. He gave his whole heart to everything that spoke to him, and he displayed this enthusiasm for everyone to see. Avery’s faith was a cornerstone of his life. He was a lifelong member of St. Paul’s Lutheran Church in Atlantic. But nowhere did his light shine brighter than as a counselor at Ingham Okoboji Lutheran Bible Camp. His love of the Lord was contagious and influenced those around him.</p>
     <p>The Avery Andersen Friend in Meteorology Award goes to a graduating senior in the Iowa State University Meteorology program. The award celebrates the senior who exhibits enthusiasm for the field of meteorology and support to their fellow meteorology students. ISU AMS members in their sophomore and junior years will vote on the person they feel best exhibits these characteristics. The meteorology program awards committee will then determine the winner from the top vote getters based on the activity within the department, university, and their community. The winner will receive a $1,000 cash award.</p>
-    <br>
     <a href="https://www.averyandersenfoundation.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Avery Anderson Foundation</a>
 </section>
 
-<section class"winnerone-section">
+<section class="header-section">
     <h2>Previous Years Winners</h2>
+</section>
+
+<section class="2023-section">
+    <h3>2023 Winner: AJ Rickman</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_AJ_2023.jpeg?raw=true" alt="2023 Winner: AJ Rickman" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
+</section>
+
+<section class="2022-section">
     <h3>2022 Winner: Marissa Osterloh</h3>
     <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_Marissa_2022.jpeg?raw=true" alt="2022 Winner: Marissa Osterloh" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
 </section>
-
-<section class"winnertwo-section">
-    <h3>2023 Winner: AJ Rickman</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Avery_AJ_2023.jpeg.jpeg?raw=true" alt="2022 Winner: Marissa Osterloh" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
-</section>
-
