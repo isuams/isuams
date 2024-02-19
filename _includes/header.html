@@ -30,6 +30,10 @@
 
 		<!-- Internal CSS -->
     		<style>
+			.navbar-nav > li > a {
+        			padding-top: 15px; /* Adjust vertical padding as needed */
+        			padding-bottom: 15px; /* Adjust vertical padding as needed */
+    			}
         		.dropdown:hover .dropdown-menu {
             			display: block;
         		}
@@ -93,20 +97,20 @@
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-  							{% for item in site.data.menu %}
-    								{% if item.has_subpages %}
-      									<li class="dropdown">
-        									<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ item.name }} <b class="caret"></b></a>
-        									<ul class="dropdown-menu">
-          										{% for subpage in item.subpages %}
-            											<li><a href="{{ base_path }}{{ subpage.permalink }}">{{ subpage.name }}</a></li>
-          										{% endfor %}
-        									</ul>
-      									</li>
-    								{% else %}
-      									<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
-    								{% endif %}
-  							{% endfor %}
+    							{% for item in site.data.menu %}
+        							{% if item.has_subpages %}
+            								<li class="dropdown">
+                								<a href="{{ base_path }}{{ item.permalink }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.name }} <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									{% for subpage in item.subpages %}
+                        									<li><a href="{{ base_path }}{{ subpage.permalink }}">{{ subpage.name }}</a></li>
+                    									{% endfor %}
+                								</ul>
+            								</li>
+        							{% else %}
+            								<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
+        							{% endif %}
+    							{% endfor %}
 						</ul>
 						<!-- Google Site Search -->
 						<form class="navbar-form navbar-right hidden-sm" role="search">
