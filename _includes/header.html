@@ -102,6 +102,8 @@
             								<li class="dropdown">
                 								<a href="{{ base_path }}{{ item.permalink }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.name }} <b class="caret"></b></a>
                 								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
                     									{% for subpage in item.subpages %}
                         									<li><a href="{{ base_path }}{{ subpage.permalink }}">{{ subpage.name }}</a></li>
                     									{% endfor %}
