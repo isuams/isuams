@@ -6,7 +6,6 @@ section: resources
 
 - [Weather Links](https://meteor.geol.iastate.edu/ams/resources/weather-links/)
 - [Iowa State Weather](https://meteor.geol.iastate.edu/ams/resources/isu-wx/)
-- [Alumni Connections](https://meteor.geol.iastate.edu/ams/resources/alumni-connections/)
 - [Academic Resources](https://meteor.geol.iastate.edu/ams/resources/academic-resources/)
 - [Avery Anderson Friend in Meteorology Scholarship](https://meteor.geol.iastate.edu/ams/resources/AAscholarship)
 - [Scholarships](https://meteor.geol.iastate.edu/ams/resources/scholarships/)
