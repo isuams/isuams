@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    .fakeimg {
+      height: 200px;
+    }
+    </style>
+  </head>
+  <body>
+
+   
+<!--Header with image-->
+<div class="bg-image p-3 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="col-sm-3 p-1"> 
+    <div class="row">
+      <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="today_forecast.html">Today's Forecast</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="#">Final Scores</a>
+        </li>  -->
+        <li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+        </li>   
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="Information_and_Scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
+
+<br>
+
+
+
+<div id="mission" class="md-2 p-3 text-white rounded" style="background-color: #68727E;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3 text-center">
+              <p>--_-_-_-_--- <br>
+                &nbsp;&nbsp;&nbsp;-_-_-_<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-_-_-<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-__-<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_-_<br>
+                _-<br>
+                &nbsp;-_<br>
+                  _-_</p>
+        
+            </div>
+
+            <div class="col-sm-6">
+                <h1 class="text-center">Our Mission:</h1>
+                <p class="text-center">This contest was designed to provide an educational experience in tornado forecasting through an objective, cooperative, and competitive environment. 
+                    This is achieved by bringing together forecasters from all walks of life within the field of meteorology, to discuss/refine their tornado forecasting techniques, submit forecasts, and receive verification. 
+                    The ultimate goal of the contest is to help current and future professionals improve public safety. </p>
+            </div>
+
+            <div class="col-sm-3 text-center">
+                <p>--_-_-_-_--- <br>
+                  &nbsp;&nbsp;&nbsp;-_-_-_<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-_-_-<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-__-<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_-_<br>
+                  _-<br>
+                  &nbsp;-_<br>
+                    _-_</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Display Current UTC Time-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <h4 class="text-center" id="currentTime"></h4>
+        <script type="text/javascript">
+          function updateCurrentTime() {
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = (today.getMonth() + 1).toString().padStart(2, '0');
+            var day = today.getDate().toString().padStart(2, '0');
+            var hour = today.getUTCHours().toString().padStart(2, '0');
+            var minute = today.getUTCMinutes().toString().padStart(2, '0');
+            var seconds = today.getUTCSeconds().toString().padStart(2, '0');
+
+
+            var currentTimeString = "Current UTC Time: " + month + "/" + day + "/" + year + " " + hour + ":" + minute + ":" + seconds;
+            document.getElementById("currentTime").innerHTML = currentTimeString;
+          }
+
+          // Update the time every second (1000 milliseconds)
+          setInterval(updateCurrentTime, 1000);
+
+          // Initial update
+          updateCurrentTime();
+        </script>
+      </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+
+<!--embed maps-->
+<div class="mt-4 p-5 text-dark rounded text-center">
+  <img class="text-left" src="https://www.spc.noaa.gov/products/activity_loop.gif" title="weather watches" width="700px"></img>
+</div>
+
+<!--Buttons to forms-->
+<div class="text-center">
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="button-box col-lg-12" style="padding: 10px  10px;"></div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Rescore Event Verification</a>
+        </div> 
+
+        <div class="col-sm-4">
+            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
+              <a href="https://drive.google.com/file/d/1uYOXvt01dxKAydVxmoqt6QCEDfIL4dbv/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">TTC Privacy Policy</a>
+        </div> 
+
+        <div class="col-sm-4">
+            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Unsubscribe from TTC</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Report Misconduct</a>
+        </div> 
+
+        <div class="col-sm-4">
+            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
+              <a href="https://drive.google.com/file/d/1kPc9Z_I9Gfjji68TJ35Txm0KtByZkI5q/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">TTC Terms and Conditions</a>
+        </div> 
+
+        <div class="col-sm-4">
+            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
+              <a href="#" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Support TTC</a>
+        </div> 
+    </div>
+</div>
+
+<br>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2024</p>
+    <p>TornadoTargetContest@gmail.com</p>
+  </div>
