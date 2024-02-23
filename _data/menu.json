@@ -82,12 +82,6 @@
 				"has_subpages": false
 			},
 			{
-				"page": "severe-weather-posters",
-				"permalink": "/outreach/severe-weather-posters",
-				"name": "Severe Weather Posters",
-				"has_subpages": false
-			},
-			{
 				"page": "gofurther",
 				"permalink": "/outreach/gofurther",
 				"name": "Go Further",
@@ -97,12 +91,6 @@
 				"page": "community",
 				"permalink": "/outreach/community",
 				"name": "Community Weather Awareness",
-				"has_subpages": false
-			},
-			{
-				"page": "science-fair",
-				"permalink": "/outreach/science-fair",
-				"name": "Science Fair",
 				"has_subpages": false
 			}
 		]
@@ -120,9 +108,9 @@
 				"has_subpages": false
 			},
 			{
-				"page": "alumni-connections",
-				"permalink": "/resources/alumni-connections",
-				"name": "Alumni Connections",
+				"page": "iowa-state-weather",
+				"permalink": "/resources/isu-wx",
+				"name": "Iowa State Weather",
 				"has_subpages": false
 			},
 			{
@@ -166,6 +154,12 @@
 				"permalink": "/resources/ttc",
 				"name": "Tornado Target Contest",
 				"has_subpages": false
+			},
+			{
+				"page": "fundisu",
+				"permalink": "/resources/fundisu",
+				"name": "Fund ISU",
+				"has_subpages": false
 			}
 		]
 	},
@@ -196,35 +190,21 @@
 		]
 	},
 	{
-		"page": "news",
-		"permalink": "/news/",
-		"name": "News and Features",
-		"has_subpages": true,
-		"subpages": [
-			{
-				"page": "iowa-state-weather",
-				"permalink": "/news/iowa-state-weather",
-				"name": "Iowa State Weather",
-				"has_subpages": false
-			},
-		        {
-                                "page": "photo-gallery",
-                                "permalink": "/news/photo-gallery",
-                                "name": "Photo Gallery",
-                                "has_subpages": false
-      			 },
-			{
-				"page": "fundisu",
-                                "permalink": "/news/fundisu",
-                                "name": "Fund ISU",
-                                "has_subpages": false
-			}	
-		]
-	},
-	{
 		"page": "meeting-minutes",
 		"permalink": "/meetingminutes/meeting-minutes",
 		"name": "Meeting Minutes",
+		"has_subpages": false
+	},
+	{
+		"page": "tornado-contest",
+		"permalink": "/TTC/",
+		"name": "Tornado Contest",
+		"has_subpages": false
+	},
+	{
+		"page": "new-students",
+		"permalink": "/new_students/",
+		"name": "New Students",
 		"has_subpages": false
 	}
 ]

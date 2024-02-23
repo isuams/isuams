@@ -27,6 +27,24 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		<!-- Internal CSS -->
+    		<style>
+			.navbar-nav > li > a {
+        			padding-top: 15px; /* Adjust vertical padding as needed */
+        			padding-bottom: 15px; /* Adjust vertical padding as needed */
+    			}
+        		.dropdown:hover .dropdown-menu {
+            			display: block;
+        		}
+
+        		.dropdown-menu {
+            			display: none;
+            			position: absolute;
+            			z-index: 1000;
+            			min-width: 160px;
+        		}
+    		</style>
 	</head>
 
 	<body role="document">
@@ -79,31 +97,23 @@
 					</div>
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							{% for item in site.data.menu %}
-								{% if item.permalink == page.url %}
-									<li class="active"><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
-								{% else %}
-									<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
-								{% endif %}
-							{% endfor %}
+    							{% for item in site.data.menu %}
+        							{% if item.has_subpages %}
+            								<li class="dropdown">
+                								<a href="{{ base_path }}{{ item.permalink }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.name }} <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
+                    									{% for subpage in item.subpages %}
+                        									<li><a href="{{ base_path }}{{ subpage.permalink }}">{{ subpage.name }}</a></li>
+                    									{% endfor %}
+                								</ul>
+            								</li>
+        							{% else %}
+            								<li><a href="{{ base_path }}{{ item.permalink }}">{{ item.name }}</a></li>
+        							{% endif %}
+    							{% endfor %}
 						</ul>
-						<!-- Google Site Search -->
-						<form class="navbar-form navbar-right hidden-sm" role="search">
-                            <div class="form-group"><div class="input-group">
-                                <script>
-                                  (function() {
-                                    var cx = '003258254394279584859:qs4zlqvsfko';
-                                    var gcse = document.createElement('script');
-                                    gcse.type = 'text/javascript';
-                                    gcse.async = true;
-                                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                                    var s = document.getElementsByTagName('script')[0];
-                                    s.parentNode.insertBefore(gcse, s);
-                                  })();
-                                </script>
-                                <gcse:searchbox-only></gcse:searchbox-only>
-                            </div></div>
-                        </form>
 					</div><!--/.nav-collapse -->
 				</div>
 			</nav>
