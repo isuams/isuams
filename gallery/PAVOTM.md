@@ -21,20 +21,4 @@ Each month, our chapter members vote for the best weather photo and club photo o
     </div>
 </section>
 
-<section class="photo-section">
-    <div class="container">
-        <h3>September Photos of the Month</h3>
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Club.jpg?raw=true" alt="Sep 2018 Club Photo">
-                <p>Club Photo of the Month</p>
-            </div>
-            <div class="col-sm-6">
-                <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Wx.jpeg?raw=true" alt="Sep 2019 Wx Photo">
-                <p>Weather Photo of the Month</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Repeat the pattern for subsequent months -->
