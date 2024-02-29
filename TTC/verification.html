@@ -19,16 +19,28 @@
   </head>
   <body>
 
-   
+<style>
+.bg-color-bar {
+  background-color: white;
+  padding: 10px 10px; /* Adjust this value for top and bottom padding as needed */
+}
+</style> 
+ 
 <!--Header with image-->
-<div class="bg-image p-3 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
-  <div class="col-sm-3 p-1"> 
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
     <div class="row">
-      <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
     </div>
   </div>
 </div>
-
 
 
 <!-- Navigation bar-->
@@ -137,8 +149,8 @@
             var day = formattedDate.getUTCDate().toString().padStart(2, '0');
 
             // TODO: Use the selectedDate to update figure1 content
-            var filepath = 'verification/' + year + '_' + month + '_' + day + '_fig.html'
-            var filepath2 = 'verification/' + year + '_' + month + '_' + day + '_table.html'
+            var filepath = 'verification/plots/' + year + '_' + month + '_' + day + '_fig.html'
+            var filepath2 = 'verification/tables/' + year + '_' + month + '_' + day + '_table.html'
 
             $('#figure1').attr('src', filepath);
             $('#figure2').attr('src', filepath2);
@@ -162,20 +174,12 @@
 <br><br><br>
 
 <!--Rescore Event-->
-<nav class="navbar navbar-expand-sm" style="background-color: hsl(213, 56%, 87%)">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-          <a class="nav-link mx-auto" href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" style="color: black"><h4>Rescore Event (Verification)</h4></a>
-      </li>
-    </ul>
-  </div>  
-</nav>
-<br>
-
+<div class="bg-color-bar">
+	<div class="row d-flex justify-content-center">
+       <div class="button-box"></div>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: #b40024; border: 1px #000000">Request Rescoring of an Event</a>
+	</div>
+</div>
 
 <!--Footer-->
 <div class="jumbotron text-center" style="margin-bottom:0">
