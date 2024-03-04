@@ -102,14 +102,29 @@
     var iframe = document.createElement('iframe');
 
     // Set attributes for the iframe
-    iframe.setAttribute('src', url);
     iframe.setAttribute('width', '1000px');
     iframe.setAttribute('height', '700px');
     iframe.setAttribute('frameborder', '0');
 
-    // Clear previous content and append the iframe to the container
-    document.getElementById('iframeContainer').innerHTML = '';
-    document.getElementById('iframeContainer').appendChild(iframe);
+    // Check if the file exists
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', url, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          // File exists, set the src attribute
+          iframe.setAttribute('src', url);
+        } else {
+          // File not found, display a different message
+          iframe.setAttribute('src', 'leaderboards/Leaderboard_to_come.html');
+        }
+
+        // Clear previous content and append the iframe to the container
+        document.getElementById('iframeContainer').innerHTML = '';
+        document.getElementById('iframeContainer').appendChild(iframe);
+      }
+    };
+    xhr.send();
   }
 </script>
 
