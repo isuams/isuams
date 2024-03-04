@@ -94,11 +94,10 @@
 </div>-->
 
 
-<!--Plot based on today's date-->
-<!--figure-->
+<!-- Plot based on today's date -->
 <div class="row">
   <div class="col-md-12">
-    <div class="mt-4  text-dark rounded text-center">
+    <div class="mt-4 text-dark rounded text-center">
       <div style="max-width: 1000px; margin: 0 auto;">
         <iframe class="myIframe" target="_blank" id="figureIframe" style="width: 100%; height: 720px;"></iframe>
       </div>
@@ -106,18 +105,16 @@
   </div>
 </div>
 
-<!--Table-->
+<!-- Table -->
 <div class="row">
   <div class="col-md-12">
-    <div class="mt-4  text-dark rounded text-center">
+    <div class="mt-4 text-dark rounded text-center">
       <div style="max-width: 1000px; margin: 0 auto;">
         <iframe class="myIframe" target="_blank" id="tableIframe" style="width: 100%; height: 720px;"></iframe>
       </div>
     </div>
   </div>
 </div>
-
-
 
 <!-- Bootstrap JS bundle (popper.js included) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -129,9 +126,29 @@
   today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
   const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
 
-  // Update iframe src attributes with dynamic file names
-  document.getElementById('figureIframe').src = `todays_forecast/plots/${formattedDate}_fig.html`;
-  document.getElementById('tableIframe').src = `todays_forecast/tables/${formattedDate}_table.html`;
+  // Function to check if the file exists
+  function fileExists(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        callback(xhr.status === 200);
+      }
+    };
+    xhr.open('HEAD', url, true);
+    xhr.send();
+  }
+
+  // Update iframe src attributes with dynamic file names or display "No Forecast Today"
+  const figureIframe = document.getElementById('figureIframe');
+  const tableIframe = document.getElementById('tableIframe');
+
+  fileExists(`todays_forecast/plots/${formattedDate}_fig.html`, function (figureExists) {
+    figureIframe.src = figureExists ? `todays_forecast/plots/${formattedDate}_fig.html` : 'No_Forecast_Today.html';
+  });
+
+  fileExists(`todays_forecast/tables/${formattedDate}_table.html`, function (tableExists) {
+    tableIframe.src = tableExists ? `todays_forecast/tables/${formattedDate}_table.html` : 'No_Forecast_Today.html';
+  });
 </script>
 
 
