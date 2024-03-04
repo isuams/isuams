@@ -143,11 +143,11 @@
   const tableIframe = document.getElementById('tableIframe');
 
   fileExists(`todays_forecast/plots/${formattedDate}_fig.html`, function (figureExists) {
-    figureIframe.src = figureExists ? `todays_forecast/plots/${formattedDate}_fig.html` : 'No_Forecast_Today.html';
+    figureIframe.src = figureExists ? `todays_forecast/plots/${formattedDate}_fig.html` : 'todays_forecast/No_Forecast_Today.html';
   });
 
   fileExists(`todays_forecast/tables/${formattedDate}_table.html`, function (tableExists) {
-    tableIframe.src = tableExists ? `todays_forecast/tables/${formattedDate}_table.html` : 'No_Forecast_Today.html';
+    tableIframe.src = tableExists ? `todays_forecast/tables/${formattedDate}_table.html` : 'todays_forecast/No_Forecast_Today.html';
   });
 </script>
 
