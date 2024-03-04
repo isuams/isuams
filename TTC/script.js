@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display a popup with the clicked coordinates
     L.popup()
       .setLatLng(e.latlng)
-      .setContent("Coordinates: " + e.latlng.toString())
+      .setContent("Coordinates: (" + e.latlng.lat.toFixed(4) + ", " + e.latlng.lng.toFixed(4) + ")")
       .openOn(map);
   });
 });
