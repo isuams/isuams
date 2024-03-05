@@ -73,18 +73,28 @@
 <!--Example from chatgpt-->
 
 <div class="container mt-5">
-  <div class="row bg-secondary text-dark rounded text-center p-3" >
-    <div class="col-md-12 text-center center-block">
-      <h3 style="color: #f5f2f2;">Select Region:</h3>
-      <button type="button" class="btn" style="background-color: #66c2a5" onclick="displayIframe('leaderboards/national.html')">National</button>
-      <button type="button" class="btn " style="background-color: #8da0cb" onclick="displayIframe('leaderboards/stats.html')">Stats</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southern_plains.html')">Southern Plains</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southeast.html')">Southeast</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/midwest.html')">Midwest</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/northern_plains.html')">Northern Plains</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/mountain_west.html')">Mountain West</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/east.html')">East</button>
-    </div>
+  <div class="row bg-secondary text-dark rounded text-center p-2" >
+	<div class="col-md-12 text-center center-block">
+		<div class="row justify-content-center p-2">
+			<h3 style="color: #f5f2f2;">Select Leaderboard Type/Region:</h3>
+		</div>
+		<div class="row p-1">
+		<div class="col-md-12 text-center center-block">
+			<button type="button" class="btn btn-lg" style="background-color: #66c2a5" onclick="displayIframe('leaderboards/national.html')">National</button>
+			<button type="button" class="btn btn-lg" style="background-color: #8da0cb" onclick="displayIframe('leaderboards/stats.html')">Stats</button>
+		</div>
+		</div>
+		<div class="row p-2" >
+		<div class="col-md-12 text-center center-block p-1">
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southern_plains.html')">Southern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southeast.html')">Southeast</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/midwest.html')">Midwest</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/northern_plains.html')">Northern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/mountain_west.html')">Mountain West</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/east.html')">East</button>
+		</div>
+		</div>
+	</div>
   </div>
 
   <div class="row mt-4 mt-4 justify-content-center">
@@ -92,7 +102,7 @@
       <div id="iframeContainer"></div>
     </div>
   </div>
-</div>
+</div>>
 
 <!-- Bootstrap JS bundle (popper.js included) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -102,8 +112,8 @@
     var iframe = document.createElement('iframe');
 
     // Set attributes for the iframe
-    iframe.setAttribute('width', '1000px');
-    iframe.setAttribute('height', '700px');
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('height', '100%');
     iframe.setAttribute('frameborder', '0');
 
     // Check if the file exists
