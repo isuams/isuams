@@ -75,7 +75,17 @@
   </nav>
 
 <br>
-
+<!--Notice-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="mt-4  text-dark rounded text-center">
+      <div style="max-width: 100%; margin: 0 auto;">
+        <h4>Data will be made available following the release of the 1630UTC SPC outlook, generally by 1800UTC.</h4>
+		<h4>This page is undergoing rapid updates and development, please be patient.</h4>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Button to download placefile-->
 <div class="mt-4 text-center">
   <div class="container mt-5">
@@ -124,11 +134,28 @@
   const centralTimeOptions = { timeZone: 'America/Chicago', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
   today.toLocaleString('en-US', centralTimeOptions);
   today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
-  const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
+
+  // Set the end time to 7 am the following day
+  const endTomorrow = new Date(today);
+  endTomorrow.setDate(endTomorrow.getDate() + 1); // Move to the next day
+  endTomorrow.setHours(7, 0, 0, 0); // Set time to 7 am
 
   // Update iframe src attributes with dynamic file names
-  document.getElementById('figureIframe').src = `todays_forecasts/plots/${formattedDate}_fig.html`;
-  document.getElementById('tableIframe').src = `todays_forecasts/tables/${formattedDate}_table.html`;
+  const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
+  const formattedEndTomorrow = endTomorrow.toISOString();
+
+  document.getElementById('figureIframe').src = 'todays_forecasts/plots/${formattedDate}_fig.html';
+  document.getElementById('tableIframe').src = 'todays_forecasts/tables/${formattedDate}_table.html';
+
+  // Update the iframe source every minute to keep the plot until 7 am tomorrow
+  setInterval(() => {
+    const currentTime = new Date();
+    if (currentTime >= endTomorrow) {
+      // If the current time is after 7 am tomorrow, remove the plot
+      document.getElementById('figureIframe').src = '';
+      document.getElementById('tableIframe').src = '';
+    }
+  }, 60000); // Check every minute
 </script>
 
 
