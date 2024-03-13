@@ -81,7 +81,7 @@
     <div class="mt-4  text-dark rounded text-center">
       <div style="max-width: 100%; margin: 0 auto;">
         <h4>Data will be made available following the release of the 1630UTC SPC outlook, generally by 1800UTC.</h4>
-		<h4>This page is undergoing rapid updates and development, please be patient. "Test"</h4>
+		<h4>This page is undergoing rapid updates and development, please be patient.</h4>
       </div>
     </div>
   </div>
@@ -144,8 +144,9 @@
   const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
   const formattedEndTomorrow = endTomorrow.toISOString();
 
-  document.getElementById('figureIframe').src = 'todays_forecasts/plots/${formattedDate}_fig.html';
-  document.getElementById('tableIframe').src = 'todays_forecasts/tables/${formattedDate}_table.html';
+  // Update iframe src attributes with dynamic file names
+  document.getElementById('figureIframe').src = `todays_forecasts/plots/${formattedDate}_fig.html`;
+  document.getElementById('tableIframe').src = `todays_forecasts/tables/${formattedDate}_table.html`;
 
   // Update the iframe source every minute to keep the plot until 7 am tomorrow
   setInterval(() => {
