@@ -1,0 +1,2656 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-03-13 14:53:46</td>
+      <td>118</td>
+      <td>Charlie Lichterman</td>
+      <td>YesTor</td>
+      <td>Rossville, Kansas</td>
+      <td>39.14</td>
+      <td>-95.96</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.80</td>
+      <td>TOP, NA</td>
+      <td>61.20</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 03:19:11</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Rossville, KS</td>
+      <td>39.16</td>
+      <td>-95.93</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.90</td>
+      <td>TOP, NA</td>
+      <td>61.00</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:25:47</td>
+      <td>188</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Volland, KS</td>
+      <td>38.95</td>
+      <td>-96.44</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2.40</td>
+      <td>Volland, KS</td>
+      <td>59.50</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:35:36</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Grove, KS</td>
+      <td>39.16</td>
+      <td>-95.85</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4.50</td>
+      <td>TOP, NA</td>
+      <td>45.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:20:55</td>
+      <td>24</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>St Marys, KS</td>
+      <td>39.19</td>
+      <td>-96.06</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>1</td>
+      <td>6.10</td>
+      <td>TOP, NA</td>
+      <td>40.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:29:25</td>
+      <td>173</td>
+      <td>Chase Brewster</td>
+      <td>YesTor</td>
+      <td>Saint Marys, KS</td>
+      <td>39.19</td>
+      <td>-96.07</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>2</td>
+      <td>1</td>
+      <td>6.20</td>
+      <td>TOP, NA</td>
+      <td>40.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 11:18:13</td>
+      <td>206</td>
+      <td>drawablefish</td>
+      <td>YesTor</td>
+      <td>Topeka, KS</td>
+      <td>39.13</td>
+      <td>-95.82</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>7.00</td>
+      <td>TOP, NA</td>
+      <td>35.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:16:37</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Emmett, KS</td>
+      <td>39.27</td>
+      <td>-96.04</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>8.10</td>
+      <td>TOP, NA</td>
+      <td>34.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:15:30</td>
+      <td>146</td>
+      <td>Marcus Reynolds</td>
+      <td>YesTor</td>
+      <td>Wamego, KS</td>
+      <td>39.11</td>
+      <td>-96.28</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>9.50</td>
+      <td>4 SW Alma, KS</td>
+      <td>33.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:32:17</td>
+      <td>202</td>
+      <td>Cole Sellers</td>
+      <td>YesTor</td>
+      <td>Topeka, KS</td>
+      <td>39.15</td>
+      <td>-95.74</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>10.40</td>
+      <td>TOP, NA</td>
+      <td>33.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:17:50</td>
+      <td>113</td>
+      <td>Jacob Stichter</td>
+      <td>YesTor</td>
+      <td>Emmett, KS</td>
+      <td>39.31</td>
+      <td>-96.05</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>10.50</td>
+      <td>TOP, NA</td>
+      <td>29.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:26:09</td>
+      <td>227</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Emmett, KS</td>
+      <td>39.31</td>
+      <td>-96.04</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>10.70</td>
+      <td>TOP, NA</td>
+      <td>33.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:30:44</td>
+      <td>181</td>
+      <td>Kyle "there are gonna be a million forecast points around me, aren't there?" Hugeback</td>
+      <td>YesTor</td>
+      <td>Newbury/Paxico, KS</td>
+      <td>39.08</td>
+      <td>-96.17</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>1</td>
+      <td>10.80</td>
+      <td>TOP, NA</td>
+      <td>37.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:36:49</td>
+      <td>36</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Emmett, KS</td>
+      <td>39.33</td>
+      <td>-96.04</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>11.40</td>
+      <td>TOP, NA</td>
+      <td>32.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:24:11</td>
+      <td>133</td>
+      <td>Kevin Mahoney</td>
+      <td>YesTor</td>
+      <td>Hoyt, KS</td>
+      <td>39.25</td>
+      <td>-95.71</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>1</td>
+      <td>12.60</td>
+      <td>TOP, NA</td>
+      <td>40.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:51:27</td>
+      <td>138</td>
+      <td>Jack Zwolinski</td>
+      <td>YesTor</td>
+      <td>Emmett, KS</td>
+      <td>39.29</td>
+      <td>-96.16</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>13.90</td>
+      <td>TOP, NA</td>
+      <td>27.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:16:14</td>
+      <td>110</td>
+      <td>Ryan Dreeszen</td>
+      <td>YesTor</td>
+      <td>Birminghman, KS</td>
+      <td>39.39</td>
+      <td>-95.91</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>14.00</td>
+      <td>TOP, NA</td>
+      <td>27.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:04:44</td>
+      <td>44</td>
+      <td>Ben Jablonski</td>
+      <td>YesTor</td>
+      <td>Topeka, KS</td>
+      <td>39.03</td>
+      <td>-95.74</td>
+      <td>Yes</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.20</td>
+      <td>TOP, NA</td>
+      <td>19.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 03:14:06</td>
+      <td>229</td>
+      <td>Addison Bramini</td>
+      <td>YesTor</td>
+      <td>holton, KS</td>
+      <td>39.34</td>
+      <td>-95.72</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>1</td>
+      <td>15.20</td>
+      <td>TOP, NA</td>
+      <td>38.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:16:17</td>
+      <td>41</td>
+      <td>Christian Bricking</td>
+      <td>YesTor</td>
+      <td>Grant, KS</td>
+      <td>39.41</td>
+      <td>-95.94</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>15.40</td>
+      <td>TOP, NA</td>
+      <td>26.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:05:05</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>YesTor</td>
+      <td>Mayetta, KS</td>
+      <td>39.34</td>
+      <td>-95.72</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>1</td>
+      <td>15.40</td>
+      <td>TOP, NA</td>
+      <td>38.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:56:22</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Hoyt, KS</td>
+      <td>39.25</td>
+      <td>-95.65</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>3</td>
+      <td>1</td>
+      <td>15.60</td>
+      <td>TOP, NA</td>
+      <td>38.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 05:16:43</td>
+      <td>200</td>
+      <td>Aaron D</td>
+      <td>YesTor</td>
+      <td>Manhattan, KS</td>
+      <td>39.09</td>
+      <td>-96.63</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>15.60</td>
+      <td>Volland, KS</td>
+      <td>30.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 11:22:36</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Topeka, KS</td>
+      <td>39.05</td>
+      <td>-95.68</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.90</td>
+      <td>TOP, NA</td>
+      <td>18.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:50:06</td>
+      <td>148</td>
+      <td>August M</td>
+      <td>YesTor</td>
+      <td>Council Grove, KS</td>
+      <td>38.64</td>
+      <td>-96.48</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.90</td>
+      <td>TOP, NA</td>
+      <td>18.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:05:12</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>YesTor</td>
+      <td>Holton, KS</td>
+      <td>39.40</td>
+      <td>-95.80</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>16.20</td>
+      <td>TOP, NA</td>
+      <td>26.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 11:22:26</td>
+      <td>134</td>
+      <td>Bryce Casper</td>
+      <td>YesTor</td>
+      <td>Manhattan, KS</td>
+      <td>39.17</td>
+      <td>-96.56</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>16.80</td>
+      <td>TOP, NA</td>
+      <td>29.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:45:57</td>
+      <td>154</td>
+      <td>Jbean45</td>
+      <td>YesTor</td>
+      <td>Auburn, KS</td>
+      <td>38.91</td>
+      <td>-95.80</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.20</td>
+      <td>TOP, NA</td>
+      <td>17.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:44:38</td>
+      <td>30</td>
+      <td>Mason C.</td>
+      <td>YesTor</td>
+      <td>Meriden, KS</td>
+      <td>39.21</td>
+      <td>-95.59</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>4</td>
+      <td>0</td>
+      <td>18.20</td>
+      <td>TOP, NA</td>
+      <td>33.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:56:49</td>
+      <td>143</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Auburn, KS</td>
+      <td>38.88</td>
+      <td>-95.85</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.00</td>
+      <td>TOP, NA</td>
+      <td>17.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:42:27</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Auburn, KS</td>
+      <td>38.89</td>
+      <td>-95.80</td>
+      <td>Yes</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.50</td>
+      <td>TOP, NA</td>
+      <td>16.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:56:27</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Allen, KS</td>
+      <td>38.66</td>
+      <td>-96.17</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.70</td>
+      <td>TOP, NA</td>
+      <td>16.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:48:07</td>
+      <td>209</td>
+      <td>WeatherboySuper</td>
+      <td>YesTor</td>
+      <td>Manhattan, KS</td>
+      <td>39.28</td>
+      <td>-96.49</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.00</td>
+      <td>TOP, NA</td>
+      <td>16.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 03:23:15</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Holton, KS</td>
+      <td>39.47</td>
+      <td>-95.73</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.20</td>
+      <td>TOP, NA</td>
+      <td>23.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:45:23</td>
+      <td>84</td>
+      <td>Jeremy Clarkson</td>
+      <td>YesTor</td>
+      <td>Holton, KS</td>
+      <td>39.47</td>
+      <td>-95.72</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.50</td>
+      <td>TOP, NA</td>
+      <td>23.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:43:48</td>
+      <td>101</td>
+      <td>Koji</td>
+      <td>YesTor</td>
+      <td>Harveyville, KS</td>
+      <td>38.79</td>
+      <td>-95.96</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.80</td>
+      <td>TOP, NA</td>
+      <td>15.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:02:25</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Fremont, KS</td>
+      <td>38.59</td>
+      <td>-96.18</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.00</td>
+      <td>TOP, NA</td>
+      <td>15.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:44:17</td>
+      <td>29</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>Valley Falls, KS</td>
+      <td>39.40</td>
+      <td>-95.58</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>24.00</td>
+      <td>TOP, NA</td>
+      <td>27.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:18:33</td>
+      <td>26</td>
+      <td>Casey Shanaberger</td>
+      <td>YesTor</td>
+      <td>Admire, KS</td>
+      <td>38.65</td>
+      <td>-96.09</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.30</td>
+      <td>TOP, NA</td>
+      <td>15.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:58:29</td>
+      <td>215</td>
+      <td>Meteoroloquads</td>
+      <td>YesTor</td>
+      <td>Onaga, KS</td>
+      <td>39.49</td>
+      <td>-96.17</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.50</td>
+      <td>TOP, NA</td>
+      <td>15.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.95</td>
+      <td>-95.57</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.50</td>
+      <td>TOP, NA</td>
+      <td>15.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:59:38</td>
+      <td>213</td>
+      <td>Daniel Schwab</td>
+      <td>YesTor</td>
+      <td>Onaga KS</td>
+      <td>39.49</td>
+      <td>-96.17</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.50</td>
+      <td>TOP, NA</td>
+      <td>15.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:49:04</td>
+      <td>70</td>
+      <td>Alex H.</td>
+      <td>YesTor</td>
+      <td>Admire KS</td>
+      <td>38.64</td>
+      <td>-96.10</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.70</td>
+      <td>TOP, NA</td>
+      <td>15.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:34:05</td>
+      <td>9</td>
+      <td>Bryce Bruggeman</td>
+      <td>YesTor</td>
+      <td>Valley Falls, KS</td>
+      <td>39.34</td>
+      <td>-95.51</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>1</td>
+      <td>24.80</td>
+      <td>TOP, NA</td>
+      <td>31.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:49:36</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>N of Keats, KS</td>
+      <td>39.27</td>
+      <td>-96.69</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.50</td>
+      <td>TOP, NA</td>
+      <td>14.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:51:12</td>
+      <td>35</td>
+      <td>RoamingmirrorBB</td>
+      <td>YesTor</td>
+      <td>Holton, KS</td>
+      <td>39.28</td>
+      <td>-95.44</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>27.00</td>
+      <td>TOP, NA</td>
+      <td>26.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:23:42</td>
+      <td>2</td>
+      <td>all the fauna</td>
+      <td>YesTor</td>
+      <td>Valley Falls, KS</td>
+      <td>39.34</td>
+      <td>-95.45</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>27.70</td>
+      <td>TOP, NA</td>
+      <td>26.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 02:49:12</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Valley Falls, KS</td>
+      <td>39.34</td>
+      <td>-95.45</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>0</td>
+      <td>27.70</td>
+      <td>TOP, NA</td>
+      <td>26.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:16:14</td>
+      <td>194</td>
+      <td>Michael Pagnanelli</td>
+      <td>YesTor</td>
+      <td>Manhatten, KS</td>
+      <td>39.36</td>
+      <td>-96.52</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.80</td>
+      <td>TOP, NA</td>
+      <td>14.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:09:25</td>
+      <td>170</td>
+      <td>William Thiesing</td>
+      <td>YesTor</td>
+      <td>Westmoreland, KS</td>
+      <td>39.38</td>
+      <td>-96.41</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>28.20</td>
+      <td>4 SW Alma, KS</td>
+      <td>14.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:48:25</td>
+      <td>234</td>
+      <td>Caleb A</td>
+      <td>YesTor</td>
+      <td>Valley Falls, KS</td>
+      <td>39.36</td>
+      <td>-95.45</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>1</td>
+      <td>28.30</td>
+      <td>TOP, NA</td>
+      <td>30.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:46:13</td>
+      <td>112</td>
+      <td>we ride at dawn</td>
+      <td>YesTor</td>
+      <td>Miller, KS</td>
+      <td>38.65</td>
+      <td>-95.99</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>28.80</td>
+      <td>TOP, NA</td>
+      <td>14.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:52:37</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Stull, KS</td>
+      <td>38.97</td>
+      <td>-95.45</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.40</td>
+      <td>TOP, NA</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:40:23</td>
+      <td>201</td>
+      <td>TheBetterDoge</td>
+      <td>YesTor</td>
+      <td>Perry KS</td>
+      <td>39.08</td>
+      <td>-95.39</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.40</td>
+      <td>TOP, NA</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:36:24</td>
+      <td>223</td>
+      <td>StarInBox</td>
+      <td>YesTor</td>
+      <td>Southeast of Topeka, KS</td>
+      <td>38.87</td>
+      <td>-95.54</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.60</td>
+      <td>TOP, NA</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:27:56</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>YesTor</td>
+      <td>Perry, KS</td>
+      <td>39.07</td>
+      <td>-95.38</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.40</td>
+      <td>TOP, NA</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:53:50</td>
+      <td>268</td>
+      <td>Luke Hatton</td>
+      <td>YesTor</td>
+      <td>Herington, KS</td>
+      <td>38.64</td>
+      <td>-96.95</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.00</td>
+      <td>TOP, NA</td>
+      <td>13.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:40:50</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Whiting, KS</td>
+      <td>39.56</td>
+      <td>-95.58</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>31.80</td>
+      <td>TOP, NA</td>
+      <td>21.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:07:37</td>
+      <td>203</td>
+      <td>Jonah</td>
+      <td>YesTor</td>
+      <td>Winchester, KS</td>
+      <td>39.30</td>
+      <td>-95.34</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>32.50</td>
+      <td>TOP, NA</td>
+      <td>21.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:17:28</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>Oksaloosa, KS</td>
+      <td>39.22</td>
+      <td>-95.31</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.00</td>
+      <td>TOP, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 12:59:41</td>
+      <td>151</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Oskaloosa, KS</td>
+      <td>39.22</td>
+      <td>-95.31</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.10</td>
+      <td>TOP, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:46:42</td>
+      <td>204</td>
+      <td>Andy Wade</td>
+      <td>YesTor</td>
+      <td>Riley, KS</td>
+      <td>39.34</td>
+      <td>-96.79</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.40</td>
+      <td>TOP, NA</td>
+      <td>13.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:34:26</td>
+      <td>77</td>
+      <td>Jacob E</td>
+      <td>YesTor</td>
+      <td>Oskaloosa Kansas</td>
+      <td>39.21</td>
+      <td>-95.30</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.70</td>
+      <td>TOP, NA</td>
+      <td>13.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:28:58</td>
+      <td>253</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Reading, KS</td>
+      <td>38.52</td>
+      <td>-95.96</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>35.60</td>
+      <td>TOP, NA</td>
+      <td>12.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:19:48</td>
+      <td>27</td>
+      <td>Christopher Scragg</td>
+      <td>YesTor</td>
+      <td>Valley Falls, KS</td>
+      <td>39.41</td>
+      <td>-95.33</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>35.70</td>
+      <td>TOP, NA</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:54:45</td>
+      <td>256</td>
+      <td>Brandon L</td>
+      <td>YesTor</td>
+      <td>Nortonville KS</td>
+      <td>39.42</td>
+      <td>-95.33</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>35.70</td>
+      <td>TOP, NA</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:35:16</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Nortonville, KS</td>
+      <td>39.43</td>
+      <td>-95.33</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>2</td>
+      <td>0</td>
+      <td>36.20</td>
+      <td>TOP, NA</td>
+      <td>20.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:47:32</td>
+      <td>6</td>
+      <td>James Bishop</td>
+      <td>YesTor</td>
+      <td>Barclay, Kansas</td>
+      <td>38.57</td>
+      <td>-95.88</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.80</td>
+      <td>TOP, NA</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 01:05:02</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Lawrence, KS</td>
+      <td>38.97</td>
+      <td>-95.28</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.60</td>
+      <td>TOP, NA</td>
+      <td>12.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:38:12</td>
+      <td>28</td>
+      <td>Sam Luthi</td>
+      <td>YesTor</td>
+      <td>Lawrence, KS</td>
+      <td>38.96</td>
+      <td>-95.27</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.40</td>
+      <td>TOP, NA</td>
+      <td>12.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:56:35</td>
+      <td>99</td>
+      <td>Zachary Egleston</td>
+      <td>YesTor</td>
+      <td>Woodstock, KS</td>
+      <td>39.14</td>
+      <td>-95.21</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.70</td>
+      <td>TOP, NA</td>
+      <td>12.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:23:49</td>
+      <td>186</td>
+      <td>Sophie Miller</td>
+      <td>YesTor</td>
+      <td>SW of Nortonville, KS</td>
+      <td>39.24</td>
+      <td>-95.21</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.90</td>
+      <td>TOP, NA</td>
+      <td>12.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:02:07</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>YesTor</td>
+      <td>Lawrence, KS</td>
+      <td>38.97</td>
+      <td>-95.24</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>39.60</td>
+      <td>TOP, NA</td>
+      <td>12.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:53:30</td>
+      <td>189</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Arvonia, KS</td>
+      <td>38.48</td>
+      <td>-95.90</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>39.90</td>
+      <td>TOP, NA</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 08:21:20</td>
+      <td>68</td>
+      <td>Gabe Zago</td>
+      <td>YesTor</td>
+      <td>Lyndon, KS</td>
+      <td>38.62</td>
+      <td>-95.64</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.10</td>
+      <td>TOP, NA</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:56:58</td>
+      <td>169</td>
+      <td>Joer151</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>39.03</td>
+      <td>-97.18</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.20</td>
+      <td>3 NE Alta Vista, KS</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 01:58:58</td>
+      <td>262</td>
+      <td>Adrian Z</td>
+      <td>YesTor</td>
+      <td>Lancaster, KS</td>
+      <td>39.57</td>
+      <td>-95.30</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>42.80</td>
+      <td>TOP, NA</td>
+      <td>15.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:46:44</td>
+      <td>67</td>
+      <td>Braxton Banks</td>
+      <td>YesTor</td>
+      <td>Pleasant Grove, KS</td>
+      <td>38.85</td>
+      <td>-95.25</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.80</td>
+      <td>TOP, NA</td>
+      <td>11.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:32:44</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>YesTor</td>
+      <td>Lancaster, KS</td>
+      <td>39.58</td>
+      <td>-95.30</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>42.90</td>
+      <td>TOP, NA</td>
+      <td>15.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:44:33</td>
+      <td>64</td>
+      <td>Baca</td>
+      <td>YesTor</td>
+      <td>Green, KS</td>
+      <td>39.38</td>
+      <td>-97.00</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.40</td>
+      <td>TOP, NA</td>
+      <td>11.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 09:22:13</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>YesTor</td>
+      <td>Reno, KS</td>
+      <td>39.05</td>
+      <td>-95.12</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.30</td>
+      <td>TOP, NA</td>
+      <td>11.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:41:21</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>YesTor</td>
+      <td>Lebo, KS</td>
+      <td>38.41</td>
+      <td>-95.86</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.80</td>
+      <td>TOP, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 12:52:48</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>Tonganoxie, KS</td>
+      <td>39.04</td>
+      <td>-95.11</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.10</td>
+      <td>TOP, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:37:39</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Tonganoxie, KS</td>
+      <td>39.11</td>
+      <td>-95.09</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.20</td>
+      <td>TOP, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 08:42:48</td>
+      <td>129</td>
+      <td>Kazaki</td>
+      <td>YesTor</td>
+      <td>Tonganoxie, KS</td>
+      <td>39.11</td>
+      <td>-95.09</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.40</td>
+      <td>TOP, NA</td>
+      <td>10.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 03:01:38</td>
+      <td>94</td>
+      <td>Matt P</td>
+      <td>YesTor</td>
+      <td>Tonganoxie, KS</td>
+      <td>39.11</td>
+      <td>-95.09</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.40</td>
+      <td>TOP, NA</td>
+      <td>10.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:29:29</td>
+      <td>156</td>
+      <td>Uzair</td>
+      <td>YesTor</td>
+      <td>Lancaster ,KS</td>
+      <td>39.53</td>
+      <td>-95.20</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>0</td>
+      <td>45.60</td>
+      <td>TOP, NA</td>
+      <td>14.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:57:55</td>
+      <td>165</td>
+      <td>Tyler v Hest</td>
+      <td>YesTor</td>
+      <td>Pomona, KS</td>
+      <td>38.61</td>
+      <td>-95.45</td>
+      <td>Yes</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>46.10</td>
+      <td>TOP, NA</td>
+      <td>10.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:44:02</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Baldwin City, KS</td>
+      <td>38.77</td>
+      <td>-95.19</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.50</td>
+      <td>TOP, NA</td>
+      <td>10.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:32:56</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>YesTor</td>
+      <td>Easton, KS</td>
+      <td>39.42</td>
+      <td>-95.06</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.20</td>
+      <td>TOP, NA</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 11:06:03</td>
+      <td>117</td>
+      <td>Andrew Liedtke</td>
+      <td>YesTor</td>
+      <td>Atchinson, Ks</td>
+      <td>39.48</td>
+      <td>-95.08</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.60</td>
+      <td>TOP, NA</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:36:45</td>
+      <td>82</td>
+      <td>Jason Gill</td>
+      <td>YesTor</td>
+      <td>Leavenworth, KS</td>
+      <td>39.26</td>
+      <td>-94.96</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.80</td>
+      <td>TOP, NA</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 11:55:14</td>
+      <td>97</td>
+      <td>Wyatt Huber</td>
+      <td>YesTor</td>
+      <td>Robinson, KS</td>
+      <td>39.79</td>
+      <td>-95.34</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.00</td>
+      <td>TOP, NA</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:35:22</td>
+      <td>14</td>
+      <td>John Massura</td>
+      <td>YesTor</td>
+      <td>Fairmount, KS</td>
+      <td>39.19</td>
+      <td>-94.95</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.40</td>
+      <td>TOP, NA</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:38:03</td>
+      <td>219</td>
+      <td>Ceacm24</td>
+      <td>YesTor</td>
+      <td>Leavenworth, KS</td>
+      <td>39.33</td>
+      <td>-94.95</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.30</td>
+      <td>TOP, NA</td>
+      <td>9.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:01:47</td>
+      <td>160</td>
+      <td>flappy787</td>
+      <td>YesTor</td>
+      <td>Edgerton, KS</td>
+      <td>38.79</td>
+      <td>-95.04</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.70</td>
+      <td>TOP, NA</td>
+      <td>9.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:22:19</td>
+      <td>259</td>
+      <td>Anthony Yattoni</td>
+      <td>YesTor</td>
+      <td>Edgerton, KS</td>
+      <td>38.82</td>
+      <td>-95.00</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>55.80</td>
+      <td>TOP, NA</td>
+      <td>8.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:57:18</td>
+      <td>45</td>
+      <td>Sam Ritter</td>
+      <td>YesTor</td>
+      <td>Kansas City, KS</td>
+      <td>39.14</td>
+      <td>-94.88</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.10</td>
+      <td>TOP, NA</td>
+      <td>8.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:40:21</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>New Strawn, Kansas</td>
+      <td>38.27</td>
+      <td>-95.72</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.10</td>
+      <td>TOP, NA</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 01:48:35</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Highland, KS</td>
+      <td>39.86</td>
+      <td>-95.27</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58.40</td>
+      <td>TOP, NA</td>
+      <td>8.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:19:53</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>YesTor</td>
+      <td>Highland, KS</td>
+      <td>39.88</td>
+      <td>-95.29</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58.90</td>
+      <td>TOP, NA</td>
+      <td>8.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:59:15</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>Burlington, KS</td>
+      <td>38.20</td>
+      <td>-95.76</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.20</td>
+      <td>TOP, NA</td>
+      <td>8.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:59:39</td>
+      <td>58</td>
+      <td>Gabriel Pena</td>
+      <td>YesTor</td>
+      <td>Troy, KS</td>
+      <td>39.75</td>
+      <td>-95.09</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.30</td>
+      <td>TOP, NA</td>
+      <td>8.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.17</td>
+      <td>-94.77</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.10</td>
+      <td>TOP, NA</td>
+      <td>7.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 11:51:25</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Platte City, MO</td>
+      <td>39.37</td>
+      <td>-94.79</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.20</td>
+      <td>TOP, NA</td>
+      <td>7.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 03:58:40</td>
+      <td>91</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Platte City, MO</td>
+      <td>39.37</td>
+      <td>-94.78</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.70</td>
+      <td>TOP, NA</td>
+      <td>7.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:59:36</td>
+      <td>180</td>
+      <td>Stefff</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>38.95</td>
+      <td>-94.79</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.20</td>
+      <td>TOP, NA</td>
+      <td>7.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:58:58</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>Overland Park, KS</td>
+      <td>38.99</td>
+      <td>-94.71</td>
+      <td>Yes</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.70</td>
+      <td>TOP, NA</td>
+      <td>6.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:56:35</td>
+      <td>135</td>
+      <td>Brix A</td>
+      <td>YesTor</td>
+      <td>Clyde KS</td>
+      <td>39.58</td>
+      <td>-97.39</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.40</td>
+      <td>TOP, NA</td>
+      <td>6.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 02:30:45</td>
+      <td>32</td>
+      <td>stfjinkiojd</td>
+      <td>YesTor</td>
+      <td>St. Joseph, MO</td>
+      <td>39.75</td>
+      <td>-94.83</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.30</td>
+      <td>TOP, NA</td>
+      <td>5.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 07:29:06</td>
+      <td>59</td>
+      <td>jmmale@protonmail.com</td>
+      <td>YesTor</td>
+      <td>Garnett, KS</td>
+      <td>38.28</td>
+      <td>-95.25</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.90</td>
+      <td>TOP, NA</td>
+      <td>5.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 02:49:55</td>
+      <td>247</td>
+      <td>Nyomi</td>
+      <td>YesTor</td>
+      <td>Kansas City, MO</td>
+      <td>39.11</td>
+      <td>-94.59</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.80</td>
+      <td>TOP, NA</td>
+      <td>5.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 06:22:59</td>
+      <td>92</td>
+      <td>Caleb Black</td>
+      <td>YesTor</td>
+      <td>Saint Joseph, Missouri</td>
+      <td>39.77</td>
+      <td>-94.80</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.60</td>
+      <td>TOP, NA</td>
+      <td>5.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:13:59</td>
+      <td>120</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>Smithville, Missouri</td>
+      <td>39.37</td>
+      <td>-94.58</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.00</td>
+      <td>TOP, NA</td>
+      <td>5.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:57:41</td>
+      <td>183</td>
+      <td>Ben</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>39.76</td>
+      <td>-94.78</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.10</td>
+      <td>TOP, NA</td>
+      <td>5.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:05:20</td>
+      <td>168</td>
+      <td>Steven Bergey</td>
+      <td>YesTor</td>
+      <td>Yates Center, KS</td>
+      <td>37.91</td>
+      <td>-95.78</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.70</td>
+      <td>TOP, NA</td>
+      <td>4.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:10:09</td>
+      <td>266</td>
+      <td>Zach M</td>
+      <td>YesTor</td>
+      <td>Louisburg KS</td>
+      <td>38.60</td>
+      <td>-94.68</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>78.00</td>
+      <td>TOP, NA</td>
+      <td>4.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:52:47</td>
+      <td>140</td>
+      <td>Veer</td>
+      <td>YesTor</td>
+      <td>Concordia KS</td>
+      <td>39.57</td>
+      <td>-97.66</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>79.90</td>
+      <td>Volland, KS</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.14</td>
+      <td>-94.43</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>80.50</td>
+      <td>TOP, NA</td>
+      <td>3.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 02:27:07</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>YesTor</td>
+      <td>Liberty, MO</td>
+      <td>39.25</td>
+      <td>-94.40</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81.70</td>
+      <td>TOP, NA</td>
+      <td>3.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 12:12:04</td>
+      <td>155</td>
+      <td>AJ Clever</td>
+      <td>YesTor</td>
+      <td>Missouri City</td>
+      <td>39.24</td>
+      <td>-94.33</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>85.50</td>
+      <td>TOP, NA</td>
+      <td>2.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:41:41</td>
+      <td>102</td>
+      <td>Mark De Bruin</td>
+      <td>YesTor</td>
+      <td>Pleasant Hill, MO</td>
+      <td>38.80</td>
+      <td>-94.30</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.30</td>
+      <td>TOP, NA</td>
+      <td>1.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:53:15</td>
+      <td>65</td>
+      <td>Alex Hall</td>
+      <td>YesTor</td>
+      <td>Paola, KS</td>
+      <td>38.33</td>
+      <td>-94.53</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95.30</td>
+      <td>TOP, NA</td>
+      <td>0.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:39:27</td>
+      <td>171</td>
+      <td>Joey Krastel</td>
+      <td>YesTor</td>
+      <td>11 WNW Howard, KS</td>
+      <td>37.48</td>
+      <td>-96.45</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95.90</td>
+      <td>TOP, NA</td>
+      <td>0.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:57:56</td>
+      <td>241</td>
+      <td>bowecho7</td>
+      <td>YesTor</td>
+      <td>Orrick, MO</td>
+      <td>39.21</td>
+      <td>-94.13</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.30</td>
+      <td>TOP, NA</td>
+      <td>0.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:32:50</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Mirabile, MO</td>
+      <td>39.62</td>
+      <td>-94.14</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.10</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:33:36</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Dubuque, KS</td>
+      <td>38.69</td>
+      <td>-98.48</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>110.10</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:32:43</td>
+      <td>8</td>
+      <td>Sekwof</td>
+      <td>YesTor</td>
+      <td>Chillicothe, MO</td>
+      <td>39.61</td>
+      <td>-93.92</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>111.00</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:41:43</td>
+      <td>106</td>
+      <td>Same as file</td>
+      <td>YesTor</td>
+      <td>Knob Noster</td>
+      <td>39.02</td>
+      <td>-93.67</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121.60</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:21:23</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>Lock springs, MO</td>
+      <td>39.82</td>
+      <td>-93.77</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.10</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:50:10</td>
+      <td>210</td>
+      <td>John White</td>
+      <td>YesTor</td>
+      <td>Waverly, Missouri</td>
+      <td>39.21</td>
+      <td>-93.52</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>129.00</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:36:16</td>
+      <td>153</td>
+      <td>Madisen Lindholm</td>
+      <td>YesTor</td>
+      <td>Blackwater Township, Missouri</td>
+      <td>38.96</td>
+      <td>-93.22</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146.10</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:48:15</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Sedalia, MO</td>
+      <td>38.76</td>
+      <td>-93.21</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>148.70</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 13:12:58</td>
+      <td>16</td>
+      <td>WxZach</td>
+      <td>YesTor</td>
+      <td>Carrollton, MO</td>
+      <td>39.51</td>
+      <td>-93.04</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>156.10</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:52:12</td>
+      <td>199</td>
+      <td>tctorguy</td>
+      <td>YesTor</td>
+      <td>Norman, Oklahoma</td>
+      <td>35.22</td>
+      <td>-97.44</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>258.00</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:07:35</td>
+      <td>48</td>
+      <td>Max Archer</td>
+      <td>YesTor</td>
+      <td>Asher Oklahoma</td>
+      <td>35.07</td>
+      <td>-96.89</td>
+      <td>Yes</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>263.60</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:28:43</td>
+      <td>161</td>
+      <td>Vincent P.</td>
+      <td>YesTor</td>
+      <td>Ada, OK</td>
+      <td>34.65</td>
+      <td>-96.80</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>292.20</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 10:17:49</td>
+      <td>76</td>
+      <td>Ezra</td>
+      <td>YesTor</td>
+      <td>Newport, TX</td>
+      <td>33.46</td>
+      <td>-98.01</td>
+      <td>Yes</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>384.00</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:33:44</td>
+      <td>98</td>
+      <td>rosiel</td>
+      <td>YesTor</td>
+      <td>Reno, TX</td>
+      <td>32.94</td>
+      <td>-97.58</td>
+      <td>Yes</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0</td>
+      <td>414.90</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:05:36</td>
+      <td>214</td>
+      <td>Blake Brink</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:27:55</td>
+      <td>62</td>
+      <td>Kay</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 01:40:33</td>
+      <td>33</td>
+      <td>MASEWX</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 02:18:44</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:57:07</td>
+      <td>38</td>
+      <td>Amy H</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:02:30</td>
+      <td>240</td>
+      <td>Kyle Schanus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:32:33</td>
+      <td>107</td>
+      <td>Chief Keef</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 04:01:16</td>
+      <td>258</td>
+      <td>Weather Intercepts</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:30:04</td>
+      <td>126</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:30:33</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 06:12:58</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 08:36:20</td>
+      <td>60</td>
+      <td>WheelieWeather</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 14:56:26</td>
+      <td>95</td>
+      <td>Nicholas Albers</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 02:43:57</td>
+      <td>37</td>
+      <td>Brady Lyness</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 15:06:40</td>
+      <td>196</td>
+      <td>Matt Coker</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0.00</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
