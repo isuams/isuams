@@ -34,6 +34,9 @@ A forum dedicated to storm chasers.
 [Tornado Page](http://www.tornadoproject.com/) <br>
 All you ever wanted to know about tornadoes (and then some).
 
+[How Data Science Can Help Fight Climate Change](https://datascienceprograms.com/learn/how-data-science-can-help-fight-climate-change/) <br>
+An interesting article looking at how data science could help combat climate change and its effects.
+
 [Chasing the Storm: Weather Photography](http://www.mjjsales.com/articles/chasing-the-storm-weather-photography.html) <br>
 An index of websites containing fascinating photographs of different weather phenomena.
 
