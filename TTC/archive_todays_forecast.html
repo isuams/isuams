@@ -21,15 +21,20 @@
 
    
 <!--Header with image-->
-<div class="bg-image p-3 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
-  <div class="col-sm-3 p-1"> 
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
     <div class="row">
-      <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
     </div>
   </div>
 </div>
-
-
 
 <!-- Navigation bar-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -55,7 +60,7 @@
             <a class="nav-link" href="verification.html">Verification</a>
         </li> 
         <li class="nav-item">
-            <a class="nav-link" href="Information_and_Scoring.html">Rules & Scoring</a>
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
         </li> 
         <li class="nav-item">
             <a class="nav-link" href="faq.html">FAQs</a>
@@ -74,7 +79,7 @@
       <h3 class="text-center">Select a Date to View that Day's "Today's Forecast":</h3>
       <div class="input-group">
         <input type="text" class="form-control" id="datepicker" placeholder="yyyy/mm/dd">
-        <button class="btn btn-primary" id="updateFigureBtn">Display Verification</button>
+        <button class="btn btn-primary" id="updateFigureBtn">Display Forecasts</button>
       </div>
     </div>
     <div class="col-md-2"></div>
@@ -136,12 +141,12 @@
             var day = formattedDate.getUTCDate().toString().padStart(2, '0');
 
             // TODO: Use the selectedDate to update figure1 content
-            var filepath = 'todays_forecast/' + year + '_' + month + '_' + day + '_fig.html'
-            var filepath2 = 'todays_forecast/' + year + '_' + month + '_' + day + '_table.html'
+            var filepath = 'todays_forecasts/plots/' + year + '_' + month + '_' + day + '_fig.html'
+            var filepath2 = 'todays_forecasts/tables/' + year + '_' + month + '_' + day + '_table.html'
 
             $('#figure1').attr('src', filepath);
             $('#figure2').attr('src', filepath2);
-            $('#verif').text("Forecaster Verification");
+            // $('#verif').text("Forecasts for the Day");
             $('#tor').text("Tornado Outlook Issued at 1630UTC on "+ month+"/"+day+"/"+year);            
         });
 

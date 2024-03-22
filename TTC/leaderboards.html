@@ -18,10 +18,17 @@
 
    
 <!--Header with image-->
-<div class="bg-image p-3 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
-  <div class="col-sm-3 p-1"> 
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
     <div class="row">
-      <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
     </div>
   </div>
 </div>
@@ -51,7 +58,7 @@
             <a class="nav-link" href="verification.html">Verification</a>
         </li> 
         <li class="nav-item">
-            <a class="nav-link" href="Information_and_Scoring.html">Rules & Scoring</a>
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
         </li> 
         <li class="nav-item">
             <a class="nav-link" href="faq.html">FAQs</a>
@@ -66,18 +73,28 @@
 <!--Example from chatgpt-->
 
 <div class="container mt-5">
-  <div class="row bg-secondary text-dark rounded text-center p-3" >
-    <div class="col-md-12 text-center center-block">
-      <h3 style="color: #f5f2f2;">Select Region:</h3>
-      <button type="button" class="btn" style="background-color: #66c2a5" onclick="displayIframe('leaderboards/national.html')">National</button>
-      <button type="button" class="btn " style="background-color: #8da0cb" onclick="displayIframe('leaderboards/stats.html')">Stats</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southern_plains.html')">Southern Plains</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southeast.html')">Southeast</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/midwest.html')">Midwest</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/northern_plains.html')">Northern Plains</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/mountain_west.html')">Mountain West</button>
-      <button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/east.html')">East</button>
-    </div>
+  <div class="row bg-secondary text-dark rounded text-center p-2" >
+	<div class="col-md-12 text-center center-block">
+		<div class="row justify-content-center p-2">
+			<h3 style="color: #f5f2f2;">Select Leaderboard Type/Region:</h3>
+		</div>
+		<div class="row p-1">
+		<div class="col-md-12 text-center center-block">
+			<button type="button" class="btn btn-lg" style="background-color: #66c2a5" onclick="displayIframe('leaderboards/national.html')">National</button>
+			<button type="button" class="btn btn-lg" style="background-color: #8da0cb" onclick="displayIframe('leaderboards/stats.html')">Stats</button>
+		</div>
+		</div>
+		<div class="row p-2" >
+		<div class="col-md-12 text-center center-block p-1">
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southern_plains.html')">Southern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/southeast.html')">Southeast</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/midwest.html')">Midwest</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/northern_plains.html')">Northern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/mountain_west.html')">Mountain West</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('leaderboards/east.html')">East</button>
+		</div>
+		</div>
+	</div>
   </div>
 
   <div class="row mt-4 mt-4 justify-content-center">
@@ -85,7 +102,7 @@
       <div id="iframeContainer"></div>
     </div>
   </div>
-</div>
+</div>>
 
 <!-- Bootstrap JS bundle (popper.js included) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -95,14 +112,29 @@
     var iframe = document.createElement('iframe');
 
     // Set attributes for the iframe
-    iframe.setAttribute('src', url);
-    iframe.setAttribute('width', '1000px');
-    iframe.setAttribute('height', '700px');
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('height', '600px');
     iframe.setAttribute('frameborder', '0');
 
-    // Clear previous content and append the iframe to the container
-    document.getElementById('iframeContainer').innerHTML = '';
-    document.getElementById('iframeContainer').appendChild(iframe);
+    // Check if the file exists
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', url, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          // File exists, set the src attribute
+          iframe.setAttribute('src', url);
+        } else {
+          // File not found, display a different message
+          iframe.setAttribute('src', 'leaderboards/Leaderboard_to_come.html');
+        }
+
+        // Clear previous content and append the iframe to the container
+        document.getElementById('iframeContainer').innerHTML = '';
+        document.getElementById('iframeContainer').appendChild(iframe);
+      }
+    };
+    xhr.send();
   }
 </script>
 

@@ -17,15 +17,28 @@
   <body>
 
    
+<style>
+.bg-color-bar {
+  background-color: white;
+  padding: 10px 10px; /* Adjust this value for top and bottom padding as needed */
+}
+</style> 
+ 
 <!--Header with image-->
-<div class="bg-image p-3 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
-  <div class="col-sm-3 p-1"> 
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
     <div class="row">
-      <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
     </div>
   </div>
 </div>
-
 
 
 <!-- Navigation bar-->
@@ -52,7 +65,7 @@
             <a class="nav-link" href="verification.html">Verification</a>
         </li> 
         <li class="nav-item">
-            <a class="nav-link" href="Information_and_Scoring.html">Rules & Scoring</a>
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
         </li> 
         <li class="nav-item">
             <a class="nav-link" href="faq.html">FAQs</a>
@@ -62,11 +75,22 @@
   </nav>
 
 <br>
-
-<!--Button to download shapefile-->
+<!--Notice-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="mt-4  text-dark rounded text-center">
+      <div style="max-width: 100%; margin: 0 auto;">
+        <h4>Data will be made available following the release of the 1630UTC SPC outlook, generally by 1800UTC.</h4>
+	<h5>The plot and table will be available here until Midnight (CDT). Thereafter, everything will be accessible in the archive (see the bottom of this page).
+	<br>This page is undergoing rapid updates, development and quality of life improvements, please be patient.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Button to download placefile-->
 <div class="mt-4 text-center">
   <div class="container mt-5">
-      <a class="btn btn-primary mx-auto" style="background-color: #55c2da; border: 1px #55c2da; width: 500px" href="https://drive.google.com/file/d/1waMLdY9WSKdCMikSWIqyfxzEOiM9aF68/view?usp=drive_link" download="https://drive.google.com/file/d/1waMLdY9WSKdCMikSWIqyfxzEOiM9aF68/view?usp=drive_link" target="_blank">
+      <a class="btn btn-primary mx-auto" style="background-color: #55c2da; border: 1px #55c2da; width: 50%" href="https://drive.google.com/file/d/18p3NXGTviEj-DPpxKiMLUAt3exb25ZKL/view?usp=sharing" download="https://drive.google.com/file/d/18p3NXGTviEj-DPpxKiMLUAt3exb25ZKL/view?usp=sharing" target="_blank">
       <h4>Download Today's Forecast Placefile (GR)</h4>
       </a>
   </div>
@@ -81,8 +105,7 @@
 </div>-->
 
 
-<!--Plot based on today's date-->
-<!--figure-->
+<!-- Plot based on today's date -->
 <div class="row">
   <div class="col-md-12">
     <div class="mt-4  text-dark rounded text-center">
@@ -104,8 +127,6 @@
   </div>
 </div>
 
-
-
 <!-- Bootstrap JS bundle (popper.js included) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -114,30 +135,39 @@
   const centralTimeOptions = { timeZone: 'America/Chicago', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
   today.toLocaleString('en-US', centralTimeOptions);
   today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
-  const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
+
+  // Set the end time to 7 am the following day
+  const endTomorrow = new Date(today);
+  endTomorrow.setDate(endTomorrow.getDate() + 1); // Move to the next day
+  endTomorrow.setHours(7, 0, 0, 0); // Set time to 7 am
 
   // Update iframe src attributes with dynamic file names
-  document.getElementById('figureIframe').src = `todays_forecast/${formattedDate}_fig.html`;
-  document.getElementById('tableIframe').src = `todays_forecast/${formattedDate}_table.html`;
+  const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
+  const formattedEndTomorrow = endTomorrow.toISOString();
+
+  // Update iframe src attributes with dynamic file names
+  document.getElementById('figureIframe').src = `todays_forecasts/plots/${formattedDate}_fig.html`;
+  document.getElementById('tableIframe').src = `todays_forecasts/tables/${formattedDate}_table.html`;
+
+  // Update the iframe source every minute to keep the plot until 7 am tomorrow
+  setInterval(() => {
+    const currentTime = new Date();
+    if (currentTime >= endTomorrow) {
+      // If the current time is after 7 am tomorrow, remove the plot
+      document.getElementById('figureIframe').src = '';
+      document.getElementById('tableIframe').src = '';
+    }
+  }, 60000); // Check every minute
 </script>
 
 
-
 <!--Add navigation bar on bottom to go to archived today's forecasts-->
-<!-- Navigation bar-->
-<nav class="navbar navbar-expand-sm" style="background-color: hsl(213, 56%, 87%)">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-flex justify-content-center" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-          <a class="nav-link mx-auto" href="archive_todays_forecast.html" style="color: black"><h4>Archived Today's Forecast</h4></a>
-      </li>
-    </ul>
-  </div>  
-</nav>
-
+<div class="bg-color-bar">
+	<div class="row d-flex justify-content-center">
+       <div class="button-box"></div>
+       <a href="archive_todays_forecast.html" class="btn btn-info btn-lg" role="button" style="background-color: #b40024; border: 1px #000000">Archived Today's Forecast</a>
+	</div>
+</div>
 <br>
 
 <!--Footer-->

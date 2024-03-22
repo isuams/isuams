@@ -16,12 +16,25 @@
   </head>
   <body>
 
-   
+<style>
+.bg-color-bar {
+  background-color: white;
+  padding: 10px 10px; /* Adjust this value for top and bottom padding as needed */
+}
+</style> 
+ 
 <!--Header with image-->
-<div class="bg-image p-3 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
-  <div class="col-sm-3 p-1"> 
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
     <div class="row">
-      <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
     </div>
   </div>
 </div>
@@ -51,7 +64,7 @@
             <a class="nav-link" href="verification.html">Verification</a>
         </li> 
         <li class="nav-item">
-            <a class="nav-link" href="Information_and_Scoring.html">Rules & Scoring</a>
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
         </li> 
         <li class="nav-item">
             <a class="nav-link" href="faq.html">FAQs</a>
@@ -59,11 +72,25 @@
       </ul>
     </div>  
   </nav>
-
 <br>
-
-
-
+<!--
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<div class="button-box col-lg-12"></div>
+        <a href="https://forms.gle/o6fhcC9JGRkvsurU8" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: #b40024; border: 1px #000000">Click Here to Register for 2024</a>
+	</div>
+</div>
+	<br>
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<p class="align-self-start">
+		Registration will close at 06UTC on March 9th. The first day for forecasting will be March 11th.<br>		
+		Expect communication from tornadotargetcontest@gmail.com over the weekend ahead of the start of the contest about how to forecast and when!
+		</p>
+	</div>
+</div>
+<br>
+-->
 <div id="mission" class="md-2 p-3 text-white rounded" style="background-color: #68727E;">
     <div class="container">
         <div class="row">
@@ -101,6 +128,18 @@
     </div>
 </div>
 <br>
+<div class="row">
+	<div class="col-sm-2 text-center"></div>
+	<div class="col-sm-8 text-center">
+		<p class="align-self-start">
+		Forecasts are submitted every weekday (M-F) from March 11th - June 14th. Verification for each forecast day will be completed 5 days after the event and will be reverified after 2 weeks.
+		Scores are based mainly on the distance between the closest report/damage and your forecast point, with some other ways to earn additional points. The higher the score, the better.
+		For additional information, please visit the Rules and Scoring page.
+		</p>
+	</div>
+	<div class="col-sm-2 text-center"></div>
+</div>
+<br>
 
 <!--Display Current UTC Time-->
 <div class="container">
@@ -136,45 +175,77 @@
 
 <!--embed maps-->
 <div class="mt-4 p-5 text-dark rounded text-center">
-  <img class="text-left" src="https://www.spc.noaa.gov/products/activity_loop.gif" title="weather watches" width="700px"></img>
+  <img class="text-left" src="https://www.spc.noaa.gov/products/activity_loop.gif" title="Current SPC Hazards/Radar" width="60%"></img>
+</div>
+
+<!--section on contributors-->
+<div id="contributors" class="md-2 p-3 text-white rounded" style="background-color:#68727E;">
+  <div class="container">
+	<div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>2024 Contributors</h3>
+      </div>
+	</div>
+	<div class="row">
+	  <div class="col-sm-12 text-center">
+		<p class="align-self-start">We would like to acknowledge and thank these businesses for
+             taking interest in our project and providing countless resources to our participants</p>
+	  </div>
+    </div>
+    <br>
+  <div class="row d-flex align-items-center">
+     <div class="col-sm-3 p-2 text-center">
+	   <a href="https://www.radaromega.com/" target="_blank">
+         <img class="img-fluid" src="images/radaromega_logo.png" title="Learn more about RadarOmega" width="100%" style="padding: 5px 10px;">
+	   </a>
+     </div>
+     <div class="col-sm-3 p-2 text-center">
+	   <a href="https://home.pivotalweather.com/" target="_blank">
+         <img class="img-fluid" src="images/pivotal_logo.png" title="Learn more about Pivotal Weather" width="80%" style="padding: 15px 10px;">
+	   </a>
+     </div>
+     <div class="col-sm-3 p-2 text-center">
+	   <a href="https://www.radarscope.app/" target="_blank">
+         <img class="img-fluid" src="images/radarscope_logo.png" title="Learn more about RadarScope" width="100%" style="padding: 5px 10px;">
+	   </a>
+     </div>
+	 <div class="col-sm-3 p-2 text-center">
+	   <a href="https://www.tornadotalk.com/" target="_blank">
+		<img class="img-fluid" src="images/tornadotalk_logo.png" title="Learn more about Tornado Talk" width="50%" style="padding: 5px 10px;">
+	   </a>
+	 </div>
+   </div>
+  </div>
 </div>
 
 <!--Buttons to forms-->
-<div class="text-center">
-    <div class="row">
-        <div class="col-sm-4">
-          <div class="button-box col-lg-12" style="padding: 10px  10px;"></div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Rescore Event Verification</a>
-        </div> 
+<div class="bg-color-bar">
+  <div class="text-center">
+    <div class="row d-flex align-items-center">
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://drive.google.com/file/d/1kPc9Z_I9Gfjji68TJ35Txm0KtByZkI5q/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">TTC Terms and Conditions</a>
+      </div> 
 
-        <div class="col-sm-4">
-            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
-              <a href="https://drive.google.com/file/d/1uYOXvt01dxKAydVxmoqt6QCEDfIL4dbv/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">TTC Privacy Policy</a>
-        </div> 
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://drive.google.com/file/d/1uYOXvt01dxKAydVxmoqt6QCEDfIL4dbv/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">TTC Privacy Policy</a>
+      </div> 
 
-        <div class="col-sm-4">
-            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Unsubscribe from TTC</a>
-        </div>
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">Report Misconduct</a>
+      </div>
+
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">Unsubscribe from TTC</a>
+      </div>
     </div>
-
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Report Misconduct</a>
-        </div> 
-
-        <div class="col-sm-4">
-            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
-              <a href="https://drive.google.com/file/d/1kPc9Z_I9Gfjji68TJ35Txm0KtByZkI5q/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">TTC Terms and Conditions</a>
-        </div> 
-
-        <div class="col-sm-4">
-            <div class="button-box col-lg-12" style="padding: 10px 10px;"></div>
-              <a href="#" target="_blank" class="btn btn-info" role="button" style="background-color: #55c2da; border: 1px #5783db">Support TTC</a>
-        </div> 
-    </div>
+  </div>
 </div>
+
+
 
 <br>
 
