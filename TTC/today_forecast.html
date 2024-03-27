@@ -137,10 +137,8 @@
   //today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
 
   // Get today's date in US Central Time and format it as YYYY_MM_DD
-  let today = new Date();
+  let today = new Date(); // Current date object
   const centralTimeOptions = { timeZone: 'America/Chicago', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
-  today = today.toLocaleString('en-US', centralTimeOptions); // Assign back to today variable
-  today = new Date(today); // Convert string back to Date object
   today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
 
   // Set the end time to 7 am the following day
