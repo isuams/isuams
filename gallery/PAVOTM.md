@@ -35,6 +35,78 @@ section: gallery
 
 <!-- Repeat the pattern for subsequent months -->
 
+<h2>April 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Apr_2019_Club.jpg?raw=true" alt="April 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Apr_2019_Wx.jpg?raw=true" alt="April 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>March 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Mar_2019_Club.jpg?raw=true" alt="March 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Mar_2019_Wx.jpg?raw=true" alt="March 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>February 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Feb_2019_Club.JPG?raw=true" alt="February 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Feb_2019_Wx.jpeg?raw=true" alt="February 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>January 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Jan_2019_Club.jpg?raw=true" alt="January 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Jan_2019_Wx.jpg?raw=true" alt="January 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>November 2018 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Nov_2018_Club.jpeg?raw=true" alt="November 2018 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Nov_2018_Wx.JPG?raw=true" alt="November 2018 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>October 2018 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Oct_2018_Club.jpg?raw=true" alt="October 2018 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Oct_2018_Wx.jpg?raw=true" alt="October 2018 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
 <h2>September 2018 Photos of the Month</h2>
 <div class="row">
   <div class="column">
@@ -43,7 +115,7 @@ section: gallery
   </div>
   <div class="column">
   	<h3>Weather Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Wx.jpeg" alt="September 2018 Wx Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Sep_2018_Wx.jpeg?raw=true" alt="September 2018 Wx Photo of Month" style="width:100%">
   </div>
 </div>
 
@@ -51,7 +123,7 @@ section: gallery
 <div class="row">
   <div class="column single-column">
     <h3>Weather Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Aug_2018_Wx.jpg" alt="August 2018 Wx Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2018-2019/Aug_2018_Wx.jpg?raw=true" alt="August 2018 Wx Photo of Month" style="width:100%">
   </div>
 </div>
 
