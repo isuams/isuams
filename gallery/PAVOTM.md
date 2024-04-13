@@ -4,7 +4,6 @@ layout: page
 section: gallery
 ---
 
-<!DOCTYPE html>
 <html>
 <head>
 <style>
