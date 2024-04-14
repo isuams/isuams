@@ -45,6 +45,9 @@ section: gallery
   	<h3>Weather Photo of the Month</h3>
     <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Wx.jpg?raw=true" alt="January 2022 Wx Photo of Month" style="width:100%">
   </div>
+</div>
+
+<div>
   <div class="row">
     <div class="column">
       <h3>Video 1 of the Month</h3>
