@@ -35,6 +35,99 @@ section: gallery
 
 <!-- Repeat the pattern for subsequent months -->
 
+<h2>August 2021 Photos and Video of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Aug_2021_Club.jpg?raw=true" alt="August 2021 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Aug_2021_Wx.jpg?raw=true" alt="August 2021 Wx Photo of Month" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column single-column">
+      <h3>Video of the Month</h3>
+      <video width="560" height="315" controls>
+        <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Aug_2021_Vid.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+<h2>February 2020 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Feb_2020_Club.jpg?raw=true" alt="February 2020 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Feb_2020_Wx.JPG?raw=true" alt="February 2020 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>January 2020 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Jan_2020_Club.jpg?raw=true" alt="January 2020 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Jan_2020_Wx.jpeg?raw=true" alt="January 2020 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>November 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Nov_2019_Club.jpg?raw=true" alt="November 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Nov_2019_Wx.jpg?raw=true" alt="November 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>October 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Oct_2019_Club.jpg?raw=true" alt="October 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Oct_2019_Wx.jpg?raw=true" alt="October 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>September 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Sep_2019_Club.jpg?raw=true" alt="September 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Sep_2019_Wx.jpg?raw=true" alt="September 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>August 2019 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Aug_2019_Club.jpg?raw=true" alt="August 2019 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2019-2020/Aug_2019_Wx.jpg?raw=true" alt="August 2019 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
 <h2>April 2019 Photos of the Month</h2>
 <div class="row">
   <div class="column">
