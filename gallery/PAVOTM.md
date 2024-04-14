@@ -35,6 +35,79 @@ section: gallery
 
 <!-- Repeat the pattern for subsequent months -->
 
+<h2>January 2022 Photos and Video of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Club.jpg?raw=true" alt="January 2022 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Wx.jpg?raw=true" alt="January 2022 Wx Photo of Month" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column">
+      <h3>Video 1 of the Month</h3>
+      <video width="100%" controls>
+        <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Vid1.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="column">
+      <h3>Video 2 of the Month</h3>
+      <video width="100%" controls>
+        <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Vid2.MOV?raw=true" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+<h2>November 2021 Photos and Video of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Nov_2021_Club.jpg?raw=true" alt="November 2021 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Nov_2021_Wx.jpg?raw=true" alt="November 2021 Wx Photo of Month" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column single-column">
+      <h3>Video of the Month</h3>
+      <video width="560" height="315" controls>
+        <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Nov_2021_Vid.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+<h2>October 2021 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Oct_2021_Club.jpg?raw=true" alt="October 2021 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Oct_2021_Wx.jpg?raw=true" alt="October 2021 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+<h2>September 2021 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Sep_2021_Club.jpg?raw=true" alt="September 2021 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Sep_2021_Wx.jpg?raw=true" alt="September 2021 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
 <h2>August 2021 Photos and Video of the Month</h2>
 <div class="row">
   <div class="column">
