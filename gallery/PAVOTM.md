@@ -47,22 +47,20 @@ section: gallery
   </div>
 </div>
 
-<div>
-  <div class="row">
-    <div class="column">
-      <h3>Video 1 of the Month</h3>
-      <video width="100%" controls>
-        <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Vid1.mp4?raw=true" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="column">
-      <h3>Video 2 of the Month</h3>
-      <video width="100%" controls>
-        <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Vid2.mp4?raw=true" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+<div class="row">
+  <div class="column">
+    <h3>Video 1 of the Month</h3>
+    <video width="100%" controls>
+      <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Vid1.mp4?raw=true" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="column">
+    <h3>Video 2 of the Month</h3>
+    <video width="100%" controls>
+      <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Jan_2022_Vid2.mp4?raw=true" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
 
