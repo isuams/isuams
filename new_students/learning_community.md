@@ -59,4 +59,25 @@ section: new_students
 </div>
 
 <h2>2023-2024 Peer Mentors</h2>
-<p>Will be added soon!</p>
+<div class="row">
+  <div class="column column-4">
+  	<h3>Ben Jablonski</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Ben_Web.jpeg?raw=true" alt="Ben Jablonski" style="width:100%">
+    <p>Meterology</p>
+  </div>
+  <div class="column column-4">
+  	<h3>Austyn Hartwig</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Austyn_Hist.jpg?raw=true" alt="Austyn Hartwig" style="width:100%">
+    <p>Meteorolgy</p>
+  </div>
+  <div class="row">
+  <div class="column column-4">
+  	<h3>Nicole Skalicky</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Nicole_PM.jpeg?raw=true" alt="Nicole Skalicky" style="width:100%">
+    <p>Meteorology</p>
+  </div>
+  <div class="column column-4">
+  	<h3>Stefan Sundin</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Stefan_MathPM.jpeg?raw=true" alt="Stefan Sundin" style="width:100%">
+    <p>Math Tutor</p>
+  </div>
