@@ -50,11 +50,11 @@ section: new_students
 <div class="row">
   <div class="column">
   	<h3>Dave Flory</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Dave Flory.jpg?raw=true" alt="Dave Flory" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Dave Flory.jpg?raw=true" alt="Dave Flory" style="width:50%">
   </div>
   <div class="column">
   	<h3>Cinzia Cervato</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Cinzia Cervato.jpg?raw=true" alt="Cinzia Cervato" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Cinzia Cervato.jpg?raw=true" alt="Cinzia Cervato" style="width:50%">
   </div>
 </div>
 
