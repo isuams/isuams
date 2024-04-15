@@ -194,6 +194,12 @@
 				"permalink": "/new_students/learning_community",
 				"name": "Earth Wind & Fire Learning Community",
 				"has_subpages": false
+			},
+			{
+				"page": "test",
+				"permalink": "/new_students/test",
+				"name": "Test",
+				"has_subpages": false
 			}
 		]
 	},
