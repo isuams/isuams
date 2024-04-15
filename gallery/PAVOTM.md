@@ -409,7 +409,7 @@ section: gallery
   <div class="column">
     <h3>Video 1 of the Month</h3>
     <video width="100%" controls>
-      <source src="{{ site.baseurl }}uploads/PHOTM/2021-2022/Feb_2022_Vid1.mp4?raw=true" type="video/mp4">
+      <source src="{{ site.baseurl }}/uploads/PHOTM/2021-2022/Feb_2022_Vid1.mp4?raw=true" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
