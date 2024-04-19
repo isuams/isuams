@@ -85,7 +85,7 @@ section: new_students
   <div class="row">
   <div class="column column-4">
   	<h3>Braydon Songer</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Braydon_PM.jpegraw=true" alt="Braydon Songer" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Braydon_PM.jpeg?raw=true" alt="Braydon Songer" style="width:100%">
     <p>Meterology</p>
   </div>
   <div class="column column-4">
