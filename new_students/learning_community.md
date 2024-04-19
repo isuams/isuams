@@ -63,14 +63,13 @@ section: new_students
   <div class="column column-4">
   	<h3>Ben Jablonski</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Ben_Web.jpeg?raw=true" alt="Ben Jablonski" style="width:100%">
-    <p>Meterology</p>
+    <p>Meteorology</p>
   </div>
   <div class="column column-4">
   	<h3>Austyn Hartwig</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Austyn_Hist.jpg?raw=true" alt="Austyn Hartwig" style="width:100%">
-    <p>Meteorolgy</p>
+    <p>Meteorology</p>
   </div>
-  <div class="row">
   <div class="column column-4">
   	<h3>Nicole Skalicky</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Nicole_PM.jpeg?raw=true" alt="Nicole Skalicky" style="width:100%">
@@ -81,19 +80,19 @@ section: new_students
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Maddie_PM.jpeg?raw=true" alt="Maddie Medvec" style="width:100%">
     <p>Meteorology</p>
   </div>
+</div>
 
-  <div class="row">
+<div class="row">
   <div class="column column-4">
   	<h3>Braydon Songer</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Braydon_PM.jpeg?raw=true" alt="Braydon Songer" style="width:100%">
-    <p>Meterology</p>
+    <p>Meteorology</p>
   </div>
   <div class="column column-4">
   	<h3>Lindsey Broderick</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lindsey_PM.jpeg?raw=true" alt="Lindsey Broderick" style="width:100%">
     <p>Geology</p>
   </div>
-  <div class="row">
   <div class="column column-4">
   	<h3>Owen Halverson</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Owen_PM.jpeg?raw=true" alt="Owen Halverson" style="width:100%">
@@ -104,3 +103,4 @@ section: new_students
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Stefan_MathPM.jpeg?raw=true" alt="Stefan Sundin" style="width:100%">
     <p>Math Tutor</p>
   </div>
+</div>
