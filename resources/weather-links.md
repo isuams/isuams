@@ -37,6 +37,9 @@ All you ever wanted to know about tornadoes (and then some).
 [How Data Science Can Help Fight Climate Change](https://datascienceprograms.com/learn/how-data-science-can-help-fight-climate-change/) <br>
 An interesting article looking at how data science could help combat climate change and its effects.
 
+[The Ultimate Guide on Water Conservation: How To Save Every Drop](http://californiadegrees.org/the-ultimate-guide-on-water-conservation-how-to-save-every-drop/) <br>
+An educating resource regarding water usage and how you can conserve more of it in your everyday life.
+
 [Chasing the Storm: Weather Photography](http://www.mjjsales.com/articles/chasing-the-storm-weather-photography.html) <br>
 An index of websites containing fascinating photographs of different weather phenomena.
 
