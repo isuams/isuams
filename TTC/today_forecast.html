@@ -81,8 +81,7 @@
     <div class="mt-4  text-dark rounded text-center">
       <div style="max-width: 100%; margin: 0 auto;">
         <h4>Data will be made available following the release of the 1630UTC SPC outlook, generally by 1800UTC.</h4>
-	<h5>The plot and table will be available here until Midnight (CDT). Thereafter, everything will be accessible in the archive (see the bottom of this page).
-	<br>This page is undergoing rapid updates, development and quality of life improvements, please be patient.</h5>
+	<h5>The plot and table will be available here until Midnight (CDT).
       </div>
     </div>
   </div>
@@ -131,9 +130,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   // Get today's date in US Central Time and format it as YYYY_MM_DD
-  const today = new Date();
+  //const today = new Date();
+  //const centralTimeOptions = { timeZone: 'America/Chicago', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
+  //today.toLocaleString('en-US', centralTimeOptions);
+  //today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
+
+  // Get today's date in US Central Time and format it as YYYY_MM_DD
+  let today = new Date(); // Current date object
   const centralTimeOptions = { timeZone: 'America/Chicago', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
-  today.toLocaleString('en-US', centralTimeOptions);
   today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
 
   // Set the end time to 7 am the following day
@@ -158,6 +162,31 @@
       document.getElementById('tableIframe').src = '';
     }
   }, 60000); // Check every minute
+
+
+  // Function to check if the file exists
+  function fileExists(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        callback(xhr.status === 200);
+      }
+    };
+    xhr.open('HEAD', url, true);
+    xhr.send();
+  }
+
+  // Update iframe src attributes with dynamic file names or display "No Forecast Today"
+  const figureIframe = document.getElementById('figureIframe');
+  const tableIframe = document.getElementById('tableIframe');
+
+  fileExists(`todays_forecasts/plots/${formattedDate}_fig.html`, function (figureExists) {
+    figureIframe.src = figureExists ? `todays_forecasts/plots/${formattedDate}_fig.html` : 'todays_forecasts/No_Forecast_Today.html';
+  });
+
+  fileExists(`todays_forecasts/tables/${formattedDate}_table.html`, function (tableExists) {
+    tableIframe.src = tableExists ? `todays_forecasts/tables/${formattedDate}_table.html` : 'todays_forecasts/No_Forecast_Today.html';
+  });
 </script>
 
 
