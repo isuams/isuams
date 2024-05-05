@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    .fakeimg {
+      height: 200px;
+      background-image: url('IMG_0403.jpg');
+    }
+    </style>
+  </head>
+  <body>
+
+<!--Header with image-->
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" href="today_forecast.html">Today's Forecast</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#">Final Scores</a>
+      </li>  -->
+      <li class="nav-item">
+          <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+      </li>   
+      <li class="nav-item">
+          <a class="nav-link" href="verification.html">Verification</a>
+      </li> 
+      <li class="nav-item">
+          <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+      </li> 
+      <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQs</a>
+        </li> 
+    </ul>
+  </div>  
+</nav>
+
+<br>
+
+<!--FAQs Dropdown-->
+<style>
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+  </style>
+
+
+<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+  <div class="container">
+	  <h2>Verification Metrics</h2>
+	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+		<!--FAQ 1-->
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+				POD - Probability of Detection
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+			<div class="panel-body px-3 mb-4">
+			  <p>
+			    A verification measure of categorical forecast performance equal to the total number of correct 
+				event forecasts (hits) divided by the total number of events observed. Simply stated, it is the 
+				percent of events that are forecast. The ideal value is 1 (100%).
+			  </p>
+			  <br>
+			  <h5>POD = Hits / (Hits + Misses)</h5>
+			</div>
+		  </div>
+		</div>
+
+		<!--FAQ 2-->
+		<div class="panel panel-default">
+			<div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+			  <h3 class="panel-title">
+				<a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+				  FAR - False Alarm Ratio
+				</a>
+			  </h3>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+			  <div class="panel-body px-3 mb-4">
+				<p>
+			      A verification measure of categorical forecast performance equal to the number of false alarms
+				  divided by the total number of event forecasts. The ideal value is 0 (0%).
+			    </p>
+			    <br>
+			    <h5>FAR = False Alarms / (Hits + False Alarms)</h5>
+			  </div>
+			</div>
+		</div>
+
+		<!--FAQ 3-->
+		<div class="panel panel-default">
+			<div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+			  <h3 class="panel-title">
+				<a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+					CSI - Critical Success Index
+				</a>
+			  </h3>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+			  <div class="panel-body px-3 mb-4">
+				<p>
+			      Also called the threat score, is a verification measure of categorical forecast performance 
+				  equal to the total number of correct event forecasts divided by the total number of storm 
+				  forecasts plus the number of misses. The CSI is not affected by the 
+				  number of non-event forecasts that verify. However, the CSI is a biased 
+				  score that is dependent upon the frequency of the event. The ideal value is 1 (100%).
+			    </p>
+			    <br>
+			    <h5>CSI = Hits / (Hits + False Alarms + Misses)</h5>
+			  </div>
+			</div>
+		</div>
+
+		<!--FAQ 4-->
+		<div class="panel panel-default">
+			<div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+			  <h3 class="panel-title">
+				<a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+					HSS - Heidke Skill Score
+				</a>
+			  </h3>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+			  <div class="panel-body px-3 mb-4">
+				<p>
+			      A skill corrected verification measure of categorical forecast performance similar to the success 
+				  ratio but which takes into account the number of correct random forecasts (chance hits + 
+				  chance correct rejections). The HSS is equal to the total number of correct forecasts minus the 
+				  correct random forecasts divided by the total number of forecasts minus the correct forecasts due to chance. 
+				  This skill score falls within a (-1, +1) range. No incorrect forecasts give a score of +1, no correct
+				  forecasts give a score of -1, and either no events forecast or no events observed give a score of 0.
+			    </p>
+			    <br>
+			    <h5>HSS= (Hits + Correct Negatives - Chance)/(Hits + False Alarms + Misses + Correct Negatives - Chance)</h5>
+				<br>
+				<h5>Chance = (1 / Number of Forecasts)*((Hits + Misses)*(Hits + False Alarms)+(Correct Negatives + Misses)*(Correct Negatives + False Alarms))</h5>
+			  </div>
+			</div>
+		</div>
+  </div>
+  </div>
+</section>
+<br>
+<br>
+<div class="container">
+<div class="col-md-6 text-center">
+  <div class="row mt-4 mt-4">
+	<h4>Contingency Table</h4>
+	<table class="table text-center">
+      <thead>
+        <tr>
+          <th scope="col-sm-1">2x2</th>
+          <th scope="col-sm-1">Observed == Yes</th>
+		  <th scope="col-sm-1">Observed == No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Forecast == Yes</th>
+          <td>Hits</td>
+		  <td>False Alarms</td>
+        </tr>
+        <tr>
+          <th scope="row">Forecast == No</th>
+          <td>Misses</td>
+		  <td>Correct Negatives</td>
+        </tr>
+      </tbody>
+    </table>
+	</div>
+  </div>
+<p>Source: https://www.swpc.noaa.gov/sites/default/files/images/u30/Forecast%20Verification%20Glossary.pdf</p>
+</div>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2024</p>
+    <p>TornadoTargetContest@gmail.com</p>
+  </div>
+ 
