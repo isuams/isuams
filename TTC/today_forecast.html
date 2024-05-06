@@ -145,7 +145,7 @@
   const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
 
   // Update iframe src attributes with dynamic file names
-  document.getElementById('figureIframe').src = `todays_forecast/plots/${formattedDate}_fig.html`; : 'todays_forecasts/No_Forecast_Today.html';
+  document.getElementById('figureIframe').src = `todays_forecast/plots/${formattedDate}_fig.html` : 'todays_forecasts/No_Forecast_Today.html';
   document.getElementById('tableIframe').src = `todays_forecast/tables/${formattedDate}_table.html`: 'todays_forecasts/No_Forecast_Today.html';
 </script>
 
