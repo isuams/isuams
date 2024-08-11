@@ -13,10 +13,10 @@ A division of the National Center for Atmospheric Research (NCAR). This page inc
 [The Iowa Environmental Mesonet](http://mesonet.agron.iastate.edu) <br>
 A site run locally here at ISU that contains current weather information at hundreds of sites across Iowa, archived climate data, and various weather applications.
 
-[Iowa Ag Climate Network](http://www.meteor.iastate.edu/agclimate/index.html) <br>
+[Iowa Ag Climate Network](https://mesonet.agron.iastate.edu/agweather/) <br>
 Iowa State University: Crop, Soil, and Environmental Services.
 
-[National Weather Service Forecast Office Des Moines](http://www.crh.noaa.gov/dmx) <br>
+[National Weather Service Forecast Office Des Moines](https://www.weather.gov/dmx/) <br>
 Homepage of the local Weather Forecast Office
 
 [Storm Prediction Center](http://www.spc.noaa.gov/) <br>
@@ -25,7 +25,7 @@ This website includes severe weather outlooks, Mesoscale Discussions, and watche
 [Central Iowa National Weather Association](http://www.iowa-nwa.com/) <br>
 Information about the Central Iowa NWA, and the Severe Storms and Doppler Radar Conference
 
-[University of Michigan Weather Info](http://cirrus.sprl.umich.edu/wxnet/) <br>
+[University of Michigan Weather Info](https://weather.engin.umich.edu/wxnet/) <br>
 Hundreds of products including models, surface data, and satellite images.
 
 [Stormtrack](http://www.stormtrack.org/forums/) <br>
@@ -40,14 +40,17 @@ An interesting article looking at how data science could help combat climate cha
 [The Ultimate Guide on Water Conservation: How To Save Every Drop](http://californiadegrees.org/the-ultimate-guide-on-water-conservation-how-to-save-every-drop/) <br>
 An educating resource regarding water usage and how you can conserve more of it in your everyday life.
 
-[Chasing the Storm: Weather Photography](http://www.mjjsales.com/articles/chasing-the-storm-weather-photography.html) <br>
+[A Student's Guide to Weather Watching](https://www.aaastateofplay.com/a-students-guide-to-weather-watching-on-the-playground-and-beyond/) <be>
+A wonderful guide to educating learners on different types of weather and their features.
+
+[Chasing the Storm: Weather Photography](https://mjjsales.com/chasing-the-storm-weather-photography/) <br>
 An index of websites containing fascinating photographs of different weather phenomena.
 
 [Electricity and the Science of Lightning](http://www.widespreadsales.com/Electricity-and-the-Science-of-Lightning) <br>
 An index of websites and information about lightning and lightning safety, all geared toward younger kids.
 
-[Career Information: A Guide to Meteorology Resources](http://www.careeroverview.com/career-information-a-guide-to-meteorology-resources.html) <br>
-An index of websites containing information about several different aspects of Meteorology.
+[Career Information: A Guide to Meteorology Resources](https://ametsoc.org/index.cfm/ams/education-careers/careers/career-guides-tools/) <br>
+An amazing index of information provided by the AMS website about several different aspects of Meteorology.
 
 [AMS Glossary](http://glossary.ametsoc.org/wiki/Main_Page) <br>
 A glossary of many terms that are used in the field of meteorology.
