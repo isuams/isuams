@@ -5,7 +5,7 @@ section: events-activities
 ---
 
 
-The information for Cy's Eyes on the Skies has moved to the Department of the Earth, Atmosphere, and Climate webpage.
+The information for Cy's Eyes on the Skies has moved to ISU's Department of the Earth, Atmosphere, and Climate webpage.
 <html>
   <head>
     <meta http-equiv="refresh" content="0; url=https://earth-atmosphere-climate.iastate.edu/student-experiences/#cyseyes" />
