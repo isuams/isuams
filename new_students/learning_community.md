@@ -61,23 +61,18 @@ section: new_students
 <h2>2023-2024 Peer Mentors</h2>
 <div class="row">
   <div class="column column-4">
-  	<h3>Ben Jablonski</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Ben_Web.jpeg?raw=true" alt="Ben Jablonski" style="width:100%">
-    <p>Meteorology</p>
+  	<h3>Emma Grace Teggatz</h3>
+    <img src="{{ site.baseurl }}/uploads/EWFLC/Emma_EWFLC.jpg?raw=true" alt="Emma Grace Teggatz" style="width:100%">
+    <p>Climate Science</p>
   </div>
   <div class="column column-4">
-  	<h3>Austyn Hartwig</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Austyn_Hist.jpg?raw=true" alt="Austyn Hartwig" style="width:100%">
-    <p>Meteorology</p>
-  </div>
-  <div class="column column-4">
-  	<h3>Nicole Skalicky</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Nicole_PM.jpeg?raw=true" alt="Nicole Skalicky" style="width:100%">
-    <p>Meteorology</p>
+  	<h3>Garrett Korkowski</h3>
+    <img src="{{ site.baseurl }}/uploads/EWFLC/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski" style="width:100%">
+    <p>Geology</p>
   </div>
   <div class="column column-4">
   	<h3>Maddie Medvec</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Maddie_PM.jpeg?raw=true" alt="Maddie Medvec" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec" style="width:100%">
     <p>Meteorology</p>
   </div>
 </div>
@@ -85,22 +80,12 @@ section: new_students
 <div class="row">
   <div class="column column-4">
   	<h3>Braydon Songer</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Braydon_PM.jpeg?raw=true" alt="Braydon Songer" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/current_officers/Braydon_VP.jpg?raw=true" alt="Braydon Songer" style="width:100%">
     <p>Meteorology</p>
   </div>
   <div class="column column-4">
-  	<h3>Lindsey Broderick</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lindsey_PM.jpeg?raw=true" alt="Lindsey Broderick" style="width:100%">
-    <p>Geology</p>
-  </div>
-  <div class="column column-4">
-  	<h3>Owen Halverson</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Owen_PM.jpeg?raw=true" alt="Owen Halverson" style="width:100%">
-    <p>Climate Science</p>
-  </div>
-  <div class="column column-4">
   	<h3>Stefan Sundin</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Stefan_MathPM.jpeg?raw=true" alt="Stefan Sundin" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/current_officers/Stefan_Academic.jpg?raw=true" alt="Stefan Sundin" style="width:100%">
     <p>Math Tutor</p>
   </div>
 </div>
