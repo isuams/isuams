@@ -17,6 +17,13 @@ section: new_students
   padding: 5px;
 }
 
+<style>
+figure {
+    display: inline-block;
+    vertical-align: bottom
+}
+</style>
+
 .column-4 {
   float: left;
   width: 25%; /* Set width to 25% for four columns in a row */
@@ -74,12 +81,6 @@ section: new_students
   	<h3>Maddie Medvec</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec" style="width:100%">
     <p>Meteorology</p>
-    <style>
-figure {
-    display: inline-block;
-    vertical-align: bottom
-}
-</style>
   </div>
 </div>
 
