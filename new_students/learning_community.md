@@ -70,17 +70,17 @@ section: new_students
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski" style="width:100%">
     <p>Geology</p>
   </div>
-  <div class="column column-4">
-  	<h3>Maddie Medvec</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec" style="width:100%">
-    <p>Meteorology</p>
-  </div>
 </div>
 
 <div class="row">
   <div class="column column-4">
   	<h3>Braydon Songer</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Braydon_VP.jpg?raw=true" alt="Braydon Songer" style="width:100%">
+    <p>Meteorology</p>
+  </div>
+  <div class="column column-4">
+  	<h3>Maddie Medvec</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec" style="width:100%">
     <p>Meteorology</p>
   </div>
   <div class="column column-4">
