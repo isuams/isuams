@@ -4,8 +4,11 @@ layout: page
 section: about
 ---
 
-**Most recent:** [April 23, 2024]({{site.baseurl }}/uploads/minutes/2023-24/April_23_2024_Minutes.pdf)
+**Most recent:** [August 27, 2024]({{site.baseurl }}/uploads/minutes/2024-25/August 27 Meeting Agenda.pdf)
 ---
+**2024-2025**
+- [August 27, 2024]({{site.baseurl }}/uploads/minutes/2024-25/August 27 Meeting Agenda.pdf)
+
 **2023-2024**
 - [August 22, 2023]({{site.baseurl }}/uploads/minutes/2023-24/August 22 2023 Minutes.pdf)
 - [September 26, 2023]({{site.baseurl }}/uploads/minutes/2023-24/September 26 2023 Minutes.pdf)
