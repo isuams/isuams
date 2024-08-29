@@ -69,12 +69,12 @@ figure {
 <div class="row">
   <div class="column column-4">
   	<h3>Emma Grace Teggatz</h3>
-    <img src="{{ site.baseurl }}uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz" style="width:100%">
     <p>Climate Science</p>
   </div>
   <div class="column column-4">
   	<h3>Garrett Korkowski</h3>
-    <img src="{{ site.baseurl }}uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski" style="width:100%">
     <p>Geology</p>
   </div>
   <div class="column column-4">
