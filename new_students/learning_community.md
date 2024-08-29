@@ -75,7 +75,7 @@ section: new_students
     <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec" style="width:100%">
     <p>Meteorology</p>
     <style>
-img {
+figure {
     display: inline-block;
     vertical-align: bottom
 }
