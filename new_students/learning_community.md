@@ -17,13 +17,6 @@ section: new_students
   padding: 5px;
 }
 
-<style>
-img {
-    display: inline-block;
-    vertical-align: bottom
-}
-</style>
-
 .column-4 {
   float: left;
   width: 25%; /* Set width to 25% for four columns in a row */
