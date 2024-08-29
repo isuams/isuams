@@ -18,7 +18,7 @@ section: new_students
 }
 
 <style>
-figure {
+img {
     display: inline-block;
     vertical-align: bottom
 }
