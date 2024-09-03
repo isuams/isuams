@@ -58,7 +58,7 @@ section: new_students
   </div>
 </div>
 
-<h2>2023-2024 Peer Mentors</h2>
+<h2>2024-2025 Peer Mentors</h2>
 <div class="row">
   <div class="column column-4">
   	<h3>Emma Grace Teggatz</h3>
