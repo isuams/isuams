@@ -70,11 +70,6 @@ section: new_students
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski" style="width:100%">
     <p>Geology</p>
   </div>
-    <div class="column column-4">
-  	<h3>Lauren Bader</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader" style="width:100%">
-    <p>Meteorology</p>
-  </div>
   <div class="column column-4">
   	<h3>Jon Siemianowski</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Jon_Historian.jpg?raw=true" alt="Jon Siemianowski" style="width:100%">
@@ -86,6 +81,11 @@ section: new_students
   <div class="column column-4">
   	<h3>Braydon Songer</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Braydon_VP.jpg?raw=true" alt="Braydon Songer" style="width:100%">
+    <p>Meteorology</p>
+  </div>
+  <div class="column column-4">
+  	<h3>Lauren Bader</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader" style="width:100%">
     <p>Meteorology</p>
   </div>
   <div class="column column-4">
