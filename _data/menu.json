@@ -178,13 +178,13 @@
 		]
 	},
 	{
-		"page": "new-students",
+		"page": "new_students",
 		"permalink": "/new_students/",
 		"name": "New Students",
 		"has_subpages": true,
 		"subpages": [
 			{
-				"page": "learning-community",
+				"page": "learning_community",
 				"permalink": "/new_students/learning_community",
 				"name": "Earth Wind & Fire Learning Community",
 				"has_subpages": false
