@@ -1,7 +1,8 @@
 ---
-title: EWF Learning Community
+title: Learning Community
 layout: page
 section: new_students
+subsection: learning_community
 ---
 
 <html>
