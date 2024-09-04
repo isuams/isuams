@@ -15,8 +15,8 @@ section: learning_community
     .column {
       float: left;
       width: 50%;
-      padding: 20px; /* Ensure padding for proper spacing */
-      text-align: center; /* Center-align content */
+      padding: 20px;
+      text-align: center;
     }
 
     .column-4 {
@@ -32,14 +32,14 @@ section: learning_community
       display: table;
     }
 
-    /* Original-size class for Dave and Cinzia's images */
+    /* Make Dave and Cinzia's images the same size */
     .original-size img {
-      width: 80%; /* Adjust width as needed */
-      height: auto; /* Maintain aspect ratio */
+      width: 100%; /* Ensure the image takes up the entire column width */
+      height: 300px; /* Fixed height to match both images */
+      object-fit: cover; /* Crop the image while maintaining the aspect ratio */
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 20px; /* Add space below the image */
     }
 
     /* For cropped images */
@@ -48,7 +48,7 @@ section: learning_community
       height: 200px;  /* Fixed height */
       object-fit: cover;  /* Crops the image without distorting */
     }
-  </style>
+</style>
 </head>
 <body>
 
