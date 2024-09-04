@@ -29,6 +29,13 @@ section: new_students
   clear: both;
   display: table;
 }
+
+/* Set fixed width and height for all images and crop them */
+.image-container img {
+  width: 100%;  /* Ensures the image fits the column width */
+  height: 200px;  /* Fixed height */
+  object-fit: cover;  /* Crops the image without distorting */
+}
 </style>
 </head>
 <body>
@@ -50,11 +57,15 @@ section: new_students
 <div class="row">
   <div class="column">
   	<h3>Dave Flory</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Dave Flory.jpg?raw=true" alt="Dave Flory" style="width:50%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/images/Learning Community/Dave Flory.jpg?raw=true" alt="Dave Flory">
+    </div>
   </div>
   <div class="column">
   	<h3>Cinzia Cervato</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Cinzia Cervato.jpg?raw=true" alt="Cinzia Cervato" style="width:50%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/images/Learning Community/Cinzia Cervato.jpg?raw=true" alt="Cinzia Cervato">
+    </div>
   </div>
 </div>
 
@@ -62,17 +73,23 @@ section: new_students
 <div class="row">
   <div class="column column-4">
   	<h3>Emma Grace Teggatz</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz">
+    </div>
     <p>Climate Science</p>
   </div>
   <div class="column column-4">
   	<h3>Garrett Korkowski</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski">
+    </div>
     <p>Geology</p>
   </div>
   <div class="column column-4">
   	<h3>Jon Siemianowski</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Jon_Historian.jpg?raw=true" alt="Jon Siemianowski" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/current_officers/Jon_Historian.jpg?raw=true" alt="Jon Siemianowski">
+    </div>
     <p>Meteorology</p>
   </div>
 </div>
@@ -80,22 +97,33 @@ section: new_students
 <div class="row">
   <div class="column column-4">
   	<h3>Braydon Songer</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Braydon_VP.jpg?raw=true" alt="Braydon Songer" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/current_officers/Braydon_VP.jpg?raw=true" alt="Braydon Songer">
+    </div>
     <p>Meteorology</p>
   </div>
   <div class="column column-4">
   	<h3>Lauren Bader</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader">
+    </div>
     <p>Meteorology</p>
   </div>
   <div class="column column-4">
   	<h3>Maddie Medvec</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec">
+    </div>
     <p>Meteorology</p>
   </div>
   <div class="column column-4">
   	<h3>Stefan Sundin</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Stefan_Academic.jpg?raw=true" alt="Stefan Sundin" style="width:100%">
+    <div class="image-container">
+      <img src="{{ site.baseurl }}/uploads/current_officers/Stefan_Academic.jpg?raw=true" alt="Stefan Sundin">
+    </div>
     <p>Math Tutor</p>
   </div>
 </div>
+
+</body>
+</html>
