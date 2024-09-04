@@ -48,6 +48,7 @@ section: about
   - [January 26, 2021]({{site.baseurl }}/uploads/minutes/2020-21/1-26-20-Minutes.pdf)
   - [February 23, 2021]({{site.baseurl }}/uploads/minutes/2020-21/2-23-21-Minutes.pdf)
   - [March 30, 2021]({{site.baseurl }}/uploads/minutes/2020-21/3-30-21-Minutes.pdf)
+  - [April 20, 2021]({{site.baseurl }}/uploads/minutes/2020-21/4-20-21-Minutes.pdf)
 
 **2019-2020**
 
