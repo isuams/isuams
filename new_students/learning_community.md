@@ -1,7 +1,7 @@
 ---
-title: New Students Home
+title: Earth Wind & Fire Learning Community
 layout: page
-section: new_students
+section: learning_community
 ---
 
 <html>
