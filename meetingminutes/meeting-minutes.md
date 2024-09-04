@@ -42,8 +42,8 @@ section: about
 
 **2020-2021**
 
-  - [August 25, 2020]({{site.baseurl }}/uploads/minutes/2020-21/8-25-20 Minutes.pdf)
-  - [September 29, 2020]({{site.baseurl }}/uploads/minutes/2020-21/9-29-20 Minutes.pdf)
+  - [August 25, 2020]({{site.baseurl }}/uploads/minutes/2020-21/8-25-20-Minutes.pdf)
+  - [September 29, 2020]({{site.baseurl }}/uploads/minutes/2020-21/9-29-20-Minutes.pdf)
   - [October 27, 2020]({{site.baseurl }}/uploads/minutes/2020-21/10-27-20-Minutes.pdf)
   - [January 26, 2021]({{site.baseurl }}/uploads/minutes/2020-21/1-26-20-Minutes.pdf)
   - [February 23, 2021]({{site.baseurl }}/uploads/minutes/2020-21/2-23-21-Minutes.pdf)
