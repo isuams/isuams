@@ -34,7 +34,7 @@ section: learning_community
 
     /* Make Dave and Cinzia's images the same size */
     .original-size img {
-      width: 100%; /* Ensure the image takes up the entire column width */
+      width: 50%; /* Ensure the image takes up the entire column width */
       height: 300px; /* Fixed height to match both images */
       object-fit: cover; /* Crop the image while maintaining the aspect ratio */
       display: block;
