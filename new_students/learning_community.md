@@ -1,7 +1,8 @@
 ---
 title: Earth Wind & Fire Learning Community
 layout: page
-section: learning_community
+section: new_students
+permalink: /new_students/learning_community/
 ---
 
 <html>
