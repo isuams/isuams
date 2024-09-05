@@ -45,7 +45,7 @@ section: learning_community
     /* For cropped images */
     .cropped-image img {
       width: 100%;  /* Ensures the image fits the column width */
-      height: 200px;  /* Fixed height */
+      height: 225px;  /* Fixed height */
       object-fit: cover;  /* Crops the image without distorting */
     }
 </style>
