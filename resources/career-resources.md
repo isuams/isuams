@@ -6,12 +6,9 @@ section: resources
 
 **Opportunities and Career Guidance**
 
-[Scholarships]({{ site.baseurl }}{% link resources/scholarships.html %})
+[Scholarships](https://www.meteor.iastate.edu/ams/resources/scholarships/)
 
-[Research Experiences for Undergraduates (REUs)]({{ site.baseurl }}{% link resources/internship-reu.html %})
-
-[Member Scholarships and Internships]({{ site.baseurl }}{% link resources/scholarship-internship-contacts.md %})
-Contact students who have received these scholarships or completed these internships.
+[Research Experiences for Undergraduates (REUs)](https://www.meteor.iastate.edu/ams/resources/internship-reu/)
 
 [Iowa State LAS Career Services](https://careers.las.iastate.edu/)
 
@@ -24,7 +21,7 @@ Contact students who have received these scholarships or completed these interns
 [AMS Certification Programs](https://www.ametsoc.org/ams/index.cfm/education-careers/ams-professional-certification-programs/)
 AMS Seal of Approval, Certified Broadcast Meteorologist, Certified Consulting Meteorologist
 
-[The Broadcast Meteorology Employment Field](http://journals.ametsoc.org/doi/pdf/10.1175/2008BAMS2533.1)
+[The Broadcast Meteorology Employment Field]([http://journals.ametsoc.org/doi/pdf/10.1175/2008BAMS2533.1](http://co2.aos.wisc.edu/~adesai/documents/aos_retreat08/MoreDocs/BroadcastMeteo-i1520-0477-89-8-1186.pdf))
 BAMS article discussing market statistics for broadcast meteorology.
 
 Surveys of Broadcast Meteorology Alumni
@@ -35,20 +32,17 @@ Surveys of Broadcast Meteorology Alumni
 
 **Private Sector**
 
-[Board for Private Sector Meteorologists](https://www.ametsoc.org/CPROF/index.cfm/boards/board-for-private-sector-meteorologists/)
+[Board for Private Sector Meteorologists]([https://www.ametsoc.org/CPROF/index.cfm/boards/board-for-private-sector-meteorologists/](https://www.ametsoc.org/index.cfm/cprof/boards/board-for-private-sector-meteorologists/))
 
-[National Council of Industrial Meteorologists](http://www.ncim.org/#)
+[National Council of Industrial Meteorologists]([http://www.ncim.org/#](http://certifiedmeteorologists.org/about-association-certified-meteorologists.htm))
 
 **Forecasting**
 
-[National Weather Service Careers](http://www.nws.noaa.gov/careers.php)
+[National Weather Service Careers]([http://www.nws.noaa.gov/careers.php](https://www.noaa.gov/nws-careers))
 NWS student employment programs, job openings, and qualifications.
 
-[National Weather Association Job Corner](http://www.nwas.org/jobs.php)
+[National Weather Association Job Corner]([http://www.nwas.org/jobs.php](https://nwas.org/membership/nwa-job-board/))
 NWA list of current job openings, along with specific job descriptions.
-
-[Applying to the NWS](https://drive.google.com/a/iastate.edu/file/d/0B2k-e6Qh9mUXeWstT3pub0RuUXM/view?usp=sharing)
-Chris Schaffer's guide to applying to the National Weather Service
 
 **Research**
 
@@ -58,7 +52,7 @@ Opportunities for undergraduates (SOARS, AMS Scholarships), graduates, and post-
 [NCAR Research Applications Laboratory](http://www.rap.ucar.edu/projects/wcs/)
 Resource list for water, climate and society programs
 
-[NOAA Student Opportunities](http://www.oesd.noaa.gov/noaa_student_opps.html)
+[NOAA Student Opportunities]([http://www.oesd.noaa.gov/noaa_student_opps.html](https://www.noaa.gov/education/opportunities/students))
 NOAA scholarships, internships, fellowships, and special opportunities.
 
 [What Does it Take to Get into Graduate School?](http://journals.ametsoc.org/doi/pdf/10.1175/2009BAMS2767.1)
