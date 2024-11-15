@@ -52,5 +52,8 @@ An index of websites and information about lightning and lightning safety, all g
 [Career Information: A Guide to Meteorology Resources](https://ametsoc.org/index.cfm/ams/education-careers/careers/career-guides-tools/) <br>
 An amazing index of information provided by the AMS website about several different aspects of Meteorology.
 
+[The Ultimate Guide to Hurricane Preparedness](https://resortinsider.org/the-ultimate-guide-to-hurricane-preparedness/)  
+A comprehensive guide that provides essential information on preparing for hurricanes, including safety tips, emergency supplies, and evacuation planning to help individuals and families stay safe during hurricane season.
+
 [AMS Glossary](http://glossary.ametsoc.org/wiki/Main_Page) <br>
 A glossary of many terms that are used in the field of meteorology.
