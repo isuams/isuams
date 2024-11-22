@@ -4,9 +4,10 @@ layout: page
 section: about
 ---
 
-**Most recent:** [October 29, 2024]({{site.baseurl }}/uploads/minutes/2024-25/October2024Minutes.pdf)
+**Most recent:** [November 19, 2024]({{site.baseurl }}/uploads/minutes/2024-25/November2024.pdf)
 ---
 **2024-2025**
+- [November 19, 2024]({{site.baseurl }}/uploads/minutes/2024-25/November2024.pdf)
 - [October 29, 2024]({{site.baseurl }}/uploads/minutes/2024-25/October2024Minutes.pdf)
 - [September 24, 2024]({{site.baseurl }}/uploads/minutes/2024-25/September 24 2024 Minutes.pdf)
 - [August 27, 2024]({{site.baseurl }}/uploads/minutes/2024-25/August 27 2024 Minutes.pdf)
