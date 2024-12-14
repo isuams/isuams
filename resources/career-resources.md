@@ -7,8 +7,14 @@ section: resources
 **Opportunities and Career Guidance**
 
 <div class="powerpoint-presentation">
-	<h2>AMS Professional Development Powerpoint # 2</h2>
+	<h2>AMS Professional Development Powerpoint</h2>
 	<iframe src="https://www.meteor.iastate.edu/ams/uploads/AMSProfessionalDevelopment2.pdf" width="100%" height="400px">
+	</iframe>
+</div>
+
+<div class="powerpoint-presentation">
+	<h2>AMS Professional Development Powerpoint</h2>
+	<iframe src="https://www.meteor.iastate.edu/ams/uploads/ISUAMSAlumniJobExperiences.pdf" width="100%" height="400px">
 	</iframe>
 </div>
 
