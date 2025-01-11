@@ -6,6 +6,12 @@ section: resources
 
 **Opportunities and Career Guidance**
 
+<div class="nws-resume-pdf">
+	<h2>Resume Suggestions from the Quad Cities NWS</h2>
+	<iframe src="https://www.meteor.iastate.edu/ams/uploads/Students_Resume_Suggestions.pdf" width="100%" height="400px">
+	</iframe>
+</div>
+
 <div class="powerpoint-presentation">
 	<h2>AMS Professional Development Powerpoint</h2>
 	<iframe src="https://www.meteor.iastate.edu/ams/uploads/AMSProfessionalDevelopment2.pdf" width="100%" height="400px">
