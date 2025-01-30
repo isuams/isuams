@@ -55,7 +55,7 @@ An amazing index of information provided by the AMS website about several differ
 [The Ultimate Guide to Hurricane Preparedness](https://resortinsider.org/the-ultimate-guide-to-hurricane-preparedness/)  
 A comprehensive guide that provides essential information on preparing for hurricanes, including safety tips, emergency supplies, and evacuation planning to help individuals and families stay safe during hurricane season.
 
-[The History of Engineering in Disaster Preparedness: 18 Innovations That Saved Lives](https://engineeringmanagement.org/history-of-engineering-disaster-preparedness/) 
+[The History of Engineering in Disaster Preparedness: 18 Innovations That Saved Lives](https://engineeringmanagement.org/history-of-engineering-disaster-preparedness/)  
 A detailed overview of how engineering advancements have transformed disaster preparedness, featuring 18 life-saving innovations—such as flood barriers, earthquake-resistant designs, and early warning systems—that highlight strategies to mitigate risks, protect communities, and build resilience in the face of natural disasters.
 
 [AMS Glossary](http://glossary.ametsoc.org/wiki/Main_Page) <br>
