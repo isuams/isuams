@@ -58,5 +58,8 @@ A comprehensive guide that provides essential information on preparing for hurri
 [The History of Engineering in Disaster Preparedness: 18 Innovations That Saved Lives](https://engineeringmanagement.org/history-of-engineering-disaster-preparedness/)  
 A detailed overview of how engineering advancements have transformed disaster preparedness, featuring 18 life-saving innovations—such as flood barriers, earthquake-resistant designs, and early warning systems—that highlight strategies to mitigate risks, protect communities, and build resilience in the face of natural disasters.
 
+[The Impact of Climate Change on Your Health: What You Need to Know](https://masterspublichealth.com/climate-change-impact-on-your-health/)  
+A concise guide to the health impacts of climate change, covering risks like heat-related illnesses, respiratory diseases, and vector-borne infections, while emphasizing mitigation strategies, adaptation efforts, and the role of technology in protecting vulnerable populations.
+
 [AMS Glossary](http://glossary.ametsoc.org/wiki/Main_Page) <br>
 A glossary of many terms that are used in the field of meteorology.
