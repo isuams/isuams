@@ -12,6 +12,12 @@ section: resources
 	</iframe>
 </div>
 
+<div class="resume-pdf">
+	<h2>Resume Building Powerpoint</h2>
+	<iframe src="https://www.meteor.iastate.edu/ams/uploads/AMS_Informational4.pdf" width="100%" height="400px">
+	</iframe>
+</div>
+
 <div class="powerpoint-presentation">
 	<h2>AMS Professional Development Powerpoint</h2>
 	<iframe src="https://www.meteor.iastate.edu/ams/uploads/AMSProfessionalDevelopment2.pdf" width="100%" height="400px">
