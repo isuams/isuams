@@ -7,6 +7,7 @@ section: about
 **Most recent:** [January 28, 2024]({{site.baseurl }}/uploads/minutes/2024-25/January2025.pdf)
 ---
 **2024-2025**
+- [February 25, 2025]({{site.baseurl }}/uploads/minutes/2024-25/AMS_Feb_2025.pdf)
 - [January 28, 2025]({{site.baseurl }}/uploads/minutes/2024-25/January2025.pdf)
 - [November 19, 2024]({{site.baseurl }}/uploads/minutes/2024-25/November2024.pdf)
 - [October 29, 2024]({{site.baseurl }}/uploads/minutes/2024-25/October2024Minutes.pdf)
