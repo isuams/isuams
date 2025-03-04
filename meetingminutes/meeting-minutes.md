@@ -4,7 +4,7 @@ layout: page
 section: about
 ---
 
-**Most recent:** [January 28, 2024]({{site.baseurl }}/uploads/minutes/2024-25/January2025.pdf)
+**Most recent:** [January 28, 2024]({{site.baseurl }}/uploads/minutes/2024-25/AMS_Feb_2025.pdf)
 ---
 **2024-2025**
 - [February 25, 2025]({{site.baseurl }}/uploads/minutes/2024-25/AMS_Feb_2025.pdf)
