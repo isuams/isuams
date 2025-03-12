@@ -25,9 +25,19 @@ section: resources
 </div>
 
 <div class="powerpoint-presentation">
-	<h2>AMS Professional Development Powerpoint #2</h2>
+	<h2>AMS Job Panel</h2>
 	<iframe src="https://www.meteor.iastate.edu/ams/uploads/jobexperiences.pdf" width="100%" height="400px">
 	</iframe>
+</div>
+
+<div class="powerpoint-presentation">
+  <h2>
+    <a href="https://iastate.webex.com/recordingservice/sites/iastate/recording/049f9003ce61413d9eb3ca19cdf306ea/playback" target="_blank">
+      AMS Job Panel #2 - Webex Link Here
+    </a>
+  </h2>
+  <iframe src="https://www.meteor.iastate.edu/ams/uploads/AlumniJobPanel2.pdf" width="100%" height="400px">
+  </iframe>
 </div>
 
 [Scholarships](https://www.meteor.iastate.edu/ams/resources/scholarships/)
