@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+	:root {
+            --btn-color: #aa7761; /* 2025 color */
+        }
     .fakeimg {
       height: 200px;
     }
@@ -16,13 +19,7 @@
   </head>
   <body>
 
-<style>
-.bg-color-bar {
-  background-color: white;
-  padding: 10px 10px; /* Adjust this value for top and bottom padding as needed */
-}
-</style> 
- 
+   
 <!--Header with image-->
 <div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
   <div class="container-fluid">
@@ -33,7 +30,7 @@
 	  
       <div class="col-6 d-flex float-right justify-content-end align-items-center">
         <div class="button-box" style="padding: 10px 10px;"></div>
-        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: #b40024; border: 3px #000000">Return to<br>Iowa State AMS</a>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
       </div>
     </div>
   </div>
@@ -55,20 +52,20 @@
           <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
         </li>-->
         <!--<li class="nav-item">
-            <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
         </li>-->
-		<li class="nav-item dropdown">
+	<!--<li class="nav-item dropdown"> /* Used at the start of Season 2 */
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Scores
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	    <!--<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a>-->
-	    <a class="dropdown-item" href="final_results.html">Final Results</a>
-            <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a>
-            <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a>
+	    <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /* Season 2 */
+	    <a class="dropdown-item" href="final_results.html">Final Results</a> /* End of Contest */
+            <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /* Season 2 */
+            <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /* End of Contest */
 			
           </div>
-        </li>
+        </li>-->
         <li class="nav-item">
             <a class="nav-link" href="verification.html">Verification</a>
         </li> 
@@ -88,7 +85,7 @@
 <div class="row">
 	<div class="col-sm-12 text-center">
 		<div class="button-box col-lg-12"></div>
-        <a href="https://forms.gle/1kVqBJqw2mQPyz1e7" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: #b40024; border: 1px #000000">Click Here to Register for 2025</a>
+        <a href="https://forms.gle/1kVqBJqw2mQPyz1e7" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Click Here to Register for 2025</a>
 	</div>
 </div>
 	<br>
@@ -235,22 +232,22 @@
     <div class="row d-flex align-items-center">
       <div class="col-sm-3 p-1">
         <div class="button-box col-lg-12"></div>
-        <a href="https://drive.google.com/file/d/17x2ohQuhMx0dzhHdlqkOH7Rb3p7rTb5d/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">TTC Terms and Conditions</a>
+        <a href="https://drive.google.com/file/d/17x2ohQuhMx0dzhHdlqkOH7Rb3p7rTb5d/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">TTC Terms and Conditions</a>
       </div> 
 
       <div class="col-sm-3 p-1">
         <div class="button-box col-lg-12"></div>
-        <a href="https://drive.google.com/file/d/15mFv_dW0IouipAdUes3AzeQthRwEUNdW/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">TTC Privacy Policy</a>
+        <a href="https://drive.google.com/file/d/15mFv_dW0IouipAdUes3AzeQthRwEUNdW/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">TTC Privacy Policy</a>
       </div> 
 
       <div class="col-sm-3 p-1">
         <div class="button-box col-lg-12"></div>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">Report Misconduct</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">Report Misconduct</a>
       </div>
 
       <div class="col-sm-3 p-1">
         <div class="button-box col-lg-12"></div>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: #b40024; border: 1px #000000">Unsubscribe from TTC</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">Unsubscribe from TTC</a>
       </div>
     </div>
   </div>
