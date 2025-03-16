@@ -1,21 +1,29 @@
+
 <!DOCTYPE html>
 
 <head>
-  <title>Tornado Target Contest</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-   <!-- Leaflet CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-   <!--Regular CSS-->
-   <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Leaflet CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
-   
+    <style>
+	:root {
+      --btn-color: #aa7761; /* 2025 color */
+    }
+    .fakeimg {
+      height: 200px;
+      background-image: url('IMG_0403.jpg');
+    }
+    </style>
+ </head>
+ <body>
+
 <!--Header with image-->
 <div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
   <div class="container-fluid">
@@ -33,16 +41,47 @@
 </div>
 
 
-<div id="navibar-container"></div>
-
-<script>
-    fetch('navibar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navibar-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-</script>
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	<!--<li class="nav-item dropdown"> /* Used at the start of Season 2 */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	    <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /* Season 2 */
+	    <a class="dropdown-item" href="final_results.html">Final Results</a> /* End of Contest */
+            <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /* Season 2 */
+            <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /* End of Contest */
+			
+          </div>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
 
 <br>
 
@@ -98,16 +137,18 @@
 		</div>
 	  </div>
           <!--embed submission form-->
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsQsiLTS2CSSRl0CeTAP_-AGWhrIQBfoWqG3BQPNDpZmvuw/viewform" style="height: 720px; width: 100%"></iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdC0cZcMoDJf5pP0cngXit2UiNeD8YGkGfVsWiA29Ovyhsmgg/viewform?usp=sf_link" style="height: 720px; width: 100%"></iframe>
         </div>
       </div>
 
-
-      
+          
      
       <div class="col-sm-1"></div>
 
-      <!-- Right Column -->
+      <!-- embed map-->
+
+
+      <!--Embedlinks-->
       <div class="col-lg-5 bg-light text-dark rounded center-block text-center">
         <br>
         <div class="center-block">
@@ -127,34 +168,34 @@
         <script src="script.js"></script>
 
         <!--embed links-->
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12 center-text"></div>
-                <a href="https://home.pivotalweather.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">Pivotal Weather</a>
-        </div>
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12"></div>
-                <a href="https://www.wpc.ncep.noaa.gov/index.shtml#page=sfc" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">Surface Analysis - Weather Prediction Center</a>
-        </div>
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12"></div>
-                <a href="https://www.f5wx.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">F5 Weather</a>
-        </div>
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12"></div>
-                <a href="https://www.tropicaltidbits.com/analysis/models/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">Tropical Tidbits</a>
-        </div>
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12"></div>
-                <a href="https://weather.rap.ucar.edu/upper/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">UCAR - RAP Upper Air</a>
-        </div>
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12"></div>
-                <a href="https://meteor.geol.iastate.edu/~ckarsten/bufkit/image_loader.phtml" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">Iowa State Meteogram</a>
-        </div>
-        <div class="center-block p-2">
-              <div class="button-box col-lg-12"></div>
-                <a href="http://data.nadocast.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: solid var(--btn-color); width:100%">Nadocast</a>
-        </div> 
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12 center-text"></div>
+           <a href="https://home.pivotalweather.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Pivotal Weather</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://www.wpc.ncep.noaa.gov/index.shtml#page=sfc" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Surface Analysis - Weather Prediction Center</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://www.f5wx.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">F5 Weather</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://www.tropicaltidbits.com/analysis/models/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Tropical Tidbits</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://weather.rap.ucar.edu/upper/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">UCAR - RAP Upper Air</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://meteor.geol.iastate.edu/~ckarsten/bufkit/image_loader.phtml" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Iowa State Meteogram</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="http://data.nadocast.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Nadocast</a>
+	</div> 
         <br>
       </div>      
     </div>
@@ -170,5 +211,4 @@
   <p>Tornado Target Contest 2025</p>
   <p>TornadoTargetContest@gmail.com</p>
 </div>
-
 </body>
