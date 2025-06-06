@@ -1,318 +1,314 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Blue 2025_06_05                      
+Title: TTC Forecast Locations Blue 2025_06_06                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 33.184,-102.277
-Icon: 0,0,180,1,3, "Name: Veer T\nForecaster Number: 216\n33.18N 102.28W\nTarget City: Brownfield, TX"
+Object: 37.207,-102.917
+Icon: 0,0,180,1,3, "Name: Veer T\nForecaster Number: 216\n37.21N 102.92W\nTarget City: 24 ESE Kim, CO"
 End:
 
-Object: 37.4179986,-101.4712345
-Icon: 0,0,180,1,3, "Name: Ben Price\nForecaster Number: 115\n37.42N 101.47W\nTarget City: Stano, KS"
+Object: 36.3867,-89.4819
+Icon: 0,0,180,1,3, "Name: Tristan White\nForecaster Number: 31\n36.39N 89.48W\nTarget City: Tiptonville, TN"
 End:
 
-Object: 37.5703,-101.7506
-Icon: 0,0,180,1,3, "Name: Colton Flint\nForecaster Number: 44\n37.57N 101.75W\nTarget City: Johnson City, KS"
+Object: 34.0855732,-101.8533498
+Icon: 0,0,180,1,3, "Name: Outflow boundary truther \nForecaster Number: 200\n34.09N 101.85W\nTarget City: Hale Center, TX"
 End:
 
-Object: 33.2836,-103.0888
-Icon: 0,0,180,1,3, "Name: Chris Yates\nForecaster Number: 63\n33.28N 103.09W\nTarget City: Tatum, NM"
+Object: 33.4867,-101.8363
+Icon: 0,0,180,1,3, "Name: Chris Yates\nForecaster Number: 63\n33.49N 101.84W\nTarget City: Lubbock, TX"
 End:
 
-Object: 37.45,-100.99
-Icon: 0,0,180,1,3, "Name: Adler Hanson\nForecaster Number: 10\n37.45N 100.99W\nTarget City: Satanta, KS"
+Object: 33.64,-101.81
+Icon: 0,0,180,1,3, "Name: Andrew Griffiths\nForecaster Number: 291\n33.64N 101.81W\nTarget City: Lubbock, TX (again)"
 End:
 
-Object: 37.56,-101.76
-Icon: 0,0,180,1,3, "Name: Caleb O’Gara\nForecaster Number: 140\n37.56N 101.76W\nTarget City: Johnson, KS"
+Object: 37.4067,-102.5958
+Icon: 0,0,180,1,3, "Name: gkeller99\nForecaster Number: 205\n37.41N 102.60W\nTarget City: "
 End:
 
-Object: 37.3254,-101.2133
-Icon: 0,0,180,1,3, "Name: Hoang Do\nForecaster Number: 230\n37.33N 101.21W\nTarget City: Moscow, KS"
+Object: 36.51,-101.13
+Icon: 0,0,180,1,3, "Name: Earth Central\nForecaster Number: 22\n36.51N 101.13W\nTarget City: Hooker, OK"
 End:
 
-Object: 37.4376,-101.7616
-Icon: 0,0,180,1,3, "Name: gkeller99\nForecaster Number: 205\n37.44N 101.76W\nTarget City: "
+Object: 33.7489,-102.3603
+Icon: 0,0,180,1,3, "Name: Hoang Do\nForecaster Number: 230\n33.75N 102.36W\nTarget City: Whitharral, TX"
 End:
 
-Object: 37.5861,-102.12305
-Icon: 0,0,180,1,3, "Name: MasDogWx\nForecaster Number: 217\n37.59N 102.12W\nTarget City: Lycan, CO"
+Object: 37.78174,-103.16891
+Icon: 0,0,180,1,3, "Name: MasDogWx\nForecaster Number: 217\n37.78N 103.17W\nTarget City: Toonerville, CO"
 End:
 
-Object: 37.6,-101.7
-Icon: 0,0,180,1,3, "Name: Hunter Anderson\nForecaster Number: 167\n37.60N 101.70W\nTarget City: JHN"
+Object: 33.4,-101.69
+Icon: 0,0,180,1,3, "Name: Adler Hanson\nForecaster Number: 10\n33.40N 101.69W\nTarget City: Slaton, TX"
 End:
 
-Object: 37.06,-101.77
-Icon: 0,0,180,1,3, "Name: Ethan Kerr\nForecaster Number: 116\n37.06N 101.77W\nTarget City: Wilburton, KS"
+Object: 33.7,-101.7
+Icon: 0,0,180,1,3, "Name: Bill Gallus\nForecaster Number: 282\n33.70N 101.70W\nTarget City: Lubbock, TX"
 End:
 
-Object: 37.432633,-100.994891
-Icon: 0,0,180,1,3, "Name: Tyler Williams\nForecaster Number: 262\n37.43N 100.99W\nTarget City: Satanta, KS"
+Object: 33.57,-102.38
+Icon: 0,0,180,1,3, "Name: Stephen Szulborski\nForecaster Number: 206\n33.57N 102.38W\nTarget City: Levelland,Tx"
 End:
 
-Object: 37.16,-101.32
-Icon: 0,0,180,1,3, "Name: Andrew Griffiths\nForecaster Number: 291\n37.16N 101.32W\nTarget City: Moscow, Kansas"
+Object: 33.9366,-102.3022
+Icon: 0,0,180,1,3, "Name: Catherine Opalka\nForecaster Number: 119\n33.94N 102.30W\nTarget City: Littlefield, TX"
 End:
 
-Object: 34.654,-102.724
-Icon: 0,0,180,1,3, "Name: Joseph Patton\nForecaster Number: 45\n34.65N 102.72W\nTarget City: Friona, TX"
+Object: 33.7289,-102.0506
+Icon: 0,0,180,1,3, "Name: Braydon Songer\nForecaster Number: 270\n33.73N 102.05W\nTarget City: NW of Shallowater, TX"
 End:
 
-Object: 33.43,-101.65
-Icon: 0,0,180,1,3, "Name: Lauren Bader\nForecaster Number: 20\n33.43N 101.65W\nTarget City: Slaton, TX"
+Object: 33.65,-101.67
+Icon: 0,0,180,1,3, "Name: Sebastian Pelt\nForecaster Number: 283\n33.65N 101.67W\nTarget City: Idalou, TX"
 End:
 
-Object: 30.9675,-102.9114
-Icon: 0,0,180,1,3, "Name: Ft stockton magic never fails\nForecaster Number: 113\n30.97N 102.91W\nTarget City: Fort Stockton tx"
+Object: 33.577768,-102.009153
+Icon: 0,0,180,1,3, "Name: Blake Brink\nForecaster Number: 150\n33.58N 102.01W\nTarget City: Western Lubbock, TX"
 End:
 
-Object: 35.2,-101.8
-Icon: 0,0,180,1,3, "Name: Bill Gallus\nForecaster Number: 282\n35.20N 101.80W\nTarget City: Amarillo, TX"
+Object: 33.3993,-101.8378
+Icon: 0,0,180,1,3, "Name: SRRadarLoops\nForecaster Number: 88\n33.40N 101.84W\nTarget City: "
 End:
 
-Object: 33.57487466,-101.9413841
-Icon: 0,0,180,1,3, "Name: Bengalsfan\nForecaster Number: 223\n33.57N 101.94W\nTarget City: Lubbock, TX "
+Object: 36.9035311,-102.9608075
+Icon: 0,0,180,1,3, "Name: We ride (doss)\nForecaster Number: 290\n36.90N 102.96W\nTarget City: Boise City, OK"
 End:
 
-Object: 37.2634722,-101.7819167
-Icon: 0,0,180,1,3, "Name: We ride (doss)\nForecaster Number: 290\n37.26N 101.78W\nTarget City: Richfield, KS"
+Object: 36.83,-102.43
+Icon: 0,0,180,1,3, "Name: Logan Giles\nForecaster Number: 265\n36.83N 102.43W\nTarget City: Boise City, OK"
 End:
 
-Object: 37.236137,-102.2899149
-Icon: 0,0,180,1,3, "Name: maybe K*rk\nForecaster Number: 300\n37.24N 102.29W\nTarget City: Stonington, CO"
+Object: 36.42,-89.03
+Icon: 0,0,180,1,3, "Name: Matthew Teare\nForecaster Number: 284\n36.42N 89.03W\nTarget City: Union City, TN"
 End:
 
-Object: 37.1518,-100.7466
-Icon: 0,0,180,1,3, "Name: Braydon Songer\nForecaster Number: 270\n37.15N 100.75W\nTarget City: Seward County, KS"
+Object: 33.6339115,-101.7402743
+Icon: 0,0,180,1,3, "Name: Bengalsfan \nForecaster Number: 223\n33.63N 101.74W\nTarget City: Lubbock, TX"
 End:
 
-Object: 33.17,-101.8
-Icon: 0,0,180,1,3, "Name: Stephen Szulborski\nForecaster Number: 206\n33.17N 101.80W\nTarget City: Tahoka, TX"
+Object: 34.1875,-101.706
+Icon: 0,0,180,1,3, "Name: Antonio Ruiz Núñez\nForecaster Number: 130\n34.19N 101.71W\nTarget City: Plainview, TX"
 End:
 
-Object: 37.12,-101.63
-Icon: 0,0,180,1,3, "Name: Matthew Teare\nForecaster Number: 284\n37.12N 101.63W\nTarget City: Rolla, KS"
+Object: 35.82,-101.36
+Icon: 0,0,180,1,3, "Name: Alexis Severson\nForecaster Number: 174\n35.82N 101.36W\nTarget City: Canadian, TX"
 End:
 
-Object: 32.7907,-101.5865
-Icon: 0,0,180,1,3, "Name: SRRadarLoops\nForecaster Number: 88\n32.79N 101.59W\nTarget City: "
+Object: 33.73,-102.32
+Icon: 0,0,180,1,3, "Name: Lauren Bader\nForecaster Number: 20\n33.73N 102.32W\nTarget City: Whitharral, TX"
 End:
 
-Object: 37.5377828,-100.6343187
-Icon: 0,0,180,1,3, "Name: WxDownYonder\nForecaster Number: 163\n37.54N 100.63W\nTarget City: Copeland, KS"
+Object: 37.1039,-102.5795
+Icon: 0,0,180,1,3, "Name: Nic Anthony\nForecaster Number: 178\n37.10N 102.58W\nTarget City: Campo, CO"
 End:
 
-Object: 34.51,-102.88
-Icon: 0,0,180,1,3, "Name: Nic Anthony\nForecaster Number: 178\n34.51N 102.88W\nTarget City: Bovina, TX"
+Object: 32.8,-102.89
+Icon: 0,0,180,1,3, "Name: Jim Franc\nForecaster Number: 240\n32.80N 102.89W\nTarget City: Denver City, TX"
 End:
 
-Object: 37.51,-101.66
-Icon: 0,0,180,1,3, "Name: JetStreamJami\nForecaster Number: 221\n37.51N 101.66W\nTarget City: Copeland, KS"
+Object: 33.26,-101.48
+Icon: 0,0,180,1,3, "Name: Jacob "Deja Vu" Stichter\nForecaster Number: 46\n33.26N 101.48W\nTarget City: Close City, TX"
 End:
 
-Object: 32.45,-103.39
-Icon: 0,0,180,1,3, "Name: Jim Franc\nForecaster Number: 240\n32.45N 103.39W\nTarget City: Eunice, NM"
+Object: 36.81,-102.22
+Icon: 0,0,180,1,3, "Name: Drifter\nForecaster Number: 166\n36.81N 102.22W\nTarget City: Keyes, OK"
 End:
 
-Object: 37.2,-101.13
-Icon: 0,0,180,1,3, "Name: Logan Giles\nForecaster Number: 265\n37.20N 101.13W\nTarget City: Liberal, KS"
+Object: 37.105351,-102.57916
+Icon: 0,0,180,1,3, "Name: Roman Fariello\nForecaster Number: 71\n37.11N 102.58W\nTarget City: Campo, CO"
 End:
 
-Object: 32.1885,-101.841
-Icon: 0,0,180,1,3, "Name: Richard Cirone\nForecaster Number: 100\n32.19N 101.84W\nTarget City: Stanton, TX"
+Object: 33.8075,-102.2677
+Icon: 0,0,180,1,3, "Name: Quincy Vagell\nForecaster Number: 213\n33.81N 102.27W\nTarget City: Anton, TX"
 End:
 
-Object: 33.505121,-101.993626
-Icon: 0,0,180,1,3, "Name: Donovan F\nForecaster Number: 201\n33.51N 101.99W\nTarget City: Wolfforth, TX"
+Object: 37.3936401,-102.2916483
+Icon: 0,0,180,1,3, "Name: maybe K*rk\nForecaster Number: 300\n37.39N 102.29W\nTarget City: Walsh, CO"
 End:
 
-Object: 33.586755,-102.37751
-Icon: 0,0,180,1,3, "Name: Roman Fariello\nForecaster Number: 71\n33.59N 102.38W\nTarget City: Levelland, TX"
+Object: 37.65,-102.65
+Icon: 0,0,180,1,3, "Name: Penitentes\nForecaster Number: 242\n37.65N 102.65W\nTarget City: N of Springfield, CO"
 End:
 
-Object: 32.4289,-102.7361
-Icon: 0,0,180,1,3, "Name: Quincy Vagell\nForecaster Number: 213\n32.43N 102.74W\nTarget City: Andrews, TX"
+Object: 33.401111,-101.335278
+Icon: 0,0,180,1,3, "Name: Anthony Haberman\nForecaster Number: 147\n33.40N 101.34W\nTarget City: Canyon Valley, TX"
 End:
 
-Object: 33.65,-101.86
-Icon: 0,0,180,1,3, "Name: William Samson\nForecaster Number: 179\n33.65N 101.86W\nTarget City: Lubbock, TX"
+Object: 33.570863,-102.026892
+Icon: 0,0,180,1,3, "Name: Jeff Frame\nForecaster Number: 76\n33.57N 102.03W\nTarget City: Reese Center, TX"
 End:
 
-Object: 32.7198,-102.6521
-Icon: 0,0,180,1,3, "Name: Jason B\nForecaster Number: 226\n32.72N 102.65W\nTarget City: Seminole, TX"
+Object: 33.48,-102.26
+Icon: 0,0,180,1,3, "Name: Tobias Leonard\nForecaster Number: 285\n33.48N 102.26W\nTarget City: Lubbock, TX"
 End:
 
-Object: 34.403785,-103.250059
-Icon: 0,0,180,1,3, "Name: CPekar\nForecaster Number: 137\n34.40N 103.25W\nTarget City: Still Summer Camp Season (Clovis, NM)"
+Object: 36.811468,-102.2524
+Icon: 0,0,180,1,3, "Name: Garrett Statum\nForecaster Number: 34\n36.81N 102.25W\nTarget City: Keyes, OK"
 End:
 
-Object: 37.1,-100.91
-Icon: 0,0,180,1,3, "Name: Josh Jaeger\nForecaster Number: 279\n37.10N 100.91W\nTarget City: Liberal, KS"
+Object: 37.24,-103.01
+Icon: 0,0,180,1,3, "Name: The Hawk\nForecaster Number: 53\n37.24N 103.01W\nTarget City: "
 End:
 
-Object: 34.8607324,-100.6604786
-Icon: 0,0,180,1,3, "Name: TheBetterDoge\nForecaster Number: 131\n34.86N 100.66W\nTarget City: Hedley, TX"
+Object: 34.1548,-101.7376
+Icon: 0,0,180,1,3, "Name: Round 2,and... Go! \nForecaster Number: 113\n34.15N 101.74W\nTarget City: Plainview tx"
 End:
 
-Object: 33.21,-101.54
-Icon: 0,0,180,1,3, "Name: Jacob "It did say Close" Stichter\nForecaster Number: 46\n33.21N 101.54W\nTarget City: Close City, TX"
+Object: 33.4564443,-102.4914413
+Icon: 0,0,180,1,3, "Name: CPekar\nForecaster Number: 137\n33.46N 102.49W\nTarget City: Sundown, TX"
 End:
 
-Object: 33.2,-99.86
-Icon: 0,0,180,1,3, "Name: Tobias Leonard\nForecaster Number: 285\n33.20N 99.86W\nTarget City: Rule, TX"
+Object: 33.91,-102.34
+Icon: 0,0,180,1,3, "Name: Joe Schrantz\nForecaster Number: 286\n33.91N 102.34W\nTarget City: Littlefield, TX"
 End:
 
-Object: 37.1,-100.87
-Icon: 0,0,180,1,3, "Name: Sebastian Pelt\nForecaster Number: 283\n37.10N 100.87W\nTarget City: Liberal, KS"
+Object: 37.3861271,-102.2782394
+Icon: 0,0,180,1,3, "Name: Colton Flint\nForecaster Number: 44\n37.39N 102.28W\nTarget City: Walsh, CO"
 End:
 
-Object: 32.25372051,-101.4752388
-Icon: 0,0,180,1,3, "Name: Antonio Ruiz Núñez\nForecaster Number: 130\n32.25N 101.48W\nTarget City: Big Spring, TX"
+Object: 36.5,-88.3
+Icon: 0,0,180,1,3, "Name: Heerok Das\nForecaster Number: 79\n36.50N 88.30W\nTarget City: MCV"
 End:
 
-Object: 37.4,-101.3
-Icon: 0,0,180,1,3, "Name: Penitentes\nForecaster Number: 242\n37.40N 101.30W\nTarget City: Moscow, KS"
+Object: 33.506,-102.007
+Icon: 0,0,180,1,3, "Name: Nick Markus\nForecaster Number: 273\n33.51N 102.01W\nTarget City: Wolfforth, TX "
 End:
 
-Object: 37.179044,-101.096801
-Icon: 0,0,180,1,3, "Name: Jeff Frame\nForecaster Number: 76\n37.18N 101.10W\nTarget City: Woods, KS"
+Object: 33.556474,-102.37905
+Icon: 0,0,180,1,3, "Name: Joshua Intini\nForecaster Number: 297\n33.56N 102.38W\nTarget City: Levelland, TX"
 End:
 
-Object: 32.96,-101.96
-Icon: 0,0,180,1,3, "Name: Richard Sample\nForecaster Number: 149\n32.96N 101.96W\nTarget City: Pride, TX"
+Object: 33.69,-102.69
+Icon: 0,0,180,1,3, "Name: It was always Morton\nForecaster Number: 149\n33.69N 102.69W\nTarget City: Morton, TX"
 End:
 
-Object: 38.643056,-99.418333
-Icon: 0,0,180,1,3, "Name: Anthony Haberman\nForecaster Number: 147\n38.64N 99.42W\nTarget City: Saunders, KS"
+Object: 36.994274,-102.270217
+Icon: 0,0,180,1,3, "Name: Kyle Hugeback\nForecaster Number: 3\n36.99N 102.27W\nTarget City: "
 End:
 
-Object: 34.7937547,-102.1336752
-Icon: 0,0,180,1,3, "Name: William Gaylord\nForecaster Number: 154\n34.79N 102.13W\nTarget City: "
+Object: 33.1909,-101.3782
+Icon: 0,0,180,1,3, "Name: Kam\nForecaster Number: 254\n33.19N 101.38W\nTarget City: Post, TX"
 End:
 
-Object: 34.5,-99
-Icon: 0,0,180,1,3, "Name: Heerok Das\nForecaster Number: 79\n34.50N 99.00W\nTarget City: KFDR"
+Object: 37.1594,-102.3019
+Icon: 0,0,180,1,3, "Name: Sekwof\nForecaster Number: 124\n37.16N 102.30W\nTarget City: Elkhart, KS"
 End:
 
-Object: 37.2581,-100.5922
-Icon: 0,0,180,1,3, "Name: AustinR_Wx\nForecaster Number: 176\n37.26N 100.59W\nTarget City: Plains, KS"
+Object: 36.0647,-86.93861
+Icon: 0,0,180,1,3, "Name: Baja (MARS BAR WE TRUST)\nForecaster Number: 114\n36.06N 86.94W\nTarget City: Mars Bar in Shell, Bellevue, TN "
 End:
 
-Object: 32.84,-102.1
-Icon: 0,0,180,1,3, "Name: The Hawk\nForecaster Number: 53\n32.84N 102.10W\nTarget City: "
+Object: 37.81242,-103.17655
+Icon: 0,0,180,1,3, "Name: Ben Price\nForecaster Number: 115\n37.81N 103.18W\nTarget City: Toonerville, CO"
 End:
 
-Object: 33.5533562,-101.8878303
-Icon: 0,0,180,1,3, "Name: Poop >:( didn’t verify but this will trust >:)\nForecaster Number: 200\n33.55N 101.89W\nTarget City: Lubbock, TX"
+Object: 36.74,-102.53
+Icon: 0,0,180,1,3, "Name: William Samson\nForecaster Number: 179\n36.74N 102.53W\nTarget City: Boise City, OK"
 End:
 
-Object: 33.628,-101.217
-Icon: 0,0,180,1,3, "Name: Gavin Bird\nForecaster Number: 199\n33.63N 101.22W\nTarget City: Crosbyton, TX"
+Object: 36.99,-102.61
+Icon: 0,0,180,1,3, "Name: Survey lady\nForecaster Number: 69\n36.99N 102.61W\nTarget City: BFN in the armpit of 3 states"
 End:
 
-Object: 32.71,-102.66
-Icon: 0,0,180,1,3, "Name: Joe Schrantz\nForecaster Number: 286\n32.71N 102.66W\nTarget City: Seminole, TX"
+Object: 37.2748,-88.3843
+Icon: 0,0,180,1,3, "Name: Richard Cirone\nForecaster Number: 100\n37.27N 88.38W\nTarget City: Livingston, KY"
 End:
 
-Object: 37.109215,-101.635877
-Icon: 0,0,180,1,3, "Name: Joshua Intini\nForecaster Number: 297\n37.11N 101.64W\nTarget City: Rolla, KS"
+Object: 33.8865,-101.8474
+Icon: 0,0,180,1,3, "Name: James Summers\nForecaster Number: 188\n33.89N 101.85W\nTarget City: Abernathy, TX"
 End:
 
-Object: 37.571,-101.755
-Icon: 0,0,180,1,3, "Name: Olivia McCauley\nForecaster Number: 12\n37.57N 101.75W\nTarget City: Johnson City, KS"
+Object: 33.7191,-102.3279
+Icon: 0,0,180,1,3, "Name: Sam Romshek\nForecaster Number: 30\n33.72N 102.33W\nTarget City: Whitharral, TX"
 End:
 
-Object: 37.506,-101.889
-Icon: 0,0,180,1,3, "Name: Sam Romshek\nForecaster Number: 30\n37.51N 101.89W\nTarget City: Manter, KS"
+Object: 38.01,-103.23
+Icon: 0,0,180,1,3, "Name: JetStreamJami (CO magic) \nForecaster Number: 221\n38.01N 103.23W\nTarget City: Las Animas, CO"
 End:
 
-Object: 37.28,-101.36
-Icon: 0,0,180,1,3, "Name: Paul Austin\nForecaster Number: 249\n37.28N 101.36W\nTarget City: Hugoton, KS"
+Object: 33.644703,-102.615178
+Icon: 0,0,180,1,3, "Name: Donovan F\nForecaster Number: 201\n33.64N 102.62W\nTarget City: Whiteface, TX"
 End:
 
-Object: 37.48653,-101.11174
-Icon: 0,0,180,1,3, "Name: Baja\nForecaster Number: 114\n37.49N 101.11W\nTarget City: Ryus, KS "
+Object: 36.02,-100.25
+Icon: 0,0,180,1,3, "Name: Karson\nForecaster Number: 173\n36.02N 100.25W\nTarget City: Glazier, TX"
 End:
 
-Object: 32.8,-103.12
-Icon: 0,0,180,1,3, "Name: Reneé Rapp = Big Bad Freakin Lesbian\nForecaster Number: 233\n32.80N 103.12W\nTarget City: Hobbs, NM"
+Object: 37.21,-102.73
+Icon: 0,0,180,1,3, "Name: Bradnado\nForecaster Number: 207\n37.21N 102.73W\nTarget City: Liberty, CO"
 End:
 
-Object: 37.2802,-100.4411
-Icon: 0,0,180,1,3, "Name: Sekwof\nForecaster Number: 124\n37.28N 100.44W\nTarget City: Meade, KS"
+Object: 38.1086,-102.9579
+Icon: 0,0,180,1,3, "Name: Ethan Treff\nForecaster Number: 52\n38.11N 102.96W\nTarget City: Hasty, CO"
 End:
 
-Object: 36.61,-100.09
-Icon: 0,0,180,1,3, "Name: Karson\nForecaster Number: 173\n36.61N 100.09W\nTarget City: Slapout, OK"
+Object: 33.7243,-102.7584
+Icon: 0,0,180,1,3, "Name: Jason B\nForecaster Number: 226\n33.72N 102.76W\nTarget City: Morton for the 3rd time i guess.."
 End:
 
-Object: 37.565,-101.5616
-Icon: 0,0,180,1,3, "Name: Ethan Treff\nForecaster Number: 52\n37.56N 101.56W\nTarget City: Big Bow, KS"
+Object: 34.06,-101.84
+Icon: 0,0,180,1,3, "Name: It's EEEEVEFLOWWWWW not outflow\nForecaster Number: 127\n34.06N 101.84W\nTarget City: Hale Center, TX"
 End:
 
-Object: 37.7,-102.17
-Icon: 0,0,180,1,3, "Name: Gabe Zago\nForecaster Number: 117\n37.70N 102.17W\nTarget City: Lycan, CO"
+Object: 33.71,-101.62
+Icon: 0,0,180,1,3, "Name: Olivia Macko\nForecaster Number: 313\n33.71N 101.62W\nTarget City: Idalou, TX"
 End:
 
-Object: 37.014,-100.925
-Icon: 0,0,180,1,3, "Name: Nick Markus\nForecaster Number: 273\n37.01N 100.92W\nTarget City: Liberal, KS"
+Object: 33.75,-102.09
+Icon: 0,0,180,1,3, "Name: Josh Jaeger\nForecaster Number: 279\n33.75N 102.09W\nTarget City: Anton, TX"
 End:
 
-Object: 37.38177269,-101.9237628
-Icon: 0,0,180,1,3, "Name: jbean45\nForecaster Number: 243\n37.38N 101.92W\nTarget City: Richfield, KS"
+Object: 36.7193,-102.8916
+Icon: 0,0,180,1,3, "Name: Joseph Patton\nForecaster Number: 45\n36.72N 102.89W\nTarget City: Wheeless, OK"
 End:
 
-Object: 32.976728,-101.831758
-Icon: 0,0,180,1,3, "Name: Kyle "Hopeless Tornadic" Hugeback\nForecaster Number: 3\n32.98N 101.83W\nTarget City: N side of O'Donnell, TX"
+Object: 37.386,-102.278
+Icon: 0,0,180,1,3, "Name: Olivia McCauley\nForecaster Number: 12\n37.39N 102.28W\nTarget City: Walsh, CO"
 End:
 
-Object: 32.84313,-101.843
-Icon: 0,0,180,1,3, "Name: Sal\nForecaster Number: 157\n32.84N 101.84W\nTarget City: Lamesa, TX"
+Object: 37.506,-103.599
+Icon: 0,0,180,1,3, "Name: Gavin Bird\nForecaster Number: 199\n37.51N 103.60W\nTarget City: Middle of nowhere CO"
 End:
 
-Object: 37.24,-100.77
-Icon: 0,0,180,1,3, "Name: Alexis Severson\nForecaster Number: 174\n37.24N 100.77W\nTarget City: Kismet, KS"
+Object: 33.63033,-102.51554
+Icon: 0,0,180,1,3, "Name: Sal\nForecaster Number: 157\n33.63N 102.52W\nTarget City: Levelland, TX"
 End:
 
-Object: 32.908,-102.109
-Icon: 0,0,180,1,3, "Name: 3CapeTruther\nForecaster Number: 187\n32.91N 102.11W\nTarget City: Welch, TX"
+Object: 37.0671954,-102.5778176
+Icon: 0,0,180,1,3, "Name: jbean45\nForecaster Number: 243\n37.07N 102.58W\nTarget City: Campo. CO"
 End:
 
-Object: 33.09,-102.34
-Icon: 0,0,180,1,3, "Name: Lizzie Hugeback\nForecaster Number: 69\n33.09N 102.34W\nTarget City: "
+Object: 33.63816673,-101.8931869
+Icon: 0,0,180,1,3, "Name: TheBetterDoge\nForecaster Number: 131\n33.64N 101.89W\nTarget City: Lubbock, TX"
 End:
 
-Object: 33.341,-102.223
-Icon: 0,0,180,1,3, "Name: Garrett Statum\nForecaster Number: 34\n33.34N 102.22W\nTarget City: Meadow, TX"
+Object: 37.589,-101.7573
+Icon: 0,0,180,1,3, "Name: Peter Corman\nForecaster Number: 42\n37.59N 101.76W\nTarget City: Johnson, KS"
 End:
 
-Object: 33.5848,-102.3881
-Icon: 0,0,180,1,3, "Name: Dave Flo\nForecaster Number: 247\n33.58N 102.39W\nTarget City: Levelland, TX"
+Object: 38.070027,-102.579304
+Icon: 0,0,180,1,3, "Name: Colin Young\nForecaster Number: 134\n38.07N 102.58W\nTarget City: Lamar, CO"
 End:
 
-Object: 34.6285,-103.3358
-Icon: 0,0,180,1,3, "Name: James Summers\nForecaster Number: 188\n34.63N 103.34W\nTarget City: Clovis, NM"
+Object: 36.89,-102.59
+Icon: 0,0,180,1,3, "Name: Paul Austin\nForecaster Number: 249\n36.89N 102.59W\nTarget City: Boise City, OK"
 End:
 
-Object: 37.17,-101.35
-Icon: 0,0,180,1,3, "Name: Ew kansas\nForecaster Number: 127\n37.17N 101.35W\nTarget City: Hugoton, ks"
+Object: 33.6685,-101.5376
+Icon: 0,0,180,1,3, "Name: Alex Hamilton\nForecaster Number: 280\n33.67N 101.54W\nTarget City: Lorenzo, TX"
 End:
 
-Object: 37.1,-101.13
-Icon: 0,0,180,1,3, "Name: Olivia Macko\nForecaster Number: 313\n37.10N 101.13W\nTarget City: Woods, KS"
+Object: 35.318496195,-101.30381360945945
+Icon: 0,0,180,1,3, "Name: Forecast Consensus\nForecaster Number: 999\n35.32N 101.30W\nTarget City: NA"
 End:
 
-Object: 35.3825653168,-101.67296266133334
-Icon: 0,0,180,1,3, "Name: Forecast Consensus\nForecaster Number: 999\n35.38N 101.67W\nTarget City: NA"
+Object: 36.1093920093829,-91.13738671031581
+Icon: 0,0,180,1,3, "Name: 12Z Nadocast Centroid\nForecaster Number: 888\n36.11N 91.14W\nTarget City: NA"
 End:
 
-Object: 37.4553473029174,-101.95748588019549
-Icon: 0,0,180,1,3, "Name: 12Z Nadocast Centroid\nForecaster Number: 888\n37.46N 101.96W\nTarget City: NA"
-End:
-
-Object: 36.03640161838508,-102.23758400516905
-Icon: 0,0,180,1,3, "Name: 14Z Nadocast Centroid\nForecaster Number: 889\n36.04N 102.24W\nTarget City: NA"
+Object: 35.95466996178337,-87.84115853949173
+Icon: 0,0,180,1,3, "Name: 14Z Nadocast Centroid\nForecaster Number: 889\n35.95N 87.84W\nTarget City: NA"
 End:
 
