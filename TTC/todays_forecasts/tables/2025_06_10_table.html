@@ -1,0 +1,802 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Number</th>
+      <th>Option</th>
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>216</td>
+      <td>YesTor</td>
+      <td>2025-06-10 01:10:39</td>
+      <td>Veer (probably yet another case of HRRR Del Rio bait tbh)</td>
+      <td>Sabinal, TX</td>
+      <td>29.317</td>
+      <td>-99.466</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>NoTor</td>
+      <td>2025-06-10 02:05:52</td>
+      <td>Lauren Bader</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:49:42</td>
+      <td>Poop &gt;:( pt. 2</td>
+      <td>S of Fort Stockton, TX</td>
+      <td>30.6810958</td>
+      <td>-102.9343394</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:28:53</td>
+      <td>Chris Yates</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>291</td>
+      <td>YesTor</td>
+      <td>2025-06-10 06:10:15</td>
+      <td>Andrew Griffiths</td>
+      <td>Shefford, TX</td>
+      <td>30.65</td>
+      <td>-101.65</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>NoTor</td>
+      <td>2025-06-10 07:17:38</td>
+      <td>Hoang Do</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>YesTor</td>
+      <td>2025-06-10 08:08:47</td>
+      <td>MasDogWx</td>
+      <td>Fort Stocktoning</td>
+      <td>30.66659</td>
+      <td>-103.24068</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>NoTor</td>
+      <td>2025-06-10 08:29:10</td>
+      <td>Peter Corman</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>262</td>
+      <td>YesTor</td>
+      <td>2025-06-10 09:55:00</td>
+      <td>Tyler Williams</td>
+      <td>Sanderson, TX</td>
+      <td>30.141431</td>
+      <td>-102.3952</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>NoTor</td>
+      <td>2025-06-10 10:28:14</td>
+      <td>Roman Fariello</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>YesTor</td>
+      <td>2025-06-10 11:19:10</td>
+      <td>Hunter Anderson</td>
+      <td>CNM</td>
+      <td>32.3</td>
+      <td>-104.5</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>YesTor</td>
+      <td>2025-06-10 11:38:15</td>
+      <td>West of ft stockton magic</td>
+      <td>West of ft stockton tx</td>
+      <td>30.968327</td>
+      <td>-103.493107</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>YesTor</td>
+      <td>2025-06-10 11:52:14</td>
+      <td>James Summers</td>
+      <td>Fort Stockton, TX</td>
+      <td>30.8876</td>
+      <td>-102.8788</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>YesTor</td>
+      <td>2025-06-10 11:58:27</td>
+      <td>JetStreamJami</td>
+      <td>Fort Davis, TX</td>
+      <td>30.55</td>
+      <td>-103.62</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>265</td>
+      <td>NoTor</td>
+      <td>2025-06-10 12:30:29</td>
+      <td>Logan Giles</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>NoTor</td>
+      <td>2025-06-10 12:30:45</td>
+      <td>Stephen Szulborski</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>NoTor</td>
+      <td>2025-06-10 13:00:51</td>
+      <td>Gabriel Keller</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>YesTor</td>
+      <td>2025-06-10 13:22:17</td>
+      <td>WxDownYonder</td>
+      <td>Saragosa, TX</td>
+      <td>31.0226062</td>
+      <td>-103.6547358</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>NoTor</td>
+      <td>2025-06-10 13:24:26</td>
+      <td>SRRadarLoops</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>YesTor</td>
+      <td>2025-06-10 13:25:20</td>
+      <td>Jim Franc</td>
+      <td>Fort Stockton, TX</td>
+      <td>30.69</td>
+      <td>-103.02</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>YesTor</td>
+      <td>2025-06-10 13:32:51</td>
+      <td>Bill Gallus</td>
+      <td>Marathon, TX</td>
+      <td>30</td>
+      <td>-103.2</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>290</td>
+      <td>YesTor</td>
+      <td>2025-06-10 13:33:16</td>
+      <td>We ride (doss)</td>
+      <td>Fort Stockton, TX</td>
+      <td>30.84238142</td>
+      <td>-102.8450724</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>YesTor</td>
+      <td>2025-06-10 13:44:49</td>
+      <td>Sebastian Pelt</td>
+      <td>Fort Stockton, TX</td>
+      <td>30.81</td>
+      <td>-102.66</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>NoTor</td>
+      <td>2025-06-10 13:49:02</td>
+      <td>Dave Flo</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>YesTor</td>
+      <td>2025-06-10 13:49:38</td>
+      <td>Heerok Das</td>
+      <td>Mechanicville, NY</td>
+      <td>42.9</td>
+      <td>-73.68</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>NoTor</td>
+      <td>2025-06-10 14:01:14</td>
+      <td>Blake Brink</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>249</td>
+      <td>NoTor</td>
+      <td>2025-06-10 14:16:36</td>
+      <td>Paul Austin</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>284</td>
+      <td>NoTor</td>
+      <td>2025-06-10 14:22:09</td>
+      <td>Matthew Teare</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>YesTor</td>
+      <td>2025-06-10 14:36:03</td>
+      <td>Quincy Vagell</td>
+      <td>Marathon, TX</td>
+      <td>30.2121</td>
+      <td>-103.409</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>YesTor</td>
+      <td>2025-06-10 14:43:02</td>
+      <td>Kyle Hugeback</td>
+      <td></td>
+      <td>30.469209</td>
+      <td>-103.4652944</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>NoTor</td>
+      <td>2025-06-10 14:55:00</td>
+      <td>Diamond</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>YesTor</td>
+      <td>2025-06-10 14:57:59</td>
+      <td>William Samson</td>
+      <td>Pecos, TX</td>
+      <td>31.4</td>
+      <td>-103.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>273</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:00:34</td>
+      <td>Nick Markus</td>
+      <td>Between Marathon and Sanderson, TX</td>
+      <td>30.173</td>
+      <td>-102.747</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:01:27</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:06:23</td>
+      <td>Garrett Statum</td>
+      <td>Malaga, NM</td>
+      <td>32.116</td>
+      <td>-104.073</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>313</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:10:58</td>
+      <td>Olivia Macko</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:15:07</td>
+      <td>Richard Sample</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:20:05</td>
+      <td>Tobias Leonard</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:22:02</td>
+      <td>Jonah Dosedel</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:26:46</td>
+      <td>Kris with the radar</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:29:52</td>
+      <td>Jacob "No Tor Dont Fail Me Now" Stichter</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>289</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:32:34</td>
+      <td>Tornado Fajita</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:32:38</td>
+      <td>Donovan F</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:34:20</td>
+      <td>Colin Young</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:36:27</td>
+      <td>Josh Jaeger</td>
+      <td>Pecos, TX</td>
+      <td>31.31</td>
+      <td>-103.42</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:39:49</td>
+      <td>DONUTS</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:40:45</td>
+      <td>Sam Romshek</td>
+      <td>Alpine, TX</td>
+      <td>30.39</td>
+      <td>-103.52</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:43:13</td>
+      <td>Olivia McCauley</td>
+      <td>Fort Stocktoning, TX</td>
+      <td>30.89</td>
+      <td>-102.89</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:43:20</td>
+      <td>Penitentes</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>280</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:44:20</td>
+      <td>Alex Hamilton</td>
+      <td>Rattlesnake Lane and Copperhead Lane, Fort Davis, TX</td>
+      <td>30.5946</td>
+      <td>-103.8812</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:49:45</td>
+      <td>Joseph Patton</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:49:48</td>
+      <td>The Hawk</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:49:57</td>
+      <td>Baja</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>286</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:50:11</td>
+      <td>Joe Schrantz</td>
+      <td>Fort Stockton</td>
+      <td>30.88</td>
+      <td>-102.92</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:51:21</td>
+      <td>Wyatt Bicker</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:51:34</td>
+      <td>maybe K*rk</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:52:12</td>
+      <td>Lizzie Hugeback</td>
+      <td></td>
+      <td>30.53</td>
+      <td>-103.69</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:53:26</td>
+      <td>Jeff Frame</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:53:36</td>
+      <td>Karson</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:55:23</td>
+      <td>Gavin Bird</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>226</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:58:18</td>
+      <td>Jason B</td>
+      <td>fort stockton ish</td>
+      <td>30.87</td>
+      <td>-104.15</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:56:23</td>
+      <td>jbean45</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>NoTor</td>
+      <td>2025-06-10 15:56:51</td>
+      <td>Caleb O’Gara</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:58:12</td>
+      <td>Drifter</td>
+      <td>Alpine, TX</td>
+      <td>30.39</td>
+      <td>-103.58</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:58:52</td>
+      <td>Sal</td>
+      <td>Llano, TX</td>
+      <td>30.8</td>
+      <td>-98.76</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:59:53</td>
+      <td>CPekar</td>
+      <td>Ozona, TX</td>
+      <td>30.7022</td>
+      <td>-101.2014</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>YesTor</td>
+      <td>2025-06-10 15:59:59</td>
+      <td>Ben Price</td>
+      <td>Rosenfeld</td>
+      <td>29.92693</td>
+      <td>-102.65354</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>NoTor</td>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>888</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>31.117870520235904</td>
+      <td>-102.85441153731003</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>889</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>30.577859631890895</td>
+      <td>-97.83314028242395</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
