@@ -16,16 +16,16 @@
       height: 200px;
     }
     </style>
- </head>
- <body>
+  </head>
+  <body>
 
    
 <!--Header with image-->
-<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('../images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
   <div class="container-fluid">
     <div class="row">
       <div class="col-6 d-flex">
-        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+        <img class="float-left" src="../images/ttc_logo.png" width="90px"> 
       </div>
 	  
       <div class="col-6 d-flex float-right justify-content-end align-items-center">
@@ -88,59 +88,34 @@
   </nav>
 
 <div class="container mt-5">
-	<!-- Links to the Seasons -->
-	<div class="row bg-secondary text-dark rounded justify-content-center p-2" >
-		<div class="col-md-12 text-center center-block">
+  <div class="row bg-secondary text-dark rounded text-center p-2" >
+	<div class="col-md-12 text-center center-block">
 		<div class="row justify-content-center p-2">
-			<h1 style="color: #f5f2f2;">Final Results 2024</h1>
+			<h3 style="color: #f5f2f2;">Select Season 2 Results Type/Region:</h3>
 		</div>
-		</div>
-	</div>
-	<br>
-	<div class="row text-center center-block">
-      <div class="col-md-6 p-1">
-        <div class="button-box col-lg-12"></div>
-        <a href="2024archive/results_szn1.html" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Season 1 Results</a>
-      </div>
-	  <div class="col-md-6 p-1">
-        <div class="button-box col-lg-12"></div>
-        <a href="2024archive/results_szn2.html" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Season 2 Results</a>
-      </div>
-	</div>
-	<br>
-	<!-- Scores -->
-	<div class="row bg-secondary text-dark rounded justify-content-center p-2" >
+		<div class="row p-1">
 		<div class="col-md-12 text-center center-block">
-		<div class="row justify-content-center p-2">
-			<h3 style="color: #f5f2f2;">Cumulative Scores</h3>
+			<button type="button" class="btn btn-lg" style="background-color: #66c2a5" onclick="displayIframe('Season2/national.html')">National</button>
+			<button type="button" class="btn btn-lg" style="background-color: #8da0cb" onclick="displayIframe('Season2/stats.html')">Stats</button>
+		</div>
+		</div>
+		<div class="row p-2" >
+		<div class="col-md-12 text-center center-block p-1">
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season2/southern_plains.html')">Southern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season2/southeast.html')">Southeast</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season2/midwest.html')">Midwest</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season2/northern_plains.html')">Northern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season2/east.html')">East</button>
 		</div>
 		</div>
 	</div>
-	<div class="row justify-content-center p-2">
-		<div class="col-md-12 text-center center-block">
-		<div style="max-width: 1000px; margin: 0 auto;">
-			<iframe src="2024archive/cumulative_scores.html" style="height: 720px; width: 100%"></iframe>
-		  </div>
-		</div>
-	</div>
-	<br>
+  </div>
 
-	<!-- Statistics -->
-	<div class="row bg-secondary text-dark rounded justify-content-center p-2" >
-		<div class="col-md-12 text-center center-block">
-		<div class="row justify-content-center p-2">
-			<h3 style="color: #f5f2f2;">Cumulative Stats</h3>
-		</div>
-		</div>
-	</div>
-	<div class="row justify-content-center p-2">
-		<div class="col-md-12 text-center center-block">
-		<div style="max-width: 1000px; margin: 0 auto;">
-			<iframe src="2024archive/cumulative_stats.html" style="height: 720px; width: 100%"></iframe>
-		  </div>
-		</div>
-	</div>
-
+  <div class="row mt-4 mt-4 justify-content-center">
+    <div class="col-md-12 text-center">
+      <div id="iframeContainer"></div>
+    </div>
+  </div>
   <br>
   <div class="col-md-12 text-center center-block">
     <div class="button-box"></div>
@@ -234,7 +209,6 @@
 
 <!--Footer-->
 <div class="jumbotron text-center" style="margin-bottom:0">
-    <p>Tornado Target Contest 2024</p>
+    <p>Tornado Target Contest 2025</p>
     <p>TornadoTargetContest@gmail.com</p>
 </div>
-</body>
