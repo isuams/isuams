@@ -1,0 +1,13 @@
+:root {
+    --btn-color: #aa7761; /* 2025 color */
+}
+.fakeimg {
+height: 200px;
+background-image: url('IMG_0403.jpg');
+}
+
+.bg-color-bar {
+    background-color: white;
+    padding: 10px 10px; /* Adjust this value for top and bottom padding as needed */
+  }
+
