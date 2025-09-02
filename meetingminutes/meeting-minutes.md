@@ -4,8 +4,11 @@ layout: page
 section: about
 ---
 
-**Most recent:** [April 29, 2025]({{site.baseurl }}/uploads/minutes/2024-25/AMSApril2025.pdf)
+**Most recent:** [August 26th, 2025]({{site.baseurl }}/uploads/minutes/2025-26/August_26th_Meeting_Agenda.pdf)
 ---
+**2025-2026**
+- [August 26th, 2025]({{site.baseurl }}/uploads/minutes/2025-26/August_26th_Meeting_Agenda.pdf)
+
 **2024-2025**
 - [April 29, 2025]({{site.baseurl }}/uploads/minutes/2024-25/AMSApril2025.pdf)
 - [March 25, 2025]({{site.baseurl }}/uploads/minutes/2024-25/AMSMarch2025.pdf)
