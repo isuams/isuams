@@ -6,4 +6,4 @@ section: about
 
 To contact a member of the Chapter Cabinet, see [our officers page here]({{ site.baseurl }}/about/officers).
 
-For any general questions, please feel free to contact our president, <a href="mailto:pres.isuams@iastate.edu">David Hultman</a>.
+For any general questions, please feel free to contact our president, <a href="mailto:pres.isuams@iastate.edu">Jordan Howell</a>.
