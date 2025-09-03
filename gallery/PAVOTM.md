@@ -39,11 +39,11 @@ section: gallery
 <div class="row">
   <div class="column">
   	<h3>Club Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2024-2025/Aug_2025_Club.png?raw=true" alt="April 2025 Club Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2024-2025/Aug_2025_Club.png?raw=true" alt="August 2025 Club Photo of Month" style="width:100%">
   </div>
   <div class="column">
   	<h3>Weather Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2024-2025/Aug_2025_Wx.png?raw=true" alt="April 2025 Wx Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2024-2025/Aug_2025_Wx.png?raw=true" alt="August 2025 Wx Photo of Month" style="width:100%">
   </div>
   <div class="row">
     <div class="column single-column">
