@@ -44,7 +44,6 @@ section: gallery
   <div class="column">
   	<h3>Weather Photo of the Month</h3>
     <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Oct_2025_Wx.jpg?raw=true" alt="October 2025 Wx Photo of Month" style="width:100%">
-    </div>
   </div>
 </div>
 
