@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tornado Target Contest</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5.3 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    defer></script>
+
+  <style>
+    :root {
+      --btn-color: #aa7761;
+    }
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-info"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Archive
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+            <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="verification.html">Verification</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQs</a>
+        </li>
+      </ul>
+
+      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <form>
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="#">Forgot password?</a></small>
+          </div>
+		  
+		  <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-info"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- ================= Registration ================= -->
+<div class="container my-4">
+	<form method="POST" action="/register">
+
+	  <div class="mb-3">
+		<label class="form-label">Full Name</label>
+		<input name="name" class="form-control" required>
+	  </div>
+
+	  <div class="mb-3">
+		<label class="form-label">Email</label>
+		<input type="email" name="email" class="form-control" required>
+	  </div>
+
+	  <div class="mb-3">
+		<label class="form-label">Password</label>
+		<input type="password" name="password" class="form-control" required>
+	  </div>
+
+	  <div class="mb-3">
+		<label class="form-label">Display Alias</label>
+		<input name="alias" class="form-control">
+	  </div>
+
+	  <div class="mb-3">
+		<label class="form-label">Affiliation</label>
+		<select name="affiliation" class="form-select">
+		  <option>U - Undergraduate Student</option>
+		  <option>G - Graduate Student</option>
+		  <option>E - Enthusiast</option>
+		  <option>B - Broadcast</option>
+		  <option>O - Operations</option>
+		  <option>A - Meteorology Alumni</option>
+		  <option>F - Researcher/Faculty</option>
+		</select>
+	  </div>
+
+	  <div class="mb-3">
+		<label class="form-label">Experience</label>
+		<input name="experience" class="form-control">
+	  </div>
+
+	  <div class="mb-3">
+		<label class="form-label">Discord Account (if you want access to the TTC Discord)</label>
+		<input name="discord" class="form-control">
+	  </div>
+
+	  <button class="btn btn-primary w-60">Register</button>
+
+	</form>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-light text-center py-4">
+  <p class="mb-1">Tornado Target Contest 2026</p>
+  <p class="mb-0">TornadoTargetContest@gmail.com</p>
+</footer>
+
+</body>
+</html>
