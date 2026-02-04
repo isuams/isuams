@@ -37,6 +37,44 @@
   </style>
 </head>
 
+<script>
+async function registerUser() {
+  const discordValue = document.getElementById("regDiscord").value.trim();
+
+  const payload = {
+    name: document.getElementById("regName").value,
+    email: document.getElementById("regEmail").value,
+    password: document.getElementById("regPassword").value,
+    alias: document.getElementById("regAlias").value,
+    affiliation: document.getElementById("regAffiliation").value,
+    experience: document.getElementById("regExperience").value,
+    discord: discordValue
+  };
+
+  const res = await fetch(
+    "https://tortargetcontest.pythonanywhere.com/api/register",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify(payload)
+    }
+  );
+
+  if (res.ok) {
+    // ✅ CONDITIONAL REDIRECT
+    if (discordValue !== "") {
+      window.location.href = "discord.html";   // or whatever page you want
+    } else {
+      window.location.href = "index.html";
+    }
+  } else {
+    const err = await res.json();
+    alert(err.error || "Registration failed");
+  }
+}
+</script>
+
 <body>
 
 <!-- ================= HEADER ================= -->
@@ -102,79 +140,33 @@
   </div>
 </nav>
 
-<!-- ================= LOGIN MODAL ================= -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">Tornado Target Contest Login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <form>
-        <div class="modal-body">
-
-          <div class="mb-3">
-            <label for="loginEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="loginEmail" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="loginPassword" class="form-label">Password</label>
-            <input type="password" class="form-control" id="loginPassword" required>
-          </div>
-
-          <div class="text-end">
-            <small><a href="#">Forgot password?</a></small>
-          </div>
-		  
-		  <div class="text-end">
-            <small><a href="registration.html">New Member Signup</a></small>
-          </div>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="submit"
-                  class="btn btn-info"
-                  style="background-color: var(--btn-color); border: none;">
-            Login
-          </button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
-
 <!-- ================= Registration ================= -->
 <div class="container my-4">
-	<form method="POST" action="/register">
+	<form onsubmit="event.preventDefault(); registerUser();">
 
 	  <div class="mb-3">
 		<label class="form-label">Full Name</label>
-		<input name="name" class="form-control" required>
+		<input id="regName" name="name" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label">Email</label>
-		<input type="email" name="email" class="form-control" required>
+		<input id="regEmail" type="email" name="email" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label">Password</label>
-		<input type="password" name="password" class="form-control" required>
+		<input id="regPassword" type="password" name="password" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label">Display Alias</label>
-		<input name="alias" class="form-control">
+		<input id="regAlias" name="alias" class="form-control">
 	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label">Affiliation</label>
-		<select name="affiliation" class="form-select">
+		<select id="regAffiliation" name="affiliation" class="form-select">
 		  <option>U - Undergraduate Student</option>
 		  <option>G - Graduate Student</option>
 		  <option>E - Enthusiast</option>
@@ -187,12 +179,12 @@
 
 	  <div class="mb-3">
 		<label class="form-label">Experience</label>
-		<input name="experience" class="form-control">
+		<input id="regExperience" name="experience" class="form-control">
 	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label">Discord Account (if you want access to the TTC Discord)</label>
-		<input name="discord" class="form-control">
+		<input id="regDiscord" name="discord" class="form-control">
 	  </div>
 
 	  <button class="btn btn-primary w-60">Register</button>
