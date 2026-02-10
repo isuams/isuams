@@ -4,9 +4,10 @@ layout: page
 section: about
 ---
 
-**Most recent:** [December 2nd, 2025]({{site.baseurl }}/uploads/minutes/2025-26/December_2nd_Meeting_Agenda.pdf)
+**Most recent:** [February 3rd, 2026]({{site.baseurl }}/uploads/minutes/2025-26/February_3rd_Meeting_Agenda.pdf)
 ---
 **2025-2026**
+- [February 3rd, 2026]({{site.baseurl }}/uploads/minutes/2025-26/February_3rd_Meeting_Agenda.pdf)
 - [December 2nd, 2025]({{site.baseurl }}/uploads/minutes/2025-26/December_2nd_Meeting_Agenda.pdf)
 - [October 28th, 2025]({{site.baseurl }}/uploads/minutes/2025-26/October_28th_Meeting_Agenda.pdf)
 - [September 30th, 2025]({{site.baseurl }}/uploads/minutes/2025-26/September_30th_Meeting_Agenda.pdf)
