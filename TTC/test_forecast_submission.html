@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TTC – Forecast Submission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <style>
+    :root {
+      --btn-color: #aa7761;
+    }
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+	
+	#map { height: 400px; }
+    .hidden { display: none; }
+  </style>
+</head>
+
+<!-- ================= Forecast Submission ================= -->
+<script>
+async function submitForecast() {
+  const res = await fetch(
+    "https://tortargetcontest.pythonanywhere.com/api/forecast",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({
+        display_name: document.getElementById("displayName").value,
+        option: document.querySelector("input[name='option']:checked").value,
+        city: document.getElementById("city").value,
+        latitude: document.getElementById("lat").value,
+        longitude: document.getElementById("lon").value,
+        sig_tor: document.querySelector("input[name='sig_tor']:checked").value
+      })
+    }
+  );
+
+  if (res.ok) {
+    alert("Forecast submitted!");
+  } else {
+    const err = await res.json();
+    alert(err.error || "Submission failed");
+  }
+}
+
+fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
+  credentials: "include"
+})
+.then(r => {
+  if (!r.ok) window.location.href = "index.html";
+});
+</script>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-info"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" href="today_forecast.html">Today's Forecast</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#">Final Scores</a>
+      </li>  -->
+      <li class="nav-item">
+          <a class="nav-link" href="leaderboards.html">Leaderboards</a>
+      </li>   
+      <li class="nav-item">
+          <a class="nav-link" href="verification.html">Verification</a>
+      </li> 
+      <li class="nav-item">
+          <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+      </li> 
+      <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQs</a>
+        </li> 
+    </ul>
+  </div>  
+</nav>
+
+<br>
+<br>
+
+<!--embed form-->
+<div class="container my-4">
+
+  <h2 class="text-center mb-3">Tornado Target Contest – Forecast Submission</h2>
+
+  <!-- UTC Clock -->
+  <div class="text-center mb-3">
+    <strong id="utcClock"></strong>
+  </div>
+
+  <!-- Closed message -->
+  <div id="closedMessage" class="alert alert-warning text-center hidden">
+    Forecast submission is currently closed.<br>
+    Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong>.
+  </div>
+
+  <!-- Forecast Form -->
+  <form id="forecastForm" class="card p-4 shadow-sm">
+	<!-- Display name override -->
+    <div class="mb-3">
+      <label class="form-label">Display Name (optional)</label>
+      <input id="displayName" class="form-control">
+    </div>
+	  
+    <!-- Forecast Option -->
+    <div class="mb-3">
+      <label class="form-label"><strong>Forecast Option</strong></label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="option" value="Tornado" checked>
+        <label class="form-check-label">Yes – Tornado</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="option" value="No Tornado">
+        <label class="form-check-label">No – Tornado</label>
+      </div>
+    </div>
+
+    <!-- Conditional Section -->
+    <div id="tornadoFields">
+      <!-- City -->
+      <div class="mb-3">
+        <label class="form-label">Target City</label>
+        <input id="city" class="form-control" required>
+      </div>
+
+      <!-- Lat/Lon -->
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Latitude</label>
+          <input id="lat" class="form-control" required>
+        </div>
+        <div class="col">
+          <label class="form-label">Longitude</label>
+          <input id="lon" class="form-control" required>
+        </div>
+      </div>
+
+      <!-- Significant Tornado -->
+      <div class="mb-3">
+        <label class="form-label">Significant Tornado (EF2+)?</label>
+        <select id="sigTor" class="form-select">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+      </div>
+
+      <!-- Map -->
+      <div class="mb-3">
+        <label class="form-label">Click map to set latitude/longitude</label>
+        <div id="map"></div>
+      </div>
+
+    </div>
+
+    <div class="text-end">
+      <button class="btn btn-primary" type="submit">Submit Forecast</button>
+    </div>
+
+  </form>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+/* ================= UTC CLOCK + TIME GATING ================= */
+function updateClock() {
+  const now = new Date();
+  document.getElementById("utcClock").innerText =
+    "Current UTC Time: " + now.toUTCString();
+
+  const hour = now.getUTCHours();
+  const minute = now.getUTCMinutes();
+
+  // OPEN from 00:00–16:00 UTC
+  const open =
+    hour < 16 || (hour === 16 && minute === 0);
+
+  const closed = !open;
+
+  document.getElementById("forecastForm").classList.toggle("hidden", closed);
+  document.getElementById("closedMessage").classList.toggle("hidden", !closed);
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+
+/* ================= OPTION BREAKPOINT TOGGLE ================= */
+const optionRadios = document.querySelectorAll("input[name='option']");
+const tornadoFields = document.getElementById("tornadoFields");
+
+optionRadios.forEach(radio => {
+  radio.addEventListener("change", () => {
+    tornadoFields.classList.toggle(
+      "hidden",
+      radio.value === "No Tornado" && radio.checked
+    );
+  });
+});
+
+/* ================= MAP ================= */
+const map = L.map("map").setView([39, -98], 4);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "© OpenStreetMap"
+}).addTo(map);
+
+let marker;
+map.on("click", e => {
+  const { lat, lng } = e.latlng;
+  document.getElementById("lat").value = lat.toFixed(2);
+  document.getElementById("lon").value = lng.toFixed(2);
+
+  if (marker) map.removeLayer(marker);
+  marker = L.marker([lat, lng]).addTo(map);
+});
+
+/* ================= SUBMIT ================= */
+document.getElementById("forecastForm").addEventListener("submit", async e => {
+  e.preventDefault();
+
+  const option = document.querySelector("input[name='option']:checked").value;
+
+  const payload = {
+    option,
+    display_name: document.getElementById("displayName").value,
+    city: document.getElementById("city").value,
+    latitude: document.getElementById("lat").value,
+    longitude: document.getElementById("lon").value,
+    sig_tor: document.getElementById("sigTor").value
+  };
+
+  if (option === "No Tornado") {
+    delete payload.city;
+    delete payload.latitude;
+    delete payload.longitude;
+    delete payload.sig_tor;
+  }
+
+  const res = await fetch(
+    "https://tortargetcontest.pythonanywhere.com/api/forecast",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify(payload)
+    }
+  );
+
+  if (res.ok) {
+    alert("Forecast submitted!");
+  } else {
+    const err = await res.json();
+    alert(err.error || "Submission failed");
+  }
+});
+
+
+</script>
+
+<br><br><br><br><br>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Tornado Target Contest 2026</p>
+  <p>TornadoTargetContest@gmail.com</p>
+</div>

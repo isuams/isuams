@@ -56,6 +56,39 @@ async function login() {
     alert("Login failed — check email/password");
   }
 }
+
+async function loadUser() {
+  const res = await fetch(
+    "https://tortargetcontest.pythonanywhere.com/api/me",
+    { credentials: "include" }
+  );
+
+  if (!res.ok) {
+    document.getElementById("navLogin").classList.remove("d-none");
+    document.getElementById("navUser").classList.add("d-none");
+    return;
+  }
+
+  const user = await res.json();
+
+  document.getElementById("navLogin").classList.add("d-none");
+  document.getElementById("navUser").classList.remove("d-none");
+  document.getElementById("navUserName").innerText =
+    user.alias || user.name;
+}
+
+loadUser();
+
+async function logout() {
+  await fetch(
+    "https://tortargetcontest.pythonanywhere.com/api/logout",
+    {
+      method: "POST",
+      credentials: "include"
+    }
+  );
+  location.reload();
+}
 </script>
 
 <body>
@@ -84,44 +117,65 @@ async function login() {
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Home</a>
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        Archive
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+        <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+      </ul>
+    </li>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <li class="nav-item">
+      <a class="nav-link" href="verification.html">Verification</a>
+    </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Archive
+    <li class="nav-item">
+      <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="faq.html">FAQs</a>
+    </li>
+
+  </ul>
+
+  <!-- RIGHT SIDE -->
+  <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+
+    <!-- Logged out -->
+    <li class="nav-item" id="navLogin">
+      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login
+      </a>
+    </li>
+
+    <!-- Logged in -->
+    <li class="nav-item dropdown d-none" id="navUser">
+      <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        <span id="navUserName"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li>
+          <a class="dropdown-item" href="forecast_submission.html">
+            Submit Forecast
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
-            <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
-          </ul>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="verification.html">Verification</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="faq.html">FAQs</a>
+        <li><hr class="dropdown-divider"></li>
+        <li>
+          <button class="dropdown-item text-danger" onclick="logout()">
+            Logout
+          </button>
         </li>
       </ul>
+    </li>
 
-      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
-        Login
-      </button>
-    </div>
-  </div>
+  </ul>
 </nav>
+<br>
 
 <!-- ================= LOGIN MODAL ================= -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
