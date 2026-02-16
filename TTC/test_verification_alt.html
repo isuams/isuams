@@ -37,9 +37,7 @@
     }
 
     .iframe-table {
-      width: 100%;
-      height: 70vh;
-      border: none;
+      height: 700px;
     }
 
     .card {
@@ -49,16 +47,6 @@
     .card-header {
       background-color: #f8f9fa;
       font-weight: 600;
-    }
-	
-	.placeholder {
-      min-height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-style: italic;
-      background-color: #f8f9fa;
-      border-radius: 0.5rem;
     }
   </style>
 </head>
@@ -236,124 +224,68 @@
 
   <!-- DATE SELECTOR -->
   <div class="card shadow-sm mb-4">
-	<div class="card-body text-center">
-
-	  <label for="verifDate" class="form-label fw-semibold mb-2">
+    <div class="card-body text-center">
+      <label for="verifDate" class="form-label fw-semibold">
         Select Verification Date (UTC)
       </label>
-
-      <div class="d-flex justify-content-center gap-2 flex-wrap">
-        <input
-          type="date"
-          id="verifDate"
-          class="form-control w-auto"
-        >
-
-        <button
-          id="loadEventBtn"
-          class="btn btn-primary"
-          onclick="loadSelectedDate()"
-        >
-          Load Event Data
-        </button>
-      </div>
-
+      <input type="date" id="verifDate" class="form-control w-auto d-inline-block">
     </div>
   </div>
 
   <!-- AT A GLANCE -->
   <div class="card shadow-sm mb-4">
     <div class="card-header">At a Glance</div>
-    <div class="card-body position-relative">
-      <div class="placeholder text-center text-muted d-none" id="aagPlaceholder">
-        <p class="mb-0">No “At a Glance” data available for this date.</p>
-      </div>
+    <div class="card-body">
       <iframe id="aagFrame" class="iframe-figure"></iframe>
-	</div>
+    </div>
   </div>
 
   <!-- MAP / FIGURE -->
   <div class="card shadow-sm mb-4">
     <div class="card-header">Forecast Outcome Map</div>
-    <div class="card-body position-relative">
-      <div class="placeholder text-center text-muted d-none" id="figPlaceholder">
-        <p class="mb-0">No map/figure available for this date.</p>
-      </div>
-	  <iframe id="figFrame" class="iframe-figure"></iframe>
+    <div class="card-body">
+      <iframe id="figFrame" class="iframe-figure"></iframe>
     </div>
   </div>
 
   <!-- TABLE -->
   <div class="card shadow-sm mb-5">
     <div class="card-header">Forecast Verification Table</div>
-    <div class="card-body position-relative p-0">
-      <div class="placeholder text-center text-muted d-none p-3"
-       id="tablePlaceholder">
-        <p class="mb-0">No verification table exists for this date.</p>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <iframe id="tableFrame" class="iframe-table"></iframe>
       </div>
-	  <iframe id="tableFrame" class="iframe-table"></iframe>
     </div>
   </div>
 
-<!-- Script for updating the iframes with date selector -->
+</div>
+
 <script>
 function pad(n) {
   return n.toString().padStart(2, "0");
 }
 
-function setIframeWithFallback(frameId, placeholderId, src) {
-  const frame = document.getElementById(frameId);
-  const placeholder = document.getElementById(placeholderId);
-
-  placeholder.classList.add("d-none");
-  frame.classList.remove("d-none");
-
-  frame.onerror = () => {
-    frame.classList.add("d-none");
-    placeholder.classList.remove("d-none");
-  };
-
-  frame.src = src;
-}
-
 function updateFrames(dateStr) {
-  if (!dateStr) return;
-
   const d = new Date(dateStr);
   const y = d.getUTCFullYear();
-  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(d.getUTCDate()).padStart(2, "0");
+  const m = pad(d.getUTCMonth() + 1);
+  const day = pad(d.getUTCDate());
 
   const base = `${y}_${m}_${day}`;
 
-  setIframeWithFallback(
-    "aagFrame",
-    "aagPlaceholder",
-    `verification/at_a_glance/${base}_aag.html`
-  );
-
-  setIframeWithFallback(
-    "figFrame",
-    "figPlaceholder",
-    `verification/plots/${base}_veriffig.html`
-  );
-
-  setIframeWithFallback(
-    "tableFrame",
-    "tablePlaceholder",
-    `verification/tables/${base}_veriftable.html`
-  );
+  document.getElementById("aagFrame").src = `verification/at_a_glance/${base}_aag.html`;
+  document.getElementById("figFrame").src = `verification/plots/${base}_veriffig.html`;
+  document.getElementById("tableFrame").src = `verification/tables/${base}_veriftable.html`;
 }
 
-function loadSelectedDate() {
-  const dateStr = document.getElementById("verifDate").value;
-  updateFrames(dateStr);
-}
+const today = new Date();
+const iso = today.toISOString().split("T")[0];
+document.getElementById("verifDate").value = iso;
+updateFrames(iso);
 
-// Initialize with today
-const today = new Date().toISOString().split("T")[0];
-document.getElementById("verifDate").value = today;
-updateFrames(today);
+document.getElementById("verifDate").addEventListener("change", e => {
+  updateFrames(e.target.value);
+});
 </script>
 
 <!--Rescore Event-->
