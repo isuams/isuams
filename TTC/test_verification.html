@@ -22,6 +22,11 @@
       background-position: center 60%;
       color: white;
     }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
 
     .iframe-figure {
       height: 650px;
@@ -284,9 +289,9 @@ function updateFrames(dateStr) {
 
   const base = `${y}_${m}_${day}`;
 
-  document.getElementById("aagFrame").src = `${base}_aag.html`;
-  document.getElementById("figFrame").src = `${base}_veriffig.html`;
-  document.getElementById("tableFrame").src = `${base}_veriftable.html`;
+  document.getElementById("aagFrame").src = `verification/at_a_glance/${base}_aag.html`;
+  document.getElementById("figFrame").src = `verification/plots/${base}_veriffig.html`;
+  document.getElementById("tableFrame").src = `verification/tables/${base}_veriftable.html`;
 }
 
 function loadSelectedDate() {
