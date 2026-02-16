@@ -15,6 +15,13 @@
       border: none;
       background-color: #fff;
     }
+	
+	.hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
 
     .iframe-figure {
       height: 650px;
@@ -208,11 +215,28 @@
 
   <!-- DATE SELECTOR -->
   <div class="card shadow-sm mb-4">
-    <div class="card-body text-center">
-      <label for="verifDate" class="form-label fw-semibold">
+	<div class="card-body text-center">
+
+	  <label for="verifDate" class="form-label fw-semibold mb-2">
         Select Verification Date (UTC)
       </label>
-      <input type="date" id="verifDate" class="form-control w-auto d-inline-block">
+
+      <div class="d-flex justify-content-center gap-2 flex-wrap">
+        <input
+          type="date"
+          id="verifDate"
+          class="form-control w-auto"
+        >
+
+        <button
+          id="loadEventBtn"
+          class="btn btn-primary"
+          onclick="loadSelectedDate()"
+        >
+          Load Event Data
+        </button>
+      </div>
+
     </div>
   </div>
 
@@ -244,12 +268,15 @@
 
 </div>
 
+<!-- Script for updating the iframes with date selector -->
 <script>
 function pad(n) {
   return n.toString().padStart(2, "0");
 }
 
 function updateFrames(dateStr) {
+  if (!dateStr) return;
+
   const d = new Date(dateStr);
   const y = d.getUTCFullYear();
   const m = pad(d.getUTCMonth() + 1);
@@ -262,14 +289,15 @@ function updateFrames(dateStr) {
   document.getElementById("tableFrame").src = `${base}_veriftable.html`;
 }
 
-const today = new Date();
-const iso = today.toISOString().split("T")[0];
-document.getElementById("verifDate").value = iso;
-updateFrames(iso);
+function loadSelectedDate() {
+  const dateStr = document.getElementById("verifDate").value;
+  updateFrames(dateStr);
+}
 
-document.getElementById("verifDate").addEventListener("change", e => {
-  updateFrames(e.target.value);
-});
+// Initialize with today
+const today = new Date().toISOString().split("T")[0];
+document.getElementById("verifDate").value = today;
+updateFrames(today);
 </script>
 
 <!--Rescore Event-->
