@@ -38,7 +38,7 @@
 </head>
 <script src="js/navbar-auth.js"></script>
 <script>
-async function register() {
+async function registerUser() {
   const res = await fetch("https://tortargetcontest.pythonanywhere.com/api/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
