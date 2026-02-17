@@ -37,6 +37,31 @@
   </style>
 </head>
 <script src="js/navbar-auth.js"></script>
+<script>
+async function register() {
+  const res = await fetch("https://tortargetcontest.pythonanywhere.com/api/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify({
+      name: document.getElementById("regName").value,
+      email: document.getElementById("regEmail").value,
+      password: document.getElementById("regPassword").value,
+      alias: document.getElementById("regAlias").value,
+      affiliation: document.getElementById("regAffiliation").value,
+      experience: document.getElementById("regExperience").value,
+      discord: document.getElementById("regDiscord").value
+    })
+  });
+
+  if (res.ok) {
+    window.location.href = "index.html";
+  } else {
+    const err = await res.json();
+    alert(err.error || "Registration failed");
+  }
+}
+</script>
 
 <!-- ================= HEADER ================= -->
 <header class="hero mb-2">
