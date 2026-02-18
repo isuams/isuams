@@ -234,28 +234,31 @@ async function registerUser() {
 	<form onsubmit="event.preventDefault(); registerUser();">
 
 	  <div class="mb-3">
-		<label class="form-label">Full Name</label>
-		<input id="regName" name="name" class="form-control" required>
+		<label class="form-label"><b>Full Name</b></label>
+		<input id="regName" name="name" placeholder="John/Jane Doe" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
-		<label class="form-label">Email</label>
-		<input id="regEmail" type="email" name="email" class="form-control" required>
+		<label class="form-label"><b>Email</b></label>
+		<div class="form-text">We send about an email a week during the forecast season! You won't be spammed</div>
+		<input id="regEmail" type="email" name="email" placeholder="WxNerd1999@aol.com" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
-		<label class="form-label">Password</label>
+		<label class="form-label"><b>Password</b></label>
 		<div class="form-text">Must be at least 8 characters.</div>
-		<input id="regPassword" type="password" name="password" class="form-control" required minlength="8">
+		<input id="regPassword" type="password" name="password" placeholder="Weather_is_C00l_1999" class="form-control" minlength="8" required>
 	  </div>
 
 	  <div class="mb-3">
-		<label class="form-label">Display Alias</label>
-		<input id="regAlias" name="alias" class="form-control">
+		<label class="form-label"><b>Display Alias</b></label>
+		<div class="form-text">Optional: If you want something other than your name displayed on the leaderboard!</div>
+		<input id="regAlias" name="alias" placeholder="Chasing-last-Century" class="form-control">
 	  </div>
 
 	  <div class="mb-3">
-		<label class="form-label">Affiliation</label>
+		<label class="form-label"><b>Affiliation</b></label>
+		<div class="form-text">Which best fits your current situation? For more information, see the table below the form!</div>
 		<select id="regAffiliation" name="affiliation" class="form-select">
 		  <option>U - Undergraduate Student</option>
 		  <option>G - Graduate Student</option>
@@ -268,18 +271,67 @@ async function registerUser() {
 	  </div>
 
 	  <div class="mb-3">
-		<label class="form-label">Experience</label>
-		<input id="regExperience" name="experience" class="form-control">
+		<label class="form-label"><b>Years of Forecasting Experience</b></label>
+		<input type="number" id="regExperience" name="experience"
+		min="0" step="1" inputmode="numeric" pattern="[0-9]*" placeholder="33" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
-		<label class="form-label">Discord Account (if you want access to the TTC Discord)</label>
-		<input id="regDiscord" name="discord" class="form-control">
+		<label class="form-label"><b>Discord Account</b></label>
+		<div class="form-text">If you would like to join the discord or you a returning member of the TTC discord (in 2026)</div>
+		<input id="regDiscord" name="discord" placeholder="Y2KChasing" class="form-control">
 	  </div>
 
-	  <button class="btn btn-primary w-60">Register</button>
+	  <button class="btn btn-primary w-60" style="background-color: var(--btn-color); border: none;"><b>Register</b></button>
 
 	</form>
+	
+	<!-- Showing descriptions for the Affiliation -->
+	<br><br><br><br>
+	<div class="row center-block">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8" >  
+                  <table class="table text-left">
+                      <thead>
+                        <tr>
+                          <th scope="col-sm-2">Affiliation</th>
+                          <th scope="col-sm-2">What they do!</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspU</th>
+                          <td>Undergraduate in Meteorology or similar degree</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspG</th>
+                          <td>Graduate student in Meteorology or similar degree</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspE</th>
+                          <td >Enthusiast! (Weather/Storm Chasing)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB</th>
+                          <td >Broadcast and Journalism</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspF</th>
+                          <td >Faculty or Staff at an Academic Institution/Research Lab</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA</th>
+                          <td >Degree Holding Alumni, Currently not working in the Meteorlogy Sector</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspO</th>
+                          <td >Operations: Private Sector/NWS/Emergency Management etc.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
 </div>
 
 <!-- ================= FOOTER ================= -->
