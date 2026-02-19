@@ -264,8 +264,8 @@ fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
   <form id="forecastForm" class="card p-4 shadow-sm">
 	<!-- Display name override -->
     <div class="mb-3">
-      <label class="form-label">Display Name (optional)</label>
-      <input id="displayName" class="form-control">
+      <label class="form-label">Today's Display Name:</label>
+      <input id="displayName" class="form-control" placeholder="Optional: If you want a quirky display name for just today!">
     </div>
 	  
     <!-- Forecast Option -->
@@ -286,18 +286,18 @@ fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
       <!-- City -->
       <div class="mb-3">
         <label class="form-label">Target City</label>
-        <input id="city" class="form-control" required>
+        <input id="city" class="form-control" placeholder="Optional: Ames, IA">
       </div>
 
       <!-- Lat/Lon -->
       <div class="row mb-3">
         <div class="col">
           <label class="form-label">Latitude</label>
-          <input id="lat" class="form-control" required>
+          <input id="lat" class="form-control" placeholder="42.028" required>
         </div>
         <div class="col">
           <label class="form-label">Longitude</label>
-          <input id="lon" class="form-control" required>
+          <input id="lon" class="form-control" placeholder="-93.642" required>
         </div>
       </div>
 
@@ -312,7 +312,7 @@ fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
 
       <!-- Map -->
       <div class="mb-3">
-        <label class="form-label">Click map to set latitude/longitude</label>
+        <label class="form-label">Click map to set latitude/longitude, or paste your values in the form!</label>
         <div id="map"></div>
       </div>
 
@@ -375,8 +375,8 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 let marker;
 map.on("click", e => {
   const { lat, lng } = e.latlng;
-  document.getElementById("lat").value = lat.toFixed(2);
-  document.getElementById("lon").value = lng.toFixed(2);
+  document.getElementById("lat").value = lat.toFixed(4);
+  document.getElementById("lon").value = lng.toFixed(4);
 
   if (marker) map.removeLayer(marker);
   marker = L.marker([lat, lng]).addTo(map);
