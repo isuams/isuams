@@ -1,0 +1,2298 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Number</th>
+      <th>Option</th>
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>63</td>
+      <td>YesTor</td>
+      <td>2025-04-01 00:33:41</td>
+      <td>Chris Yates</td>
+      <td>Elbing, KS</td>
+      <td>38.05</td>
+      <td>-97.13</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>YesTor</td>
+      <td>2025-04-01 01:41:54</td>
+      <td>William Gaylord</td>
+      <td>Wichita, KS</td>
+      <td>37.5528</td>
+      <td>-96.5434</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>294</td>
+      <td>YesTor</td>
+      <td>2025-04-01 01:46:33</td>
+      <td>Sam Luthi</td>
+      <td>Emporia, KS</td>
+      <td>38.4039</td>
+      <td>-96.1817</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:41:28</td>
+      <td>Diamond</td>
+      <td>Pawnee, OK</td>
+      <td>36.3484</td>
+      <td>-96.8282</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>YesTor</td>
+      <td>2025-04-01 10:30:40</td>
+      <td>Vince</td>
+      <td>Wynona, OK</td>
+      <td>36.52</td>
+      <td>-96.37</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:50:19</td>
+      <td>this town will cease to exist tonight</td>
+      <td>Jennings, OK</td>
+      <td>36.1812</td>
+      <td>-96.5697</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>YesTor</td>
+      <td>2025-04-01 02:20:21</td>
+      <td>Anthony Yattoni</td>
+      <td>Colony, KS</td>
+      <td>38.139597</td>
+      <td>-95.395603</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>YesTor</td>
+      <td>2025-04-01 02:30:29</td>
+      <td>Catherine Opalka</td>
+      <td>Matfield Green, KS</td>
+      <td>38.1115</td>
+      <td>-96.4851</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>YesTor</td>
+      <td>2025-04-01 02:34:03</td>
+      <td>Braeden Winters</td>
+      <td>Roper, KS</td>
+      <td>37.682</td>
+      <td>-95.721</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>YesTor</td>
+      <td>2025-04-01 02:41:09</td>
+      <td>Lauren Bader</td>
+      <td>Prospect, KS</td>
+      <td>37.8</td>
+      <td>-96.79</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>299</td>
+      <td>YesTor</td>
+      <td>2025-04-01 02:43:09</td>
+      <td>Reilly Dibble</td>
+      <td>Burlington, KS</td>
+      <td>38.17</td>
+      <td>-95.73</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>YesTor</td>
+      <td>2025-04-01 02:53:17</td>
+      <td>Zacharoni</td>
+      <td></td>
+      <td>38.09</td>
+      <td>-96.87</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>312</td>
+      <td>YesTor</td>
+      <td>2025-04-01 03:04:57</td>
+      <td>Cameron Barker</td>
+      <td>Virgil, KS</td>
+      <td>37.98</td>
+      <td>-96.03</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>YesTor</td>
+      <td>2025-04-01 03:13:26</td>
+      <td>Eliot Morrow</td>
+      <td>idk</td>
+      <td>37.9115</td>
+      <td>-97.2454</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>YesTor</td>
+      <td>2025-04-01 03:45:23</td>
+      <td>Lucas Reynolds</td>
+      <td>Burlington, KS</td>
+      <td>38.203</td>
+      <td>-95.749</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>YesTor</td>
+      <td>2025-04-01 03:51:54</td>
+      <td>Jacob G</td>
+      <td>Duncan</td>
+      <td>34.4961</td>
+      <td>-97.9589</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>YesTor</td>
+      <td>2025-04-01 04:39:11</td>
+      <td>wolfer7098</td>
+      <td>Chikasha, OK</td>
+      <td>35.04</td>
+      <td>-97.94</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>218</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:38:40</td>
+      <td>timcigar</td>
+      <td>Bartlesville, OK</td>
+      <td>36.71773686</td>
+      <td>-95.95346389</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>YesTor</td>
+      <td>2025-04-01 04:52:07</td>
+      <td>Wildfireupdateman</td>
+      <td>Sabetha, Kansas</td>
+      <td>39.9</td>
+      <td>-95.8</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>YesTor</td>
+      <td>2025-04-01 04:54:04</td>
+      <td>Colton Flint</td>
+      <td>Hamilton, KS</td>
+      <td>37.9794</td>
+      <td>-96.1641</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:26:17</td>
+      <td>Chase  Brewster</td>
+      <td>Cushing, OK</td>
+      <td>35.98</td>
+      <td>-96.76</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>256</td>
+      <td>YesTor</td>
+      <td>2025-04-01 05:21:18</td>
+      <td>Owen</td>
+      <td>Sedan, KS</td>
+      <td>37.1272</td>
+      <td>-96.1865</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>289</td>
+      <td>YesTor</td>
+      <td>2025-04-01 05:48:41</td>
+      <td>Tornado Fajita</td>
+      <td></td>
+      <td>37.74</td>
+      <td>-97.1</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:47:15</td>
+      <td>Victor George</td>
+      <td>Bartlesville, OK</td>
+      <td>36.74</td>
+      <td>-95.83</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:49:35</td>
+      <td>Sophie Miller (I see you dryline bulge ;D )</td>
+      <td>Lone Chimney, OK</td>
+      <td>36.2753826</td>
+      <td>-96.749559</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>YesTor</td>
+      <td>2025-04-01 06:09:13</td>
+      <td>Earth Central</td>
+      <td>Parsons, KS</td>
+      <td>37.2</td>
+      <td>-95.16</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>YesTor</td>
+      <td>2025-04-01 06:15:57</td>
+      <td>Nic Anthony</td>
+      <td>Council Grove, KS</td>
+      <td>38.66</td>
+      <td>-96.488</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>291</td>
+      <td>YesTor</td>
+      <td>2025-04-01 06:33:38</td>
+      <td>Andrew Griffiths</td>
+      <td>Guthrie, OK</td>
+      <td>35.8789</td>
+      <td>-97.4253</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>YesTor</td>
+      <td>2025-04-01 06:48:09</td>
+      <td>Caleb O’Gara</td>
+      <td>Emporia, KS</td>
+      <td>38.47</td>
+      <td>-96.16</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:56:56</td>
+      <td>brix "wanted to target SD"</td>
+      <td>Morrison, OK</td>
+      <td>36.2971</td>
+      <td>-97.0075</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>260</td>
+      <td>YesTor</td>
+      <td>2025-04-01 07:42:53</td>
+      <td>LaVigneWx</td>
+      <td>Langston, OK</td>
+      <td>35.9451</td>
+      <td>-97.2553</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:19:44</td>
+      <td>WxDownYonder</td>
+      <td>Pawnee, OK</td>
+      <td>36.32</td>
+      <td>-96.75</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>YesTor</td>
+      <td>2025-04-01 08:05:29</td>
+      <td>Kazaki</td>
+      <td>Oak Valley, KS</td>
+      <td>37.1248</td>
+      <td>-95.8733</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:37:56</td>
+      <td>Hoang Do</td>
+      <td>Marland, OK</td>
+      <td>36.5818</td>
+      <td>-97.1765</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>YesTor</td>
+      <td>2025-04-01 08:51:46</td>
+      <td>Sebastian Pelt</td>
+      <td>Sedan, KS</td>
+      <td>37.1</td>
+      <td>-96.2</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>YesTor</td>
+      <td>2025-04-01 10:39:46</td>
+      <td>Ben Price</td>
+      <td>Shidler, OK</td>
+      <td>36.78081</td>
+      <td>-96.66081</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>252</td>
+      <td>YesTor</td>
+      <td>2025-04-01 10:43:18</td>
+      <td>wxkobold</td>
+      <td>Pawnee, OK</td>
+      <td>36.3501</td>
+      <td>-96.8264</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>YesTor</td>
+      <td>2025-04-01 10:59:33</td>
+      <td>Wyatt Huber</td>
+      <td>Enid, OK</td>
+      <td>36.3983</td>
+      <td>-97.869</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>274</td>
+      <td>YesTor</td>
+      <td>2025-04-01 10:59:42</td>
+      <td>Comrade Chasing</td>
+      <td>Newcastle, OK</td>
+      <td>35.24</td>
+      <td>-97.56</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>262</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:04:17</td>
+      <td>Tyler Williams</td>
+      <td>Pawhuska, OK</td>
+      <td>36.676463</td>
+      <td>-96.331792</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>210</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:10:30</td>
+      <td>toefur</td>
+      <td>Stillwater, OK</td>
+      <td>36.1308177</td>
+      <td>-97.0624812</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:10:56</td>
+      <td>Colin Young</td>
+      <td>Perkins, OK</td>
+      <td>35.981571</td>
+      <td>-97.038441</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>290</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:11:48</td>
+      <td>Man this day is weird, but this should be a pretty safe target</td>
+      <td>Noble, OK</td>
+      <td>35.14037927</td>
+      <td>-97.39412286</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:18:53</td>
+      <td>CloudsterWx</td>
+      <td>Webb City, OK</td>
+      <td>36.8069821</td>
+      <td>-96.7086401</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>270</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:22:15</td>
+      <td>Braydon Songer</td>
+      <td>NW of Dewey, OK</td>
+      <td>36.8</td>
+      <td>-95.94</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:41:33</td>
+      <td>rosiel</td>
+      <td></td>
+      <td>42.488646</td>
+      <td>-101.706492</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>302</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:39:36</td>
+      <td>Addison L</td>
+      <td>Pawnee, Ok</td>
+      <td>36.3373</td>
+      <td>-96.8035</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:46:48</td>
+      <td>Bengalsfan</td>
+      <td>Drumright, OK</td>
+      <td>35.98838824</td>
+      <td>-96.60759435</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>YesTor</td>
+      <td>2025-04-01 11:56:22</td>
+      <td>Caleb K</td>
+      <td>Moore, OK</td>
+      <td>35.3382</td>
+      <td>-97.4872</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:02:03</td>
+      <td>Diabolical Ironclad beetle</td>
+      <td>Oklahoma City</td>
+      <td>35.38749426</td>
+      <td>-97.57024914</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:17:51</td>
+      <td>maybe K*rk</td>
+      <td>Drumright, Oklahoma</td>
+      <td>35.9986905</td>
+      <td>-96.6076984</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:54:54</td>
+      <td>Quincy Vagell</td>
+      <td>Edmond, OK</td>
+      <td>35.6277</td>
+      <td>-97.4907</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:24:17</td>
+      <td>Adam Christenson</td>
+      <td>Wichita, KS</td>
+      <td>37.69</td>
+      <td>-97.33</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:06:58</td>
+      <td>gkeller99</td>
+      <td></td>
+      <td>36.4686</td>
+      <td>-96.8232</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:26:47</td>
+      <td>Blake Brink</td>
+      <td>Winfield, KS</td>
+      <td>37.315341</td>
+      <td>-96.760063</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:30:57</td>
+      <td>Riley Johnson</td>
+      <td>Oak Valley, KS</td>
+      <td>37.34339</td>
+      <td>-96.00999</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>265</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:44:26</td>
+      <td>Logan Giles</td>
+      <td>Terlton, OK</td>
+      <td>36.2</td>
+      <td>-96.47</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>307</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:35:14</td>
+      <td>Gabriel Lamb</td>
+      <td>Hardy OK</td>
+      <td>36.97102</td>
+      <td>-96.798278</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:36:38</td>
+      <td>Alexander the Great</td>
+      <td>Winfield, KS</td>
+      <td>37.35</td>
+      <td>-96.98</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:45:05</td>
+      <td>German Aviation</td>
+      <td>Ponca City, OK</td>
+      <td>36.7</td>
+      <td>-97.08</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:33:05</td>
+      <td>Tornadoboy (We truth the NSSL 1km)</td>
+      <td>Ada, OK</td>
+      <td>34.772</td>
+      <td>-96.6793</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>YesTor</td>
+      <td>2025-04-01 12:54:06</td>
+      <td>Stephen Szulborski</td>
+      <td>Arkansas City, KS</td>
+      <td>37.05</td>
+      <td>-97.03</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:06:11</td>
+      <td>Damon Lemke</td>
+      <td>Lawton, OK</td>
+      <td>34.87</td>
+      <td>-98.08</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>278</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:06:12</td>
+      <td>Kelly Rose</td>
+      <td>Okemah, OK</td>
+      <td>35.4331</td>
+      <td>-96.3046</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:07:45</td>
+      <td>Jonah Dosedel</td>
+      <td>Miami, OK</td>
+      <td>36.881</td>
+      <td>-94.879</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:09:19</td>
+      <td>Karson</td>
+      <td>Maysville, OK</td>
+      <td>34.82</td>
+      <td>-97.41</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:10:55</td>
+      <td>Wyatt Van Dyke</td>
+      <td>Stillwater, OK</td>
+      <td>36.08</td>
+      <td>-97.04</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:11:19</td>
+      <td>J.M.M.</td>
+      <td>Langston, OK</td>
+      <td>35.9447</td>
+      <td>-97.2566</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:14:50</td>
+      <td>N. Singh</td>
+      <td>Noble OK</td>
+      <td>35.1418</td>
+      <td>-97.3929</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:16:18</td>
+      <td>PR1TP@L</td>
+      <td>Cedar Vale, KS</td>
+      <td>37.1054</td>
+      <td>-96.503</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:16:18</td>
+      <td>WeatherboySuper</td>
+      <td>Minneapolis, KS</td>
+      <td>39.080208</td>
+      <td>-97.69846</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>219</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:20:39</td>
+      <td>Keaton Croatt</td>
+      <td>Yale, OK</td>
+      <td>36.12</td>
+      <td>-96.7</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:22:02</td>
+      <td>Nemo</td>
+      <td>Pawnee, OK</td>
+      <td>36.4053</td>
+      <td>-96.8081</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:23:52</td>
+      <td>Richard Hammond</td>
+      <td>Piedmont, OK</td>
+      <td>35.639302</td>
+      <td>-97.751049</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:32:14</td>
+      <td>Trey Fulbright</td>
+      <td>Red Rock, OK</td>
+      <td>36.37</td>
+      <td>-97.19</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:33:24</td>
+      <td>Kerry McCready</td>
+      <td>Fredonia, KS</td>
+      <td>37.53</td>
+      <td>-95.82</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:41:14</td>
+      <td>Alexis Severson</td>
+      <td>Augusta, KS</td>
+      <td>37.7</td>
+      <td>-96.89</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>281</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:46:53</td>
+      <td>StarInBox</td>
+      <td>Ponca City, OK</td>
+      <td>36.75</td>
+      <td>-97.07</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>287</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:49:27</td>
+      <td>Mitchell Morehead</td>
+      <td>Navarre,ks</td>
+      <td>38.83</td>
+      <td>-97.14</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:53:48</td>
+      <td>Kevin Mahoney</td>
+      <td>Pawnee, OK</td>
+      <td>36.3382</td>
+      <td>-96.805</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>YesTor</td>
+      <td>2025-04-01 13:59:58</td>
+      <td>David</td>
+      <td>California craziness</td>
+      <td>39.4786</td>
+      <td>-121.8604</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>284</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:03:58</td>
+      <td>Matthew Teare</td>
+      <td>Yates Center, KS</td>
+      <td>37.88</td>
+      <td>-95.74</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:04:44</td>
+      <td>Samuel G</td>
+      <td>Guthrie, OK</td>
+      <td>36.0018</td>
+      <td>-97.3963</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:07:22</td>
+      <td>AustinR_Wx</td>
+      <td>Potwin, KS</td>
+      <td>37.9377</td>
+      <td>-97.021</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:07:38</td>
+      <td>jumpwx</td>
+      <td>Ripley, OK</td>
+      <td>36.017</td>
+      <td>-96.904</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:09:18</td>
+      <td>simbasad2</td>
+      <td>Stillwater, OK</td>
+      <td>36.11</td>
+      <td>-97.05</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>273</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:10:38</td>
+      <td>Nick Markus</td>
+      <td>Coffeyville, KS</td>
+      <td>37.029</td>
+      <td>-95.614</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>286</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:11:12</td>
+      <td>Joe Schrantz</td>
+      <td>Gray Horse, OK</td>
+      <td>36.55</td>
+      <td>-96.64</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:13:50</td>
+      <td>Roman Fariello</td>
+      <td>Guthrie, OK</td>
+      <td>35.878855</td>
+      <td>-97.42534</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:16:13</td>
+      <td>Marios</td>
+      <td>Langston, OK</td>
+      <td>36</td>
+      <td>-97.26</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:16:14</td>
+      <td>Nicholas Snider</td>
+      <td>Hunter, OK</td>
+      <td>36.5636</td>
+      <td>-97.6612</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:16:34</td>
+      <td>Ghostfox1</td>
+      <td>Stillwater, OK</td>
+      <td>36.1108</td>
+      <td>-97.0628</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:17:48</td>
+      <td>Riley Mildebrandt</td>
+      <td>Eureka, KS</td>
+      <td>37.8195</td>
+      <td>-96.291</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:17:57</td>
+      <td>Bill Gallus</td>
+      <td>Guthrie, OK</td>
+      <td>35.88</td>
+      <td>-97.42</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>258</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:18:46</td>
+      <td>PotatoPie25</td>
+      <td>Cleveland, OK</td>
+      <td>36.28</td>
+      <td>-96.48</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>288</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:59:45</td>
+      <td>Joshua P</td>
+      <td></td>
+      <td>35.24</td>
+      <td>-97.24</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>248</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:19:55</td>
+      <td>Gabriel Pena</td>
+      <td>Guthrie, OK</td>
+      <td>35.9</td>
+      <td>-97.38</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>195</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:20:46</td>
+      <td>Joey Beachel</td>
+      <td>Grenola, KS</td>
+      <td>37.34</td>
+      <td>-96.51</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:23:29</td>
+      <td>Koji Lemke</td>
+      <td>Luther, OK</td>
+      <td>35.66146</td>
+      <td>-97.19591</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:23:42</td>
+      <td>stfjinkiojd (wanted to go California but I've lost too many times already)</td>
+      <td>Guthrie, OK</td>
+      <td>35.871819</td>
+      <td>-97.426538</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>275</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:24:20</td>
+      <td>Kyle Schanus</td>
+      <td>Stillwater, OK</td>
+      <td>36.06</td>
+      <td>-97.05</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:24:22</td>
+      <td>Baja</td>
+      <td>Okemah, OK</td>
+      <td>35.4799</td>
+      <td>-96.2638</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:24:44</td>
+      <td>Jeff Frame</td>
+      <td>Stillwater, OK</td>
+      <td>36.119412</td>
+      <td>-96.97075</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>180</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:26:18</td>
+      <td>Dom Dragon</td>
+      <td>Tulsa, OK</td>
+      <td>36.11</td>
+      <td>-95.87</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:27:38</td>
+      <td>Jim Franc</td>
+      <td>Burns, KS</td>
+      <td>38.11</td>
+      <td>-96.84</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:28:23</td>
+      <td>Alexander Hunt</td>
+      <td>Holdenville, Oklahoma</td>
+      <td>35.1199</td>
+      <td>-96.5039</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:29:28</td>
+      <td>JavaHurricane</td>
+      <td>Tulsa, OK</td>
+      <td>36.15</td>
+      <td>-96.1</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:35:42</td>
+      <td>Bradnado</td>
+      <td>Stillwater, OK</td>
+      <td>36.1658</td>
+      <td>-96.9186</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:52:47</td>
+      <td>Jmack</td>
+      <td>Sperry OK</td>
+      <td>36.296</td>
+      <td>-95.992</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>292</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:34:36</td>
+      <td>Brandon Black</td>
+      <td>Drumright, OK</td>
+      <td>35.9869</td>
+      <td>-96.6023</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:36:47</td>
+      <td>Tobias Leonard</td>
+      <td>15W Oklahoma City, OK</td>
+      <td>35.36</td>
+      <td>-98.23</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:43:48</td>
+      <td>ajax13</td>
+      <td>Pauls Valley, OK</td>
+      <td>34.76</td>
+      <td>-97.08</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:45:18</td>
+      <td>wxManSmith</td>
+      <td>Stillwater, OK</td>
+      <td>36.1156</td>
+      <td>-97.0584</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:45:40</td>
+      <td>ModdiWX</td>
+      <td>Noble, OK</td>
+      <td>35.1446</td>
+      <td>-97.4022</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>319</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:16:00</td>
+      <td>Reid Buchanan</td>
+      <td>Turley, OK</td>
+      <td>36.244</td>
+      <td>-95.9748</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:27:24</td>
+      <td>Nene roro</td>
+      <td>Little Walnut Township, Kansas</td>
+      <td>37.698519</td>
+      <td>-96.81876</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>226</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:56:36</td>
+      <td>Jason (fire weather forecasting is superior tbh, truth the Sangre de Cristos)</td>
+      <td>Edmond, OK</td>
+      <td>35.65</td>
+      <td>-97.47</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>276</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:50:13</td>
+      <td>Luke Hatton</td>
+      <td>Guthrie, OK</td>
+      <td>35.75998912</td>
+      <td>-97.40933317</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>295</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:51:08</td>
+      <td>Chad (squidward)</td>
+      <td>Mound Valley, KS</td>
+      <td>37.2</td>
+      <td>-95.4</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>251</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:53:21</td>
+      <td>Nick (Madison, WI)</td>
+      <td>Sedan, KS</td>
+      <td>37.1129</td>
+      <td>-96.3084</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>220</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:53:23</td>
+      <td>Aaron P</td>
+      <td>Hominy, OK</td>
+      <td>36.4</td>
+      <td>-96.4</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:53:57</td>
+      <td>Richard Cirone</td>
+      <td>Stigler, OK</td>
+      <td>35.1937</td>
+      <td>-95.1648</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>249</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:57:15</td>
+      <td>Paul Austin</td>
+      <td>Ingalls, OK</td>
+      <td>36.118</td>
+      <td>-96.872</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>296</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:59:25</td>
+      <td>Dryline wedges</td>
+      <td>Guthrie, Oklahoma</td>
+      <td>35.86</td>
+      <td>-97.6</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>YesTor</td>
+      <td>2025-04-01 14:59:34</td>
+      <td>DestroyerXII</td>
+      <td>Calumet, OK</td>
+      <td>35.65</td>
+      <td>-98.09</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:00:42</td>
+      <td>Asher Malaschak</td>
+      <td>W of Hamilton, KS</td>
+      <td>37.99</td>
+      <td>-96.19</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:02:10</td>
+      <td>Valerie Hewitt</td>
+      <td>Norman, OK</td>
+      <td>35.22</td>
+      <td>-97.44</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:03:03</td>
+      <td>Coop2168</td>
+      <td>Stillwater, OK</td>
+      <td>36.1547</td>
+      <td>-97.1576</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>254</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:03:06</td>
+      <td>Kam</td>
+      <td>Tulsa, OK</td>
+      <td>36.1551</td>
+      <td>-95.9895</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:04:23</td>
+      <td>Snake</td>
+      <td>Stillwater, OK</td>
+      <td>36.11</td>
+      <td>-97.05</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>257</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:06:21</td>
+      <td>BlueSky</td>
+      <td>Lindsay, OK south of OKC</td>
+      <td>34.8346</td>
+      <td>-97.6024</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:06:51</td>
+      <td>Richard Sample</td>
+      <td>Climax, KS</td>
+      <td>37.69</td>
+      <td>-96.23</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:07:46</td>
+      <td>GodMosses</td>
+      <td>Yale, OK</td>
+      <td>36.1</td>
+      <td>-96.69</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:09:32</td>
+      <td>Garrett Statum</td>
+      <td>Pawhuska, OK</td>
+      <td>36.66</td>
+      <td>-96.33</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:10:49</td>
+      <td>Brady Lyness</td>
+      <td>Coffeyville, KS</td>
+      <td>37.0289</td>
+      <td>-95.6168</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>250</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:15:08</td>
+      <td>Andy Wade</td>
+      <td>Skedee, OK</td>
+      <td>36.378</td>
+      <td>-96.705</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>297</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:15:36</td>
+      <td>Joshua Intini</td>
+      <td>Stillwater, OK</td>
+      <td>36.0778331</td>
+      <td>-97.1108925</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:16:21</td>
+      <td>Jonah</td>
+      <td>Manhattan, KS</td>
+      <td>39.165</td>
+      <td>-96.575</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:17:18</td>
+      <td>Heerok Das</td>
+      <td>KTLX</td>
+      <td>35.33</td>
+      <td>-97.28</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:17:40</td>
+      <td>Clarence Smith</td>
+      <td>Pawhuska, OK</td>
+      <td>36.66</td>
+      <td>-96.46</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:18:08</td>
+      <td>Ethan Treff</td>
+      <td>Ralston, OK</td>
+      <td>36.5039</td>
+      <td>-96.7323</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:18:18</td>
+      <td>Lizzie Hugeback</td>
+      <td></td>
+      <td>36.3</td>
+      <td>-96.52</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:20:00</td>
+      <td>Lucas Huang</td>
+      <td>Glencoe, OK</td>
+      <td>36.228403</td>
+      <td>-96.925713</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:20:26</td>
+      <td>Sam Romshek</td>
+      <td>Red Rock, OK</td>
+      <td>36.47</td>
+      <td>-97.18</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:22:49</td>
+      <td>Oliver Knapton</td>
+      <td>Cushing, OK</td>
+      <td>35.9869</td>
+      <td>-96.7841</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:22:59</td>
+      <td>Joey Krastel</td>
+      <td>2 SE IXL, OK</td>
+      <td>35.505458</td>
+      <td>-96.360293</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:24:05</td>
+      <td>Steven Bergey</td>
+      <td>6 miles E of Conway Springs, KS</td>
+      <td>37.384709</td>
+      <td>-97.53356</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:35:25</td>
+      <td>Wyatt Bicker</td>
+      <td>Haverhill, KS</td>
+      <td>37.68</td>
+      <td>-96.88</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:42:50</td>
+      <td>truthing the 2tor for April Fool's</td>
+      <td>Yuba City, California</td>
+      <td>39.0891</td>
+      <td>-121.631</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:25:09</td>
+      <td>JetStreamJami</td>
+      <td>Edmond, OK</td>
+      <td>35.65</td>
+      <td>-97.47</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:54:50</td>
+      <td>Alex N.</td>
+      <td>El Dorado, KS</td>
+      <td>37.723005</td>
+      <td>-96.915531</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:26:05</td>
+      <td>Gabe Zago</td>
+      <td>(SE) Guthrie, OK</td>
+      <td>35.79</td>
+      <td>-97.38</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:27:03</td>
+      <td>Abigail Seibel</td>
+      <td>Yukon, OK</td>
+      <td>35.5</td>
+      <td>-97.7</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:27:09</td>
+      <td>Malachi</td>
+      <td>Wichita, KS</td>
+      <td>37.68</td>
+      <td>-97.44</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:27:36</td>
+      <td>anthony</td>
+      <td></td>
+      <td>36.14</td>
+      <td>-96.9</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:29:11</td>
+      <td>woah there are cities in Kansas?</td>
+      <td>Onaga, KS</td>
+      <td>39.4388</td>
+      <td>-96.1375</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>244</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:29:21</td>
+      <td>Baca</td>
+      <td>Clarks heights, ok</td>
+      <td>35.37312</td>
+      <td>-96.98758</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:31:11</td>
+      <td>Sam Emmerson</td>
+      <td>Dover, OK</td>
+      <td>35.9724</td>
+      <td>-97.8291</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:32:45</td>
+      <td>Josh Jaeger</td>
+      <td>Perkins, OK</td>
+      <td>36</td>
+      <td>-97.05</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:34:31</td>
+      <td>Hunter Anderson</td>
+      <td>KANY</td>
+      <td>37.27</td>
+      <td>-97.76</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:59:13</td>
+      <td>Kevin Smallfront</td>
+      <td>W of Moore :(</td>
+      <td>35.2908</td>
+      <td>-97.547209</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:36:06</td>
+      <td>Endy O.klahoma goes crazy</td>
+      <td>Bartlesville</td>
+      <td>36.7619</td>
+      <td>-95.9997</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:36:44</td>
+      <td>Nicholas Kniprath</td>
+      <td>Wetmore, KS</td>
+      <td>39.63</td>
+      <td>-95.81</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:38:19</td>
+      <td>Josh Schwarz</td>
+      <td>Shamrock, OK</td>
+      <td>35.9</td>
+      <td>-96.57</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:38:44</td>
+      <td>flappy787</td>
+      <td>Stillwater, OK</td>
+      <td>36.02</td>
+      <td>-97.14</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:39:50</td>
+      <td>MasDogWx</td>
+      <td>Cashion, OK</td>
+      <td>35.79659</td>
+      <td>-97.68092</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:41:40</td>
+      <td>caiden</td>
+      <td>Edmond, OK</td>
+      <td>35.6477</td>
+      <td>-97.5505</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:42:05</td>
+      <td>Uzi niz</td>
+      <td>Labette, KS (67356)</td>
+      <td>37.230603</td>
+      <td>-95.185173</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:42:36</td>
+      <td>aj11</td>
+      <td>Meridian, OK</td>
+      <td>35.8427</td>
+      <td>-97.2466</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:43:39</td>
+      <td>Ethan Kerr</td>
+      <td>Yale, OK</td>
+      <td>36.11</td>
+      <td>-96.7</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:43:39</td>
+      <td>Matthew Gaines</td>
+      <td>Choctaw, OK</td>
+      <td>35.48</td>
+      <td>-97.26</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:44:21</td>
+      <td>Peter Corman</td>
+      <td>Shawnee, Oklahoma</td>
+      <td>35.445</td>
+      <td>-96.9181</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:45:14</td>
+      <td>Sam's target if he was actually good</td>
+      <td>Wonsevu, KS</td>
+      <td>38.15</td>
+      <td>-96.77</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:45:43</td>
+      <td>DaveFlo</td>
+      <td></td>
+      <td>37.17</td>
+      <td>-97.04</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>268</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:45:49</td>
+      <td>Szymon</td>
+      <td>Oklahoma City</td>
+      <td>36.41</td>
+      <td>-97.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:47:16</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>St. Joseph, MO</td>
+      <td>39.81</td>
+      <td>-94.89</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>261</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:48:37</td>
+      <td>K</td>
+      <td>Stillwater, OK</td>
+      <td>36.113</td>
+      <td>-97.053</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:55:10</td>
+      <td>Anthony Haberman</td>
+      <td>Kendrick, OK</td>
+      <td>35.785278</td>
+      <td>-96.775556</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:49:34</td>
+      <td>RIP Kyle</td>
+      <td>Hallett, OK</td>
+      <td>36.234</td>
+      <td>-96.568</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>216</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:50:31</td>
+      <td>Veer (FULL SEND GOODBYE TERMINAL RADAR)</td>
+      <td>TOKC</td>
+      <td>35.276</td>
+      <td>-97.51</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:50:39</td>
+      <td>Shadow</td>
+      <td>El Reno, OK</td>
+      <td>35.52</td>
+      <td>-97.95</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:51:26</td>
+      <td>Adrian Z.</td>
+      <td>Hominy, OK</td>
+      <td>36.4588</td>
+      <td>-96.3858</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:52:44</td>
+      <td>Drifter</td>
+      <td>Pawnee, OK</td>
+      <td>36.33</td>
+      <td>-96.79</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:53:26</td>
+      <td>Isaac Nordick</td>
+      <td>Hominy, OK</td>
+      <td>36.4182</td>
+      <td>-96.3825</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:54:07</td>
+      <td>Ryan Rackliffe</td>
+      <td>Stillwater, OK</td>
+      <td>36.12</td>
+      <td>-97.06</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:54:09</td>
+      <td>LopWx</td>
+      <td>Moore, OK</td>
+      <td>35.3395</td>
+      <td>-97.486702</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>238</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:54:11</td>
+      <td>453Brax</td>
+      <td>Midwest City, OK</td>
+      <td>35.44</td>
+      <td>-97.39</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:54:36</td>
+      <td>Donovan F</td>
+      <td>Wynona, OK</td>
+      <td>36.55</td>
+      <td>-96.33</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:55:33</td>
+      <td>Rachel Pokorski</td>
+      <td>Chanute, KS</td>
+      <td>37.4</td>
+      <td>-95.27</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>208</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:55:33</td>
+      <td>easymoneysniper</td>
+      <td>Iola, KS</td>
+      <td>37.9148</td>
+      <td>-95.3927</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:55:33</td>
+      <td>Jacob Stichter</td>
+      <td>Dewey, OK</td>
+      <td>36.79</td>
+      <td>-95.91</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:55:57</td>
+      <td>Gavin Bird</td>
+      <td>Cashion, OK</td>
+      <td>35.77</td>
+      <td>-97.64</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:57:01</td>
+      <td>Roch</td>
+      <td>Stillwater, OK</td>
+      <td>36.126505</td>
+      <td>-97.050818</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:57:16</td>
+      <td>Alex Honeycutt (the tombs)</td>
+      <td>Luther, OK</td>
+      <td>35.6603</td>
+      <td>-97.19201</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:57:54</td>
+      <td>jbean45</td>
+      <td>Edmond, OK</td>
+      <td>35.66667092</td>
+      <td>-97.39765286</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:57:57</td>
+      <td>Joseph Patton</td>
+      <td>Milfay, OK</td>
+      <td>35.75720924</td>
+      <td>-96.56553326</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:58:17</td>
+      <td>Penitentes</td>
+      <td>Aydelotte, OK</td>
+      <td>35.45</td>
+      <td>-96.91</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:58:21</td>
+      <td>I'm square :(</td>
+      <td>Gypsum, KS</td>
+      <td>38.71</td>
+      <td>-97.43</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:58:44</td>
+      <td>CPekar</td>
+      <td>Ramona, OK</td>
+      <td>36.5304</td>
+      <td>-95.9236</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:58:49</td>
+      <td>TheBetterDoge</td>
+      <td>Edmond, OK</td>
+      <td>35.64119168</td>
+      <td>-97.49826278</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:59:05</td>
+      <td>The Hawk</td>
+      <td>Chickasha, OK</td>
+      <td>35.06</td>
+      <td>-98.04</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>311</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:59:06</td>
+      <td>Stefff</td>
+      <td>Wann, OK</td>
+      <td>36.92</td>
+      <td>-95.8</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:59:25</td>
+      <td>Andrew Reil</td>
+      <td>Norman, OK</td>
+      <td>35.23</td>
+      <td>-96.7</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>YesTor</td>
+      <td>2025-04-01 15:59:48</td>
+      <td>Kannon Kalton</td>
+      <td>Carney, OK</td>
+      <td>35.7833</td>
+      <td>-97.0189</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>YesTor</td>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>NA</td>
+      <td>36.57075661563726</td>
+      <td>-97.06879325740196</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>888</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>37.254615050137794</td>
+      <td>-97.25289446310528</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

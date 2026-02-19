@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Leaflet CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <style>
+	:root {
+      --btn-color: #aa7761; /* 2025 color */
+    }
+    .fakeimg {
+      height: 200px;
+      background-image: url('IMG_0403.jpg');
+    }
+    </style>
+ </head>
+ <body>
+
+<!--Header with image-->
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Archive
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="archive2025.html">2025</a>
+			<a class="dropdown-item" href="archive2024.html">2024</a>
+          </div>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>-->
+        <!--<li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
+
+<br>
+
+
+
+
+<br>
+
+
+<!--embed google form-->
+<div id="f1">
+  <div class="container">
+    <div class="row h-200">
+        
+      <div class="col-lg-6 bg-light text-dark rounded center-block">
+        <div class="mt-4 text-center">
+            <!-- Embed clock -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <h4 class="text-center" id="currentTime">Current UTC Time: </h4>
+                        <script type="text/javascript">
+                            function updateCurrentTime() {
+                                var today = new Date();
+                                var year = today.getFullYear();
+                                var month = (today.getMonth() + 1).toString().padStart(2, '0');
+                                var day = today.getDate().toString().padStart(2, '0');
+                                var hour = today.getUTCHours();
+                                var minute = today.getUTCMinutes();
+                                var seconds = today.getUTCSeconds();
+    
+                                var timeString = `Current UTC Time: ${month}/${day}/${year} ${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                                document.getElementById("currentTime").innerHTML = timeString;
+                            }
+    
+                            function updateForecastDisplay() {
+                                var today = new Date();
+                                var hour = today.getUTCHours();
+                                var minute = today.getUTCMinutes();
+                                var dayOfWeek = today.getUTCDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+                                var iframe = document.getElementById("forecastIframe");
+                                var message = document.getElementById("forecastMessage");
+    
+                                // Only show iframe on weekdays (Monday-Friday) and before 16:01 UTC
+                                if (dayOfWeek >= 1 && dayOfWeek <= 5) { // Monday to Friday
+                                    if (hour < 16 || (hour === 16 && minute === 1)) {
+                                        iframe.style.display = "block";
+                                        message.style.display = "none";
+                                    } else {
+                                        iframe.style.display = "none";
+                                        message.style.display = "block";
+                                    }
+                                } else {
+                                    iframe.style.display = "none";
+                                    message.style.display = "block";
+                                }
+                            }
+    
+                            // Update the current time every second (no effect on iframe)
+                            setInterval(updateCurrentTime, 1000);
+    
+                            // Update forecast visibility every 5 minutes
+                            setInterval(updateForecastDisplay, 1000);
+                            updateForecastDisplay(); // Initial update on load
+                        </script>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p class="align-self-start">
+                        Forecasts can be amended up until the 16Z cut-off time. If a forecast is amended, the previous forecast will be overwritten.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Forecast display area -->
+            <div id="forecastContainer">
+                <iframe id="forecastIframe" src="https://docs.google.com/forms/d/e/1FAIpQLScWsQsiLTS2CSSRl0CeTAP_-AGWhrIQBfoWqG3BQPNDpZmvuw/viewform?usp=sf_link" style="height: 720px; width: 100%; display: block;"></iframe>
+                <h3 id="forecastMessage" class="text-center font-weight-bold" style="display: none; color: var(--btn-color);">
+                    <p><br><br>FORECASTING IS CLOSED<br><br>
+                    Forecast Window: 00Z - 16Z<br>
+                    Verification Window: 1630Z - 12Z<br>
+                    Monday-Friday, no weekend forecasting                         
+                    </p>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+          
+     
+      <div class="col-sm-1"></div>
+
+      <!-- embed map-->
+
+
+      <!--Embedlinks-->
+      <div class="col-lg-5 bg-light text-dark rounded center-block text-center">
+        <br>
+        <div class="center-block">
+          <h4 class="text-center"> Forecast Tools </h4>
+        </div>
+
+        <!--embed map-->
+        <div class="container mt-4">
+          <div id="map" style="height: 400px; position: relative;" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(122px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/4/3/5.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(34px, -67px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/4/3/6.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(34px, 189px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/4/2/5.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-222px, -67px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://a.tile.openstreetmap.org/4/4/5.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(290px, -67px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://c.tile.openstreetmap.org/4/2/6.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-222px, 189px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://b.tile.openstreetmap.org/4/4/6.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(290px, 189px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(942px, 1547px, 0px) scale(8);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © OpenStreetMap contributors</div></div></div></div>
+          <!-- Other items on the page -->
+          <div class="other-items">
+            <!-- Your other content goes here -->
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="script.js"></script>
+
+        <!--embed links-->
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12 center-text"></div>
+           <a href="https://home.pivotalweather.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Pivotal Weather</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://www.wpc.ncep.noaa.gov/index.shtml#page=sfc" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Surface Analysis - Weather Prediction Center</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://www.f5wx.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">F5 Weather</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://www.tropicaltidbits.com/analysis/models/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Tropical Tidbits</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://weather.rap.ucar.edu/upper/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">UCAR - RAP Upper Air</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="https://meteor.geol.iastate.edu/~ckarsten/bufkit/image_loader.phtml" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Iowa State Meteogram</a>
+	</div>
+	<div class="center-block p-2">
+         <div class="button-box col-lg-12"></div>
+           <a href="http://data.nadocast.com/" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000; width:100%">Nadocast</a>
+	</div> 
+        <br>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+
+<br><br><br><br><br>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Tornado Target Contest 2025</p>
+  <p>TornadoTargetContest@gmail.com</p>
+</div>
+
+</body>

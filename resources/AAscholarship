@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="The Iowa State University Student Chapter of the American Meteorological Society (ISU AMS) is an award-winning chapter committed to community outreach and student involvement in social and academic activities.
+">
+		<link rel="icon" href="//www.meteor.iastate.edu/ams/favicon.ico">
+
+		<title>Avery Anderson Friend in Meteorology Scholarship</title>
+
+		<!-- Main CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link href="//www.meteor.iastate.edu/ams/stylesheets/styles.css" rel="stylesheet">
+
+		<!-- FullCalendar CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.print.css" rel="stylesheet" media="print">
+		
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<link href="//www.meteor.iastate.edu/ams/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Internal CSS -->
+    		<style>
+			.navbar-nav > li > a {
+        			padding-top: 15px; /* Adjust vertical padding as needed */
+        			padding-bottom: 15px; /* Adjust vertical padding as needed */
+    			}
+        		.dropdown:hover .dropdown-menu {
+            			display: block;
+        		}
+
+        		.dropdown-menu {
+            			display: none;
+            			position: absolute;
+            			z-index: 1000;
+            			min-width: 160px;
+        		}
+    		</style>
+	</head>
+
+	<body role="document">
+
+		<!-- Page Header -->
+		<header class="site-header">
+			<div class="header-main">
+				<div class="container">
+					<div class="title-area">
+						<!-- Screen Reader Title -->
+						<h1 class="sr-only">ISU AMS - Iowa State University Student Chapter of the American Meteorological Society</h1>
+						<!-- Logo -->
+						<a href="//www.meteor.iastate.edu/ams">
+							<img src="//www.meteor.iastate.edu/ams/assets/isu_ams_web_logo_2.png" class="site-logo">
+						</a>
+					</div>
+					<div class="extras hidden-xs">
+						<div class="social-icons">
+							<!-- Social Sites (controlled in _data/social_links.json) -->
+							
+								<div class="social-icon">
+									<a href="https://www.facebook.com/groups/ISUAMS/" title="Facebook">
+										<span class="genericon genericon-facebook-alt"></span>
+									</a>
+								</div>
+							
+								<div class="social-icon">
+									<a href="https://twitter.com/ISUAMS" title="Twitter">
+										<span class="genericon genericon-twitter"></span>
+									</a>
+								</div>
+							
+								<div class="social-icon">
+									<a href="http://www.meteor.iastate.edu/ams/about/contact-us/" title="Contact Us">
+										<span class="genericon genericon-mail"></span>
+									</a>
+								</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<div class="social-icons">
+							<!-- Social Sites (controlled in _data/social_links.json) -->
+							
+								<div class="social-icon">
+									<a href="https://www.facebook.com/groups/ISUAMS/" title="Facebook">
+										<span class="genericon genericon-facebook-alt"></span>
+									</a>
+								</div>
+							
+								<div class="social-icon">
+									<a href="https://twitter.com/ISUAMS" title="Twitter">
+										<span class="genericon genericon-twitter"></span>
+									</a>
+								</div>
+							
+								<div class="social-icon">
+									<a href="http://www.meteor.iastate.edu/ams/about/contact-us/" title="Contact Us">
+										<span class="genericon genericon-mail"></span>
+									</a>
+								</div>
+							
+						</div>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+    							
+        							
+            								<li><a href="//www.meteor.iastate.edu/ams">Home</a></li>
+        							
+    							
+        							
+            								<li class="dropdown">
+                								<a href="//www.meteor.iastate.edu/ams/about/" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="//www.meteor.iastate.edu/ams/about/">About Us</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/about/contact-us">Contact Us</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/about/officers">Officers</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/about/constitution">Constitution</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/about/awards">Awards</a></li>
+                    									
+                								</ul>
+            								</li>
+        							
+    							
+        							
+            								<li class="dropdown">
+                								<a href="//www.meteor.iastate.edu/ams/events-activities/" class="dropdown-toggle" data-toggle="dropdown">Events and Activities <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="//www.meteor.iastate.edu/ams/events-activities/">Events and Activities</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/events-activities/cys-eyes">Cy's Eyes On the Skies</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/events-activities/calendar">Event Calendar</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/events-activities/nwa">National Weather Association</a></li>
+                    									
+                								</ul>
+            								</li>
+        							
+    							
+        							
+            								<li class="dropdown">
+                								<a href="//www.meteor.iastate.edu/ams/outreach/" class="dropdown-toggle" data-toggle="dropdown">Outreach <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="//www.meteor.iastate.edu/ams/outreach/">Outreach</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/outreach/contact">Contact</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/outreach/school-visits">School Visits</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/outreach/gofurther">Go Further</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/outreach/community">Community Weather Awareness</a></li>
+                    									
+                								</ul>
+            								</li>
+        							
+    							
+        							
+            								<li class="dropdown">
+                								<a href="//www.meteor.iastate.edu/ams/resources/" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="//www.meteor.iastate.edu/ams/resources/">Resources</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/weather-links">Weather Links</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/isu-wx">Iowa State Weather</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/academic-resources">Academic Resources</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/AAscholarship">Avery Anderson Friend in Meteorology Scholarship</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/scholarships">Scholarships</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/internship-reu">Internships and REU's</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/career-resources">Career Resources</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/forecasting">Forecasting</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/resources/fundisu">Fund ISU</a></li>
+                    									
+                								</ul>
+            								</li>
+        							
+    							
+        							
+            								<li class="dropdown">
+                								<a href="//www.meteor.iastate.edu/ams/gallery/" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="//www.meteor.iastate.edu/ams/gallery/">Gallery</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/gallery/PAVOTM">Photos and Videos of the Month</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/gallery/scrapbook">Yearly Scrapbooks</a></li>
+                    									
+                								</ul>
+            								</li>
+        							
+    							
+        							
+            								<li class="dropdown">
+                								<a href="//www.meteor.iastate.edu/ams/new_students/" class="dropdown-toggle" data-toggle="dropdown">New Students <b class="caret"></b></a>
+                								<ul class="dropdown-menu">
+                    									<!-- Add a link to the main page of the tab -->
+                    									<li><a href="//www.meteor.iastate.edu/ams/new_students/">New Students</a></li>
+                    									
+                        									<li><a href="//www.meteor.iastate.edu/ams/new_students/learning_community">Earth Wind & Fire Learning Community</a></li>
+                    									
+                								</ul>
+            								</li>
+        							
+    							
+        							
+            								<li><a href="//www.meteor.iastate.edu/ams/meetingminutes/meeting-minutes">Meeting Minutes</a></li>
+        							
+    							
+        							
+            								<li><a href="//www.meteor.iastate.edu/ams/TTC/">Tornado Contest</a></li>
+        							
+    							
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</nav>
+		</header>
+
+<!-- Main -->
+<main class="inner-page">
+	<div class="container">
+		<div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3">
+			
+
+<ol class="breadcrumb">
+  <li><a href="//www.meteor.iastate.edu/ams/index.html">Home</a></li>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<li><a href="//www.meteor.iastate.edu/ams/resources/">Resources</a></li>
+			
+				
+					
+				
+					
+				
+					
+				
+					
+						<li class="active">Avery Anderson Friend in Meteorology Scholarship</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+</ol>
+			<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Avery Anderson Friend in Meteorology Scholarship</h1>
+  </header>
+
+  <div class="post-content">
+    <section class="story-section">
+    <img src="/ams/uploads/images/Avery_Anderson/Avery_Anderson.jpg?raw=true" alt="Avery Anderson" class="rotateimg90" style="width:50%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
+    <h2>Avery's Story</h2>
+    <p>Avery was born an Iowa State Cyclone. Avery’s lifelong passion for Iowa State led him to study meteorology at his beloved university. He was fascinated by storms and the science of weather from the age of three. Family and friends knew they could turn to Avery for a personal weather report at any time. He found his home in brotherhood and faith when he joined Beta Sigma Psi Fraternity. In his free time at Iowa State, he was also an enthusiastic member of the Cyclone Hockey Pep Band.</p>
+    <p>Avery knew you could be a person of faith and a scientist. He believed you could be a rabid sports fan and a devoted musician. He was well-rounded in his interests and we think that is important. Being inclusive was important to Avery and it is something we celebrate.</p>
+    <p>On December 23rd, 2021, Avery was killed in a car accident near his home in Atlantic, Iowa. Avery squeezed every moment out of his 20 years on this earth. He gave his whole heart to everything that spoke to him, and he displayed this enthusiasm for everyone to see. Avery’s faith was a cornerstone of his life. He was a lifelong member of St. Paul’s Lutheran Church in Atlantic. But nowhere did his light shine brighter than as a counselor at Ingham Okoboji Lutheran Bible Camp. His love of the Lord was contagious and influenced those around him.</p>
+    <p>The Avery Andersen Friend in Meteorology Award goes to a graduating senior in the Iowa State University Meteorology program. The award celebrates the senior who exhibits enthusiasm for the field of meteorology and support to their fellow meteorology students. ISU AMS members in their sophomore and junior years will vote on the person they feel best exhibits these characteristics. The meteorology program awards committee will then determine the winner from the top vote getters based on the activity within the department, university, and their community. The winner will receive a $1,000 cash award.</p>
+    <a href="https://www.averyandersenfoundation.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Avery Anderson Foundation</a>
+</section>
+
+<section class="header-section">
+    <h2>Previous Years Winners</h2>
+</section>
+
+<section class="2023-section">
+    <h3>2023 Winner: AJ Rickman</h3>
+    <img src="/ams/uploads/images/Avery_Anderson/Avery_AJ_2023.jpeg?raw=true" alt="2023 Winner: AJ Rickman" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
+</section>
+
+<section class="2022-section">
+    <h3>2022 Winner: Marissa Osterloh</h3>
+    <img src="/ams/uploads/images/Avery_Anderson/Avery_Marissa_2022.jpeg?raw=true" alt="2022 Winner: Marissa Osterloh" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
+</section>
+
+  </div>
+
+</article>
+
+		</div>
+		<div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9">
+			
+
+<nav class="inner-nav secondary-nav">
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<a class="active" href="//www.meteor.iastate.edu/ams/resources/">Resources</a>
+			<ul>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/weather-links">Weather Links</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/isu-wx">Iowa State Weather</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/academic-resources">Academic Resources</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/AAscholarship">Avery Anderson Friend in Meteorology Scholarship</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/scholarships">Scholarships</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/internship-reu">Internships and REU's</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/career-resources">Career Resources</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/forecasting">Forecasting</a>
+						
+					</li>
+				
+					<li>
+						<a href="//www.meteor.iastate.edu/ams/resources/fundisu">Fund ISU</a>
+						
+					</li>
+				
+			</ul>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+</nav>
+		</div>
+	</div>
+</main>
+
+
+		<!-- Footer -->
+                <!-- TEST EDIT FOR AUTO DEPLOY ROUND 3 -->
+		<footer>
+			<div class="container">
+				<div class="col-sm-4">
+					<h4>Quick Links</h4>
+					<ul>
+						
+							<li><a href="http://www.meteor.iastate.edu/ams/outreach/contact/">Outreach Request Information</a></li>
+						
+							<li><a href="https://www.wxchallenge.com/">National Forecast Contest</a></li>
+						
+							<li><a href="http://www.meteor.iastate.edu/jportfolio/login.jsp">Class Forecast Contests</a></li>
+						
+							<li><a href="http://www.meteor.iastate.edu/ams/resources/weather-links/">Informational Weather Links</a></li>
+						
+							<li><a href="http://www.meteor.iastate.edu/ams/meetingminutes/meeting-minutes/">Meeting Minutes</a></li>
+						
+							<li><a href="http://www.meteor.iastate.edu/ams/about/officers/">Officer Contacts</a></li>
+						
+							<li><a href="http://www.meteor.iastate.edu/ams/events-activities/calendar/">Event Calendar</a></li>
+						
+							<li><a href="https://fundisu.foundation.iastate.edu/project/40773">Fund ISU</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-sm-4 affiliate-images">
+					<a href="http://www.weather.gov/wrn/"><img src="//www.meteor.iastate.edu/ams/assets/amb_logo_sml.png"></a>
+					<a href="https://las.iastate.edu/"><img src="//www.meteor.iastate.edu/ams/assets/isu_las_logo.png"></a>
+				</div>
+				<div class="col-sm-4 twitter-box">
+					<a class="twitter-timeline" data-width="300" data-height="300" data-dnt="true" data-theme="light" href="https://twitter.com/ISUAMS">Tweets by ISUAMS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col-xs-12 fine-print">
+					© 2026 Iowa State University Student Chapter of the American Meteorological Society<br>
+					Email the webmaster (<a href="mailto:webmaster.isuams@iastate.edu">webmaster.isuams@iastate.edu</a>) with any questions, comments, or suggestions.
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="//www.meteor.iastate.edu/ams/assets/javascripts/jquery.min.js"><\/script>')</script>
+		<script src="//www.meteor.iastate.edu/ams/assets/javascripts/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="//www.meteor.iastate.edu/ams/assets/javascripts/ie10-viewport-bug-workaround.js"></script>
+		
+	</body>
+</html> 

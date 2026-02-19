@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+	:root {
+            --btn-color: #aa7761; /* 2025 color */
+        }
+    .fakeimg {
+      height: 200px;
+    }
+    </style>
+  </head>
+  <body>
+
+   
+<!--Header with image-->
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Archive
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="archive2025.html">2025</a>
+			<a class="dropdown-item" href="archive2024.html">2024</a>
+          </div>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>-->
+        <!--<li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
+
+<br>
+<!--Notice-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="mt-4  text-dark rounded text-center">
+      <div style="max-width: 100%; margin: 0 auto;">
+        <h4>Data will be made available following the release of the 1630UTC SPC outlook, generally by 1800UTC.</h4>
+	<h5>The plot and table will be available here until Midnight (CDT).
+      </div>
+    </div>
+  </div>
+</div>
+<!--Button to download placefile-->
+<div class="mt-4 text-center">
+  <div class="container mt-5">
+      <a class="btn btn-primary mx-auto" style="background-color: var(--btn-color); border: 3px #000000; width: 50%" href="placefile.html">
+      <h4>TTC Forecast Placefiles (GR)</h4>
+      </a>
+  </div>
+</div>
+
+<!--<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <a href="https://drive.google.com/file/d/1waMLdY9WSKdCMikSWIqyfxzEOiM9aF68/view?usp=drive_link" download="filename.zip" class="btn btn-primary">Download File</a>
+    </div>
+  </div>
+</div>-->
+
+
+<!-- Plot based on today's date -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="mt-4  text-dark rounded text-center">
+      <div style="max-width: 1000px; margin: 0 auto;">
+        <iframe class="myIframe" target="_blank" id="figureIframe" style="width: 100%; height: 720px;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Table-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="mt-4  text-dark rounded text-center">
+      <div style="max-width: 1000px; margin: 0 auto;">
+        <iframe class="myIframe" target="_blank" id="tableIframe" style="width: 100%; height: 720px;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS bundle (popper.js included) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Get today's date in US Central Time and format it as YYYY_MM_DD
+  const today = new Date();
+  const centralTimeOptions = { timeZone: 'America/Chicago', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
+  today.toLocaleString('en-US', centralTimeOptions);
+  today.setHours(0, 0, 0, 0); // Set time to midnight for consistency
+  const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, '_');
+
+  // Function to check if the file exists
+  function fileExists(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        callback(xhr.status === 200);
+      }
+    };
+    xhr.open('HEAD', url, true);
+    xhr.send();
+  }
+
+  // Update iframe src attributes with dynamic file names or display "No Forecast Today"
+  const figureIframe = document.getElementById('figureIframe');
+  const tableIframe = document.getElementById('tableIframe');
+
+  fileExists(`todays_forecasts/plots/${formattedDate}_fig.html`, function (figureExists) {
+    figureIframe.src = figureExists ? `todays_forecasts/plots/${formattedDate}_fig.html` : 'todays_forecasts/No_Forecast_Today.html';
+  });
+
+  fileExists(`todays_forecasts/tables/${formattedDate}_table.html`, function (tableExists) {
+    tableIframe.src = tableExists ? `todays_forecasts/tables/${formattedDate}_table.html` : 'todays_forecasts/No_Forecast_Today.html';
+  });
+</script>
+
+
+<!--Add navigation bar on bottom to go to archived today's forecasts-->
+<div class="bg-color-bar">
+	<div class="row d-flex justify-content-center">
+       <div class="button-box"></div>
+       <a href="archive_todays_forecast.html" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Archived Today's Forecast</a>
+	</div>
+</div>
+<br>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2025</p>
+    <p>TornadoTargetContest@gmail.com</p>
+</div>
+</body>

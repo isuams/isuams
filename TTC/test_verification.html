@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TTC – Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    :root {
+      --btn-color: #aa7761;
+    }
+	
+	.hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+  
+    iframe {
+      width: 100%;
+      border: none;
+      background-color: #fff;
+    }
+	
+    .iframe-figure {
+      height: 650px;
+    }
+
+    .iframe-table {
+      width: 100%;
+      height: 70vh;
+      border: none;
+    }
+
+    .card {
+      border-radius: 0.75rem;
+    }
+
+    .card-header {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+	
+	.placeholder {
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      background-color: #f8f9fa;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-info"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT -->
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Archive
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+        </ul>
+      </li>
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>-->
+        <!--<li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+
+      <li class="nav-item">
+        <a class="nav-link active" href="verification.html">Verification</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="faq.html">FAQs</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+
+      <!-- Logged out -->
+      <li class="nav-item" id="navLogin">
+        <button class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+          Login
+        </button>
+      </li>
+
+      <!-- Logged in -->
+      <li class="nav-item dropdown d-none" id="navUser">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <span id="navUserName"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+
+          <li id="adminLinkContainer" class="d-none">
+            <a class="dropdown-item" href="admin.html">Admin Panel</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="forecast_submission.html">
+              Submit Forecast
+            </a>
+          </li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li>
+            <button class="dropdown-item text-danger" onclick="logout()">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<br>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- prevent default submit + call login() -->
+      <form onsubmit="event.preventDefault(); login();">
+
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="forgot_password.html">Forgot password?</a></small>
+          </div>
+
+          <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-info"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+
+  <!-- DATE SELECTOR -->
+  <div class="card shadow-sm mb-4">
+	<div class="card-body text-center">
+
+	  <label for="verifDate" class="form-label fw-semibold mb-2">
+        Select Verification Date (UTC)
+      </label>
+
+      <div class="d-flex justify-content-center gap-2 flex-wrap">
+        <input
+          type="date"
+          id="verifDate"
+          class="form-control w-auto"
+        >
+
+        <button
+          id="loadEventBtn"
+          class="btn btn-primary"
+          onclick="loadSelectedDate()"
+        >
+          Load Event Data
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- AT A GLANCE -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header">At a Glance</div>
+    <div class="card-body position-relative">
+      <div class="placeholder text-center text-muted d-none" id="aagPlaceholder">
+        <p class="mb-0">No “At a Glance” data available for this date.</p>
+      </div>
+      <iframe id="aagFrame" class="iframe-figure"></iframe>
+	</div>
+  </div>
+
+  <!-- MAP / FIGURE -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header">Forecast Outcome Map</div>
+    <div class="card-body position-relative">
+      <div class="placeholder text-center text-muted d-none" id="figPlaceholder">
+        <p class="mb-0">No map/figure available for this date.</p>
+      </div>
+	  <iframe id="figFrame" class="iframe-figure"></iframe>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <div class="card shadow-sm mb-5">
+    <div class="card-header">Forecast Verification Table</div>
+    <div class="card-body position-relative p-0">
+      <div class="placeholder text-center text-muted d-none p-3"
+       id="tablePlaceholder">
+        <p class="mb-0">No verification table exists for this date.</p>
+      </div>
+	  <iframe id="tableFrame" class="iframe-table"></iframe>
+    </div>
+  </div>
+
+<!-- Script for updating the iframes with date selector -->
+<script>
+function pad(n) {
+  return n.toString().padStart(2, "0");
+}
+
+function setIframeWithFallback(frameId, placeholderId, src) {
+  const frame = document.getElementById(frameId);
+  const placeholder = document.getElementById(placeholderId);
+
+  placeholder.classList.add("d-none");
+  frame.classList.remove("d-none");
+
+  frame.onerror = () => {
+    frame.classList.add("d-none");
+    placeholder.classList.remove("d-none");
+  };
+
+  frame.src = src;
+}
+
+function updateFrames(dateStr) {
+  if (!dateStr) return;
+
+  const d = new Date(dateStr);
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const day = String(d.getUTCDate()).padStart(2, "0");
+
+  const base = `${y}_${m}_${day}`;
+
+  setIframeWithFallback(
+    "aagFrame",
+    "aagPlaceholder",
+    `verification/at_a_glance/${base}_aag.html`
+  );
+
+  setIframeWithFallback(
+    "figFrame",
+    "figPlaceholder",
+    `verification/plots/${base}_veriffig.html`
+  );
+
+  setIframeWithFallback(
+    "tableFrame",
+    "tablePlaceholder",
+    `verification/tables/${base}_veriftable.html`
+  );
+}
+
+function loadSelectedDate() {
+  const dateStr = document.getElementById("verifDate").value;
+  updateFrames(dateStr);
+}
+
+// Initialize with today
+const today = new Date().toISOString().split("T")[0];
+document.getElementById("verifDate").value = today;
+updateFrames(today);
+</script>
+
+<!--Rescore Event-->
+<div class="bg-color-bar">
+	<div class="row d-flex justify-content-center">
+       <div class="button-box"></div>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Request Rescoring of an Event</a>
+	</div>
+</div>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2025</p>
+    <p>TornadoTargetContest@gmail.com</p>
+  </div>
+</body>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+	:root {
+            --btn-color: #aa7761; /* 2025 color */
+        }
+    .fakeimg {
+      height: 200px;
+    }
+    </style>
+ </head>
+ <body>
+
+   
+<!--Header with image-->
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Archive
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="archive2025.html">2025</a>
+			<a class="dropdown-item" href="archive2024.html">2024</a>
+          </div>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>-->
+        <!--<li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
+	  
+<br>
+	  
+<!--<div class="row">
+	<div class="col-sm-12 text-center">
+		<div class="button-box col-lg-12"></div>
+        <a href="https://forms.gle/1kVqBJqw2mQPyz1e7" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Click Here for 2025 Late Registration</a>
+	</div>
+</div>
+	<br>
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<p class="align-self-start">
+		Registration will close at 06UTC on March 14th. We will have a practice week of forecasting 3/17 to 2/21. The first day for scored forecasting will be March 24th.<br>		
+		Expect communication from tornadotargetcontest@gmail.com over the weekend of the 15th an 16th about how to forecast and when!
+		</p>
+	</div>
+</div>
+<br>-->
+<div id="mission" class="md-2 p-3 text-white rounded" style="background-color: #68727E;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3 text-center">
+              <p>--_-_-_-_--- <br>
+                &nbsp;&nbsp;&nbsp;-_-_-_<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-_-_-<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-__-<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_-_<br>
+                _-<br>
+                &nbsp;-_<br>
+                  _-_</p>
+        
+            </div>
+
+            <div class="col-sm-6">
+                <h1 class="text-center">Our Mission:</h1>
+                <p class="text-center">This contest was designed to provide an educational experience in tornado forecasting through an objective, cooperative, and competitive environment. 
+                    This is achieved by bringing together forecasters from all walks of life within the field of meteorology, to discuss/refine their tornado forecasting techniques, submit forecasts, and receive verification. 
+                    The ultimate goal of the contest is to help current and future professionals improve public safety. </p>
+            </div>
+
+            <div class="col-sm-3 text-center">
+                <p>--_-_-_-_--- <br>
+                  &nbsp;&nbsp;&nbsp;-_-_-_<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-_-_-<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-__-<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_-_<br>
+                  _-<br>
+                  &nbsp;-_<br>
+                    _-_</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+	<div class="col-sm-2 text-center"></div>
+	<div class="col-sm-8 text-center">
+		<!--<p class="align-self-start">
+		Forecasts are submitted every weekday (M-F) from March 24th - June 13th. We will be having a practice week from March 17 - 24th this year! Verification for each forecast day will be completed 5 days after the event and will be reverified after 2 weeks.
+		Scores are based mainly on the distance between the closest report/damage and your forecast point, with some other ways to earn additional points. The higher the score, the better.
+		For additional information, please visit the Rules and Scoring page.
+		</p>-->
+		<p class="align-self-start">
+		Thanks for another great year of the Tornado Target Contest! Have a great off-season. We look forward to 2026! For any questions, please reach out to tornadotargetcontest@gmail
+		</p>
+	</div>
+	<div class="col-sm-2 text-center"></div>
+</div>
+<br>
+
+<!--Display Current UTC Time-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <h4 class="text-center" id="currentTime"></h4>
+        <script type="text/javascript">
+          function updateCurrentTime() {
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = (today.getMonth() + 1).toString().padStart(2, '0');
+            var day = today.getDate().toString().padStart(2, '0');
+            var hour = today.getUTCHours().toString().padStart(2, '0');
+            var minute = today.getUTCMinutes().toString().padStart(2, '0');
+            var seconds = today.getUTCSeconds().toString().padStart(2, '0');
+
+
+            var currentTimeString = "Current UTC Time: " + month + "/" + day + "/" + year + " " + hour + ":" + minute + ":" + seconds;
+            document.getElementById("currentTime").innerHTML = currentTimeString;
+          }
+
+          // Update the time every second (1000 milliseconds)
+          setInterval(updateCurrentTime, 1000);
+
+          // Initial update
+          updateCurrentTime();
+        </script>
+      </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+
+<!--embed maps-->
+<div class="mt-4 p-5 text-dark rounded text-center">
+  <img class="text-left" src="https://www.spc.noaa.gov/products/activity_loop.gif" title="Current SPC Hazards/Radar" width="60%"></img>
+</div>
+
+<!--section on contributors-->
+<div id="contributors" class="md-2 p-3 text-white rounded" style="background-color:#68727E;">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+			<h3>Contributors</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<p class="align-self-start">We would like to acknowledge and thank these businesses for
+				taking interest in our project and providing countless resources to our participants</p>
+			</div>
+		</div>
+		<br>
+		<!-- First row of Logos-->
+		<div class="row d-flex align-items-center">
+
+			<!-- NEW LOGO -->
+			<div class="col-sm-6 p-2 text-center">
+				<a href="https://helicity.co/?srsltid=AfmBOooM2HnExyy4qdVoGTuz447j-RlyRAKDk39BChIePtJEO405eWKv" target="_blank">
+				<img class="img-fluid" src="images/helicity_logo.png" title="Learn more about Helicy Designs" width="25%" style="padding: 5px 10px;">
+				</a>
+			</div>
+		 
+
+			<div class="col-sm-6 p-2 text-center">
+				<a href="https://www.tornadotalk.com/" target="_blank">
+				<img class="img-fluid" src="images/tornadotalk_logo.png" title="Learn more about Tornado Talk" width="25%" style="padding: 5px 10px;">
+				</a>
+			</div>
+
+
+			<!-- Second row of logos -->
+			<div class="row d-flex align-items-center">
+
+				<div class="col-sm-4 p-2 text-center">
+					<a href="https://home.pivotalweather.com/" target="_blank">
+					<img class="img-fluid" src="images/pivotal_logo.png" title="Learn more about Pivotal Weather" width="80%" style="padding: 15px 10px;">
+					</a>
+				</div>
+
+				<div class="col-sm-4 p-2 text-center">
+					<a href="https://www.radarscope.app/" target="_blank">
+					<img class="img-fluid" src="images/radarscope_logo.png" title="Learn more about RadarScope" width="100%" style="padding: 5px 10px;">
+					</a>
+				</div>
+
+				<div class="col-sm-4 p-2 text-center">
+					<a href="https://www.radaromega.com/" target="_blank">
+					<img class="img-fluid" src="images/radaromega_logo.png" title="Learn more about RadarOmega" width="100%" style="padding: 5px 10px;">
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!--Buttons to forms-->
+<div class="bg-color-bar">
+  <div class="text-center">
+    <div class="row d-flex align-items-center">
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://drive.google.com/file/d/17x2ohQuhMx0dzhHdlqkOH7Rb3p7rTb5d/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">TTC Terms and Conditions</a>
+      </div> 
+
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://drive.google.com/file/d/15mFv_dW0IouipAdUes3AzeQthRwEUNdW/view?usp=sharing" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">TTC Privacy Policy</a>
+      </div> 
+
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">Report Misconduct</a>
+      </div>
+
+      <div class="col-sm-3 p-1">
+        <div class="button-box col-lg-12"></div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link" target="_blank" class="btn btn-info" role="button" style="background-color: var(--btn-color); border: 1px #000000">Unsubscribe from TTC</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2025</p>
+    <p>TornadoTargetContest@gmail.com</p>
+  </div>
+</body>

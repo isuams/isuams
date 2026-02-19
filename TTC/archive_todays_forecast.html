@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css">
+    <style>
+	:root {
+            --btn-color: #aa7761; /* 2025 color */
+        }
+    .fakeimg {
+      height: 200px;
+    }
+    </style>
+  </head>
+ <body>
+
+   
+<!--Header with image-->
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Archive
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="archive2025.html">2025</a>
+			<a class="dropdown-item" href="archive2024.html">2024</a>
+          </div>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>-->
+        <!--<li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
+
+<br>
+
+
+<div class="container mt-5">
+  <div class="row mt-3">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h3 class="text-center">Select a Date to View that Day's "Today's Forecast":</h3>
+      <div class="input-group">
+        <input type="text" class="form-control" id="datepicker" placeholder="yyyy/mm/dd">
+        <button class="btn btn-primary" id="updateFigureBtn">Display Forecasts</button>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>  
+  <br>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <div class="text-center">
+        <h5 id="verif"> </h5>
+        <h5 id="tor"> </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="mt-4  text-dark rounded text-center">
+        <div class="mx-auto" style="max-width: 2000px;">
+          <iframe class="myIframe" id="figure1" style="width: 100%; height: 50px;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="mt-4  text-dark rounded text-center">
+        <div style="max-width: 2000px; margin: 0 auto;">
+          <iframe class="myIframe" target="_blank" id="figure2" style="width: 100%; height: 100px;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" language="javascript">
+    $('.myIframe').css('height', 750 + 'px');
+  </script>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        // Initialize datepicker
+        $('#datepicker').datepicker({
+            format: 'yyyy/mm/dd',
+            autoclose: true
+        });
+
+        // Update figure on button click
+        $('#updateFigureBtn').on('click', function () {
+            // Get selected date
+            var selectedDate = $('#datepicker').val();
+            
+            var formattedDate = new Date(selectedDate);
+            var year = formattedDate.getUTCFullYear();
+            var month = (formattedDate.getUTCMonth() + 1).toString().padStart(2, '0');
+            var day = formattedDate.getUTCDate().toString().padStart(2, '0');
+
+            // TODO: Use the selectedDate to update figure1 content
+            var filepath = 'todays_forecasts/plots/' + year + '_' + month + '_' + day + '_fig.html'
+            var filepath2 = 'todays_forecasts/tables/' + year + '_' + month + '_' + day + '_table.html'
+
+            $('#figure1').attr('src', filepath);
+            $('#figure2').attr('src', filepath2);
+            // $('#verif').text("Forecasts for the Day");
+            $('#tor').text("Tornado Outlook Issued at 1630UTC on "+ month+"/"+day+"/"+year);            
+        });
+
+        // Update figure based on button click
+        $('#updateFigureBtn').on('click', function () {
+          // Get selected date
+          var selectedDate = $('#datepicker').val();
+
+          // Call the function to update the figure based on the formatted date
+          updateFigure(selectedDate);
+        });
+
+    });
+</script>
+
+
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2025</p>
+    <p>TornadoTargetContest@gmail.com</p>
+  </div>
+</body>

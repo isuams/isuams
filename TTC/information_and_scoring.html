@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tornado Target Contest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+	:root {
+            --btn-color: #aa7761; /* 2025 color */
+        }
+    .fakeimg {
+      height: 200px;
+    }
+    </style>
+ </head>
+ <body>
+
+   
+<!--Header with image-->
+<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <img class="float-left" src="images/ttc_logo.png" width="90px"> 
+      </div>
+	  
+      <div class="col-6 d-flex float-right justify-content-end align-items-center">
+        <div class="button-box" style="padding: 10px 10px;"></div>
+        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation bar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+	    <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Archive
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="archive2025.html">2025</a>
+			<a class="dropdown-item" href="archive2024.html">2024</a>
+          </div>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+          </li>-->
+        <!--<li class="nav-item">
+          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
+        </li>-->
+        <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+        </li>-->
+	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Scores
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="verification.html">Verification</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li> 
+      </ul>
+    </div>  
+  </nav>
+
+<br>
+
+<!--General Pointers-->
+<div id="general_points" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center center-block">
+                <h1 style="color: #000000;">General Pointers</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <p> 
+                     <b> Timing </b>
+                     <ui>
+                        <li>Forecasts can be submitted between 00Z to 16Z</li>
+                        <li>Forecast verification will begin at 1630Z and goes through 1200Z the next day. Any tornadoes that happen before 1630Z do not count.</li>
+                        <li>Forecasting will take place,  Monday through Friday</li>
+                     </ui>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    <b> Scoring </b>
+                    <ui>
+                        <li>Scores are evaluated by comparing the distance between forecast points and tornadoes/warnings</li>
+                        <li>Scoring will add up; more points are better</li>
+                        <li>Verification will happen several days after the event</li>
+                    </ui>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p> 
+                    <b>Forecast Submission</b>
+                    <ui>
+                        <li>Use the email address and your name (provided at registration) to input a forecast</li>
+                        <li>Choose "Yes Tornado" or "No Tornado" based on personal forecast techniques and intuition</li>
+                        <li>If "Yes Tornado" is chosen, continue forward to input a latitude/longitude point</li>
+                    </ui>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Scoring Breakdown-->
+<div id="scoring_breakdown" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center center-block">
+                <h1 style="color: #000000;">Scoring Breakdown</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p><b>Abbreviations:</b> Distance to tornado/damage report (DTT); Distance to warning (DTW); Maximum possible tornado score (MaxTor; 30 pts)</p> 
+            </div>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center center-block">
+                <h4 style="color: #fa0000;"> <b>Score = Distance + Warnings + Podium + Lone Wolf Bonus (when applicable) </b> </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <b>Calculating the Distance Component:</b>
+                <ui>
+                    <li>If DTT &lt; 25 miles: </li>
+                        <ul>
+                            <li>Distance Component = (0.02255 * DTT^2)-(1.1248*DTT)+(MaxTor-0.9425)  </li>
+                            <li>Exponential decrease in reward as you get further away... at 25 miles == 15 points  </li>
+                        </ul>
+                    <li>If DTT &#62; 25 miles, but DTT &lt; 100 miles  </li>
+                        <ul>
+                            <li>Distance Component = ((-DTT*((0.5*MaxTor)/75))+(2/3*MaxTor)) </li>
+                            <li>Linear decrease in the reward as you get farther away out to 100 miles</li>
+                        </ul>
+                    <li>If DTT &#62; 100 miles</li>
+                        <ul>
+                            <li>Distance Component=0</li>
+                        </ul>
+                </ui>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Distance Component Estimator Plot-->
+<div id="distance_component" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 center-block">
+                <img class="float-center" src="images/distance_component_estimator.png" width="100%"> </img>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div id="warning_component" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <b>Calculating the Warning Component:</b>
+                <ui>
+                    <li>This is based off of the number of warnings you intersect or are near...</li>
+                        <ul>
+                            <li>Inside a warning (+8)</li>
+                            <li>Near a warning (+4), where the DTW &le; 10 miles  </li>
+                            <li>Example calculation: your forecast intersects 2 warnings and is near 1 more. Warning Component = (2*8) + (1*4)</li>
+                        </ul>
+                </ui>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <b>Determining the "Lone Wolf":</b>
+                <ui>
+                    <li>If you are 100+ miles from the next nearest forecaster, and DTT &lt; 25 miles: +30 points</li>
+                </ui>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <b>Podium Component:</b>
+                <ui>
+                    <li>1st place = +12</li>
+                    <li>2nd place = +8</li>
+                    <li>3rd place = +4 </li>
+                </ui>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <b><h4 style="color: #fa0000;">When there are no tornado reports...</h4></b>
+                <ui>
+                    <li>If you forecasted "No Tornado" you will receive points according to the SPC risk at 1630UTC</li>
+                </ui>
+            </div>
+        </div>
+        <br>
+
+        <div class="row center-block">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" >  
+                  <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th scope="col-sm-1">SPC Risk (%)</th>
+                          <th scope="col-sm-1">Reward</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">0</th>
+                          <td>+4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>+8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td >+12</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">10</th>
+                          <td >+16</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">15</th>
+                          <td >+20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">30</th>
+                          <td >+24</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">45</th>
+                          <td >+28</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">60</th>
+                          <td >+32</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!--horizontal line break-->
+<div id="general_points" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+
+<!--Our Forecasting Regions-->
+<div id="forecast_regions" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center center-block">
+                <h1 style="color: #000000;">Forecast Regions</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Forecast regions do not affect scoring. They offer forecasters the ability to explore their forecasting accuracy in different environments.
+                </p> 
+            </div>
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 center-block">
+                <img class="float-center" src="images/TTC_Regions.png" width="100%"> </img>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<!--<div id="general_points" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>-->
+
+<!--What's New in 20XX-->
+<!--<div id="whats_new" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 center-block">
+                <h1 class="text-success text-center">What's New in 2024?</h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    This website (courtesy of Elizabeth Tirone)... and a renewed partnership with the Student Chapter of AMS at Iowa State University!
+                </p> 
+            </div>
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ui>
+                    <li>A map is now provided along with the submission form to make gathering latitudes and longitudes easier!</li>
+                    <li>We will be gathering data for sig tornado forecasts and we will try encorporate those data into verification statistics</li>
+					<li>We are using last year's forecasts to conduct research</li>
+                </ui>
+            </div>
+        </div>
+    </div>
+</div>-->
+<br>
+
+<!--Footer-->
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Tornado Target Contest 2025</p>
+    <p>TornadoTargetContest@gmail.com</p>
+  </div>
+</body>
