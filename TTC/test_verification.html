@@ -10,8 +10,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
     :root {
-      --btn-color: #aa7761;
+      --btn-color: #a80084;
     }
 	
 	.hero {
@@ -25,6 +34,22 @@
       background: rgba(0, 0, 0, 0.45);
       padding: 2rem;
     }
+	
+	.site-footer {
+	  background-color: #c4c4c4;  /* light–medium gray */
+	  color: #333;
+	}
+	
+	.site-footer a {
+	  color: inherit;              /* same color as surrounding text */
+	  text-decoration: none;       /* remove underline */
+	  font-weight: inherit;
+	}
+
+	.site-footer a:hover {
+	  text-decoration: underline;  /* subtle affordance on hover */
+	  cursor: pointer;
+	}
   
     iframe {
       width: 100%;
@@ -32,14 +57,17 @@
       background-color: #fff;
     }
 	
+	.iframe-aag {
+	  margin: 0 auto; /* Centers the iframe horizontally */
+      height: 500px;
+    }
+	
     .iframe-figure {
       height: 650px;
     }
 
     .iframe-table {
-      width: 100%;
-      height: 70vh;
-      border: none;
+      height: 700px;
     }
 
     .card {
@@ -49,16 +77,6 @@
     .card-header {
       background-color: #f8f9fa;
       font-weight: 600;
-    }
-	
-	.placeholder {
-      min-height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-style: italic;
-      background-color: #f8f9fa;
-      border-radius: 0.5rem;
     }
   </style>
 </head>
@@ -77,7 +95,7 @@
         <div class="col-6 text-end">
           <a href="https://meteor.geol.iastate.edu/ams/"
              target="_blank"
-             class="btn btn-info"
+             class="btn btn-primary"
              style="background-color: var(--btn-color); border: none;">
             Return to<br>Iowa State AMS
           </a>
@@ -221,7 +239,7 @@
 
         <div class="modal-footer">
           <button type="submit"
-                  class="btn btn-info"
+                  class="btn btn-primary"
                   style="background-color: var(--btn-color); border: none;">
             Login
           </button>
@@ -232,141 +250,241 @@
   </div>
 </div>
 
+<main class="flex-fill">
 <div class="container my-4">
 
   <!-- DATE SELECTOR -->
   <div class="card shadow-sm mb-4">
-	<div class="card-body text-center">
-
-	  <label for="verifDate" class="form-label fw-semibold mb-2">
+    <div class="card-body text-center">
+      <label for="verifDate" class="form-label fw-semibold">
         Select Verification Date (UTC)
       </label>
-
-      <div class="d-flex justify-content-center gap-2 flex-wrap">
-        <input
-          type="date"
-          id="verifDate"
-          class="form-control w-auto"
-        >
-
-        <button
-          id="loadEventBtn"
-          class="btn btn-primary"
-          onclick="loadSelectedDate()"
-        >
-          Load Event Data
-        </button>
-      </div>
-
+      <input type="date" id="verifDate" class="form-control w-auto d-inline-block">
     </div>
   </div>
+  
+  <p class="text-muted text-center mt-2">
+  Showing verification for <strong id="loadedDate"></strong>
+  </p>
 
-  <!-- AT A GLANCE -->
-  <div class="card shadow-sm mb-4">
-    <div class="card-header">At a Glance</div>
-    <div class="card-body position-relative">
-      <div class="placeholder text-center text-muted d-none" id="aagPlaceholder">
-        <p class="mb-0">No “At a Glance” data available for this date.</p>
+  <!-- ================= VERIFICATION PLACEHOLDER ================= -->
+  <div id="verificationPlaceholder" class="alert alert-secondary text-center my-4">
+    <h5 class="mb-2">Verification Not Available</h5>
+    <p class="mb-0">
+      Forecasts are typically verified approximately <strong>5 days</strong>
+      after submission.<br>
+      Verification is available <strong>Monday–Friday</strong>.
+    </p>
+  </div>
+
+  <!-- ================= VERIFICATION CONTENT ================= -->
+  <div id="verificationFrames" class="d-none">
+
+    <!-- At-a-glance -->
+    <div class="card mb-4 mx-auto" style="max-width: 60%;">
+      <div class="card-header fw-semibold text-center">
+        At a Glance
       </div>
-      <iframe id="aagFrame" class="iframe-figure"></iframe>
+      <iframe
+        id="aagFrame"
+        class="w-100"
+        style="height: 400px; border: none;"
+      ></iframe>
+    </div>
+
+    <!-- Figures -->
+    <div class="card mb-4">
+      <div class="card-header fw-semibold text-center">
+        Event Figures
+      </div>
+      <iframe
+        id="figFrame"
+        class="w-100"
+        style="height: 500px; border: none;"
+      ></iframe>
+    </div>
+
+    <!-- Verification Table -->
+    <div class="card mb-4">
+      <div class="card-header fw-semibold text-center">
+        Verification Table
+      </div>
+      <iframe
+        id="tableFrame"
+        class="w-100"
+        style="height: 600px; border: none;"
+      ></iframe>
+    </div>
+
+  </div>
+  <!-- At A Glance 
+  <div class="row justify-content-center">
+	<div class="col-12 col-md-10 col-lg-7">
+      <div class="card mb-4">
+	    <div class="card-body">
+		  <iframe id="aagFrame" class="iframe-aag"></iframe>
+	    </div>
+	  </div>
 	</div>
   </div>
 
-  <!-- MAP / FIGURE -->
+  <!-- MAP / FIGURE 
   <div class="card shadow-sm mb-4">
     <div class="card-header">Forecast Outcome Map</div>
-    <div class="card-body position-relative">
-      <div class="placeholder text-center text-muted d-none" id="figPlaceholder">
-        <p class="mb-0">No map/figure available for this date.</p>
-      </div>
-	  <iframe id="figFrame" class="iframe-figure"></iframe>
+    <div class="card-body">
+      <iframe id="figFrame" class="iframe-figure"></iframe>
     </div>
   </div>
 
-  <!-- TABLE -->
+  <!-- TABLE 
   <div class="card shadow-sm mb-5">
     <div class="card-header">Forecast Verification Table</div>
-    <div class="card-body position-relative p-0">
-      <div class="placeholder text-center text-muted d-none p-3"
-       id="tablePlaceholder">
-        <p class="mb-0">No verification table exists for this date.</p>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <iframe id="tableFrame" class="iframe-table"></iframe>
       </div>
-	  <iframe id="tableFrame" class="iframe-table"></iframe>
     </div>
-  </div>
+  </div>-->
 
-<!-- Script for updating the iframes with date selector -->
+</div>
+
 <script>
+function showPlaceholder() {
+  document.getElementById("verificationPlaceholder").classList.remove("d-none");
+  document.getElementById("verificationFrames").classList.add("d-none");
+}
+
+function showFrames() {
+  document.getElementById("verificationPlaceholder").classList.add("d-none");
+  document.getElementById("verificationFrames").classList.remove("d-none");
+}
+
 function pad(n) {
   return n.toString().padStart(2, "0");
 }
 
-function setIframeWithFallback(frameId, placeholderId, src) {
-  const frame = document.getElementById(frameId);
-  const placeholder = document.getElementById(placeholderId);
+const dateInput = document.getElementById("verifDate");
 
-  placeholder.classList.add("d-none");
-  frame.classList.remove("d-none");
+/* ===============================
+   Check if verification files exist
+   =============================== */
+async function hasVerificationData(dateStr) {
+  const d = new Date(dateStr + "T00:00:00Z");
+  const y = d.getUTCFullYear();
+  const m = pad(d.getUTCMonth() + 1);
+  const day = pad(d.getUTCDate());
 
-  frame.onerror = () => {
-    frame.classList.add("d-none");
-    placeholder.classList.remove("d-none");
-  };
+  const base = `${y}_${m}_${day}`;
+  const testUrl = `verification/tables/${base}_veriftable.html`;
 
-  frame.src = src;
+  try {
+    const res = await fetch(testUrl, { method: "HEAD" });
+    return res.ok;
+  } catch {
+    return false;
+  }
 }
 
+/* ===============================
+   Update iframe sources
+   =============================== */
 function updateFrames(dateStr) {
-  if (!dateStr) return;
+  document.getElementById("loadedDate").innerText = dateStr;
+  showFrames();
 
-  const d = new Date(dateStr);
+  const d = new Date(dateStr + "T00:00:00Z");
   const y = d.getUTCFullYear();
-  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(d.getUTCDate()).padStart(2, "0");
+  const m = pad(d.getUTCMonth() + 1);
+  const day = pad(d.getUTCDate());
 
   const base = `${y}_${m}_${day}`;
 
-  setIframeWithFallback(
-    "aagFrame",
-    "aagPlaceholder",
-    `verification/at_a_glance/${base}_aag.html`
-  );
-
-  setIframeWithFallback(
-    "figFrame",
-    "figPlaceholder",
-    `verification/plots/${base}_veriffig.html`
-  );
-
-  setIframeWithFallback(
-    "tableFrame",
-    "tablePlaceholder",
-    `verification/tables/${base}_veriftable.html`
-  );
+  document.getElementById("aagFrame").src =
+    `verification/at_a_glance/${base}_aag.html`;
+  document.getElementById("figFrame").src =
+    `verification/plots/${base}_veriffig.html`;
+  document.getElementById("tableFrame").src =
+    `verification/tables/${base}_veriftable.html`;
 }
 
-function loadSelectedDate() {
-  const dateStr = document.getElementById("verifDate").value;
-  updateFrames(dateStr);
-}
+/* ===============================
+   Date selection handler
+   =============================== */
+dateInput.addEventListener("change", async () => {
+  const date = dateInput.value;
+  if (!date) return;
 
-// Initialize with today
-const today = new Date().toISOString().split("T")[0];
-document.getElementById("verifDate").value = today;
-updateFrames(today);
+  const d = new Date(date + "T00:00:00Z");
+  const weekday = d.getUTCDay(); // 0 = Sun, 6 = Sat
+
+  if (weekday === 0 || weekday === 6) {
+    alert("Verification data is only available Monday–Friday.");
+    dateInput.value = "";
+	showPlaceholder();
+    return;
+  }
+
+  const exists = await hasVerificationData(date);
+
+  if (!exists) {
+    alert("No verification data available for this date.");
+    dateInput.value = "";
+	showPlaceholder();
+    return;
+  }
+
+  updateFrames(date);
+});
+
+/* ===============================
+   Initial load (most recent verification)
+   =============================== */
+(async function init() {
+  const MAX_LOOKBACK_DAYS = 14; // safety cap
+  const startOffset = 5;       // verification lag
+
+  for (let i = startOffset; i < startOffset + MAX_LOOKBACK_DAYS; i++) {
+    const d = new Date();
+    d.setUTCDate(d.getUTCDate() - i);
+
+    const weekday = d.getUTCDay();
+    if (weekday === 0 || weekday === 6) continue; // skip weekends
+
+    const iso = d.toISOString().split("T")[0];
+    const exists = await hasVerificationData(iso);
+
+    if (exists) {
+      dateInput.value = iso;
+      updateFrames(iso);
+      return;
+    }
+  }
+
+  // Nothing found in lookback window
+  showPlaceholder();
+})();
 </script>
 
 <!--Rescore Event-->
-<div class="bg-color-bar">
-	<div class="row d-flex justify-content-center">
-       <div class="button-box"></div>
-       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Request Rescoring of an Event</a>
-	</div>
-</div>
-
-<!--Footer-->
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <p>Tornado Target Contest 2025</p>
-    <p>TornadoTargetContest@gmail.com</p>
+<div class="row justify-content-center mb-4">
+  <div class="col-12 col-md-10 col-lg-7">
+    <div class="bg-color-bar">
+	  <div class="row d-flex justify-content-center">
+        <div class="button-box"></div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-primary btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Request Rescoring of an Event</a>
+	  </div>
+    </div>
   </div>
+</div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
+</footer>
+
 </body>
+</html>
