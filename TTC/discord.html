@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TTC – Reset Password</title>
+  <title>TTC - Discord Invite</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+  <!-- Bootstrap 5.3 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    defer></script>
+
   <style>
     html, body {
       height: 100%;
@@ -21,23 +27,49 @@
     :root {
       --btn-color: #a80084;
     }
-	
-	.hero {
+
+    .hero {
       background-image: url('images/IMG_3237.jpg');
       background-size: cover;
       background-position: center 60%;
       color: white;
     }
-	
-	.hero-overlay {
+
+    .hero-overlay {
       background: rgba(0, 0, 0, 0.45);
       padding: 2rem;
     }
+	
+	.site-footer {
+	  background-color: #c4c4c4;  /* light–medium gray */
+	  color: #333;
+	}
+	
+	.site-footer a {
+	  color: inherit;              /* same color as surrounding text */
+	  text-decoration: none;       /* remove underline */
+	  font-weight: inherit;
+	}
+
+	.site-footer a:hover {
+	  text-decoration: underline;  /* subtle affordance on hover */
+	  cursor: pointer;
   </style>
 </head>
-<body class="bg-light">
+<body>
 <script src="js/navbar-auth.js"></script>
 
+<script>
+  const allowed = sessionStorage.getItem("from_registration");
+
+  if (!allowed) {
+    window.location.href = "index.html";
+  } else {
+    sessionStorage.removeItem("from_registration");
+  }
+</script>
+
+   
 <!-- ================= HEADER ================= -->
 <header class="hero mb-2">
   <div class="hero-overlay">
@@ -58,6 +90,9 @@
     </div>
   </div>
 </header>
+
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
 
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -211,107 +246,33 @@
 
 <main class="flex-fill">
 
-<div class="container my-5" style="max-width: 480px;">
 
-  <div class="card shadow-sm">
-    <div class="card-body">
-
-      <h3 class="mb-3 text-center">Reset your password</h3>
-
-      <form id="resetPasswordForm">
-
-        <div class="mb-3">
-          <label for="password" class="form-label">New password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="password"
-            required
-            minlength="8"
-          >
-          <div class="form-text">
-            Must be at least 8 characters.
-          </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 style="color: #000000;"><b>Welcome to the TTC Discord Server!</b></h1>
+			<br>
+			<p>Here is link to join the discord server. Remember this is only for registered users that have logged a discord account with TTC. Please don't share it!</p>
+			<a href="https://discord.gg/dgeBvqnXmd">
+				TTC Discord Link
+			</a>
         </div>
-
-        <div class="mb-3">
-          <label for="confirmPassword" class="form-label">Confirm new password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="confirmPassword"
-            required
-          >
-        </div>
-
-        <div class="d-grid">
-          <button type="submit" class="btn btn-primary">
-            Reset password
-          </button>
-        </div>
-      </form>
-
-      <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
-
-      <div id="successMessage" class="alert alert-success mt-3 d-none">
-        Your password has been reset successfully.
-        You may now <a href="index.html">log in</a>.
-      </div>
-
+        <div class="col-md-2"></div>			
     </div>
-  </div>
-
+	<br>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8 d-flex justify-content-center">
+			<!--Go back to the welcome page-->
+			<a class="btn btn-primary mx-auto" style="background-color: var(--btn-color); border: 3px #000000; width: 50%" href="about_TTC.html">
+			<h4>Welcome Information Page</h4>
+			</a>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
 </div>
 
-<script>
-const params = new URLSearchParams(window.location.search);
-const token = params.get("token");
-
-const form = document.getElementById("resetPasswordForm");
-const errorBox = document.getElementById("errorMessage");
-const successBox = document.getElementById("successMessage");
-
-if (!token) {
-  form.classList.add("d-none");
-  errorBox.innerText = "Invalid or missing reset token.";
-  errorBox.classList.remove("d-none");
-}
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  errorBox.classList.add("d-none");
-
-  const password = document.getElementById("password").value;
-  const confirm = document.getElementById("confirmPassword").value;
-
-  if (password !== confirm) {
-    errorBox.innerText = "Passwords do not match.";
-    errorBox.classList.remove("d-none");
-    return;
-  }
-
-  const res = await fetch(
-    "https://tortargetcontest.pythonanywhere.com/api/password_reset",
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token, password })
-    }
-  );
-
-  const data = await res.json();
-
-  if (!res.ok) {
-    errorBox.innerText = data.error || "Password reset failed.";
-    errorBox.classList.remove("d-none");
-    return;
-  }
-
-  form.classList.add("d-none");
-  successBox.classList.remove("d-none");
-});
-</script>
 <br>
 </main>
 

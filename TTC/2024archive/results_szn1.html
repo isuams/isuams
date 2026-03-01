@@ -1,91 +1,217 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <title>Tornado Target Contest</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-	:root {
-            --btn-color: #aa7761; /* 2025 color */
-        }
-    .fakeimg {
-      height: 200px;
-    }
-    </style>
-  </head>
-  <body>
+  <meta charset="UTF-8">
+  <title>TTC - 2024 Season 1 Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   
-<!--Header with image-->
-<div class="bg-image p-4 text-center shadow-1-strong rounded mb-2 text-white" style="background-image: url('../images/IMG_3237.jpg'); background-size: cover; ; background-position-x: center; background-position-y: 60%;">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    :root {
+      --btn-color: #a80084;
+    }
+	
+	.hero {
+      background-image: url('../images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+<script src="../js/navbar-auth.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="../images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-primary"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-6 d-flex">
-        <img class="float-left" src="../images/ttc_logo.png" width="90px"> 
-      </div>
+
+    <!-- LEFT -->
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	  <a class="navbar-brand" href="index.html">Home</a>
 	  
-      <div class="col-6 d-flex float-right justify-content-end align-items-center">
-        <div class="button-box" style="padding: 10px 10px;"></div>
-        <a href="https://meteor.geol.iastate.edu/ams/" target="_blank" class="btn btn-info ml-2" role="button" style="background-color: var(--btn-color); border: 3px #000000">Return to<br>Iowa State AMS</a>
+	  <li class="nav-item">
+		<a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+      </li>
+		  
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+      </li>-->
+	  
+	  <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Scores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+		  <a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+		  <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+		  <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+	
+	  <li class="nav-item">
+        <a class="nav-link" href="verification.html">Verification</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Archive
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="scoring_and_metrics.html">Scoring & Metrics</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="about_TTC.html">About TTC</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="faq.html">FAQs</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+
+      <!-- Logged out -->
+      <li class="nav-item" id="navLogin">
+        <button class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+          Login
+        </button>
+      </li>
+
+      <!-- Logged in -->
+      <li class="nav-item dropdown d-none" id="navUser">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <span id="navUserName"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+
+          <li id="adminLinkContainer" class="d-none">
+            <a class="dropdown-item" href="admin.html">Admin Panel</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="forecast_submission.html">
+              Submit Forecast
+            </a>
+          </li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li>
+            <button class="dropdown-item text-danger" onclick="logout()">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<br>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
+
+      <!-- prevent default submit + call login() -->
+      <form onsubmit="event.preventDefault(); login();">
+
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="forgot_password.html">Forgot password?</a></small>
+          </div>
+
+          <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-primary"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+
+      </form>
     </div>
   </div>
 </div>
 
-
-<!-- Navigation bar-->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-	    <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Archive
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="archive2025.html">2025</a>
-			<a class="dropdown-item" href="archive2024.html">2024</a>
-          </div>
-        </li>
-        <!--<li class="nav-item">
-            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
-          </li>-->
-        <!--<li class="nav-item">
-          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
-        </li>-->
-        <!--<li class="nav-item">
-            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
-        </li>-->
-	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Scores
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
-			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
-			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
-			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
-          </div>
-        </li>-->
-        <li class="nav-item">
-            <a class="nav-link" href="verification.html">Verification</a>
-        </li> 
-        <li class="nav-item">
-            <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
-        </li> 
-        <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQs</a>
-          </li> 
-      </ul>
-    </div>  
-  </nav>
+<main class="flex-fill">
 	  
 <div class="container mt-5">
   <div class="row bg-secondary text-dark rounded text-center p-2" >
@@ -95,18 +221,18 @@
 		</div>
 		<div class="row p-1">
 		<div class="col-md-12 text-center center-block">
-			<button type="button" class="btn btn-lg" style="background-color: #66c2a5" onclick="displayIframe('Season1/national.html')">National</button>
-			<button type="button" class="btn btn-lg" style="background-color: #8da0cb" onclick="displayIframe('Season1/stats.html')">Stats</button>
+			<button type="button" class="btn btn-primary btn-lg" style="background-color: var(--btn-color); border: none;" onclick="displayIframe('leaderboards/Season1/national.html')"><b>National</b></button>
+			<button type="button" class="btn btn-primary btn-lg" style="background-color: var(--btn-color); border: none;" onclick="displayIframe('leaderboards/Season1/stats.html')"><b>Stats</b></button>
 		</div>
 		</div>
 		<div class="row p-2" >
 		<div class="col-md-12 text-center center-block p-1">
-			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season1/southern_plains.html')">Southern Plains</button>
-			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season1/southeast.html')">Southeast</button>
-			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season1/midwest.html')">Midwest</button>
-			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season1/northern_plains.html')">Northern Plains</button>
-			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season1/mountain_west.html')">Mountain West</button>
-			<button type="button" class="btn" style="background-color: #FFA533" onclick="displayIframe('Season1/east.html')">East</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season1/southern_plains.html')">Southern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season1/southeast.html')">Southeast</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season1/midwest.html')">Midwest</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season1/northern_plains.html')">Northern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season1/mountain_west.html')">Mountain West</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season1/east.html')">East</button>
 		</div>
 		</div>
 	</div>
@@ -120,56 +246,56 @@
   <br>
   <div class="col-md-12 text-center center-block">
     <div class="button-box"></div>
-      <a href="metrics.html" target="_blank" class="btn btn-info btn-lg" role="button" style="background-color: var(--btn-color); border: 3px #000000">Stats Metrics</a>
+      <a href="scoring_and_metrics.html" target="_blank" class="btn btn-primary btn-lg" role="button" style="background-color: var(--btn-color); border: 3px #000000">Scoring & Metrics</a>
   </div>
-  <div class="row mt-4 mt-4 justify-content-center">
-     <div class="col-md-8 text-center">
-      	<div class="row justify-content-center p-2">
-		  <table class="table text-center">
-                      <thead>
-                        <tr>
-                          <th scope="col-sm-1">Abbreviation</th>
-                          <th scope="col-sm-1">Forecaster Affiliation</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">U</th>
-                          <td>Undergraduate Student: Meteorology or a Related Degree</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">G</th>
-                          <td>Graduate Student: Meteorology or a Related Degree</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">E</th>
-                          <td >Severe Weather/Storm Chasing Enthusiast</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">O</th>
-                          <td >Operations: Private Sector, NWS, Emergency Management, etc.</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">F</th>
-                          <td >Faculty or Staff at an Academic Institution or Research Lab</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">B</th>
-                          <td >Broadcast Meteorologist</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">A</th>
-                          <td >Degree Holding Alumni, Currently Not Employed in the Field</td>
-                        </tr>
-          </tbody>
+  <br>
+  <div class="row center-block">
+    <div class="col-sm-2"></div>
+      	<div class="col-sm-8" > 
+		  <table class="table text-left">
+            <thead>
+              <tr>
+                <th scope="col-sm-2">Affiliation</th>
+                <th scope="col-sm-2">What they do!</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspU</th>
+                <td>Undergraduate in Meteorology or similar degree</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspG</th>
+                <td>Graduate student in Meteorology or similar degree</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspE</th>
+                <td >Enthusiast! (Weather/Storm Chasing)</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB</th>
+                <td >Broadcast and Journalism</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspF</th>
+                <td >Faculty or Staff at an Academic Institution/Research Lab</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA</th>
+                <td >Degree Holding Alumni, Currently not working in the Meteorlogy Sector</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspO</th>
+                <td >Operations: Private Sector/NWS/Emergency Management etc.</td>
+              </tr>
+            </tbody>
           </table>
 	  </div>
-    </div>
+	  <div class="col-sm-2"></div>
   </div>
 </div>
 
 <!-- Bootstrap JS bundle (popper.js included) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   function displayIframe(url) {
     // Create an iframe element
@@ -201,15 +327,16 @@
     xhr.send();
   }
 </script>
-
-
-
-
-
 <br>
+</main>
 
-<!--Footer-->
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <p>Tornado Target Contest 2025</p>
-    <p>TornadoTargetContest@gmail.com</p>
-</div>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
+</footer>
+
+</body>
+</html>

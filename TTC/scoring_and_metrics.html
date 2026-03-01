@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TTC – Scoring and Metrics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    :root {
+      --btn-color: #a80084;
+    }
+	
+	.hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+    </style>
+</head>
+
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-primary"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT -->
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	  <a class="navbar-brand" href="index.html">Home</a>
+	  
+	  <li class="nav-item">
+		<a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+      </li>
+		  
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+      </li>-->
+	  
+	  <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Scores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+		  <a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+		  <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+		  <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+	
+	  <li class="nav-item">
+        <a class="nav-link" href="verification.html">Verification</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Archive
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="scoring_and_metrics.html">Scoring & Metrics</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="about_TTC.html">About TTC</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="faq.html">FAQs</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+
+      <!-- Logged out -->
+      <li class="nav-item" id="navLogin">
+        <button class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+          Login
+        </button>
+      </li>
+
+      <!-- Logged in -->
+      <li class="nav-item dropdown d-none" id="navUser">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <span id="navUserName"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+
+          <li id="adminLinkContainer" class="d-none">
+            <a class="dropdown-item" href="admin.html">Admin Panel</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="forecast_submission.html">
+              Submit Forecast
+            </a>
+          </li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li>
+            <button class="dropdown-item text-danger" onclick="logout()">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<br>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- prevent default submit + call login() -->
+      <form onsubmit="event.preventDefault(); login();">
+
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="forgot_password.html">Forgot password?</a></small>
+          </div>
+
+          <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-primary"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<main class="flex-fill">
+
+<br>
+<!--Scoring Breakdown-->
+<div id="scoring_breakdown" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center center-block">
+                <h1 style="color: #000000;"><b>Scoring for Storm Events in TTC</b></h1>
+				<br>
+				<h5>Scoring in TTC can be summed up using a 2x2 contingency table!</h5>
+				<br>
+				<h4>Contingency Table</h4>
+				<table class="table text-center">
+				  <thead>
+					<tr>
+					  <th scope="col-sm-1">2x2</th>
+					  <th scope="col-sm-1">Observed == Yes</th>
+					  <th scope="col-sm-1">Observed == No</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">Forecast == Yes</th>
+					  <td>Hits</td>
+					  <td>False Alarms</td>
+					</tr>
+					<tr>
+					  <th scope="row">Forecast == No</th>
+					  <td>Misses</td>
+					  <td>Correct Negatives</td>
+					</tr>
+				  </tbody>
+				</table>
+				<br><br>
+				<p> Let's break these scenarios down! First, we will cover False Alarms and Misses, then we will address Hits, and last, but not least, Correct Negatives.</p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- False Alarms and Misses -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <h4><b>False Alarms and Misses</b></h4>
+				<br>
+				<p>If your forecast ends up being incorrect, whether you thought a tornado would occur and it did not, or vice versa,
+				your forecast will earn you an underwhelming zero points on the scoreboard...</p>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+		
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- Hits -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <h4><b>Hits</b></h4>
+				<br>
+				<p>Well done, you forecasted for a tornado to occur, and you were right! Now what? Our scoring methods have been refined over years of iterations, 
+				trying to come up with a system that rewards people for a great forecast while also not leaving everyone else so far behind that leads become insurmountable!</p>
+				<br>
+				<p><b>Abbreviations:</b> Distance to tornado/damage report (DTT); Distance to warning (DTW); Maximum possible tornado score (MaxTor; 30 pts)</p> 
+				<br>
+				<h5 style="color: #fa0000;"> <b>Score = Distance + Warnings + Podium + Lone Wolf Bonus (when applicable) </b> </h5>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+        <br>
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <b>Calculating the Distance Component:</b>
+                <ul class="ps-3">
+                    <li>If DTT &lt; 25 miles: </li>
+                        <ul class="ps-3">
+                            <li>Distance Component = (0.02255 * DTT^2)-(1.1248*DTT)+(MaxTor-0.9425)  </li>
+                            <li>Exponential decrease in reward as you get further away... at 25 miles == 15 points  </li>
+                        </ul>
+                    <li>If DTT &#62; 25 miles, but DTT &lt; 100 miles  </li>
+                        <ul class="ps-3">
+                            <li>Distance Component = ((-DTT*((0.5*MaxTor)/75))+(2/3*MaxTor)) </li>
+                            <li>Linear decrease in the reward as you get farther away out to 100 miles</li>
+                        </ul>
+                    <li>If DTT &#62; 100 miles</li>
+                        <ul class="ps-3">
+                            <li>Distance Component=0</li>
+                        </ul>
+                </ul>
+                
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+		
+		<!--Distance Component Estimator Plot-->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <img class="float-center" src="images/distance_component_estimator.png" width="100%"> </img>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+		<br>
+
+		<!--Warning Component-->
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <b>Calculating the Warning Component:</b>
+                <ul class="ps-3">
+                    <li>This is based off of the number of warnings you intersect or are near...</li>
+                        <ul class="ps-3">
+                            <li>Inside a warning (+8)</li>
+                            <li>Near a warning (+4), where the DTW &le; 10 miles  </li>
+                            <li>Example calculation: your forecast intersects 2 warnings and is near 1 more. Warning Component = (2*8) + (1*4)</li>
+                        </ul>
+                </ul>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+
+		<!--Lone Wolf-->
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <b>Determining the "Lone Wolf":</b>
+                <ul class="ps-3">
+                    <li>If you are 100+ miles from the next nearest forecaster, and DTT &lt; 25 miles: +30 points</li>
+                </ul>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+
+		<!--Podium-->
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <b>Podium Component:</b>
+                <ul class="ps-3">
+                    <li>1st place = +12</li>
+                    <li>2nd place = +8</li>
+                    <li>3rd place = +4 </li>
+                </ul>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+        
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- Correct Negatives -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+				<h4><b>Correct Negatives</b></h4>
+				<br>
+				<p>If you forecasted for no tornado to occur, and that forecast is correct, 
+				you will receive points according to the max risk level according to the 
+				Storm Prediction Center's 1630z Day 1 Convective Outlook (Tornado Probabilities)</p>
+				<br>
+                <b><h5 style="color: #fa0000;">Your reward will be assigned based on the table below:</h5></b>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+        <br>
+		<div class="row center-block">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" >  
+                  <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th scope="col-sm-1">SPC Risk (%)</th>
+                          <th scope="col-sm-1">Reward</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">0</th>
+                          <td>+4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>+8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td >+12</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">10</th>
+                          <td >+16</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">15</th>
+                          <td >+20</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">30</th>
+                          <td >+24</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">45</th>
+                          <td >+28</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">60</th>
+                          <td >+32</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!--horizontal line break-->
+<div id="general_points" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Stats Breakdown-->
+<div id="stats_breakdown" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center center-block">
+                <h1 style="color: #000000;"><b>Stats and Metrics In TTC</b></h1>
+				<br>
+				<p>To add more value to the contest and give our contestents a reason to compete even if their circumstances may limit their 
+				ability to be competitive on the cumulative leaderboards, we include a detailed stats tracking sheet!
+				The key metrics that you see on our stats page still rely heavily on the 2x2 contigency table. We will lay them out below!</p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- POD -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <h4><b>POD - Probability of Detection</b></h4>
+				<br>
+				<p>A verification measure of categorical forecast performance equal to the total number of correct 
+				event forecasts (hits) divided by the total number of events observed. Simply stated, it is the 
+				percent of events that are forecast. The ideal value is 1 (100%).</p>
+				<br>
+				<h6 style="color: #fa0000;">POD = Hits / (Hits + Misses)</h6>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+		
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- FAR -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <h4><b>FAR - False Alarm Ratio</b></h4>
+				<br>
+				<p>A verification measure of categorical forecast performance equal to the number of false alarms
+				  divided by the total number of event forecasts. The ideal value is 0 (0%).</p>
+				<br>
+				<h6 style="color: #fa0000;">FAR = False Alarms / (Hits + False Alarms)</h6>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+		
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- CSI -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <h4><b>CSI - Critical Success Index</b></h4>
+				<br>
+				<p>Also called the threat score, is a verification measure of categorical forecast performance 
+				  equal to the total number of correct event forecasts divided by the total number of storm 
+				  forecasts plus the number of misses. The CSI is not affected by the 
+				  number of non-event forecasts that verify. However, the CSI is a biased 
+				  score that is dependent upon the frequency of the event. The ideal value is 1 (100%).</p>
+				<br>
+				<h6 style="color: #fa0000;">CSI = Hits / (Hits + False Alarms + Misses)</h6>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+		
+		<br>
+		<!--horizontal line break-->
+		<div id="general_points" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 center-block">
+					   <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		<!-- CSI -->
+		<div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-10">
+                <h4><b>HSS - Heidke Skill Score</b></h4>
+				<br>
+				<p> A skill corrected verification measure of categorical forecast performance similar to the success 
+				  ratio but which takes into account the number of correct random forecasts (chance hits + 
+				  chance correct rejections). The HSS is equal to the total number of correct forecasts minus the 
+				  correct random forecasts divided by the total number of forecasts minus the correct forecasts due to chance. 
+				  This skill score falls within a (-1, +1) range. No incorrect forecasts give a score of +1, no correct
+				  forecasts give a score of -1, and either no events forecast or no events observed give a score of 0.</p>
+				<br>
+				<h6 style="color: #fa0000;">HSS= (Hits + Correct Negatives - Chance)/(Hits + False Alarms + Misses + Correct Negatives - Chance)</h6>
+				<br>
+				<h6 style="color: #fa0000;">Chance = (1 / Number of Forecasts)*((Hits + Misses)*(Hits + False Alarms)+(Correct Negatives + Misses)*(Correct Negatives + False Alarms))</h6>
+				<br>
+				<a href="https://www.swpc.noaa.gov/sites/default/files/images/u30/Forecast%20Verification%20Glossary.pdf">Source Materials!</a>
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+	</div>
+</div>
+<br>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
+</footer>
+
+</body>
+</html>

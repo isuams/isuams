@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Tornado Target Contest</title>
+  <title>TTC - Registration</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,15 +12,21 @@
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    defer></script>
+    defer>
+  </script>
 
   <style>
-    :root {
-      --btn-color: #aa7761;
+    html, body {
+      height: 100%;
     }
 
     body {
-      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    :root {
+      --btn-color: #a80084;
     }
 
     .hero {
@@ -34,34 +40,48 @@
       background: rgba(0, 0, 0, 0.45);
       padding: 2rem;
     }
+	
+	.site-footer {
+	  background-color: #c4c4c4;  /* light–medium gray */
+	  color: #333;
+	}
+	
+	.site-footer a {
+	  color: inherit;              /* same color as surrounding text */
+	  text-decoration: none;       /* remove underline */
+	  font-weight: inherit;
+	}
+
+	.site-footer a:hover {
+	  text-decoration: underline;  /* subtle affordance on hover */
+	  cursor: pointer;
+	}
+	
+	/* Placeholder styling — Edge & Bootstrap safe */
+	input:placeholder-shown::placeholder,
+	textarea:placeholder-shown::placeholder {
+	  color: rgba(108, 117, 125, 0.7);
+	}
+
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+	  color: rgba(108, 117, 125, 0.7);
+	}
+
+	input::-moz-placeholder,
+	textarea::-moz-placeholder {
+	  color: rgba(108, 117, 125, 0.7);
+	}
+
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+	  color: rgba(108, 117, 125, 0.7);
+	}
   </style>
 </head>
-<script src="js/navbar-auth.js"></script>
-<script>
-async function registerUser() {
-  const res = await fetch("https://tortargetcontest.pythonanywhere.com/api/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "include",
-    body: JSON.stringify({
-      name: document.getElementById("regName").value,
-      email: document.getElementById("regEmail").value,
-      password: document.getElementById("regPassword").value,
-      alias: document.getElementById("regAlias").value,
-      affiliation: document.getElementById("regAffiliation").value,
-      experience: document.getElementById("regExperience").value,
-      discord: document.getElementById("regDiscord").value
-    })
-  });
 
-  if (res.ok) {
-    window.location.href = "index.html";
-  } else {
-    const err = await res.json();
-    alert(err.error || "Registration failed");
-  }
-}
-</script>
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
 
 <!-- ================= HEADER ================= -->
 <header class="hero mb-2">
@@ -74,7 +94,7 @@ async function registerUser() {
         <div class="col-6 text-end">
           <a href="https://meteor.geol.iastate.edu/ams/"
              target="_blank"
-             class="btn btn-info"
+             class="btn btn-primary"
              style="background-color: var(--btn-color); border: none;">
             Return to<br>Iowa State AMS
           </a>
@@ -90,6 +110,31 @@ async function registerUser() {
 
     <!-- LEFT -->
     <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	  <a class="navbar-brand" href="index.html">Home</a>
+	  
+	  <li class="nav-item">
+		<a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+      </li>
+		  
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+      </li>-->
+	  
+	  <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Scores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+		  <a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+		  <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+		  <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+	
+	  <li class="nav-item">
+        <a class="nav-link" href="verification.html">Verification</a>
+      </li>
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
@@ -100,33 +145,13 @@ async function registerUser() {
           <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
         </ul>
       </li>
-	  <!--<li class="nav-item">
-            <a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
-          </li>-->
-        <!--<li class="nav-item">
-          <a class="nav-link" href="forecast_submission.html">Forecast Submission</a>
-        </li>-->
-        <!--<li class="nav-item">
-            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
-        </li>-->
-	    <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Scores
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
-			<a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
-			<a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
-			<a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
-          </div>
-        </li>-->
 
       <li class="nav-item">
-        <a class="nav-link active" href="verification.html">Verification</a>
+        <a class="nav-link" href="scoring_and_metrics.html">Scoring & Metrics</a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="information_and_scoring.html">Rules & Scoring</a>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="about_TTC.html">About TTC</a>
       </li>
 
       <li class="nav-item">
@@ -218,7 +243,7 @@ async function registerUser() {
 
         <div class="modal-footer">
           <button type="submit"
-                  class="btn btn-info"
+                  class="btn btn-primary"
                   style="background-color: var(--btn-color); border: none;">
             Login
           </button>
@@ -229,13 +254,15 @@ async function registerUser() {
   </div>
 </div>
 
+<main class="flex-fill">
+
 <!-- ================= Registration ================= -->
 <div class="container my-4">
 	<form onsubmit="event.preventDefault(); registerUser();">
 
 	  <div class="mb-3">
 		<label class="form-label"><b>Full Name</b></label>
-		<input id="regName" name="name" placeholder="John/Jane Doe" class="form-control" required>
+		<input id="regName" name="name" placeholder="John/Jane Doe" maxlength="50" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
@@ -253,7 +280,10 @@ async function registerUser() {
 	  <div class="mb-3">
 		<label class="form-label"><b>Display Alias</b></label>
 		<div class="form-text">Optional: If you want something other than your name displayed on the leaderboard!</div>
-		<input id="regAlias" name="alias" placeholder="Chasing-last-Century" class="form-control">
+		<input id="regAlias" name="alias" placeholder="Chasing-last-Century (max 50 characters)" maxlength="50" class="form-control">
+		<small class="text-muted">
+          <span id="aliasCount">0</span>/50 characters
+        </small>
 	  </div>
 
 	  <div class="mb-3">
@@ -273,21 +303,56 @@ async function registerUser() {
 	  <div class="mb-3">
 		<label class="form-label"><b>Years of Forecasting Experience</b></label>
 		<input type="number" id="regExperience" name="experience"
-		min="0" step="1" inputmode="numeric" pattern="[0-9]*" placeholder="33" class="form-control" required>
+		min="0" max="99" step="1" inputmode="numeric" placeholder="28" class="form-control" required>
 	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label"><b>Discord Account</b></label>
 		<div class="form-text">If you would like to join the discord or you a returning member of the TTC discord (in 2026)</div>
-		<input id="regDiscord" name="discord" placeholder="Y2KChasing" class="form-control">
+		<input id="regDiscord" name="discord" placeholder="Y2KChasing" maxlength="32" class="form-control">
 	  </div>
 
-	  <button class="btn btn-primary w-60" style="background-color: var(--btn-color); border: none;"><b>Register</b></button>
+	  <div class="mb-3 form-check">
+		  <input
+			class="form-check-input"
+			type="checkbox"
+			id="agreeTerms"
+			required
+		  >
+		  <label class="form-check-label" for="agreeTerms">
+			I have read and agree to the
+			<a href="https://drive.google.com/file/d/11yZ4l-bNKJNnfJeoYYO0E2ttvXjbB04D/view"
+			   target="_blank" rel="noopener">
+			  Terms & Conditions
+			</a>
+			and
+			<a href="https://drive.google.com/file/d/1bJAlTqUb0nH-oA00uGbS9FmTTZ_gPIQc/view"
+			   target="_blank" rel="noopener">
+			  Privacy Policy
+			</a>.
+		  </label>
+		</div>
+		
+	  <button
+		  type="submit"
+		  class="btn btn-primary w-60"
+		  id="registerBtn"
+		  style="background-color: var(--btn-color); border: none;"
+		  disabled
+		>
+		  <b>Register</b>
+		</button>
 
 	</form>
 	
 	<!-- Showing descriptions for the Affiliation -->
 	<br><br><br><br>
+	<div class="row text-center center-block">
+	  <h6>Having any trouble with registration? Send us an email: <a href="mailto:tornadotargetcontest@gmail.com">
+        TornadoTargetContest@gmail.com
+      </a></h6>
+	</div>
+	<br>
 	<div class="row center-block">
             <div class="col-sm-2"></div>
             <div class="col-sm-8" >  
@@ -334,10 +399,112 @@ async function registerUser() {
         </div>
 </div>
 
+<script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  /* ===============================
+     Terms & Conditions gating
+     =============================== */
+  const agreeCheckbox = document.getElementById("agreeTerms");
+  const registerBtn = document.getElementById("registerBtn");
+
+  registerBtn.disabled = true;
+
+  agreeCheckbox.addEventListener("change", () => {
+    registerBtn.disabled = !agreeCheckbox.checked;
+  });
+
+  /* ===============================
+     Alias character counter
+     =============================== */
+  const aliasInput = document.getElementById("regAlias");
+  const aliasCounter = document.getElementById("aliasCounter");
+  const MAX_ALIAS_LEN = 50;
+
+  if (aliasInput && aliasCounter) {
+    aliasInput.addEventListener("input", () => {
+      if (aliasInput.value.length > MAX_ALIAS_LEN) {
+        aliasInput.value = aliasInput.value.slice(0, MAX_ALIAS_LEN);
+      }
+      aliasCounter.innerText = `${aliasInput.value.length}/${MAX_ALIAS_LEN}`;
+    });
+  }
+
+  /* ===============================
+     Experience numeric clamp (0–99)
+     =============================== */
+  const expInput = document.getElementById("regExperience");
+
+  if (expInput) {
+    expInput.addEventListener("input", () => {
+      let value = expInput.value;
+
+      if (value === "") return;
+
+      value = parseInt(value, 10);
+      if (isNaN(value)) value = "";
+      if (value > 99) value = 99;
+      if (value < 0) value = 0;
+
+      expInput.value = value;
+    });
+  }
+
+  /* ===============================
+     Registration submit handler
+     =============================== */
+  window.registerUser = async function () {
+    registerBtn.disabled = true;
+
+    const payload = {
+      name: document.getElementById("regName").value.trim(),
+      email: document.getElementById("regEmail").value.trim(),
+      password: document.getElementById("regPassword").value,
+      alias: aliasInput?.value.trim(),
+      affiliation: document.getElementById("regAffiliation").value.trim(),
+      experience: expInput?.value,
+      discord: document.getElementById("regDiscord").value.trim()
+    };
+
+    const res = await fetch(
+      "https://tortargetcontest.pythonanywhere.com/api/register",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify(payload)
+      }
+    );
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      registerBtn.disabled = false;
+      alert(data.error || "Registration failed");
+      return;
+    }
+
+    /* Discord-specific redirect logic */
+    if (data.post_registration === "discord") {
+      sessionStorage.setItem("from_registration", "true");
+      window.location.href = "discord.html";
+      return;
+    }
+
+    window.location.href = "about_TTC.html";
+  };
+});
+</script>
+
+<br>
+</main>
+
 <!-- ================= FOOTER ================= -->
-<footer class="bg-light text-center py-4">
-  <p class="mb-1">Tornado Target Contest 2026</p>
-  <p class="mb-0">TornadoTargetContest@gmail.com</p>
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
 </footer>
 
 </body>
