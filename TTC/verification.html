@@ -252,9 +252,9 @@
     </div>
   </div>
   
-  <p class="text-muted text-center mt-2">
+  <!--<p class="text-muted text-center mt-2">
   Showing verification for <strong id="loadedDate"></strong>
-  </p>
+  </p>-->
 
   <!-- ================= VERIFICATION PLACEHOLDER ================= -->
   <div id="verificationPlaceholder" class="alert alert-secondary text-center my-4">
@@ -272,7 +272,7 @@
     <!-- At-a-glance -->
     <div class="card mb-4 mx-auto" style="max-width: 60%;">
       <div class="card-header fw-semibold text-center">
-        At a Glance
+        <!--At a Glance-->
       </div>
       <iframe
         id="aagFrame"
@@ -378,7 +378,7 @@ async function hasVerificationData(dateStr) {
    Update iframe sources
    =============================== */
 function updateFrames(dateStr) {
-  document.getElementById("loadedDate").innerText = dateStr;
+  <!-- document.getElementById("loadedDate").innerText = dateStr; -->
   showFrames();
 
   const d = new Date(dateStr + "T00:00:00Z");

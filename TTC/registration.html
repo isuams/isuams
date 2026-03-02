@@ -77,6 +77,11 @@
 	textarea:-ms-input-placeholder {
 	  color: rgba(108, 117, 125, 0.7);
 	}
+	
+	#registerBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    }
   </style>
 </head>
 
@@ -400,11 +405,11 @@
 </div>
 
 <script>
-<script>
 document.addEventListener("DOMContentLoaded", () => {
   /* ===============================
      Terms & Conditions gating
      =============================== */
+	 
   const agreeCheckbox = document.getElementById("agreeTerms");
   const registerBtn = document.getElementById("registerBtn");
 
