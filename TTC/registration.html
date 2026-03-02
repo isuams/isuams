@@ -481,7 +481,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
 
-    const data = await res.json();
+    let data;
+	try {
+	  data = await res.json();
+	} catch {
+	  const text = await res.text();
+	  console.error("Non-JSON response:", text);
+	  alert("Server error during registration. Please try again.");
+	  registerBtn.disabled = false;
+	  return;
+	}
 
     if (!res.ok) {
       registerBtn.disabled = false;
