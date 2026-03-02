@@ -375,7 +375,7 @@ function updateClock() {
 
   // OPEN from 00:00–16:00 UTC
   const open =
-    hour > 16 || (hour === 16 && minute === 0);
+    hour < 16 || (hour === 16 && minute === 0);
 
   const closed = !open;
 
