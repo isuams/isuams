@@ -363,7 +363,7 @@ async function syncFromSheet() {
 
   const data = await res.json();
   status.innerText =
-    `Synced. Users updated: ${data.users_updated}`;
+    `Synced. Users updated: ${data.users_matched}`;
 
   loadUsers();
 }
