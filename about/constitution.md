@@ -4,6 +4,6 @@ layout: page
 section: about
 ---
 
-[ISU AMS Constitution]({{site.baseurl }}/about/Constitutions/AMS_Constitution_2023.pdf)
+[ISU AMS Constitution]({{site.baseurl }}/about/Constitutions/AMS_Constitution_2026.pdf)
 
 
