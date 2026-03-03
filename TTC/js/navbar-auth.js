@@ -12,17 +12,17 @@ async function login() {
   const res = await fetch(`${API_BASE}/api/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    credentials: "include",
     body: JSON.stringify({ email, password })
   });
 
   if (res.ok) {
-    // Reload ensures clean session + navbar update
-    window.location.reload();
-  } else {
+    const data = await res.json();
+    localStorage.setItem("api_token", data.token);
+    await updateNavbar();
+  }
+  else {
     alert("Login failed — check email/password");
   }
-}
 
 /**
  * Log out current user
@@ -30,10 +30,10 @@ async function login() {
 function logout() {
   fetch(`${API_BASE}/api/logout`, {
     method: "POST",
-    credentials: "include"
   }).finally(() => {
     window.location.reload();
   });
+  localStorage.removeItem("api_token");
 }
 
 /**
@@ -41,9 +41,18 @@ function logout() {
  */
 async function updateNavbar() {
   try {
-    const res = await fetch(`${API_BASE}/api/me`, {
-      credentials: "include"
-    });
+    const token = localStorage.getItem("api_token");
+
+	const headers = token ? {
+	  "Authorization": `Bearer ${token}`
+	} : {};
+
+	const res = await fetch(`${API_BASE}/api/me`, { headers });
+
+	const newToken = res.headers.get("X-New-Token");
+	if (newToken) {
+	  localStorage.setItem("api_token", newToken);
+	}
 
     if (!res.ok) {
       showLoggedOut();
