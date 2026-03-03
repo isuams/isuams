@@ -23,6 +23,7 @@ async function login() {
   else {
     alert("Login failed — check email/password");
   }
+}
 
 /**
  * Log out current user
