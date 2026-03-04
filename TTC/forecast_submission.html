@@ -334,8 +334,14 @@
 
 <script>
 // Redirect if not logged in
+const token = localStorage.getItem("api_token");
+
+const headers = token ? {
+  "Authorization": `Bearer ${token}`
+} : {};
+
 fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
-  credentials: "include"
+  headers
 }).then(r => {
   if (!r.ok) {
     window.location.href = "index.html";
@@ -441,12 +447,21 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
     delete payload.sig_tor;
   }
 
+  const token = localStorage.getItem("api_token");
+
+  const headers = {
+    "Content-Type": "application/json"
+  };
+
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+
   const res = await fetch(
     "https://tortargetcontest.pythonanywhere.com/api/forecast",
     {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
+      headers,
       body: JSON.stringify(payload)
     }
   );

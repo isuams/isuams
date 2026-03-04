@@ -16,10 +16,16 @@ async function login() {
   });
 
   if (res.ok) {
-    const data = await res.json();
-    localStorage.setItem("api_token", data.token);
-    await updateNavbar();
-  }
+  const data = await res.json();
+  localStorage.setItem("api_token", data.token);
+  await updateNavbar();
+
+  // ✅ Close the login modal
+  const modalEl = document.getElementById("loginModal");
+  const modal = bootstrap.Modal.getInstance(modalEl)
+    || new bootstrap.Modal(modalEl);
+  modal.hide();
+}
   else {
     alert("Login failed — check email/password");
   }

@@ -265,6 +265,18 @@
 </div>
 
 <script>
+function authHeaders(extra = {}) {
+  const token = localStorage.getItem("api_token");
+
+  const headers = { ...extra };
+
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+
+  return headers;
+}
+
 function showAdminToast(msg) {
   const el = document.createElement("div");
   el.className = "alert alert-success position-fixed bottom-0 end-0 m-3";
@@ -276,7 +288,7 @@ function showAdminToast(msg) {
 /* ---------- Load users ---------- */
 async function loadUsers() {
   const res = await fetch(`${API_BASE}/api/admin/users`, {
-    credentials: "include"
+    headers: authHeaders()
   });
 
   if (res.status === 403 || res.status === 401) {
@@ -318,8 +330,9 @@ async function loadUsers() {
 async function updateUser(userId, updates) {
   const res = await fetch(`${API_BASE}/api/admin/update_user`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "include",
+    headers: authHeaders({
+    "Content-Type": "application/json"
+  }),
     body: JSON.stringify({ user_id: userId, ...updates })
   });
 
@@ -340,7 +353,7 @@ async function pushToSheet() {
 
   const res = await fetch(`${API_BASE}/api/admin/push_to_sheet`, {
     method: "POST",
-    credentials: "include"
+    headers: authHeaders()
   });
 
   if (!res.ok) {
@@ -358,7 +371,7 @@ async function syncFromSheet() {
 
   const res = await fetch(`${API_BASE}/api/admin/sync_from_sheet`, {
     method: "POST",
-    credentials: "include"
+    headers: authHeaders()
   });
 
   const data = await res.json();
@@ -374,7 +387,7 @@ loadUsers();
 async function loadForecastStatus() {
   const res = await fetch(
     "https://tortargetcontest.pythonanywhere.com/api/admin/forecast_status?year=2026",
-    { credentials: "include" }
+    { headers: authHeaders() }
   );
   const data = await res.json();
   document.getElementById("forecastToggle").checked =
@@ -384,8 +397,9 @@ async function loadForecastStatus() {
 async function toggleForecasting(active) {
   const res = await fetch(`${API_BASE}/api/admin/forecast_toggle`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "include",
+    headers: authHeaders({
+    "Content-Type": "application/json"
+  }),
     body: JSON.stringify({ active })
   });
 
