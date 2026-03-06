@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TTC – Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    :root {
+      --btn-color: #a80084;
+    }
+	
+	.hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+  
+    iframe {
+      width: 100%;
+      border: none;
+      background-color: #fff;
+    }
+	
+	.iframe-aag {
+	  margin: 0 auto; /* Centers the iframe horizontally */
+      height: 500px;
+    }
+	
+    .iframe-figure {
+      height: 650px;
+    }
+
+    .iframe-table {
+      height: 700px;
+    }
+
+    .card {
+      border-radius: 0.75rem;
+    }
+
+    .card-header {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-primary"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT -->
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	  <a class="navbar-brand" href="index.html">Home</a>
+	  
+	  <li class="nav-item">
+		<a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+      </li>
+		  
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+      </li>-->
+	  
+	  <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Scores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+		  <a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+		  <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+		  <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+	
+	  <li class="nav-item">
+        <a class="nav-link active" href="verification.html">Verification</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Archive
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="scoring_and_metrics.html">Scoring & Metrics</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="about_TTC.html">About TTC</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="faq.html">FAQs</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+
+      <!-- Logged out -->
+      <li class="nav-item" id="navLogin">
+        <button class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+          Login
+        </button>
+      </li>
+
+      <!-- Logged in -->
+      <li class="nav-item dropdown d-none" id="navUser">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <span id="navUserName"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+
+          <li id="adminLinkContainer" class="d-none">
+            <a class="dropdown-item" href="admin.html">Admin Panel</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="forecast_submission.html">
+              Submit Forecast
+            </a>
+          </li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li>
+            <button class="dropdown-item text-danger" onclick="logout()">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<br>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- prevent default submit + call login() -->
+      <form onsubmit="event.preventDefault(); login();">
+
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="forgot_password.html">Forgot password?</a></small>
+          </div>
+
+          <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-primary"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<main class="flex-fill">
+<div class="container my-4">
+
+  <!-- DATE SELECTOR -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-body text-center">
+      <label for="verifDate" class="form-label fw-semibold">
+        Select Verification Date (UTC)
+      </label>
+      <input type="date" id="verifDate" class="form-control w-auto d-inline-block">
+    </div>
+  </div>
+  
+  <!--<p class="text-muted text-center mt-2">
+  Showing verification for <strong id="loadedDate"></strong>
+  </p>-->
+
+  <!-- ================= VERIFICATION PLACEHOLDER ================= -->
+  <div id="verificationPlaceholder" class="alert alert-secondary text-center my-4">
+    <h5 class="mb-2">Verification Not Available</h5>
+    <p class="mb-0">
+      Forecasts are typically verified approximately <strong>5 days</strong>
+      after submission.<br>
+      Verification is available <strong>Monday–Friday</strong>.
+    </p>
+  </div>
+
+  <!-- ================= VERIFICATION CONTENT ================= -->
+  <div id="verificationFrames" class="d-none">
+
+    <!-- At-a-glance -->
+    <div class="card mb-4 mx-auto" style="max-width: 60%;">
+      <div class="card-header fw-semibold text-center">
+        <!--At a Glance-->
+      </div>
+      <iframe
+        id="aagFrame"
+        class="w-100"
+        style="height: 400px; border: none;"
+      ></iframe>
+    </div>
+
+    <!-- Figures -->
+    <div class="card mb-4">
+      <div class="card-header fw-semibold text-center">
+        Event Figures
+      </div>
+      <iframe
+        id="figFrame"
+        class="w-100"
+        style="height: 500px; border: none;"
+      ></iframe>
+    </div>
+
+    <!-- Verification Table -->
+    <div class="card mb-4">
+      <div class="card-header fw-semibold text-center">
+        Verification Table
+      </div>
+      <iframe
+        id="tableFrame"
+        class="w-100"
+        style="height: 600px; border: none;"
+      ></iframe>
+    </div>
+
+  </div>
+  <!-- At A Glance 
+  <div class="row justify-content-center">
+	<div class="col-12 col-md-10 col-lg-7">
+      <div class="card mb-4">
+	    <div class="card-body">
+		  <iframe id="aagFrame" class="iframe-aag"></iframe>
+	    </div>
+	  </div>
+	</div>
+  </div>
+
+  <!-- MAP / FIGURE 
+  <div class="card shadow-sm mb-4">
+    <div class="card-header">Forecast Outcome Map</div>
+    <div class="card-body">
+      <iframe id="figFrame" class="iframe-figure"></iframe>
+    </div>
+  </div>
+
+  <!-- TABLE 
+  <div class="card shadow-sm mb-5">
+    <div class="card-header">Forecast Verification Table</div>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <iframe id="tableFrame" class="iframe-table"></iframe>
+      </div>
+    </div>
+  </div>-->
+
+</div>
+
+<script>
+function showPlaceholder() {
+  document.getElementById("verificationPlaceholder").classList.remove("d-none");
+  document.getElementById("verificationFrames").classList.add("d-none");
+}
+
+function showFrames() {
+  document.getElementById("verificationPlaceholder").classList.add("d-none");
+  document.getElementById("verificationFrames").classList.remove("d-none");
+}
+
+function pad(n) {
+  return n.toString().padStart(2, "0");
+}
+
+const dateInput = document.getElementById("verifDate");
+
+/* ===============================
+   Check if verification files exist
+   =============================== */
+async function hasVerificationData(dateStr) {
+  const d = new Date(dateStr + "T00:00:00Z");
+  const y = d.getUTCFullYear();
+  const m = pad(d.getUTCMonth() + 1);
+  const day = pad(d.getUTCDate());
+
+  const base = `${y}_${m}_${day}`;
+  const testUrl = `verification/tables/${base}_veriftable.html`;
+
+  try {
+    const res = await fetch(testUrl, { cache: "no-store" });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+/* ===============================
+   Update iframe sources
+   =============================== */
+function updateFrames(dateStr) {
+  <!-- document.getElementById("loadedDate").innerText = dateStr; -->
+  showFrames();
+
+  const d = new Date(dateStr + "T00:00:00Z");
+  const y = d.getUTCFullYear();
+  const m = pad(d.getUTCMonth() + 1);
+  const day = pad(d.getUTCDate());
+
+  const base = `${y}_${m}_${day}`;
+
+  document.getElementById("aagFrame").src =
+    `verification/at_a_glance/${base}_aag.html`;
+  document.getElementById("figFrame").src =
+    `verification/plots/${base}_veriffig.html`;
+  document.getElementById("tableFrame").src =
+    `verification/tables/${base}_veriftable.html`;
+}
+
+/* ===============================
+   Date selection handler
+   =============================== */
+dateInput.addEventListener("change", async () => {
+  const date = dateInput.value;
+  if (!date) return;
+
+  const d = new Date(date + "T00:00:00Z");
+  const weekday = d.getUTCDay(); // 0 = Sun, 6 = Sat
+
+  if (weekday === 0 || weekday === 6) {
+    alert("Verification data is only available Monday–Friday.");
+    dateInput.value = "";
+	showPlaceholder();
+    return;
+  }
+
+  const exists = await hasVerificationData(date);
+
+  if (!exists) {
+    alert("No verification data available for this date.");
+    dateInput.value = "";
+	showPlaceholder();
+    return;
+  }
+
+  updateFrames(date);
+});
+
+/* ===============================
+   Initial load (most recent verification)
+   =============================== */
+(async function init() {
+  const MAX_LOOKBACK_DAYS = 14; // safety cap
+  const startOffset = 5;       // verification lag
+
+  for (let i = startOffset; i < startOffset + MAX_LOOKBACK_DAYS; i++) {
+    const d = new Date();
+    d.setUTCDate(d.getUTCDate() - i);
+
+    const weekday = d.getUTCDay();
+    if (weekday === 0 || weekday === 6) continue; // skip weekends
+
+    const iso = d.toISOString().split("T")[0];
+    const exists = await hasVerificationData(iso);
+
+    if (exists) {
+      dateInput.value = iso;
+      updateFrames(iso);
+      return;
+    }
+  }
+
+  // Nothing found in lookback window
+  showPlaceholder();
+})();
+</script>
+
+<!--Rescore Event-->
+<div class="row justify-content-center mb-4">
+  <div class="col-12 col-md-10 col-lg-7">
+    <div class="bg-color-bar">
+	  <div class="row d-flex justify-content-center">
+        <div class="button-box"></div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiRzfzDQ5LCBwQzfZ0_DdzPIuEwXUmtsMTkn1hDPSaHOR2-Q/viewform?usp=sf_link" target="_blank" class="btn btn-primary btn-lg" role="button" style="background-color: var(--btn-color); border: 1px #000000">Request Rescoring of an Event</a>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<div class="row center-block">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" >  
+        <table class="table text-left">
+            <thead>
+                <tr>
+                    <th scope="col-sm-2">Year</th>
+                    <th scope="col-sm-2">Date Range for TTC Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2026</th>
+                    <td>[Will be] March 16th -- June 12th</td>
+                </tr>
+                <tr>
+                    <th scope="row">2025</th>
+                    <td>March 17th -- June 13th</td>
+                </tr>
+                <tr>
+                    <th scope="row">2024</th>
+                    <td >March 11th -- June 14th</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
