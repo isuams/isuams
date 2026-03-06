@@ -281,6 +281,21 @@
 		<div class="form-text">Must be at least 8 characters.</div>
 		<input id="regPassword" type="password" name="password" placeholder="Weather_is_C00l_1999" class="form-control" minlength="8" required>
 	  </div>
+	  
+	  <div class="mb-3">
+	    <label class="form-label"><b>Confirm Password</b></label>
+	    <input
+		  id="regPasswordConfirm"
+		  type="password"
+		  placeholder="Re-enter your password"
+		  class="form-control"
+		  minlength="8"
+		  required
+	    >
+	    <div id="passwordMatchError" class="form-text text-danger d-none">
+		  Passwords do not match.
+	    </div>
+	  </div>
 
 	  <div class="mb-3">
 		<label class="form-label"><b>Display Alias</b></label>
@@ -406,6 +421,12 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  /* Redirect if user is already logged in */
+  const token = localStorage.getItem("api_token");
+  if (token) {
+    window.location.href = "index.html";
+  }
+  
   /* ===============================
      Terms & Conditions gating
      =============================== */
@@ -434,6 +455,31 @@ document.addEventListener("DOMContentLoaded", () => {
       aliasCounter.innerText = `${aliasInput.value.length}/${MAX_ALIAS_LEN}`;
     });
   }
+  
+  /* ===============================
+     Password Double Check
+     =============================== */
+  const passwordInput = document.getElementById("regPassword");
+  const confirmInput = document.getElementById("regPasswordConfirm");
+  const passwordError = document.getElementById("passwordMatchError");
+
+  function validatePasswords() {
+    if (!passwordInput.value || !confirmInput.value) {
+      passwordError.classList.add("d-none");
+      return true;
+    }
+
+    if (passwordInput.value !== confirmInput.value) {
+      passwordError.classList.remove("d-none");
+      return false;
+    }
+
+    passwordError.classList.add("d-none");
+    return true;
+  }
+
+  passwordInput.addEventListener("input", validatePasswords);
+  confirmInput.addEventListener("input", validatePasswords);
 
   /* ===============================
      Experience numeric clamp (0–99)
@@ -459,6 +505,12 @@ document.addEventListener("DOMContentLoaded", () => {
      Registration submit handler
      =============================== */
   window.registerUser = async function () {
+
+    if (!validatePasswords()) {
+      alert("Passwords do not match.");
+      return;
+    }
+
     registerBtn.disabled = true;
 
     const payload = {
@@ -472,14 +524,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const res = await fetch(
-      "https://tortargetcontest.pythonanywhere.com/api/register",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify(payload)
-      }
-    );
+	  "https://tortargetcontest.pythonanywhere.com/api/register",
+	  {
+		method: "POST",
+		headers: { "Content-Type": "application/json" },
+		body: JSON.stringify(payload)
+	  }
+	);
 
     let data;
 	try {
@@ -497,9 +548,16 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(data.error || "Registration failed");
       return;
     }
+	
+	/* store auth token */
+	if (data.token) {
+	  localStorage.setItem("api_token", data.token);
+	}
+	
+	await updateNavbar();
 
     /* Discord-specific redirect logic */
-    if (data.post_registration === "discord") {
+    if (data.post_registration) {
       sessionStorage.setItem("from_registration", "true");
       window.location.href = "discord.html";
       return;
