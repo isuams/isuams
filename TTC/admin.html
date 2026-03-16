@@ -232,7 +232,7 @@
   <div class="card-body d-flex justify-content-between align-items-center">
 	<!-- Left text -->
 	<div>
-		<strong>Forecasting Active (2026)</strong><br>
+		<strong>document.querySelector(".card-body strong").innerText = `Forecasting Active (${year})`;</strong><br>
 		<small class="text-muted">Overrides code default</small><br>
 		<small class="text-muted" id="forecastStatusLabel"></small>
 	</div>
@@ -386,8 +386,9 @@ loadUsers();
 
 /* ---------- Forecasting toggle ---------- */
 async function loadForecastStatus() {
-  const res = await fetch(
-    "https://tortargetcontest.pythonanywhere.com/api/admin/forecast_status?year=2026",
+  const year = new Date().getFullYear();
+
+  const res = await fetch(`${API_BASE}/api/admin/forecast_status?year=${year}`,
     { headers: authHeaders() }
   );
   const data = await res.json();
@@ -401,7 +402,8 @@ async function toggleForecasting(active) {
     headers: authHeaders({
     "Content-Type": "application/json"
   }),
-    body: JSON.stringify({ active })
+    const year = new Date().getFullYear();
+	body: JSON.stringify({ year, active })
   });
 
   if (!res.ok) {
