@@ -249,12 +249,17 @@
   <div class="text-center mb-3">
     <strong id="utcClock"></strong>
   </div>
+  
+  <!-- Forecast + Verification Period Info -->
+  <div class="text-center mb-3">
+    <div id="forecastPeriod" class="fw-semibold"></div>
+    <div id="verificationPeriod" class="text-muted"></div>
+  </div>
 
   <!-- Closed message -->
   <div id="closedMessage" class="alert alert-warning text-center hidden">
     Forecast submission is currently closed.<br>
-	<strong>Forecasting opens March 16 at 00:00 UTC.</strong>
-    <!--Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong>.-->
+    Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong>
   </div>
 
   <!-- Forecast Form -->
@@ -367,16 +372,112 @@ function updateClock() {
   const closedMsg = document.getElementById("closedMessage");
   const submitBtn = form.querySelector("button[type='submit']");
 
-  closedMsg.classList.toggle("hidden", !closed);
+  // Show/hide + update message
+  closedMsg.classList.toggle("hidden", false); // always show now
+
+  if (closed) {
+    closedMsg.innerHTML =
+      `Forecast submission is currently closed.<br>
+       Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong><br>
+       <br>
+       <strong>Next Forecast Period:</strong>
+       ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
+  } else {
+    closedMsg.innerHTML =
+      `Forecast submission is currently open.<br>
+       Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong>`;
+  }
 
   // Disable submit instead of hiding form
   submitBtn.disabled = closed;
   submitBtn.style.opacity = closed ? "0.5" : "1";
   submitBtn.style.cursor = closed ? "not-allowed" : "pointer";
+  
+  // ================= PERIOD TEXT =================
+  const nowUTC = new Date();
+
+  // Forecast period (today)
+  const forecastStart = new Date(Date.UTC(
+    nowUTC.getUTCFullYear(),
+    nowUTC.getUTCMonth(),
+    nowUTC.getUTCDate(),
+    0, 0
+  ));
+
+  const forecastEnd = new Date(Date.UTC(
+    nowUTC.getUTCFullYear(),
+    nowUTC.getUTCMonth(),
+    nowUTC.getUTCDate(),
+    16, 0
+  ));
+
+  // Verification period
+  const verificationStart = new Date(Date.UTC(
+    nowUTC.getUTCFullYear(),
+    nowUTC.getUTCMonth(),
+    nowUTC.getUTCDate(),
+    16, 30
+  ));
+
+  const verificationEnd = new Date(verificationStart);
+  verificationEnd.setUTCDate(verificationEnd.getUTCDate() + 1);
+  verificationEnd.setUTCHours(12, 0, 0, 0);
+
+  // ================= NEXT FORECAST (SKIP WEEKENDS) =================
+  let nextForecastStart = new Date(forecastStart);
+  let nextForecastEnd = new Date(forecastEnd);
+
+  // If closed → move forward at least 1 day
+  if (closed) {
+    nextForecastStart.setUTCDate(nextForecastStart.getUTCDate() + 1);
+    nextForecastEnd.setUTCDate(nextForecastEnd.getUTCDate() + 1);
+  }
+
+  // Skip weekends
+  while (
+    nextForecastStart.getUTCDay() === 0 ||
+    nextForecastStart.getUTCDay() === 6
+  ) {
+    nextForecastStart.setUTCDate(nextForecastStart.getUTCDate() + 1);
+    nextForecastEnd.setUTCDate(nextForecastEnd.getUTCDate() + 1);
+  }
+
+  // ================= UPDATE TEXT =================
+  if (closed) {
+    // Only show next forecast period
+    document.getElementById("forecastPeriod").innerText = "";
+
+    document.getElementById("verificationPeriod").innerText =
+      `Next Forecast Period: ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
+
+  } else {
+    // Show normal forecast + verification
+    document.getElementById("forecastPeriod").innerText =
+      `Forecast Period: ${formatUTC(forecastStart)} 0000UTC to 1600UTC`;
+
+   document.getElementById("verificationPeriod").innerText =
+      `Verification Period: ${formatUTC(verificationStart)} 1630UTC to ${formatUTC(verificationEnd)} 1200UTC`;
+  }
+
+/* ================= FORECAST PERIOD HELPER ================= */
+function formatUTC(date) {
+  const mm = String(date.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(date.getUTCDate()).padStart(2, "0");
+  const yy = String(date.getUTCFullYear()).slice(-2);
+  return `${mm}/${dd}/${yy}`;
 }
 
 setInterval(updateClock, 1000);
 updateClock();
+
+/* === MESSAGE HIDING WHEN FORECASTING IS CLOSED === */
+const forecastEl = document.getElementById("forecastPeriod");
+
+if (closed) {
+  forecastEl.classList.add("hidden");
+} else {
+  forecastEl.classList.remove("hidden");
+}
 
 /* ================= OPTION BREAKPOINT TOGGLE ================= */
 const optionRadios = document.querySelectorAll("input[name='option']");

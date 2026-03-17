@@ -232,7 +232,7 @@
   <div class="card-body d-flex justify-content-between align-items-center">
 	<!-- Left text -->
 	<div>
-		<strong>document.querySelector(".card-body strong").innerText = `Forecasting Active (${year})`;</strong><br>
+		<strong id="forecastTitle">Forecasting Active</strong>
 		<small class="text-muted">Overrides code default</small><br>
 		<small class="text-muted" id="forecastStatusLabel"></small>
 	</div>
@@ -385,25 +385,31 @@ async function syncFromSheet() {
 loadUsers();
 
 /* ---------- Forecasting toggle ---------- */
-async function loadForecastStatus() {
+function loadForecastStatus() {
   const year = new Date().getFullYear();
 
-  const res = await fetch(`${API_BASE}/api/admin/forecast_status?year=${year}`,
-    { headers: authHeaders() }
-  );
-  const data = await res.json();
-  document.getElementById("forecastToggle").checked =
-    data.forecasting_active;
+  document.getElementById("forecastTitle").innerText =
+    `Forecasting Active (${year})`;
+
+  fetch(`${API_BASE}/api/admin/forecast_status?year=${year}`, {
+    headers: authHeaders()
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("forecastToggle").checked =
+      data.forecasting_active;
+  });
 }
 
 async function toggleForecasting(active) {
+  const year = new Date().getFullYear();
+
   const res = await fetch(`${API_BASE}/api/admin/forecast_toggle`, {
     method: "POST",
     headers: authHeaders({
-    "Content-Type": "application/json"
-  }),
-    const year = new Date().getFullYear();
-	body: JSON.stringify({ year, active })
+      "Content-Type": "application/json"
+    }),
+    body: JSON.stringify({ year, active })
   });
 
   if (!res.ok) {
