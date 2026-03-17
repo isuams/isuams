@@ -458,6 +458,7 @@ function updateClock() {
    document.getElementById("verificationPeriod").innerText =
       `Verification Period: ${formatUTC(verificationStart)} 1630UTC to ${formatUTC(verificationEnd)} 1200UTC`;
   }
+}
 
 /* ================= FORECAST PERIOD HELPER ================= */
 function formatUTC(date) {
@@ -470,51 +471,84 @@ function formatUTC(date) {
 setInterval(updateClock, 1000);
 updateClock();
 
-/* === MESSAGE HIDING WHEN FORECASTING IS CLOSED === */
-const forecastEl = document.getElementById("forecastPeriod");
-
-if (closed) {
-  forecastEl.classList.add("hidden");
-} else {
-  forecastEl.classList.remove("hidden");
-}
-
 /* ================= OPTION BREAKPOINT TOGGLE ================= */
 const optionRadios = document.querySelectorAll("input[name='option']");
 const tornadoFields = document.getElementById("tornadoFields");
 
-function toggleRequired(enabled) {
-  ["lat", "lon"].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.required = enabled;
+function updateTornadoFields() {
+  const selected = document.querySelector("input[name='option']:checked");
+  const isTornado = selected && selected.value === "Tornado";
+
+  // Show/hide entire section
+  tornadoFields.classList.toggle("hidden", !isTornado);
+
+  // Fields
+  const city = document.getElementById("city");
+  const lat = document.getElementById("lat");
+  const lon = document.getElementById("lon");
+  const sigTor = document.getElementById("sigTor");
+
+  // Required ONLY for tornado
+  lat.required = isTornado;
+  lon.required = isTornado;
+
+  if (!isTornado) {
+    lat.required = false;
+    lon.required = false;
+  }
+
+  // Enable/disable ALL fields
+  [city, lat, lon, sigTor].forEach(el => {
+    el.disabled = !isTornado;
+
+    // Clear values when switching to "No Tornado"
+    if (!isTornado) {
+      if (el.tagName === "SELECT") {
+        el.selectedIndex = 0;
+      } else {
+        el.value = "";
+      }
+    }
   });
+  
+  map.off("click", handleMapClick);
+
+  if (isTornado) {
+    map.on("click", handleMapClick);
+  }
+  
+  if (!isTornado && marker) {
+    map.removeLayer(marker);
+    marker = null;
+  }
 }
 
+// Event listeners
 optionRadios.forEach(radio => {
-  radio.addEventListener("change", () => {
-    const tornado =
-      radio.value === "Tornado" && radio.checked;
-
-    tornadoFields.classList.toggle("hidden", !tornado);
-    toggleRequired(tornado);
-  });
+  radio.addEventListener("change", updateTornadoFields);
 });
 
 /* ================= MAP ================= */
 const map = L.map("map").setView([39, -98], 4);
+
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap"
 }).addTo(map);
 
 let marker;
-map.on("click", e => {
+
+function handleMapClick(e) {
   const { lat, lng } = e.latlng;
+
   document.getElementById("lat").value = lat.toFixed(6);
   document.getElementById("lon").value = lng.toFixed(6);
 
   if (marker) map.removeLayer(marker);
   marker = L.marker([lat, lng]).addTo(map);
-});
+}
+
+// Initialize on page load
+updateTornadoFields();
 
 /* ================= SUBMIT ================= */
 document.getElementById("forecastForm").addEventListener("submit", async e => {
