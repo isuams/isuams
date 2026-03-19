@@ -35,24 +35,26 @@
       padding: 2rem;
     }
   
-    iframe {
-      width: 100%;
-      border: none;
-      background-color: #fff;
-    }
+    .plotly-frame {
+	  height: 65vh;
+	  min-height: 450px;
+	  max-height: 800px;
+	}
 	
-	.iframe-aag {
-	  margin: 0 auto; /* Centers the iframe horizontally */
-      height: 500px;
-    }
+	.table-frame {
+	  height: 60vh;
+	  min-height: 400px;
+	  max-height: 700px;
+	}
 	
-    .iframe-figure {
-      height: 650px;
-    }
+	iframe {
+	  opacity: 0;
+	  transition: opacity 0.3s ease;
+	}
 
-    .iframe-table {
-      height: 700px;
-    }
+	iframe.loaded {
+	  opacity: 1;
+	}
 
     .card {
       border-radius: 0.75rem;
@@ -267,20 +269,20 @@
 
     <!-- Figures -->
     <div class="card mb-4">
-      <div class="card-header text-center fw-semibold">
-        Forecast Plot
-      </div>
-      <iframe id="figFrame"
-              style="height: 650px;"></iframe>
-    </div>
+	  <div class="card-header text-center fw-semibold">
+		Forecast Plot
+	  </div>
+	  <div class="card-body p-0">
+		<iframe id="figFrame" class="w-100 border-0 plotly-frame"></iframe>
+	  </div>
+	</div>
 
     <!-- Table -->
     <div class="card mb-4">
       <div class="card-header text-center fw-semibold">
         Forecast Table
       </div>
-      <iframe id="tableFrame"
-              style="height: 650px;"></iframe>
+      <iframe id="tableFrame" class="w-100 border-0 table-frame"></iframe>
     </div>
 
   </div>
@@ -341,7 +343,7 @@ async function fileExists(url) {
   if (!figExists && !tableExists) {
     showPlaceholder(
       "Forecast Not Yet Available",
-      "Forecast products are typically available after 1630 UTC."
+      "Forecast products are typically available after 1800 UTC."
     );
     return;
   }
@@ -356,6 +358,8 @@ async function fileExists(url) {
   }
 
   showFrames();
+  
+  figFrame.onload = () => figFrame.classList.add("loaded");
 })();
 </script>
 

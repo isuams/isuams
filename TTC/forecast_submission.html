@@ -328,7 +328,15 @@
       </div>
 
     </div>
-
+	
+	<!-- Email receipt -->
+	<div class="form-check mb-3">
+	  <input class="form-check-input" type="checkbox" id="emailReceipt">
+	  <label class="form-check-label" for="emailReceipt">
+		Email me a receipt of this forecast
+	  </label>
+	</div>
+	
     <div class="text-end">
       <button class="btn btn-primary" style="background-color: var(--btn-color); border: none;" type="submit">Submit Forecast</button>
     </div>
@@ -373,20 +381,16 @@ function updateClock() {
   const submitBtn = form.querySelector("button[type='submit']");
 
   // Show/hide + update message
-  closedMsg.classList.toggle("hidden", false); // always show now
+  closedMsg.classList.toggle("hidden", !closed);
 
   if (closed) {
-    closedMsg.innerHTML =
-      `Forecast submission is currently closed.<br>
-       Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong><br>
-       <br>
-       <strong>Next Forecast Period:</strong>
-       ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
-  } else {
-    closedMsg.innerHTML =
-      `Forecast submission is currently open.<br>
-       Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong>`;
-  }
+	  closedMsg.innerHTML =
+		`Forecast submission is currently closed.<br>
+		 Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong><br>
+		 <br>
+		 <strong>Next Forecast Period:</strong>
+		 ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
+	}
 
   // Disable submit instead of hiding form
   submitBtn.disabled = closed;
@@ -602,7 +606,11 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
   );
 
   if (res.ok) {
-    alert("Forecast submitted!");
+	const wantsEmail = document.getElementById("emailReceipt").checked;
+	alert(wantsEmail
+	  ? "Forecast submitted! A receipt has been emailed to you."
+	  : "Forecast submitted!"
+	);
   } else {
     const err = await res.json();
     alert(err.error || "Submission failed");
@@ -621,6 +629,16 @@ aliasInput.addEventListener("input", () => {
   aliasCount.textContent = aliasInput.value.length;
 });
 
+/* ================= Email Receipt ================= */
+const payload = {
+  option,
+  display_name: document.getElementById("displayName").value,
+  city: document.getElementById("city").value,
+  latitude: document.getElementById("lat").value,
+  longitude: document.getElementById("lon").value,
+  sig_tor: document.getElementById("sigTor").value
+  email_receipt: document.getElementById("emailReceipt").checked
+};
 </script>
 
 <br>
