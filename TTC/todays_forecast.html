@@ -349,17 +349,21 @@ async function fileExists(url) {
   }
 
   // Load frames
+  const figFrame = document.getElementById("figFrame");
+  const tableFrame = document.getElementById("tableFrame");
+
+  figFrame.onload = () => figFrame.classList.add("loaded");
+  tableFrame.onload = () => tableFrame.classList.add("loaded");
+
   if (figExists) {
-    document.getElementById("figFrame").src = figUrl;
+    figFrame.src = figUrl;
   }
 
   if (tableExists) {
-    document.getElementById("tableFrame").src = tableUrl;
+    tableFrame.src = tableUrl;
   }
 
   showFrames();
-  
-  figFrame.onload = () => figFrame.classList.add("loaded");
 })();
 </script>
 

@@ -386,10 +386,14 @@ dateInput.addEventListener("change", async () => {
 	showArchivePlaceholder();
     return;
   }
+  
+  const figFrame = document.getElementById("figFrame");
+  const tableFrame = document.getElementById("tableFrame");
+
+  figFrame.onload = () => figFrame.classList.add("loaded");
+  tableFrame.onload = () => tableFrame.classList.add("loaded");
 
   updateFrames(date);
-  
-  figFrame.onload = () => figFrame.classList.add("loaded");
 });
 
 /* ===============================
