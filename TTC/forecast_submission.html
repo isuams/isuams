@@ -383,15 +383,6 @@ function updateClock() {
   // Show/hide + update message
   closedMsg.classList.toggle("hidden", !closed);
 
-  if (closed) {
-	  closedMsg.innerHTML =
-		`Forecast submission is currently closed.<br>
-		 Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong><br>
-		 <br>
-		 <strong>Next Forecast Period:</strong>
-		 ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
-	}
-
   // Disable submit instead of hiding form
   submitBtn.disabled = closed;
   submitBtn.style.opacity = closed ? "0.5" : "1";
@@ -445,6 +436,15 @@ function updateClock() {
     nextForecastStart.setUTCDate(nextForecastStart.getUTCDate() + 1);
     nextForecastEnd.setUTCDate(nextForecastEnd.getUTCDate() + 1);
   }
+  
+  if (closed) {
+	  closedMsg.innerHTML =
+		`Forecast submission is currently closed.<br>
+		 Forecasts are accepted from <strong>00:00 UTC – 16:00 UTC</strong><br>
+		 <br>
+		 <strong>Next Forecast Period:</strong>
+		 ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
+	}
 
   // ================= UPDATE TEXT =================
   if (closed) {
@@ -576,7 +576,8 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
     city: document.getElementById("city").value,
     latitude: document.getElementById("lat").value,
     longitude: document.getElementById("lon").value,
-    sig_tor: document.getElementById("sigTor").value
+    sig_tor: document.getElementById("sigTor").value,
+    email_receipt: document.getElementById("emailReceipt").checked
   };
 
   if (option === "No Tornado") {
@@ -628,17 +629,6 @@ aliasInput.addEventListener("input", () => {
   }
   aliasCount.textContent = aliasInput.value.length;
 });
-
-/* ================= Email Receipt ================= */
-const payload = {
-  option,
-  display_name: document.getElementById("displayName").value,
-  city: document.getElementById("city").value,
-  latitude: document.getElementById("lat").value,
-  longitude: document.getElementById("lon").value,
-  sig_tor: document.getElementById("sigTor").value,
-  email_receipt: document.getElementById("emailReceipt").checked
-};
 </script>
 
 <br>
