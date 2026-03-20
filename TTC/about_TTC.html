@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About TTC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    :root {
+      --btn-color: #a80084;
+    }
+	
+	.hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-primary"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT -->
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	  <a class="navbar-brand" href="index.html">Home</a>
+	  
+	  <li class="nav-item">
+		<a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+      </li>
+		  
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+      </li>-->
+	  
+	  <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Scores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+		  <a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+		  <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+		  <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+	
+	  <li class="nav-item">
+        <a class="nav-link" href="verification.html">Verification</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Archive
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="scoring_and_metrics.html">Scoring & Metrics</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link active" href="about_TTC.html">About TTC</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="faq.html">FAQs</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+
+      <!-- Logged out -->
+      <li class="nav-item" id="navLogin">
+        <button class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+          Login
+        </button>
+      </li>
+
+      <!-- Logged in -->
+      <li class="nav-item dropdown d-none" id="navUser">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <span id="navUserName"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+
+          <li id="adminLinkContainer" class="d-none">
+            <a class="dropdown-item" href="admin.html">Admin Panel</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="forecast_submission.html">
+              Submit Forecast
+            </a>
+          </li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li>
+            <button class="dropdown-item text-danger" onclick="logout()">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<br>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- prevent default submit + call login() -->
+      <form onsubmit="event.preventDefault(); login();">
+
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="forgot_password.html">Forgot password?</a></small>
+          </div>
+
+          <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-primary"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<main class="flex-fill">
+<!--Welcome-->
+<div id="Welcome" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="color: #000000;"><b>Welcome New and Returning Users!</b></h1>
+				<br>
+				<p>
+				Here is general info for the contest in 2026:</p>
+				<ul>
+					<li>Practice Week -- March 16th to March 20th (scores will not count towards 2026 results)</li>
+					<li>Season 1 -- March 23rd to May 1st</li>
+					<li>Season 2 -- May 4th to June 12th</li>
+				</ul>
+				<p>Expect to see a reminder email about the start of forecasting over the weekend of March 14th-15th.
+				Don't forget to make sure our email isn't filtered by your spam (gmail likes to put us in "promotions").
+				Have no fear new folks, we send a single email a week with a breakdown of new scores.
+				Spamming you is a lot of work, and we'd rather spend our time forecasting and running verification!
+				If you have questions, please check out our FAQs page and/or send us an email.
+				<br>
+				<p>For folks who are new to severe weather forecasting or want to brush up, 
+				our colleagues in the Iowa State Student Chapter of the American Meteorological Society are preparing a Forecasting How-To Page [it will be linked here as soon as possible].</p>
+				<br>
+				Best of luck everyone, and happy forecasting!<br>
+				-TTC Admins
+				</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Who-->
+<div id="Who" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+				<h1 style="color: #000000;"><b>The Five W's</b></h1>
+				<br><br>
+                <h2 style="color: #000000;"><b>Who:</b></h2>
+				<br>
+				<p>This contest is open to anyone and everyone that wants to challenge themselves to improve their forecasting skill in a fun and competitive setting. This contest is free to all users!
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--What-->
+<div id="What" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2 style="color: #000000;"><b>What:</b></h2>
+				<br>
+				<p>We submit forecasts based on whether you think a tornado is likely to occur. 
+				If you think a tornado is likely to occur, you will be asked to enter latitude/longitude coordinates, and whether you think an EF2+ is likely. 
+				We post verification plots and tables based on the resulting weather, as well as tracking scores on stats sheets and leaderboards!</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--When-->
+<div id="When" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 center-block">
+                <h2 text-center style="color: #000000;"><b>When:</b></h2>
+				<br>
+				<ul>
+					<li>We forecast during the Monday-Friday work week from roughly mid-March, to mid-June.</li>
+					<li>Forecasting is split between 2 seasons. The seasons switch around the beginning of May. When we start Season 2, the scoreboards reset! At the end of Season 2, cumulative results are calculated.</li>
+				    <li>Forecasts can be submitted by registered users as many times as they wish within the designated Forecast Window which runs from 00 zulu to 16 zulu time (Day 1).</li>
+					<li>Your forecast should focus on the upcoming day running from 1630 zulu (Day 1) to 12 zulu time (Day 2). This is done to match the Storm Prediction Centers Day 1, 1630z Convective Outlook.</li>
+				    <li>You will see the "Today's Forecast" page update with a map and table of where everyone forecasted around midday.</li>
+					<li>Several days later, after reports and damage assessments have been conducted, we will score everyone's forecasts.</li>
+				</ul>
+				<p>If you are confused about how the forecast and verification periods work, please check out our entry on the FAQ's page: "When do we forecast, and how does the verification period work?"
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Where-->
+<div id="Where" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2 style="color: #000000;"><b>Where:</b></h2>
+				<br>
+				<p>Forecasts should be submitted for lat/lons within the continental United States. 
+				We also break down the contest by regions, this allows forecasters to explore their forecasting accuracy in different climactic environments/topography. 
+				The regions do not affect scoring.
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+		<div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 center-block">
+                <img class="border border-dark float-center" src="images/TTC_Regions.png" width="100%">
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--Why-->
+<div id="Why" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2 style="color: #000000;"><b>Why:</b></h2>
+				<h4 style="color: #000000;">Our Mission Statement</h4>
+				<br>
+				<p>This contest was designed to provide an educational experience in tornado forecasting through an objective, cooperative, and competitive environment. 
+                    This is achieved by bringing together forecasters from all walks of life within the field of meteorology, to discuss/refine their tornado forecasting techniques, submit forecasts, and receive verification. 
+                    The ultimate goal of the contest is to help current and future professionals improve public safety.</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--What's New in 20XX-->
+<div id="whats new" >
+    <div class="container">
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-8">
+			    <h1 style="color: #000000;">What's New in 2026?</h1>
+				<br>
+                <p>
+                    This year, we have increased the functionality of our site and we are making a small change to scoring.
+				</p>
+				<ul class="ps-3">
+					<li>Registration is being handled by a new database. This will be the last time you will ever need register for TTC!</li>
+					<li>Forecast submissions are more integrated and the built-in map now inputs lat/lons on your click!</li>
+					<li>To qualify for the "lone wolf" bonus, you previously had to be 100+ miles from the next nearest forecaster.
+					Due to the increase in forecasters participating (forecast density), we are lowering that threshold to 75+ miles this year.</li>
+				</ul>
+				<p>
+					With the dynamic handling of registrations, and locking forecasting behind a login, work behind the scenes will be greatly streamlined
+					This should help us get things done in a more timely manner!
+                </p> 
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--horizontal line break-->
+<div id="line" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 center-block">
+               <hr class="bg-danger border-2 border-top border-dark center-block" /> 
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<!--history-->
+<div id="history" >
+    <div class="container">
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-8">
+			    <h1 style="color: #000000;">The History of TTC</h1>
+				<br>
+                <p>
+                    This contest was started in 2017 as a way for a handful of Iowa State University students to practice their forecasting skills while enjoying a bit of competition. 
+					We started with about 15 people, a text message group, and rudimentory plots. From there, we expanded into the use of GIS, python coding, and website hosting.
+					Growth isn't always easy, and meteorology folks are an interests group of people to work with, but we are happy to say that we consistently have hundreds of users year-on-year and are always looking to reach more folks and improve the TTC experience!
+                </p> 
+            </div>
+			<div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<br>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
+</footer>
+
+</body>
+</html>

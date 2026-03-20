@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TTC – FAQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5.3 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    defer></script>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    :root {
+      --btn-color: #a80084;
+    }
+	
+	.hero {
+      background-image: url('images/IMG_3237.jpg');
+      background-size: cover;
+      background-position: center 60%;
+      color: white;
+    }
+	
+	.hero-overlay {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 2rem;
+    }
+
+    .faq-question {
+	  background-color: #ffffff;
+      color: var(--btn-color);
+	}
+
+	.faq-question:not(.collapsed) {
+      background-color: #6b6b6b;
+	  color: #ffffff;
+	}
+
+	.faq-answer {
+	  background-color: #ebebeb;
+	}
+  </style>
+</head>
+
+<body class="bg-light">
+<script src="js/navbar-auth.js"></script>
+
+<!-- ================= HEADER ================= -->
+<header class="hero mb-2">
+  <div class="hero-overlay">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="images/ttc_logo.png" width="90" alt="TTC Logo">
+        </div>
+        <div class="col-6 text-end">
+          <a href="https://meteor.geol.iastate.edu/ams/"
+             target="_blank"
+             class="btn btn-primary"
+             style="background-color: var(--btn-color); border: none;">
+            Return to<br>Iowa State AMS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT -->
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	  <a class="navbar-brand" href="index.html">Home</a>
+	  
+	  <li class="nav-item">
+		<a class="nav-link" href="todays_forecast.html">Today's Forecast</a>
+      </li>
+		  
+	  <!--<li class="nav-item">
+            <a class="nav-link" href="leaderboards.html">Leaderboards</a> /* Start of Season 1 */
+      </li>-->
+	  
+	  <!--<li class="nav-item dropdown"> /*  Used at the start of Season 2  */
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Scores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item" href="leaderboards.html">Current Leaderboards</a> /*  Season 2 */
+		  <a class="dropdown-item" href="final_results.html">Final Results</a> /*  End of Contest */
+		  <a class="dropdown-item" href="results_szn1.html">Season 1 Results</a> /*  Season 2 */
+		  <a class="dropdown-item" href="results_szn2.html">Season 2 Results</a> /*  End of Contest */
+          </div>
+        </li>-->
+	
+	  <li class="nav-item">
+        <a class="nav-link" href="verification.html">Verification</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          Archive
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="archive2025.html">2025</a></li>
+          <li><a class="dropdown-item" href="archive2024.html">2024</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="scoring_and_metrics.html">Scoring & Metrics</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="about_TTC.html">About TTC</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="faq.html">FAQs</a>
+      </li>
+
+    </ul>
+
+    <!-- RIGHT -->
+    <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+
+      <!-- Logged out -->
+      <li class="nav-item" id="navLogin">
+        <button class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+          Login
+        </button>
+      </li>
+
+      <!-- Logged in -->
+      <li class="nav-item dropdown d-none" id="navUser">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <span id="navUserName"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+
+          <li id="adminLinkContainer" class="d-none">
+            <a class="dropdown-item" href="admin.html">Admin Panel</a>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="forecast_submission.html">
+              Submit Forecast
+            </a>
+          </li>
+
+          <li><hr class="dropdown-divider"></li>
+
+          <li>
+            <button class="dropdown-item text-danger" onclick="logout()">
+              Logout
+            </button>
+          </li>
+
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+<br>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Tornado Target Contest Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- prevent default submit + call login() -->
+      <form onsubmit="event.preventDefault(); login();">
+
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <div class="text-end">
+            <small><a href="forgot_password.html">Forgot password?</a></small>
+          </div>
+
+          <div class="text-end">
+            <small><a href="registration.html">New Member Signup</a></small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit"
+                  class="btn btn-primary"
+                  style="background-color: var(--btn-color); border: none;">
+            Login
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<main class="flex-fill">
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+
+  <div class="accordion" id="faqAccordion">
+	<!-- FAQ 0 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading0">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse0">
+          I'm new to severe weather forecasting, where can I get some pointers?
+        </button>
+      </h2>
+      <div id="faqCollapse0"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          Here is a list of useful sites for viewing forecast information and models:
+		  <ul class="mt-2 ps-3">
+		    <li>
+			  <a href="https://www.spc.noaa.gov/products/outlook/" target="_blank">
+                Storm Prediction Center - Severe Weather Outlooks
+              </a>
+			</li>
+			<li>
+			  <a href="https://www.pivotalweather.com/model.php" target="_blank">
+                Pivotal Weather - Models
+              </a>
+			</li>
+			<li>
+			  <a href="https://weather.cod.edu/satrad/?parms=continental-conus-truecolor-24-0-100-1&checked=map&colorbar=data" target="_blank">
+                College of DuPage - Satellite Viewer
+              </a>
+			</li>
+			
+			<li>
+			  <a href="https://aviationweather.gov/gfa/#obs" target="_blank">
+                Aviation Weather Center - Surface Observations + Reflectivity
+              </a>
+			</li>
+		  </ul>
+		  <br>
+		  Collaborators with the Iowa State Student Chapter of the American Meteorological Society are preparing a Forecasting How-To Page [it will be linked here as soon as possible]
+        </div>
+      </div>
+    </div>
+
+
+	<!-- FAQ 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading1">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse1">
+          How do I submit a forecast?
+        </button>
+      </h2>
+      <div id="faqCollapse1"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          If you have an account, travel to the top right side of screen (along the navigation bar),
+		  and login to your account! If you don't have an account, you can find the registration page in the same spot.
+		  Then, after you are logged in, you will see the login button be replaced by your name. 
+		  If you click on your name, you will see "Submit Forecast" in the dropdown menu, that's where you can go to make your forecast!
+        </div>
+      </div>
+    </div>
+
+	<!-- FAQ 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading2">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse2">
+          When do we forecast, and how does the verification period work?
+        </button>
+      </h2>
+      <div id="faqCollapse2"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          <p>During the forecasting season, we submit forecasts for Monday through Friday events. Forecasts are submitted between 00z - 16z.
+		  Those forecasts are scored from 1630z - 12z the next day. This matches the forecast verification period of the Storm Prediction Center's 1630z Day 1 Outlook.
+		  From this, you can see that there is no overlap between when we can submit forecasts, and when those forecasts are scored. 
+		  There is overlap between the previous day's forecast verification, and when the next day's forecast period begins! This is a bit easier to understand if we use a table!</p>
+		  <br>
+          <table class="table text-left">
+            <thead>
+              <tr>
+                <th scope="col-sm-2">Day of the Week</th>
+                <th scope="col-sm-2">Forecast Period (Zulu)</th>
+				<th scope="col-sm-2">Verification Period (Zulu)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Monday</th>
+                <td>00z Mon - 16z Mon</td>
+				<td>1630z Mon - 12z Tue</td>
+              </tr>
+              <tr>
+                <th scope="row">Tuesday</th>
+                <td>00z Tue - 16z Tue</td>
+				<td>1630z Tue - 12z Wed</td>
+              </tr>
+              <tr>
+                <th scope="row">Wednesday</th>
+                <td>00z Wed - 16z Wed</td>
+				<td>1630z Wed - 12z Thu</td>
+              </tr>
+              <tr>
+                <th scope="row">Thursday</th>
+                <td>00z Thu - 16z Thu</td>
+				<td>1630z Thu - 12z Fri</td>
+              </tr>
+              <tr>
+                <th scope="row">Friday</th>
+                <td>00z Fri - 16z Fri</td>
+				<td>1630z Fri - 12z Sat</td>
+              </tr>
+            </tbody>
+          </table>
+		  <br>
+		  <p>As further help, here is the same table, but in Central Time!</p>
+		  <table class="table text-left">
+            <thead>
+              <tr>
+                <th scope="col-sm-2">Day of the Week</th>
+                <th scope="col-sm-2">Forecast Period (CDT)</th>
+				<th scope="col-sm-2">Verification Period (CDT)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Monday</th>
+                <td>7pm Sun - 11am Mon</td>
+				<td>1130am Mon - 7am Tue</td>
+              </tr>
+              <tr>
+                <th scope="row">Tuesday</th>
+                <td>7pm Mon - 11am Tue</td>
+				<td>1130am Tue - 7am Wed</td>
+              </tr>
+              <tr>
+                <th scope="row">Wednesday</th>
+                <td>7pm Tue - 11am Wed</td>
+				<td>1130am Wed - 7am Thu</td>
+              </tr>
+              <tr>
+                <th scope="row">Thursday</th>
+                <td>7pm Wed - 11am Thu</td>
+				<td>1130am Thu - 7am Fri</td>
+              </tr>
+              <tr>
+                <th scope="row">Friday</th>
+                <td>7pm Thu - 11am Fri</td>
+				<td>1130am Fri - 7am Sat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading3">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse3">
+          How do I amend my forecast?
+        </button>
+      </h2>
+      <div id="faqCollapse3"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          All you have to do to amend your forecast is submit a forecast again!
+          The system will overwrite your previous forecast as long as it is
+          submitted before 16z. You may amend your forecast as many times as you like.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading4">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse4">
+          My forecast point isn’t on the map where I expected. What do I do?
+        </button>
+      </h2>
+      <div id="faqCollapse4"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          <p><strong>First, the easy cases:</strong></p>
+          <ul>
+            <li>If you entered a city/town, the admin can correct it.</li>
+            <li>If no city was provided, the forecast cannot be corrected.</li>
+          </ul>
+
+          <p>
+            This is usually caused by an incorrect latitude or longitude.
+            While admins may catch errors, forecasters are responsible for quality controlling their work.
+          </p>
+
+          <p><strong>More complex scenario:</strong></p>
+          <ol>
+            <li>City provided → forecast moved to intended location.</li>
+            <li>No city provided → forecast stands as entered.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading5">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse5">
+          How are landspout tornadoes scored?
+        </button>
+      </h2>
+      <div id="faqCollapse5"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          We remove SPC storm reports explicitly labeled as landspouts or gustnadoes.
+          However, if a landspout is included in an NWS tornado warning
+          (&lt; 15 miles), it will be used for scoring.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 6 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading6">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse6">
+          Where does the verification data come from?
+        </button>
+      </h2>
+      <div id="faqCollapse6"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          <ol>
+            <li>SPC filtered tornado reports</li>
+            <li>NOAA Damage Assessment Toolkit data (when available)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 7 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading7">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse7">
+          I want to unsubscribe from the contest. What should I do?
+        </button>
+      </h2>
+      <div id="faqCollapse7"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          Follow
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeygmqOZI4d7ym4x65xIV8iXNfy4OZcj0eumh5OIK5hiRkCQA/viewform?usp=sf_link"
+             target="_blank">
+            this link
+          </a>
+          to unsubscribe.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 8 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading8">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse8">
+          How is the “Consensus” score calculated?
+        </button>
+      </h2>
+      <div id="faqCollapse8"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          The average of all forecast points is treated as a single forecast
+          and scored accordingly.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 9 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading9">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse9">
+          How do I report misconduct?
+        </button>
+      </h2>
+      <div id="faqCollapse9"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          Use this misconduct reporting form: 
+		  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf61zNFO1vl2auCF9H7cOy6hifcIo3MIXxELZLfxGq15HkwaQ/viewform?usp=sf_link" 
+		  target="_blank">
+		  Form Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 10 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading10">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse10">
+		  I skipped Discord during registration process, but now I am interested in joining. How can I join?
+        </button>
+      </h2>
+      <div id="faqCollapse10"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+		  Email us and we’ll update your registration, then send you an invite!
+        </div>
+      </div>
+    </div>
+	
+	<!-- FAQ 11 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading11">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse11">
+		  I need to update something in my registration, what do I need to do?
+        </button>
+      </h2>
+      <div id="faqCollapse11"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+		  Email us and we can make updates to your registration.
+        </div>
+      </div>
+    </div>
+	
+	<!-- FAQ 12 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeading12">
+        <button class="accordion-button collapsed faq-question"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapse12">
+		  I found a bug while using the website, I'd like to report it! 
+        </button>
+      </h2>
+      <div id="faqCollapse12"
+           class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+		  Please use this form to help us resolve it! <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbQ_jv8U2H92GNPlCh_nFSTEKIsZ2CeMSocBZVVv1JDua62A/viewform?usp=sf_link"
+             target="_blank">
+            Reporting Form
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-secondary bg-opacity-25 py-4 text-center mt-auto">
+  <div class="container">
+    <div class="text-muted">Tornado Target Contest 2026</div>
+    <div class="text-muted">TornadoTargetContest@gmail.com</div>
+  </div>
+</footer>
+
+</body>
+</html>

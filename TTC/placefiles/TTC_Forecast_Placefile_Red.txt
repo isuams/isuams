@@ -1,0 +1,50 @@
+Refresh: 5                     
+Threshold: 999                     
+Title: TTC Forecast Locations Red 2026_03_20                      
+Font: 1, 11, 0, "Courier New"                     
+IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
+
+Object: 39.320857,-81.551342
+Icon: 0,0,180,1,1, "Name: Blake brink\n39.32N 81.55W\nTarget City: Vienna, WV"
+End:
+
+Object: 40.117219,-79.550856
+Icon: 0,0,180,1,1, "Name: Jonah (only PA tor of TTC incoming)\n40.12N 79.55W\nTarget City: Mount Pleasant, PA"
+End:
+
+Object: 40.396764,-80.145264
+Icon: 0,0,180,1,1, "Name: Kay\n40.40N 80.15W\nTarget City: nan"
+End:
+
+Object: 59.01616,-163.791132
+Icon: 0,0,180,1,1, "Name: trust\n59.02N 163.79W\nTarget City: nan"
+End:
+
+Object: 38.188167,-80.015788
+Icon: 0,0,180,1,1, "Name: BabbWx\n38.19N 80.02W\nTarget City: Huntersville"
+End:
+
+Object: 39.485946,-79.723492
+Icon: 0,0,180,1,1, "Name: JetStreamJami\n39.49N 79.72W\nTarget City: Kingwood, WV"
+End:
+
+Object: 39.972723,-80.677585
+Icon: 0,0,180,1,1, "Name: Earth Central\n39.97N 80.68W\nTarget City: nan"
+End:
+
+Object: 39.887809,-80.639648
+Icon: 0,0,180,1,1, "Name: Luke Chapman\n39.89N 80.64W\nTarget City: nan"
+End:
+
+Object: 39.272765,-81.534845
+Icon: 0,0,180,1,1, "Name: Test- test is this thing on?\n39.27N 81.53W\nTarget City: Parkersburg, WV"
+End:
+
+Object: 40.37971,-79.811897
+Icon: 0,0,180,1,1, "Name: random birdfart day maybe?\n40.38N 79.81W\nTarget City: North Versailles PA"
+End:
+
+Object: 39.58950291022528,-79.80854095402474
+Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n39.59N 79.81W\nTarget City: nan"
+End:
+
