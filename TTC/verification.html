@@ -43,15 +43,21 @@
 	
 	.iframe-aag {
 	  margin: 0 auto; /* Centers the iframe horizontally */
-      height: 500px;
+      height: 57vh;
+	  min-height: 300px;
+	  max-height: 475px;
     }
 	
     .iframe-figure {
-      height: 650px;
+      height: 87vh;
+	  min-height: 450px;
+	  max-height: 725px;
     }
 
     .iframe-table {
-      height: 700px;
+	  height: 92vh;
+	  min-height: 400px;
+	  max-height: 775px;
     }
 
     .card {
@@ -284,7 +290,7 @@
     <!-- Figures -->
     <div class="card mb-4">
       <div class="card-header fw-semibold text-center">
-        Event Figures
+        Interactive Plot
       </div>
       <iframe
         id="figFrame"

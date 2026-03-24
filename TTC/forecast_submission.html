@@ -62,6 +62,11 @@
 	
 	#map { height: 400px; }
     .hidden { display: none; }
+	
+	#forecastForm.disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
   </style>
 </head>
 
@@ -362,6 +367,15 @@ fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
 });
 
 /* ================= UTC CLOCK + TIME GATING ================= */
+let lastClosedState = null;
+const forecastPeriodEl = document.getElementById("forecastPeriod");
+const verificationPeriodEl = document.getElementById("verificationPeriod");
+const closedMsg = document.getElementById("closedMessage");
+const submitBtn = document
+  .getElementById("forecastForm")
+  .querySelector("button[type='submit']");
+const formEl = document.getElementById("forecastForm");
+
 function updateClock() {
   const now = new Date();
   document.getElementById("utcClock").innerText =
@@ -375,10 +389,19 @@ function updateClock() {
     hour < 16 || (hour === 16 && minute === 0);
 
   const closed = !open;
-
-  const form = document.getElementById("forecastForm");
-  const closedMsg = document.getElementById("closedMessage");
-  const submitBtn = form.querySelector("button[type='submit']");
+  
+  // Reload page if open/closed state changes
+  if (lastClosedState !== null && lastClosedState !== closed) {
+    location.reload();
+  }
+  lastClosedState = closed;
+  
+  // Form disable/opacity
+  if (closed) {
+    formEl.classList.add("disabled");
+  } else {
+    formEl.classList.remove("disabled");
+  }
 
   // Show/hide + update message
   closedMsg.classList.toggle("hidden", !closed);
@@ -388,29 +411,33 @@ function updateClock() {
   submitBtn.style.opacity = closed ? "0.5" : "1";
   submitBtn.style.cursor = closed ? "not-allowed" : "pointer";
   
+  document
+    .querySelectorAll("#forecastForm input, #forecastForm select, #forecastForm button")
+    .forEach(el => {
+      el.disabled = closed;
+    });
+  
   // ================= PERIOD TEXT =================
-  const nowUTC = new Date();
-
   // Forecast period (today)
   const forecastStart = new Date(Date.UTC(
-    nowUTC.getUTCFullYear(),
-    nowUTC.getUTCMonth(),
-    nowUTC.getUTCDate(),
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate(),
     0, 0
   ));
 
   const forecastEnd = new Date(Date.UTC(
-    nowUTC.getUTCFullYear(),
-    nowUTC.getUTCMonth(),
-    nowUTC.getUTCDate(),
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate(),
     16, 0
   ));
 
   // Verification period
   const verificationStart = new Date(Date.UTC(
-    nowUTC.getUTCFullYear(),
-    nowUTC.getUTCMonth(),
-    nowUTC.getUTCDate(),
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate(),
     16, 30
   ));
 
@@ -449,17 +476,15 @@ function updateClock() {
   // ================= UPDATE TEXT =================
   if (closed) {
     // Only show next forecast period
-    document.getElementById("forecastPeriod").innerText = "";
-
-    document.getElementById("verificationPeriod").innerText =
-      `Next Forecast Period: ${formatUTC(nextForecastStart)} 0000UTC to 1600UTC`;
+    forecastPeriodEl.innerText = "";
+    verificationPeriodEl.innerText = "";
 
   } else {
     // Show normal forecast + verification
-    document.getElementById("forecastPeriod").innerText =
+    forecastPeriodEl.innerText =
       `Forecast Period: ${formatUTC(forecastStart)} 0000UTC to 1600UTC`;
 
-   document.getElementById("verificationPeriod").innerText =
+    verificationPeriodEl.innerText =
       `Verification Period: ${formatUTC(verificationStart)} 1630UTC to ${formatUTC(verificationEnd)} 1200UTC`;
   }
 }
@@ -559,16 +584,44 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
   e.preventDefault();
 
   const submitBtn = e.target.querySelector("button[type='submit']");
+
+  // If disabled due to forecasting closed, stop
   if (submitBtn.disabled) {
     alert(
-      "Forecasting is not open yet.\n\n" +
-      "Forecasting begins March 16 at 00:00 UTC.\n" +
-      "Please check back soon!"
+      "Forecasting is not open right now.\n\n" +
+      "Forecasts are accepted from 00:00–16:00 UTC."
     );
     return;
   }
 
+  // Prevent double submission AFTER check
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Submitting...";
+  submitBtn.style.opacity = "0.6";
+  submitBtn.style.cursor = "not-allowed";
+
   const option = document.querySelector("input[name='option']:checked").value;
+  
+  // Prevent forecasting outside the CONUS
+  if (option === "Tornado") {
+    const lat = parseFloat(document.getElementById("lat").value);
+    const lon = parseFloat(document.getElementById("lon").value);
+
+    if (
+	  lat < 24.5 || lat > 49.5 ||
+	  lon < -125 || lon > -66
+    ) {
+      alert("Latitude/Longitude must be within the Continental United States.");
+
+      // Re-enable button
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Forecast";
+      submitBtn.style.opacity = "1";
+      submitBtn.style.cursor = "pointer";
+
+      return;
+    }
+  }
 
   const payload = {
     option,
@@ -612,9 +665,22 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
 	  ? "Forecast submitted! A receipt has been emailed to you."
 	  : "Forecast submitted!"
 	);
+	
+	// Re-enable button so user can edit/resubmit
+    submitBtn.disabled = false;
+    submitBtn.innerText = "Submit Forecast";
+    submitBtn.style.opacity = "1";
+    submitBtn.style.cursor = "pointer";
+	
   } else {
     const err = await res.json();
     alert(err.error || "Submission failed");
+	
+	// Re-enable button on failure
+    submitBtn.disabled = false;
+    submitBtn.innerText = "Submit Forecast";
+    submitBtn.style.opacity = "1";
+    submitBtn.style.cursor = "pointer";
   }
 });
 
