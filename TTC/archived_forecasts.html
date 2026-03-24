@@ -51,17 +51,21 @@
 	  cursor: pointer;
 	}
   
-    .plotly-frame {
-	  height: 87vh;
+    .iframe-figure {
+	  width: 100%;
+	  border: none;
+      height: 87vh;
 	  min-height: 450px;
 	  max-height: 725px;
-	}
-	
-	.table-frame {
+    }
+
+    .iframe-table {
+	  width: 100%;
+	  border: none;
 	  height: 92vh;
 	  min-height: 400px;
 	  max-height: 775px;
-	}
+    }
 	
 	iframe {
 	  opacity: 0;
@@ -289,7 +293,7 @@
 		Forecast Plot
 	  </div>
 	  <div class="card-body p-0">
-		<iframe id="figFrame" class="w-100 border-0 plotly-frame"></iframe>
+		<iframe id="figFrame" class="iframe-figure"></iframe>
 	  </div>
 	</div>
 
@@ -298,7 +302,7 @@
       <div class="card-header fw-semibold text-center">
         Forecast Table
       </div>
-      <iframe id="tableFrame" class="w-100 border-0 table-frame"></iframe>
+      <iframe id="tableFrame" class="iframe-table"></iframe>
     </div>
 
   </div>

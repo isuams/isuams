@@ -42,19 +42,25 @@
     }
 	
 	.iframe-aag {
-	  margin: 0 auto; /* Centers the iframe horizontally */
-      height: 57vh;
+	  width: 100%;
+	  border: none;
+	  margin: 0 auto;
+	  height: 57vh;
 	  min-height: 300px;
 	  max-height: 475px;
-    }
+	}
 	
     .iframe-figure {
+	  width: 100%;
+	  border: none;
       height: 87vh;
 	  min-height: 450px;
 	  max-height: 725px;
     }
 
     .iframe-table {
+	  width: 100%;
+	  border: none;
 	  height: 92vh;
 	  min-height: 400px;
 	  max-height: 775px;
@@ -280,11 +286,7 @@
       <div class="card-header fw-semibold text-center">
         <!--At a Glance-->
       </div>
-      <iframe
-        id="aagFrame"
-        class="w-100"
-        style="height: 400px; border: none;"
-      ></iframe>
+      <iframe id="aagFrame" class="iframe-aag"></iframe>
     </div>
 
     <!-- Figures -->
@@ -292,11 +294,7 @@
       <div class="card-header fw-semibold text-center">
         Interactive Plot
       </div>
-      <iframe
-        id="figFrame"
-        class="w-100"
-        style="height: 500px; border: none;"
-      ></iframe>
+	  <iframe id="figFrame" class="iframe-figure"></iframe>
     </div>
 
     <!-- Verification Table -->
@@ -304,11 +302,7 @@
       <div class="card-header fw-semibold text-center">
         Verification Table
       </div>
-      <iframe
-        id="tableFrame"
-        class="w-100"
-        style="height: 600px; border: none;"
-      ></iframe>
+	  <iframe id="tableFrame" class="iframe-table"></iframe>
     </div>
 
   </div>
