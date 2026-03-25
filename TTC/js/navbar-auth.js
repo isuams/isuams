@@ -35,12 +35,13 @@ async function login() {
  * Log out current user
  */
 function logout() {
+  localStorage.removeItem("api_token");
+
   fetch(`${API_BASE}/api/logout`, {
     method: "POST",
   }).finally(() => {
-    window.location.reload();
+    window.location.href = "index.html";
   });
-  localStorage.removeItem("api_token");
 }
 
 /**
@@ -62,9 +63,10 @@ async function updateNavbar() {
 	}
 
     if (!res.ok) {
-      showLoggedOut();
-      return;
-    }
+	  localStorage.removeItem("api_token");
+	  showLoggedOut();
+	  return;
+	}
 
     const user = await res.json();
     showLoggedIn(user);

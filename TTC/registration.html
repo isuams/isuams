@@ -423,8 +423,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   /* Redirect if user is already logged in */
   const token = localStorage.getItem("api_token");
+
   if (token) {
-    window.location.href = "index.html";
+    fetch("https://tortargetcontest.pythonanywhere.com/api/me", {
+      headers: { Authorization: "Bearer " + token }
+    })
+    .then(res => {
+      if (res.ok) {
+        window.location.href = "index.html";
+      } else {
+        localStorage.removeItem("api_token");
+      }
+    });
   }
   
   /* ===============================
