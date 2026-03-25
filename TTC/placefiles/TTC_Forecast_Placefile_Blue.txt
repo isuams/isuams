@@ -1,6 +1,14 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Blue 2026_03_24                      
+Title: TTC Forecast Locations Blue 2026_03_25                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
+
+Object: 41.002,-85.944
+Icon: 0,0,180,1,3, "Name: Climate Emergency\n41.00N 85.94W\nTarget City: Disko, IN"
+End:
+
+Object: 41.323201,-103.883972
+Icon: 0,0,180,1,3, "Name: NickTWeather\n41.32N 103.88W\nTarget City: Scottsbluff, NE"
+End:
 
