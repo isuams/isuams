@@ -1,14 +1,554 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Blue 2026_03_25                      
+Title: TTC Forecast Locations Blue 2026_03_26                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 41.002,-85.944
-Icon: 0,0,180,1,3, "Name: Climate Emergency\n41.00N 85.94W\nTarget City: Disko, IN"
+Object: 41.041323,-83.655825
+Icon: 0,0,180,1,3, "Name: Vortilia\n41.04N 83.66W\nTarget City: nan"
 End:
 
-Object: 41.323201,-103.883972
-Icon: 0,0,180,1,3, "Name: NickTWeather\n41.32N 103.88W\nTarget City: Scottsbluff, NE"
+Object: 40.826696,-81.962814
+Icon: 0,0,180,1,3, "Name: Colin Young\n40.83N 81.96W\nTarget City: Wooster, OH"
+End:
+
+Object: 40.972277,-81.791024
+Icon: 0,0,180,1,3, "Name: MysticVortexNerd\n40.97N 81.79W\nTarget City: Rittman, OH"
+End:
+
+Object: 40.999176,-85.773182
+Icon: 0,0,180,1,3, "Name: First legit tor day!!!\n41.00N 85.77W\nTarget City: West Manchester, IN"
+End:
+
+Object: 41.307729,-82.983082
+Icon: 0,0,180,1,3, "Name: Joseph Patton\n41.31N 82.98W\nTarget City: Clyde, OH"
+End:
+
+Object: 40.832921,-84.926376
+Icon: 0,0,180,1,3, "Name: man I had elevated supercells (Doss)\n40.83N 84.93W\nTarget City: Decatur, IN"
+End:
+
+Object: 41.24,-81.449
+Icon: 0,0,180,1,3, "Name: Bradnado\n41.24N 81.45W\nTarget City: Hudson, OH"
+End:
+
+Object: 40.966208,-84.840546
+Icon: 0,0,180,1,3, "Name: James_Summers\n40.97N 84.84W\nTarget City: Monroeville, IN"
+End:
+
+Object: 41.370574,-85.402293
+Icon: 0,0,180,1,3, "Name: jumpwx\n41.37N 85.40W\nTarget City: Albion, IN"
+End:
+
+Object: 40.985183,-84.199734
+Icon: 0,0,180,1,3, "Name: WxDrifter\n40.99N 84.20W\nTarget City: Kalida, OH"
+End:
+
+Object: 40.7297951385404,-84.13227934344388
+Icon: 0,0,180,1,3, "Name: TheBetterDoge\n40.73N 84.13W\nTarget City: Lima OH"
+End:
+
+Object: 40.602093,-83.973827
+Icon: 0,0,180,1,3, "Name: Koji\n40.60N 83.97W\nTarget City: Waynesfield, OH"
+End:
+
+Object: 41.443531,-86.147919
+Icon: 0,0,180,1,3, "Name: Addison Bramini\n41.44N 86.15W\nTarget City: nan"
+End:
+
+Object: 40.87287,-83.915875
+Icon: 0,0,180,1,3, "Name: CPekar\n40.87N 83.92W\nTarget City: Bluffton, OH"
+End:
+
+Object: 41.330549,-81.304321
+Icon: 0,0,180,1,3, "Name: Jim Franc\n41.33N 81.30W\nTarget City: Aurora, OH"
+End:
+
+Object: 40.071031,-84.5037
+Icon: 0,0,180,1,3, "Name: Dr. Snoz Rent\n40.07N 84.50W\nTarget City: nan"
+End:
+
+Object: 41.080308,-84.997769
+Icon: 0,0,180,1,3, "Name: Jonah H.\n41.08N 85.00W\nTarget City: New Haven, IN"
+End:
+
+Object: 40.828825,-84.931183
+Icon: 0,0,180,1,3, "Name: Reid Buchanan\n40.83N 84.93W\nTarget City: Decatur, IN"
+End:
+
+Object: 41.029773,-83.648949
+Icon: 0,0,180,1,3, "Name: SKEW-T Crusader\n41.03N 83.65W\nTarget City: nan"
+End:
+
+Object: 40.98765,-80.650387
+Icon: 0,0,180,1,3, "Name: The Hawk\n40.99N 80.65W\nTarget City: Youngstown, OH"
+End:
+
+Object: 41.010993,-84.056396
+Icon: 0,0,180,1,3, "Name: MattLaBonteWx\n41.01N 84.06W\nTarget City: Ottawa, OH"
+End:
+
+Object: 40.917966,-84.703903
+Icon: 0,0,180,1,3, "Name: Veer “oops all (mostly) elevated” T\n40.92N 84.70W\nTarget City: (Chaser) Convoy, OH"
+End:
+
+Object: 41.049324,-85.130997
+Icon: 0,0,180,1,3, "Name: WheelieWeather\n41.05N 85.13W\nTarget City: Fort Wayne,Indiana "
+End:
+
+Object: 41.640592,-80.15213
+Icon: 0,0,180,1,3, "Name: Scout\n41.64N 80.15W\nTarget City: Meadville, Pennsylvania"
+End:
+
+Object: 41.245337,-84.036827
+Icon: 0,0,180,1,3, "Name: deldotdel\n41.25N 84.04W\nTarget City: Hamler, OH"
+End:
+
+Object: 39.838068,-84.901428
+Icon: 0,0,180,1,3, "Name: Jason B\n39.84N 84.90W\nTarget City: Richmond, OH"
+End:
+
+Object: 40.832,-84.0861
+Icon: 0,0,180,1,3, "Name: snido7\n40.83N 84.09W\nTarget City: Cairo, OH"
+End:
+
+Object: 41.201596,-83.898935
+Icon: 0,0,180,1,3, "Name: Vortex broken\n41.20N 83.90W\nTarget City: nan"
+End:
+
+Object: 40.700553,-82.369995
+Icon: 0,0,180,1,3, "Name: GregForbesGlasses\n40.70N 82.37W\nTarget City: nan"
+End:
+
+Object: 40.577659,-85.640831
+Icon: 0,0,180,1,3, "Name: Chris Yates\n40.58N 85.64W\nTarget City: Marion, IN"
+End:
+
+Object: 40.495421,-85.842553
+Icon: 0,0,180,1,3, "Name: dancing-through-the-lightning-strikes\n40.50N 85.84W\nTarget City: nan"
+End:
+
+Object: 41.310824,-85.366516
+Icon: 0,0,180,1,3, "Name: INDIANA'S DOOM\n41.31N 85.37W\nTarget City: nan"
+End:
+
+Object: 41.55839775769681,-80.48632240492948
+Icon: 0,0,180,1,3, "Name: jbean45\n41.56N 80.49W\nTarget City: Westford, PA"
+End:
+
+Object: 40.165013,-84.972169
+Icon: 0,0,180,1,3, "Name: MESSY AHHH SET UP\n40.17N 84.97W\nTarget City: Winchester"
+End:
+
+Object: 41.128194,-85.447309
+Icon: 0,0,180,1,3, "Name: Anthony Haberman\n41.13N 85.45W\nTarget City: nan"
+End:
+
+Object: 40.976512,-83.396549
+Icon: 0,0,180,1,3, "Name: Bryce Shelton\n40.98N 83.40W\nTarget City: nan"
+End:
+
+Object: 41.232792,-86.896362
+Icon: 0,0,180,1,3, "Name: Evan St. Clair\n41.23N 86.90W\nTarget City: nan"
+End:
+
+Object: 40.9298,-85.3131
+Icon: 0,0,180,1,3, "Name: Paul Austin\n40.93N 85.31W\nTarget City: Zanesville, IN"
+End:
+
+Object: 40.733384,-82.5
+Icon: 0,0,180,1,3, "Name: GoHornets22\n40.73N 82.50W\nTarget City: nan"
+End:
+
+Object: 40.354917,-82.441406
+Icon: 0,0,180,1,3, "Name: RevelWX\n40.35N 82.44W\nTarget City: Akron, Ohio"
+End:
+
+Object: 41.246362,-81.64596
+Icon: 0,0,180,1,3, "Name: MasDogWx\n41.25N 81.65W\nTarget City: Richfield, OH"
+End:
+
+Object: 39.339962,-87.158203
+Icon: 0,0,180,1,3, "Name: Riley Johnson\n39.34N 87.16W\nTarget City: Ashboro, IN"
+End:
+
+Object: 40.921977,-81.095195
+Icon: 0,0,180,1,3, "Name: Reilly Dibble\n40.92N 81.10W\nTarget City: Alliance, OH"
+End:
+
+Object: 41.055926,-84.30336
+Icon: 0,0,180,1,3, "Name: Kyle’s in Ohio but probably not gonna see shit\n41.06N 84.30W\nTarget City: Dupont, OH"
+End:
+
+Object: 41.345371,-81.397705
+Icon: 0,0,180,1,3, "Name: toefur\n41.35N 81.40W\nTarget City: Reminderville, OH"
+End:
+
+Object: 41.633295,-80.16243
+Icon: 0,0,180,1,3, "Name: Jeff Frame\n41.63N 80.16W\nTarget City: Meadville, PA"
+End:
+
+Object: 40.99,-85.81
+Icon: 0,0,180,1,3, "Name: Climate Emergency\n40.99N 85.81W\nTarget City: nan"
+End:
+
+Object: 40.792603,-86.093964
+Icon: 0,0,180,1,3, "Name: Cold Core Cowboy\n40.79N 86.09W\nTarget City: Peru, IN"
+End:
+
+Object: 40.8,-81.9
+Icon: 0,0,180,1,3, "Name: Pent\n40.80N 81.90W\nTarget City: nan"
+End:
+
+Object: 41.038517,-83.669037
+Icon: 0,0,180,1,3, "Name: Firenado\n41.04N 83.67W\nTarget City: nan"
+End:
+
+Object: 40.80078,-84.775027
+Icon: 0,0,180,1,3, "Name: Something about NoTor in shambles\n40.80N 84.78W\nTarget City: Wren, OH"
+End:
+
+Object: 41.534897,-80.870876
+Icon: 0,0,180,1,3, "Name: Josh I\n41.53N 80.87W\nTarget City: nan"
+End:
+
+Object: 41.177362,-81.219177
+Icon: 0,0,180,1,3, "Name: Oliver Knapton\n41.18N 81.22W\nTarget City: Ravenna, OH"
+End:
+
+Object: 39.459788,-87.484131
+Icon: 0,0,180,1,3, "Name: roonski03\n39.46N 87.48W\nTarget City: nan"
+End:
+
+Object: 41.03706,-83.6503
+Icon: 0,0,180,1,3, "Name: Not Olivia Macko\n41.04N 83.65W\nTarget City: Findlay, OH"
+End:
+
+Object: 40.9,-85.16
+Icon: 0,0,180,1,3, "Name: Logan Giles\n40.90N 85.16W\nTarget City: Ada, OH"
+End:
+
+Object: 40.511711,-83.522186
+Icon: 0,0,180,1,3, "Name: Adrian Z\n40.51N 83.52W\nTarget City: Mount Victory, OH"
+End:
+
+Object: 40.79,-82.03
+Icon: 0,0,180,1,3, "Name: Sebastian Pelt\n40.79N 82.03W\nTarget City: Wooster, OH"
+End:
+
+Object: 40.53249,-83.394133
+Icon: 0,0,180,1,3, "Name: ef1\n40.53N 83.39W\nTarget City: nan"
+End:
+
+Object: 41.02200592409663,-83.92206809921778
+Icon: 0,0,180,1,3, "Name: Jeremy Clarkson\n41.02N 83.92W\nTarget City: Gilboa, Ohio"
+End:
+
+Object: 41.20558,-85.749838
+Icon: 0,0,180,1,3, "Name: Victor George\n41.21N 85.75W\nTarget City: Warsaw, IN"
+End:
+
+Object: 41.137606,-80.006895
+Icon: 0,0,180,1,3, "Name: Always bet on NW PA\n41.14N 80.01W\nTarget City: nan"
+End:
+
+Object: 41.29450681087856,-84.37572199147255
+Icon: 0,0,180,1,3, "Name: Garrett Statum\n41.29N 84.38W\nTarget City: Defiance, OH"
+End:
+
+Object: 40.807315,-82.974808
+Icon: 0,0,180,1,3, "Name: Nick Krasznavolgyi\n40.81N 82.97W\nTarget City: Bucyrus, OH"
+End:
+
+Object: 41.407853,-80.382175
+Icon: 0,0,180,1,3, "Name: August McHugh\n41.41N 80.38W\nTarget City: Greenville PA"
+End:
+
+Object: 41.468555,-81.796264
+Icon: 0,0,180,1,3, "Name: Twok\n41.47N 81.80W\nTarget City: Cleveland, OH"
+End:
+
+Object: 41.681083,-80.040101
+Icon: 0,0,180,1,3, "Name: brix\n41.68N 80.04W\nTarget City: Blooming Valley"
+End:
+
+Object: 40.169829,-87.253321
+Icon: 0,0,180,1,3, "Name: BabbWx\n40.17N 87.25W\nTarget City: Stone Bluff, Indiana"
+End:
+
+Object: 39.985129,-85.392536
+Icon: 0,0,180,1,3, "Name: Caleb O'Gara\n39.99N 85.39W\nTarget City: nan"
+End:
+
+Object: 40.9049103,-81.4575376
+Icon: 0,0,180,1,3, "Name: Ben Price\n40.90N 81.46W\nTarget City: McDonaldsville, OH"
+End:
+
+Object: 40.849549,-84.328145
+Icon: 0,0,180,1,3, "Name: Kaylee (hi from Ankeny, IA conference)\n40.85N 84.33W\nTarget City: Delphos, Ohio"
+End:
+
+Object: 40.850417,-79.667208
+Icon: 0,0,180,1,3, "Name: Andrew Griffiths\n40.85N 79.67W\nTarget City: Craigsville, PA"
+End:
+
+Object: 40.441852,-86.907349
+Icon: 0,0,180,1,3, "Name: ajax13\n40.44N 86.91W\nTarget City: Lafayette, IN"
+End:
+
+Object: 41.389019,-81.14399
+Icon: 0,0,180,1,3, "Name: JetStreamJami\n41.39N 81.14W\nTarget City: Troy Township, OH"
+End:
+
+Object: 41.713007,-80.065786
+Icon: 0,0,180,1,3, "Name: Gkeller99\n41.71N 80.07W\nTarget City: nan"
+End:
+
+Object: 40.767811,-84.109223
+Icon: 0,0,180,1,3, "Name: Roch\n40.77N 84.11W\nTarget City: Lima, OH"
+End:
+
+Object: 41.05072,-82.725849
+Icon: 0,0,180,1,3, "Name: LET'S go (JSschrantz)\n41.05N 82.73W\nTarget City: Willard, OH"
+End:
+
+Object: 40.975213,-84.868677
+Icon: 0,0,180,1,3, "Name: RationalFox\n40.98N 84.87W\nTarget City: Monroeville"
+End:
+
+Object: 40.872454,-84.580994
+Icon: 0,0,180,1,3, "Name: Bengalsfan\n40.87N 84.58W\nTarget City: Van Wert, OH"
+End:
+
+Object: 40.335474,-84.408388
+Icon: 0,0,180,1,3, "Name: Richard Cirone\n40.34N 84.41W\nTarget City: nan"
+End:
+
+Object: 40.735177,-82.790909
+Icon: 0,0,180,1,3, "Name: Drawablefish\n40.74N 82.79W\nTarget City: nan"
+End:
+
+Object: 41.103775,-80.661449
+Icon: 0,0,180,1,3, "Name: Berg\n41.10N 80.66W\nTarget City: Youngstown, OH"
+End:
+
+Object: 41.086698,-81.241322
+Icon: 0,0,180,1,3, "Name: timotheedinkins\n41.09N 81.24W\nTarget City: Rootstown, OH"
+End:
+
+Object: 40.69338,-84.646748
+Icon: 0,0,180,1,3, "Name: Forecaster O'Toole\n40.69N 84.65W\nTarget City: Rockford, Ohio"
+End:
+
+Object: 40.792291,-85.816629
+Icon: 0,0,180,1,3, "Name: Alex Hamilton\n40.79N 85.82W\nTarget City: Wabash, IN"
+End:
+
+Object: 39.169536,-86.541341
+Icon: 0,0,180,1,3, "Name: Yes Tor\n39.17N 86.54W\nTarget City: Bloomington IN"
+End:
+
+Object: 40.548863,-85.671387
+Icon: 0,0,180,1,3, "Name: Damon Lemke\n40.55N 85.67W\nTarget City: nan"
+End:
+
+Object: 40.479389,-85.748302
+Icon: 0,0,180,1,3, "Name: Mophie Siller \n40.48N 85.75W\nTarget City: why am I forecasting yes tor for this???"
+End:
+
+Object: 41.189953,-79.975399
+Icon: 0,0,180,1,3, "Name: John Male\n41.19N 79.98W\nTarget City: Barkeyville, PA"
+End:
+
+Object: 40.798802,-87.415466
+Icon: 0,0,180,1,3, "Name: AJ Clever\n40.80N 87.42W\nTarget City: nan"
+End:
+
+Object: 39.921323,-87.200677
+Icon: 0,0,180,1,3, "Name: Probs wont happen but funny hehe\n39.92N 87.20W\nTarget City: Rockville"
+End:
+
+Object: 40.8345,-80.2042
+Icon: 0,0,180,1,3, "Name: Alex N.\n40.83N 80.20W\nTarget City: Fombell, PA"
+End:
+
+Object: 41.238293,-85.8528
+Icon: 0,0,180,1,3, "Name: Hydramane\n41.24N 85.85W\nTarget City: Warsaw, IN"
+End:
+
+Object: 40.823371,-83.514633
+Icon: 0,0,180,1,3, "Name: Fives\n40.82N 83.51W\nTarget City: nan"
+End:
+
+Object: 41.25494,-81.850376
+Icon: 0,0,180,1,3, "Name: Hoang Do\n41.25N 81.85W\nTarget City: Brunswick, OH"
+End:
+
+Object: 41.376934,-85.524179
+Icon: 0,0,180,1,3, "Name: watch me whip, watch me ney ney\n41.38N 85.52W\nTarget City: Ney, OH"
+End:
+
+Object: 40.767428,-83.822937
+Icon: 0,0,180,1,3, "Name: WeatherboySuper\n40.77N 83.82W\nTarget City: Ada, OH"
+End:
+
+Object: 41.337587,-84.432547
+Icon: 0,0,180,1,3, "Name: Alexander Hunt\n41.34N 84.43W\nTarget City: Defiance, OH"
+End:
+
+Object: 41.31,-85.14
+Icon: 0,0,180,1,3, "Name: Josh Jaeger\n41.31N 85.14W\nTarget City: Garrett, Indiana"
+End:
+
+Object: 41.481216,-82.02262
+Icon: 0,0,180,1,3, "Name: Storm shielding my house lol \n41.48N 82.02W\nTarget City: Avon Lake, OH"
+End:
+
+Object: 40.739136,-85.173225
+Icon: 0,0,180,1,3, "Name: Roman Fariello\n40.74N 85.17W\nTarget City: Bluffton, IN"
+End:
+
+Object: 41.207478,-83.900706
+Icon: 0,0,180,1,3, "Name: ecreightonwx\n41.21N 83.90W\nTarget City: Deshler, OH"
+End:
+
+Object: 41.352878,-81.34964
+Icon: 0,0,180,1,3, "Name: OHWXisweird\n41.35N 81.35W\nTarget City: Bainbridge, OH"
+End:
+
+Object: 40.851942,-84.359894
+Icon: 0,0,180,1,3, "Name: Blake Barber\n40.85N 84.36W\nTarget City: Delphos, OH"
+End:
+
+Object: 41.324576,-82.088013
+Icon: 0,0,180,1,3, "Name: EF-Femme\n41.32N 82.09W\nTarget City: nan"
+End:
+
+Object: 40.9168767,-84.7168834
+Icon: 0,0,180,1,3, "Name: WxDownYonder\n40.92N 84.72W\nTarget City: Convoy, OH"
+End:
+
+Object: 40.573632,-83.172144
+Icon: 0,0,180,1,3, "Name: Rockies\n40.57N 83.17W\nTarget City: nan"
+End:
+
+Object: 41.29,-81.0
+Icon: 0,0,180,1,3, "Name: JavaHurricane\n41.29N 81.00W\nTarget City: Warren, OH"
+End:
+
+Object: 41.391921,-79.8349
+Icon: 0,0,180,1,3, "Name: Computer\n41.39N 79.83W\nTarget City: Franklin, PA"
+End:
+
+Object: 41.070228,-85.155029
+Icon: 0,0,180,1,3, "Name: Luke Chapman\n41.07N 85.16W\nTarget City: nan"
+End:
+
+Object: 41.006114,-85.187988
+Icon: 0,0,180,1,3, "Name: Stephen Szulborski\n41.01N 85.19W\nTarget City: Fort Wayne, IN"
+End:
+
+Object: 40.657824,-84.954357
+Icon: 0,0,180,1,3, "Name: Roland\n40.66N 84.95W\nTarget City: Berne"
+End:
+
+Object: 41.24020117250032,-83.64580587628649
+Icon: 0,0,180,1,3, "Name: timcigar\n41.24N 83.65W\nTarget City: Cygnet, OH"
+End:
+
+Object: 40.6,-86.9
+Icon: 0,0,180,1,3, "Name: Vince\n40.60N 86.90W\nTarget City: nan"
+End:
+
+Object: 41.017225,-83.483903
+Icon: 0,0,180,1,3, "Name: Stormchaser007\n41.02N 83.48W\nTarget City: Findlay, OH"
+End:
+
+Object: 40.704869,-83.387561
+Icon: 0,0,180,1,3, "Name: Donovan Fry\n40.70N 83.39W\nTarget City: Marseilles, OH"
+End:
+
+Object: 40.537182,-83.045873
+Icon: 0,0,180,1,3, "Name: Dave Gagliano\n40.54N 83.05W\nTarget City: nan"
+End:
+
+Object: 40.05495,-86.841431
+Icon: 0,0,180,1,3, "Name: Valerie Hewitt\n40.05N 86.84W\nTarget City: Crawfordsville, IN"
+End:
+
+Object: 40.481,-82.543
+Icon: 0,0,180,1,3, "Name: Alexis Severson\n40.48N 82.54W\nTarget City: Fredericktown, OH "
+End:
+
+Object: 41.867516,-80.134277
+Icon: 0,0,180,1,3, "Name: NickTWeather\n41.87N 80.13W\nTarget City: Edinboro, PA"
+End:
+
+Object: 40.04,-87.23
+Icon: 0,0,180,1,3, "Name: Road trippin’ Lizard\n40.04N 87.23W\nTarget City: Indiana somewhere "
+End:
+
+Object: 40.69,-85.69
+Icon: 0,0,180,1,3, "Name: IL WF 69\n40.69N 85.69W\nTarget City: Upland, IN"
+End:
+
+Object: 41.008079,-85.133057
+Icon: 0,0,180,1,3, "Name: Joey Beachel\n41.01N 85.13W\nTarget City: Fort Wayne, IN"
+End:
+
+Object: 41.0261,-83.105
+Icon: 0,0,180,1,3, "Name: DaveFlo\n41.03N 83.11W\nTarget City: Melmore, OH"
+End:
+
+Object: 40.508709,-85.072632
+Icon: 0,0,180,1,3, "Name: VELOCITY "Velocity Aliasing" ALIASING\n40.51N 85.07W\nTarget City: nan"
+End:
+
+Object: 41.064443,-86.213817
+Icon: 0,0,180,1,3, "Name: Alex Voss\n41.06N 86.21W\nTarget City: nan"
+End:
+
+Object: 40.54607,-85.637417
+Icon: 0,0,180,1,3, "Name: KinghSingh\n40.55N 85.64W\nTarget City: Marion IN"
+End:
+
+Object: 40.885892,-85.505905
+Icon: 0,0,180,1,3, "Name: First yestor of the season\n40.89N 85.51W\nTarget City: Huntington IN"
+End:
+
+Object: 40.968285,-83.654556
+Icon: 0,0,180,1,3, "Name: TDGWx\n40.97N 83.65W\nTarget City: nan"
+End:
+
+Object: 40.771588,-84.322128
+Icon: 0,0,180,1,3, "Name: tailswx\n40.77N 84.32W\nTarget City: Spencerville, OH"
+End:
+
+Object: 41.461384,-80.74608
+Icon: 0,0,180,1,3, "Name: Lucas Huang\n41.46N 80.75W\nTarget City: Greene, OH"
+End:
+
+Object: 41.3316,-84.9046
+Icon: 0,0,180,1,3, "Name: Quincy Vagell\n41.33N 84.90W\nTarget City: St. Joe, IN"
+End:
+
+Object: 41.467557,-84.552962
+Icon: 0,0,180,1,3, "Name: Wyatt Van Dyke\n41.47N 84.55W\nTarget City: Bryan, Ohio"
+End:
+
+Object: 41.395561,-80.952109
+Icon: 0,0,180,1,3, "Name: SilasJenkinsWx\n41.40N 80.95W\nTarget City: nan"
+End:
+
+Object: 40.91529938659487,-83.7462484083235
+Icon: 0,0,180,1,3, "Name: Forecast Consensus\n40.92N 83.75W\nTarget City: nan"
+End:
+
+Object: 40.75485804929786,-83.1325501828227
+Icon: 0,0,180,1,3, "Name: 12Z Nadocast Centroid\n40.75N 83.13W\nTarget City: nan"
+End:
+
+Object: 40.91555722787037,-82.44397267106267
+Icon: 0,0,180,1,3, "Name: 14Z Nadocast Centroid\n40.92N 82.44W\nTarget City: nan"
 End:
 
