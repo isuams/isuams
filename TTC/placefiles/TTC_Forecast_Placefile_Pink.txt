@@ -1,10 +1,38 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Pink 2026_03_27                      
+Title: TTC Forecast Locations Pink 2026_03_30                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 39.103,-84.512
-Icon: 0,0,180,1,4, "Name: Bookworm\n39.10N 84.51W\nTarget City: Cincinnati, OH"
+Object: 41.456519,-81.523404
+Icon: 0,0,180,1,4, "Name: Kyle's Ohio Birdfart\n41.46N 81.52W\nTarget City: Some golf course in Cleveland"
+End:
+
+Object: 41.078535,-91.658206
+Icon: 0,0,180,1,4, "Name: Richard Cirone\n41.08N 91.66W\nTarget City: nan"
+End:
+
+Object: 42.719167,-85.833188
+Icon: 0,0,180,1,4, "Name: Michael Kubinski\n42.72N 85.83W\nTarget City: nan"
+End:
+
+Object: 41.70583,-92.556319
+Icon: 0,0,180,1,4, "Name: random landspout of doom and despair\n41.71N 92.56W\nTarget City: Malcom Iowa"
+End:
+
+Object: 42.64,-84.3
+Icon: 0,0,180,1,4, "Name: Tobias Leonard\n42.64N 84.30W\nTarget City: Williamston, MI"
+End:
+
+Object: 41.590925,-90.331924
+Icon: 0,0,180,1,4, "Name: It is the Great Navinder\n41.59N 90.33W\nTarget City: Le Claire IA"
+End:
+
+Object: 42.8585229427671,-85.3225185639248
+Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n42.86N 85.32W\nTarget City: nan"
+End:
+
+Object: 41.10064907250614,-86.27120795539403
+Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n41.10N 86.27W\nTarget City: nan"
 End:
 
