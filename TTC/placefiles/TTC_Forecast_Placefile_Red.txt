@@ -1,38 +1,354 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Red 2026_03_30                      
+Title: TTC Forecast Locations Red 2026_03_31                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 41.456519,-81.523404
-Icon: 0,0,180,1,1, "Name: Kyle's Ohio Birdfart\n41.46N 81.52W\nTarget City: Some golf course in Cleveland"
+Object: 41.933546,-79.637146
+Icon: 0,0,180,1,1, "Name: Colin Young\n41.93N 79.64W\nTarget City: Corry, PA"
 End:
 
-Object: 41.078535,-91.658206
-Icon: 0,0,180,1,1, "Name: Richard Cirone\n41.08N 91.66W\nTarget City: nan"
+Object: 42.407929,-77.223794
+Icon: 0,0,180,1,1, "Name: MysticVortexNerd\n42.41N 77.22W\nTarget City: Hammondsport, NY"
 End:
 
-Object: 42.719167,-85.833188
-Icon: 0,0,180,1,1, "Name: Michael Kubinski\n42.72N 85.83W\nTarget City: nan"
+Object: 40.69,-80.88
+Icon: 0,0,180,1,1, "Name: Karson\n40.69N 80.88W\nTarget City: Millport, OH"
 End:
 
-Object: 41.70583,-92.556319
-Icon: 0,0,180,1,1, "Name: random landspout of doom and despair\n41.71N 92.56W\nTarget City: Malcom Iowa"
+Object: 42.27554698449365,-78.67153566149683
+Icon: 0,0,180,1,1, "Name: I LOVE MCV FORECASTING IN MARCH RAHH (doss)\n42.28N 78.67W\nTarget City: Ellicottville, NY"
 End:
 
-Object: 42.64,-84.3
-Icon: 0,0,180,1,1, "Name: Tobias Leonard\n42.64N 84.30W\nTarget City: Williamston, MI"
+Object: 42.77,-77.49
+Icon: 0,0,180,1,1, "Name: jumpwx\n42.77N 77.49W\nTarget City: Honeoye, NY"
 End:
 
-Object: 41.590925,-90.331924
-Icon: 0,0,180,1,1, "Name: It is the Great Navinder\n41.59N 90.33W\nTarget City: Le Claire IA"
+Object: 41.956271,-85.323772
+Icon: 0,0,180,1,1, "Name: WxDrifter\n41.96N 85.32W\nTarget City: Colon, MI"
 End:
 
-Object: 42.8585229427671,-85.3225185639248
-Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n42.86N 85.32W\nTarget City: nan"
+Object: 42.039298,-77.661194
+Icon: 0,0,180,1,1, "Name: Griffin134\n42.04N 77.66W\nTarget City: nan"
 End:
 
-Object: 41.10064907250614,-86.27120795539403
-Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n41.10N 86.27W\nTarget City: nan"
+Object: 42.41983106194336,-76.84693376848313
+Icon: 0,0,180,1,1, "Name: TheBetterDoge\n42.42N 76.85W\nTarget City: Burdett, NY"
+End:
+
+Object: 41.951907,-84.856188
+Icon: 0,0,180,1,1, "Name: QLCS Slopfest\n41.95N 84.86W\nTarget City: Quincy, MI"
+End:
+
+Object: 42.21129,-77.40477
+Icon: 0,0,180,1,1, "Name: Sal\n42.21N 77.40W\nTarget City: Cameron, NY"
+End:
+
+Object: 42.190659,-78.960114
+Icon: 0,0,180,1,1, "Name: Jim Franc\n42.19N 78.96W\nTarget City: Randolph, NY"
+End:
+
+Object: 42.288027,-78.661068
+Icon: 0,0,180,1,1, "Name: Jonah (always bet on NY)\n42.29N 78.66W\nTarget City: Ellicottville, NY"
+End:
+
+Object: 42.077253,-78.429937
+Icon: 0,0,180,1,1, "Name: WNY always gets it done\n42.08N 78.43W\nTarget City: Olean, NY"
+End:
+
+Object: 42.305276,-78.016478
+Icon: 0,0,180,1,1, "Name: The Hawk\n42.31N 78.02W\nTarget City: nan"
+End:
+
+Object: 42.408375,-77.057705
+Icon: 0,0,180,1,1, "Name: Veer (amended this like 5 times NY don’t fail me)\n42.41N 77.06W\nTarget City: Tyrone, NY"
+End:
+
+Object: 41.205523,-77.228394
+Icon: 0,0,180,1,1, "Name: Scout\n41.21N 77.23W\nTarget City: nan"
+End:
+
+Object: 42.263479,-76.203232
+Icon: 0,0,180,1,1, "Name: GregForbesGlasses\n42.26N 76.20W\nTarget City: nan"
+End:
+
+Object: 40.772945,-84.068413
+Icon: 0,0,180,1,1, "Name: Chris Yates\n40.77N 84.07W\nTarget City: Lima, OH"
+End:
+
+Object: 42.255369534348205,-77.78917886020162
+Icon: 0,0,180,1,1, "Name: jbean45\n42.26N 77.79W\nTarget City: Alfred, NY"
+End:
+
+Object: 40.99,-88.14
+Icon: 0,0,180,1,1, "Name: Bunger\n40.99N 88.14W\nTarget City: Cabery, IL"
+End:
+
+Object: 42.019904,-77.629395
+Icon: 0,0,180,1,1, "Name: Evan St. Clair\n42.02N 77.63W\nTarget City: nan"
+End:
+
+Object: 41.922035,-84.62265
+Icon: 0,0,180,1,1, "Name: RevelWX\n41.92N 84.62W\nTarget City: Hillsdale, Ohio"
+End:
+
+Object: 42.362381,-78.6075
+Icon: 0,0,180,1,1, "Name: MasDogWx\n42.36N 78.61W\nTarget City: N of Ashford, NY"
+End:
+
+Object: 42.20663,-78.14564
+Icon: 0,0,180,1,1, "Name: Kyle Hugeback\n42.21N 78.15W\nTarget City: Friendship, NY"
+End:
+
+Object: 42.087352,-71.449585
+Icon: 0,0,180,1,1, "Name: frog\n42.09N 71.45W\nTarget City: Bellingham MA"
+End:
+
+Object: 41.463597,-85.589674
+Icon: 0,0,180,1,1, "Name: Jeff Frame\n41.46N 85.59W\nTarget City: Ligonier, IN"
+End:
+
+Object: 42.066419,-79.266357
+Icon: 0,0,180,1,1, "Name: Pent\n42.07N 79.27W\nTarget City: nan"
+End:
+
+Object: 41.038499,-83.669045
+Icon: 0,0,180,1,1, "Name: Firenado\n41.04N 83.67W\nTarget City: nan"
+End:
+
+Object: 42.298421,-78.004303
+Icon: 0,0,180,1,1, "Name: Josh I\n42.30N 78.00W\nTarget City: nan"
+End:
+
+Object: 42.073201,-84.006271
+Icon: 0,0,180,1,1, "Name: Logan Giles\n42.07N 84.01W\nTarget City: Macon, MI"
+End:
+
+Object: 42.024953,-78.380909
+Icon: 0,0,180,1,1, "Name: EF1 - 95 3" branches down\n42.02N 78.38W\nTarget City: nan"
+End:
+
+Object: 42.222111,-78.120763
+Icon: 0,0,180,1,1, "Name: Braxton Banks\n42.22N 78.12W\nTarget City: Friendship, NY"
+End:
+
+Object: 41.13,-86.45
+Icon: 0,0,180,1,1, "Name: Sebastian Pelt\n41.13N 86.45W\nTarget City: Monterey, IN"
+End:
+
+Object: 42.305366,-77.10049
+Icon: 0,0,180,1,1, "Name: there'll be like 3 EF1s\n42.31N 77.10W\nTarget City: nan"
+End:
+
+Object: 42.327115,-77.744209
+Icon: 0,0,180,1,1, "Name: Jeremy Clarkson\n42.33N 77.74W\nTarget City: Almond, NY"
+End:
+
+Object: 41.90161,-84.545975
+Icon: 0,0,180,1,1, "Name: Kelly Rose\n41.90N 84.55W\nTarget City: Osseo, MI"
+End:
+
+Object: 42.348649,-77.658356
+Icon: 0,0,180,1,1, "Name: Peter Corman\n42.35N 77.66W\nTarget City: Hornell, New York"
+End:
+
+Object: 42.28917565494075,-77.21577619037132
+Icon: 0,0,180,1,1, "Name: Garrett Statum\n42.29N 77.22W\nTarget City: Savona, NY"
+End:
+
+Object: 42.327434,-77.661055
+Icon: 0,0,180,1,1, "Name: Nick Krasznavolgyi\n42.33N 77.66W\nTarget City: Hornell, NY"
+End:
+
+Object: 41.008964,-85.499573
+Icon: 0,0,180,1,1, "Name: Twok\n41.01N 85.50W\nTarget City: nan"
+End:
+
+Object: 35.191449,-98.259352
+Icon: 0,0,180,1,1, "Name: brix forgot to forecast almost all of last week\n35.19N 98.26W\nTarget City: Gracemont, OK"
+End:
+
+Object: 41.983598,-79.517258
+Icon: 0,0,180,1,1, "Name: Caleb O'Gara\n41.98N 79.52W\nTarget City: nan"
+End:
+
+Object: 42.3916215,-78.1024154
+Icon: 0,0,180,1,1, "Name: Ben Price\n42.39N 78.10W\nTarget City: Caneadea"
+End:
+
+Object: 42.333635,-77.312959
+Icon: 0,0,180,1,1, "Name: Kaylee\n42.33N 77.31W\nTarget City: Bath, NY"
+End:
+
+Object: 42.307607,-78.016394
+Icon: 0,0,180,1,1, "Name: Andrew Griffiths\n42.31N 78.02W\nTarget City: Angelica, NY"
+End:
+
+Object: 42.15699,-78.827591
+Icon: 0,0,180,1,1, "Name: JetStreamJami\n42.16N 78.83W\nTarget City: Salamanca, NY"
+End:
+
+Object: 42.118997,-77.944565
+Icon: 0,0,180,1,1, "Name: Roch\n42.12N 77.94W\nTarget City: Wellsville, NY"
+End:
+
+Object: 42.158091,-76.820526
+Icon: 0,0,180,1,1, "Name: Slop Slop Slop Fest (JSchrantz)\n42.16N 76.82W\nTarget City: Horseheads, NY"
+End:
+
+Object: 42.410907,-77.056303
+Icon: 0,0,180,1,1, "Name: Bengalsfan\n42.41N 77.06W\nTarget City: Tyrone, New York"
+End:
+
+Object: 41.148265,-82.577469
+Icon: 0,0,180,1,1, "Name: Richard Cirone\n41.15N 82.58W\nTarget City: nan"
+End:
+
+Object: 43.058026,-77.636175
+Icon: 0,0,180,1,1, "Name: Berg\n43.06N 77.64W\nTarget City: Henriette, NY"
+End:
+
+Object: 42.050002,-78.63636
+Icon: 0,0,180,1,1, "Name: timotheedinkins\n42.05N 78.64W\nTarget City: Limestone, NY"
+End:
+
+Object: 42.325656,-83.710391
+Icon: 0,0,180,1,1, "Name: Zegery\n42.33N 83.71W\nTarget City: nan"
+End:
+
+Object: 42.657321,-76.201059
+Icon: 0,0,180,1,1, "Name: Today Lowk Kinda Sucks. I Love Northeast SLAWP\n42.66N 76.20W\nTarget City: Homer NY"
+End:
+
+Object: 41.677888,-79.880229
+Icon: 0,0,180,1,1, "Name: Alex Hamilton\n41.68N 79.88W\nTarget City: Downtown Townville, PA"
+End:
+
+Object: 41.310965,-85.318556
+Icon: 0,0,180,1,1, "Name: Michael Kubinski\n41.31N 85.32W\nTarget City: nan"
+End:
+
+Object: 42.067232,-79.074097
+Icon: 0,0,180,1,1, "Name: Wxbill\n42.07N 79.07W\nTarget City: nan"
+End:
+
+Object: 40.869219,-83.668213
+Icon: 0,0,180,1,1, "Name: Mophie Siller ah ah why\n40.87N 83.67W\nTarget City: Why"
+End:
+
+Object: 41.986307,-84.349235
+Icon: 0,0,180,1,1, "Name: QLCSlop\n41.99N 84.35W\nTarget City: Addison, MI"
+End:
+
+Object: 41.525833,-83.063507
+Icon: 0,0,180,1,1, "Name: AJ Clever\n41.53N 83.06W\nTarget City: nan"
+End:
+
+Object: 41.927484,-84.981079
+Icon: 0,0,180,1,1, "Name: Michigan \n41.93N 84.98W\nTarget City: coldwater michigan"
+End:
+
+Object: 41.999742,-80.291935
+Icon: 0,0,180,1,1, "Name: Alex N.\n42.00N 80.29W\nTarget City: nan"
+End:
+
+Object: 42.363279,-76.544037
+Icon: 0,0,180,1,1, "Name: Hoang Do\n42.36N 76.54W\nTarget City: SW of Ithaca, NY"
+End:
+
+Object: 42.57,-75.4
+Icon: 0,0,180,1,1, "Name: Olivia Macko\n42.57N 75.40W\nTarget City: Amblerville"
+End:
+
+Object: 42.223532,-78.036404
+Icon: 0,0,180,1,1, "Name: WeatherboySuper\n42.22N 78.04W\nTarget City: Belmont, NY"
+End:
+
+Object: 41.31,-85.14
+Icon: 0,0,180,1,1, "Name: Josh Jaeger\n41.31N 85.14W\nTarget City: Garrett, Indiana"
+End:
+
+Object: 42.289501,-77.246311
+Icon: 0,0,180,1,1, "Name: We drink soda, we eat pizza \n42.29N 77.25W\nTarget City: Bath, NY"
+End:
+
+Object: 42.460138,-78.932991
+Icon: 0,0,180,1,1, "Name: Roman Fariello\n42.46N 78.93W\nTarget City: nan"
+End:
+
+Object: 42.140984,-77.647047
+Icon: 0,0,180,1,1, "Name: Blake Barber\n42.14N 77.65W\nTarget City: nan"
+End:
+
+Object: 41.922781,-84.633731
+Icon: 0,0,180,1,1, "Name: Stephen Szulborski\n41.92N 84.63W\nTarget City: Hillsdale, Mi"
+End:
+
+Object: 41.980521,-84.664936
+Icon: 0,0,180,1,1, "Name: Roland\n41.98N 84.66W\nTarget City: nan"
+End:
+
+Object: 42.29686125108024,-77.21431365361921
+Icon: 0,0,180,1,1, "Name: tim "never doubt an mcv" cigar\n42.30N 77.21W\nTarget City: Savona, NY"
+End:
+
+Object: 39.19182,-81.685911
+Icon: 0,0,180,1,1, "Name: Go-Big-Or-Go-Bust\n39.19N 81.69W\nTarget City: nan"
+End:
+
+Object: 42.244639,-74.379952
+Icon: 0,0,180,1,1, "Name: Donovan Fry\n42.24N 74.38W\nTarget City: Lexington, NY"
+End:
+
+Object: 41.661,-80.317
+Icon: 0,0,180,1,1, "Name: Alexis Severson\n41.66N 80.32W\nTarget City: Harmonsburg, PA"
+End:
+
+Object: 42.29,-77.43
+Icon: 0,0,180,1,1, "Name: Lizzie Tirone-Hugeback\n42.29N 77.43W\nTarget City: nan"
+End:
+
+Object: 41.96,-84.69
+Icon: 0,0,180,1,1, "Name: IL WF 69\n41.96N 84.69W\nTarget City: Jonesville, MI"
+End:
+
+Object: 41.911236,-86.009999
+Icon: 0,0,180,1,1, "Name: N. S. \n41.91N 86.01W\nTarget City: Cassopolis, MI"
+End:
+
+Object: 42.20972,-75.975125
+Icon: 0,0,180,1,1, "Name: Qlcs slop ahoy\n42.21N 75.98W\nTarget City: Binghamton airport "
+End:
+
+Object: 42.77605,-77.749433
+Icon: 0,0,180,1,1, "Name: TDGWx\n42.78N 77.75W\nTarget City: nan"
+End:
+
+Object: 42.154414,-77.060722
+Icon: 0,0,180,1,1, "Name: Lucas Huang\n42.15N 77.06W\nTarget City: Corning, NY"
+End:
+
+Object: 34.6537,-100.0384
+Icon: 0,0,180,1,1, "Name: Quincy Vagell\n34.65N 100.04W\nTarget City: Childress, TX"
+End:
+
+Object: 42.044799,-77.459106
+Icon: 0,0,180,1,1, "Name: Kieran MG\n42.04N 77.46W\nTarget City: nan"
+End:
+
+Object: 42.25459834400981,-77.78519479050411
+Icon: 0,0,180,1,1, "Name: SilasJenkinsWx\n42.25N 77.79W\nTarget City: Alfred, NY"
+End:
+
+Object: 41.82622323012876,-80.22861501576996
+Icon: 0,0,180,1,1, "Name: Forecast Consensus\n41.83N 80.23W\nTarget City: nan"
+End:
+
+Object: 41.43034509993096,-80.79693205964699
+Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n41.43N 80.80W\nTarget City: nan"
+End:
+
+Object: 41.952110591622464,-79.17187741637504
+Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n41.95N 79.17W\nTarget City: nan"
 End:
 
