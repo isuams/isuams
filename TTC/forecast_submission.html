@@ -371,7 +371,7 @@ let lastClosedState = null;
 const forecastPeriodEl = document.getElementById("forecastPeriod");
 const verificationPeriodEl = document.getElementById("verificationPeriod");
 const closedMsg = document.getElementById("closedMessage");
-const submitBtn = document
+const globalsubmitBtn = document
   .getElementById("forecastForm")
   .querySelector("button[type='submit']");
 const formEl = document.getElementById("forecastForm");
@@ -411,15 +411,20 @@ function updateClock() {
   closedMsg.classList.toggle("hidden", !closed);
 
   // Disable submit instead of hiding form
-  submitBtn.disabled = closed;
-  submitBtn.style.opacity = closed ? "0.5" : "1";
-  submitBtn.style.cursor = closed ? "not-allowed" : "pointer";
-  
   document
     .querySelectorAll("#forecastForm input, #forecastForm select, #forecastForm button")
     .forEach(el => {
       el.disabled = closed;
     });
+
+  // Style submit button appearance
+  globalsubmitBtn.style.opacity = closed ? "0.5" : "1";
+  globalsubmitBtn.style.cursor = closed ? "not-allowed" : "pointer";
+  
+  map.off("click", handleMapClick);
+  if (!closed && document.querySelector("input[name='option']:checked").value === "Tornado") {
+    map.on("click", handleMapClick);
+  }
   
   // ================= PERIOD TEXT =================
   // Forecast period (today)
@@ -501,7 +506,7 @@ function formatUTC(date) {
   return `${mm}/${dd}/${yy}`;
 }
 
-setInterval(updateClock, 1000);
+setInterval(updateClock, 60000);
 updateClock();
 
 /* ================= OPTION BREAKPOINT TOGGLE ================= */
@@ -583,6 +588,11 @@ function handleMapClick(e) {
 // Initialize on page load
 updateTornadoFields();
 
+/* Lat/Lon Parse Checker */
+function validCoord(val) {
+  return /^-?\d+(\.\d+)?$/.test(val);
+}
+
 /* ================= SUBMIT ================= */
 document.getElementById("forecastForm").addEventListener("submit", async e => {
   e.preventDefault();
@@ -606,10 +616,53 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
 
   const option = document.querySelector("input[name='option']:checked").value;
   
+  const latStr = document.getElementById("lat").value;
+  const lonStr = document.getElementById("lon").value;
+  
+  // Prevent commas in lat/lon
+  if (option === "Tornado") {
+    if (latStr.includes(",") || lonStr.includes(",")) {
+      alert("Do not include commas in latitude or longitude. Enter numbers only.");
+    
+      // Re-enable button
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Forecast";
+      submitBtn.style.opacity = "1";
+      submitBtn.style.cursor = "pointer";
+
+      return;
+    }
+  }
+  
+  // Lat/Lon Parsing
+  if (option === "Tornado") {
+    if (!validCoord(latStr) || !validCoord(lonStr)) {
+      alert("Latitude and Longitude must be valid decimal numbers.");
+    
+	  // re-enable button
+	  submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Forecast";
+      submitBtn.style.opacity = "1";
+      submitBtn.style.cursor = "pointer";
+      return;
+    }
+  }
+  
   // Prevent forecasting outside the CONUS
   if (option === "Tornado") {
     const lat = parseFloat(document.getElementById("lat").value);
     const lon = parseFloat(document.getElementById("lon").value);
+
+	if (isNaN(lat) || isNaN(lon)) {
+      alert("Latitude and Longitude must be valid numbers.");
+
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Forecast";
+      submitBtn.style.opacity = "1";
+      submitBtn.style.cursor = "pointer";
+
+      return;
+    }
 
     if (
 	  lat < 24.5 || lat > 49.5 ||
@@ -685,6 +738,39 @@ document.getElementById("forecastForm").addEventListener("submit", async e => {
     submitBtn.innerText = "Submit Forecast";
     submitBtn.style.opacity = "1";
     submitBtn.style.cursor = "pointer";
+  }
+});
+
+/* ===============  Clean Lat/Lon Fields =============== */
+function cleanCoordinateInput(input) {
+  input.addEventListener("input", function () {
+    // Remove commas and spaces
+    this.value = this.value.replace(/[^0-9.\-]/g, "");
+  });
+
+  input.addEventListener("paste", function () {
+    setTimeout(() => {
+      this.value = this.value.replace(/[^0-9.\-]/g, "");
+    }, 0);
+  });
+}
+
+cleanCoordinateInput(document.getElementById("lat"));
+cleanCoordinateInput(document.getElementById("lon"));
+
+/* ===============  Pivotal Lat/Lon Splitter =============== */
+document.getElementById("lat").addEventListener("paste", function (e) {
+  const paste = (e.clipboardData || window.clipboardData).getData("text");
+
+  if (paste.includes(",") || paste.includes(" ")) {
+    e.preventDefault();
+
+    const parts = paste.split(/[,\s]+/);
+    if (parts.length === 2) {
+      document.getElementById("lat").value = parts[0].trim();
+      document.getElementById("lon").value = parts[1].trim();
+      document.getElementById("lon").focus();
+    }
   }
 });
 
