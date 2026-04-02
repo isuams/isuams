@@ -506,9 +506,6 @@ function formatUTC(date) {
   return `${mm}/${dd}/${yy}`;
 }
 
-setInterval(updateClock, 60000);
-updateClock();
-
 /* ================= OPTION BREAKPOINT TOGGLE ================= */
 const optionRadios = document.querySelectorAll("input[name='option']");
 const tornadoFields = document.getElementById("tornadoFields");
@@ -587,6 +584,10 @@ function handleMapClick(e) {
 
 // Initialize on page load
 updateTornadoFields();
+
+// START CLOCK AFTER MAP EXISTS
+setInterval(updateClock, 60000);
+updateClock();
 
 /* Lat/Lon Parse Checker */
 function validCoord(val) {
