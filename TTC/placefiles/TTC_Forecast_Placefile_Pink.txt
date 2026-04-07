@@ -1,22 +1,26 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Pink 2026_04_06                      
+Title: TTC Forecast Locations Pink 2026_04_07                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 27.975645,-82.428399
-Icon: 0,0,180,1,4, "Name: Scout\n27.98N 82.43W\nTarget City: nan"
+Object: 26.714679,-80.119171
+Icon: 0,0,180,1,4, "Name: I mean like weird MCV clash stuff idk (doss)\n26.71N 80.12W\nTarget City: West Palm Beach, FL"
 End:
 
-Object: 27.726569,-80.781904
-Icon: 0,0,180,1,4, "Name: Cold Core Cowboy\n27.73N 80.78W\nTarget City: Vero Beach, FL"
+Object: 25.078219,-80.441593
+Icon: 0,0,180,1,4, "Name: Scout\n25.08N 80.44W\nTarget City: nan"
 End:
 
-Object: 28.142494,-81.470661
-Icon: 0,0,180,1,4, "Name: Veer\n28.14N 81.47W\nTarget City: Poinciana, FL"
+Object: 25.502847,-80.395332
+Icon: 0,0,180,1,4, "Name: Cold Core Cowboy\n25.50N 80.40W\nTarget City: Homestead, FL"
 End:
 
-Object: 27.420878214564052,-81.21892885032324
-Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n27.42N 81.22W\nTarget City: nan"
+Object: 26.89560003093233,-80.67130977466377
+Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n26.90N 80.67W\nTarget City: nan"
+End:
+
+Object: 26.462242294505547,-80.80012644843748
+Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n26.46N 80.80W\nTarget City: nan"
 End:
 
