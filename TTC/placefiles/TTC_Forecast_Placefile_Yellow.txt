@@ -1,26 +1,34 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Yellow 2026_04_07                      
+Title: TTC Forecast Locations Yellow 2026_04_08                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 26.714679,-80.119171
-Icon: 0,0,180,1,2, "Name: I mean like weird MCV clash stuff idk (doss)\n26.71N 80.12W\nTarget City: West Palm Beach, FL"
+Object: 26.329935,-80.152359
+Icon: 0,0,180,1,2, "Name: Veer (the real one, gambling on florida bs)\n26.33N 80.15W\nTarget City: Boca Del Mar, FL"
 End:
 
-Object: 25.078219,-80.441593
-Icon: 0,0,180,1,2, "Name: Scout\n25.08N 80.44W\nTarget City: nan"
+Object: 26.729901,-80.720223
+Icon: 0,0,180,1,2, "Name: Because florida \n26.73N 80.72W\nTarget City: Belle Glade, FL"
 End:
 
-Object: 25.502847,-80.395332
-Icon: 0,0,180,1,2, "Name: Cold Core Cowboy\n25.50N 80.40W\nTarget City: Homestead, FL"
+Object: 26.120918,-80.26062
+Icon: 0,0,180,1,2, "Name: Scout\n26.12N 80.26W\nTarget City: nan"
 End:
 
-Object: 26.89560003093233,-80.67130977466377
-Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n26.90N 80.67W\nTarget City: nan"
+Object: 48.176801,-96.211751
+Icon: 0,0,180,1,2, "Name: Yueyang, China is the real target today\n48.18N 96.21W\nTarget City: Hongqiao, Pingjiang, China"
 End:
 
-Object: 26.462242294505547,-80.80012644843748
-Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n26.46N 80.80W\nTarget City: nan"
+Object: 37.96,-99.69
+Icon: 0,0,180,1,2, "Name: IL WF 69\n37.96N 99.69W\nTarget City: Offerle, KS"
+End:
+
+Object: 27.034796669760432,-81.26822367892055
+Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n27.03N 81.27W\nTarget City: nan"
+End:
+
+Object: 26.86601652972702,-80.6454718376252
+Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n26.87N 80.65W\nTarget City: nan"
 End:
 
