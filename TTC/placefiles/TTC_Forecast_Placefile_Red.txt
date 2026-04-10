@@ -1,186 +1,78 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Red 2026_04_09                      
+Title: TTC Forecast Locations Red 2026_04_10                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 40.106017,-95.641479
-Icon: 0,0,180,1,1, "Name: Colin Young\n40.11N 95.64W\nTarget City: Falls City, NE"
+Object: 40.7,-116.97
+Icon: 0,0,180,1,1, "Name: jumpwx\n40.70N 116.97W\nTarget City: Battle Mountain, NV"
 End:
 
-Object: 40.082061,-96.128998
-Icon: 0,0,180,1,1, "Name: High bases? steal (James)\n40.08N 96.13W\nTarget City: Pawnee City, NE"
+Object: 38.42189,-121.309
+Icon: 0,0,180,1,1, "Name: Jonah (CA day before outbreak sequence >>>)\n38.42N 121.31W\nTarget City: Elk Grove, CA"
 End:
 
-Object: 40.0,-96.35
-Icon: 0,0,180,1,1, "Name: jumpwx\n40.00N 96.35W\nTarget City: Summerfield, KS"
+Object: 38.35458,-120.926897
+Icon: 0,0,180,1,1, "Name: Veer (central valley strikes again?)\n38.35N 120.93W\nTarget City: Ione, CA"
 End:
 
-Object: 39.83697521776137,-96.06475366637818
-Icon: 0,0,180,1,1, "Name: I LOVE GAMBLING\n39.84N 96.06W\nTarget City: Seneca, KS"
+Object: 38.85,-120.74
+Icon: 0,0,180,1,1, "Name: California Magic\n38.85N 120.74W\nTarget City: Coloma, CA"
 End:
 
-Object: 40.007949,-97.619375
-Icon: 0,0,180,1,1, "Name: CPekar\n40.01N 97.62W\nTarget City: Chester, NE"
+Object: 41.294317,-119.11377
+Icon: 0,0,180,1,1, "Name: Scout\n41.29N 119.11W\nTarget City: nan"
 End:
 
-Object: 39.727096,-96.837444
-Icon: 0,0,180,1,1, "Name: Jim Franc\n39.73N 96.84W\nTarget City: Barnes, KS"
+Object: 38.0936,-121.138687
+Icon: 0,0,180,1,1, "Name: deldotdel\n38.09N 121.14W\nTarget City: nan"
 End:
 
-Object: 43.028,-123.56
-Icon: 0,0,180,1,1, "Name: Veer (I hate today but 3cape calls my name)\n43.03N 123.56W\nTarget City: south of Tenmile, OR"
+Object: 36.293423,-97.291489
+Icon: 0,0,180,1,1, "Name: Jason B (This will not work)\n36.29N 97.29W\nTarget City: Perry, OK"
 End:
 
-Object: 40.175201,-94.823856
-Icon: 0,0,180,1,1, "Name: WheelieWeather\n40.18N 94.82W\nTarget City: Barnard,Missouri"
+Object: 37.96,-120.63
+Icon: 0,0,180,1,1, "Name: I am cooked\n37.96N 120.63W\nTarget City: CaliTORRRnia"
 End:
 
-Object: 40.122191,-96.659166
-Icon: 0,0,180,1,1, "Name: Scout\n40.12N 96.66W\nTarget City: nan"
+Object: 36.491973,-95.940857
+Icon: 0,0,180,1,1, "Name: Reilly Dibble\n36.49N 95.94W\nTarget City: nan"
 End:
 
-Object: 39.838771,-96.651306
-Icon: 0,0,180,1,1, "Name: Jason B\n39.84N 96.65W\nTarget City: Marysville, KS"
+Object: 38.17511,-121.294213
+Icon: 0,0,180,1,1, "Name: Cold Core Cowboy\n38.18N 121.29W\nTarget City: Lodi, CA"
 End:
 
-Object: 40.062078,-95.458832
-Icon: 0,0,180,1,1, "Name: GregForbesGlasses\n40.06N 95.46W\nTarget City: nan"
+Object: 39.210833,-121.082041
+Icon: 0,0,180,1,1, "Name: Veer (california magic two: electric boogaloo)\n39.21N 121.08W\nTarget City: Grass Valley, CA"
 End:
 
-Object: 39.504747,-96.022339
-Icon: 0,0,180,1,1, "Name: GoHornets22\n39.50N 96.02W\nTarget City: nan"
+Object: 37.91081,-120.61043
+Icon: 0,0,180,1,1, "Name: Ben Price\n37.91N 120.61W\nTarget City: Black Jack Bluffs, CA"
 End:
 
-Object: 40.2,-96.86
-Icon: 0,0,180,1,1, "Name: Kyle Hugeback\n40.20N 96.86W\nTarget City: SW of Beatrice (bad luck town)"
+Object: 38.28275,-121.196594
+Icon: 0,0,180,1,1, "Name: Hoang Do\n38.28N 121.20W\nTarget City: Galt, CA"
 End:
 
-Object: 39.897797,-95.545349
-Icon: 0,0,180,1,1, "Name: roonski03\n39.90N 95.55W\nTarget City: nan"
+Object: 38.249769,-121.297051
+Icon: 0,0,180,1,1, "Name: Earth Central\n38.25N 121.30W\nTarget City: Galt, CA"
 End:
 
-Object: 39.841302252735424,-96.11924917330823
-Icon: 0,0,180,1,1, "Name: Garrett Statum\n39.84N 96.12W\nTarget City: nan"
+Object: 38.207109,-120.681021
+Icon: 0,0,180,1,1, "Name: TDGWx\n38.21N 120.68W\nTarget City: San Andreas, CA"
 End:
 
-Object: 39.826651,-97.60932
-Icon: 0,0,180,1,1, "Name: BabbWx\n39.83N 97.61W\nTarget City: Belleville, Ks"
+Object: 39.606111,-119.246898
+Icon: 0,0,180,1,1, "Name: I'm going to be made fun of for this \n39.61N 119.25W\nTarget City: Fernley, NV"
 End:
 
-Object: 39.823802,-95.716287
-Icon: 0,0,180,1,1, "Name: Caleb O'Gara\n39.82N 95.72W\nTarget City: nan"
+Object: 39.201481497021874,-117.0758767156696
+Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n39.20N 117.08W\nTarget City: nan"
 End:
 
-Object: 39.7694837,-95.2920586
-Icon: 0,0,180,1,1, "Name: Ben Price\n39.77N 95.29W\nTarget City: Severance, KS"
-End:
-
-Object: 39.46053,-97.201275
-Icon: 0,0,180,1,1, "Name: Gavin Bird\n39.46N 97.20W\nTarget City: Morganville, KS"
-End:
-
-Object: 40.122804,-96.164971
-Icon: 0,0,180,1,1, "Name: Veer \n40.12N 96.16W\nTarget City: Pawnee City, NE"
-End:
-
-Object: 39.716219,-97.368736
-Icon: 0,0,180,1,1, "Name: JetStreamJami\n39.72N 97.37W\nTarget City: Cuba, KS"
-End:
-
-Object: 40.232939,-95.774431
-Icon: 0,0,180,1,1, "Name: Sure Why Not Shambles. ETC (JSchrantz)\n40.23N 95.77W\nTarget City: Stella, NE"
-End:
-
-Object: 36.744147,-95.985334
-Icon: 0,0,180,1,1, "Name: Zegery \n36.74N 95.99W\nTarget City: Bartesville, OK"
-End:
-
-Object: 39.567111,-97.126822
-Icon: 0,0,180,1,1, "Name: Michael Kubinski\n39.57N 97.13W\nTarget City: nan"
-End:
-
-Object: 39.301893,-96.829033
-Icon: 0,0,180,1,1, "Name: Tornado Emergency\n39.30N 96.83W\nTarget City: nan"
-End:
-
-Object: 39.116404,-94.762198
-Icon: 0,0,180,1,1, "Name: Revenge of the Slop\n39.12N 94.76W\nTarget City: Victory Hills, KS"
-End:
-
-Object: 39.842698,-95.890732
-Icon: 0,0,180,1,1, "Name: AJ Clever\n39.84N 95.89W\nTarget City: nan"
-End:
-
-Object: 40.042335,-96.153717
-Icon: 0,0,180,1,1, "Name: Adler Hanson\n40.04N 96.15W\nTarget City: Pawnee City, NE"
-End:
-
-Object: 39.919582,-97.552586
-Icon: 0,0,180,1,1, "Name: Hoang Do\n39.92N 97.55W\nTarget City: Munden, KS"
-End:
-
-Object: 39.903568,-95.802987
-Icon: 0,0,180,1,1, "Name: Earth Central\n39.90N 95.80W\nTarget City: Sabetha, KS"
-End:
-
-Object: 39.783635,-95.087398
-Icon: 0,0,180,1,1, "Name: Alexander Hunt\n39.78N 95.09W\nTarget City: Troy, Kansas"
-End:
-
-Object: 39.7,-97.02
-Icon: 0,0,180,1,1, "Name: Josh Jaeger\n39.70N 97.02W\nTarget City: Greenleaf, KS"
-End:
-
-Object: 40.178873,-96.723633
-Icon: 0,0,180,1,1, "Name: EF-Femme\n40.18N 96.72W\nTarget City: nan"
-End:
-
-Object: 39.838068,-97.054596
-Icon: 0,0,180,1,1, "Name: EasilyDistractedByTornsdoez\n39.84N 97.05W\nTarget City: Washington, KS"
-End:
-
-Object: 39.442954,-95.284424
-Icon: 0,0,180,1,1, "Name: QLCS dart-throwing experiment\n39.44N 95.28W\nTarget City: Monte Carlo"
-End:
-
-Object: 39.55793802174047,-96.2028811164843
-Icon: 0,0,180,1,1, "Name: timcigar\n39.56N 96.20W\nTarget City: Neuchatel, KS"
-End:
-
-Object: 39.926378,-95.366559
-Icon: 0,0,180,1,1, "Name: Alexis Severson\n39.93N 95.37W\nTarget City: the intersection of 290th and timber rd in ks"
-End:
-
-Object: 40.35,-96.25
-Icon: 0,0,180,1,1, "Name: Lizzie Tirone-Hugeback\n40.35N 96.25W\nTarget City: nan"
-End:
-
-Object: 42.692126,-105.708207
-Icon: 0,0,180,1,1, "Name: DaveFlo\n42.69N 105.71W\nTarget City: nan"
-End:
-
-Object: 39.22758,-96.601189
-Icon: 0,0,180,1,1, "Name: Sloppy Joe day \n39.23N 96.60W\nTarget City: Manhattan ks"
-End:
-
-Object: 39.715638,-95.772141
-Icon: 0,0,180,1,1, "Name: TDGWx\n39.72N 95.77W\nTarget City: Granada, KS"
-End:
-
-Object: 39.986956,-96.243839
-Icon: 0,0,180,1,1, "Name: tailswx\n39.99N 96.24W\nTarget City: Saint Bridget, Kansas"
-End:
-
-Object: 39.8712,-97.5644
-Icon: 0,0,180,1,1, "Name: Quincy Vagell\n39.87N 97.56W\nTarget City: Munden, KS"
-End:
-
-Object: 39.17800612527734,-97.55551566579356
-Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n39.18N 97.56W\nTarget City: nan"
-End:
-
-Object: 37.528053739921724,-96.79839950607968
-Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n37.53N 96.80W\nTarget City: nan"
+Object: 38.002634911748416,-117.56911110621813
+Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n38.00N 117.57W\nTarget City: nan"
 End:
 
