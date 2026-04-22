@@ -1,38 +1,18 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Pink 2026_04_21                      
+Title: TTC Forecast Locations Pink 2026_04_22                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 36.799767,-119.872993
-Icon: 0,0,180,1,4, "Name: The Hawk\n36.80N 119.87W\nTarget City: nan"
+Object: 28.798586,-97.004814
+Icon: 0,0,180,1,4, "Name: the incredibly low lcls can pull this off somehow\n28.80N 97.00W\nTarget City: Victoria"
 End:
 
-Object: 38.307181,-121.35498
-Icon: 0,0,180,1,4, "Name: California Magic Go!\n38.31N 121.35W\nTarget City: nan"
+Object: 34.827937761892194,-95.82681011439156
+Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n34.83N 95.83W\nTarget City: nan"
 End:
 
-Object: 37.249868,-120.325871
-Icon: 0,0,180,1,4, "Name: Cold Core Cowboy\n37.25N 120.33W\nTarget City: nan"
-End:
-
-Object: 37.548339,-120.648082
-Icon: 0,0,180,1,4, "Name: Quirk Chungus Yes Risk VeeringWindsWx\n37.55N 120.65W\nTarget City: nan"
-End:
-
-Object: 46.104979,-117.148578
-Icon: 0,0,180,1,4, "Name: Rockies\n46.10N 117.15W\nTarget City: nan"
-End:
-
-Object: 37.69,-120.69
-Icon: 0,0,180,1,4, "Name: IL WF 69\n37.69N 120.69W\nTarget City: Waterford, CA"
-End:
-
-Object: 37.29271506751409,-120.47263933059182
-Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n37.29N 120.47W\nTarget City: nan"
-End:
-
-Object: 37.39784053521777,-120.4018463273151
-Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n37.40N 120.40W\nTarget City: nan"
+Object: 32.78822053538555,-95.01016550167824
+Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n32.79N 95.01W\nTarget City: nan"
 End:
 
