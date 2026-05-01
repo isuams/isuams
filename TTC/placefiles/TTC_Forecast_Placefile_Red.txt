@@ -1,46 +1,90 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Red 2026_04_30                      
+Title: TTC Forecast Locations Red 2026_05_01                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 29.71,-100.93
-Icon: 0,0,180,1,1, "Name: Sal\n29.71N 100.93W\nTarget City: nan"
+Object: 28.937497,-95.34038
+Icon: 0,0,180,1,1, "Name: Cyclone_95\n28.94N 95.34W\nTarget City: nan"
 End:
 
-Object: 29.729204,-90.113869
-Icon: 0,0,180,1,1, "Name: Veer (tropical funnels idk)\n29.73N 90.11W\nTarget City: Jean Lafitte, LA"
+Object: 30.315988,-89.359098
+Icon: 0,0,180,1,1, "Name: Joseph Patton\n30.32N 89.36W\nTarget City: Bay St. Louis, MS"
 End:
 
-Object: 29.832782,-89.725342
-Icon: 0,0,180,1,1, "Name: JetStreamJami\n29.83N 89.73W\nTarget City: Hopedale, LA"
+Object: 29.795964,-85.301372
+Icon: 0,0,180,1,1, "Name: jumpwx\n29.80N 85.30W\nTarget City: Port Saint Joe, FL"
 End:
 
-Object: 29.356363,-100.782726
-Icon: 0,0,180,1,1, "Name: Del Rio Slop\n29.36N 100.78W\nTarget City: Laughlin AFB, TX"
+Object: 29.406339,-90.704842
+Icon: 0,0,180,1,1, "Name: WxDrifter\n29.41N 90.70W\nTarget City: Dulac, LA"
 End:
 
-Object: 29.784381,-94.151459
-Icon: 0,0,180,1,1, "Name: AJ Clever\n29.78N 94.15W\nTarget City: nan"
+Object: 29.978729,-85.270386
+Icon: 0,0,180,1,1, "Name: Veer (fine I’ll get baited by the gulf coast)\n29.98N 85.27W\nTarget City: East of Mexico Beach, FL"
 End:
 
-Object: 29.749389,-90.140365
-Icon: 0,0,180,1,1, "Name: we don't talk about it\n29.75N 90.14W\nTarget City: nan"
+Object: 30.234022,-91.998148
+Icon: 0,0,180,1,1, "Name: IDV Goodness don't fail me now\n30.23N 92.00W\nTarget City: Lafayette, LA"
 End:
 
-Object: 30.891678,-102.884675
-Icon: 0,0,180,1,1, "Name: Veer " In ft. stockton we trust"\n30.89N 102.88W\nTarget City: Ft. Stockton, Tx"
+Object: 29.539528,-90.718403
+Icon: 0,0,180,1,1, "Name: Owen Basselman = Gigachad\n29.54N 90.72W\nTarget City: Houma, LA"
 End:
 
-Object: 30.906707,-102.8505
-Icon: 0,0,180,1,1, "Name: Ft stockton magic? \n30.91N 102.85W\nTarget City: Ft stockton tx"
+Object: 30.2,-85.77
+Icon: 0,0,180,1,1, "Name: I mean, no-brainer. It's PCB always. (Paul Austin)\n30.20N 85.77W\nTarget City: Panama City Beach, FL"
 End:
 
-Object: 30.04083023374011,-92.03258725499319
-Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n30.04N 92.03W\nTarget City: nan"
+Object: 29.899011,-90.146019
+Icon: 0,0,180,1,1, "Name: Tyler Williams\n29.90N 90.15W\nTarget City: Westwego, LA"
 End:
 
-Object: 30.32182225203654,-93.40034364749152
-Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n30.32N 93.40W\nTarget City: nan"
+Object: 29.786308,-91.499634
+Icon: 0,0,180,1,1, "Name: Pent\n29.79N 91.50W\nTarget City: nan"
+End:
+
+Object: 29.596462,-90.724996
+Icon: 0,0,180,1,1, "Name: Oops all elevated\n29.60N 90.72W\nTarget City: Houma, LA"
+End:
+
+Object: 30.291474,-85.615026
+Icon: 0,0,180,1,1, "Name: Joey Krastel\n30.29N 85.62W\nTarget City: Lynn Haven, FL"
+End:
+
+Object: 29.388637,-90.119476
+Icon: 0,0,180,1,1, "Name: JetStreamJami\n29.39N 90.12W\nTarget City: Golden Meadow, LA"
+End:
+
+Object: 30.165982,-85.718079
+Icon: 0,0,180,1,1, "Name: AJ Clever\n30.17N 85.72W\nTarget City: nan"
+End:
+
+Object: 30.497842,-86.136131
+Icon: 0,0,180,1,1, "Name: Olivia Macko\n30.50N 86.14W\nTarget City: Freeport, FL"
+End:
+
+Object: 30.430677,-85.052169
+Icon: 0,0,180,1,1, "Name: Earth Central\n30.43N 85.05W\nTarget City: Blountstown, FL"
+End:
+
+Object: 29.481567,-89.699593
+Icon: 0,0,180,1,1, "Name: Blake Barber\n29.48N 89.70W\nTarget City: nan"
+End:
+
+Object: 29.2516,-89.359692
+Icon: 0,0,180,1,1, "Name: Here we go again\n29.25N 89.36W\nTarget City: Venice, LA"
+End:
+
+Object: 30.474242,-87.254395
+Icon: 0,0,180,1,1, "Name: DaveFlo\n30.47N 87.25W\nTarget City: nan"
+End:
+
+Object: 29.575268042513674,-89.33999371825712
+Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n29.58N 89.34W\nTarget City: nan"
+End:
+
+Object: 29.625142583472933,-88.75941518221458
+Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n29.63N 88.76W\nTarget City: nan"
 End:
 
