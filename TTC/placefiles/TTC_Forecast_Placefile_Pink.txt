@@ -1,90 +1,74 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Pink 2026_05_01                      
+Title: TTC Forecast Locations Pink 2026_05_04                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 28.937497,-95.34038
-Icon: 0,0,180,1,4, "Name: Cyclone_95\n28.94N 95.34W\nTarget City: nan"
+Object: 39.43492,-90.399465
+Icon: 0,0,180,1,4, "Name: Random Dart Throw, Go! (CPekar)\n39.43N 90.40W\nTarget City: White Hall, IL"
 End:
 
-Object: 30.315988,-89.359098
-Icon: 0,0,180,1,4, "Name: Joseph Patton\n30.32N 89.36W\nTarget City: Bay St. Louis, MS"
+Object: 39.994891,-93.729557
+Icon: 0,0,180,1,4, "Name: The legend lives on from the Chippewa on down\n39.99N 93.73W\nTarget City: nan"
 End:
 
-Object: 29.795964,-85.301372
-Icon: 0,0,180,1,4, "Name: jumpwx\n29.80N 85.30W\nTarget City: Port Saint Joe, FL"
+Object: 41.841265,-85.668426
+Icon: 0,0,180,1,4, "Name: Kyle Hugeback\n41.84N 85.67W\nTarget City: Constantine, MI"
 End:
 
-Object: 29.406339,-90.704842
-Icon: 0,0,180,1,4, "Name: WxDrifter\n29.41N 90.70W\nTarget City: Dulac, LA"
+Object: 34.65044,-97.166613
+Icon: 0,0,180,1,4, "Name: #criticalstrikestormchasing\n34.65N 97.17W\nTarget City: Wynnewood, Ok"
 End:
 
-Object: 29.978729,-85.270386
-Icon: 0,0,180,1,4, "Name: Veer (fine I’ll get baited by the gulf coast)\n29.98N 85.27W\nTarget City: East of Mexico Beach, FL"
+Object: 41.6486596,-84.4707436
+Icon: 0,0,180,1,4, "Name: Ben Price\n41.65N 84.47W\nTarget City: Kunkle, OH"
 End:
 
-Object: 30.234022,-91.998148
-Icon: 0,0,180,1,4, "Name: IDV Goodness don't fail me now\n30.23N 92.00W\nTarget City: Lafayette, LA"
+Object: 39.014489,-89.666977
+Icon: 0,0,180,1,4, "Name: JetStreamJami\n39.01N 89.67W\nTarget City: New Douglas, IL"
 End:
 
-Object: 29.539528,-90.718403
-Icon: 0,0,180,1,4, "Name: Owen Basselman = Gigachad\n29.54N 90.72W\nTarget City: Houma, LA"
+Object: 39.497337,-92.478018
+Icon: 0,0,180,1,4, "Name: Michael Kubinski\n39.50N 92.48W\nTarget City: nan"
 End:
 
-Object: 30.2,-85.77
-Icon: 0,0,180,1,4, "Name: I mean, no-brainer. It's PCB always. (Paul Austin)\n30.20N 85.77W\nTarget City: Panama City Beach, FL"
+Object: 38.968694,-90.23037
+Icon: 0,0,180,1,4, "Name: AJ Clever\n38.97N 90.23W\nTarget City: nan"
 End:
 
-Object: 29.899011,-90.146019
-Icon: 0,0,180,1,4, "Name: Tyler Williams\n29.90N 90.15W\nTarget City: Westwego, LA"
+Object: 41.441274,-85.28031
+Icon: 0,0,180,1,4, "Name: Blake Barber\n41.44N 85.28W\nTarget City: nan"
 End:
 
-Object: 29.786308,-91.499634
-Icon: 0,0,180,1,4, "Name: Pent\n29.79N 91.50W\nTarget City: nan"
+Object: 41.675476,-85.706148
+Icon: 0,0,180,1,4, "Name: WxDownYonder\n41.68N 85.71W\nTarget City: Middlebury, IN"
 End:
 
-Object: 29.596462,-90.724996
-Icon: 0,0,180,1,4, "Name: Oops all elevated\n29.60N 90.72W\nTarget City: Houma, LA"
+Object: 41.316599,-87.025356
+Icon: 0,0,180,1,4, "Name: AngelOfLightWX\n41.32N 87.03W\nTarget City: nan"
 End:
 
-Object: 30.291474,-85.615026
-Icon: 0,0,180,1,4, "Name: Joey Krastel\n30.29N 85.62W\nTarget City: Lynn Haven, FL"
+Object: 41.057091,-85.144043
+Icon: 0,0,180,1,4, "Name: Stephen Szulborski\n41.06N 85.14W\nTarget City: Fort Wayne, IN"
 End:
 
-Object: 29.388637,-90.119476
-Icon: 0,0,180,1,4, "Name: JetStreamJami\n29.39N 90.12W\nTarget City: Golden Meadow, LA"
+Object: 38.869344,-89.088607
+Icon: 0,0,180,1,4, "Name: reverse burp \n38.87N 89.09W\nTarget City: shobonier"
 End:
 
-Object: 30.165982,-85.718079
-Icon: 0,0,180,1,4, "Name: AJ Clever\n30.17N 85.72W\nTarget City: nan"
+Object: 40.22575297962892,-88.19499385116582
+Icon: 0,0,180,1,4, "Name: timcigar\n40.23N 88.19W\nTarget City: Thomasboro, IL"
 End:
 
-Object: 30.497842,-86.136131
-Icon: 0,0,180,1,4, "Name: Olivia Macko\n30.50N 86.14W\nTarget City: Freeport, FL"
+Object: 39.061205,-89.714106
+Icon: 0,0,180,1,4, "Name: Wyatt Van Dyke\n39.06N 89.71W\nTarget City: Mount Olive, IL"
 End:
 
-Object: 30.430677,-85.052169
-Icon: 0,0,180,1,4, "Name: Earth Central\n30.43N 85.05W\nTarget City: Blountstown, FL"
+Object: 39.495946842987635,-88.28872608307665
+Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n39.50N 88.29W\nTarget City: nan"
 End:
 
-Object: 29.481567,-89.699593
-Icon: 0,0,180,1,4, "Name: Blake Barber\n29.48N 89.70W\nTarget City: nan"
-End:
-
-Object: 29.2516,-89.359692
-Icon: 0,0,180,1,4, "Name: Here we go again\n29.25N 89.36W\nTarget City: Venice, LA"
-End:
-
-Object: 30.474242,-87.254395
-Icon: 0,0,180,1,4, "Name: DaveFlo\n30.47N 87.25W\nTarget City: nan"
-End:
-
-Object: 29.575268042513674,-89.33999371825712
-Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n29.58N 89.34W\nTarget City: nan"
-End:
-
-Object: 29.625142583472933,-88.75941518221458
-Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n29.63N 88.76W\nTarget City: nan"
+Object: 38.16310746047036,-88.80892377970112
+Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n38.16N 88.81W\nTarget City: nan"
 End:
 
