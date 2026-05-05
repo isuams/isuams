@@ -1,74 +1,382 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Yellow 2026_05_04                      
+Title: TTC Forecast Locations Yellow 2026_05_05                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 39.43492,-90.399465
-Icon: 0,0,180,1,2, "Name: Random Dart Throw, Go! (CPekar)\n39.43N 90.40W\nTarget City: White Hall, IL"
+Object: 35.846724,-90.715485
+Icon: 0,0,180,1,2, "Name: Colin Young\n35.85N 90.72W\nTarget City: Jonesboro, AR"
 End:
 
-Object: 39.994891,-93.729557
-Icon: 0,0,180,1,2, "Name: The legend lives on from the Chippewa on down\n39.99N 93.73W\nTarget City: nan"
+Object: 34.887691,-91.194634
+Icon: 0,0,180,1,2, "Name: MysticVortexNerd \n34.89N 91.19W\nTarget City: Brinkley, AR"
 End:
 
-Object: 41.841265,-85.668426
-Icon: 0,0,180,1,2, "Name: Kyle Hugeback\n41.84N 85.67W\nTarget City: Constantine, MI"
+Object: 33.331647,-94.345436
+Icon: 0,0,180,1,2, "Name: idk looks like slop\n33.33N 94.35W\nTarget City: Maud, TX"
 End:
 
-Object: 34.65044,-97.166613
-Icon: 0,0,180,1,2, "Name: #criticalstrikestormchasing\n34.65N 97.17W\nTarget City: Wynnewood, Ok"
+Object: 35.046129,-91.126785
+Icon: 0,0,180,1,2, "Name: Karson\n35.05N 91.13W\nTarget City: Hunter, AR"
 End:
 
-Object: 41.6486596,-84.4707436
-Icon: 0,0,180,1,2, "Name: Ben Price\n41.65N 84.47W\nTarget City: Kunkle, OH"
+Object: 35.139114,-93.921089
+Icon: 0,0,180,1,2, "Name: meh, the wf stuff is trash, maybe here? (Doss)\n35.14N 93.92W\nTarget City: Booneville, AR"
 End:
 
-Object: 39.014489,-89.666977
-Icon: 0,0,180,1,2, "Name: JetStreamJami\n39.01N 89.67W\nTarget City: New Douglas, IL"
+Object: 34.609,-92.479
+Icon: 0,0,180,1,2, "Name: jumpwx\n34.61N 92.48W\nTarget City: Bryant, AR"
 End:
 
-Object: 39.497337,-92.478018
-Icon: 0,0,180,1,2, "Name: Michael Kubinski\n39.50N 92.48W\nTarget City: nan"
+Object: 35.07541,-92.20211
+Icon: 0,0,180,1,2, "Name: WxDrifter\n35.08N 92.20W\nTarget City: Vilonia, AR"
 End:
 
-Object: 38.968694,-90.23037
-Icon: 0,0,180,1,2, "Name: AJ Clever\n38.97N 90.23W\nTarget City: nan"
+Object: 35.8929391,-92.115191
+Icon: 0,0,180,1,2, "Name: TheBetterDoge\n35.89N 92.12W\nTarget City: Mountain View, AR"
 End:
 
-Object: 41.441274,-85.28031
-Icon: 0,0,180,1,2, "Name: Blake Barber\n41.44N 85.28W\nTarget City: nan"
+Object: 35.327543,-92.730966
+Icon: 0,0,180,1,2, "Name: CPekar\n35.33N 92.73W\nTarget City: Wonderview... of a Tornado? (Ar-Kansas)"
 End:
 
-Object: 41.675476,-85.706148
-Icon: 0,0,180,1,2, "Name: WxDownYonder\n41.68N 85.71W\nTarget City: Middlebury, IN"
+Object: 35.5,-93.8
+Icon: 0,0,180,1,2, "Name: Sal\n35.50N 93.80W\nTarget City: nan"
 End:
 
-Object: 41.316599,-87.025356
-Icon: 0,0,180,1,2, "Name: AngelOfLightWX\n41.32N 87.03W\nTarget City: nan"
+Object: 35.204251,-91.609497
+Icon: 0,0,180,1,2, "Name: Jim Franc\n35.20N 91.61W\nTarget City: West Point, AR"
 End:
 
-Object: 41.057091,-85.144043
-Icon: 0,0,180,1,2, "Name: Stephen Szulborski\n41.06N 85.14W\nTarget City: Fort Wayne, IN"
+Object: 35.451756,-92.391405
+Icon: 0,0,180,1,2, "Name: Jonah (finals today, so HREF and pray)\n35.45N 92.39W\nTarget City: somewhere north of Greenbrier, AR"
 End:
 
-Object: 38.869344,-89.088607
-Icon: 0,0,180,1,2, "Name: reverse burp \n38.87N 89.09W\nTarget City: shobonier"
+Object: 34.749723,-92.27417
+Icon: 0,0,180,1,2, "Name: Reid Buchanan\n34.75N 92.27W\nTarget City: nan"
 End:
 
-Object: 40.22575297962892,-88.19499385116582
-Icon: 0,0,180,1,2, "Name: timcigar\n40.23N 88.19W\nTarget City: Thomasboro, IL"
+Object: 35.285498,-93.053309
+Icon: 0,0,180,1,2, "Name: The Hawk\n35.29N 93.05W\nTarget City: nan"
 End:
 
-Object: 39.061205,-89.714106
-Icon: 0,0,180,1,2, "Name: Wyatt Van Dyke\n39.06N 89.71W\nTarget City: Mount Olive, IL"
+Object: 35.424029,-91.457251
+Icon: 0,0,180,1,2, "Name: Veer (I hate AR skinny CAPE slop with a passion)\n35.42N 91.46W\nTarget City: Bradford, AR"
 End:
 
-Object: 39.495946842987635,-88.28872608307665
-Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n39.50N 88.29W\nTarget City: nan"
+Object: 35.401139,-92.400856
+Icon: 0,0,180,1,2, "Name: Braydon P Songer\n35.40N 92.40W\nTarget City: Tater Hill, AR"
 End:
 
-Object: 38.16310746047036,-88.80892377970112
-Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n38.16N 88.81W\nTarget City: nan"
+Object: 35.272384,-92.439893
+Icon: 0,0,180,1,2, "Name: A nice subdivision here, the prophecy! (Gabezwx)\n35.27N 92.44W\nTarget City: Republican, AR"
+End:
+
+Object: 35.158933,-92.080193
+Icon: 0,0,180,1,2, "Name: Heerok Das\n35.16N 92.08W\nTarget City: El Paso, AR"
+End:
+
+Object: 33.352454,-93.984856
+Icon: 0,0,180,1,2, "Name: On the big lake they call gitchegumee\n33.35N 93.98W\nTarget City: Texarkana, TX"
+End:
+
+Object: 35.514343,-92.592773
+Icon: 0,0,180,1,2, "Name: Scout\n35.51N 92.59W\nTarget City: nan"
+End:
+
+Object: 35.450769,-92.394547
+Icon: 0,0,180,1,2, "Name: Jason B\n35.45N 92.39W\nTarget City: Bee Branch, AR"
+End:
+
+Object: 35.252959,-91.805178
+Icon: 0,0,180,1,2, "Name: Chris Yates\n35.25N 91.81W\nTarget City: Searcy, AR"
+End:
+
+Object: 35.074965,-92.4646
+Icon: 0,0,180,1,2, "Name: Kay\n35.07N 92.46W\nTarget City: nan"
+End:
+
+Object: 35.38173481136018,-93.36477232557093
+Icon: 0,0,180,1,2, "Name: jbean45\n35.38N 93.36W\nTarget City: Knoxville, AR"
+End:
+
+Object: 35.894984,-92.167969
+Icon: 0,0,180,1,2, "Name: SRRadarLoops\n35.89N 92.17W\nTarget City: nan"
+End:
+
+Object: 35.425,-92.777
+Icon: 0,0,180,1,2, "Name: Bunger\n35.42N 92.78W\nTarget City: nan"
+End:
+
+Object: 35.243446,-92.936764
+Icon: 0,0,180,1,2, "Name: THEY'RE HESITATING \n35.24N 92.94W\nTarget City: Atkins, Arkansas"
+End:
+
+Object: 35.166511,-92.197266
+Icon: 0,0,180,1,2, "Name: Evan St. Clair\n35.17N 92.20W\nTarget City: nan"
+End:
+
+Object: 35.1,-92.21
+Icon: 0,0,180,1,2, "Name: Trying to keep up with the Joneses - Paul Austin\n35.10N 92.21W\nTarget City: Vilonia, AR"
+End:
+
+Object: 35.070368,-91.900613
+Icon: 0,0,180,1,2, "Name: MasDogWx\n35.07N 91.90W\nTarget City: Beebe, AR"
+End:
+
+Object: 35.194066,-92.802286
+Icon: 0,0,180,1,2, "Name: America explain! Ar-kansas, not AR-CAN-SAW!\n35.19N 92.80W\nTarget City: NW of Morrilton, AR"
+End:
+
+Object: 35.127851,-91.456803
+Icon: 0,0,180,1,2, "Name: Jeff Frame\n35.13N 91.46W\nTarget City: Georgetown, AR"
+End:
+
+Object: 34.783012,-92.382317
+Icon: 0,0,180,1,2, "Name: Tyler Williams\n34.78N 92.38W\nTarget City: Little Rock, AR"
+End:
+
+Object: 35.18217,-92.39502
+Icon: 0,0,180,1,2, "Name: Pent\n35.18N 92.40W\nTarget City: nan"
+End:
+
+Object: 35.295922,-91.747087
+Icon: 0,0,180,1,2, "Name: Nick M\n35.30N 91.75W\nTarget City: N of Searcy, AR"
+End:
+
+Object: 33.612984,-94.121962
+Icon: 0,0,180,1,2, "Name: vGriffy\n33.61N 94.12W\nTarget City: nan"
+End:
+
+Object: 35.370529,-92.563897
+Icon: 0,0,180,1,2, "Name: The second S in Arkansas is not silent\n35.37N 92.56W\nTarget City: Center Ridge, AR"
+End:
+
+Object: 33.13054,-93.539293
+Icon: 0,0,180,1,2, "Name: Grind time\n33.13N 93.54W\nTarget City: nan"
+End:
+
+Object: 34.48629390064267,-91.49239286171428
+Icon: 0,0,180,1,2, "Name: Sebastian Pelt\n34.49N 91.49W\nTarget City: Stuttgart, AR"
+End:
+
+Object: 35.215612,-92.388175
+Icon: 0,0,180,1,2, "Name: I mean it's got good shear profiles atleast\n35.22N 92.39W\nTarget City: Greenbrier, AR"
+End:
+
+Object: 35.517277,-92.0541
+Icon: 0,0,180,1,2, "Name: Gio\n35.52N 92.05W\nTarget City: Heber Springs, AR"
+End:
+
+Object: 34.9452818,-91.0938531
+Icon: 0,0,180,1,2, "Name: Garrett Statum\n34.95N 91.09W\nTarget City: Wheatley, AR"
+End:
+
+Object: 35.092561,-92.408176
+Icon: 0,0,180,1,2, "Name: #criticalstrikestormchasing\n35.09N 92.41W\nTarget City: Conway, AR"
+End:
+
+Object: 34.92854,-91.226157
+Icon: 0,0,180,1,2, "Name: Caleb O'Gara\n34.93N 91.23W\nTarget City: nan"
+End:
+
+Object: 35.244498,-91.736453
+Icon: 0,0,180,1,2, "Name: Gavin Bird\n35.24N 91.74W\nTarget City: Searcy, AR"
+End:
+
+Object: 35.249428,-91.735633
+Icon: 0,0,180,1,2, "Name: Kaylee\n35.25N 91.74W\nTarget City: Searcy, AR"
+End:
+
+Object: 35.497947,-92.032471
+Icon: 0,0,180,1,2, "Name: Andrew Griffiths\n35.50N 92.03W\nTarget City: nan"
+End:
+
+Object: 35.25481,-93.290749
+Icon: 0,0,180,1,2, "Name: Joey Krastel\n35.25N 93.29W\nTarget City: 6 SW London, AR"
+End:
+
+Object: 35.514008,-92.016678
+Icon: 0,0,180,1,2, "Name: JetStreamJami\n35.51N 92.02W\nTarget City: Heber Springs, AR"
+End:
+
+Object: 35.035252,-92.904768
+Icon: 0,0,180,1,2, "Name: Joe Schrantz\n35.04N 92.90W\nTarget City: Adona, AR"
+End:
+
+Object: 35.237093,-92.389526
+Icon: 0,0,180,1,2, "Name: Bengalsfan\n35.24N 92.39W\nTarget City: Greenbrier, Arkansas "
+End:
+
+Object: 35.560774,-91.708975
+Icon: 0,0,180,1,2, "Name: Richard Cirone\n35.56N 91.71W\nTarget City: nan"
+End:
+
+Object: 35.15,-92.31
+Icon: 0,0,180,1,2, "Name: Drawablefish\n35.15N 92.31W\nTarget City: nan"
+End:
+
+Object: 35.039469,-94.262781
+Icon: 0,0,180,1,2, "Name: Berg\n35.04N 94.26W\nTarget City: SW Mansfield, AR"
+End:
+
+Object: 32.974797,-96.33173
+Icon: 0,0,180,1,2, "Name: Michael Kubinski\n32.97N 96.33W\nTarget City: nan"
+End:
+
+Object: 35.629605,-91.636963
+Icon: 0,0,180,1,2, "Name: Wxbill\n35.63N 91.64W\nTarget City: nan"
+End:
+
+Object: 35.088141,-91.984062
+Icon: 0,0,180,1,2, "Name: Damon Lemke\n35.09N 91.98W\nTarget City: Beebe, AR"
+End:
+
+Object: 35.6,-91.93
+Icon: 0,0,180,1,2, "Name: OUTFLOW BOUNDARYYY\n35.60N 91.93W\nTarget City: aRRRRRRRRR kAnSaS"
+End:
+
+Object: 35.521469,-92.416992
+Icon: 0,0,180,1,2, "Name: Trevor Beavers\n35.52N 92.42W\nTarget City: nan"
+End:
+
+Object: 35.07426,-92.204906
+Icon: 0,0,180,1,2, "Name: Day Before the Slop\n35.07N 92.20W\nTarget City: Vilonia, AR"
+End:
+
+Object: 36.329267,-91.803131
+Icon: 0,0,180,1,2, "Name: AJ Clever\n36.33N 91.80W\nTarget City: nan"
+End:
+
+Object: 34.946739,-92.411499
+Icon: 0,0,180,1,2, "Name: Adler Hanson\n34.95N 92.41W\nTarget City: Mayflower, AR"
+End:
+
+Object: 35.088279,-92.448406
+Icon: 0,0,180,1,2, "Name: wheres the road rabbit, BEYOND WHAT?!\n35.09N 92.45W\nTarget City: Conway"
+End:
+
+Object: 35.154381,-92.134438
+Icon: 0,0,180,1,2, "Name: Hoang Do\n35.15N 92.13W\nTarget City: NW of El Paso, AR"
+End:
+
+Object: 34.823152,-91.40605
+Icon: 0,0,180,1,2, "Name: Olivia Macko\n34.82N 91.41W\nTarget City: Fredonia (Biscoe), AR"
+End:
+
+Object: 35.833897,-90.700319
+Icon: 0,0,180,1,2, "Name: Earth Central\n35.83N 90.70W\nTarget City: Jonesboro, AR"
+End:
+
+Object: 35.795984,-91.541824
+Icon: 0,0,180,1,2, "Name: Alexander Hunt\n35.80N 91.54W\nTarget City: Batesville, AR"
+End:
+
+Object: 35.7719,-91.62735
+Icon: 0,0,180,1,2, "Name: Roman Fariello\n35.77N 91.63W\nTarget City: nan"
+End:
+
+Object: 34.734795,-91.103976
+Icon: 0,0,180,1,2, "Name: Blake Barber\n34.73N 91.10W\nTarget City: nan"
+End:
+
+Object: 35.086952,-92.427979
+Icon: 0,0,180,1,2, "Name: EF-Femme\n35.09N 92.43W\nTarget City: nan"
+End:
+
+Object: 35.094795,-92.447205
+Icon: 0,0,180,1,2, "Name: Stephen Szulborski\n35.09N 92.45W\nTarget City: Conway, AR"
+End:
+
+Object: 35.516348,-93.402157
+Icon: 0,0,180,1,2, "Name: Red Lick\n35.52N 93.40W\nTarget City: Red Lick Mountain"
+End:
+
+Object: 35.240201787062574,-92.05170760590038
+Icon: 0,0,180,1,2, "Name: timcigar\n35.24N 92.05W\nTarget City: Romance, AR"
+End:
+
+Object: 35.19159,-92.601344
+Icon: 0,0,180,1,2, "Name: I better not be going the Way of the Con (Jacob.S)\n35.19N 92.60W\nTarget City: Conway, AR"
+End:
+
+Object: 35.783459,-92.424389
+Icon: 0,0,180,1,2, "Name: Colton Flint\n35.78N 92.42W\nTarget City: nan"
+End:
+
+Object: 35.00642,-90.398179
+Icon: 0,0,180,1,2, "Name: Donovan Fry\n35.01N 90.40W\nTarget City: Chatfield, AR"
+End:
+
+Object: 34.716532,-93.074672
+Icon: 0,0,180,1,2, "Name: Dave Gagliano\n34.72N 93.07W\nTarget City: nan"
+End:
+
+Object: 33.637561,-94.485886
+Icon: 0,0,180,1,2, "Name: Alexis Severson\n33.64N 94.49W\nTarget City: TX, OK, AR triple point"
+End:
+
+Object: 35.21,-92.67
+Icon: 0,0,180,1,2, "Name: Lizzie Tirone-Hugeback\n35.21N 92.67W\nTarget City: Morrilton, Arkansas"
+End:
+
+Object: 35.24,-92.39
+Icon: 0,0,180,1,2, "Name: IL WF 69\n35.24N 92.39W\nTarget City: Greenbrier, AR"
+End:
+
+Object: 35.11,-93.1
+Icon: 0,0,180,1,2, "Name: Joey Beachel\n35.11N 93.10W\nTarget City: nan"
+End:
+
+Object: 35.62,-92.575
+Icon: 0,0,180,1,2, "Name: Crab Rave\n35.62N 92.58W\nTarget City: Crabtree"
+End:
+
+Object: 35.114432,-92.444458
+Icon: 0,0,180,1,2, "Name: DaveFlo\n35.11N 92.44W\nTarget City: nan"
+End:
+
+Object: 35.611232,-91.287647
+Icon: 0,0,180,1,2, "Name: Admiral Singh\n35.61N 91.29W\nTarget City: Newport AR"
+End:
+
+Object: 35.079671,-92.206438
+Icon: 0,0,180,1,2, "Name: Ghostfox1\n35.08N 92.21W\nTarget City: Vilonia ar"
+End:
+
+Object: 35.110248,-92.36123
+Icon: 0,0,180,1,2, "Name: Conway's Demise\n35.11N 92.36W\nTarget City: Conway, AR"
+End:
+
+Object: 35.241133,-92.90863
+Icon: 0,0,180,1,2, "Name: VEER ING TO THE MAX\n35.24N 92.91W\nTarget City: Atkins, AR"
+End:
+
+Object: 34.977531,-91.504004
+Icon: 0,0,180,1,2, "Name: Lucas Huang\n34.98N 91.50W\nTarget City: nan"
+End:
+
+Object: 35.194231,-91.681252
+Icon: 0,0,180,1,2, "Name: Josh Schwarz\n35.19N 91.68W\nTarget City: nan"
+End:
+
+Object: 35.0739,-91.8897
+Icon: 0,0,180,1,2, "Name: Quincy Vagell\n35.07N 91.89W\nTarget City: Beebe, AR"
+End:
+
+Object: 35.292372,-91.36216
+Icon: 0,0,180,1,2, "Name: Wyatt Van Dyke\n35.29N 91.36W\nTarget City: Augusta, AK"
+End:
+
+Object: 35.12871030108863,-92.3359213724526
+Icon: 0,0,180,1,2, "Name: Forecast Consensus\n35.13N 92.34W\nTarget City: nan"
+End:
+
+Object: 34.68678317189959,-90.86859433014224
+Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n34.69N 90.87W\nTarget City: nan"
+End:
+
+Object: 34.645144212791145,-91.19035075918293
+Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n34.65N 91.19W\nTarget City: nan"
 End:
 
