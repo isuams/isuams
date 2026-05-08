@@ -1,238 +1,102 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Blue 2026_05_07                      
+Title: TTC Forecast Locations Blue 2026_05_08                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 30.494361,-84.687194
-Icon: 0,0,180,1,3, "Name: Cyclone_95\n30.49N 84.69W\nTarget City: nan"
+Object: 30.360526,-89.159162
+Icon: 0,0,180,1,3, "Name: Joseph Patton\n30.36N 89.16W\nTarget City: nan"
 End:
 
-Object: 30.270587,-84.749136
-Icon: 0,0,180,1,3, "Name: Blake brink\n30.27N 84.75W\nTarget City: Middle of nowhere Florida Panhandle"
+Object: 34.67,-98.01
+Icon: 0,0,180,1,3, "Name: jumpwx\n34.67N 98.01W\nTarget City: Marlow, OK"
 End:
 
-Object: 30.932304,-84.604763
-Icon: 0,0,180,1,3, "Name: Joseph Patton\n30.93N 84.60W\nTarget City: Bainbridge, GA"
+Object: 35.211065,-97.615476
+Icon: 0,0,180,1,3, "Name: The Hawk\n35.21N 97.62W\nTarget City: nan"
 End:
 
-Object: 30.432748,-84.96294
-Icon: 0,0,180,1,3, "Name: Karson\n30.43N 84.96W\nTarget City: nan"
+Object: 34.520305,-97.82115
+Icon: 0,0,180,1,3, "Name: Braydon P Songer\n34.52N 97.82W\nTarget City: Lake Duncan, OK"
 End:
 
-Object: 30.23,-82.78
-Icon: 0,0,180,1,3, "Name: jumpwx\n30.23N 82.78W\nTarget City: Wellborn, FL"
+Object: 37.054903,-95.211468
+Icon: 0,0,180,1,3, "Name: Scout\n37.05N 95.21W\nTarget City: nan"
 End:
 
-Object: 30.498296,-84.457006
-Icon: 0,0,180,1,3, "Name: Nowcasting Gulf Coast Slop... My Favorite (CPekar)\n30.50N 84.46W\nTarget City: Midway, FL"
+Object: 35.712325,-97.450562
+Icon: 0,0,180,1,3, "Name: SRRadarLoops\n35.71N 97.45W\nTarget City: nan"
 End:
 
-Object: 30.388721,-84.798403
-Icon: 0,0,180,1,3, "Name: Jonah (yay nowcasting)\n30.39N 84.80W\nTarget City: Hosford, FL"
+Object: 35.506014,-96.905165
+Icon: 0,0,180,1,3, "Name: ARE THOSE SUBVORTICES?!?!\n35.51N 96.91W\nTarget City: Meeker, OK"
 End:
 
-Object: 30.564626,-85.096664
-Icon: 0,0,180,1,3, "Name: Veer (qlcs nowcasting bs)\n30.56N 85.10W\nTarget City: Altha FL"
+Object: 34.989927,-97.636256
+Icon: 0,0,180,1,3, "Name: Why is it always QLCS squall line vibes\n34.99N 97.64W\nTarget City: South-central OK"
 End:
 
-Object: 30.473857,-85.042591
-Icon: 0,0,180,1,3, "Name: Braydon P Songer\n30.47N 85.04W\nTarget City: Pine Island, FL"
+Object: 35.59,-97.58
+Icon: 0,0,180,1,3, "Name: Derecho\n35.59N 97.58W\nTarget City: nan"
 End:
 
-Object: 30.500159,-81.739655
-Icon: 0,0,180,1,3, "Name: Heerok Das\n30.50N 81.74W\nTarget City: KJAX"
+Object: 34.4014738,-97.0541257
+Icon: 0,0,180,1,3, "Name: Ben Price\n34.40N 97.05W\nTarget City: Dougherty, OK"
 End:
 
-Object: 30.74676,-83.274683
-Icon: 0,0,180,1,3, "Name: Jayboys Travel Center\n30.75N 83.27W\nTarget City: Valdosta, GA ish "
+Object: 29.793997,-90.650597
+Icon: 0,0,180,1,3, "Name: JetStreamJami\n29.79N 90.65W\nTarget City: Thibodaux, LA"
 End:
 
-Object: 30.290053,-84.338402
-Icon: 0,0,180,1,3, "Name: Chris Yates\n30.29N 84.34W\nTarget City: Tallahassee, FL"
+Object: 35.211282,-97.004471
+Icon: 0,0,180,1,3, "Name: Michael Kubinski\n35.21N 97.00W\nTarget City: nan"
 End:
 
-Object: 30.576844,-84.706421
-Icon: 0,0,180,1,3, "Name: Kay\n30.58N 84.71W\nTarget City: nan"
+Object: 36.480049,-95.274791
+Icon: 0,0,180,1,3, "Name: I took the stupid bait...\n36.48N 95.27W\nTarget City: WOAG"
 End:
 
-Object: 30.43256,-84.673691
-Icon: 0,0,180,1,3, "Name: dancing-through-the-lightning-strikes\n30.43N 84.67W\nTarget City: nan"
+Object: 36.612841,-95.913391
+Icon: 0,0,180,1,3, "Name: AJ Clever\n36.61N 95.91W\nTarget City: nan"
 End:
 
-Object: 30.380218,-84.614309
-Icon: 0,0,180,1,3, "Name: jbean45\n30.38N 84.61W\nTarget City: nan"
+Object: 37.54,-94.38
+Icon: 0,0,180,1,3, "Name: maybe maybe maybe\n37.54N 94.38W\nTarget City: Iantha, MO"
 End:
 
-Object: 30.502757,-84.36985
-Icon: 0,0,180,1,3, "Name: Bunger\n30.50N 84.37W\nTarget City: nan"
+Object: 35.759663,-96.650968
+Icon: 0,0,180,1,3, "Name: Earth Central\n35.76N 96.65W\nTarget City: Stroud, OK"
 End:
 
-Object: 30.388256,-84.63005
-Icon: 0,0,180,1,3, "Name: Yes tors in shambles (me)\n30.39N 84.63W\nTarget City: Bloxham Cutoff, FL"
+Object: 36.1284907,-96.2106815
+Icon: 0,0,180,1,3, "Name: timcigar\n36.13N 96.21W\nTarget City: Lotsee, OK"
 End:
 
-Object: 30.44,-85.0
-Icon: 0,0,180,1,3, "Name: Paul Austin\n30.44N 85.00W\nTarget City: Bristol, FL"
+Object: 34.52,-97.41
+Icon: 0,0,180,1,3, "Name: Lizzie Tirone-Hugeback\n34.52N 97.41W\nTarget City: nan"
 End:
 
-Object: 30.324537,-84.282775
-Icon: 0,0,180,1,3, "Name: Kyle Hugeback\n30.32N 84.28W\nTarget City: Woodville, FL"
+Object: 36.636227,-95.151215
+Icon: 0,0,180,1,3, "Name: DaveFlo\n36.64N 95.15W\nTarget City: Vinita, OK"
 End:
 
-Object: 30.370209,-84.362997
-Icon: 0,0,180,1,3, "Name: Cold Core Cowboy\n30.37N 84.36W\nTarget City: Tallahassee, FL"
+Object: 35.03144,-97.925671
+Icon: 0,0,180,1,3, "Name: Definitely 120% veer. \n35.03N 97.93W\nTarget City: Chickasha, ok"
 End:
 
-Object: 30.445911,-85.683289
-Icon: 0,0,180,1,3, "Name: Pent\n30.45N 85.68W\nTarget City: nan"
+Object: 34.989723,-96.926537
+Icon: 0,0,180,1,3, "Name: Josh Schwarz\n34.99N 96.93W\nTarget City: Asher, OK"
 End:
 
-Object: 30.504912,-84.875911
-Icon: 0,0,180,1,3, "Name: Nowcast don't fail me\n30.50N 84.88W\nTarget City: Near Torreya State Park, FL"
+Object: 35.963222,-95.380367
+Icon: 0,0,180,1,3, "Name: Wyatt Van Dyke\n35.96N 95.38W\nTarget City: Wagoner, OK"
 End:
 
-Object: 30.428367,-84.938049
-Icon: 0,0,180,1,3, "Name: Unethical dot at verification begin\n30.43N 84.94W\nTarget City: nan"
+Object: 34.82443273502172,-96.02854786692411
+Icon: 0,0,180,1,3, "Name: 12Z Nadocast Centroid\n34.82N 96.03W\nTarget City: nan"
 End:
 
-Object: 30.451745,-84.521335
-Icon: 0,0,180,1,3, "Name: gf\n30.45N 84.52W\nTarget City: nan"
-End:
-
-Object: 30.561534,-85.067438
-Icon: 0,0,180,1,3, "Name: there's a tornado warning heading for it ig\n30.56N 85.07W\nTarget City: Altha, FL"
-End:
-
-Object: 31.025,-87.506
-Icon: 0,0,180,1,3, "Name: Bookworm\n31.02N 87.51W\nTarget City: Atmore, AL"
-End:
-
-Object: 30.57341151569349,-85.11969894975071
-Icon: 0,0,180,1,3, "Name: Garrett Statum\n30.57N 85.12W\nTarget City: Altha, FL"
-End:
-
-Object: 47.323498,-106.906357
-Icon: 0,0,180,1,3, "Name: this season is toast anyways\n47.32N 106.91W\nTarget City: Jordan, MT"
-End:
-
-Object: 31.310763,-83.634109
-Icon: 0,0,180,1,3, "Name: freakyreeky\n31.31N 83.63W\nTarget City: nan"
-End:
-
-Object: 30.872983,-84.226685
-Icon: 0,0,180,1,3, "Name: Derecho\n30.87N 84.23W\nTarget City: nan"
-End:
-
-Object: 30.4989075,-84.7499465
-Icon: 0,0,180,1,3, "Name: Ben Price\n30.50N 84.75W\nTarget City: Sawdust, FL"
-End:
-
-Object: 30.324879,-84.311142
-Icon: 0,0,180,1,3, "Name: German Aviation\n30.32N 84.31W\nTarget City: Tallahassee, FL"
-End:
-
-Object: 30.29,-84.7
-Icon: 0,0,180,1,3, "Name: Andrew Griffiths\n30.29N 84.70W\nTarget City: FLORIDA FOREST "
-End:
-
-Object: 30.392293,-84.81926
-Icon: 0,0,180,1,3, "Name: Joey DownStream Krastel\n30.39N 84.82W\nTarget City: 2 W Hosfor, FL"
-End:
-
-Object: 30.553747,-84.743042
-Icon: 0,0,180,1,3, "Name: JetStreamJami\n30.55N 84.74W\nTarget City: Greensboro, FL"
-End:
-
-Object: 30.246863,-84.206729
-Icon: 0,0,180,1,3, "Name: Richard Cirone\n30.25N 84.21W\nTarget City: nan"
-End:
-
-Object: 30.440206,-85.044651
-Icon: 0,0,180,1,3, "Name: Berg\n30.44N 85.04W\nTarget City: Blountstown, FL"
-End:
-
-Object: 30.300214,-84.579277
-Icon: 0,0,180,1,3, "Name: timotheedinkins\n30.30N 84.58W\nTarget City: somewhere, Florida"
-End:
-
-Object: 30.318928,-84.24378
-Icon: 0,0,180,1,3, "Name: Veer\n30.32N 84.24W\nTarget City: nan"
-End:
-
-Object: 30.41737,-84.075623
-Icon: 0,0,180,1,3, "Name: AJ Clever\n30.42N 84.08W\nTarget City: nan"
-End:
-
-Object: 30.282788,-83.630676
-Icon: 0,0,180,1,3, "Name: Adler Hanson\n30.28N 83.63W\nTarget City: Shady Grove, FL"
-End:
-
-Object: 30.306503,-84.548035
-Icon: 0,0,180,1,3, "Name: wxManSmith\n30.31N 84.55W\nTarget City: nan"
-End:
-
-Object: 30.395581,-84.797859
-Icon: 0,0,180,1,3, "Name: This should probably be a no tor\n30.40N 84.80W\nTarget City: Hosford"
-End:
-
-Object: 31.227234,-85.382301
-Icon: 0,0,180,1,3, "Name: Earth Central\n31.23N 85.38W\nTarget City: Dothan, AL"
-End:
-
-Object: 30.601782,-84.598932
-Icon: 0,0,180,1,3, "Name: Blake Barber\n30.60N 84.60W\nTarget City: nan"
-End:
-
-Object: 30.445062,-85.042076
-Icon: 0,0,180,1,3, "Name: Roland\n30.45N 85.04W\nTarget City: Blountstown"
-End:
-
-Object: 30.503115541066773,-84.2502227886743
-Icon: 0,0,180,1,3, "Name: timcigar\n30.50N 84.25W\nTarget City: Tallahassee, FL"
-End:
-
-Object: 30.51512,-85.026725
-Icon: 0,0,180,1,3, "Name: Colton Flint\n30.52N 85.03W\nTarget City: nan"
-End:
-
-Object: 30.410545,-84.576616
-Icon: 0,0,180,1,3, "Name: Donovan Fry\n30.41N 84.58W\nTarget City: nan"
-End:
-
-Object: 30.404202,-84.912706
-Icon: 0,0,180,1,3, "Name: Dave Gagliano\n30.40N 84.91W\nTarget City: nan"
-End:
-
-Object: 30.51,-84.19
-Icon: 0,0,180,1,3, "Name: Alexis Severson\n30.51N 84.19W\nTarget City: Tallahassee, FL "
-End:
-
-Object: 30.82,-84.56
-Icon: 0,0,180,1,3, "Name: Lizzie Tirone-Hugeback\n30.82N 84.56W\nTarget City: I'll probably regret not going no tor"
-End:
-
-Object: 30.804869,-84.51457
-Icon: 0,0,180,1,3, "Name: DaveFlo\n30.80N 84.51W\nTarget City: nan"
-End:
-
-Object: 30.467614,-85.044216
-Icon: 0,0,180,1,3, "Name: TDGWx\n30.47N 85.04W\nTarget City: Blountstown, FL"
-End:
-
-Object: 30.889949,-84.720386
-Icon: 0,0,180,1,3, "Name: Wyatt Van Dyke\n30.89N 84.72W\nTarget City: Bainbridge, GA"
-End:
-
-Object: 30.820068173759278,-84.99853042251682
-Icon: 0,0,180,1,3, "Name: Forecast Consensus\n30.82N 85.00W\nTarget City: nan"
-End:
-
-Object: 31.305892284684283,-84.71421701316098
-Icon: 0,0,180,1,3, "Name: 12Z Nadocast Centroid\n31.31N 84.71W\nTarget City: nan"
-End:
-
-Object: 31.550682208143492,-83.95012230325493
-Icon: 0,0,180,1,3, "Name: 14Z Nadocast Centroid\n31.55N 83.95W\nTarget City: nan"
+Object: 34.08111561841831,-94.29557570907761
+Icon: 0,0,180,1,3, "Name: 14Z Nadocast Centroid\n34.08N 94.30W\nTarget City: nan"
 End:
 
