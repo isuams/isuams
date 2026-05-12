@@ -1,42 +1,170 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Yellow 2026_05_11                      
+Title: TTC Forecast Locations Yellow 2026_05_12                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 27.692278,-80.786247
-Icon: 0,0,180,1,2, "Name: Bunger\n27.69N 80.79W\nTarget City: nan"
+Object: 29.736761,-84.878569
+Icon: 0,0,180,1,2, "Name: Gamble time \n29.74N 84.88W\nTarget City: East Point, FL"
 End:
 
-Object: 27.541965,-80.404243
-Icon: 0,0,180,1,2, "Name: Waterspout Survivor\n27.54N 80.40W\nTarget City: Lakewood Park, FL "
+Object: 38.289667,-95.211157
+Icon: 0,0,180,1,2, "Name: Joseph Patton\n38.29N 95.21W\nTarget City: Garnett, KS"
 End:
 
-Object: 27.652637,-80.391576
-Icon: 0,0,180,1,2, "Name: MasDogWx\n27.65N 80.39W\nTarget City: Vero Beach, FL"
+Object: 28.597062,-80.81131
+Icon: 0,0,180,1,2, "Name: I guess tornado (D0ss)\n28.60N 80.81W\nTarget City: Titusville, FL"
 End:
 
-Object: 30.447231,-89.092255
-Icon: 0,0,180,1,2, "Name: AJ Clever\n30.45N 89.09W\nTarget City: nan"
+Object: 28.75,-80.87
+Icon: 0,0,180,1,2, "Name: jumpwx\n28.75N 80.87W\nTarget City: Scottsmoor, FL"
 End:
 
-Object: 32.06768,-81.132198
-Icon: 0,0,180,1,2, "Name: Earth Central\n32.07N 81.13W\nTarget City: Savannah, GA"
+Object: 27.574381,-80.415058
+Icon: 0,0,180,1,2, "Name: Jonah H.\n27.57N 80.42W\nTarget City: Lakewood Park, FL"
 End:
 
-Object: 32.602844,-80.085082
-Icon: 0,0,180,1,2, "Name: WxDownYonder\n32.60N 80.09W\nTarget City: Kiawah Island, SC"
+Object: 28.460184,-81.152546
+Icon: 0,0,180,1,2, "Name: The Hawk\n28.46N 81.15W\nTarget City: nan"
 End:
 
-Object: 34.328921,-78.711497
-Icon: 0,0,180,1,2, "Name: DaveFlo\n34.33N 78.71W\nTarget City: Whiteville, NC"
+Object: 28.294707,-81.004028
+Icon: 0,0,180,1,2, "Name: Veer (low end FL day in mid may horray)\n28.29N 81.00W\nTarget City: Wedgefield, FL"
 End:
 
-Object: 33.35037855499846,-82.85755657687943
-Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n33.35N 82.86W\nTarget City: nan"
+Object: 29.750966,-84.891564
+Icon: 0,0,180,1,2, "Name: Florida Panhandle surface low 🤔 (gabezwx)\n29.75N 84.89W\nTarget City: Eastpoint, FL"
 End:
 
-Object: 30.93334295214773,-86.57276817860911
-Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n30.93N 86.57W\nTarget City: nan"
+Object: 28.099847,-80.648232
+Icon: 0,0,180,1,2, "Name: Heerok Das\n28.10N 80.65W\nTarget City: KMLB"
+End:
+
+Object: 29.043898,-81.065688
+Icon: 0,0,180,1,2, "Name: the Edmund Fitzgerald weighed empty\n29.04N 81.07W\nTarget City: Daytona Beach, FL"
+End:
+
+Object: 28.194976,-80.675354
+Icon: 0,0,180,1,2, "Name: jbean45\n28.19N 80.68W\nTarget City: nan"
+End:
+
+Object: 28.248344,-82.703705
+Icon: 0,0,180,1,2, "Name: SRRadarLoops\n28.25N 82.70W\nTarget City: nan"
+End:
+
+Object: 28.19,-81.15
+Icon: 0,0,180,1,2, "Name: My yestor has the power of prevention (P Austin)\n28.19N 81.15W\nTarget City: Harmony, FL"
+End:
+
+Object: 27.7,-81.04
+Icon: 0,0,180,1,2, "Name: Revenge of Florida man\n27.70N 81.04W\nTarget City: W of Yeehaw Junction, FL"
+End:
+
+Object: 27.335907,-80.547287
+Icon: 0,0,180,1,2, "Name: Cold Core Cowboy\n27.34N 80.55W\nTarget City: Port Saint Lucie, FL"
+End:
+
+Object: 28.346832,-80.698925
+Icon: 0,0,180,1,2, "Name: Pent\n28.35N 80.70W\nTarget City: nan"
+End:
+
+Object: 27.923169,-80.722734
+Icon: 0,0,180,1,2, "Name: The Curse of Florida Man (Nick M)\n27.92N 80.72W\nTarget City: SW of Palm Bay, FL"
+End:
+
+Object: 28.60823,-80.604372
+Icon: 0,0,180,1,2, "Name: Logan Giles\n28.61N 80.60W\nTarget City: SpaceX "
+End:
+
+Object: 28.29,-80.82
+Icon: 0,0,180,1,2, "Name: Sebastian Pelt\n28.29N 80.82W\nTarget City: Rockledge, FL"
+End:
+
+Object: 27.995937,-80.68823
+Icon: 0,0,180,1,2, "Name: CG15wx\n28.00N 80.69W\nTarget City: Palm Bay, FL"
+End:
+
+Object: 28.2219742,-82.6896682
+Icon: 0,0,180,1,2, "Name: German Aviation (NPR Sigtor, goodbye nick)\n28.22N 82.69W\nTarget City: New Port Richey, FL"
+End:
+
+Object: 28.59,-81.02
+Icon: 0,0,180,1,2, "Name: Andrew Griffiths\n28.59N 81.02W\nTarget City: Christmas, FL"
+End:
+
+Object: 28.337232,-80.779467
+Icon: 0,0,180,1,2, "Name: Roch\n28.34N 80.78W\nTarget City: Rockledge, FL"
+End:
+
+Object: 28.007976,-80.71209
+Icon: 0,0,180,1,2, "Name: Joe Schrantz\n28.01N 80.71W\nTarget City: Palm Bay, FL"
+End:
+
+Object: 28.237132,-82.727051
+Icon: 0,0,180,1,2, "Name: Bengalsfan\n28.24N 82.73W\nTarget City: New Port Richey, Florida "
+End:
+
+Object: 28.038677,-80.741397
+Icon: 0,0,180,1,2, "Name: Veer\n28.04N 80.74W\nTarget City: nan"
+End:
+
+Object: 28.136902,-81.029663
+Icon: 0,0,180,1,2, "Name: Wxbill\n28.14N 81.03W\nTarget City: nan"
+End:
+
+Object: 27.337971,-80.519199
+Icon: 0,0,180,1,2, "Name: Poo Poo Doo Doo >:(\n27.34N 80.52W\nTarget City: nan"
+End:
+
+Object: 27.629196,-80.418549
+Icon: 0,0,180,1,2, "Name: wxManSmith\n27.63N 80.42W\nTarget City: nan"
+End:
+
+Object: 28.16548,-80.730629
+Icon: 0,0,180,1,2, "Name: Hoang Do\n28.17N 80.73W\nTarget City: Viera, FL"
+End:
+
+Object: 28.65,-81.51
+Icon: 0,0,180,1,2, "Name: Olivia Macko\n28.65N 81.51W\nTarget City: Apopka, FL"
+End:
+
+Object: 37.167321,-95.107488
+Icon: 0,0,180,1,2, "Name: Earth Central\n37.17N 95.11W\nTarget City: Oswego, KS"
+End:
+
+Object: 28.530041,-81.369553
+Icon: 0,0,180,1,2, "Name: WxDownYonder\n28.53N 81.37W\nTarget City: Orlando, FL"
+End:
+
+Object: 28.8880956,-80.9246989
+Icon: 0,0,180,1,2, "Name: timcigar\n28.89N 80.92W\nTarget City: Creighton, FL"
+End:
+
+Object: 28.586589,-80.956761
+Icon: 0,0,180,1,2, "Name: Everyone get to the Titus! (Jacob.s)\n28.59N 80.96W\nTarget City: Titusville, FL"
+End:
+
+Object: 27.568525,-80.576563
+Icon: 0,0,180,1,2, "Name: In Florida We Trust\n27.57N 80.58W\nTarget City: random solar farm"
+End:
+
+Object: 28.539,-80.96
+Icon: 0,0,180,1,2, "Name: IL WF 69\n28.54N 80.96W\nTarget City: Christmas, FL"
+End:
+
+Object: 28.558441,-80.811914
+Icon: 0,0,180,1,2, "Name: Ghostfox1\n28.56N 80.81W\nTarget City: Titusville fl"
+End:
+
+Object: 29.604984,-81.278745
+Icon: 0,0,180,1,2, "Name: TDGWx\n29.60N 81.28W\nTarget City: nan"
+End:
+
+Object: 29.80409086064792,-81.63603659115627
+Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n29.80N 81.64W\nTarget City: nan"
+End:
+
+Object: 30.013575582553578,-82.10303869212095
+Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n30.01N 82.10W\nTarget City: nan"
 End:
 
