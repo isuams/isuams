@@ -1,54 +1,34 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Yellow 2026_05_13                      
+Title: TTC Forecast Locations Yellow 2026_05_14                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 40.29,-80.02
-Icon: 0,0,180,1,2, "Name: jumpwx\n40.29N 80.02W\nTarget City: South Park Township, PA"
+Object: 39.261101,-96.904907
+Icon: 0,0,180,1,2, "Name: AJ Clever\n39.26N 96.90W\nTarget City: nan"
 End:
 
-Object: 39.92945,-79.739563
-Icon: 0,0,180,1,2, "Name: The Hawk\n39.93N 79.74W\nTarget City: nan"
+Object: 38.848264,-97.630703
+Icon: 0,0,180,1,2, "Name: Earth Central\n38.85N 97.63W\nTarget City: Salina, KS"
 End:
 
-Object: 39.721078,-79.47666
-Icon: 0,0,180,1,2, "Name: TRISTATE POINT MAGIC (gabezwx)\n39.72N 79.48W\nTarget City: Markleysburg PA - Asher Glade MD - Glade Farms WV"
+Object: 38.970754,-97.022667
+Icon: 0,0,180,1,2, "Name: WxDownYonder\n38.97N 97.02W\nTarget City: Chapman, KS"
 End:
 
-Object: 39.262568551709,-80.32012231368024
-Icon: 0,0,180,1,2, "Name: West Virginia truther (maybe i am crazy)\n39.26N 80.32W\nTarget City: Nutter Fort"
+Object: 38.96,-97.69
+Icon: 0,0,180,1,2, "Name: IL WF 69\n38.96N 97.69W\nTarget City: Bennington, KS"
 End:
 
-Object: 39.88,-79.79
-Icon: 0,0,180,1,2, "Name: Kyle Hugeback\n39.88N 79.79W\nTarget City: W of Uniontown, PA"
+Object: 39.430658,-98.702545
+Icon: 0,0,180,1,2, "Name: DaveFlo\n39.43N 98.70W\nTarget City: Osborne, KS"
 End:
 
-Object: 43.336066,-76.174852
-Icon: 0,0,180,1,2, "Name: Cold Core Cowboy\n43.34N 76.17W\nTarget City: Oneida Lake, NY"
+Object: 37.8555013669835,-98.21349071752599
+Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n37.86N 98.21W\nTarget City: nan"
 End:
 
-Object: 49.400569,-110.68842
-Icon: 0,0,180,1,2, "Name: Manyberries, AB is the real target today\n49.40N 110.69W\nTarget City: Chester, MT"
-End:
-
-Object: 39.935382,-79.84726
-Icon: 0,0,180,1,2, "Name: JetStreamJami\n39.94N 79.85W\nTarget City: Buffington, PA"
-End:
-
-Object: 47.675293,-117.416024
-Icon: 0,0,180,1,2, "Name: Earth Central\n47.68N 117.42W\nTarget City: Spokane, WA"
-End:
-
-Object: 41.22231,-111.971054
-Icon: 0,0,180,1,2, "Name: WxDownYonder\n41.22N 111.97W\nTarget City: Ogden, UT"
-End:
-
-Object: 41.02898489798402,-79.78277764874223
-Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n41.03N 79.78W\nTarget City: nan"
-End:
-
-Object: 41.212078958443044,-79.58961889458757
-Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n41.21N 79.59W\nTarget City: nan"
+Object: 37.345354974495564,-89.02430190602121
+Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n37.35N 89.02W\nTarget City: nan"
 End:
 
