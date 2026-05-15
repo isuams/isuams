@@ -1,34 +1,178 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Yellow 2026_05_14                      
+Title: TTC Forecast Locations Yellow 2026_05_15                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 39.261101,-96.904907
-Icon: 0,0,180,1,2, "Name: AJ Clever\n39.26N 96.90W\nTarget City: nan"
+Object: 41.577289,-95.569382
+Icon: 0,0,180,1,2, "Name: Blake brink\n41.58N 95.57W\nTarget City: Persia, IA"
 End:
 
-Object: 38.848264,-97.630703
-Icon: 0,0,180,1,2, "Name: Earth Central\n38.85N 97.63W\nTarget City: Salina, KS"
+Object: 43.328062,-93.063576
+Icon: 0,0,180,1,2, "Name: Joseph Patton\n43.33N 93.06W\nTarget City: Grafton, IA"
 End:
 
-Object: 38.970754,-97.022667
-Icon: 0,0,180,1,2, "Name: WxDownYonder\n38.97N 97.02W\nTarget City: Chapman, KS"
+Object: 42.784413,-92.667789
+Icon: 0,0,180,1,2, "Name: WxDrifter\n42.78N 92.67W\nTarget City: Clarksville, IA"
 End:
 
-Object: 38.96,-97.69
-Icon: 0,0,180,1,2, "Name: IL WF 69\n38.96N 97.69W\nTarget City: Bennington, KS"
+Object: 43.120157,-91.71936
+Icon: 0,0,180,1,2, "Name: Jim Franc\n43.12N 91.72W\nTarget City: Ossian, IA"
 End:
 
-Object: 39.430658,-98.702545
-Icon: 0,0,180,1,2, "Name: DaveFlo\n39.43N 98.70W\nTarget City: Osborne, KS"
+Object: 42.754751,-92.807823
+Icon: 0,0,180,1,2, "Name: The Hawk\n42.75N 92.81W\nTarget City: nan"
 End:
 
-Object: 37.8555013669835,-98.21349071752599
-Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n37.86N 98.21W\nTarget City: nan"
+Object: 41.87843,-93.604889
+Icon: 0,0,180,1,2, "Name: Full send\n41.88N 93.60W\nTarget City: Huxley, IA"
 End:
 
-Object: 37.345354974495564,-89.02430190602121
-Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n37.35N 89.02W\nTarget City: nan"
+Object: 42.028,-93.642
+Icon: 0,0,180,1,2, "Name: Heerok Das\n42.03N 93.64W\nTarget City: Optional: Ames, IA"
+End:
+
+Object: 42.746705,-93.745308
+Icon: 0,0,180,1,2, "Name: Chris Yates\n42.75N 93.75W\nTarget City: Clarion, IA"
+End:
+
+Object: 42.003047,-93.651123
+Icon: 0,0,180,1,2, "Name: Kay\n42.00N 93.65W\nTarget City: nan"
+End:
+
+Object: 42.028894,-93.619995
+Icon: 0,0,180,1,2, "Name: SRRadarLoops\n42.03N 93.62W\nTarget City: nan"
+End:
+
+Object: 42.58,-92.96
+Icon: 0,0,180,1,2, "Name: Paul Austin\n42.58N 92.96W\nTarget City: Austinville, IA"
+End:
+
+Object: 41.776689,-93.694289
+Icon: 0,0,180,1,2, "Name: Cold Core Cowboy\n41.78N 93.69W\nTarget City: Anywhere within 5 mi of DMX"
+End:
+
+Object: 42.028628,-93.643324
+Icon: 0,0,180,1,2, "Name: Map room WIMDY\n42.03N 93.64W\nTarget City: Ames, IA"
+End:
+
+Object: 43.059963,-92.691865
+Icon: 0,0,180,1,2, "Name: Oliver Knapton\n43.06N 92.69W\nTarget City: Charles City, IA"
+End:
+
+Object: 42.711369,-92.475586
+Icon: 0,0,180,1,2, "Name: Only looked at 14Z HRRR\n42.71N 92.48W\nTarget City: Waverly, IA"
+End:
+
+Object: 42.400948,-92.454356
+Icon: 0,0,180,1,2, "Name: Peter Corman\n42.40N 92.45W\nTarget City: Hudson, Iowa"
+End:
+
+Object: 43.08533096130069,-92.75174176362508
+Icon: 0,0,180,1,2, "Name: Garrett Statum\n43.09N 92.75W\nTarget City: I'll regret this..."
+End:
+
+Object: 43.067007,-92.6668
+Icon: 0,0,180,1,2, "Name: brix\n43.07N 92.67W\nTarget City: nan"
+End:
+
+Object: 40.813745,-96.659483
+Icon: 0,0,180,1,2, "Name: BabbWx\n40.81N 96.66W\nTarget City: Lincoln, NE"
+End:
+
+Object: 42.84,-93.97
+Icon: 0,0,180,1,2, "Name: Derecho\n42.84N 93.97W\nTarget City: nan"
+End:
+
+Object: 42.729664,-93.732819
+Icon: 0,0,180,1,2, "Name: Gavin Bird\n42.73N 93.73W\nTarget City: Clarion, IA"
+End:
+
+Object: 43.004647,-92.966309
+Icon: 0,0,180,1,2, "Name: Andrew Griffiths\n43.00N 92.97W\nTarget City: nan"
+End:
+
+Object: 41.195997,-94.942474
+Icon: 0,0,180,1,2, "Name: ajax13\n41.20N 94.94W\nTarget City: nan"
+End:
+
+Object: 42.012853,-93.63151
+Icon: 0,0,180,1,2, "Name: Veer\n42.01N 93.63W\nTarget City: Ames, IA"
+End:
+
+Object: 41.493557,-95.144073
+Icon: 0,0,180,1,2, "Name: Michael Kubinski\n41.49N 95.14W\nTarget City: nan"
+End:
+
+Object: 43.115395,-92.944336
+Icon: 0,0,180,1,2, "Name: Wxbill\n43.12N 92.94W\nTarget City: nan"
+End:
+
+Object: 41.646001,-94.502535
+Icon: 0,0,180,1,2, "Name: Iowa meso oopsie on day of convocation at ISU?!!!\n41.65N 94.50W\nTarget City: LIEowa ENH risk day :D"
+End:
+
+Object: 43.141329,-92.903481
+Icon: 0,0,180,1,2, "Name: Adler Hanson\n43.14N 92.90W\nTarget City: Rudd, IA"
+End:
+
+Object: 41.71803,-95.169067
+Icon: 0,0,180,1,2, "Name: wxManSmith\n41.72N 95.17W\nTarget City: nan"
+End:
+
+Object: 43.24,-92.43
+Icon: 0,0,180,1,2, "Name: Olivia Macko\n43.24N 92.43W\nTarget City: Elma, IA"
+End:
+
+Object: 42.401547,-92.773361
+Icon: 0,0,180,1,2, "Name: TreyTwisterWx\n42.40N 92.77W\nTarget City: Grundy Center, IA"
+End:
+
+Object: 42.529251,-92.318115
+Icon: 0,0,180,1,2, "Name: Blake Barber\n42.53N 92.32W\nTarget City: nan"
+End:
+
+Object: 26.147656,-81.774824
+Icon: 0,0,180,1,2, "Name: WxDownYonder\n26.15N 81.77W\nTarget City: Naples, FL"
+End:
+
+Object: 41.234291,-95.13731
+Icon: 0,0,180,1,2, "Name: Stephen Szulborski\n41.23N 95.14W\nTarget City: Griswold, IA"
+End:
+
+Object: 42.044219,-93.878818
+Icon: 0,0,180,1,2, "Name: idk man\n42.04N 93.88W\nTarget City: Boone, IA"
+End:
+
+Object: 43.093407,-91.953813
+Icon: 0,0,180,1,2, "Name: Dave Gagliano\n43.09N 91.95W\nTarget City: nan"
+End:
+
+Object: 43.16,-92.38
+Icon: 0,0,180,1,2, "Name: Lizzie Tirone-Hugeback\n43.16N 92.38W\nTarget City: SE of Alta Vista, IA"
+End:
+
+Object: 42.94,-93.11
+Icon: 0,0,180,1,2, "Name: Tobias Leonard\n42.94N 93.11W\nTarget City: Mason City, IA"
+End:
+
+Object: 43.296599,-91.986485
+Icon: 0,0,180,1,2, "Name: DaveFlo\n43.30N 91.99W\nTarget City: Ridgeway, IA"
+End:
+
+Object: 42.853211,-92.106399
+Icon: 0,0,180,1,2, "Name: Wyatt Van Dyke\n42.85N 92.11W\nTarget City: Sumner, IA"
+End:
+
+Object: 42.040277049032525,-93.09611046909063
+Icon: 0,0,180,1,2, "Name: Forecast Consensus\n42.04N 93.10W\nTarget City: nan"
+End:
+
+Object: 42.30376523543322,-93.06764639641226
+Icon: 0,0,180,1,2, "Name: 12Z Nadocast Centroid\n42.30N 93.07W\nTarget City: nan"
+End:
+
+Object: 42.18616408649224,-93.77361769508182
+Icon: 0,0,180,1,2, "Name: 14Z Nadocast Centroid\n42.19N 93.77W\nTarget City: nan"
 End:
 
