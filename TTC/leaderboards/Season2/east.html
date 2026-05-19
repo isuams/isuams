@@ -1,27 +1,717 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No Forecast Today</title>
-  <!-- Add any additional styles if needed -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa; /* Optional background color */
-      text-align: center;
-      padding: 20px;
-    }
 
-    h1 {
-      color: #343a40; /* Optional text color */
-    }
-  </style>
-</head>
-<body>
-  <h1>No Results for this Region</h1>
-  <br>
-  <h2>Leaderboard to Come</h2>
-  <!-- You can add additional content or styling as needed -->
-</body>
-</html>
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Rank</th>
+      <th>Affiliation</th>
+      <th>Forecaster</th>
+      <th>Daily_Wins</th>
+      <th>Cumulative_Score</th>
+      <th>2026_05_13</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>E</td>
+      <td>Gabe Zago</td>
+      <td>1.00</td>
+      <td>28.60</td>
+      <td>28.60</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>O</td>
+      <td>Kyle Hugeback</td>
+      <td>0.00</td>
+      <td>22.90</td>
+      <td>22.90</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>E</td>
+      <td>The Hawk</td>
+      <td>0.00</td>
+      <td>18.20</td>
+      <td>18.20</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>E</td>
+      <td>JetStreamJami</td>
+      <td>0.00</td>
+      <td>14.00</td>
+      <td>14.00</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>U</td>
+      <td>jbean45</td>
+      <td>0.00</td>
+      <td>13.10</td>
+      <td>13.10</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>U</td>
+      <td>jumpwx</td>
+      <td>0.00</td>
+      <td>8.80</td>
+      <td>8.80</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>F</td>
+      <td>Joseph Patton</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>E</td>
+      <td>Blake brink</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>U</td>
+      <td>Cyclone_95</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>E</td>
+      <td>Brennen Round</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>A</td>
+      <td>WxDrifter</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>B</td>
+      <td>CPekar</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>E</td>
+      <td>Jim Franc</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>E</td>
+      <td>Karson</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>U</td>
+      <td>Jonah H.</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>E</td>
+      <td>Clarence</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>U</td>
+      <td>Veer</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>G</td>
+      <td>Braydon P Songer</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>E</td>
+      <td>Heerok Das</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>NaN</td>
+      <td>Nadocast 14z</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>NaN</td>
+      <td>Forecast Consensus</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>NaN</td>
+      <td>Nadocast 12z</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>U</td>
+      <td>Kay</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>B</td>
+      <td>Chris Yates</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>A</td>
+      <td>Calex1</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>G</td>
+      <td>Bunger</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>B</td>
+      <td>adrianestamerwx 🌪️</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>U</td>
+      <td>Evan St. Clair</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>E</td>
+      <td>Paul Austin</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>E</td>
+      <td>SRRadarLoops</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>F</td>
+      <td>Jeff Frame</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>O</td>
+      <td>Cold Core Cowboy</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>E</td>
+      <td>Pent</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>G</td>
+      <td>Nick M</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>U</td>
+      <td>Oliver Knapton</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>G</td>
+      <td>Sam Ritter</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>G</td>
+      <td>Logan Giles</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>E</td>
+      <td>MasDogWx</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>U</td>
+      <td>Diamond</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>O</td>
+      <td>Sebastian Pelt</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>E</td>
+      <td>Bookworm</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>E</td>
+      <td>CG15wx</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>U</td>
+      <td>brix</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>U</td>
+      <td>Derecho</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>U</td>
+      <td>Caleb O'Gara</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>G</td>
+      <td>Garrett Statum</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>O</td>
+      <td>Ben Price</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>E</td>
+      <td>German Aviation</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>U</td>
+      <td>Andrew Griffiths</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>U</td>
+      <td>Gavin Bird</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>F</td>
+      <td>ajax13</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>O</td>
+      <td>Joey Krastel</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>E</td>
+      <td>Roch</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>E</td>
+      <td>Joe Schrantz</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>U</td>
+      <td>Bengalsfan</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>F</td>
+      <td>Richard Cirone</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>E</td>
+      <td>Berg</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>E</td>
+      <td>Zegery</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>E</td>
+      <td>Michael Kubinski</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>F</td>
+      <td>Wxbill</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>U</td>
+      <td>atypicalbearsfan</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>U</td>
+      <td>Sophie Miller</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>E</td>
+      <td>AJ_Clever</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>E</td>
+      <td>wxManSmith</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>G</td>
+      <td>Nathan Erickson</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>A</td>
+      <td>Hoang Do</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>O</td>
+      <td>Olivia Macko</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>E</td>
+      <td>Earth Central</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>A</td>
+      <td>Josh Jaeger</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>E</td>
+      <td>Roman Fariello</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>G</td>
+      <td>EF-Femme</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>A</td>
+      <td>WxDownYonder</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>O</td>
+      <td>Stephen Szulborski</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>E</td>
+      <td>timcigar</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>A</td>
+      <td>Stormchaser007</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>E</td>
+      <td>Colton Flint</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>U</td>
+      <td>Donovan Fry</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>A</td>
+      <td>IL WF 69</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>A</td>
+      <td>Tobias Leonard</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>A</td>
+      <td>Jonah Dosedel</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>F</td>
+      <td>DaveFlo</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>E</td>
+      <td>Ghostfox1</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>E</td>
+      <td>TDGWx</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>G</td>
+      <td>Josh Schwarz</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>O</td>
+      <td>Quincy Vagell</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>U</td>
+      <td>Wyatt Van Dyke</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
