@@ -1,0 +1,2316 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-04-25 15:36:55</td>
+      <td>127</td>
+      <td>Matt Wilson</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.16</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>15.60</td>
+      <td>8 WNW Elba, CO</td>
+      <td>34.50</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:59:09</td>
+      <td>153</td>
+      <td>Madisen Lindholm</td>
+      <td>YesTor</td>
+      <td>Norman, OK</td>
+      <td>35.22</td>
+      <td>-97.44</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.60</td>
+      <td>EF0, NA</td>
+      <td>25.20</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:32:07</td>
+      <td>182</td>
+      <td>Braydon Songer</td>
+      <td>YesTor</td>
+      <td>NW of Colby, KS</td>
+      <td>39.53</td>
+      <td>-101.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>19.80</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 08:13:43</td>
+      <td>228</td>
+      <td>Tristan White</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.25</td>
+      <td>-103.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.50</td>
+      <td>8 WNW Elba, CO</td>
+      <td>15.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:29:45</td>
+      <td>138</td>
+      <td>Jack “Triple Point” Zwolinski</td>
+      <td>YesTor</td>
+      <td>Otis, CO</td>
+      <td>40.18</td>
+      <td>-102.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.50</td>
+      <td>8 WNW Elba, CO</td>
+      <td>14.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:31:08</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>Iowa, KS</td>
+      <td>39.18</td>
+      <td>-101.45</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:44:02</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>39.59</td>
+      <td>-101.05</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:05:47</td>
+      <td>206</td>
+      <td>drawablefish</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.41</td>
+      <td>-101.10</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:51:32</td>
+      <td>270</td>
+      <td>tim "i picked 3 targets before this one" cigar</td>
+      <td>YesTor</td>
+      <td>Thomas County, KS</td>
+      <td>39.46</td>
+      <td>-101.06</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:28:17</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.43</td>
+      <td>-101.05</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:36:10</td>
+      <td>39</td>
+      <td>Erik Creighton</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.40</td>
+      <td>-101.05</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:10:49</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>10mi NW of Winona, KS</td>
+      <td>39.15</td>
+      <td>-101.36</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:33:26</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.39</td>
+      <td>-101.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:34:53</td>
+      <td>6</td>
+      <td>James Bishop</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.39</td>
+      <td>-101.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:02:55</td>
+      <td>151</td>
+      <td>Charles "Colorado Copium" Pekar</td>
+      <td>YesTor</td>
+      <td>Cope, CO</td>
+      <td>39.66</td>
+      <td>-102.85</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.80</td>
+      <td>8 WNW Elba, CO</td>
+      <td>13.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:17:06</td>
+      <td>120</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.13</td>
+      <td>-102.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.40</td>
+      <td>8 WNW Elba, CO</td>
+      <td>12.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:24:29</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.34</td>
+      <td>-101.04</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:08:18</td>
+      <td>203</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>Yukon, OK</td>
+      <td>35.50</td>
+      <td>-97.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.80</td>
+      <td>EF1, NA</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:41:15</td>
+      <td>164</td>
+      <td>Chad Griffin</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.50</td>
+      <td>-100.94</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>12.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:26:43</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Achilles, KS</td>
+      <td>39.62</td>
+      <td>-100.91</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>12.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:41:16</td>
+      <td>35</td>
+      <td>RoamingMirrorBB</td>
+      <td>YesTor</td>
+      <td>Gem, KS</td>
+      <td>39.43</td>
+      <td>-100.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:54:43</td>
+      <td>27</td>
+      <td>Christopher Scragg</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.07</td>
+      <td>-102.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>11.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:58:45</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.11</td>
+      <td>-102.17</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:09:19</td>
+      <td>240</td>
+      <td>Kyle Schanus</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.08</td>
+      <td>-102.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:56:28</td>
+      <td>33</td>
+      <td>Mason Carneal</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.08</td>
+      <td>-102.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>10.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:32:16</td>
+      <td>84</td>
+      <td>Jeremy Clarkson</td>
+      <td>YesTor</td>
+      <td>Eckley, CO</td>
+      <td>40.11</td>
+      <td>-102.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.40</td>
+      <td>8 WNW Elba, CO</td>
+      <td>10.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 08:20:00</td>
+      <td>135</td>
+      <td>IB Physics Exam Taker</td>
+      <td>YesTor</td>
+      <td>Wray CO</td>
+      <td>40.07</td>
+      <td>-102.31</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>10.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:06:41</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.39</td>
+      <td>-102.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.70</td>
+      <td>8 WNW Elba, CO</td>
+      <td>10.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:45:27</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.13</td>
+      <td>-102.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:10:47</td>
+      <td>136</td>
+      <td>Slim Tatman</td>
+      <td>YesTor</td>
+      <td>Colby, KS</td>
+      <td>39.31</td>
+      <td>-100.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:57:24</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Menlo, KS</td>
+      <td>39.36</td>
+      <td>-100.72</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:42:49</td>
+      <td>32</td>
+      <td>stfjinkiojd</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.16</td>
+      <td>-100.85</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:36:59</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.17</td>
+      <td>-100.84</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:51:53</td>
+      <td>113</td>
+      <td>Jacob Stichter, it was either Texas or Kansas, I decided to risk going Kansas</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.14</td>
+      <td>-100.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 02:18:53</td>
+      <td>157</td>
+      <td>wxkobold</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.13</td>
+      <td>-100.86</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:35:12</td>
+      <td>241</td>
+      <td>bowecho7</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.13</td>
+      <td>-100.85</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:54:58</td>
+      <td>101</td>
+      <td>Koji</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.13</td>
+      <td>-100.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:48:45</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.13</td>
+      <td>-100.85</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 11:11:51</td>
+      <td>97</td>
+      <td>Wyatt Huber</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.12</td>
+      <td>-100.86</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:08:59</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.12</td>
+      <td>-100.85</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:49:58</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Oakley, KS</td>
+      <td>39.12</td>
+      <td>-100.85</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:36:18</td>
+      <td>133</td>
+      <td>Kevin Mahoney</td>
+      <td>YesTor</td>
+      <td>Russell Springs, KS</td>
+      <td>38.91</td>
+      <td>-101.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:19:22</td>
+      <td>181</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>1 SSW Russel Springs, KS</td>
+      <td>38.90</td>
+      <td>-101.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:18:03</td>
+      <td>264</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Oberlin, KS</td>
+      <td>39.81</td>
+      <td>-100.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>55.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>8.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:48:20</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>YesTor</td>
+      <td>Selden, KS</td>
+      <td>39.54</td>
+      <td>-100.57</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:06:50</td>
+      <td>36</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Selden, KS</td>
+      <td>39.51</td>
+      <td>-100.56</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>8.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:59:13</td>
+      <td>160</td>
+      <td>flappy787</td>
+      <td>YesTor</td>
+      <td>Alvin, CO</td>
+      <td>40.29</td>
+      <td>-102.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>8.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:35:24</td>
+      <td>262</td>
+      <td>adrian z.</td>
+      <td>YesTor</td>
+      <td>Hoxie, KS</td>
+      <td>39.38</td>
+      <td>-100.54</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>7.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:58:00</td>
+      <td>143</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Paxton, KS</td>
+      <td>38.79</td>
+      <td>-101.19</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>7.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 05:43:27</td>
+      <td>275</td>
+      <td>Benjamin Kiel</td>
+      <td>YesTor</td>
+      <td>Grinnell, KS</td>
+      <td>39.13</td>
+      <td>-100.66</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>7.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:55:06</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Grinnell, KS</td>
+      <td>39.12</td>
+      <td>-100.63</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>7.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:19:20</td>
+      <td>194</td>
+      <td>Michael Pagnanelli</td>
+      <td>YesTor</td>
+      <td>Grinnell, KS</td>
+      <td>39.12</td>
+      <td>-100.63</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>7.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 02:49:50</td>
+      <td>63</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>Plainville, KS</td>
+      <td>39.12</td>
+      <td>-100.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>65.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>7.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:54:42</td>
+      <td>9</td>
+      <td>B-rice</td>
+      <td>YesTor</td>
+      <td>Elkader, KS</td>
+      <td>38.84</td>
+      <td>-100.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>65.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>6.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:12:04</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Hoxie, KS</td>
+      <td>39.37</td>
+      <td>-100.44</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>65.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>6.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:59:43</td>
+      <td>244</td>
+      <td>wxManSmith</td>
+      <td>YesTor</td>
+      <td>Hoxie, KS</td>
+      <td>39.36</td>
+      <td>-100.44</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>6.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:29:25</td>
+      <td>168</td>
+      <td>Steve Bergey</td>
+      <td>YesTor</td>
+      <td>Grainfield, KS</td>
+      <td>39.17</td>
+      <td>-100.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>6.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:40:05</td>
+      <td>227</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Grainfield, KS</td>
+      <td>39.11</td>
+      <td>-100.51</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>6.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:44:59</td>
+      <td>183</td>
+      <td>Ben Vitek</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>39.24</td>
+      <td>-100.40</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>5.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:57:38</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>YesTor</td>
+      <td>Grainfield, KS</td>
+      <td>39.11</td>
+      <td>-100.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>5.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:39:03</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Pence, KS</td>
+      <td>38.66</td>
+      <td>-101.07</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>5.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:46:39</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Central High, OK</td>
+      <td>34.59</td>
+      <td>-98.06</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.20</td>
+      <td>EF0, NA</td>
+      <td>5.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:33:56</td>
+      <td>25</td>
+      <td>Swirly-doo</td>
+      <td>YesTor</td>
+      <td>Hoxie, KS</td>
+      <td>39.23</td>
+      <td>-100.31</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:53:24</td>
+      <td>45</td>
+      <td>Sam Ritter</td>
+      <td>YesTor</td>
+      <td>Gove City, KS</td>
+      <td>38.96</td>
+      <td>-100.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 16:00:12</td>
+      <td>70</td>
+      <td>Alex H</td>
+      <td>YesTor</td>
+      <td>Park KS</td>
+      <td>39.11</td>
+      <td>-100.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:57:27</td>
+      <td>184</td>
+      <td>Tornado Fajitus</td>
+      <td>YesTor</td>
+      <td>Payne, KS</td>
+      <td>39.10</td>
+      <td>-100.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:55:18</td>
+      <td>64</td>
+      <td>Baca</td>
+      <td>YesTor</td>
+      <td>Park, ks</td>
+      <td>39.12</td>
+      <td>-100.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:46:18</td>
+      <td>60</td>
+      <td>WheelieWeather</td>
+      <td>YesTor</td>
+      <td>Gove,KS</td>
+      <td>38.95</td>
+      <td>-100.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:21:31</td>
+      <td>171</td>
+      <td>J Krizzle</td>
+      <td>YesTor</td>
+      <td>5 ENE Park, KS</td>
+      <td>39.13</td>
+      <td>-100.27</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>79.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:17:35</td>
+      <td>75</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Scott City, KS</td>
+      <td>38.69</td>
+      <td>-100.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>80.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>3.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:33:46</td>
+      <td>186</td>
+      <td>Sophie Miller</td>
+      <td>YesTor</td>
+      <td>Apache, OK</td>
+      <td>34.89</td>
+      <td>-98.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81.70</td>
+      <td>EF0, NA</td>
+      <td>3.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:36:32</td>
+      <td>161</td>
+      <td>Vincent P.</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>39.07</td>
+      <td>-100.24</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>3.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:56:47</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>Quinter, KS</td>
+      <td>39.06</td>
+      <td>-100.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>84.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>3.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:38:50</td>
+      <td>253</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Quinter, KS</td>
+      <td>39.06</td>
+      <td>-100.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>84.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>3.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:09:36</td>
+      <td>14</td>
+      <td>John Massura</td>
+      <td>YesTor</td>
+      <td>Scott City, KS</td>
+      <td>38.51</td>
+      <td>-100.91</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>84.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>3.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:51:22</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>YesTor</td>
+      <td>Scott City, KS</td>
+      <td>38.49</td>
+      <td>-100.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>85.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>2.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:35:19</td>
+      <td>154</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Fort Sill, OK</td>
+      <td>34.65</td>
+      <td>-98.42</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.50</td>
+      <td>EF0, NA</td>
+      <td>2.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:06:56</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Scott City, KS</td>
+      <td>38.48</td>
+      <td>-100.90</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>2.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.59</td>
+      <td>-100.68</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>2.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:21:20</td>
+      <td>112</td>
+      <td>Bround (WF we ride)</td>
+      <td>YesTor</td>
+      <td>Saint Peter, KS</td>
+      <td>39.19</td>
+      <td>-100.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>2.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:52:09</td>
+      <td>229</td>
+      <td>Addison (He1002)</td>
+      <td>YesTor</td>
+      <td>Collyer, KS</td>
+      <td>39.04</td>
+      <td>-100.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>90.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>2.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:15:39</td>
+      <td>189</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Scott City, KS</td>
+      <td>38.41</td>
+      <td>-100.79</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>94.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>1.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:53:14</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Voda, KS</td>
+      <td>39.04</td>
+      <td>-100.02</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>94.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>1.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:58:34</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Banner, KS</td>
+      <td>38.89</td>
+      <td>-100.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:04:00</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>YesTor</td>
+      <td>Hill City, KS</td>
+      <td>39.36</td>
+      <td>-99.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:43:10</td>
+      <td>139</td>
+      <td>McKenna B.</td>
+      <td>YesTor</td>
+      <td>Hill City, KS</td>
+      <td>39.41</td>
+      <td>-99.82</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:46:08</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Dighton, KS</td>
+      <td>38.50</td>
+      <td>-100.47</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>98.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:52:41</td>
+      <td>77</td>
+      <td>Jacob E</td>
+      <td>YesTor</td>
+      <td>Dighton, KS</td>
+      <td>38.49</td>
+      <td>-100.47</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>98.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:27:20</td>
+      <td>24</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>Dighton, KS</td>
+      <td>38.48</td>
+      <td>-100.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>99.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 04:03:47</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>YesTor</td>
+      <td>Hill City, KS</td>
+      <td>39.35</td>
+      <td>-99.79</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:17:01</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Alamota, KS</td>
+      <td>38.46</td>
+      <td>-100.31</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>106.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:26:07</td>
+      <td>110</td>
+      <td>Ryan Dreeszen</td>
+      <td>YesTor</td>
+      <td>Prairie View, KS</td>
+      <td>39.80</td>
+      <td>-99.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>108.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.28</td>
+      <td>-100.50</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:25:57</td>
+      <td>59</td>
+      <td>John Male</td>
+      <td>YesTor</td>
+      <td>Roosevelt, OK</td>
+      <td>34.85</td>
+      <td>-99.02</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>111.60</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:14:26</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Garden City, KS</td>
+      <td>38.05</td>
+      <td>-100.88</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>114.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:38:16</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>YesTor</td>
+      <td>Garden City, KS</td>
+      <td>38.03</td>
+      <td>-100.79</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>117.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.23</td>
+      <td>-100.32</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>118.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:08:05</td>
+      <td>16</td>
+      <td>WxZach</td>
+      <td>YesTor</td>
+      <td>Garden City, KS</td>
+      <td>38.09</td>
+      <td>-100.60</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>118.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 02:31:23</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Garden City, KS</td>
+      <td>37.97</td>
+      <td>-100.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>119.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:12:13</td>
+      <td>44</td>
+      <td>Ben Jablonski</td>
+      <td>YesTor</td>
+      <td>Garden City, KS</td>
+      <td>37.97</td>
+      <td>-100.87</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>119.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:39:26</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>YesTor</td>
+      <td>Garden City, KS</td>
+      <td>37.97</td>
+      <td>-100.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:33:55</td>
+      <td>28</td>
+      <td>Sam Luthi</td>
+      <td>YesTor</td>
+      <td>Ellis, KS</td>
+      <td>38.94</td>
+      <td>-99.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:09:47</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>YesTor</td>
+      <td>Lakin, KS</td>
+      <td>37.98</td>
+      <td>-100.80</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:22:11</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>YesTor</td>
+      <td>Ness City, KS</td>
+      <td>38.73</td>
+      <td>-99.67</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 05:38:33</td>
+      <td>37</td>
+      <td>Brady Lyness</td>
+      <td>YesTor</td>
+      <td>Ness City, KS</td>
+      <td>38.46</td>
+      <td>-99.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>122.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:58:25</td>
+      <td>8</td>
+      <td>Sekwof</td>
+      <td>YesTor</td>
+      <td>Phillipsburg, KS</td>
+      <td>39.75</td>
+      <td>-99.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>124.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:59:09</td>
+      <td>51</td>
+      <td>Diego Garcia</td>
+      <td>YesTor</td>
+      <td>Headrick, OK</td>
+      <td>34.62</td>
+      <td>-99.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>127.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 04:29:02</td>
+      <td>140</td>
+      <td>Veer (SOUTHWEST KANSAS PLEASE DONT FAIL ME AGAIN)</td>
+      <td>YesTor</td>
+      <td>Plymell KS</td>
+      <td>37.81</td>
+      <td>-100.87</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>130.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:55:08</td>
+      <td>268</td>
+      <td>Luke Hatton</td>
+      <td>YesTor</td>
+      <td>Ingalls, KS</td>
+      <td>37.83</td>
+      <td>-100.46</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>138.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:47:53</td>
+      <td>266</td>
+      <td>Zach McDaniel</td>
+      <td>YesTor</td>
+      <td>Cimarron, KS</td>
+      <td>37.81</td>
+      <td>-100.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>142.30</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 04:02:07</td>
+      <td>80</td>
+      <td>Eliot Morrow</td>
+      <td>YesTor</td>
+      <td>somewhere, OK</td>
+      <td>35.82</td>
+      <td>-99.67</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>145.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 10:11:55</td>
+      <td>129</td>
+      <td>Kazaki</td>
+      <td>YesTor</td>
+      <td>sublette, KS</td>
+      <td>37.48</td>
+      <td>-100.84</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>152.50</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 05:43:27</td>
+      <td>91</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Copeland, KS</td>
+      <td>37.53</td>
+      <td>-100.62</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>153.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 06:13:07</td>
+      <td>234</td>
+      <td>Caleb A</td>
+      <td>YesTor</td>
+      <td>Dodge City, KS</td>
+      <td>37.76</td>
+      <td>-100.02</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>154.20</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 04:42:50</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Ensign, KS</td>
+      <td>37.65</td>
+      <td>-100.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>154.40</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:28:33</td>
+      <td>281</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Ensign, KS</td>
+      <td>37.65</td>
+      <td>-100.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>154.70</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:08:51</td>
+      <td>201</td>
+      <td>Please fire</td>
+      <td>YesTor</td>
+      <td>Spearville, KS</td>
+      <td>37.86</td>
+      <td>-99.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>156.80</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:10:19</td>
+      <td>209</td>
+      <td>WeatherboyPlainsAreBack</td>
+      <td>YesTor</td>
+      <td>Plains, KS</td>
+      <td>37.25</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>172.60</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 11:58:52</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Dodge City, KS</td>
+      <td>37.45</td>
+      <td>-100.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>172.90</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 10:02:08</td>
+      <td>188</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Bloom, KS</td>
+      <td>37.49</td>
+      <td>-99.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>173.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:40:40</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>Wheeler, TX</td>
+      <td>35.50</td>
+      <td>-100.28</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>177.10</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 02:53:02</td>
+      <td>214</td>
+      <td>Blake Brink (I NEED POINTS SO PLS DO SOMETHIN)</td>
+      <td>YesTor</td>
+      <td>Bucklin, KS</td>
+      <td>37.55</td>
+      <td>-99.65</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>178.10</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 13:46:44</td>
+      <td>272</td>
+      <td>Drew</td>
+      <td>YesTor</td>
+      <td>Liberal,KS</td>
+      <td>37.04</td>
+      <td>-100.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>181.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:17:22</td>
+      <td>67</td>
+      <td>Braxton Banks</td>
+      <td>YesTor</td>
+      <td>Willard, OK</td>
+      <td>36.97</td>
+      <td>-99.72</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>182.20</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:37:26</td>
+      <td>98</td>
+      <td>rosiel</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>44.51</td>
+      <td>-103.45</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>182.20</td>
+      <td>11 E Yoder, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 11:01:40</td>
+      <td>126</td>
+      <td>Nick (follow the yellow brick road)</td>
+      <td>YesTor</td>
+      <td>Greensburg, KS</td>
+      <td>37.61</td>
+      <td>-99.32</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>186.00</td>
+      <td>12 SSE Wheeler, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 14:21:34</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Canadian, TX</td>
+      <td>35.91</td>
+      <td>-100.39</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>186.40</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 06:37:55</td>
+      <td>48</td>
+      <td>Max Archer</td>
+      <td>YesTor</td>
+      <td>Memphis, Texas</td>
+      <td>34.73</td>
+      <td>-100.64</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>202.50</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 04:26:19</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Perryton, TX</td>
+      <td>36.39</td>
+      <td>-100.81</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>217.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 04:27:08</td>
+      <td>185</td>
+      <td>Samuel G(DL BULGE FTW)</td>
+      <td>YesTor</td>
+      <td>Claude, TX</td>
+      <td>35.08</td>
+      <td>-101.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>239.40</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 16:00:25</td>
+      <td>62</td>
+      <td>Kay (the conditionality is killing me)</td>
+      <td>YesTor</td>
+      <td>Panhandle, TX</td>
+      <td>35.34</td>
+      <td>-101.39</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>239.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-25 12:25:03</td>
+      <td>76</td>
+      <td>Ezra</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 07:52:33</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 15:04:00</td>
+      <td>213</td>
+      <td>Daniel Schwab</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
