@@ -1,202 +1,62 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Red 2026_05_22                      
+Title: TTC Forecast Locations Red 2026_05_25                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 32.77544,-86.876106
-Icon: 0,0,180,1,1, "Name: WeathermanSam\n32.78N 86.88W\nTarget City: Maplesville, AL"
+Object: 33.435567,-86.09951
+Icon: 0,0,180,1,1, "Name: MCV madness (d0ss)\n33.44N 86.10W\nTarget City: Talladega, AL"
 End:
 
-Object: 31.990848,-87.289322
-Icon: 0,0,180,1,1, "Name: MysticVortexNerd \n31.99N 87.29W\nTarget City: Camden, AL"
+Object: 30.867398,-87.3225
+Icon: 0,0,180,1,1, "Name: WxDriftre\n30.87N 87.32W\nTarget City: McDavid, FL"
 End:
 
-Object: 42.027464,-96.099644
-Icon: 0,0,180,1,1, "Name: Surely I'm the only one on the MCV, Right?\n42.03N 96.10W\nTarget City: Onawa, IA"
+Object: 30.416019,-87.480484
+Icon: 0,0,180,1,1, "Name: I hate forcasting today but we ball (gabezwx)\n30.42N 87.48W\nTarget City: Lillian, AL"
 End:
 
-Object: 36.216358,-86.326541
-Icon: 0,0,180,1,1, "Name: mcv sir yessir\n36.22N 86.33W\nTarget City: Tennesee"
+Object: 32.226389,-88.162193
+Icon: 0,0,180,1,1, "Name: Refs says yes? so maybe?\n32.23N 88.16W\nTarget City: nan"
 End:
 
-Object: 33.098094,-88.204765
-Icon: 0,0,180,1,1, "Name: WxDrifter\n33.10N 88.20W\nTarget City: Aliceville, AL"
+Object: 31.84,-86.48
+Icon: 0,0,180,1,1, "Name: Kyle Hugeback\n31.84N 86.48W\nTarget City: East of Greenville, AL"
 End:
 
-Object: 31.694032,-87.795868
-Icon: 0,0,180,1,1, "Name: CPekar\n31.69N 87.80W\nTarget City: nan"
+Object: 30.51771,-88.088379
+Icon: 0,0,180,1,1, "Name: Diamond\n30.52N 88.09W\nTarget City: nan"
 End:
 
-Object: 33.45218,-87.278309
-Icon: 0,0,180,1,1, "Name: Jim Franc\n33.45N 87.28W\nTarget City: Providence, AL"
+Object: 30.555313,-87.373773
+Icon: 0,0,180,1,1, "Name: Michael Kubinski\n30.56N 87.37W\nTarget City: nan"
 End:
 
-Object: 41.622629,-96.185303
-Icon: 0,0,180,1,1, "Name: Jonah H.\n41.62N 96.19W\nTarget City: nan"
+Object: 32.583495,-86.464291
+Icon: 0,0,180,1,1, "Name: Blake Barber\n32.58N 86.46W\nTarget City: nan"
 End:
 
-Object: 42.141364,-95.78833
-Icon: 0,0,180,1,1, "Name: The Hawk\n42.14N 95.79W\nTarget City: nan"
+Object: 30.73859,-88.268623
+Icon: 0,0,180,1,1, "Name: WxDownYonder\n30.74N 88.27W\nTarget City: Semmes, AL"
 End:
 
-Object: 31.988455,-87.726674
-Icon: 0,0,180,1,1, "Name: Veer (sorry fwlx nowcasting calls)\n31.99N 87.73W\nTarget City: north of Thomasville, AL"
+Object: 30.817346,-88.637695
+Icon: 0,0,180,1,1, "Name: Luke Chapman\n30.82N 88.64W\nTarget City: nan"
 End:
 
-Object: 33.320818,-88.300417
-Icon: 0,0,180,1,1, "Name: Braydon P Songer\n33.32N 88.30W\nTarget City: SE of Columbus, MS"
+Object: 31.009492,-87.491055
+Icon: 0,0,180,1,1, "Name: Trust in KMOB I Guess?\n31.01N 87.49W\nTarget City: Atmore, AL"
 End:
 
-Object: 42.400884,-96.202276
-Icon: 0,0,180,1,1, "Name: Never doubt the surface low/cold core (gabezwx)\n42.40N 96.20W\nTarget City: Bronson, IA"
+Object: 30.58,-87.54
+Icon: 0,0,180,1,1, "Name: Lizzie Tirone-Hugeback\n30.58N 87.54W\nTarget City: nan"
 End:
 
-Object: 34.867454,-82.600289
-Icon: 0,0,180,1,1, "Name: Heerok Das\n34.87N 82.60W\nTarget City: Easley, SC"
+Object: 32.8385201618608,-88.45409369094696
+Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n32.84N 88.45W\nTarget City: nan"
 End:
 
-Object: 33.746165,-87.218787
-Icon: 0,0,180,1,1, "Name: When they left fully loaded for Cleveland\n33.75N 87.22W\nTarget City: Jasper, AL"
-End:
-
-Object: 33.600818,-86.842688
-Icon: 0,0,180,1,1, "Name: Chris Yates\n33.60N 86.84W\nTarget City: nan"
-End:
-
-Object: 33.979694,-101.075566
-Icon: 0,0,180,1,1, "Name: Kay\n33.98N 101.08W\nTarget City: nan"
-End:
-
-Object: 43.755225,-96.730957
-Icon: 0,0,180,1,1, "Name: Barty-Party\n43.76N 96.73W\nTarget City: nan"
-End:
-
-Object: 32.02488831736321,-87.49554910067368
-Icon: 0,0,180,1,1, "Name: jbean45\n32.02N 87.50W\nTarget City: nan"
-End:
-
-Object: 32.954136,-99.804382
-Icon: 0,0,180,1,1, "Name: I’m in shambles\n32.95N 99.80W\nTarget City: nan"
-End:
-
-Object: 34.410521,-88.242188
-Icon: 0,0,180,1,1, "Name: Evan St. Clair\n34.41N 88.24W\nTarget City: nan"
-End:
-
-Object: 31.97,-87.63
-Icon: 0,0,180,1,1, "Name: Paul Austin\n31.97N 87.63W\nTarget City: Pine Hill, AL"
-End:
-
-Object: 35.1,-86.46
-Icon: 0,0,180,1,1, "Name: Kyle Hugeback\n35.10N 86.46W\nTarget City: nan"
-End:
-
-Object: 44.540716,-98.859326
-Icon: 0,0,180,1,1, "Name: Cold Core Cowboy\n44.54N 98.86W\nTarget City: Miller, SD (you know why I'm here)"
-End:
-
-Object: 35.210303,-87.330228
-Icon: 0,0,180,1,1, "Name: I still hate this (Nick M)\n35.21N 87.33W\nTarget City: Lawrenceburg, TN"
-End:
-
-Object: 31.505971,-87.888794
-Icon: 0,0,180,1,1, "Name: Dartboard Sam\n31.51N 87.89W\nTarget City: Jackson, AL"
-End:
-
-Object: 35.805255,-86.354299
-Icon: 0,0,180,1,1, "Name: Diamond\n35.81N 86.35W\nTarget City: nan"
-End:
-
-Object: 35.150170013783644,-87.03697691855815
-Icon: 0,0,180,1,1, "Name: Sebastian Pelt\n35.15N 87.04W\nTarget City: Pulaski, TN"
-End:
-
-Object: 42.357191,-96.131988
-Icon: 0,0,180,1,1, "Name: John Adams\n42.36N 96.13W\nTarget City: nan"
-End:
-
-Object: 32.028336,-87.563586
-Icon: 0,0,180,1,1, "Name: Peter Corman\n32.03N 87.56W\nTarget City: Pine Hill, AL"
-End:
-
-Object: 34.7123466,-82.5377284
-Icon: 0,0,180,1,1, "Name: Garrett Statum\n34.71N 82.54W\nTarget City: Piedmont, SC"
-End:
-
-Object: 31.905774,-87.998085
-Icon: 0,0,180,1,1, "Name: Derecho\n31.91N 88.00W\nTarget City: nan"
-End:
-
-Object: 35.47,-87.3
-Icon: 0,0,180,1,1, "Name: Dixie slop\n35.47N 87.30W\nTarget City: nan"
-End:
-
-Object: 32.92369,-85.726318
-Icon: 0,0,180,1,1, "Name: ajax13\n32.92N 85.73W\nTarget City: nan"
-End:
-
-Object: 32.687585,-88.478394
-Icon: 0,0,180,1,1, "Name: JetStreamJami\n32.69N 88.48W\nTarget City: Porterville, MS"
-End:
-
-Object: 31.150618,-87.871857
-Icon: 0,0,180,1,1, "Name: Roch\n31.15N 87.87W\nTarget City: nan"
-End:
-
-Object: 34.129624,-101.436167
-Icon: 0,0,180,1,1, "Name: Random Birdfart Lazy JS\n34.13N 101.44W\nTarget City: Lockney, TX"
-End:
-
-Object: 34.858139,-100.198975
-Icon: 0,0,180,1,1, "Name: Bengalsfan \n34.86N 100.20W\nTarget City: Wellington, Texas"
-End:
-
-Object: 32.959637,-86.743756
-Icon: 0,0,180,1,1, "Name: poop poop doo doo Mophie ah ah\n32.96N 86.74W\nTarget City: Jemison, AL"
-End:
-
-Object: 33.327731,-101.477966
-Icon: 0,0,180,1,1, "Name: AJ Clever\n33.33N 101.48W\nTarget City: nan"
-End:
-
-Object: 34.819816,-86.748047
-Icon: 0,0,180,1,1, "Name: wxManSmith\n34.82N 86.75W\nTarget City: nan"
-End:
-
-Object: 32.2863458,-88.478009
-Icon: 0,0,180,1,1, "Name: Whynot yestor?\n32.29N 88.48W\nTarget City: Whynot, MS"
-End:
-
-Object: 34.591866,-86.961389
-Icon: 0,0,180,1,1, "Name: Earth Central\n34.59N 86.96W\nTarget City: Decatur, AL"
-End:
-
-Object: 33.956873,-86.482315
-Icon: 0,0,180,1,1, "Name: Blake Barber\n33.96N 86.48W\nTarget City: nan"
-End:
-
-Object: 33.928952,-86.489024
-Icon: 0,0,180,1,1, "Name: WxDownYonder\n33.93N 86.49W\nTarget City: Oneonta, AL"
-End:
-
-Object: 32.168205,-87.67459
-Icon: 0,0,180,1,1, "Name: Donovan Fry\n32.17N 87.67W\nTarget City: nan"
-End:
-
-Object: 35.69,-86.69
-Icon: 0,0,180,1,1, "Name: IL WF 69\n35.69N 86.69W\nTarget City: Chapel Hill, TN"
-End:
-
-Object: 34.941361124590145,-89.97025607433113
-Icon: 0,0,180,1,1, "Name: Forecast Consensus\n34.94N 89.97W\nTarget City: nan"
-End:
-
-Object: 34.64206366354143,-87.26854689358412
-Icon: 0,0,180,1,1, "Name: 12Z Nadocast Centroid\n34.64N 87.27W\nTarget City: nan"
-End:
-
-Object: 34.4178994557813,-87.50191569922485
-Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n34.42N 87.50W\nTarget City: nan"
+Object: 32.299556886543314,-88.99707708493868
+Icon: 0,0,180,1,1, "Name: 14Z Nadocast Centroid\n32.30N 89.00W\nTarget City: nan"
 End:
 
