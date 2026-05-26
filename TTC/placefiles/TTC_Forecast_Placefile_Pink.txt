@@ -1,62 +1,230 @@
 Refresh: 5                     
 Threshold: 999                     
-Title: TTC Forecast Locations Pink 2026_05_25                      
+Title: TTC Forecast Locations Pink 2026_05_26                      
 Font: 1, 11, 0, "Courier New"                     
 IconFile: 1, 20, 30,  11, 15, "TTCarrows.png"
 
-Object: 33.435567,-86.09951
-Icon: 0,0,180,1,4, "Name: MCV madness (d0ss)\n33.44N 86.10W\nTarget City: Talladega, AL"
+Object: 29.937829,-101.935101
+Icon: 0,0,180,1,4, "Name: WeathermanSam\n29.94N 101.94W\nTarget City: Comstock, TX"
 End:
 
-Object: 30.867398,-87.3225
-Icon: 0,0,180,1,4, "Name: WxDriftre\n30.87N 87.32W\nTarget City: McDavid, FL"
+Object: 29.999514,-99.38668
+Icon: 0,0,180,1,4, "Name: Blake brink\n30.00N 99.39W\nTarget City: Texas Hill country"
 End:
 
-Object: 30.416019,-87.480484
-Icon: 0,0,180,1,4, "Name: I hate forcasting today but we ball (gabezwx)\n30.42N 87.48W\nTarget City: Lillian, AL"
+Object: 37.238196,-85.496979
+Icon: 0,0,180,1,4, "Name: Karson\n37.24N 85.50W\nTarget City: Greensburg, KY"
 End:
 
-Object: 32.226389,-88.162193
-Icon: 0,0,180,1,4, "Name: Refs says yes? so maybe?\n32.23N 88.16W\nTarget City: nan"
+Object: 37.370157,-85.344543
+Icon: 0,0,180,1,4, "Name: More MCV madness!!! (D0ss)\n37.37N 85.34W\nTarget City: Campbellsville, KY"
 End:
 
-Object: 31.84,-86.48
-Icon: 0,0,180,1,4, "Name: Kyle Hugeback\n31.84N 86.48W\nTarget City: East of Greenville, AL"
+Object: 29.428355,-100.908497
+Icon: 0,0,180,1,4, "Name: WxDrifter\n29.43N 100.91W\nTarget City: Del Rio, TX"
 End:
 
-Object: 30.51771,-88.088379
-Icon: 0,0,180,1,4, "Name: Diamond\n30.52N 88.09W\nTarget City: nan"
+Object: 29.688269,-101.176023
+Icon: 0,0,180,1,4, "Name: CPekar\n29.69N 101.18W\nTarget City: nan"
 End:
 
-Object: 30.555313,-87.373773
-Icon: 0,0,180,1,4, "Name: Michael Kubinski\n30.56N 87.37W\nTarget City: nan"
+Object: 29.866326,-101.560364
+Icon: 0,0,180,1,4, "Name: Jim Franc\n29.87N 101.56W\nTarget City: Langtry, TX"
 End:
 
-Object: 32.583495,-86.464291
-Icon: 0,0,180,1,4, "Name: Blake Barber\n32.58N 86.46W\nTarget City: nan"
+Object: 30.889262,-100.604553
+Icon: 0,0,180,1,4, "Name: Jonah H.\n30.89N 100.60W\nTarget City: nan"
 End:
 
-Object: 30.73859,-88.268623
-Icon: 0,0,180,1,4, "Name: WxDownYonder\n30.74N 88.27W\nTarget City: Semmes, AL"
+Object: 29.178461,-100.682859
+Icon: 0,0,180,1,4, "Name: The Hawk\n29.18N 100.68W\nTarget City: nan"
 End:
 
-Object: 30.817346,-88.637695
-Icon: 0,0,180,1,4, "Name: Luke Chapman\n30.82N 88.64W\nTarget City: nan"
+Object: 29.24,-100.4
+Icon: 0,0,180,1,4, "Name: Clarence\n29.24N 100.40W\nTarget City: Fort Clark Springs, TX"
 End:
 
-Object: 31.009492,-87.491055
-Icon: 0,0,180,1,4, "Name: Trust in KMOB I Guess?\n31.01N 87.49W\nTarget City: Atmore, AL"
+Object: 37.490551,-85.131465
+Icon: 0,0,180,1,4, "Name: Veer (going to regret this but full sending MCV)\n37.49N 85.13W\nTarget City: Bradfordsville, KY"
 End:
 
-Object: 30.58,-87.54
-Icon: 0,0,180,1,4, "Name: Lizzie Tirone-Hugeback\n30.58N 87.54W\nTarget City: nan"
+Object: 29.477913,-101.012768
+Icon: 0,0,180,1,4, "Name: Classic Del Rio (Gabezwx)\n29.48N 101.01W\nTarget City: Amistad Village, TX "
 End:
 
-Object: 32.8385201618608,-88.45409369094696
-Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n32.84N 88.45W\nTarget City: nan"
+Object: 29.275918,-100.296249
+Icon: 0,0,180,1,4, "Name: Heerok Das\n29.28N 100.30W\nTarget City: KDFX"
 End:
 
-Object: 32.299556886543314,-88.99707708493868
-Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n32.30N 89.00W\nTarget City: nan"
+Object: 37.129058,-85.580109
+Icon: 0,0,180,1,4, "Name: Could it be the north wind they'd been feeling?\n37.13N 85.58W\nTarget City: nan"
+End:
+
+Object: 30.293882,-101.05356
+Icon: 0,0,180,1,4, "Name: Chris Yates\n30.29N 101.05W\nTarget City: nan"
+End:
+
+Object: 30.065925,-101.134644
+Icon: 0,0,180,1,4, "Name: Kay\n30.07N 101.13W\nTarget City: nan"
+End:
+
+Object: 30.1351202,-101.1476794
+Icon: 0,0,180,1,4, "Name: Idk\n30.14N 101.15W\nTarget City: nan"
+End:
+
+Object: 28.677938,-99.83345
+Icon: 0,0,180,1,4, "Name: Crystal is my mom’s name :) \n28.68N 99.83W\nTarget City: Crystal City, TX"
+End:
+
+Object: 29.6107,-101.239014
+Icon: 0,0,180,1,4, "Name: Evan St. Clair\n29.61N 101.24W\nTarget City: nan"
+End:
+
+Object: 29.33,-100.82
+Icon: 0,0,180,1,4, "Name: Paul Austin\n29.33N 100.82W\nTarget City: Del Rio, TX"
+End:
+
+Object: 30.28,-101.1
+Icon: 0,0,180,1,4, "Name: Kyle Hugeback\n30.28N 101.10W\nTarget City: Somewhere on HWY163"
+End:
+
+Object: 30.30352,-100.472438
+Icon: 0,0,180,1,4, "Name: Cold Core Cowboy\n30.30N 100.47W\nTarget City: Sonora, TX"
+End:
+
+Object: 29.885904,-101.047198
+Icon: 0,0,180,1,4, "Name: Nick M\n29.89N 101.05W\nTarget City: Way north of Del Rio, TX"
+End:
+
+Object: 29.442338,-100.918379
+Icon: 0,0,180,1,4, "Name: Burnt Toast\n29.44N 100.92W\nTarget City: Lake View, TX"
+End:
+
+Object: 30.196402,-101.854248
+Icon: 0,0,180,1,4, "Name: Logan Giles\n30.20N 101.85W\nTarget City: nan"
+End:
+
+Object: 30.465479,-101.809998
+Icon: 0,0,180,1,4, "Name: James Madison\n30.47N 101.81W\nTarget City: nan"
+End:
+
+Object: 29.215665,-99.785371
+Icon: 0,0,180,1,4, "Name: BabbWx\n29.22N 99.79W\nTarget City: Uvalde,TX"
+End:
+
+Object: 30.107118,-101.381836
+Icon: 0,0,180,1,4, "Name: Caleb O'Gara\n30.11N 101.38W\nTarget City: nan"
+End:
+
+Object: 29.897806,-101.922081
+Icon: 0,0,180,1,4, "Name: Gavin Bird\n29.90N 101.92W\nTarget City: nan"
+End:
+
+Object: 29.9,-100.87
+Icon: 0,0,180,1,4, "Name: Andrew Griffiths\n29.90N 100.87W\nTarget City: nan"
+End:
+
+Object: 29.952034,-101.164856
+Icon: 0,0,180,1,4, "Name: ajax13\n29.95N 101.16W\nTarget City: nan"
+End:
+
+Object: 29.56641,-100.599403
+Icon: 0,0,180,1,4, "Name: JetStreamJami\n29.57N 100.60W\nTarget City: Del rio, TX"
+End:
+
+Object: 30.7148,-101.193523
+Icon: 0,0,180,1,4, "Name: Spam and Play JS\n30.71N 101.19W\nTarget City: Ozona, TX"
+End:
+
+Object: 30.858911,-102.891769
+Icon: 0,0,180,1,4, "Name: Bengalsfan  \n30.86N 102.89W\nTarget City: Fort Stockton, Texas"
+End:
+
+Object: 30.281718,-101.85648
+Icon: 0,0,180,1,4, "Name: Richard Cirone\n30.28N 101.86W\nTarget City: nan"
+End:
+
+Object: 29.687664,-101.16168
+Icon: 0,0,180,1,4, "Name: timotheedinkins\n29.69N 101.16W\nTarget City: Comstock"
+End:
+
+Object: 31.373688,-100.302651
+Icon: 0,0,180,1,4, "Name: Michael Kubinski\n31.37N 100.30W\nTarget City: nan"
+End:
+
+Object: 29.909227,-101.832275
+Icon: 0,0,180,1,4, "Name: Wxbill\n29.91N 101.83W\nTarget City: nan"
+End:
+
+Object: 30.334756,-101.105804
+Icon: 0,0,180,1,4, "Name: Poop >:( \n30.33N 101.11W\nTarget City: Texas looks like garbage "
+End:
+
+Object: 29.94945,-101.765671
+Icon: 0,0,180,1,4, "Name: Welcome back 6/2/2023\n29.95N 101.77W\nTarget City: SE of Dryden, TX"
+End:
+
+Object: 29.529157643297538,-99.71263954936062
+Icon: 0,0,180,1,4, "Name: Olivia Macko\n29.53N 99.71W\nTarget City: Third Crossing, TX"
+End:
+
+Object: 31.469902,-100.422903
+Icon: 0,0,180,1,4, "Name: Earth Central\n31.47N 100.42W\nTarget City: San Angelo, TX"
+End:
+
+Object: 29.943461,-101.73754
+Icon: 0,0,180,1,4, "Name: Blake Barber\n29.94N 101.74W\nTarget City: nan"
+End:
+
+Object: 30.889026,-102.880096
+Icon: 0,0,180,1,4, "Name: Stephen Szulborski\n30.89N 102.88W\nTarget City: Fort Stockton, TX"
+End:
+
+Object: 30.391249,-102.4358448
+Icon: 0,0,180,1,4, "Name: timcigar\n30.39N 102.44W\nTarget City: Sanderson, TX"
+End:
+
+Object: 30.74345,-101.273443
+Icon: 0,0,180,1,4, "Name: Were gonna be in the ozona layer!(Jacob.S)\n30.74N 101.27W\nTarget City: Ozona, TX"
+End:
+
+Object: 29.493012,-101.097822
+Icon: 0,0,180,1,4, "Name: Donovan Fry\n29.49N 101.10W\nTarget City: nan"
+End:
+
+Object: 29.32,-100.62
+Icon: 0,0,180,1,4, "Name: Lizzie Tirone-Hugeback\n29.32N 100.62W\nTarget City: nan"
+End:
+
+Object: 29.68507,-101.173697
+Icon: 0,0,180,1,4, "Name: The only town for miles\n29.69N 101.17W\nTarget City: Comstock, TX"
+End:
+
+Object: 29.3182,-100.6
+Icon: 0,0,180,1,4, "Name: DaveFlo\n29.32N 100.60W\nTarget City: nan"
+End:
+
+Object: 30.138765,-101.35622
+Icon: 0,0,180,1,4, "Name: Ghostfox1\n30.14N 101.36W\nTarget City: nan"
+End:
+
+Object: 29.3182,-100.6829
+Icon: 0,0,180,1,4, "Name: Quincy Vagell\n29.32N 100.68W\nTarget City: Laughlin AFB, TX"
+End:
+
+Object: 29.177082,-100.561981
+Icon: 0,0,180,1,4, "Name: Wyatt Van Dyke\n29.18N 100.56W\nTarget City: Brackettville, TX"
+End:
+
+Object: 30.49175167628863,-99.89311858017662
+Icon: 0,0,180,1,4, "Name: Forecast Consensus\n30.49N 99.89W\nTarget City: nan"
+End:
+
+Object: 30.63446737929641,-100.35813801284826
+Icon: 0,0,180,1,4, "Name: 12Z Nadocast Centroid\n30.63N 100.36W\nTarget City: nan"
+End:
+
+Object: 29.73243671687631,-101.22758193056646
+Icon: 0,0,180,1,4, "Name: 14Z Nadocast Centroid\n29.73N 101.23W\nTarget City: nan"
 End:
 
