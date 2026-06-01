@@ -35,15 +35,37 @@ section: gallery
 
 <!-- Repeat the pattern for subsequent months -->
 
+<h2>April 2026 Photos and Video of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Apr_2026_Club.jpg?raw=true" alt="April 2026 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Apr_2026_Wx.jpg?raw=true" alt="April 2026 Wx Photo of Month" style="width:100%">
+  </div>
+  <div class="row">
+    <div class="column single-column">
+      <h3>Video of the Month</h3>
+      <video width="560" height="315" controls>
+        <source src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Apr_2026_Vid.mp4?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+
 <h2>March 2026 Photos and Video of the Month</h2>
 <div class="row">
   <div class="column">
   	<h3>Club Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Mar_2026_Club.jpg?raw=true" alt="January 2026 Club Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Mar_2026_Club.jpg?raw=true" alt="March 2026 Club Photo of Month" style="width:100%">
   </div>
   <div class="column">
   	<h3>Weather Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Mar_2026_Wx.jpg?raw=true" alt="January 2026 Wx Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Mar_2026_Wx.jpg?raw=true" alt="March 2026 Wx Photo of Month" style="width:100%">
   </div>
   <div class="row">
     <div class="column single-column">
@@ -61,11 +83,11 @@ section: gallery
 <div class="row">
   <div class="column">
   	<h3>Club Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Feb_2026_Club.jpg?raw=true" alt="January 2026 Club Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Feb_2026_Club.jpg?raw=true" alt="February 2026 Club Photo of Month" style="width:100%">
   </div>
   <div class="column">
   	<h3>Weather Photo of the Month</h3>
-    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Feb_2026_Wx.jpg?raw=true" alt="January 2026 Wx Photo of Month" style="width:100%">
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2025-2026/Feb_2026_Wx.jpg?raw=true" alt="February 2026 Wx Photo of Month" style="width:100%">
   </div>
   <div class="row">
     <div class="column single-column">
