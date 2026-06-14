@@ -1,0 +1,1077 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-06-08 15:48:06.599506</td>
+      <td>Veer (2026 CO target = free NE panhandle tornado)</td>
+      <td>YesTor</td>
+      <td>Mitchell, NE</td>
+      <td>41.94</td>
+      <td>-103.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11.70</td>
+      <td>CYS, NA</td>
+      <td>62.50</td>
+      <td>1st Place -- Lone Wolf Bonus Added! +30</td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.35</td>
+      <td>-103.88</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>171.60</td>
+      <td>6 S Lyman, NE</td>
+      <td>16.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 13:58:03.924339</td>
+      <td>Wxbill</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.24</td>
+      <td>-103.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>179.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>16.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:46:43.805777</td>
+      <td>Joey Krastel</td>
+      <td>YesTor</td>
+      <td>7 NE Simla, CO</td>
+      <td>39.18</td>
+      <td>-104.01</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>183.00</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:01:17.589533</td>
+      <td>we ride simla (D0ss)</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.26</td>
+      <td>-103.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>178.70</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:55:41.769580</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.26</td>
+      <td>-103.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>178.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:47:44.862554</td>
+      <td>Donovan Fry</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.45</td>
+      <td>-103.99</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>164.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:59:06.611994</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>38.95</td>
+      <td>-97.28</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>251.30</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:44:02.857965</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.27</td>
+      <td>-103.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>177.60</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:22:33.315465</td>
+      <td>DaveFlo</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.27</td>
+      <td>-103.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>177.80</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.41</td>
+      <td>-103.84</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>167.50</td>
+      <td>6 S Lyman, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 07:56:09.804528</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Sterling, CO</td>
+      <td>40.67</td>
+      <td>-103.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.10</td>
+      <td>6 S Lyman, NE</td>
+      <td>10.60</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:57:33.475535</td>
+      <td>something something colorado probably yeah</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.46</td>
+      <td>-103.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>163.80</td>
+      <td>6 S Lyman, NE</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:56:32.479423</td>
+      <td>Don't mind if I Colorado</td>
+      <td>YesTor</td>
+      <td>Along highway 71 somewhere north of Limon, CO</td>
+      <td>39.46</td>
+      <td>-103.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>165.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 10:51:11.470541</td>
+      <td>Kay</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.61</td>
+      <td>-103.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.30</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.50</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:32:02.268152</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Seibert, CO</td>
+      <td>39.31</td>
+      <td>-102.91</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>184.00</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:27:31.621954</td>
+      <td>In Colorado we trust (again)</td>
+      <td>YesTor</td>
+      <td>Genoa, CO</td>
+      <td>39.29</td>
+      <td>-103.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>178.00</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:52:16.020012</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.54</td>
+      <td>-103.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>160.10</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:56:40.632833</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Deer Trail, CO</td>
+      <td>39.64</td>
+      <td>-104.07</td>
+      <td>No</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>151.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:44:09.428903</td>
+      <td>When supper time came the old cook came on deck</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.97</td>
+      <td>-102.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>154.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 06:18:47.976660</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.04</td>
+      <td>-103.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>124.00</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:23:20.130936</td>
+      <td>Ghostfox1</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.73</td>
+      <td>-103.82</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>145.60</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:31:49.635948</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.26</td>
+      <td>-103.52</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>179.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 04:45:59.003747</td>
+      <td>Evan St. Clair</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.32</td>
+      <td>-103.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>108.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:41:59.575930</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>Thurman part 2, electric boogaloo</td>
+      <td>39.59</td>
+      <td>-103.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>160.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:31:25.882806</td>
+      <td>Barty-Party</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.70</td>
+      <td>-103.03</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>156.50</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:09:42.903640</td>
+      <td>Scout</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.00</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>133.60</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:51:17.885160</td>
+      <td>Gabe Zago</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.55</td>
+      <td>-103.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>163.60</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:55:20.847327</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>KFTG</td>
+      <td>39.79</td>
+      <td>-104.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>143.70</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 13:40:00.809691</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.03</td>
+      <td>-103.95</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>193.30</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 13:31:24.635883</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.74</td>
+      <td>-103.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:46:24.867180</td>
+      <td>WxDrifter</td>
+      <td>YesTor</td>
+      <td>Blue Hill, KS</td>
+      <td>39.31</td>
+      <td>-98.36</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>236.30</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 13:46:05.073923</td>
+      <td>Braydon P Songer</td>
+      <td>YesTor</td>
+      <td>Cope, CO</td>
+      <td>39.67</td>
+      <td>-102.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>162.10</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 13:03:18.969148</td>
+      <td>Stefff</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:39:12.333916</td>
+      <td>ajax13</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.21</td>
+      <td>-103.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>113.70</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:10:05.073268</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.38</td>
+      <td>-103.26</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>174.30</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 10:04:31.443213</td>
+      <td>Aaron Derrick</td>
+      <td>YesTor</td>
+      <td>Parsons, KS</td>
+      <td>37.34</td>
+      <td>-95.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>294.40</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 04:50:59.555703</td>
+      <td>#criticalstrikestormchasing</td>
+      <td>YesTor</td>
+      <td>Ovid, CO</td>
+      <td>40.96</td>
+      <td>-102.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>104.50</td>
+      <td>CYS, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:47:54.208094</td>
+      <td>Millard Fillmore (CG15Wx)</td>
+      <td>YesTor</td>
+      <td>S of Lindon, CO</td>
+      <td>39.71</td>
+      <td>-103.43</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>150.00</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 07:36:53.346327</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Flagler, CO</td>
+      <td>39.46</td>
+      <td>-103.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>171.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:38:27.311867</td>
+      <td>Bait (Nick M)</td>
+      <td>YesTor</td>
+      <td>NW of Salina, KS</td>
+      <td>39.04</td>
+      <td>-97.91</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>234.10</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:41:57.887895</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.71</td>
+      <td>-103.27</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>151.90</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 06:52:16.785444</td>
+      <td>Cold Core Cowboy</td>
+      <td>YesTor</td>
+      <td>Fennimore, WI</td>
+      <td>43.04</td>
+      <td>-90.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>685.80</td>
+      <td>CYS, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 12:24:16.988072</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Glade, KS</td>
+      <td>39.68</td>
+      <td>-99.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>241.40</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 12:37:21.576660</td>
+      <td>timotheedinkins</td>
+      <td>YesTor</td>
+      <td>Flagler, CO</td>
+      <td>39.34</td>
+      <td>-103.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>179.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 12:27:15.542293</td>
+      <td>Michael Kubinski</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.57</td>
+      <td>-99.61</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>230.00</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:55:35.752934</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.30</td>
+      <td>-102.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.10</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:52:21.025192</td>
+      <td>LEBRON HOMETOWN BUT IN COLORADO</td>
+      <td>YesTor</td>
+      <td>Akron, Colorado</td>
+      <td>40.16</td>
+      <td>-103.21</td>
+      <td>Yes</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:35:59.715038</td>
+      <td>Last Chance Romance JS</td>
+      <td>YesTor</td>
+      <td>Last Chance</td>
+      <td>39.74</td>
+      <td>-103.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 13:45:37.718239</td>
+      <td>Luke Chapman</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>37.28</td>
+      <td>-89.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>626.50</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:30:55.394068</td>
+      <td>JavaHurricane</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>38.87</td>
+      <td>-104.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>206.40</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:38:47.742744</td>
+      <td>Blake Barber</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.09</td>
+      <td>-97.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>244.60</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 12:01:50.764014</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Hays, KS</td>
+      <td>38.88</td>
+      <td>-99.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>187.90</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:38:39.729172</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Deer Trail, CO</td>
+      <td>39.72</td>
+      <td>-103.65</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>147.10</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 12:18:25.625294</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Anton, CO</td>
+      <td>39.74</td>
+      <td>-103.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>150.50</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:43:39.272689</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.18</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121.70</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:53:47.330669</td>
+      <td>AA kron(aaron)(Jacob.s)</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.00</td>
+      <td>-103.19</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>134.10</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:34:44.188712</td>
+      <td>https://youtu.be/dQw4w9WgXcQ?si=XYznh1ELV9t3JLlD</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.16</td>
+      <td>-103.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.00</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:51:33.019898</td>
+      <td>IL WF 69</td>
+      <td>YesTor</td>
+      <td>Hugo, CO</td>
+      <td>38.96</td>
+      <td>-103.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>199.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:19:59.645521</td>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.39</td>
+      <td>-103.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>176.90</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:12:49.571376</td>
+      <td>Alexis Severson</td>
+      <td>YesTor</td>
+      <td>Messex, CO</td>
+      <td>40.43</td>
+      <td>-103.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>101.80</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 14:29:08.375873</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Hill City, KS</td>
+      <td>39.43</td>
+      <td>-99.78</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>218.80</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:19:28.839055</td>
+      <td>Where's Waldo's Tornado?</td>
+      <td>YesTor</td>
+      <td>Waldo, KS</td>
+      <td>39.12</td>
+      <td>-98.80</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>214.10</td>
+      <td>10 WNW Lipscomb, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.64</td>
+      <td>-102.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>178.20</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-08 15:28:52.700989</td>
+      <td>Wyatt Van Dyke</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.82</td>
+      <td>-102.38</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>163.50</td>
+      <td>6 S Lyman, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
