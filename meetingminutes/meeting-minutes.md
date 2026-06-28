@@ -173,7 +173,6 @@ section: about
  - [October 25, 2011]({{ site.baseurl }}/uploads/minutes/2011-12/111025.pdf)
  - [November 29, 2011]({{ site.baseurl }}/uploads/minutes/2011-12/111129.pdf)
  - [January 17, 2012]({{ site.baseurl }}/uploads/minutes/2011-12/120117.pdf)
- - /*[February 21, 2012]({{ site.baseurl }}/uploads/minutes/2011-12/120221.pdf)*/
  - [March 20, 2012]({{ site.baseurl }}/uploads/minutes/2011-12/120320.pdf)
  - [April 17, 2012]({{ site.baseurl }}/uploads/minutes/2011-12/120417.pdf)
 
