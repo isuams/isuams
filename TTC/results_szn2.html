@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TTC - Archived Forecasts</title>
+  <title>TTC - Season 2 Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap 5 -->
@@ -33,56 +33,6 @@
 	.hero-overlay {
       background: rgba(0, 0, 0, 0.45);
       padding: 2rem;
-    }
-	
-	.site-footer {
-	  background-color: #c4c4c4;  /* light–medium gray */
-	  color: #333;
-	}
-	
-	.site-footer a {
-	  color: inherit;              /* same color as surrounding text */
-	  text-decoration: none;       /* remove underline */
-	  font-weight: inherit;
-	}
-
-	.site-footer a:hover {
-	  text-decoration: underline;  /* subtle affordance on hover */
-	  cursor: pointer;
-	}
-  
-    .iframe-figure {
-	  width: 100%;
-	  border: none;
-      height: 87vh;
-	  min-height: 450px;
-	  max-height: 725px;
-    }
-
-    .iframe-table {
-	  width: 100%;
-	  border: none;
-	  height: 92vh;
-	  min-height: 400px;
-	  max-height: 775px;
-    }
-	
-	iframe {
-	  opacity: 0;
-	  transition: opacity 0.3s ease;
-	}
-
-	iframe.loaded {
-	  opacity: 1;
-	}
-
-    .card {
-      border-radius: 0.75rem;
-    }
-
-    .card-header {
-      background-color: #f8f9fa;
-      font-weight: 600;
     }
   </style>
 </head>
@@ -267,166 +217,125 @@
 </div>
 
 <main class="flex-fill">
-
-<div class="container my-4">
-
-  <!-- DATE SELECTOR -->
-  <div class="card shadow-sm mb-4">
-    <div class="card-body text-center">
-      <label for="ForecastDate" class="form-label fw-semibold">
-        Select a Date to View that Day's "Today's Forecast":
-      </label>
-      <input type="date" id="forecastDate" class="form-control w-auto d-inline-block">
-    </div>
-  </div>
-  
-  <!-- ================= ARCHIVED FORECAST PLACEHOLDER ================= -->
-  <div id="archivePlaceholder" class="alert alert-secondary text-center my-4">
-    <h5 class="mb-2">Archived Forecasts Not Available</h5>
-    <p class="mb-0">
-      Archived forecasts are available only for
-      <strong>Monday–Friday</strong> dates with submitted forecasts.
-    </p>
-  </div>
-  
-  <!-- ================= ARCHIVED FORECAST CONTENT ================= -->
-  <div id="archiveFrames" class="d-none">
-
-    <!-- Figures -->
-    <div class="card mb-4">
-	  <div class="card-header fw-semibold text-center">
-		Forecast Plot
-	  </div>
-	  <div class="card-body p-0">
-		<iframe id="figFrame" class="iframe-figure"></iframe>
-	  </div>
+<div class="container mt-5">
+  <div class="row bg-secondary text-dark rounded text-center p-2" >
+	<div class="col-md-12 text-center center-block">
+		<!--<div class="row justify-content-center p-2">
+			<h2 style="color: #f5f2f2;">Final Results Awaiting Rescore Checks!</h2>
+		</div>-->
+		<div class="row justify-content-center p-2">
+			<h3 style="color: #f5f2f2;">Select Season 1 Results Type/Region:</h3>
+		</div>
+		<div class="row p-1">
+		<div class="col-md-12 text-center center-block">
+			<button type="button" class="btn btn-primary btn-lg" style="background-color: var(--btn-color); border: none;" onclick="displayIframe('leaderboards/Season1/national.html')"><b>National</b></button>
+			<button type="button" class="btn btn-primary btn-lg" style="background-color: var(--btn-color); border: none;" onclick="displayIframe('leaderboards/Season1/stats.html')"><b>Stats</b></button>
+		</div>
+		</div>
+		<div class="row p-2" >
+		<div class="col-md-12 text-center center-block p-1">
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season2/southern_plains.html')">Southern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season2/southeast.html')">Southeast</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season2/midwest.html')">Midwest</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season2/northern_plains.html')">Northern Plains</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season2/mountain_west.html')">Mountain West</button>
+			<button type="button" class="btn" style="background-color: #FFC06C" onclick="displayIframe('leaderboards/Season2/east.html')">East</button>
+		</div>
+		</div>
 	</div>
-
-    <!-- Forecast Table -->
-    <div class="card mb-4">
-      <div class="card-header fw-semibold text-center">
-        Forecast Table
-      </div>
-      <iframe id="tableFrame" class="iframe-table"></iframe>
-    </div>
-
   </div>
 
+  <!-- leaderboard frame -->
+  <div class="row mt-4 mt-4 justify-content-center">
+    <div class="col-md-12 text-center">
+      <div id="iframeContainer"></div>
+    </div>
+  </div>
+  <br>
+  
+  <!-- Stats button -->
+  <div class="col-md-12 text-center center-block">
+    <div class="button-box"></div>
+      <a href="scoring_and_metrics.html" target="_blank" class="btn btn-primary btn-lg" role="button" style="background-color: var(--btn-color); border: none;">Scoring and Metrics</a>
+  </div>
+  <br>
+  <div class="row center-block">
+    <div class="col-sm-2"></div>
+      	<div class="col-sm-8" > 
+		  <table class="table text-left">
+            <thead>
+              <tr>
+                <th scope="col-sm-2">Affiliation</th>
+                <th scope="col-sm-2">What they do!</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspU</th>
+                <td>Undergraduate in Meteorology or similar degree</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspG</th>
+                <td>Graduate student in Meteorology or similar degree</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspE</th>
+                <td >Enthusiast! (Weather/Storm Chasing)</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspB</th>
+                <td >Broadcast and Journalism</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspF</th>
+                <td >Faculty or Staff at an Academic Institution/Research Lab</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA</th>
+                <td >Degree Holding Alumni, Currently not working in the Meteorlogy Sector</td>
+              </tr>
+              <tr>
+                <th scope="row">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspO</th>
+                <td >Operations: Private Sector/NWS/Emergency Management etc.</td>
+              </tr>
+            </tbody>
+          </table>
+	  </div>
+	  <div class="col-sm-2"></div>
+  </div>
 </div>
 
+<!-- Bootstrap JS bundle (popper.js included) -->
 <script>
-function showArchivePlaceholder() {
-  document.getElementById("archivePlaceholder").classList.remove("d-none");
-  document.getElementById("archiveFrames").classList.add("d-none");
-}
+  function displayIframe(url) {
+    // Create an iframe element
+    var iframe = document.createElement('iframe');
 
-function showArchiveFrames() {
-  document.getElementById("archivePlaceholder").classList.add("d-none");
-  document.getElementById("archiveFrames").classList.remove("d-none");
-}
+    // Set attributes for the iframe
+    iframe.setAttribute('width', '100%');
+    iframe.setAttribute('height', '600px');
+    iframe.setAttribute('frameborder', '0');
 
-function pad(n) {
-  return n.toString().padStart(2, "0");
-}
+    // Check if the file exists
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', url, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          // File exists, set the src attribute
+          iframe.setAttribute('src', url);
+        } else {
+          // File not found, display a different message
+          iframe.setAttribute('src', 'leaderboards/Leaderboard_to_come.html');
+        }
 
-const dateInput = document.getElementById("forecastDate");
-
-/* ===============================
-   Check if forecast files exist
-   =============================== */
-async function hasForecastData(dateStr) {
-  const d = new Date(dateStr + "T00:00:00Z");
-  const y = d.getUTCFullYear();
-  const m = pad(d.getUTCMonth() + 1);
-  const day = pad(d.getUTCDate());
-
-  const base = `${y}_${m}_${day}`;
-  const testUrl = `todays_forecasts/plots/${base}_fig.html`;
-
-  try {
-    const res = await fetch(testUrl, { cache: "no-store" });
-    return res.ok;
-  } catch {
-    return false;
+        // Clear previous content and append the iframe to the container
+        document.getElementById('iframeContainer').innerHTML = '';
+        document.getElementById('iframeContainer').appendChild(iframe);
+      }
+    };
+    xhr.send();
   }
-}
-
-/* ===============================
-   Update iframe sources
-   =============================== */
-function updateFrames(dateStr) {
-  showArchiveFrames();
-  
-  const d = new Date(dateStr + "T00:00:00Z");
-  const y = d.getUTCFullYear();
-  const m = pad(d.getUTCMonth() + 1);
-  const day = pad(d.getUTCDate());
-
-  const base = `${y}_${m}_${day}`;
-
-  document.getElementById("figFrame").src =
-    `todays_forecasts/plots/${base}_fig.html`;
-  document.getElementById("tableFrame").src =
-    `todays_forecasts/tables/${base}_table.html`;
-}
-
-/* ===============================
-   Date selection handler
-   =============================== */
-dateInput.addEventListener("change", async () => {
-  const date = dateInput.value;
-  if (!date) return;
-
-  const d = new Date(date + "T00:00:00Z");
-  const weekday = d.getUTCDay(); // 0 = Sun, 6 = Sat
-
-  if (weekday === 0 || weekday === 6) {
-    alert("Forecast data is only available Monday–Friday.");
-    dateInput.value = "";
-	showArchivePlaceholder();
-    return;
-  }
-
-  const exists = await hasForecastData(date);
-
-  if (!exists) {
-    alert("No forecast data available for this date.");
-    dateInput.value = "";
-	showArchivePlaceholder();
-    return;
-  }
-  
-  const figFrame = document.getElementById("figFrame");
-  const tableFrame = document.getElementById("tableFrame");
-
-  figFrame.onload = () => figFrame.classList.add("loaded");
-  tableFrame.onload = () => tableFrame.classList.add("loaded");
-
-  updateFrames(date);
-});
-
-/* ===============================
-   Initial load (today)
-   =============================== */
-(async function init() {
-  const today = new Date();
-  const weekday = today.getUTCDay();
-
-  if (weekday === 0 || weekday === 6) {
-    showArchivePlaceholder();
-    return;
-  }
-
-  const iso = today.toISOString().split("T")[0];
-  const exists = await hasForecastData(iso);
-
-  if (exists) {
-    dateInput.value = iso;
-    updateFrames(iso);
-  } else {
-    showArchivePlaceholder();
-  }
-})();
 </script>
 <br>
 </main>
