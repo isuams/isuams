@@ -1,0 +1,2231 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-04-17 15:25:37</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Bucyrus, OH</td>
+      <td>40.83</td>
+      <td>-82.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1.30</td>
+      <td>EF1, NA</td>
+      <td>48.60</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:49:28</td>
+      <td>194</td>
+      <td>Michael Pagnanelli</td>
+      <td>YesTor</td>
+      <td>Urbana, OH</td>
+      <td>40.14</td>
+      <td>-83.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.60</td>
+      <td>EF0, NA</td>
+      <td>44.30</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 02:08:13</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>YesTor</td>
+      <td>Bucyrus, OH</td>
+      <td>40.84</td>
+      <td>-82.98</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2.20</td>
+      <td>EF1, NA</td>
+      <td>35.70</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:10:32</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Kennard, OH</td>
+      <td>40.17</td>
+      <td>-83.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2.80</td>
+      <td>EF0, NA</td>
+      <td>35.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:21:25</td>
+      <td>270</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Champaign County, OH</td>
+      <td>40.20</td>
+      <td>-83.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5.80</td>
+      <td>3 N Mutual, OH</td>
+      <td>28.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:05:07</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>YesTor</td>
+      <td>Nevada, OH</td>
+      <td>40.82</td>
+      <td>-83.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6.40</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>28.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:42:40</td>
+      <td>64</td>
+      <td>Baca</td>
+      <td>YesTor</td>
+      <td>Galion, oh</td>
+      <td>40.76</td>
+      <td>-82.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>8.50</td>
+      <td>EF1, NA</td>
+      <td>38.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:59:44</td>
+      <td>227</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Cortland, OH</td>
+      <td>41.33</td>
+      <td>-80.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.90</td>
+      <td>EF0, NA</td>
+      <td>30.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:48:33</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Galion, OH</td>
+      <td>40.72</td>
+      <td>-82.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>10.40</td>
+      <td>EF1, NA</td>
+      <td>37.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:54:32</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>YesTor</td>
+      <td>West Liberty, OH</td>
+      <td>40.26</td>
+      <td>-83.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>11.10</td>
+      <td>3 N Mutual, OH</td>
+      <td>24.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.63</td>
+      <td>-82.88</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>11.60</td>
+      <td>EF1, NA</td>
+      <td>40.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:50:09</td>
+      <td>36</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Caledonia, OH</td>
+      <td>40.63</td>
+      <td>-82.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>11.70</td>
+      <td>EF1, NA</td>
+      <td>36.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:05:59</td>
+      <td>117</td>
+      <td>It’s joever (I’m cooked)</td>
+      <td>YesTor</td>
+      <td>Marysville, OH</td>
+      <td>40.23</td>
+      <td>-83.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>12.70</td>
+      <td>EF0, NA</td>
+      <td>28.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:16:42</td>
+      <td>253</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Centerburg, OH</td>
+      <td>40.30</td>
+      <td>-82.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>13.20</td>
+      <td>EF0, NA</td>
+      <td>23.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:50:54</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Columbus, OH</td>
+      <td>40.00</td>
+      <td>-83.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13.50</td>
+      <td>4 N New Albany, OH</td>
+      <td>19.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:58:10</td>
+      <td>62</td>
+      <td>Kay</td>
+      <td>YesTor</td>
+      <td>East of Delaware, OH</td>
+      <td>40.30</td>
+      <td>-83.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>15.30</td>
+      <td>EF1, NA</td>
+      <td>22.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:06:44</td>
+      <td>203</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>Plain City, OH</td>
+      <td>40.13</td>
+      <td>-83.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>15.50</td>
+      <td>EF0, NA</td>
+      <td>26.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:32:28</td>
+      <td>272</td>
+      <td>Drew</td>
+      <td>YesTor</td>
+      <td>Marion, OH</td>
+      <td>40.59</td>
+      <td>-83.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>15.70</td>
+      <td>EF1, NA</td>
+      <td>30.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:27:02</td>
+      <td>138</td>
+      <td>Jack Zwolinski</td>
+      <td>YesTor</td>
+      <td>Lykens, OH</td>
+      <td>40.57</td>
+      <td>-83.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>15.80</td>
+      <td>EF1, NA</td>
+      <td>34.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:57:41</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Marysville</td>
+      <td>40.24</td>
+      <td>-83.31</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>15.80</td>
+      <td>EF0, NA</td>
+      <td>26.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 08:56:27</td>
+      <td>30</td>
+      <td>Mason C.</td>
+      <td>YesTor</td>
+      <td>E of Wayne OH</td>
+      <td>41.53</td>
+      <td>-80.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>16.60</td>
+      <td>EF0, NA</td>
+      <td>22.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:32:17</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Plain City, OH</td>
+      <td>40.11</td>
+      <td>-83.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>16.90</td>
+      <td>EF0, NA</td>
+      <td>25.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:34:38</td>
+      <td>101</td>
+      <td>Koji</td>
+      <td>YesTor</td>
+      <td>Utica, OH</td>
+      <td>40.23</td>
+      <td>-82.45</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>19.30</td>
+      <td>EF0, NA</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:32:07</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Mount Gilead, OH</td>
+      <td>40.54</td>
+      <td>-82.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>19.90</td>
+      <td>EF1, NA</td>
+      <td>32.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:24:59</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Ashley, OH</td>
+      <td>40.42</td>
+      <td>-82.85</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>20.00</td>
+      <td>EF0, NA</td>
+      <td>32.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:58:08</td>
+      <td>112</td>
+      <td>Bround (pls don't mix out)</td>
+      <td>YesTor</td>
+      <td>Ashley, OH</td>
+      <td>40.41</td>
+      <td>-82.95</td>
+      <td>No</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>20.70</td>
+      <td>EF0, NA</td>
+      <td>24.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:43:55</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>N of Delaware, OH</td>
+      <td>40.36</td>
+      <td>-83.08</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>21.20</td>
+      <td>EF1, NA</td>
+      <td>24.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:29:53</td>
+      <td>59</td>
+      <td>John Male</td>
+      <td>YesTor</td>
+      <td>Cardington, OH</td>
+      <td>40.50</td>
+      <td>-82.89</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>21.50</td>
+      <td>EF1, NA</td>
+      <td>36.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:59:31</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>YesTor</td>
+      <td>Mansfield, OH</td>
+      <td>40.79</td>
+      <td>-82.52</td>
+      <td>No</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>21.90</td>
+      <td>EF1, NA</td>
+      <td>24.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:14:21</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>YesTor</td>
+      <td>Mansfield, OH</td>
+      <td>40.82</td>
+      <td>-82.52</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.20</td>
+      <td>EF1, NA</td>
+      <td>23.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:47:42</td>
+      <td>186</td>
+      <td>Sophie Miller (Ohio go burrrrrrrrrrrr)</td>
+      <td>YesTor</td>
+      <td>Mansfield, OH</td>
+      <td>40.78</td>
+      <td>-82.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.40</td>
+      <td>EF1, NA</td>
+      <td>23.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:41:15</td>
+      <td>160</td>
+      <td>flappy787</td>
+      <td>YesTor</td>
+      <td>Shiloh, OH</td>
+      <td>41.01</td>
+      <td>-82.59</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.60</td>
+      <td>EF1, NA</td>
+      <td>15.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:58:47</td>
+      <td>199</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Mansfield OH</td>
+      <td>40.76</td>
+      <td>-82.51</td>
+      <td>No</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.90</td>
+      <td>EF1, NA</td>
+      <td>23.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:44:39</td>
+      <td>82</td>
+      <td>JASON GILL</td>
+      <td>YesTor</td>
+      <td>Canfield, OH</td>
+      <td>40.99</td>
+      <td>-80.78</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.90</td>
+      <td>2 W Windham, OH</td>
+      <td>15.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:48:23</td>
+      <td>153</td>
+      <td>Madisen Lindholm</td>
+      <td>YesTor</td>
+      <td>Mansfield, OH</td>
+      <td>40.75</td>
+      <td>-82.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>23.00</td>
+      <td>EF1, NA</td>
+      <td>23.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:47:15</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Mansfield, OH</td>
+      <td>40.77</td>
+      <td>-82.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>23.20</td>
+      <td>EF1, NA</td>
+      <td>23.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 16:00:25</td>
+      <td>154</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Mt Vernon, OH</td>
+      <td>40.39</td>
+      <td>-82.48</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>24.20</td>
+      <td>EF0, NA</td>
+      <td>23.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:56:11</td>
+      <td>58</td>
+      <td>Gabe Pena</td>
+      <td>YesTor</td>
+      <td>Mount Vernon, OH</td>
+      <td>40.39</td>
+      <td>-82.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>24.40</td>
+      <td>EF0, NA</td>
+      <td>23.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:31:03</td>
+      <td>268</td>
+      <td>Luke Hatton</td>
+      <td>YesTor</td>
+      <td>Chesterville, OH</td>
+      <td>40.48</td>
+      <td>-82.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>24.60</td>
+      <td>EF0, NA</td>
+      <td>35.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 05:39:10</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Mansfield, OH</td>
+      <td>40.74</td>
+      <td>-82.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>24.60</td>
+      <td>EF1, NA</td>
+      <td>27.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:25:31</td>
+      <td>113</td>
+      <td>Jacob Stichter</td>
+      <td>YesTor</td>
+      <td>Prospect, OH</td>
+      <td>40.45</td>
+      <td>-83.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>25.10</td>
+      <td>EF1, NA</td>
+      <td>27.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:59:32</td>
+      <td>135</td>
+      <td>Brixton Abad</td>
+      <td>YesTor</td>
+      <td>Tiffin OH</td>
+      <td>41.13</td>
+      <td>-83.22</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.90</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:02:47</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Fredericktown, OH</td>
+      <td>40.48</td>
+      <td>-82.54</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>27.10</td>
+      <td>EF0, NA</td>
+      <td>26.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:22:47</td>
+      <td>143</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Fredericktown, OH</td>
+      <td>40.48</td>
+      <td>-82.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>27.10</td>
+      <td>EF0, NA</td>
+      <td>26.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:22:04</td>
+      <td>240</td>
+      <td>Kyle Schanus</td>
+      <td>YesTor</td>
+      <td>Fredericktown, OH</td>
+      <td>40.48</td>
+      <td>-82.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>27.40</td>
+      <td>EF0, NA</td>
+      <td>26.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 16:00:40</td>
+      <td>139</td>
+      <td>McKenna B.</td>
+      <td>YesTor</td>
+      <td>Mt Victory, OH</td>
+      <td>40.55</td>
+      <td>-83.52</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>28.50</td>
+      <td>EF0, NA</td>
+      <td>18.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.82</td>
+      <td>-81.12</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>28.80</td>
+      <td>2 W Windham, OH</td>
+      <td>18.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:42:25</td>
+      <td>168</td>
+      <td>Steve Bergey</td>
+      <td>YesTor</td>
+      <td>Tipp City, OH</td>
+      <td>39.97</td>
+      <td>-84.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.40</td>
+      <td>EF0, NA</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:26:19</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>YesTor</td>
+      <td>Ankenytown, OH</td>
+      <td>40.53</td>
+      <td>-82.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>30.10</td>
+      <td>EF1, NA</td>
+      <td>26.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 16:00:53</td>
+      <td>171</td>
+      <td>Mesonet Man</td>
+      <td>YesTor</td>
+      <td>6 ENE Fostoria, OH</td>
+      <td>41.18</td>
+      <td>-83.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.20</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>13.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 06:07:07</td>
+      <td>91</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Ruggles, OH</td>
+      <td>41.02</td>
+      <td>-82.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.90</td>
+      <td>EF1, NA</td>
+      <td>13.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:58:33</td>
+      <td>126</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>YesTor</td>
+      <td>Bettsville, OH</td>
+      <td>41.26</td>
+      <td>-83.17</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.00</td>
+      <td>EF1, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:39:03</td>
+      <td>99</td>
+      <td>Zachary Egleston</td>
+      <td>YesTor</td>
+      <td>Kenton, OH</td>
+      <td>40.64</td>
+      <td>-83.60</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.10</td>
+      <td>EF1, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:54:40</td>
+      <td>201</td>
+      <td>TheBetterDoge</td>
+      <td>YesTor</td>
+      <td>Heartland, OH</td>
+      <td>41.15</td>
+      <td>-82.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.10</td>
+      <td>EF1, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:36:26</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Canton, OH</td>
+      <td>40.80</td>
+      <td>-81.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.60</td>
+      <td>2 W Windham, OH</td>
+      <td>13.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 11:58:57</td>
+      <td>97</td>
+      <td>Wyatt Huber</td>
+      <td>YesTor</td>
+      <td>Norwalk, OH</td>
+      <td>41.24</td>
+      <td>-82.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.90</td>
+      <td>EF1, NA</td>
+      <td>13.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:18:22</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>YesTor</td>
+      <td>Ohio</td>
+      <td>40.59</td>
+      <td>-82.33</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>35.60</td>
+      <td>EF1, NA</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:40:46</td>
+      <td>67</td>
+      <td>Braxton Banks</td>
+      <td>YesTor</td>
+      <td>Loudonville, OH</td>
+      <td>40.61</td>
+      <td>-82.31</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>36.00</td>
+      <td>EF1, NA</td>
+      <td>20.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:25:41</td>
+      <td>181</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>Jelloway, OH</td>
+      <td>40.54</td>
+      <td>-82.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>38.10</td>
+      <td>EF0, NA</td>
+      <td>20.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:59:59</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Loudonville, OH</td>
+      <td>40.63</td>
+      <td>-82.23</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>39.10</td>
+      <td>EF1, NA</td>
+      <td>20.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:03:01</td>
+      <td>16</td>
+      <td>WxZach</td>
+      <td>YesTor</td>
+      <td>Findlay, OH</td>
+      <td>41.11</td>
+      <td>-83.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.60</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:01:18</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>Englewood, OH</td>
+      <td>39.89</td>
+      <td>-84.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.80</td>
+      <td>EF0, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:35:07</td>
+      <td>28</td>
+      <td>Sam Luthi</td>
+      <td>YesTor</td>
+      <td>Tiverton Township, OH</td>
+      <td>40.40</td>
+      <td>-82.10</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>40.90</td>
+      <td>EF0, NA</td>
+      <td>15.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:10:43</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>East Greenville, OH</td>
+      <td>40.80</td>
+      <td>-81.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.90</td>
+      <td>2 W Windham, OH</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:34:33</td>
+      <td>189</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Russia, OH</td>
+      <td>40.26</td>
+      <td>-84.39</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.00</td>
+      <td>EF0, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:19:28</td>
+      <td>120</td>
+      <td>Eclipse Spot Truther</td>
+      <td>YesTor</td>
+      <td>Wapakoneta, OH</td>
+      <td>40.56</td>
+      <td>-84.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.20</td>
+      <td>EF0, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:10:22</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Zanesville, OH</td>
+      <td>39.99</td>
+      <td>-82.03</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.60</td>
+      <td>EF0, NA</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:17:28</td>
+      <td>77</td>
+      <td>Jacob E</td>
+      <td>YesTor</td>
+      <td>Van Buren, OH</td>
+      <td>41.13</td>
+      <td>-83.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.00</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>11.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:01:11</td>
+      <td>206</td>
+      <td>drawablefish</td>
+      <td>YesTor</td>
+      <td>Loudonville, OH</td>
+      <td>40.61</td>
+      <td>-82.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>42.30</td>
+      <td>EF1, NA</td>
+      <td>15.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:40:37</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Glenmont, OH</td>
+      <td>40.50</td>
+      <td>-82.13</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>43.20</td>
+      <td>EF0, NA</td>
+      <td>15.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:52:01</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Glenmont, OH</td>
+      <td>40.50</td>
+      <td>-82.10</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>44.40</td>
+      <td>EF0, NA</td>
+      <td>15.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 03:31:21</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>West Salem, OH</td>
+      <td>40.97</td>
+      <td>-82.10</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.10</td>
+      <td>EF1, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:59:46</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Mineral City, OH</td>
+      <td>40.60</td>
+      <td>-81.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>46.00</td>
+      <td>2 W Windham, OH</td>
+      <td>18.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:56:51</td>
+      <td>184</td>
+      <td>Tornado Fajita</td>
+      <td>YesTor</td>
+      <td>Glenmont, OH</td>
+      <td>40.54</td>
+      <td>-82.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>47.30</td>
+      <td>EF0, NA</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:44:44</td>
+      <td>141</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Smithville, OH</td>
+      <td>40.86</td>
+      <td>-81.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.00</td>
+      <td>2 W Windham, OH</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:48:17</td>
+      <td>70</td>
+      <td>Alex H.</td>
+      <td>YesTor</td>
+      <td>Mineral City, OH</td>
+      <td>40.58</td>
+      <td>-81.42</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>48.50</td>
+      <td>2 W Windham, OH</td>
+      <td>18.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 02:36:55</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Smithville, OH</td>
+      <td>40.87</td>
+      <td>-81.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.80</td>
+      <td>2 W Windham, OH</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:51:56</td>
+      <td>25</td>
+      <td>Eddie Vedder's SICK vocals</td>
+      <td>YesTor</td>
+      <td>Mt. Eaton, OH</td>
+      <td>40.69</td>
+      <td>-81.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.40</td>
+      <td>2 W Windham, OH</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:35:56</td>
+      <td>188</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Killbuck, OH</td>
+      <td>40.52</td>
+      <td>-82.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>49.70</td>
+      <td>EF0, NA</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 07:17:43</td>
+      <td>60</td>
+      <td>Wheelieweather</td>
+      <td>YesTor</td>
+      <td>Strausburg,OH</td>
+      <td>40.59</td>
+      <td>-81.52</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>49.80</td>
+      <td>2 W Windham, OH</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:22:28</td>
+      <td>202</td>
+      <td>Cole Sellers</td>
+      <td>YesTor</td>
+      <td>Millersburg,OH</td>
+      <td>40.55</td>
+      <td>-82.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>49.90</td>
+      <td>EF0, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:52:49</td>
+      <td>164</td>
+      <td>Chad Griffin</td>
+      <td>YesTor</td>
+      <td>Coshocton, OH</td>
+      <td>40.29</td>
+      <td>-81.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.40</td>
+      <td>EF0, NA</td>
+      <td>9.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:52:14</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Coshocton, OH</td>
+      <td>40.30</td>
+      <td>-81.86</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.60</td>
+      <td>EF0, NA</td>
+      <td>9.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:51:20</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Wooster, OH</td>
+      <td>40.80</td>
+      <td>-81.96</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.50</td>
+      <td>EF1, NA</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:09:21</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Wooster, OH</td>
+      <td>40.80</td>
+      <td>-81.95</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.60</td>
+      <td>EF1, NA</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:23:02</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>YesTor</td>
+      <td>Millersburg, OH</td>
+      <td>40.63</td>
+      <td>-81.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.90</td>
+      <td>2 W Windham, OH</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:30:51</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>YesTor</td>
+      <td>Millersburg, OH</td>
+      <td>40.55</td>
+      <td>-81.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.30</td>
+      <td>EF0, NA</td>
+      <td>9.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:26:05</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Millersburg, OH</td>
+      <td>40.55</td>
+      <td>-81.92</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.30</td>
+      <td>EF0, NA</td>
+      <td>9.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:50:20</td>
+      <td>262</td>
+      <td>Adrian Z.</td>
+      <td>YesTor</td>
+      <td>Wooster, OH</td>
+      <td>40.65</td>
+      <td>-81.92</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.50</td>
+      <td>EF1, NA</td>
+      <td>9.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:54:41</td>
+      <td>264</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Berlin, OH</td>
+      <td>40.58</td>
+      <td>-81.76</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.20</td>
+      <td>2 W Windham, OH</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 09:15:58</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>YesTor</td>
+      <td>Scio, OH</td>
+      <td>40.40</td>
+      <td>-81.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>57.40</td>
+      <td>2 W Windham, OH</td>
+      <td>12.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:45:50</td>
+      <td>205</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>40.48</td>
+      <td>-81.80</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.60</td>
+      <td>EF0, NA</td>
+      <td>8.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:20:54</td>
+      <td>84</td>
+      <td>James May</td>
+      <td>YesTor</td>
+      <td>Walnut Creek, OH</td>
+      <td>40.54</td>
+      <td>-81.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58.30</td>
+      <td>2 W Windham, OH</td>
+      <td>8.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:56:05</td>
+      <td>24</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>Berlin, OH</td>
+      <td>40.55</td>
+      <td>-81.80</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.90</td>
+      <td>EF0, NA</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:44:03</td>
+      <td>11</td>
+      <td>TylerM</td>
+      <td>YesTor</td>
+      <td>Tippecanoe, OH</td>
+      <td>40.26</td>
+      <td>-81.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.80</td>
+      <td>2 W Windham, OH</td>
+      <td>6.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:48:57</td>
+      <td>157</td>
+      <td>wxkobold</td>
+      <td>YesTor</td>
+      <td>Caldwell, OH</td>
+      <td>39.75</td>
+      <td>-81.52</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.70</td>
+      <td>EF0, NA</td>
+      <td>5.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 04:03:42</td>
+      <td>37</td>
+      <td>Brady Lyness</td>
+      <td>YesTor</td>
+      <td>Morenci, MI</td>
+      <td>41.72</td>
+      <td>-84.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>89.60</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>2.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:59:58</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Frontier, MI</td>
+      <td>41.77</td>
+      <td>-84.62</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>107.40</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:41:29</td>
+      <td>32</td>
+      <td>stfjinkiojd</td>
+      <td>YesTor</td>
+      <td>Dearborn Heights, MI (basically Detroit idc)</td>
+      <td>42.38</td>
+      <td>-83.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.40</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:57:43</td>
+      <td>27</td>
+      <td>Christopher Scragg</td>
+      <td>YesTor</td>
+      <td>Coldwater, MI</td>
+      <td>41.93</td>
+      <td>-85.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>129.90</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 03:40:32</td>
+      <td>269</td>
+      <td>FlashJPO</td>
+      <td>YesTor</td>
+      <td>Mason, Michigan</td>
+      <td>42.56</td>
+      <td>-84.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>142.60</td>
+      <td>1 WSW Bucyrus, OH</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 16:00:20</td>
+      <td>88</td>
+      <td>Alex Salerno</td>
+      <td>YesTor</td>
+      <td>Otisville</td>
+      <td>43.18</td>
+      <td>-83.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>165.90</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:33:06</td>
+      <td>133</td>
+      <td>Kevin Mahoney</td>
+      <td>YesTor</td>
+      <td>Madison, KS</td>
+      <td>38.13</td>
+      <td>-96.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>684.40</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:22:42</td>
+      <td>63</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>Sedan, KS</td>
+      <td>37.67</td>
+      <td>-96.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>719.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:59:54</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:45:50</td>
+      <td>214</td>
+      <td>Blake Brink</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:50:40</td>
+      <td>45</td>
+      <td>Sam Ritter</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:48:48</td>
+      <td>151</td>
+      <td>CPekar</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 00:44:26</td>
+      <td>275</td>
+      <td>Benjamin Kiel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:40:21</td>
+      <td>127</td>
+      <td>Matt Wilson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 01:40:34</td>
+      <td>140</td>
+      <td>Veer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 04:12:20</td>
+      <td>80</td>
+      <td>Eliot Morrow</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 07:50:29</td>
+      <td>48</td>
+      <td>Max Archer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 11:06:55</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:04:37</td>
+      <td>183</td>
+      <td>Ben Vitek</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:27:22</td>
+      <td>136</td>
+      <td>Slim Tatman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 12:28:36</td>
+      <td>76</td>
+      <td>Ezra</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:35:25</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:49:36</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:50:10</td>
+      <td>44</td>
+      <td>Ben Jablonski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 13:56:02</td>
+      <td>29</td>
+      <td>Richard Cirone</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:28:13</td>
+      <td>110</td>
+      <td>Ryan Dreeszen</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 14:55:55</td>
+      <td>161</td>
+      <td>Vincent P.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:09:12</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:26:36</td>
+      <td>241</td>
+      <td>bowecho7</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:35:34</td>
+      <td>107</td>
+      <td>Chief Keef</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:38:43</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:44:05</td>
+      <td>33</td>
+      <td>Mason Carneal</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 15:00:34</td>
+      <td>182</td>
+      <td>Braydon Songer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

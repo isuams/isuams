@@ -1,0 +1,1381 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-06-05 02:06:05</td>
+      <td>216</td>
+      <td>Veer T</td>
+      <td>YesTor</td>
+      <td>Brownfield, TX</td>
+      <td>33.18</td>
+      <td>-102.28</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.00</td>
+      <td>EF0, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 05:12:18</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Stano, KS</td>
+      <td>37.42</td>
+      <td>-101.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10.60</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>33.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 05:26:09</td>
+      <td>44</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Johnson City, KS</td>
+      <td>37.57</td>
+      <td>-101.75</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>7.40</td>
+      <td>DDC, NA</td>
+      <td>31.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 05:36:57</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Tatum, NM</td>
+      <td>33.28</td>
+      <td>-103.09</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.20</td>
+      <td>7 WNW Morton, TX</td>
+      <td>12.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 06:12:53</td>
+      <td>10</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Satanta, KS</td>
+      <td>37.45</td>
+      <td>-100.99</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.70</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>12.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 06:21:06</td>
+      <td>140</td>
+      <td>Caleb O’Gara</td>
+      <td>YesTor</td>
+      <td>Johnson, KS</td>
+      <td>37.56</td>
+      <td>-101.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>7.00</td>
+      <td>DDC, NA</td>
+      <td>31.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 06:59:32</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Moscow, KS</td>
+      <td>37.33</td>
+      <td>-101.21</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.00</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:34:04</td>
+      <td>205</td>
+      <td>gkeller99</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>37.44</td>
+      <td>-101.76</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>4.20</td>
+      <td>DDC, NA</td>
+      <td>37.90</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-05 07:36:19</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Lycan, CO</td>
+      <td>37.59</td>
+      <td>-102.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.60</td>
+      <td>DDC, NA</td>
+      <td>15.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 07:48:02</td>
+      <td>167</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>JHN</td>
+      <td>37.60</td>
+      <td>-101.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>8.90</td>
+      <td>DDC, NA</td>
+      <td>30.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 07:55:50</td>
+      <td>116</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Wilburton, KS</td>
+      <td>37.06</td>
+      <td>-101.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.60</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 08:37:24</td>
+      <td>262</td>
+      <td>Tyler Williams</td>
+      <td>YesTor</td>
+      <td>Satanta, KS</td>
+      <td>37.43</td>
+      <td>-100.99</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.50</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>12.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 08:58:08</td>
+      <td>291</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Moscow, Kansas</td>
+      <td>37.16</td>
+      <td>-101.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.40</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 10:33:04</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Friona, TX</td>
+      <td>34.65</td>
+      <td>-102.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.00</td>
+      <td>5 NW Rogers, NM</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 11:04:55</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>YesTor</td>
+      <td>Slaton, TX</td>
+      <td>33.43</td>
+      <td>-101.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.60</td>
+      <td>LUB, NA</td>
+      <td>23.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:24:22</td>
+      <td>113</td>
+      <td>Ft stockton magic never fails</td>
+      <td>YesTor</td>
+      <td>Fort Stockton tx</td>
+      <td>30.97</td>
+      <td>-102.91</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>188.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 11:40:10</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>Amarillo, TX</td>
+      <td>35.20</td>
+      <td>-101.80</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>106.80</td>
+      <td>EF2, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 11:53:04</td>
+      <td>109</td>
+      <td>Jonah Dosedel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:04:09</td>
+      <td>223</td>
+      <td>Bengalsfan</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.57</td>
+      <td>-101.94</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3.10</td>
+      <td>LUB, NA</td>
+      <td>54.90</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-05 12:13:47</td>
+      <td>290</td>
+      <td>We ride (doss)</td>
+      <td>YesTor</td>
+      <td>Richfield, KS</td>
+      <td>37.26</td>
+      <td>-101.78</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14.50</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>23.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 12:32:00</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Stonington, CO</td>
+      <td>37.24</td>
+      <td>-102.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>36.30</td>
+      <td>DDC, NA</td>
+      <td>20.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:24:05</td>
+      <td>270</td>
+      <td>Braydon Songer</td>
+      <td>YesTor</td>
+      <td>Seward County, KS</td>
+      <td>37.15</td>
+      <td>-100.75</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.20</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:25:08</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Tahoka, TX</td>
+      <td>33.17</td>
+      <td>-101.80</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.10</td>
+      <td>LUB, NA</td>
+      <td>13.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:45:02</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>YesTor</td>
+      <td>Rolla, KS</td>
+      <td>37.12</td>
+      <td>-101.63</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.90</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>15.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:52:48</td>
+      <td>88</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>32.79</td>
+      <td>-101.59</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.10</td>
+      <td>LUB, NA</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:32:55</td>
+      <td>163</td>
+      <td>WxDownYonder</td>
+      <td>YesTor</td>
+      <td>Copeland, KS</td>
+      <td>37.54</td>
+      <td>-100.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.50</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>8.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:33:15</td>
+      <td>178</td>
+      <td>Nic Anthony</td>
+      <td>YesTor</td>
+      <td>Bovina, TX</td>
+      <td>34.51</td>
+      <td>-102.88</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.70</td>
+      <td>5 NW Rogers, NM</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:44:42</td>
+      <td>221</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Copeland, KS</td>
+      <td>37.51</td>
+      <td>-101.66</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.40</td>
+      <td>DDC, NA</td>
+      <td>46.60</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:35:41</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Eunice, NM</td>
+      <td>32.45</td>
+      <td>-103.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95.20</td>
+      <td>4 WNW Lingo, NM</td>
+      <td>1.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:42:27</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Liberal, KS</td>
+      <td>37.20</td>
+      <td>-101.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.80</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>13.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 13:48:56</td>
+      <td>100</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>Stanton, TX</td>
+      <td>32.19</td>
+      <td>-101.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.10</td>
+      <td>Reese Center, TX</td>
+      <td>0.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:05:39</td>
+      <td>201</td>
+      <td>Donovan F</td>
+      <td>YesTor</td>
+      <td>Wolfforth, TX</td>
+      <td>33.51</td>
+      <td>-101.99</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>5.40</td>
+      <td>Reese Center, TX</td>
+      <td>40.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:12:13</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Levelland, TX</td>
+      <td>33.59</td>
+      <td>-102.38</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>4.40</td>
+      <td>5 N Levelland, TX</td>
+      <td>37.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:20:52</td>
+      <td>213</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Andrews, TX</td>
+      <td>32.43</td>
+      <td>-102.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.30</td>
+      <td>5 N Levelland, TX</td>
+      <td>2.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:21:52</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.65</td>
+      <td>-101.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>8.70</td>
+      <td>LUB, NA</td>
+      <td>38.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:24:16</td>
+      <td>226</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Seminole, TX</td>
+      <td>32.72</td>
+      <td>-102.65</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.60</td>
+      <td>5 N Levelland, TX</td>
+      <td>6.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:40:23</td>
+      <td>137</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Still Summer Camp Season (Clovis, NM)</td>
+      <td>34.40</td>
+      <td>-103.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.00</td>
+      <td>5 NW Rogers, NM</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:47:59</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Liberal, KS</td>
+      <td>37.10</td>
+      <td>-100.91</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.80</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 14:52:46</td>
+      <td>131</td>
+      <td>TheBetterDoge</td>
+      <td>YesTor</td>
+      <td>Hedley, TX</td>
+      <td>34.86</td>
+      <td>-100.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.50</td>
+      <td>LUB, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:04:49</td>
+      <td>46</td>
+      <td>Jacob "It did say Close" Stichter</td>
+      <td>YesTor</td>
+      <td>Close City, TX</td>
+      <td>33.21</td>
+      <td>-101.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.00</td>
+      <td>LUB, NA</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:04:49</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Rule, TX</td>
+      <td>33.20</td>
+      <td>-99.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>126.30</td>
+      <td>LUB, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:05:05</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Liberal, KS</td>
+      <td>37.10</td>
+      <td>-100.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.70</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:05:57</td>
+      <td>130</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>YesTor</td>
+      <td>Big Spring, TX</td>
+      <td>32.25</td>
+      <td>-101.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.30</td>
+      <td>Reese Center, TX</td>
+      <td>0.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:08:58</td>
+      <td>242</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>Moscow, KS</td>
+      <td>37.40</td>
+      <td>-101.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>20.00</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>20.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:10:45</td>
+      <td>76</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Woods, KS</td>
+      <td>37.18</td>
+      <td>-101.10</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.20</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>12.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:17:19</td>
+      <td>149</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Pride, TX</td>
+      <td>32.96</td>
+      <td>-101.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.10</td>
+      <td>Reese Center, TX</td>
+      <td>11.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:27:49</td>
+      <td>147</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>Saunders, KS</td>
+      <td>38.64</td>
+      <td>-99.42</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>147.10</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:27:53</td>
+      <td>154</td>
+      <td>William Gaylord</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>34.79</td>
+      <td>-102.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.00</td>
+      <td>2 SSW Whitharral, TX</td>
+      <td>4.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:30:12</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>KFDR</td>
+      <td>34.50</td>
+      <td>-99.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>101.50</td>
+      <td>2 NNW Lexington, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:34:49</td>
+      <td>176</td>
+      <td>AustinR_Wx</td>
+      <td>YesTor</td>
+      <td>Plains, KS</td>
+      <td>37.26</td>
+      <td>-100.59</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.10</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:35:13</td>
+      <td>53</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>32.84</td>
+      <td>-102.10</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.50</td>
+      <td>Reese Center, TX</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:36:25</td>
+      <td>200</td>
+      <td>Poop &gt;:( didn’t verify but this will trust &gt;:)</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.55</td>
+      <td>-101.89</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6.50</td>
+      <td>LUB, NA</td>
+      <td>40.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:36:41</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Crosbyton, TX</td>
+      <td>33.63</td>
+      <td>-101.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.80</td>
+      <td>LUB, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:37:25</td>
+      <td>286</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Seminole, TX</td>
+      <td>32.71</td>
+      <td>-102.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.30</td>
+      <td>5 N Levelland, TX</td>
+      <td>6.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:37:46</td>
+      <td>297</td>
+      <td>Joshua Intini</td>
+      <td>YesTor</td>
+      <td>Rolla, KS</td>
+      <td>37.11</td>
+      <td>-101.64</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.60</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>15.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:38:50</td>
+      <td>12</td>
+      <td>Olivia McCauley</td>
+      <td>YesTor</td>
+      <td>Johnson City, KS</td>
+      <td>37.57</td>
+      <td>-101.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>7.60</td>
+      <td>DDC, NA</td>
+      <td>31.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:38:58</td>
+      <td>30</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Manter, KS</td>
+      <td>37.51</td>
+      <td>-101.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10.70</td>
+      <td>DDC, NA</td>
+      <td>25.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:40:09</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Hugoton, KS</td>
+      <td>37.28</td>
+      <td>-101.36</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>20.20</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>20.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:40:35</td>
+      <td>114</td>
+      <td>Baja</td>
+      <td>YesTor</td>
+      <td>Ryus, KS</td>
+      <td>37.49</td>
+      <td>-101.11</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.20</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:43:53</td>
+      <td>233</td>
+      <td>Reneé Rapp = Big Bad Freakin Lesbian</td>
+      <td>YesTor</td>
+      <td>Hobbs, NM</td>
+      <td>32.80</td>
+      <td>-103.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.90</td>
+      <td>7 WNW Morton, TX</td>
+      <td>6.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:44:43</td>
+      <td>124</td>
+      <td>Sekwof</td>
+      <td>YesTor</td>
+      <td>Meade, KS</td>
+      <td>37.28</td>
+      <td>-100.44</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.90</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>6.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:47:07</td>
+      <td>173</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Slapout, OK</td>
+      <td>36.61</td>
+      <td>-100.09</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>104.20</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:49:21</td>
+      <td>52</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Big Bow, KS</td>
+      <td>37.56</td>
+      <td>-101.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>9.60</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>29.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:59:28</td>
+      <td>117</td>
+      <td>Gabe Zago</td>
+      <td>YesTor</td>
+      <td>Lycan, CO</td>
+      <td>37.70</td>
+      <td>-102.17</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.30</td>
+      <td>DDC, NA</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:51:32</td>
+      <td>273</td>
+      <td>Nick Markus</td>
+      <td>YesTor</td>
+      <td>Liberal, KS</td>
+      <td>37.01</td>
+      <td>-100.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.40</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>9.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:51:49</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Richfield, KS</td>
+      <td>37.38</td>
+      <td>-101.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>13.80</td>
+      <td>DDC, NA</td>
+      <td>23.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:52:32</td>
+      <td>3</td>
+      <td>Kyle "Hopeless Tornadic" Hugeback</td>
+      <td>YesTor</td>
+      <td>N side of O'Donnell, TX</td>
+      <td>32.98</td>
+      <td>-101.83</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.20</td>
+      <td>Reese Center, TX</td>
+      <td>11.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:52:59</td>
+      <td>157</td>
+      <td>Sal</td>
+      <td>YesTor</td>
+      <td>Lamesa, TX</td>
+      <td>32.84</td>
+      <td>-101.84</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.10</td>
+      <td>Reese Center, TX</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:53:38</td>
+      <td>174</td>
+      <td>Alexis Severson</td>
+      <td>YesTor</td>
+      <td>Kismet, KS</td>
+      <td>37.24</td>
+      <td>-100.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.00</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>9.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:54:33</td>
+      <td>187</td>
+      <td>3CapeTruther</td>
+      <td>YesTor</td>
+      <td>Welch, TX</td>
+      <td>32.91</td>
+      <td>-102.11</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>46.90</td>
+      <td>EF0, NA</td>
+      <td>10.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:55:07</td>
+      <td>69</td>
+      <td>Lizzie Hugeback</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>33.09</td>
+      <td>-102.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.50</td>
+      <td>EF0, NA</td>
+      <td>12.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:57:37</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Meadow, TX</td>
+      <td>33.34</td>
+      <td>-102.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.80</td>
+      <td>EF0, NA</td>
+      <td>17.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:58:54</td>
+      <td>247</td>
+      <td>Dave Flo</td>
+      <td>YesTor</td>
+      <td>Levelland, TX</td>
+      <td>33.58</td>
+      <td>-102.39</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>4.60</td>
+      <td>5 N Levelland, TX</td>
+      <td>37.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:59:32</td>
+      <td>188</td>
+      <td>James Summers</td>
+      <td>YesTor</td>
+      <td>Clovis, NM</td>
+      <td>34.63</td>
+      <td>-103.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.50</td>
+      <td>5 NW Rogers, NM</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:59:32</td>
+      <td>127</td>
+      <td>Ew kansas</td>
+      <td>YesTor</td>
+      <td>Hugoton, ks</td>
+      <td>37.17</td>
+      <td>-101.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.80</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-05 15:59:37</td>
+      <td>313</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Woods, KS</td>
+      <td>37.10</td>
+      <td>-101.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.90</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>12.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.38</td>
+      <td>-101.67</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120.70</td>
+      <td>EF2, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.46</td>
+      <td>-101.96</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14.30</td>
+      <td>DDC, NA</td>
+      <td>23.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.04</td>
+      <td>-102.24</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>102.80</td>
+      <td>9 SW Big Bow, KS</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

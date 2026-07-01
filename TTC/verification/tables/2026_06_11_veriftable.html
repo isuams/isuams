@@ -1,0 +1,1211 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>User_id</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-06-11 15:58:50.160439</td>
+      <td>227cefd5-0cd1-4224-98b1-e4f7a941314f</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>42.89</td>
+      <td>-85.73</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>15.20</td>
+      <td>GRR, NA</td>
+      <td>64.70</td>
+      <td>Lone Wolf Bonus Added! +30</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:40:12.228407</td>
+      <td>4846568a-0259-465f-bce3-e504af827ea6</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>N of Wenona, IL</td>
+      <td>41.07</td>
+      <td>-89.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3.60</td>
+      <td>LOT, NA</td>
+      <td>62.40</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>NADOCAST_14</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.73</td>
+      <td>-87.78</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.70</td>
+      <td>LOT, NA</td>
+      <td>52.20</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 12:26:12.134470</td>
+      <td>2c78eb3b-d040-42fc-94f8-f44446a4e1c4</td>
+      <td>He said fellas, it's been good to know ya</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.32</td>
+      <td>-87.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>9.30</td>
+      <td>2 SSW Cedar Lake, IN</td>
+      <td>42.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:23:56.461910</td>
+      <td>f2d6bc0c-c5b1-411c-a09e-9dc8f0368e20</td>
+      <td>El Paso, IL just sounds so weird</td>
+      <td>YesTor</td>
+      <td>El Paso, IL</td>
+      <td>40.74</td>
+      <td>-89.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>12.90</td>
+      <td>3 SE Flanagan, IL</td>
+      <td>39.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:35:49.198129</td>
+      <td>35f58674-ff73-48dc-9411-0e12c1282159</td>
+      <td>Barty-Party</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.82</td>
+      <td>-87.99</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>6.90</td>
+      <td>LOT, NA</td>
+      <td>39.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:46:05.105163</td>
+      <td>93de25d3-3d4b-401c-a1e3-d70433dde7ca</td>
+      <td>timotheedinkins</td>
+      <td>YesTor</td>
+      <td>Bardolph, IL</td>
+      <td>40.47</td>
+      <td>-90.51</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>11.80</td>
+      <td>3 WNW Macomb, IL</td>
+      <td>36.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:59:32.269668</td>
+      <td>5721da87-7ee6-4eb0-8fd8-222ec7f06ba8</td>
+      <td>HRRR needs a snickers</td>
+      <td>YesTor</td>
+      <td>Augusta, IL</td>
+      <td>40.23</td>
+      <td>-90.95</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>12.90</td>
+      <td>DVN, NA</td>
+      <td>35.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:56:55.819785</td>
+      <td>fb3c71f4-47a4-45df-9031-c75daff2f099</td>
+      <td>The models suck</td>
+      <td>YesTor</td>
+      <td>Blandinsville, IL</td>
+      <td>40.56</td>
+      <td>-90.88</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.90</td>
+      <td>DVN, NA</td>
+      <td>34.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:17:49.936958</td>
+      <td>e5023921-c94e-49e4-9ea5-f92dfd1449e7</td>
+      <td>Alexis Severson</td>
+      <td>YesTor</td>
+      <td>Deer Grove, IL</td>
+      <td>41.62</td>
+      <td>-89.68</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5.40</td>
+      <td>DVN, NA</td>
+      <td>32.90</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-11 10:08:49.453082</td>
+      <td>913e9279-6ed3-492e-975e-9525175df85d</td>
+      <td>Bengalsfan</td>
+      <td>YesTor</td>
+      <td>Chicago, Illinois</td>
+      <td>41.78</td>
+      <td>-87.62</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>7.10</td>
+      <td>LOT, NA</td>
+      <td>31.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:31:32.466356</td>
+      <td>e7cdf74d-a4d4-460e-82de-3b5366830528</td>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>YesTor</td>
+      <td>Manlius, Illinois</td>
+      <td>41.44</td>
+      <td>-89.74</td>
+      <td>Yes</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.60</td>
+      <td>3 SW Walnut, IL</td>
+      <td>30.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:16:14.186904</td>
+      <td>4b0f8d5a-e73b-42ab-a6c6-cd9888f3da41</td>
+      <td>Cold Core Cowboy</td>
+      <td>YesTor</td>
+      <td>South Chicago</td>
+      <td>41.53</td>
+      <td>-87.67</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>10.00</td>
+      <td>3 WSW St. John, IN</td>
+      <td>29.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:54:21.882936</td>
+      <td>2978365c-d1e3-4537-9a1a-af41b66ab8f2</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>KLOT</td>
+      <td>41.61</td>
+      <td>-88.10</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>10.60</td>
+      <td>2 ESE Naperville, IL</td>
+      <td>29.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>CONSENSUS</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.43</td>
+      <td>-89.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>10.80</td>
+      <td>DVN, NA</td>
+      <td>29.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:31:45.551662</td>
+      <td>7d76b73e-4692-44f8-9feb-3449d21d8eff</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Spring Bay, IA</td>
+      <td>40.82</td>
+      <td>-89.52</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6.10</td>
+      <td>ILX, NA</td>
+      <td>28.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:42:45.607557</td>
+      <td>1af74c6c-3587-48f1-9e99-06cb0adb793a</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.53</td>
+      <td>-87.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>13.30</td>
+      <td>LOT, NA</td>
+      <td>27.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:59:46.425996</td>
+      <td>98419db7-9fc3-48f4-81dd-0b92c4a631ba</td>
+      <td>Michael Kubinski</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.88</td>
+      <td>-87.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>13.90</td>
+      <td>1 SSW Watseka, IL</td>
+      <td>27.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:45:28.732747</td>
+      <td>18a65225-4314-49ed-b73d-2fb6f20aa676</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.52</td>
+      <td>-89.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>14.30</td>
+      <td>3 SW Walnut, IL</td>
+      <td>27.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:37:35.880511</td>
+      <td>93020517-d19d-4ae0-8ba2-d501313f1945</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.68</td>
+      <td>-88.57</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>17.50</td>
+      <td>LOT, NA</td>
+      <td>25.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:34:39.771293</td>
+      <td>60017081-508a-4e3e-bce1-d6990feb0835</td>
+      <td>ABRAHAM LINCOLN (CG15Wx)</td>
+      <td>YesTor</td>
+      <td>NE of Wyanet, IL/NW of Princeton, IL</td>
+      <td>41.39</td>
+      <td>-89.55</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>11.20</td>
+      <td>DVN, NA</td>
+      <td>24.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:28:02.348559</td>
+      <td>9a9c80bb-efce-493e-9495-c66814df183a</td>
+      <td>chicago tornado magnet moment</td>
+      <td>YesTor</td>
+      <td>Chicago, IL</td>
+      <td>41.95</td>
+      <td>-87.66</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>11.40</td>
+      <td>LOT, NA</td>
+      <td>24.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:02:16.227150</td>
+      <td>31ed12bd-abf3-4cfd-8d53-1b04ffb6ce9e</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Peoria, IL</td>
+      <td>40.79</td>
+      <td>-89.62</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>11.80</td>
+      <td>ILX, NA</td>
+      <td>24.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:17:45.216796</td>
+      <td>76fa5995-a42a-4a73-945f-17848647289a</td>
+      <td>Aaron Derrick</td>
+      <td>YesTor</td>
+      <td>Princeton, IL</td>
+      <td>41.37</td>
+      <td>-89.46</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14.70</td>
+      <td>DVN, NA</td>
+      <td>22.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:59:11.878894</td>
+      <td>14550ee2-53d9-4e7e-a931-a239b48fc285</td>
+      <td>WxDrifter</td>
+      <td>YesTor</td>
+      <td>Princeville, IL</td>
+      <td>40.93</td>
+      <td>-89.76</td>
+      <td>Yes</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>17.20</td>
+      <td>ILX, NA</td>
+      <td>21.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:58:44.064930</td>
+      <td>3a7ad783-91ff-4005-90ed-41214f2eb8dc</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.30</td>
+      <td>-89.53</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>17.50</td>
+      <td>DVN, NA</td>
+      <td>21.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 12:15:33.459496</td>
+      <td>d6b5a4e8-ec9f-48ae-acf3-f367c3ae3919</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Rochelle, IL</td>
+      <td>41.92</td>
+      <td>-89.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10.80</td>
+      <td>LOT, NA</td>
+      <td>21.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:49:01.803691</td>
+      <td>41109230-8211-4616-b1d4-89a73581b58f</td>
+      <td>GoHornets22</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.29</td>
+      <td>-89.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>19.30</td>
+      <td>DVN, NA</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:24:36.511182</td>
+      <td>c6544340-877f-4d85-9dfc-5cd92277a432</td>
+      <td>Blake Barber</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.29</td>
+      <td>-89.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>20.10</td>
+      <td>LOT, NA</td>
+      <td>20.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:41:32.166098</td>
+      <td>2395f55f-392c-4b14-a638-25410e59752b</td>
+      <td>Clarence</td>
+      <td>YesTor</td>
+      <td>DePue, IL</td>
+      <td>41.34</td>
+      <td>-89.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>21.00</td>
+      <td>DVN, NA</td>
+      <td>20.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:27:16.209155</td>
+      <td>6db0a73e-c720-45ea-bd08-f3811e8e0f62</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>DeKalb, IL</td>
+      <td>41.94</td>
+      <td>-88.75</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12.50</td>
+      <td>LOT, NA</td>
+      <td>20.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:53:47.823209</td>
+      <td>4057c8e3-0d65-4bc6-bc30-b81e1b525df2</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Atkinson, IL</td>
+      <td>41.39</td>
+      <td>-90.01</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>21.80</td>
+      <td>3 SW Walnut, IL</td>
+      <td>20.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:51:00.209382</td>
+      <td>f31cfe7f-e972-47ff-8cc1-516bbf79521c</td>
+      <td>DaveFlo</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.42</td>
+      <td>-88.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>22.00</td>
+      <td>LOT, NA</td>
+      <td>20.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:48:23.105163</td>
+      <td>8099c68a-825d-4ac6-bfdc-c4eae84d455b</td>
+      <td>ajax13</td>
+      <td>YesTor</td>
+      <td>Olds, IA</td>
+      <td>41.14</td>
+      <td>-91.57</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13.10</td>
+      <td>2 W Haskins, IA</td>
+      <td>19.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:54:00.534993</td>
+      <td>06bbd26c-6057-49bc-a325-c4b0067108ec</td>
+      <td>Super Mega Storm of the Century (Midwest Edition)</td>
+      <td>YesTor</td>
+      <td>Kewanee, IL</td>
+      <td>41.24</td>
+      <td>-89.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>25.20</td>
+      <td>3 SW Walnut, IL</td>
+      <td>19.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:43:58.364676</td>
+      <td>0b12d7dd-0036-4de7-9c48-ac795dd8cf02</td>
+      <td>I guess it’s happening (doss)</td>
+      <td>YesTor</td>
+      <td>Ottawa, IL</td>
+      <td>41.36</td>
+      <td>-88.81</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.60</td>
+      <td>LOT, NA</td>
+      <td>18.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:37:18.124837</td>
+      <td>9d422e84-b1d4-4142-ad6f-6d7edec36799</td>
+      <td>Uhhhhhhhhhh tornado driven MDT risk</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.77</td>
+      <td>-90.22</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.90</td>
+      <td>ILX, NA</td>
+      <td>18.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:58:01.229297</td>
+      <td>3675be6a-9a2f-4fd8-95c9-2b32de4e8c46</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.35</td>
+      <td>-88.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>16.50</td>
+      <td>LOT, NA</td>
+      <td>18.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:34:42.514135</td>
+      <td>e3771c78-c85d-431c-883d-a0275f4edabb</td>
+      <td>Kris with the Radars</td>
+      <td>YesTor</td>
+      <td>Kaneville, IL</td>
+      <td>41.84</td>
+      <td>-88.52</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17.40</td>
+      <td>LOT, NA</td>
+      <td>17.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 10:36:19.246570</td>
+      <td>5f749261-25fd-4b62-b673-efa48067fcae</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Rock Falls, IL</td>
+      <td>41.76</td>
+      <td>-89.82</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17.40</td>
+      <td>DVN, NA</td>
+      <td>17.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:59:57.043492</td>
+      <td>e2fc3f40-5489-4e0c-8de1-6aaacd76588f</td>
+      <td>Donovan Fry</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.41</td>
+      <td>-88.69</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17.80</td>
+      <td>1 S Ransom, IL</td>
+      <td>17.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:44:04.450649</td>
+      <td>fcad1422-6a91-48f3-84fe-988d754ced8d</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Philadelphia, IL</td>
+      <td>39.88</td>
+      <td>-90.14</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>32.90</td>
+      <td>2 WSW Ipava, IL</td>
+      <td>17.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 04:22:50.790419</td>
+      <td>3d09d13b-9cbe-4e25-a213-bd9b15e96884</td>
+      <td>Evan St. Clair</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>42.01</td>
+      <td>-89.27</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.90</td>
+      <td>LOT, NA</td>
+      <td>16.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:23:05.601210</td>
+      <td>87cd4f3f-4699-494b-a4c8-171d53a55d3f</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Sterling, IL</td>
+      <td>41.86</td>
+      <td>-89.67</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.30</td>
+      <td>DVN, NA</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:43:13.487910</td>
+      <td>7ae8d1a5-2e09-41af-9dda-44a304820ef5</td>
+      <td>WX_SouthernIL</td>
+      <td>YesTor</td>
+      <td>Wyoming, IL</td>
+      <td>41.06</td>
+      <td>-89.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.60</td>
+      <td>ILX, NA</td>
+      <td>16.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:44:57.327986</td>
+      <td>28d2134c-4885-4c2c-836a-84938061a1af</td>
+      <td>Gabe Zago</td>
+      <td>YesTor</td>
+      <td>Milo, IL</td>
+      <td>41.18</td>
+      <td>-89.61</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.90</td>
+      <td>ILX, NA</td>
+      <td>16.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:35:58.749230</td>
+      <td>41249a52-7098-476c-97c0-010aae133657</td>
+      <td>RevelWX</td>
+      <td>YesTor</td>
+      <td>Williamsfield, Illinois</td>
+      <td>40.91</td>
+      <td>-90.03</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.10</td>
+      <td>ILX, NA</td>
+      <td>15.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 02:58:07.342529</td>
+      <td>b8d23216-6405-42a4-b214-2d77f8024fc4</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Iowa City, IA</td>
+      <td>41.67</td>
+      <td>-91.54</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.70</td>
+      <td>2 W Haskins, IA</td>
+      <td>15.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:41:13.136196</td>
+      <td>beee2de8-b386-4b61-91ba-aa43314f7d91</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.94</td>
+      <td>-90.16</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.80</td>
+      <td>ILX, NA</td>
+      <td>15.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:13:21.911882</td>
+      <td>7a535b58-5f06-4aea-b6a1-1af2dc9b854b</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.81</td>
+      <td>-90.51</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.20</td>
+      <td>3 WNW Macomb, IL</td>
+      <td>15.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:54:30.408826</td>
+      <td>19554034-69fd-465f-9b98-122fc9e7e1d1</td>
+      <td>Sal</td>
+      <td>YesTor</td>
+      <td>Woodstock, IL</td>
+      <td>42.41</td>
+      <td>-88.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.80</td>
+      <td>3 S Union Grove, WI</td>
+      <td>14.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:58:12.329700</td>
+      <td>060b0063-a4af-40e2-b13d-dde790f123cc</td>
+      <td>MysticVortexNerd</td>
+      <td>YesTor</td>
+      <td>Byron, IL</td>
+      <td>42.13</td>
+      <td>-89.26</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.40</td>
+      <td>LOT, NA</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:55:32.541902</td>
+      <td>1999a5a0-e154-46d5-9346-354769f36b9a</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Byron, IL</td>
+      <td>42.15</td>
+      <td>-89.25</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>28.50</td>
+      <td>LOT, NA</td>
+      <td>14.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>NADOCAST_12</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>42.18</td>
+      <td>-87.53</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.00</td>
+      <td>LOT, NA</td>
+      <td>14.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:03:19.879948</td>
+      <td>ce7daffb-afb6-4859-86e5-5780f234d4d6</td>
+      <td>JavaHurricane</td>
+      <td>YesTor</td>
+      <td>Muscatine, IA</td>
+      <td>41.37</td>
+      <td>-90.98</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.00</td>
+      <td>2 W Haskins, IA</td>
+      <td>13.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:55:30.846681</td>
+      <td>8f8cc899-15b7-4606-aea6-63251d1efc73</td>
+      <td>IDK But sure!</td>
+      <td>YesTor</td>
+      <td>Wataga, IL</td>
+      <td>41.02</td>
+      <td>-90.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.00</td>
+      <td>ILX, NA</td>
+      <td>13.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:43:00.665152</td>
+      <td>f77f0648-2813-467a-a986-0290c81bd8d9</td>
+      <td>Ghostfox1</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>42.27</td>
+      <td>-89.06</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.80</td>
+      <td>LOT, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:59:30.779529</td>
+      <td>5210326b-a226-4cdb-856a-7f7418efaeba</td>
+      <td>Upgrade to tornado driven MDT at 1300 UTC (Nick M)</td>
+      <td>YesTor</td>
+      <td>Galva, IL</td>
+      <td>41.17</td>
+      <td>-90.04</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.10</td>
+      <td>3 SW Walnut, IL</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:58:43.517370</td>
+      <td>988621e6-1fad-4378-8f60-98785aed3926</td>
+      <td>Wxbill</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.97</td>
+      <td>-90.71</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.40</td>
+      <td>3 WNW Macomb, IL</td>
+      <td>13.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 11:23:26.696495</td>
+      <td>04e4fb37-86a3-4fb8-9e4b-92cb2caf0572</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Loves Park, IL</td>
+      <td>42.33</td>
+      <td>-89.11</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.40</td>
+      <td>LOT, NA</td>
+      <td>12.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:34:09.300950</td>
+      <td>7b29363a-b1c5-488e-997c-e4c706490319</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Alexis, IL</td>
+      <td>41.06</td>
+      <td>-90.56</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.60</td>
+      <td>3 WNW Macomb, IL</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 06:53:32.256739</td>
+      <td>b8778d83-54bc-4eea-8797-7d2f55f10029</td>
+      <td>getting wacky</td>
+      <td>YesTor</td>
+      <td>Wacker, IL</td>
+      <td>42.06</td>
+      <td>-90.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.00</td>
+      <td>DVN, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:08:34.341568</td>
+      <td>e265d8a6-e702-491f-a805-35df9556b2cb</td>
+      <td>This is only a ~20 minute drive for me(Jacob.S)</td>
+      <td>YesTor</td>
+      <td>Sunbury, IA</td>
+      <td>41.67</td>
+      <td>-90.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.90</td>
+      <td>2 W Haskins, IA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 08:53:36.681603</td>
+      <td>a05dcc78-b645-4257-b4c9-8299f0d5eeac</td>
+      <td>The Return of Major Morning Convection</td>
+      <td>YesTor</td>
+      <td>Pecatonica, IL</td>
+      <td>42.31</td>
+      <td>-89.36</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.30</td>
+      <td>LOT, NA</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 14:58:06.632716</td>
+      <td>7642bcd8-fb2e-4d0a-a913-8593128f111c</td>
+      <td>#staysafe</td>
+      <td>YesTor</td>
+      <td>What Cheer, IA</td>
+      <td>41.41</td>
+      <td>-92.36</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.30</td>
+      <td>2 W Haskins, IA</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 15:32:03.735606</td>
+      <td>2cd28980-0f48-4d41-8bef-f891c07f4e99</td>
+      <td>Scout</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>42.43</td>
+      <td>-89.03</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.40</td>
+      <td>LOT, NA</td>
+      <td>11.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 04:13:44.137928</td>
+      <td>b30f081f-be1e-4ade-aaf0-6a4ec3afb1bc</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Freeport, IL</td>
+      <td>42.28</td>
+      <td>-89.63</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.10</td>
+      <td>LOT, NA</td>
+      <td>10.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 13:04:47.981302</td>
+      <td>282d35b7-16f7-421a-9faa-d44df908d0c4</td>
+      <td>Davenport Tornado Magnet Day 2</td>
+      <td>YesTor</td>
+      <td>Lake of the Hills - Davenport, IA</td>
+      <td>41.52</td>
+      <td>-90.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.00</td>
+      <td>2 W Haskins, IA</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-11 08:55:20.061999</td>
+      <td>32cb4a7e-1d0d-439f-a55a-bfa336ba1ed6</td>
+      <td>Kay</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.49</td>
+      <td>-90.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.70</td>
+      <td>2 W Haskins, IA</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
