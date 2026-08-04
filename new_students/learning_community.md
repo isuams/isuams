@@ -133,7 +133,7 @@ permalink: /new_students/learning_community/
   <!-- Jeanne Oreschnick -->
   <div class="column column-4 cropped-image">
     <h3>Jeanne Oreschnick</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Jeanne.jpeg?raw=true" alt="Lauren Bader">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Jeanne.jpeg?raw=true" alt="Jeanne Oreschnick">
     <p>Math Tutor</p>
   </div>
 </div>
