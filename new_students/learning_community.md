@@ -84,28 +84,28 @@ permalink: /new_students/learning_community/
 <div class="row">
   <!-- Emma Grace Teggatz -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center;">Emma Grace Teggatz</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Emma Grace Teggatz</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz">
     <p>Climate Science</p>
   </div>
 
   <!-- Garrett Korkowski -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center;">Garrett Korkowski</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Garrett Korkowski</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski">
     <p>Geology</p>
   </div>
 
   <!-- Bryce Vining -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center;">Bryce Vining</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Bryce Vining</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Bryce.jpg?raw=true" alt="Bryce Vining">
     <p>Meteorology</p>
   </div>
 
   <!-- Maggie Grigg -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center;">Maggie Grigg</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Maggie Grigg</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
     <p>Meteorology</p>
   </div>
