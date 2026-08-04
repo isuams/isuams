@@ -103,10 +103,10 @@ permalink: /new_students/learning_community/
     <p>Meteorology</p>
   </div>
 
-  <!-- Maggie Grigg -->
+  <!-- Destiny Huffman -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Maggie Grigg</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Destiny Huffman</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
     <p>Meteorology</p>
   </div>
 </div>
@@ -114,25 +114,25 @@ permalink: /new_students/learning_community/
 <div class="row">
   <!-- Wyatt Van Dyke -->
   <div class="column column-4 cropped-image">
-    <h3>Wyatt Van Dyke</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Wyatt Van Dyke</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Wyatt2026.jpg?raw=true" alt="Wyatt Van Dyke">
     <p>Meteorology</p>
   </div>
-  <!-- Lauren Bader -->
+  <!-- Maggie Grigg -->
   <div class="column column-4 cropped-image">
-    <h3>Lauren Bader</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader">
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Maggie Grigg</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
     <p>Meteorology</p>
   </div>
   <!-- Maddie Medvec -->
   <div class="column column-4 cropped-image">
-    <h3>Maddie Medvec</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Maddie Medvec</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec">
     <p>Meteorology</p>
   </div>
   <!-- Jeanne Oreschnick -->
   <div class="column column-4 cropped-image">
-    <h3>Jeanne Oreschnick</h3>
+    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Jeanne Oreschnick</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Jeanne.jpeg?raw=true" alt="Jeanne Oreschnick">
     <p>Math Tutor</p>
   </div>
