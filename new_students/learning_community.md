@@ -130,10 +130,10 @@ permalink: /new_students/learning_community/
     <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec">
     <p>Meteorology</p>
   </div>
-  <!-- Stefan Sundin -->
+  <!-- Jeanne Oreschnick -->
   <div class="column column-4 cropped-image">
-    <h3>Stefan Sundin</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Stefan_Academic.jpg?raw=true" alt="Stefan Sundin">
+    <h3>Jeanne Oreschnick</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Jeanne.jpeg?raw=true" alt="Lauren Bader">
     <p>Math Tutor</p>
   </div>
 </div>
