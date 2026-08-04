@@ -109,10 +109,10 @@ permalink: /new_students/learning_community/
 </div>
 
 <div class="row">
-  <!-- Braydon Songer -->
+  <!-- Wyatt Van Dyke -->
   <div class="column column-4 cropped-image">
-    <h3>Braydon Songer</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Braydon_VP.jpg?raw=true" alt="Braydon Songer">
+    <h3>Wyatt Van Dyke</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Wyatt2026.jpg?raw=true" alt="Wyatt Van Dyke">
     <p>Meteorology</p>
   </div>
   <!-- Lauren Bader -->
