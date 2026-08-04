@@ -80,7 +80,7 @@ permalink: /new_students/learning_community/
   </div>
 </div>
 
-<h2>2024-2025 Peer Mentors</h2>
+<h2>2026-2027 Peer Mentors</h2>
 <div class="row">
   <!-- Emma Grace Teggatz -->
   <div class="column column-4 cropped-image">
@@ -94,10 +94,16 @@ permalink: /new_students/learning_community/
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski">
     <p>Geology</p>
   </div>
-  <!-- Jon Siemianowski -->
+  <!-- Bryce Vining -->
   <div class="column column-4 cropped-image">
-    <h3>Jon Siemianowski</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Jon_Historian.jpg?raw=true" alt="Jon Siemianowski">
+    <h3>Bryce Vining</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Bryce.jpg?raw=true" alt="Bryce Vining">
+    <p>Meteorology</p>
+  </div>
+  <!-- Maggie Grigg -->
+  <div class="column column-4 cropped-image">
+    <h3>Maggie Grigg</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpg?raw=true" alt="Maggie Grigg">
     <p>Meteorology</p>
   </div>
 </div>
