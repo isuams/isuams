@@ -162,12 +162,12 @@ permalink: /new_students/learning_community/
     <img src="{{ site.baseurl }}/uploads/current_officers/Wyatt2026.jpg?raw=true" alt="Wyatt Van Dyke">
     <p>Meteorology</p>
   </div>
-  <!-- Lauren Bader -->
-  <div class="column column-4 cropped-image">
-    <h3>Lauren Bader</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader">
-    <p>Meteorology</p>
-  </div>
+  <!-- Destiny Huffman -->
+<div class="column column-4 cropped-image">
+  <h3>Destiny Huffman</h3>
+  <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny_EWFLC.jpeg?raw=true" alt="Destiny Huffman">
+  <p>Meteorology</p>
+</div>
   <!-- Maddie Medvec -->
   <div class="column column-4 cropped-image">
     <h3>Maddie Medvec</h3>
