@@ -150,7 +150,7 @@ permalink: /new_students/learning_community/
   <!-- Destiny Huffman -->
   <div class="column column-4 cropped-image">
     <h3>Destiny Huffman</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny_EWFLC.jpeg?raw=true" alt="Destiny Huffman">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
     <p>Meteorology</p>
   </div>
 </div>
