@@ -147,10 +147,10 @@ permalink: /new_students/learning_community/
     <p>Meteorology</p>
   </div>
 
-  <!-- Maggie Grigg -->
+  <!-- Destiny Huffman -->
   <div class="column column-4 cropped-image">
-    <h3>Maggie Grigg</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
+    <h3>Destiny Huffman</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny_EWFLC.jpeg?raw=true" alt="Destiny Huffman">
     <p>Meteorology</p>
   </div>
 </div>
@@ -162,12 +162,12 @@ permalink: /new_students/learning_community/
     <img src="{{ site.baseurl }}/uploads/current_officers/Wyatt2026.jpg?raw=true" alt="Wyatt Van Dyke">
     <p>Meteorology</p>
   </div>
-  <!-- Destiny Huffman -->
-<div class="column column-4 cropped-image">
-  <h3>Destiny Huffman</h3>
-  <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny_EWFLC.jpeg?raw=true" alt="Destiny Huffman">
-  <p>Meteorology</p>
-</div>
+  <!-- Maggie Grigg -->
+  <div class="column column-4 cropped-image">
+    <h3>Maggie Grigg</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpg?raw=true" alt="Maggie Grigg">
+    <p>Meteorology</p>
+  </div>
   <!-- Maddie Medvec -->
   <div class="column column-4 cropped-image">
     <h3>Maddie Medvec</h3>
