@@ -184,4 +184,3 @@ permalink: /new_students/learning_community/
 
 </body>
 </html>
-</html>
