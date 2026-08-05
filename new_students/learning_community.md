@@ -13,19 +13,6 @@ permalink: /new_students/learning_community/
       box-sizing: border-box;
     }
 
-    .column {
-      float: left;
-      width: 50%;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .column-4 {
-      float: left;
-      width: 25%; /* Set width to 25% for four columns in a row */
-      padding: 5px;
-    }
-
     /* Clearfix (clear floats) */
     .row::after {
       content: "";
@@ -33,21 +20,78 @@ permalink: /new_students/learning_community/
       display: table;
     }
 
-    /* Make Dave and Cinzia's images the same size */
+    /* Base Layout (Desktop) */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .column-4 {
+      float: left;
+      width: 25%;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Images */
     .original-size img {
-      width: 50%; /* Ensure the image takes up the entire column width */
-      height: 200px; /* Fixed height to match both images */
-      object-fit: cover; /* Crop the image while maintaining the aspect ratio */
+      width: 100%;
+      max-width: 250px;
+      height: 200px;
+      object-fit: cover;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
 
-    /* For cropped images */
     .cropped-image img {
-      width: 100%;  /* Ensures the image fits the column width */
-      height: 225px;  /* Fixed height */
-      object-fit: cover;  /* Crops the image without distorting */
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Desktop Name Alignment */
+    @media (min-width: 768px) {
+      .cropped-image h3 {
+        min-height: 2.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 4px;
+      }
+    }
+
+    /* Tablet & Phone Layout (2 columns wide instead of 4) */
+    @media (max-width: 767px) {
+      .column {
+        width: 100%; /* Stacks coordinators 1 per row */
+      }
+      .column-4 {
+        width: 50%; /* Shows mentors 2 per row for better spacing */
+      }
+      .cropped-image h3 {
+        min-height: 2.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 4px;
+        font-size: 1.05rem;
+      }
+    }
+
+    /* Extra Small Phones (1 column wide) */
+    @media (max-width: 480px) {
+      .column-4 {
+        width: 100%; /* Stacks 1 per row so names never overflow */
+      }
+      .cropped-image h3 {
+        min-height: auto;
+      }
     }
 </style>
 </head>
@@ -84,29 +128,29 @@ permalink: /new_students/learning_community/
 <div class="row">
   <!-- Emma Grace Teggatz -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Emma Grace Teggatz</h3>
+    <h3>Emma Grace Teggatz</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz">
     <p>Climate Science</p>
   </div>
 
   <!-- Garrett Korkowski -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Garrett Korkowski</h3>
+    <h3>Garrett Korkowski</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski">
     <p>Geology</p>
   </div>
 
   <!-- Bryce Vining -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Bryce Vining</h3>
+    <h3>Bryce Vining</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Bryce.jpg?raw=true" alt="Bryce Vining">
     <p>Meteorology</p>
   </div>
 
-  <!-- Destiny Huffman -->
+  <!-- Maggie Grigg -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Destiny Huffman</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
+    <h3>Maggie Grigg</h3>
+    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
     <p>Meteorology</p>
   </div>
 </div>
@@ -114,29 +158,30 @@ permalink: /new_students/learning_community/
 <div class="row">
   <!-- Wyatt Van Dyke -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Wyatt Van Dyke</h3>
+    <h3>Wyatt Van Dyke</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Wyatt2026.jpg?raw=true" alt="Wyatt Van Dyke">
     <p>Meteorology</p>
   </div>
-  <!-- Maggie Grigg -->
+  <!-- Lauren Bader -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Maggie Grigg</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
+    <h3>Lauren Bader</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Lauren_EWFLC.jpg?raw=true" alt="Lauren Bader">
     <p>Meteorology</p>
   </div>
   <!-- Maddie Medvec -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Maddie Medvec</h3>
+    <h3>Maddie Medvec</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec">
     <p>Meteorology</p>
   </div>
   <!-- Jeanne Oreschnick -->
   <div class="column column-4 cropped-image">
-    <h3 style="min-height: 2.8em; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 0;">Jeanne Oreschnick</h3>
+    <h3>Jeanne Oreschnick</h3>
     <img src="{{ site.baseurl }}/uploads/images/Learning Community/Jeanne.jpeg?raw=true" alt="Jeanne Oreschnick">
     <p>Math Tutor</p>
   </div>
 </div>
 
 </body>
+</html>
 </html>
