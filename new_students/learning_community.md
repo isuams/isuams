@@ -165,7 +165,7 @@ permalink: /new_students/learning_community/
   <!-- Maggie Grigg -->
   <div class="column column-4 cropped-image">
     <h3>Maggie Grigg</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpg?raw=true" alt="Maggie Grigg">
+    <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
     <p>Meteorology</p>
   </div>
   <!-- Maddie Medvec -->
