@@ -5,8 +5,6 @@ section: resources
 include_js: academic
 ---
 
-<a href="https://docs.google.com/spreadsheets/d/1gRx6SzQWREZo8-uTSyfmtYhgFl30PbdfoGitj3zRLO0/edit?usp=sharing" style="font-size: 30px;">Meteorology Class List Document (Fall 2024)</a>
-
 
 - The American Meteorological Society - The Iowa State University Student Chapter of the American Meteorological Society organizes free review sessions for meteorology courses run by meteorology students who have already taken the courses.
    - Contact the Academic Chair at [academic.isuams@iastate.edu](mailto:academic.isuams@iastate.edu).
@@ -27,5 +25,14 @@ include_js: academic
 - Supplemental Instruction - SI are study sessions that occur a minimum of three times a week for courses that tend to be more challenging for Iowa State students.  SI sessions are lead by undergraduate students who have taken the course in the past and understand the material well.
    - [SI Schedule](https://apps-dso.sws.iastate.edu/si/)
 - Writing and Media Center - At the Writing and Media Center, Communication Consultants assist undergraduates and graduates with written, oral, visual, and electronic communication.  Communication Consultants can assist with a project anywhere from the start to the end. [http://www.wmc.dso.iastate.edu](http://www.wmc.dso.iastate.edu)
+- Calculus Resources - Iowa State's own Professor Steve Butler has put together a wealth of resources specifically designed to help students excel at calculus and
+differential equations. Creating countless engaging video lessons and websites with extensive resources (including past exams and previous exam video walkthroughs), Butler's help is essential to a better understanding of calculus.
+   - [Calc 1 Help](https://www.calc1.org/))
+   - [Calc 2 Help](https://www.calc2.org/)
+   - [Calc 3 Help](https://www.calc3.org/)
+   - [Differential Equations Help](https://www.calc4.org/)
+   - [Steve Butler's Personal Website](https://sites.google.com/view/stevebutler)
+   - [Steve Butler's YouTube](https://www.youtube.com/@BeardMeetsCalculus)
+ - Dave Flory Websites - For meteorology specific help, the Department of Earth, Atmosphere, and Climate's own Dave Flory has created a website for each of the courses he teaches. On these websites you can find extensive course resources, book a one on one meeting with him where you can ask questions, and view course slideshows.
 
 <div class='fake' style='display:none;'>Test</div>
