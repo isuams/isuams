@@ -27,7 +27,7 @@ include_js: academic
 - Writing and Media Center - At the Writing and Media Center, Communication Consultants assist undergraduates and graduates with written, oral, visual, and electronic communication.  Communication Consultants can assist with a project anywhere from the start to the end. [http://www.wmc.dso.iastate.edu](http://www.wmc.dso.iastate.edu)
 - Calculus Resources - Iowa State's own Professor Steve Butler has put together a wealth of resources specifically designed to help students excel at calculus and
 differential equations. Creating countless engaging video lessons and websites with extensive resources (including past exams and previous exam video walkthroughs), Butler's help is essential to a better understanding of calculus.
-   - [Calc 1 Help](https://www.calc1.org/))
+   - [Calc 1 Help](https://www.calc1.org/)
    - [Calc 2 Help](https://www.calc2.org/)
    - [Calc 3 Help](https://www.calc3.org/)
    - [Differential Equations Help](https://www.calc4.org/)
