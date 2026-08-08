@@ -1,0 +1,758 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Number</th>
+      <th>Option</th>
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>75</td>
+      <td>YesTor</td>
+      <td>2025-06-02 00:00:55</td>
+      <td>Diamond</td>
+      <td>Sterling, CO</td>
+      <td>40.5989</td>
+      <td>-103.2111</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>NoTor</td>
+      <td>2025-06-02 01:59:52</td>
+      <td>Lauren Bader</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>NoTor</td>
+      <td>2025-06-02 04:40:40</td>
+      <td>Ben Price</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>YesTor</td>
+      <td>2025-06-02 05:00:07</td>
+      <td>Caleb O’Gara</td>
+      <td>Worthing, SD</td>
+      <td>43.3</td>
+      <td>-96.78</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>YesTor</td>
+      <td>2025-06-02 05:23:08</td>
+      <td>Hoang Do</td>
+      <td>North Platte, NE</td>
+      <td>41.1501</td>
+      <td>-100.7738</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>YesTor</td>
+      <td>2025-06-02 06:31:35</td>
+      <td>Joseph Patton</td>
+      <td>Maywood, NE</td>
+      <td>40.6564</td>
+      <td>-100.6334</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>289</td>
+      <td>YesTor</td>
+      <td>2025-06-02 07:18:40</td>
+      <td>Tornado Fajita</td>
+      <td></td>
+      <td>40.91</td>
+      <td>-102.58</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>YesTor</td>
+      <td>2025-06-02 10:51:41</td>
+      <td>MasDogWx</td>
+      <td>Brady, NE</td>
+      <td>41.06812</td>
+      <td>-100.33029</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>NoTor</td>
+      <td>2025-06-02 10:33:59</td>
+      <td>Bengalsfan</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>262</td>
+      <td>YesTor</td>
+      <td>2025-06-02 10:39:40</td>
+      <td>Tyler Williams</td>
+      <td>Mason City, NE</td>
+      <td>41.222967</td>
+      <td>-99.298915</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:20:43</td>
+      <td>maybe K*rk</td>
+      <td>North Platte, NE</td>
+      <td>41.1965963</td>
+      <td>-100.7492922</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>280</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:55:38</td>
+      <td>Alex Hamilton</td>
+      <td>(Bill) Paxton, NE</td>
+      <td>41.1247</td>
+      <td>-101.3565</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td>NoTor</td>
+      <td>2025-06-02 12:21:06</td>
+      <td>Josh Schwarz</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>YesTor</td>
+      <td>2025-06-02 12:41:23</td>
+      <td>Full send in ne, after the aurora bust last night</td>
+      <td>Ne of north Platte ne</td>
+      <td>41.2066</td>
+      <td>-100.3037</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>YesTor</td>
+      <td>2025-06-02 12:43:28</td>
+      <td>Nic Anthony</td>
+      <td>Milburn, NE</td>
+      <td>41.71</td>
+      <td>-99.73</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>NoTor</td>
+      <td>2025-06-02 13:21:53</td>
+      <td>WxDownYonder</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>265</td>
+      <td>NoTor</td>
+      <td>2025-06-02 13:24:19</td>
+      <td>Logan Giles</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>284</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:17:16</td>
+      <td>Matthew Teare</td>
+      <td>Belmar, NE</td>
+      <td>41.29</td>
+      <td>-101.9</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>287</td>
+      <td>NoTor</td>
+      <td>2025-06-02 13:31:21</td>
+      <td>Mitchell Morehead</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>NoTor</td>
+      <td>2025-06-02 13:44:23</td>
+      <td>Earth Central</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>NoTor</td>
+      <td>2025-06-02 13:47:02</td>
+      <td>Stephen Szulborski</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:10:30</td>
+      <td>Sophie Miller</td>
+      <td>S of Broken Bow, NE</td>
+      <td>41.1368287</td>
+      <td>-99.6275552</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>NoTor</td>
+      <td>2025-06-02 14:07:36</td>
+      <td>SRRadarLoops</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>NoTor</td>
+      <td>2025-06-02 14:08:37</td>
+      <td>Roman Fariello</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:10:55</td>
+      <td>Jeff Frame</td>
+      <td>Julesburg, CO</td>
+      <td>41.0572372</td>
+      <td>-102.2882375</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>270</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:17:42</td>
+      <td>Braydon Songer</td>
+      <td>Ogallala, NE</td>
+      <td>41.1063</td>
+      <td>-101.7274</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:27:25</td>
+      <td>Penitentes</td>
+      <td>Imperial, NE</td>
+      <td>40.5</td>
+      <td>-101.6</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:27:56</td>
+      <td>Drifter</td>
+      <td>Maxwell, NE</td>
+      <td>41.07</td>
+      <td>-100.52</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>NoTor</td>
+      <td>2025-06-02 14:31:38</td>
+      <td>Sekwof</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>NoTor</td>
+      <td>2025-06-02 14:41:24</td>
+      <td>Lizzie Hugeback</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:43:55</td>
+      <td>June funny-business</td>
+      <td>N of Oconto, NE</td>
+      <td>41.22</td>
+      <td>-99.79</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:50:35</td>
+      <td>Heerok Das</td>
+      <td>North Platte, NE</td>
+      <td>41.14</td>
+      <td>-100.76</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>YesTor</td>
+      <td>2025-06-02 14:52:20</td>
+      <td>Tobias Leonard</td>
+      <td>Sumner, NE</td>
+      <td>41.1</td>
+      <td>-99.44</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>NoTor</td>
+      <td>2025-06-02 14:53:51</td>
+      <td>Sebastian Pelt</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>NoTor</td>
+      <td>2025-06-02 14:59:33</td>
+      <td>Blake Brink</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:53:01</td>
+      <td>JetStreamJami</td>
+      <td>Callaway, NE</td>
+      <td>41.2908</td>
+      <td>-99.9254</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:09:57</td>
+      <td>Baja</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:10:16</td>
+      <td>Richard Sample</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:11:15</td>
+      <td>Jacob Stichter</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:14:41</td>
+      <td>ajax13</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>249</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:45:29</td>
+      <td>Paul Austin</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:17:26</td>
+      <td>Jim Franc</td>
+      <td>Brandon, NE</td>
+      <td>40.85</td>
+      <td>-101.92</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>290</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:17:30</td>
+      <td>We ride (doss)</td>
+      <td>Alliance, NE</td>
+      <td>42.078087</td>
+      <td>-102.8763893</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:25:14</td>
+      <td>William Gaylord</td>
+      <td></td>
+      <td>41.5878795</td>
+      <td>-100.1800028</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:25:53</td>
+      <td>Karson</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:32:10</td>
+      <td>William Samson</td>
+      <td>Lexington, NE</td>
+      <td>40.8</td>
+      <td>-99.77</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:32:58</td>
+      <td>Benjamin Kiel</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:34:58</td>
+      <td>Gavin Bird</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:35:46</td>
+      <td>Sam Romshek</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>286</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:41:42</td>
+      <td>Joe Schrantz</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:43:51</td>
+      <td>jbean45</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:45:11</td>
+      <td>Gabe Zago</td>
+      <td>Atwater, MN</td>
+      <td>45.11</td>
+      <td>-94.77</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:47:18</td>
+      <td>Wyatt Bicker</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>273</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:48:37</td>
+      <td>Nick Markus</td>
+      <td>Gothenburg, NE</td>
+      <td>40.932</td>
+      <td>-100.172</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:50:30</td>
+      <td>Sal</td>
+      <td>Curtis, NE</td>
+      <td>40.59091</td>
+      <td>-100.41718</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:51:37</td>
+      <td>Sam Ritter</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:52:07</td>
+      <td>Donovan F</td>
+      <td>Wellfleet, NE</td>
+      <td>40.751867</td>
+      <td>-100.729124</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>313</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:53:10</td>
+      <td>Olivia Macko</td>
+      <td>Oconto, NE</td>
+      <td>41.15</td>
+      <td>-99.77</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>YesTor</td>
+      <td>2025-06-02 15:54:01</td>
+      <td>Colton Flint</td>
+      <td>Sutherland, NE</td>
+      <td>41.1569</td>
+      <td>-101.1261</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:55:24</td>
+      <td>Alexis Severson</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:56:43</td>
+      <td>Ethan Treff</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:56:46</td>
+      <td>Garrett Statum</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>NoTor</td>
+      <td>2025-06-02 15:57:41</td>
+      <td>Peter Corman</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>NoTor</td>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>888</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>39.716161685364845</td>
+      <td>-98.86036910259567</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>889</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>39.00438034388705</td>
+      <td>-98.09764541847576</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
