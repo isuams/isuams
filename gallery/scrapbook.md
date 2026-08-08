@@ -4,7 +4,7 @@ layout: page
 section: gallery
 ---
 
-In years past, our historian has put together a scrapbook of photos from throughout the year of AMS members participating in different events. In 2023, we made this  scrapbook available online to allow everyone to view what our AMS members have done throughout the year, regardless of where they are!
+In years past, our historian has put together a scrapbook of photos from throughout the year of AMS members participating in different events. In 2023, we made this  scrapbook available online to allow everyone to view what our AMS members did throughout the year, regardless of where they were!
 
 <section>
   <h2>Most Recent Scrapbook</h2>
