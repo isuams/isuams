@@ -35,4 +35,4 @@ differential equations. Creating countless engaging video lessons and websites w
    - [Steve Butler's YouTube](https://www.youtube.com/@BeardMeetsCalculus)
  - Dave Flory Websites - For meteorology specific help, the Department of Earth, Atmosphere, and Climate's own Dave Flory has created a website for each of the courses he teaches. On these websites you can find extensive course resources, book a one on one meeting with him where you can ask questions, and view course slideshows.
 
-<div class='fake' style='display:none;'>Test</div>
+<div class='fake' style='display:none;'></div>
