@@ -25,8 +25,8 @@ This website includes severe weather outlooks, Mesoscale Discussions, and watche
 [Central Iowa National Weather Association](http://www.iowa-nwa.com/) <br>
 Information about the Central Iowa NWA, and the Severe Storms and Doppler Radar Conference
 
-[University of Michigan Weather Info](https://weather.engin.umich.edu/wxnet/) <br>
-Hundreds of products including models, surface data, and satellite images.
+[University of Michigan Weather Info](https://umweather.engin.umich.edu/online-weather-resources/) <br>
+Many products including models, surface data, and satellite images.
 
 [Stormtrack](http://www.stormtrack.org/forums/) <br>
 A forum dedicated to storm chasers.
