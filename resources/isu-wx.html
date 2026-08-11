@@ -4,11 +4,52 @@ layout: page
 section: resources
 ---
 
+<style>
+  /* 1. Force space between logos and text */
+  .social-highlight-box {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 12px !important;
+  }
+  .social-logo {
+    margin-right: 16px !important; /* Separates graphics from text */
+    flex-shrink: 0 !important;
+  }
+  .social-logo img {
+    display: block !important;
+    max-height: 32px !important;
+    width: auto !important;
+  }
+
+  /* 2. Align "Watch" section with social media blocks */
+  .watch-container {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+  .watch-container .lead {
+    margin: 0;
+  }
+  .watch-container img {
+    height: 1.2em;
+    vertical-align: middle;
+    margin: 0 4px; /* Natural spacing around logo in sentence */
+  }
+
+  /* 3. Fix awkward text wrapping on disclaimer */
+  .disclaimer-text {
+    max-width: 580px; /* Constrains width so lines balance naturally */
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+</style>
+
 <img class="main-img" src="{{ site.baseurl }}/uploads/isuweather/titleimg.png" alt="Iowa State Weather">
 
 <h2>A Daily Weather Service Run By ISU AMS Alumni</h2>
 
-<div class="social-highlight-box" style="margin-top: 18px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+<div class="social-highlight-box">
 	<div class="social-logo">
 		<img src="{{ site.baseurl }}/uploads/isuweather/X_Logo.png" alt="X Logo">
 	</div>
@@ -17,7 +58,7 @@ section: resources
 	</div>
 </div>
 
-<div class="social-highlight-box" style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+<div class="social-highlight-box">
 	<div class="social-logo">
 		<img src="{{ site.baseurl }}/uploads/isuweather/Instagram_Logo.jpg" alt="Instagram Logo">
 	</div>
@@ -26,7 +67,7 @@ section: resources
 	</div>
 </div>
 
-<div class="social-highlight-box" style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+<div class="social-highlight-box">
 	<div class="social-logo">
 		<img src="{{ site.baseurl }}/uploads/isuweather/fb-art.png" alt="Facebook Logo">
 	</div>
@@ -35,14 +76,14 @@ section: resources
 	</div>
 </div>
 
-<div class="social-highlight-box" style="margin-top: 18px; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
-	<p class="lead" style="margin: 0; display: flex; align-items: center; gap: 8px;">
-		Watch <span class="inline-img"><img src="{{ site.baseurl }}/uploads/isuweather/logo.png" alt="Logo"></span> Weekdays 7:45 AM
+<div class="watch-container">
+	<p class="lead">
+		Watch <img src="{{ site.baseurl }}/uploads/isuweather/logo.png" alt="Logo"> Weekdays 7:45 AM
 	</p>
 </div>
 
-<p style="text-wrap: balance; max-width: 95%; line-height: 1.5; margin-top: 15px;">
-	*This account is run by an ISU meteorology program and AMS alumni. While it is generally considered an informative resource, it is not affiliated with the University or the ISU AMS local chapter in ANY&nbsp;way.
+<p class="disclaimer-text">
+	*This account is run by an ISU meteorology program alumni. While it is generally considered an informative resource, it is not affiliated with Iowa State University or the ISU AMS local chapter in&nbsp;ANY&nbsp;way.
 </p>
 
 <h3>SkyCams</h3>
@@ -67,6 +108,6 @@ section: resources
 	</div>
 </div>
 
-<p style="margin-top: 15px;">
+<p>
 	Also see the <a href="https://mesonet.agron.iastate.edu/current/isucams.phtml">Iowa Environmental Mesonet's Archive of SkyCam Static Images</a>
 </p>
