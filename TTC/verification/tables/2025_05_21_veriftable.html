@@ -1,0 +1,1551 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-05-21 01:35:58</td>
+      <td>235</td>
+      <td>Kai Kerkow</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 03:45:18</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 03:50:09</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 04:49:57</td>
+      <td>22</td>
+      <td>Earth Central</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 04:52:25</td>
+      <td>10</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Union Grove, NC</td>
+      <td>35.67</td>
+      <td>-76.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>366.40</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 05:12:19</td>
+      <td>44</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Hundred, WV</td>
+      <td>39.68</td>
+      <td>-80.46</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>39.20</td>
+      <td>PBZ, NA</td>
+      <td>12.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 05:31:07</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:59:56</td>
+      <td>140</td>
+      <td>Caleb O’Gara</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 07:24:19</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 07:25:09</td>
+      <td>105</td>
+      <td>Braeden Winters</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 08:10:43</td>
+      <td>153</td>
+      <td>i can't win mid atlantic</td>
+      <td>YesTor</td>
+      <td>Windsor, NC</td>
+      <td>36.00</td>
+      <td>-76.94</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>337.70</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 08:48:28</td>
+      <td>2</td>
+      <td>Alex Honeycutt</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 08:50:00</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Gum Neck, NC</td>
+      <td>35.73</td>
+      <td>-76.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>376.00</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 09:44:00</td>
+      <td>262</td>
+      <td>Tyler Williams</td>
+      <td>YesTor</td>
+      <td>Pinetown, NC</td>
+      <td>35.61</td>
+      <td>-76.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>363.40</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 09:51:25</td>
+      <td>178</td>
+      <td>Nic Anthony</td>
+      <td>YesTor</td>
+      <td>Vinita, OK</td>
+      <td>36.63</td>
+      <td>-95.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>836.30</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 10:12:27</td>
+      <td>119</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Roper, NC</td>
+      <td>35.88</td>
+      <td>-76.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>353.70</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 10:29:14</td>
+      <td>13</td>
+      <td>Asher Malaschak</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 11:20:57</td>
+      <td>311</td>
+      <td>Stefff</td>
+      <td>YesTor</td>
+      <td>Chattanooga</td>
+      <td>35.00</td>
+      <td>-85.32</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>452.40</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 11:34:30</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Stumpy Point, NC</td>
+      <td>35.75</td>
+      <td>-75.81</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>385.50</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 11:41:13</td>
+      <td>221</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Belhaven, NC</td>
+      <td>35.58</td>
+      <td>-76.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>371.80</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 12:34:12</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 12:34:13</td>
+      <td>163</td>
+      <td>WxDownYonder</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 12:40:06</td>
+      <td>53</td>
+      <td>The Hawk</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 12:40:35</td>
+      <td>223</td>
+      <td>Bengalsfan</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 12:50:50</td>
+      <td>188</td>
+      <td>James Summers</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 13:02:59</td>
+      <td>76</td>
+      <td>Jeff Frame</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 13:04:55</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:49:00</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>YesTor</td>
+      <td>New Castle, PA</td>
+      <td>41.01</td>
+      <td>-80.35</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.80</td>
+      <td>EF0, NA</td>
+      <td>16.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 13:51:03</td>
+      <td>226</td>
+      <td>99.85 bullseye</td>
+      <td>YesTor</td>
+      <td>Bellhaven, NC</td>
+      <td>35.55</td>
+      <td>-76.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373.60</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 13:56:22</td>
+      <td>75</td>
+      <td>Diamond</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 13:57:41</td>
+      <td>31</td>
+      <td>Tristan White</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:00:50</td>
+      <td>100</td>
+      <td>Richard Cirone</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:02:36</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:05:17</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>East Finley, PA</td>
+      <td>40.05</td>
+      <td>-80.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13.80</td>
+      <td>PBZ, NA</td>
+      <td>19.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:19:02</td>
+      <td>212</td>
+      <td>Benjamin Kiel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:30:04</td>
+      <td>124</td>
+      <td>Sekwof</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:30:17</td>
+      <td>173</td>
+      <td>Karson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:39:04</td>
+      <td>287</td>
+      <td>Mitchell Morehead</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:41:49</td>
+      <td>113</td>
+      <td>Waterspout time</td>
+      <td>YesTor</td>
+      <td>Columbia nc</td>
+      <td>35.91</td>
+      <td>-76.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>362.70</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:43:05</td>
+      <td>216</td>
+      <td>Veer T</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:49:19</td>
+      <td>185</td>
+      <td>J.M.M.</td>
+      <td>YesTor</td>
+      <td>Columbia, NC</td>
+      <td>35.92</td>
+      <td>-76.26</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>361.90</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:51:02</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Triadelphia, WV</td>
+      <td>40.05</td>
+      <td>-80.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.00</td>
+      <td>PBZ, NA</td>
+      <td>17.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:55:44</td>
+      <td>167</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>AFJ</td>
+      <td>40.20</td>
+      <td>-80.33</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3.10</td>
+      <td>PBZ, NA</td>
+      <td>38.90</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:58:14</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 14:59:15</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Shad Point, NC</td>
+      <td>35.54</td>
+      <td>-75.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>393.80</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:01:34</td>
+      <td>301</td>
+      <td>Nene Roro</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:02:11</td>
+      <td>149</td>
+      <td>Richard Sample</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:05:41</td>
+      <td>86</td>
+      <td>Wyatt Bicker</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:05:47</td>
+      <td>46</td>
+      <td>Jacob Stichter</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:07:41</td>
+      <td>116</td>
+      <td>Ethan Kerr</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:11:15</td>
+      <td>174</td>
+      <td>in QLCS chaos we trust</td>
+      <td>YesTor</td>
+      <td>Spring Lakes, NC</td>
+      <td>34.12</td>
+      <td>-78.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>437.30</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:12:25</td>
+      <td>30</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Woodsfield, OH</td>
+      <td>39.77</td>
+      <td>-81.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.40</td>
+      <td>PBZ, NA</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:17:06</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>TPIT</td>
+      <td>40.40</td>
+      <td>-80.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>11.60</td>
+      <td>EF0, NA</td>
+      <td>20.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:18:17</td>
+      <td>273</td>
+      <td>Nick Markus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:19:27</td>
+      <td>0</td>
+      <td>Nicholas Snider</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:25:18</td>
+      <td>150</td>
+      <td>Blake Brink</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:26:24</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:26:54</td>
+      <td>107</td>
+      <td>Oh my god, they killed Kenny!</td>
+      <td>YesTor</td>
+      <td>Kilkenny, NC</td>
+      <td>35.64</td>
+      <td>-76.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>379.40</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:27:41</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Wyncrest, Ohio</td>
+      <td>40.62</td>
+      <td>-81.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.00</td>
+      <td>PBZ, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:28:54</td>
+      <td>254</td>
+      <td>Kam</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:30:05</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:33:14</td>
+      <td>194</td>
+      <td>Lucas Huang</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:35:46</td>
+      <td>200</td>
+      <td>Bill Giles (evil Dr. Gallus)</td>
+      <td>YesTor</td>
+      <td>Bruv idk anymore -S.Miller</td>
+      <td>35.46</td>
+      <td>-76.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>385.40</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:35:49</td>
+      <td>130</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:37:00</td>
+      <td>218</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Pantego, NC</td>
+      <td>35.57</td>
+      <td>-76.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>371.40</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:38:23</td>
+      <td>11</td>
+      <td>Joey Krastel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:38:35</td>
+      <td>210</td>
+      <td>Toefur</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:38:42</td>
+      <td>242</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>Weirton, WV</td>
+      <td>40.40</td>
+      <td>-80.60</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15.70</td>
+      <td>EF0, NA</td>
+      <td>18.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:39:41</td>
+      <td>291</td>
+      <td>Andrew Griffiths</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:46:28</td>
+      <td>51</td>
+      <td>Alexander Hunt</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:46:55</td>
+      <td>247</td>
+      <td>Dave Flo</td>
+      <td>YesTor</td>
+      <td>Greenville, NC</td>
+      <td>35.63</td>
+      <td>-77.37</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>350.10</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:47:06</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:47:07</td>
+      <td>134</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Belhaven, NC</td>
+      <td>35.57</td>
+      <td>-76.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>372.20</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:47:15</td>
+      <td>313</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Stancils Chapel, NC</td>
+      <td>35.70</td>
+      <td>-78.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>329.70</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:47:57</td>
+      <td>131</td>
+      <td>TheBetterDoge</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:48:37</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:49:41</td>
+      <td>42</td>
+      <td>It's a Bad Idea, Right?</td>
+      <td>YesTor</td>
+      <td>Elrama, Pennsylvania</td>
+      <td>40.26</td>
+      <td>-79.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2.90</td>
+      <td>EF1, NA</td>
+      <td>47.00</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:50:42</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:52:11</td>
+      <td>166</td>
+      <td>Drifter</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:52:59</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:53:08</td>
+      <td>137</td>
+      <td>CPekar</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:54:48</td>
+      <td>205</td>
+      <td>Gabriel Keller</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:56:26</td>
+      <td>201</td>
+      <td>Donovan F</td>
+      <td>YesTor</td>
+      <td>Chartiers, PA</td>
+      <td>39.95</td>
+      <td>-80.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.90</td>
+      <td>EF1, NA</td>
+      <td>16.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:56:28</td>
+      <td>19</td>
+      <td>Sam Emmerson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:57:52</td>
+      <td>129</td>
+      <td>Roch</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:59:32</td>
+      <td>3</td>
+      <td>Kyle Hugeback</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-21 15:59:47</td>
+      <td>127</td>
+      <td>Can't go notor on principle</td>
+      <td>YesTor</td>
+      <td>Washington, NC</td>
+      <td>35.55</td>
+      <td>-77.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>362.70</td>
+      <td>PBZ, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.09</td>
+      <td>-80.26</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10.00</td>
+      <td>1 SE McGovern, PA</td>
+      <td>29.50</td>
+      <td>3rd Place</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
