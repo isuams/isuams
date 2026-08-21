@@ -29,6 +29,11 @@ section: resources
     <h2>Previous Years Winners</h2>
 </section>
 
+<section class="2025-section">
+    <h3>2025 Winner: Jon Siemianowski </h3>
+    <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/JohnAA.jpg?raw=true" alt="2025 Winner: Jon Siemianowski" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
+</section>
+
 <section class="2024-section">
     <h3>2024 Winner: Adriane Stamer-Fuentes </h3>
     <img src="{{ site.baseurl }}/uploads/images/Avery_Anderson/Adriane_AA.jpg?raw=true" alt="2024 Winner: Adriane Stamer-Fuentes" class="rotateimg90" style="width:100%; padding-top: 5px; padding-right: 30px; padding-bottom: 20px; float:left;">
