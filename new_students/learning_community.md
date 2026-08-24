@@ -129,21 +129,21 @@ permalink: /new_students/learning_community/
   <!-- Eli Ross -->
   <div class="column column-4 cropped-image">
     <h3>Eli Ross</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Eli.jpg?raw=true" alt="Emma Grace Teggatz">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Eli.jpg?raw=true" alt="Eli Ross">
     <p>Climate Science</p>
   </div>
 
   <!-- Nick Bellich -->
   <div class="column column-4 cropped-image">
     <h3>Nick Bellich</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Nick.jpg?raw=true" alt="Garrett Korkowski">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Nick.jpg?raw=true" alt="Nick Bellich">
     <p>Geology</p>
   </div>
 
   <!-- Katelyn Siurek -->
   <div class="column column-4 cropped-image">
     <h3>Katelyn Siurek</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Katelyn.jpg?raw=true" alt="Bryce Vining">
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Katelyn.jpg?raw=true" alt="Katelyn Siurek">
     <p>Meteorology</p>
   </div>
 
