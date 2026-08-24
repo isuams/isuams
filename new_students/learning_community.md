@@ -156,6 +156,12 @@ permalink: /new_students/learning_community/
 </div>
 
 <div class="row">
+  <!-- Destiny Huffman -->
+  <div class="column column-4 cropped-image">
+    <h3>Destiny Huffman</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
+    <p>Meteorology</p>
+  </div>
   <!-- Wyatt Van Dyke -->
   <div class="column column-4 cropped-image">
     <h3>Wyatt Van Dyke</h3>
@@ -166,12 +172,6 @@ permalink: /new_students/learning_community/
   <div class="column column-4 cropped-image">
     <h3>Maggie Grigg</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
-    <p>Meteorology</p>
-  </div>
-  <!-- Destiny Huffman -->
-  <div class="column column-4 cropped-image">
-    <h3>Destiny Huffman</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
     <p>Meteorology</p>
   </div>
   <!-- Jeanne Oreschnick -->
