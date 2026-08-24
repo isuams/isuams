@@ -133,24 +133,24 @@ permalink: /new_students/learning_community/
     <p>Climate Science</p>
   </div>
 
-  <!-- Garrett Korkowski -->
+  <!-- Nick Bellich -->
   <div class="column column-4 cropped-image">
-    <h3>Garrett Korkowski</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Garrett_EWFLC.jpeg?raw=true" alt="Garrett Korkowski">
+    <h3>Nick Bellich</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Nick.jpg?raw=true" alt="Garrett Korkowski">
     <p>Geology</p>
+  </div>
+
+  <!-- Katelyn Siurek -->
+  <div class="column column-4 cropped-image">
+    <h3>Katelyn Siurek</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Katelyn.jpg?raw=true" alt="Bryce Vining">
+    <p>Meteorology</p>
   </div>
 
   <!-- Bryce Vining -->
   <div class="column column-4 cropped-image">
     <h3>Bryce Vining</h3>
     <img src="{{ site.baseurl }}/uploads/current_officers/Bryce.jpg?raw=true" alt="Bryce Vining">
-    <p>Meteorology</p>
-  </div>
-
-  <!-- Destiny Huffman -->
-  <div class="column column-4 cropped-image">
-    <h3>Destiny Huffman</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
     <p>Meteorology</p>
   </div>
 </div>
@@ -168,10 +168,10 @@ permalink: /new_students/learning_community/
     <img src="{{ site.baseurl }}/uploads/current_officers/Maggie2026.jpeg?raw=true" alt="Maggie Grigg">
     <p>Meteorology</p>
   </div>
-  <!-- Maddie Medvec -->
+  <!-- Destiny Huffman -->
   <div class="column column-4 cropped-image">
-    <h3>Maddie Medvec</h3>
-    <img src="{{ site.baseurl }}/uploads/current_officers/Madeline_FEO.jpg?raw=true" alt="Maddie Medvec">
+    <h3>Destiny Huffman</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Destiny.jpeg?raw=true" alt="Destiny Huffman">
     <p>Meteorology</p>
   </div>
   <!-- Jeanne Oreschnick -->
