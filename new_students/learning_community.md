@@ -126,10 +126,10 @@ permalink: /new_students/learning_community/
 
 <h2>2026-2027 Peer Mentors</h2>
 <div class="row">
-  <!-- Emma Grace Teggatz -->
+  <!-- Eli Ross -->
   <div class="column column-4 cropped-image">
-    <h3>Emma Grace Teggatz</h3>
-    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Emma_EWFLC.jpeg?raw=true" alt="Emma Grace Teggatz">
+    <h3>Eli Ross</h3>
+    <img src="{{ site.baseurl }}/uploads/images/Learning Community/Eli.jpg?raw=true" alt="Emma Grace Teggatz">
     <p>Climate Science</p>
   </div>
 
