@@ -18,8 +18,7 @@ include_js: academic
       - [Workshop Series](http://www.asc.dso.iastate.edu/coaching/workshop)
    - Psych 131 - This is a one credit, pass/fail course designed to improve students’ academic skills. [http://www.asc.dso.iastate.edu/psych131](http://www.asc.dso.iastate.edu/psych131)
 - Help Rooms - Various departments and classes across campus have rooms staffed by students who provide free academic assistance for specific courses.  Some help rooms available that may be useful for meteorology undergraduates are:
-   - [Physics](http://www.physastro.iastate.edu/courses/help-rooms)
-   - [Math](https://docs.google.com/spreadsheets/d/1Dhv8N_f48Z2xVDoIAzmNUKg_pUIVUOgtJ5sEmFL1dGs/pubhtml#)
+   - [Physics](https://www.physastro.iastate.edu/files/inline-files/Spring2026_2310-2320_HelpRoom.pdf)
    - [Chemistry](http://www.chem.iastate.edu/chemistry-help-room)
    - Meteorology 206: 3008 Agronomy Hall
 - Supplemental Instruction - SI are study sessions that occur a minimum of three times a week for courses that tend to be more challenging for Iowa State students.  SI sessions are lead by undergraduate students who have taken the course in the past and understand the material well.
