@@ -21,7 +21,7 @@ include_js: academic
    - [Physics](https://www.physastro.iastate.edu/files/inline-files/Spring2026_2310-2320_HelpRoom.pdf)
    - [Chemistry](http://www.chem.iastate.edu/chemistry-help-room)
 - Supplemental Instruction - SI are study sessions that occur a minimum of three times a week for courses that tend to be more challenging for Iowa State students.  SI sessions are lead by undergraduate students who have taken the course in the past and understand the material well.
-   - [SI Schedule](https://apps-dso.sws.iastate.edu/si/)
+   - [SI Schedule](https://asc.dso.iastate.edu/si/schedule)
 - Writing and Media Center - At the Writing and Media Center, Communication Consultants assist undergraduates and graduates with written, oral, visual, and electronic communication.  Communication Consultants can assist with a project anywhere from the start to the end. [http://www.wmc.dso.iastate.edu](http://www.wmc.dso.iastate.edu)
 - Calculus Resources - Iowa State's own Professor Steve Butler has put together a wealth of resources specifically designed to help students excel at calculus and
 differential equations. Creating countless engaging video lessons and websites with extensive resources (including past exams and previous exam video walkthroughs), Butler's help is essential to a better understanding of calculus.
