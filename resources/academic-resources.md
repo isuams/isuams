@@ -15,8 +15,8 @@ include_js: academic
    - Tutoring - Students can request a tutor and be placed in a tutor group that meets twice a week for one hour sessions for a variety of Iowa State University courses.  Each session costs $4 and tutor groups are kept small. [http://www.asc.dso.iastate.edu/tutoring](http://www.asc.dso.iastate.edu/tutoring)
    - Academic Coaching - Students can meet with academic coaches to learn a variety techniques to improve academically.  Sessions are one-on-one and students typically meet with an academic coach 3-4 times a semester.  This is a free service provided year round to students at Iowa State.  Academic coaches also provide a free workshop series during the fall and spring semesters.
       - [Academic Coaching](http://www.asc.dso.iastate.edu/coaching)
-      - [Workshop Series](http://www.asc.dso.iastate.edu/coaching/workshop)
-   - Psych 131 - This is a one credit, pass/fail course designed to improve students’ academic skills. [http://www.asc.dso.iastate.edu/psych131](http://www.asc.dso.iastate.edu/psych131)
+      - [Workshop Series](https://asc.dso.iastate.edu/workshops))
+   - Psych 131 - This is a one credit, pass/fail course designed to improve students’ academic skills. [Info Here!](https://asc.dso.iastate.edu/psych-1310))
 - Help Rooms - Various departments and classes across campus have rooms staffed by students who provide free academic assistance for specific courses.  Some help rooms available that may be useful for meteorology undergraduates are:
    - [Physics](https://www.physastro.iastate.edu/files/inline-files/Spring2026_2310-2320_HelpRoom.pdf)
    - [Chemistry](http://www.chem.iastate.edu/chemistry-help-room)
