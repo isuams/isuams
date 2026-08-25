@@ -20,7 +20,6 @@ include_js: academic
 - Help Rooms - Various departments and classes across campus have rooms staffed by students who provide free academic assistance for specific courses.  Some help rooms available that may be useful for meteorology undergraduates are:
    - [Physics](https://www.physastro.iastate.edu/files/inline-files/Spring2026_2310-2320_HelpRoom.pdf)
    - [Chemistry](http://www.chem.iastate.edu/chemistry-help-room)
-   - Meteorology 206: 3008 Agronomy Hall
 - Supplemental Instruction - SI are study sessions that occur a minimum of three times a week for courses that tend to be more challenging for Iowa State students.  SI sessions are lead by undergraduate students who have taken the course in the past and understand the material well.
    - [SI Schedule](https://apps-dso.sws.iastate.edu/si/)
 - Writing and Media Center - At the Writing and Media Center, Communication Consultants assist undergraduates and graduates with written, oral, visual, and electronic communication.  Communication Consultants can assist with a project anywhere from the start to the end. [http://www.wmc.dso.iastate.edu](http://www.wmc.dso.iastate.edu)
