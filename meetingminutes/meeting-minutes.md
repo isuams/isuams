@@ -4,8 +4,11 @@ layout: page
 section: about
 ---
 
-**Most recent:** [April 28th, 2026]({{site.baseurl }}/uploads/minutes/2025-26/April_28th_Meeting_Agenda.pdf)
+**Most recent:** [August 25th, 2026]({{site.baseurl }}/uploads/minutes/2026-27/260826.pdf)
 ---
+**2026-2027**
+- [August 25th, 2026]({{site.baseurl }}/uploads/minutes/2026-27/260826.pdf)
+
 **2025-2026**
 - [April 28th, 2026]({{site.baseurl }}/uploads/minutes/2025-26/April_28th_Meeting_Agenda.pdf)
 - [February 25th, 2026]({{site.baseurl }}/uploads/minutes/2025-26/February_25th_Meeting_Agenda.pdf)
