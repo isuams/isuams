@@ -1,0 +1,1347 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-06-06 15:30:05</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Boise City, OK</td>
+      <td>36.83</td>
+      <td>-102.43</td>
+      <td>No</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.90</td>
+      <td>9 NE Boise City, OK</td>
+      <td>65.00</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:09:16</td>
+      <td>137</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Sundown, TX</td>
+      <td>33.46</td>
+      <td>-102.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.10</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>48.90</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:52:53</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Keyes, OK</td>
+      <td>36.81</td>
+      <td>-102.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2.90</td>
+      <td>2 S Keyes, OK</td>
+      <td>51.10</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:11:05</td>
+      <td>166</td>
+      <td>Drifter</td>
+      <td>YesTor</td>
+      <td>Keyes, OK</td>
+      <td>36.81</td>
+      <td>-102.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>3.50</td>
+      <td>2 S Keyes, OK</td>
+      <td>46.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:48:36</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.48</td>
+      <td>-102.26</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3.90</td>
+      <td>8 W Ropesville, TX</td>
+      <td>38.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:28:25</td>
+      <td>297</td>
+      <td>Joshua Intini</td>
+      <td>YesTor</td>
+      <td>Levelland, TX</td>
+      <td>33.56</td>
+      <td>-102.38</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8.30</td>
+      <td>5 ESE Sundown, TX</td>
+      <td>34.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 12:50:54</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Levelland,Tx</td>
+      <td>33.57</td>
+      <td>-102.38</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>9.20</td>
+      <td>5 ESE Sundown, TX</td>
+      <td>30.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:40:35</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>YesTor</td>
+      <td>Boise City, OK</td>
+      <td>36.74</td>
+      <td>-102.53</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>9.20</td>
+      <td>9 NE Boise City, OK</td>
+      <td>46.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:59:26</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Boise City, OK</td>
+      <td>36.89</td>
+      <td>-102.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>10.00</td>
+      <td>9 NE Boise City, OK</td>
+      <td>45.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:56:35</td>
+      <td>157</td>
+      <td>Sal</td>
+      <td>YesTor</td>
+      <td>Levelland, TX</td>
+      <td>33.63</td>
+      <td>-102.52</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>11.10</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>28.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:29:00</td>
+      <td>3</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>36.99</td>
+      <td>-102.27</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>13.50</td>
+      <td>9 NE Boise City, OK</td>
+      <td>31.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:52:20</td>
+      <td>201</td>
+      <td>Donovan F</td>
+      <td>YesTor</td>
+      <td>Whiteface, TX</td>
+      <td>33.64</td>
+      <td>-102.62</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>13.80</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>23.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:43:58</td>
+      <td>69</td>
+      <td>Survey lady</td>
+      <td>YesTor</td>
+      <td>BFN in the armpit of 3 states</td>
+      <td>36.99</td>
+      <td>-102.61</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>14.70</td>
+      <td>9 NE Boise City, OK</td>
+      <td>42.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:27:35</td>
+      <td>273</td>
+      <td>Nick Markus</td>
+      <td>YesTor</td>
+      <td>Wolfforth, TX</td>
+      <td>33.51</td>
+      <td>-102.01</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>17.20</td>
+      <td>8 W Ropesville, TX</td>
+      <td>21.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:57:08</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Campo. CO</td>
+      <td>37.07</td>
+      <td>-102.58</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>18.00</td>
+      <td>9 NE Boise City, OK</td>
+      <td>29.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:47:43</td>
+      <td>76</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Reese Center, TX</td>
+      <td>33.57</td>
+      <td>-102.03</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>18.10</td>
+      <td>8 W Ropesville, TX</td>
+      <td>21.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:28:58</td>
+      <td>149</td>
+      <td>It was always Morton</td>
+      <td>YesTor</td>
+      <td>Morton, TX</td>
+      <td>33.69</td>
+      <td>-102.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.80</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>17.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 06:52:27</td>
+      <td>22</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Hooker, OK</td>
+      <td>36.51</td>
+      <td>-101.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>19.00</td>
+      <td>4 NE Gruver, TX</td>
+      <td>25.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:14:09</td>
+      <td>150</td>
+      <td>Blake Brink</td>
+      <td>YesTor</td>
+      <td>Western Lubbock, TX</td>
+      <td>33.58</td>
+      <td>-102.01</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>19.20</td>
+      <td>8 W Ropesville, TX</td>
+      <td>21.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:49:47</td>
+      <td>30</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Whitharral, TX</td>
+      <td>33.72</td>
+      <td>-102.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.90</td>
+      <td>5 ESE Sundown, TX</td>
+      <td>16.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:02:46</td>
+      <td>178</td>
+      <td>Nic Anthony</td>
+      <td>YesTor</td>
+      <td>Campo, CO</td>
+      <td>37.10</td>
+      <td>-102.58</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>20.20</td>
+      <td>9 NE Boise City, OK</td>
+      <td>28.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:16:53</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Campo, CO</td>
+      <td>37.11</td>
+      <td>-102.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>20.30</td>
+      <td>9 NE Boise City, OK</td>
+      <td>24.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:00:57</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>YesTor</td>
+      <td>Whitharral, TX</td>
+      <td>33.73</td>
+      <td>-102.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.80</td>
+      <td>5 ESE Sundown, TX</td>
+      <td>16.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 07:07:24</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Whitharral, TX</td>
+      <td>33.75</td>
+      <td>-102.36</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.90</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>16.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:35:39</td>
+      <td>174</td>
+      <td>Alexis Severson</td>
+      <td>YesTor</td>
+      <td>Stinnett, TX</td>
+      <td>35.82</td>
+      <td>-101.36</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.60</td>
+      <td>EF2, NA</td>
+      <td>16.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:57:24</td>
+      <td>114</td>
+      <td>Baja (MARS BAR WE TRUST)</td>
+      <td>YesTor</td>
+      <td>Mars Bar in Shell, Bellevue, TN</td>
+      <td>36.06</td>
+      <td>-86.94</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.50</td>
+      <td>1 ESE Spring Hill, TN</td>
+      <td>15.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:34:58</td>
+      <td>124</td>
+      <td>Sekwof</td>
+      <td>YesTor</td>
+      <td>Elkhart, KS</td>
+      <td>37.16</td>
+      <td>-102.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.00</td>
+      <td>9 NE Boise City, OK</td>
+      <td>15.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:54:24</td>
+      <td>226</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Morton for the 3rd time i guess..</td>
+      <td>33.72</td>
+      <td>-102.76</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.10</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>15.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:06:46</td>
+      <td>270</td>
+      <td>Braydon Songer</td>
+      <td>YesTor</td>
+      <td>NW of Shallowater, TX</td>
+      <td>33.73</td>
+      <td>-102.05</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.90</td>
+      <td>8 W Ropesville, TX</td>
+      <td>15.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:55:48</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Anton, TX</td>
+      <td>33.75</td>
+      <td>-102.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.00</td>
+      <td>8 W Ropesville, TX</td>
+      <td>15.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:22:19</td>
+      <td>213</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Anton, TX</td>
+      <td>33.81</td>
+      <td>-102.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.20</td>
+      <td>8 W Ropesville, TX</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:15:50</td>
+      <td>88</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>33.40</td>
+      <td>-101.84</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>26.30</td>
+      <td>8 W Ropesville, TX</td>
+      <td>18.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:43:56</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.49</td>
+      <td>-101.84</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>26.50</td>
+      <td>8 W Ropesville, TX</td>
+      <td>22.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:57:14</td>
+      <td>131</td>
+      <td>TheBetterDoge</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.64</td>
+      <td>-101.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.10</td>
+      <td>8 W Ropesville, TX</td>
+      <td>14.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:56:09</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Wheeless, OK</td>
+      <td>36.72</td>
+      <td>-102.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>27.40</td>
+      <td>9 NE Boise City, OK</td>
+      <td>22.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:21:14</td>
+      <td>290</td>
+      <td>We ride (doss)</td>
+      <td>YesTor</td>
+      <td>Boise City, OK</td>
+      <td>36.90</td>
+      <td>-102.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>30.20</td>
+      <td>9 NE Boise City, OK</td>
+      <td>30.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:53:24</td>
+      <td>207</td>
+      <td>Bradnado</td>
+      <td>YesTor</td>
+      <td>Liberty, CO</td>
+      <td>37.21</td>
+      <td>-102.73</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>30.70</td>
+      <td>9 NE Boise City, OK</td>
+      <td>21.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 06:02:37</td>
+      <td>291</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX (again)</td>
+      <td>33.64</td>
+      <td>-101.81</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>31.30</td>
+      <td>8 W Ropesville, TX</td>
+      <td>17.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:22:41</td>
+      <td>286</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Littlefield, TX</td>
+      <td>33.91</td>
+      <td>-102.34</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.90</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>13.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 12:56:55</td>
+      <td>119</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Littlefield, TX</td>
+      <td>33.94</td>
+      <td>-102.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.30</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 08:43:19</td>
+      <td>10</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Slaton, TX</td>
+      <td>33.40</td>
+      <td>-101.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>34.80</td>
+      <td>8 W Ropesville, TX</td>
+      <td>17.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:37:35</td>
+      <td>223</td>
+      <td>Bengalsfan</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.63</td>
+      <td>-101.74</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>34.80</td>
+      <td>8 W Ropesville, TX</td>
+      <td>17.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:24:56</td>
+      <td>216</td>
+      <td>Veer T</td>
+      <td>YesTor</td>
+      <td>24 ESE Kim, CO</td>
+      <td>37.21</td>
+      <td>-102.92</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>37.30</td>
+      <td>9 NE Boise City, OK</td>
+      <td>20.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:56:09</td>
+      <td>12</td>
+      <td>Olivia McCauley</td>
+      <td>YesTor</td>
+      <td>Walsh, CO</td>
+      <td>37.39</td>
+      <td>-102.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.50</td>
+      <td>9 NE Boise City, OK</td>
+      <td>12.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:25:15</td>
+      <td>44</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Walsh, CO</td>
+      <td>37.39</td>
+      <td>-102.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.50</td>
+      <td>9 NE Boise City, OK</td>
+      <td>12.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:35:11</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Walsh, CO</td>
+      <td>37.39</td>
+      <td>-102.29</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.90</td>
+      <td>9 NE Boise City, OK</td>
+      <td>12.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:10:32</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Idalou, TX</td>
+      <td>33.65</td>
+      <td>-101.67</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>38.90</td>
+      <td>8 W Ropesville, TX</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 12:48:21</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>Lubbock, TX</td>
+      <td>33.70</td>
+      <td>-101.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>38.90</td>
+      <td>8 W Ropesville, TX</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:55:51</td>
+      <td>205</td>
+      <td>gkeller99</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>37.41</td>
+      <td>-102.60</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>40.30</td>
+      <td>9 NE Boise City, OK</td>
+      <td>15.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:49:18</td>
+      <td>188</td>
+      <td>James Summers</td>
+      <td>YesTor</td>
+      <td>Abernathy, TX</td>
+      <td>33.89</td>
+      <td>-101.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.70</td>
+      <td>8 W Ropesville, TX</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:52:50</td>
+      <td>173</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Glazier, TX</td>
+      <td>36.02</td>
+      <td>-100.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.30</td>
+      <td>11 SSE Allison, TX</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:04:45</td>
+      <td>53</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>37.24</td>
+      <td>-103.01</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>42.70</td>
+      <td>9 NE Boise City, OK</td>
+      <td>15.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:55:38</td>
+      <td>313</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Idalou, TX</td>
+      <td>33.71</td>
+      <td>-101.62</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>43.30</td>
+      <td>8 W Ropesville, TX</td>
+      <td>15.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:59:30</td>
+      <td>280</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Lorenzo, TX</td>
+      <td>33.67</td>
+      <td>-101.54</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>46.50</td>
+      <td>8 W Ropesville, TX</td>
+      <td>14.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.32</td>
+      <td>-101.30</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.20</td>
+      <td>EF2, NA</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:04:17</td>
+      <td>46</td>
+      <td>Jacob "Deja Vu" Stichter</td>
+      <td>YesTor</td>
+      <td>Close City, TX</td>
+      <td>33.26</td>
+      <td>-101.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>48.40</td>
+      <td>8 W Ropesville, TX</td>
+      <td>14.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:55:20</td>
+      <td>127</td>
+      <td>It's EEEEVEFLOWWWWW not outflow</td>
+      <td>YesTor</td>
+      <td>Hale Center, TX</td>
+      <td>34.06</td>
+      <td>-101.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.80</td>
+      <td>8 W Ropesville, TX</td>
+      <td>9.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:04:05</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Denver City, TX</td>
+      <td>32.80</td>
+      <td>-102.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.70</td>
+      <td>1 NNW Sundown, TX</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:55:13</td>
+      <td>200</td>
+      <td>Outflow boundary truther</td>
+      <td>YesTor</td>
+      <td>Hale Center, TX</td>
+      <td>34.09</td>
+      <td>-101.85</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.90</td>
+      <td>8 W Ropesville, TX</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.95</td>
+      <td>-87.84</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.10</td>
+      <td>EF0, NA</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:44:53</td>
+      <td>147</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>Canyon Valley, TX</td>
+      <td>33.40</td>
+      <td>-101.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>55.30</td>
+      <td>8 W Ropesville, TX</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:32:08</td>
+      <td>254</td>
+      <td>Kam</td>
+      <td>YesTor</td>
+      <td>Post, TX</td>
+      <td>33.19</td>
+      <td>-101.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>55.40</td>
+      <td>8 W Ropesville, TX</td>
+      <td>12.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 14:42:15</td>
+      <td>242</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>N of Springfield, CO</td>
+      <td>37.65</td>
+      <td>-102.65</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.40</td>
+      <td>9 NE Boise City, OK</td>
+      <td>8.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:06:12</td>
+      <td>113</td>
+      <td>Round 2,and... Go!</td>
+      <td>YesTor</td>
+      <td>Plainview tx</td>
+      <td>34.15</td>
+      <td>-101.74</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.40</td>
+      <td>8 W Ropesville, TX</td>
+      <td>8.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:44:57</td>
+      <td>130</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>YesTor</td>
+      <td>Plainview, TX</td>
+      <td>34.19</td>
+      <td>-101.71</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.30</td>
+      <td>8 W Ropesville, TX</td>
+      <td>7.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:58:09</td>
+      <td>42</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>Johnson, KS</td>
+      <td>37.59</td>
+      <td>-101.76</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.00</td>
+      <td>2 S Keyes, OK</td>
+      <td>7.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 07:59:45</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Toonerville, CO</td>
+      <td>37.78</td>
+      <td>-103.17</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>77.00</td>
+      <td>9 NE Boise City, OK</td>
+      <td>4.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:39:53</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Toonerville, CO</td>
+      <td>37.81</td>
+      <td>-103.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>79.00</td>
+      <td>9 NE Boise City, OK</td>
+      <td>4.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:56:16</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Middle of nowhere CO</td>
+      <td>37.51</td>
+      <td>-103.60</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>79.50</td>
+      <td>9 NE Boise City, OK</td>
+      <td>12.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:59:08</td>
+      <td>134</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Lamar, CO</td>
+      <td>38.07</td>
+      <td>-102.58</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>85.40</td>
+      <td>9 NE Boise City, OK</td>
+      <td>2.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:51:59</td>
+      <td>221</td>
+      <td>JetStreamJami (CO magic)</td>
+      <td>YesTor</td>
+      <td>Las Animas, CO</td>
+      <td>38.01</td>
+      <td>-103.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.20</td>
+      <td>9 NE Boise City, OK</td>
+      <td>1.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:54:20</td>
+      <td>52</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Hasty, CO</td>
+      <td>38.11</td>
+      <td>-102.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.40</td>
+      <td>9 NE Boise City, OK</td>
+      <td>1.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:59:25</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>MCV</td>
+      <td>36.50</td>
+      <td>-88.30</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>93.60</td>
+      <td>EF0, NA</td>
+      <td>1.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 13:22:19</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>YesTor</td>
+      <td>Union City, TN</td>
+      <td>36.42</td>
+      <td>-89.03</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>127.30</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 15:49:05</td>
+      <td>100</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>Livingston, KY</td>
+      <td>37.27</td>
+      <td>-88.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>134.00</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-06 02:10:39</td>
+      <td>31</td>
+      <td>Tristan White</td>
+      <td>YesTor</td>
+      <td>Tiptonville, TN</td>
+      <td>36.39</td>
+      <td>-89.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>150.40</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.11</td>
+      <td>-91.14</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>215.20</td>
+      <td>5 S Tahlequah, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

@@ -1,0 +1,2214 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-04-18 16:00:25</td>
+      <td>184</td>
+      <td>Tornado Fajita</td>
+      <td>YesTor</td>
+      <td>Hoene Spring, MO</td>
+      <td>38.43</td>
+      <td>-90.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2.10</td>
+      <td>3 NW Byrnes Mill, MO</td>
+      <td>47.80</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 16:00:26</td>
+      <td>45</td>
+      <td>Sam Ritter</td>
+      <td>YesTor</td>
+      <td>Rockwood Summit High School, MO</td>
+      <td>38.52</td>
+      <td>-90.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4.50</td>
+      <td>LSX, NA</td>
+      <td>41.60</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:50:20</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>YesTor</td>
+      <td>Decatur, IL</td>
+      <td>39.84</td>
+      <td>-88.95</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>8.50</td>
+      <td>ILX, NA</td>
+      <td>30.60</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:57:13</td>
+      <td>223</td>
+      <td>StarInMissouri</td>
+      <td>YesTor</td>
+      <td>Kirkwood, MO</td>
+      <td>38.57</td>
+      <td>-90.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>9.90</td>
+      <td>LSX, NA</td>
+      <td>29.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:28:17</td>
+      <td>127</td>
+      <td>Matt Wilson</td>
+      <td>YesTor</td>
+      <td>Cerro Gordo, IL</td>
+      <td>39.87</td>
+      <td>-88.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10.10</td>
+      <td>EF1, NA</td>
+      <td>25.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 04:37:32</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>YesTor</td>
+      <td>St. Louis, MO</td>
+      <td>38.73</td>
+      <td>-90.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>10.30</td>
+      <td>1 S Pontoon Beach, IL</td>
+      <td>33.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 09:00:57</td>
+      <td>48</td>
+      <td>Max Archer</td>
+      <td>YesTor</td>
+      <td>Wildwood, MO</td>
+      <td>38.62</td>
+      <td>-90.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10.80</td>
+      <td>EF1, NA</td>
+      <td>25.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:44:22</td>
+      <td>75</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Farmersville, IL</td>
+      <td>39.46</td>
+      <td>-89.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>11.60</td>
+      <td>LSX, NA</td>
+      <td>28.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:16:27</td>
+      <td>262</td>
+      <td>Adrian Z.</td>
+      <td>YesTor</td>
+      <td>White Hall, IL</td>
+      <td>39.47</td>
+      <td>-90.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>11.80</td>
+      <td>UNKNOWN, NA</td>
+      <td>24.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:58:42</td>
+      <td>88</td>
+      <td>Alex Salerno</td>
+      <td>YesTor</td>
+      <td>Mount Olive, IL</td>
+      <td>39.04</td>
+      <td>-89.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>4</td>
+      <td>1</td>
+      <td>12.50</td>
+      <td>EF1, NA</td>
+      <td>44.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:44:57</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Lincoln, IL</td>
+      <td>40.15</td>
+      <td>-89.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.50</td>
+      <td>ILX, NA</td>
+      <td>19.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 01:40:39</td>
+      <td>275</td>
+      <td>Benjamin Kiel</td>
+      <td>YesTor</td>
+      <td>Hole 3 of the Hillsboro, MO Disc Golf Course</td>
+      <td>38.22</td>
+      <td>-90.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>16.60</td>
+      <td>EF1, NA</td>
+      <td>18.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:12:08</td>
+      <td>131</td>
+      <td>Dom Dragon</td>
+      <td>YesTor</td>
+      <td>Valmayer</td>
+      <td>38.30</td>
+      <td>-90.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>17.40</td>
+      <td>EF1, NA</td>
+      <td>29.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:54:24</td>
+      <td>33</td>
+      <td>Mason Carneal</td>
+      <td>YesTor</td>
+      <td>Hillsboro, IL</td>
+      <td>39.16</td>
+      <td>-89.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>18.70</td>
+      <td>EF1, NA</td>
+      <td>33.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:55:44</td>
+      <td>160</td>
+      <td>flappy787</td>
+      <td>YesTor</td>
+      <td>Waterloo, IL</td>
+      <td>38.27</td>
+      <td>-90.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>19.10</td>
+      <td>1 SE Cahokia, IL</td>
+      <td>25.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:20:37</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Irving, IL</td>
+      <td>39.17</td>
+      <td>-89.43</td>
+      <td>No</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>21.40</td>
+      <td>EF1, NA</td>
+      <td>36.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 03:36:58</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Lynnville, IL</td>
+      <td>39.69</td>
+      <td>-90.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.40</td>
+      <td>UNKNOWN, NA</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:06:04</td>
+      <td>151</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Grafton, MO</td>
+      <td>38.97</td>
+      <td>-90.43</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>21.60</td>
+      <td>UNKNOWN, NA</td>
+      <td>20.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:07:37</td>
+      <td>194</td>
+      <td>Michael Pagnanelli</td>
+      <td>YesTor</td>
+      <td>New Athens, IL</td>
+      <td>38.32</td>
+      <td>-89.88</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>22.00</td>
+      <td>EF0, NA</td>
+      <td>28.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:00:59</td>
+      <td>229</td>
+      <td>He1002</td>
+      <td>YesTor</td>
+      <td>Carlyle, IL</td>
+      <td>38.62</td>
+      <td>-89.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>22.70</td>
+      <td>EF0, NA</td>
+      <td>27.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:50:53</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>YesTor</td>
+      <td>Fayetteville, IL</td>
+      <td>38.38</td>
+      <td>-89.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>23.10</td>
+      <td>EF0, NA</td>
+      <td>19.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 02:18:50</td>
+      <td>63</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>Washington, MO</td>
+      <td>38.71</td>
+      <td>-90.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>23.60</td>
+      <td>EF1, NA</td>
+      <td>19.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:27:42</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>YesTor</td>
+      <td>Springfield, IL</td>
+      <td>39.84</td>
+      <td>-89.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.20</td>
+      <td>ILX, NA</td>
+      <td>15.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:01:49</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Athens, IL</td>
+      <td>39.96</td>
+      <td>-89.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.30</td>
+      <td>ILX, NA</td>
+      <td>14.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 07:53:09</td>
+      <td>140</td>
+      <td>Veer</td>
+      <td>YesTor</td>
+      <td>Baldwin IL</td>
+      <td>38.18</td>
+      <td>-89.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>30.70</td>
+      <td>EF0, NA</td>
+      <td>21.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:39:30</td>
+      <td>182</td>
+      <td>Braydon Songer</td>
+      <td>YesTor</td>
+      <td>Sullivan, MO</td>
+      <td>38.21</td>
+      <td>-91.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.20</td>
+      <td>LSX, NA</td>
+      <td>13.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 02:39:24</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Vernon, IL</td>
+      <td>38.80</td>
+      <td>-89.09</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>34.40</td>
+      <td>EF0, NA</td>
+      <td>29.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:21:16</td>
+      <td>143</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Tilden, IL</td>
+      <td>38.22</td>
+      <td>-89.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>34.60</td>
+      <td>EF0, NA</td>
+      <td>21.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:27:09</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Bloomsdale, MO</td>
+      <td>38.01</td>
+      <td>-90.22</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>34.90</td>
+      <td>EF1, NA</td>
+      <td>21.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:51:41</td>
+      <td>51</td>
+      <td>Diego Garcia</td>
+      <td>YesTor</td>
+      <td>Virginia, IL</td>
+      <td>39.95</td>
+      <td>-90.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.80</td>
+      <td>4 SE Athensville, IL</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:44:21</td>
+      <td>240</td>
+      <td>Kyle Schanus</td>
+      <td>YesTor</td>
+      <td>Bonne Terre, MO</td>
+      <td>37.92</td>
+      <td>-90.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.00</td>
+      <td>EF1, NA</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:37:25</td>
+      <td>133</td>
+      <td>Kevin Mahoney</td>
+      <td>YesTor</td>
+      <td>Ramsey, IL</td>
+      <td>39.14</td>
+      <td>-89.11</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>38.10</td>
+      <td>EF1, NA</td>
+      <td>28.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:02:45</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Sparta, IL</td>
+      <td>38.14</td>
+      <td>-89.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>38.30</td>
+      <td>EF0, NA</td>
+      <td>20.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 01:58:54</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Sparta, IL</td>
+      <td>38.12</td>
+      <td>-89.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>38.60</td>
+      <td>EF0, NA</td>
+      <td>20.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:59:05</td>
+      <td>270</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Shelbyville, Illinois</td>
+      <td>39.40</td>
+      <td>-88.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>39.30</td>
+      <td>ILX, NA</td>
+      <td>20.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:55:50</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Troy, MO</td>
+      <td>39.00</td>
+      <td>-90.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>40.50</td>
+      <td>EF1, NA</td>
+      <td>15.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:12:13</td>
+      <td>36</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Hawk Point, MO</td>
+      <td>38.97</td>
+      <td>-91.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>43.20</td>
+      <td>EF1, NA</td>
+      <td>15.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:41:59</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Louisiana, Missouri</td>
+      <td>39.46</td>
+      <td>-91.06</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>45.70</td>
+      <td>UNKNOWN, NA</td>
+      <td>14.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:33:54</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Cuba, MO</td>
+      <td>38.07</td>
+      <td>-91.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.20</td>
+      <td>LSX, NA</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 04:19:15</td>
+      <td>126</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>YesTor</td>
+      <td>Saint Mary, MO</td>
+      <td>37.86</td>
+      <td>-89.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>48.90</td>
+      <td>1 SE Cahokia, IL</td>
+      <td>14.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:22:53</td>
+      <td>14</td>
+      <td>John Massura</td>
+      <td>YesTor</td>
+      <td>Steelville, MO</td>
+      <td>37.97</td>
+      <td>-91.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.80</td>
+      <td>LSX, NA</td>
+      <td>9.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:06:28</td>
+      <td>157</td>
+      <td>Wxkobold</td>
+      <td>YesTor</td>
+      <td>Bellflower, MO</td>
+      <td>39.00</td>
+      <td>-91.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.20</td>
+      <td>EF1, NA</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:35:50</td>
+      <td>188</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Beecher City, IL</td>
+      <td>39.19</td>
+      <td>-88.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>53.30</td>
+      <td>ILX, NA</td>
+      <td>21.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:13:08</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Iron Mountain Lake, MO</td>
+      <td>37.68</td>
+      <td>-90.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.00</td>
+      <td>EF1, NA</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 05:21:14</td>
+      <td>91</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Brewer, MO</td>
+      <td>37.78</td>
+      <td>-89.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.90</td>
+      <td>1 SE Cahokia, IL</td>
+      <td>9.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:40:23</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Buell, MO</td>
+      <td>39.00</td>
+      <td>-91.46</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.60</td>
+      <td>EF1, NA</td>
+      <td>8.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:11:44</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Saint James, MO</td>
+      <td>37.99</td>
+      <td>-91.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.60</td>
+      <td>LSX, NA</td>
+      <td>7.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:43:30</td>
+      <td>32</td>
+      <td>stfjinkiojd</td>
+      <td>YesTor</td>
+      <td>Rolla, MO</td>
+      <td>37.90</td>
+      <td>-91.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.50</td>
+      <td>LSX, NA</td>
+      <td>5.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:19:25</td>
+      <td>186</td>
+      <td>Sophie Miller</td>
+      <td>YesTor</td>
+      <td>Carbondale, IL</td>
+      <td>37.73</td>
+      <td>-89.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>76.60</td>
+      <td>EF0, NA</td>
+      <td>8.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:30:03</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Midridge, MO</td>
+      <td>37.33</td>
+      <td>-91.22</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.80</td>
+      <td>LSX, NA</td>
+      <td>3.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:38:47</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Piedmont, MO</td>
+      <td>37.15</td>
+      <td>-90.70</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>90.30</td>
+      <td>3 NW Byrnes Mill, MO</td>
+      <td>1.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:56:44</td>
+      <td>205</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>37.88</td>
+      <td>-88.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>90.50</td>
+      <td>EF0, NA</td>
+      <td>1.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 06:20:09</td>
+      <td>172</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Cape Girardeau, MO</td>
+      <td>37.31</td>
+      <td>-89.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.30</td>
+      <td>EF0, NA</td>
+      <td>1.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:28:48</td>
+      <td>272</td>
+      <td>Drew</td>
+      <td>YesTor</td>
+      <td>Greenville, MO</td>
+      <td>37.12</td>
+      <td>-90.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.40</td>
+      <td>EF1, NA</td>
+      <td>1.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:22:15</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Scott City, MO</td>
+      <td>37.22</td>
+      <td>-89.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>98.50</td>
+      <td>EF0, NA</td>
+      <td>8.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.92</td>
+      <td>-90.32</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>106.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:15:15</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>Belknap, IL</td>
+      <td>37.32</td>
+      <td>-88.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>108.30</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.90</td>
+      <td>-91.10</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.80</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:31:38</td>
+      <td>28</td>
+      <td>Sam Luthi</td>
+      <td>YesTor</td>
+      <td>SW of Stoutland, MO</td>
+      <td>37.80</td>
+      <td>-92.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>112.20</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:53:13</td>
+      <td>164</td>
+      <td>Chad Griffin</td>
+      <td>YesTor</td>
+      <td>Lebanon, MO</td>
+      <td>37.73</td>
+      <td>-92.53</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>113.30</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:06:55</td>
+      <td>97</td>
+      <td>Wyatt Huber</td>
+      <td>YesTor</td>
+      <td>Camdenton, MO</td>
+      <td>38.01</td>
+      <td>-92.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.40</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:39:28</td>
+      <td>35</td>
+      <td>RoamingMirrorBB</td>
+      <td>YesTor</td>
+      <td>Poplar Bluff</td>
+      <td>36.77</td>
+      <td>-90.43</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 06:32:06</td>
+      <td>218</td>
+      <td>Tyler  "going with the same exact spot i viewed the April 8th 2024 eclipse" W</td>
+      <td>YesTor</td>
+      <td>Poplar Bluff, MO</td>
+      <td>36.77</td>
+      <td>-90.42</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:21:59</td>
+      <td>113</td>
+      <td>Jacob Stichter</td>
+      <td>YesTor</td>
+      <td>Grandin, MO</td>
+      <td>36.75</td>
+      <td>-90.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>118.40</td>
+      <td>3 NW Byrnes Mill, MO</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:02:34</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>YesTor</td>
+      <td>Charleston, MO</td>
+      <td>36.92</td>
+      <td>-89.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>120.90</td>
+      <td>EF0, NA</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:44:08</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Thomasville, MO</td>
+      <td>36.79</td>
+      <td>-91.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>125.20</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:09:10</td>
+      <td>171</td>
+      <td>Joey Krastel</td>
+      <td>YesTor</td>
+      <td>7 SW Salem, KY</td>
+      <td>37.19</td>
+      <td>-88.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>136.30</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:59:41</td>
+      <td>23</td>
+      <td>peter tornado</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>36.69</td>
+      <td>-89.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>139.60</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:56:28</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>New Madrid, MO</td>
+      <td>36.36</td>
+      <td>-89.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>158.30</td>
+      <td>1 SE Cahokia, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:48:30</td>
+      <td>29</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>Hawesville, KY</td>
+      <td>37.87</td>
+      <td>-86.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>173.40</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:32:14</td>
+      <td>64</td>
+      <td>Baca</td>
+      <td>YesTor</td>
+      <td>Gibson, AR</td>
+      <td>35.79</td>
+      <td>-90.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>184.80</td>
+      <td>3 NW Byrnes Mill, MO</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 08:12:32</td>
+      <td>60</td>
+      <td>Wheelieweather</td>
+      <td>YesTor</td>
+      <td>McKenzie,TN</td>
+      <td>36.13</td>
+      <td>-88.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>190.30</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:46:41</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>KNQA</td>
+      <td>35.34</td>
+      <td>-89.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>217.90</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:21:28</td>
+      <td>173</td>
+      <td>Chase Brewster</td>
+      <td>YesTor</td>
+      <td>Senatobia</td>
+      <td>34.62</td>
+      <td>-89.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>266.90</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:33:38</td>
+      <td>168</td>
+      <td>Steve Bergey</td>
+      <td>YesTor</td>
+      <td>Lula, MS</td>
+      <td>34.54</td>
+      <td>-90.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>270.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:31:02</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Mound Bayou, MS</td>
+      <td>33.89</td>
+      <td>-90.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>315.80</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 11:53:54</td>
+      <td>183</td>
+      <td>Ben Vitek</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>34.95</td>
+      <td>-94.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>318.90</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:09:07</td>
+      <td>206</td>
+      <td>drawablefish</td>
+      <td>YesTor</td>
+      <td>Itta Bena, MS</td>
+      <td>33.53</td>
+      <td>-90.33</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>340.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:09:25</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>YesTor</td>
+      <td>Indianola, MS</td>
+      <td>33.49</td>
+      <td>-90.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>343.30</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:43:35</td>
+      <td>154</td>
+      <td>jbean45 (yolo)</td>
+      <td>YesTor</td>
+      <td>Carrollton, MS</td>
+      <td>33.50</td>
+      <td>-89.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>344.30</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:45:58</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Hesterville, MS</td>
+      <td>33.16</td>
+      <td>-89.66</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>369.30</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:48:55</td>
+      <td>59</td>
+      <td>John Male</td>
+      <td>YesTor</td>
+      <td>Kosciusko, MS</td>
+      <td>33.06</td>
+      <td>-89.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>376.90</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:36:57</td>
+      <td>101</td>
+      <td>Koji</td>
+      <td>YesTor</td>
+      <td>Mer Rouge, LA</td>
+      <td>32.77</td>
+      <td>-91.79</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>398.90</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:34:25</td>
+      <td>112</td>
+      <td>Bround (weird mcv stuff I guess its already fired so its probably cooked)</td>
+      <td>YesTor</td>
+      <td>Rayville, LA</td>
+      <td>32.47</td>
+      <td>-91.76</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>418.90</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:48:22</td>
+      <td>120</td>
+      <td>Jarrell 2.0 is NOT happening today</td>
+      <td>YesTor</td>
+      <td>Bardwell, TX</td>
+      <td>32.27</td>
+      <td>-96.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>546.90</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:42:20</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>Blum, TX</td>
+      <td>32.14</td>
+      <td>-97.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>579.00</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:58:08</td>
+      <td>76</td>
+      <td>Ezra</td>
+      <td>YesTor</td>
+      <td>Meridian, TX</td>
+      <td>31.92</td>
+      <td>-97.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>600.50</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:48:43</td>
+      <td>138</td>
+      <td>Jack “CAPE Bomb” Zwolinski</td>
+      <td>YesTor</td>
+      <td>Clifton, TX</td>
+      <td>31.74</td>
+      <td>-97.55</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>606.70</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:33:39</td>
+      <td>161</td>
+      <td>Vincent P.</td>
+      <td>YesTor</td>
+      <td>Valley Mills, TX</td>
+      <td>31.66</td>
+      <td>-97.47</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>608.40</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:32:51</td>
+      <td>189</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Valley Mills, TX</td>
+      <td>31.62</td>
+      <td>-97.45</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>609.70</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:57:57</td>
+      <td>141</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Cranfills Gap, TX</td>
+      <td>31.77</td>
+      <td>-97.83</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>615.00</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:25:57</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>Turnersville, TX</td>
+      <td>31.66</td>
+      <td>-97.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>616.80</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:24:12</td>
+      <td>84</td>
+      <td>Richard Hammond</td>
+      <td>YesTor</td>
+      <td>Turnersville, TX</td>
+      <td>31.61</td>
+      <td>-97.73</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>620.30</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:42:56</td>
+      <td>42</td>
+      <td>Nick Krasznavolgyi</td>
+      <td>YesTor</td>
+      <td>Gatesville, TX</td>
+      <td>31.44</td>
+      <td>-97.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>630.40</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:20:33</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Fort Cavazos, TX</td>
+      <td>31.25</td>
+      <td>-97.66</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>637.70</td>
+      <td>LSX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:53:31</td>
+      <td>178</td>
+      <td>Nathan Erickson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 07:26:18</td>
+      <td>80</td>
+      <td>Eliot Morrow</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:56:21</td>
+      <td>180</td>
+      <td>Stefff</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:56:44</td>
+      <td>8</td>
+      <td>Sekwof</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 06:27:22</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:58:48</td>
+      <td>62</td>
+      <td>Kay</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 06:05:57</td>
+      <td>37</td>
+      <td>Brady Lyness</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:59:35</td>
+      <td>253</td>
+      <td>Trey Fulbright</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:33:09</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 02:24:49</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 07:34:53</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:54:47</td>
+      <td>9</td>
+      <td>B-rice</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:30:03</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:42:14</td>
+      <td>24</td>
+      <td>Anthony Haberman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:14:34</td>
+      <td>2</td>
+      <td>Fauna O.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:28:00</td>
+      <td>107</td>
+      <td>Chief Keef</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:06:34</td>
+      <td>135</td>
+      <td>Brixton "Not Truthing Jarrell 2" Abad</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:42:10</td>
+      <td>70</td>
+      <td>Alex H.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:50:00</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:57:44</td>
+      <td>153</td>
+      <td>Madisen Lindholm</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:57:04</td>
+      <td>203</td>
+      <td>Jonah H.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:06:03</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:35:26</td>
+      <td>110</td>
+      <td>Ryan Dreeszen</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 13:28:32</td>
+      <td>199</td>
+      <td>Jason B</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:22:24</td>
+      <td>201</td>
+      <td>TheBetterDoge</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:28:56</td>
+      <td>202</td>
+      <td>Cole Sellers</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:15:49</td>
+      <td>44</td>
+      <td>Ben Jablonski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:31:08</td>
+      <td>181</td>
+      <td>Kyle Hugeback</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 12:42:41</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:40:12</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:41:52</td>
+      <td>11</td>
+      <td>TylerM</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 15:44:03</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 14:33:39</td>
+      <td>136</td>
+      <td>Slim Tatman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
