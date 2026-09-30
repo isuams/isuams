@@ -35,6 +35,19 @@ section: gallery
 
 <!-- Repeat the pattern for subsequent months -->
 
+<h2>September 2026 Photos of the Month</h2>
+<div class="row">
+  <div class="column">
+  	<h3>Club Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2026-2027/Sep_Club.png?raw=true" alt="September 2026 Club Photo of Month" style="width:100%">
+  </div>
+  <div class="column">
+  	<h3>Weather Photo of the Month</h3>
+    <img src="{{ site.baseurl }}/uploads/PHOTM/2026-2027/Sepwx.png?raw=true" alt="September 2026 Wx Photo of Month" style="width:100%">
+  </div>
+</div>
+
+
 <h2>August 2026 Photos and Video of the Month</h2>
 <div class="row">
   <div class="column">
