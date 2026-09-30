@@ -1,0 +1,1245 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-06-09 14:05:25</td>
+      <td>113</td>
+      <td>Just send it</td>
+      <td>YesTor</td>
+      <td>Corry PA</td>
+      <td>41.89</td>
+      <td>-79.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10.80</td>
+      <td>EF0, NA</td>
+      <td>37.00</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:58:26</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Guys Mills, PA</td>
+      <td>41.63</td>
+      <td>-79.98</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.40</td>
+      <td>EF0, NA</td>
+      <td>27.00</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:55:11</td>
+      <td>137</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>This is bait, the south will actually do something (Limestone, NY)</td>
+      <td>42.03</td>
+      <td>-78.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14.50</td>
+      <td>BUF, NA</td>
+      <td>27.00</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:06:19</td>
+      <td>149</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Bradford, PA</td>
+      <td>41.96</td>
+      <td>-78.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.70</td>
+      <td>BUF, NA</td>
+      <td>16.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:59:44</td>
+      <td>69</td>
+      <td>Lizzie Hugeback</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>41.50</td>
+      <td>-79.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.70</td>
+      <td>6 S Union City, PA</td>
+      <td>16.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:45:40</td>
+      <td>76</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Meadville, PA</td>
+      <td>41.61</td>
+      <td>-80.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>21.90</td>
+      <td>EF0, NA</td>
+      <td>20.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:19:22</td>
+      <td>119</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Antreville, SC</td>
+      <td>34.31</td>
+      <td>-82.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.90</td>
+      <td>EF1, NA</td>
+      <td>15.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:08:23</td>
+      <td>242</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>Ahrensville, PA</td>
+      <td>41.45</td>
+      <td>-79.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.90</td>
+      <td>EF0, NA</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:49:16</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>Warren, PA</td>
+      <td>41.80</td>
+      <td>-79.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.20</td>
+      <td>EF0, NA</td>
+      <td>14.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:46:26</td>
+      <td>127</td>
+      <td>Funny date today hehehehe</td>
+      <td>YesTor</td>
+      <td>Warren, PA</td>
+      <td>41.81</td>
+      <td>-79.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.70</td>
+      <td>EF0, NA</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:50:29</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Irvine, PA</td>
+      <td>41.83</td>
+      <td>-79.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.80</td>
+      <td>EF0, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:26:58</td>
+      <td>201</td>
+      <td>pittsburgh don't fail me now</td>
+      <td>YesTor</td>
+      <td>New Vernon, PA</td>
+      <td>41.42</td>
+      <td>-80.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>31.00</td>
+      <td>EF0, NA</td>
+      <td>17.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:44:41</td>
+      <td>273</td>
+      <td>Nick Markus</td>
+      <td>YesTor</td>
+      <td>Jamestown, NY</td>
+      <td>42.09</td>
+      <td>-79.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.50</td>
+      <td>EF2, NA</td>
+      <td>13.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:12:26</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Warren, Pennsyltucky</td>
+      <td>41.85</td>
+      <td>-79.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>35.20</td>
+      <td>EF0, NA</td>
+      <td>13.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:12:02</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Ludlow, PA</td>
+      <td>41.76</td>
+      <td>-78.95</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.70</td>
+      <td>EF1, NA</td>
+      <td>12.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:58:12</td>
+      <td>280</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Roulette, PA</td>
+      <td>41.78</td>
+      <td>-78.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>38.80</td>
+      <td>BUF, NA</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:59:11</td>
+      <td>134</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Connoquenessing, PA</td>
+      <td>40.82</td>
+      <td>-80.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.60</td>
+      <td>EF0, NA</td>
+      <td>11.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:59:36</td>
+      <td>12</td>
+      <td>Olivia McCauley</td>
+      <td>YesTor</td>
+      <td>Attica, NY</td>
+      <td>42.87</td>
+      <td>-78.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.70</td>
+      <td>BUF, NA</td>
+      <td>11.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:10:25</td>
+      <td>46</td>
+      <td>Jacob "bad joke here about hornell" Stichter</td>
+      <td>YesTor</td>
+      <td>Hornell, NY</td>
+      <td>42.33</td>
+      <td>-77.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.10</td>
+      <td>BUF, NA</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:17:28</td>
+      <td>200</td>
+      <td>PA oopsies today ;)</td>
+      <td>YesTor</td>
+      <td>Lanse, PA</td>
+      <td>40.94</td>
+      <td>-78.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.10</td>
+      <td>2 SE Strattanville, PA</td>
+      <td>7.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:55:17</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Warren, OH</td>
+      <td>41.21</td>
+      <td>-80.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>64.60</td>
+      <td>EF0, NA</td>
+      <td>7.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:39:05</td>
+      <td>100</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>Southwest, PA</td>
+      <td>40.19</td>
+      <td>-79.52</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.80</td>
+      <td>EF0, NA</td>
+      <td>6.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:55:49</td>
+      <td>10</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Whiskey Springs ATV Area, PA</td>
+      <td>41.34</td>
+      <td>-77.88</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.20</td>
+      <td>BUF, NA</td>
+      <td>5.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:48:24</td>
+      <td>150</td>
+      <td>Blake Brink</td>
+      <td>YesTor</td>
+      <td>Union Furnace, OH</td>
+      <td>39.46</td>
+      <td>-82.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.40</td>
+      <td>EF1, NA</td>
+      <td>5.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:33:41</td>
+      <td>291</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Agraria, GA</td>
+      <td>34.48</td>
+      <td>-83.99</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.70</td>
+      <td>EF1, NA</td>
+      <td>2.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:59:58</td>
+      <td>313</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Washington, PA</td>
+      <td>40.12</td>
+      <td>-80.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>88.10</td>
+      <td>EF1, NA</td>
+      <td>2.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:33:12</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Orbisonia, PA</td>
+      <td>40.26</td>
+      <td>-77.94</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95.50</td>
+      <td>2 SE Strattanville, PA</td>
+      <td>0.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:16:46</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>Sharpsburg, MD</td>
+      <td>39.46</td>
+      <td>-77.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>144.50</td>
+      <td>2 SE Strattanville, PA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:54:30</td>
+      <td>3</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>Uvilla, WV</td>
+      <td>39.38</td>
+      <td>-77.80</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>147.40</td>
+      <td>2 SE Strattanville, PA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.15</td>
+      <td>-84.24</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>257.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:12:21</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>YesTor</td>
+      <td>Fort Deposit, AL</td>
+      <td>31.98</td>
+      <td>-86.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>265.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 04:55:43</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Greenville, AL</td>
+      <td>31.87</td>
+      <td>-86.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>276.10</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:45:14</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Knoxville, AL</td>
+      <td>32.99</td>
+      <td>-87.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>307.30</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:59:26</td>
+      <td>226</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>evergreen al</td>
+      <td>31.43</td>
+      <td>-86.96</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>310.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:55:03</td>
+      <td>130</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>YesTor</td>
+      <td>Aliceville, AL</td>
+      <td>33.13</td>
+      <td>-88.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>326.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 12:22:12</td>
+      <td>221</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Sweet Water, AL</td>
+      <td>32.10</td>
+      <td>-87.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>333.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:28:01</td>
+      <td>109</td>
+      <td>Jonah Dosedel</td>
+      <td>YesTor</td>
+      <td>Toomsuba, MS</td>
+      <td>32.42</td>
+      <td>-88.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>360.00</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>33.72</td>
+      <td>-89.09</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>374.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:22:12</td>
+      <td>286</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Quitman, MS</td>
+      <td>32.03</td>
+      <td>-88.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>382.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:59:08</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Waynesboro, MS</td>
+      <td>31.73</td>
+      <td>-88.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>385.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 11:51:57</td>
+      <td>262</td>
+      <td>Tyler Williams</td>
+      <td>YesTor</td>
+      <td>Waynesboro, MS</td>
+      <td>31.43</td>
+      <td>-88.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>386.30</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:57:51</td>
+      <td>166</td>
+      <td>Drifter</td>
+      <td>YesTor</td>
+      <td>Citronelle, AL</td>
+      <td>31.08</td>
+      <td>-88.23</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>386.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 12:07:42</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Saraland, AL</td>
+      <td>30.82</td>
+      <td>-88.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>389.00</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>34.88</td>
+      <td>-89.66</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>408.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:09:28</td>
+      <td>205</td>
+      <td>Gabriel Keller</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>31.68</td>
+      <td>-89.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>414.30</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 06:23:54</td>
+      <td>216</td>
+      <td>Veer (yet another MCV setup, this time in the southeast)</td>
+      <td>YesTor</td>
+      <td>Mount Olive, MS</td>
+      <td>31.76</td>
+      <td>-89.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>439.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:54:38</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Brandon, MS</td>
+      <td>32.35</td>
+      <td>-89.94</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>441.40</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 06:42:54</td>
+      <td>140</td>
+      <td>Caleb O’Gara</td>
+      <td>YesTor</td>
+      <td>Columbia, MS</td>
+      <td>31.23</td>
+      <td>-89.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>467.50</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 12:05:25</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Franklinton, LA</td>
+      <td>30.73</td>
+      <td>-90.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>499.00</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:59:10</td>
+      <td>157</td>
+      <td>Sal</td>
+      <td>YesTor</td>
+      <td>Bella Rose, LA</td>
+      <td>30.07</td>
+      <td>-91.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>569.00</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:53:05</td>
+      <td>290</td>
+      <td>we ride (doss)</td>
+      <td>YesTor</td>
+      <td>Midland, TX</td>
+      <td>31.99</td>
+      <td>-102.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1140.70</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:32:36</td>
+      <td>213</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>12 NW Wagon Mound, NM</td>
+      <td>36.15</td>
+      <td>-104.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1265.20</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:48:24</td>
+      <td>30</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Estancia, NM</td>
+      <td>34.71</td>
+      <td>-106.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1335.90</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:02:05</td>
+      <td>124</td>
+      <td>Sekwof</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:33:32</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:34:41</td>
+      <td>270</td>
+      <td>Braydon Songer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:35:05</td>
+      <td>174</td>
+      <td>Alexis Severson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:47:31</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:46:38</td>
+      <td>223</td>
+      <td>Bengalsfan</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 14:14:49</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 13:54:27</td>
+      <td>163</td>
+      <td>WxDownYonder</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 12:31:07</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 10:31:59</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 01:19:39</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:57:00</td>
+      <td>197</td>
+      <td>Josh Schwarz</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:44:04</td>
+      <td>247</td>
+      <td>Dave Flo</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:43:21</td>
+      <td>167</td>
+      <td>Hunter Anderson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:08:29</td>
+      <td>51</td>
+      <td>Alexander Hunt</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:31:08</td>
+      <td>254</td>
+      <td>Kam</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:33:17</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-09 15:33:37</td>
+      <td>311</td>
+      <td>Stefff</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

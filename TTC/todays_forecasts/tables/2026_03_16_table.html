@@ -1,0 +1,611 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Forecaster</th>
+      <th>Time</th>
+      <th>Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kyle Hugeback</td>
+      <td>2026-03-16 00:13:45.012072</td>
+      <td>YesTor</td>
+      <td>Montpelier, VA</td>
+      <td>37.82</td>
+      <td>-77.68</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RadarDude86</td>
+      <td>2026-03-16 14:26:45.764558</td>
+      <td>YesTor</td>
+      <td>Brookneal, VA</td>
+      <td>37.05</td>
+      <td>-78.94</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Richard Cirone</td>
+      <td>2026-03-16 00:19:24.875499</td>
+      <td>YesTor</td>
+      <td>Fredricksburg, VA</td>
+      <td>38.28</td>
+      <td>-77.39</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cold Core Cowboy</td>
+      <td>2026-03-16 01:32:30.872217</td>
+      <td>YesTor</td>
+      <td>Greene, NY</td>
+      <td>42.36</td>
+      <td>-75.83</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Logan Giles</td>
+      <td>2026-03-16 14:36:43.415481</td>
+      <td>YesTor</td>
+      <td>Chevy Chase, MD</td>
+      <td>38.97</td>
+      <td>-77.08</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Blake brink</td>
+      <td>2026-03-16 15:10:05.118285</td>
+      <td>YesTor</td>
+      <td>Pleasant Hill, NC</td>
+      <td>36.53</td>
+      <td>-77.54</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>LiamM</td>
+      <td>2026-03-16 03:19:25.869898</td>
+      <td>YesTor</td>
+      <td>3760 Mackeys Rd, Roper, NC 27970</td>
+      <td>32.16</td>
+      <td>-145.07</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Vince</td>
+      <td>2026-03-16 03:37:46.168572</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.05</td>
+      <td>-77.66</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Chris Yates</td>
+      <td>2026-03-16 05:57:02.040337</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.68</td>
+      <td>-76.77</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kaylee</td>
+      <td>2026-03-16 06:17:32.564209</td>
+      <td>YesTor</td>
+      <td>Goldsboro, NC</td>
+      <td>35.39</td>
+      <td>-78.04</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TheBetterDoge</td>
+      <td>2026-03-16 08:33:08.739670</td>
+      <td>YesTor</td>
+      <td>Fairfax, VA</td>
+      <td>38.93</td>
+      <td>-77.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sebastian Pelt</td>
+      <td>2026-03-16 08:51:44.185360</td>
+      <td>YesTor</td>
+      <td>Crozet, VA</td>
+      <td>38.09</td>
+      <td>-78.73</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Practice week ahoy</td>
+      <td>2026-03-16 11:15:34.896985</td>
+      <td>YesTor</td>
+      <td>Petersburg, VA</td>
+      <td>37.16</td>
+      <td>-77.31</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MID atlantic slop</td>
+      <td>2026-03-16 11:41:50.786859</td>
+      <td>YesTor</td>
+      <td>York, PA</td>
+      <td>39.96</td>
+      <td>-76.72</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>German Aviation</td>
+      <td>2026-03-16 11:42:23.836245</td>
+      <td>YesTor</td>
+      <td>Gettysburg</td>
+      <td>39.80</td>
+      <td>-77.20</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Luke Chapman</td>
+      <td>2026-03-16 11:52:10.388571</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.26</td>
+      <td>-77.60</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Stephen Szulborski</td>
+      <td>2026-03-16 12:43:14.300703</td>
+      <td>YesTor</td>
+      <td>Roanoke Rapids, NC</td>
+      <td>36.45</td>
+      <td>-77.63</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>JetStreamJami</td>
+      <td>2026-03-16 13:00:17.491310</td>
+      <td>YesTor</td>
+      <td>Holbrook, MD</td>
+      <td>39.40</td>
+      <td>-76.85</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>slopfest 3000</td>
+      <td>2026-03-16 14:50:34.283259</td>
+      <td>YesTor</td>
+      <td>Lebanon, PA</td>
+      <td>40.33</td>
+      <td>-76.43</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>GoHornets22</td>
+      <td>2026-03-16 13:30:33.320658</td>
+      <td>YesTor</td>
+      <td>Fayetteville, North Carolina</td>
+      <td>34.77</td>
+      <td>-78.43</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Berg</td>
+      <td>2026-03-16 13:35:24.497985</td>
+      <td>YesTor</td>
+      <td>Danville, VA</td>
+      <td>36.56</td>
+      <td>-79.34</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Donovan Fry</td>
+      <td>2026-03-16 13:38:18.552506</td>
+      <td>YesTor</td>
+      <td>Libertytown, MD</td>
+      <td>39.48</td>
+      <td>-77.24</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Veer (S PA destabilization/hodographs &gt;&gt; VA)</td>
+      <td>2026-03-16 13:38:14.712503</td>
+      <td>YesTor</td>
+      <td>Carlisle, PA</td>
+      <td>40.20</td>
+      <td>-77.19</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Dylan</td>
+      <td>2026-03-16 13:39:25.428453</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.49</td>
+      <td>-77.00</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Reilly Dibble</td>
+      <td>2026-03-16 13:45:36.257651</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.63</td>
+      <td>-77.38</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AJ Clever</td>
+      <td>2026-03-16 13:49:02.748175</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.95</td>
+      <td>-78.56</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RevelWX</td>
+      <td>2026-03-16 13:59:35.552975</td>
+      <td>YesTor</td>
+      <td>Greensboro, Virginia</td>
+      <td>36.20</td>
+      <td>-79.64</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>wxboi</td>
+      <td>2026-03-16 14:13:09.467978</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.69</td>
+      <td>-77.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>JSchrantz</td>
+      <td>2026-03-16 14:24:49.517392</td>
+      <td>YesTor</td>
+      <td>Central Garage, VA</td>
+      <td>37.75</td>
+      <td>-77.14</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Comrade Chasing</td>
+      <td>2026-03-16 14:36:48.311001</td>
+      <td>YesTor</td>
+      <td>Bealeton, VA</td>
+      <td>38.58</td>
+      <td>-77.81</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sam Luthi</td>
+      <td>2026-03-16 14:39:21.236121</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.85</td>
+      <td>-78.75</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MID Atlantic be like: i hate tornadoes</td>
+      <td>2026-03-16 14:42:04.818059</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.75</td>
+      <td>-78.68</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>tailswx</td>
+      <td>2026-03-16 15:54:52.996053</td>
+      <td>YesTor</td>
+      <td>Lancaster, PA</td>
+      <td>39.98</td>
+      <td>-76.07</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Pent</td>
+      <td>2026-03-16 14:46:32.133799</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.88</td>
+      <td>-76.71</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Busting Badly</td>
+      <td>2026-03-16 14:50:04.330997</td>
+      <td>YesTor</td>
+      <td>Woodlawn MD</td>
+      <td>39.30</td>
+      <td>-76.74</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>James Pettus</td>
+      <td>2026-03-16 14:51:38.794521</td>
+      <td>YesTor</td>
+      <td>Blackstone, VA</td>
+      <td>37.08</td>
+      <td>-78.00</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>the great navinder</td>
+      <td>2026-03-16 14:57:31.675747</td>
+      <td>YesTor</td>
+      <td>Columbia NC</td>
+      <td>35.90</td>
+      <td>-76.25</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah H.</td>
+      <td>2026-03-16 14:59:57.325671</td>
+      <td>YesTor</td>
+      <td>Wendell, NC</td>
+      <td>35.77</td>
+      <td>-78.36</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jeff Frame</td>
+      <td>2026-03-16 15:06:10.947482</td>
+      <td>YesTor</td>
+      <td>Elizabethtown, NC</td>
+      <td>34.71</td>
+      <td>-78.74</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CPekar</td>
+      <td>2026-03-16 15:13:57.760718</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.17</td>
+      <td>-78.11</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>EasilyDistractedByTornsdoez</td>
+      <td>2026-03-16 15:20:00.873969</td>
+      <td>YesTor</td>
+      <td>Roanoke Rapids, NC</td>
+      <td>36.47</td>
+      <td>-77.47</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MasDogWx</td>
+      <td>2026-03-16 15:21:58.978419</td>
+      <td>YesTor</td>
+      <td>Crewe, VA</td>
+      <td>37.20</td>
+      <td>-78.12</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kris with the Radars</td>
+      <td>2026-03-16 15:29:41.714702</td>
+      <td>YesTor</td>
+      <td>Washington, DC</td>
+      <td>38.90</td>
+      <td>-77.04</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Joey Krastel</td>
+      <td>2026-03-16 15:32:08.978908</td>
+      <td>YesTor</td>
+      <td>2 N of Bennsville, MD</td>
+      <td>38.62</td>
+      <td>-77.02</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nick M</td>
+      <td>2026-03-16 15:35:27.544017</td>
+      <td>YesTor</td>
+      <td>Plymouth, NC</td>
+      <td>35.86</td>
+      <td>-76.77</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Heerok Das</td>
+      <td>2026-03-16 15:36:41.905252</td>
+      <td>YesTor</td>
+      <td>Virginia Beach, VA</td>
+      <td>36.91</td>
+      <td>-76.00</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Alexis Severson</td>
+      <td>2026-03-16 15:38:59.317435</td>
+      <td>YesTor</td>
+      <td>Zebulon, NC</td>
+      <td>35.82</td>
+      <td>-78.31</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>toefur</td>
+      <td>2026-03-16 15:40:18.359283</td>
+      <td>YesTor</td>
+      <td>Blackstone, VA</td>
+      <td>37.08</td>
+      <td>-78.00</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Colin Young</td>
+      <td>2026-03-16 15:41:11.850311</td>
+      <td>YesTor</td>
+      <td>Louisa, VA</td>
+      <td>38.03</td>
+      <td>-77.97</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>timcigar</td>
+      <td>2026-03-16 15:47:19.884842</td>
+      <td>YesTor</td>
+      <td>Pinetown, NC</td>
+      <td>35.59</td>
+      <td>-76.82</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Paul Austin</td>
+      <td>2026-03-16 15:52:01.614158</td>
+      <td>YesTor</td>
+      <td>Gaston, NC</td>
+      <td>36.52</td>
+      <td>-77.59</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>IL WF 69</td>
+      <td>2026-03-16 15:51:54.394925</td>
+      <td>YesTor</td>
+      <td>Hastings, FL</td>
+      <td>29.69</td>
+      <td>-81.69</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hoang Do</td>
+      <td>2026-03-16 15:57:38.165191</td>
+      <td>YesTor</td>
+      <td>Reinholds, PA</td>
+      <td>40.27</td>
+      <td>-76.10</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Weatherboy "We are so back" Super</td>
+      <td>2026-03-16 15:57:50.206664</td>
+      <td>YesTor</td>
+      <td>Harrisburg, PA</td>
+      <td>40.20</td>
+      <td>-76.69</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>2026-03-16 16:00:33.681630</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.34</td>
+      <td>-77.68</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Forecast Consensus</td>
+      <td>Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.36135860565871</td>
+      <td>-78.81649156854971</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.22661984523539</td>
+      <td>-77.54492333329299</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.47186550402215</td>
+      <td>-77.18775865553421</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

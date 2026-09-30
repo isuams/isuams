@@ -1,0 +1,758 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Number</th>
+      <th>Option</th>
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>203</td>
+      <td>NoTor</td>
+      <td>2024-06-07 01:34:38</td>
+      <td>Jonah H.</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>246</td>
+      <td>YesTor</td>
+      <td>2024-06-07 02:40:36</td>
+      <td>Chris Yates</td>
+      <td>Burwell, NE</td>
+      <td>41.77</td>
+      <td>-99.14</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:06:44</td>
+      <td>Konner Struik</td>
+      <td>Elgin, NE</td>
+      <td>41.9877</td>
+      <td>-98.0903</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>NoTor</td>
+      <td>2024-06-07 04:05:50</td>
+      <td>Quincy Vagell</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>235</td>
+      <td>YesTor</td>
+      <td>2024-06-07 06:21:07</td>
+      <td>Hoang Do</td>
+      <td>Greeley, NE</td>
+      <td>41.53956596</td>
+      <td>-98.55092732</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>YesTor</td>
+      <td>2024-06-07 07:31:39</td>
+      <td>MasDogWx</td>
+      <td>Farwell, NE</td>
+      <td>41.2152</td>
+      <td>-98.6279</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>YesTor</td>
+      <td>2024-06-07 08:12:06</td>
+      <td>Lucas Reynolds</td>
+      <td>Loup City, NE</td>
+      <td>41.2713</td>
+      <td>-98.9657</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>278</td>
+      <td>YesTor</td>
+      <td>2024-06-07 08:36:16</td>
+      <td>JetStreamJami</td>
+      <td>Burwell, NE</td>
+      <td>41.83</td>
+      <td>-99.09</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>264</td>
+      <td>YesTor</td>
+      <td>2024-06-07 09:16:04</td>
+      <td>Catherine Opalka</td>
+      <td>Bassett, NE</td>
+      <td>42.5262</td>
+      <td>-99.5391</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>YesTor</td>
+      <td>2024-06-07 11:09:09</td>
+      <td>Colton Flint</td>
+      <td>Palmer, NE</td>
+      <td>41.22</td>
+      <td>-98.25</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>NoTor</td>
+      <td>2024-06-07 12:04:17</td>
+      <td>jbean45</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>YesTor</td>
+      <td>2024-06-07 12:41:26</td>
+      <td>Nick (Madison, WI)</td>
+      <td>Newport, NE</td>
+      <td>42.5939</td>
+      <td>-99.3236</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>YesTor</td>
+      <td>2024-06-07 12:22:13</td>
+      <td>Ghostfox1</td>
+      <td>Broken Bow NE</td>
+      <td>41.3764</td>
+      <td>-99.6364</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>YesTor</td>
+      <td>2024-06-07 12:32:34</td>
+      <td>Stephen Szulborski</td>
+      <td>Tilden, NE</td>
+      <td>42.04</td>
+      <td>-97.83</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:34:08</td>
+      <td>Logan Giles</td>
+      <td>Stromsburg, NE</td>
+      <td>41.06</td>
+      <td>-97.58</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>YesTor</td>
+      <td>2024-06-07 12:47:23</td>
+      <td>CPekar</td>
+      <td>Ord, NE</td>
+      <td>41.6163</td>
+      <td>-98.9426</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>YesTor</td>
+      <td>2024-06-07 12:53:02</td>
+      <td>Kyle Schanus</td>
+      <td>Gables, NE</td>
+      <td>41.94</td>
+      <td>-98.85</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>252</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:05:01</td>
+      <td>Jim Franc</td>
+      <td>Amelia, NE</td>
+      <td>42.17</td>
+      <td>-98.92</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:10:56</td>
+      <td>Diamond</td>
+      <td>Ainsworth, NE</td>
+      <td>42.5491</td>
+      <td>-99.8577</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:14:46</td>
+      <td>Sophie Miller (Nebraska Magic)</td>
+      <td>Middle Of Nowhere, Nebraska</td>
+      <td>41.53</td>
+      <td>-99.52</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>281</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:23:21</td>
+      <td>Joe Schrantz</td>
+      <td>Taylor, NE</td>
+      <td>41.77</td>
+      <td>-99.39</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:26:12</td>
+      <td>Joe Acord</td>
+      <td>Taylor, NE</td>
+      <td>41.77</td>
+      <td>-99.37</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:38:04</td>
+      <td>Alexis</td>
+      <td>Thedford, NE</td>
+      <td>41.97</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:38:31</td>
+      <td>Riley Johnson</td>
+      <td>Bartlett, NE</td>
+      <td>41.88445</td>
+      <td>-98.55289</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>YesTor</td>
+      <td>2024-06-07 13:42:37</td>
+      <td>drawablefish</td>
+      <td>Taylor, NE</td>
+      <td>41.71</td>
+      <td>-99.36</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>238</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:00:55</td>
+      <td>Heerok Das</td>
+      <td>Central City, NE</td>
+      <td>41.12</td>
+      <td>-98.06</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:08:58</td>
+      <td>John Male</td>
+      <td>Ord, NE</td>
+      <td>41.6018</td>
+      <td>-98.9264</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>NoTor</td>
+      <td>2024-06-07 14:12:22</td>
+      <td>Roman Fariello</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:17:10</td>
+      <td>Earth Central</td>
+      <td>Ord, NE</td>
+      <td>41.6</td>
+      <td>-98.93</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:19:39</td>
+      <td>Josh Schwarz</td>
+      <td>Newport, NE</td>
+      <td>42.585</td>
+      <td>-99.326</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:42:36</td>
+      <td>Penitentes</td>
+      <td>Comstock, NE</td>
+      <td>41.61</td>
+      <td>-99.15</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>272</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:23:42</td>
+      <td>Drew Stowe</td>
+      <td>Arabia,NE</td>
+      <td>42.73</td>
+      <td>-100.37</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:24:31</td>
+      <td>Ethan Kerr</td>
+      <td>Deverre, NE</td>
+      <td>41.89</td>
+      <td>-99.09</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:24:47</td>
+      <td>Bround (I guess.... Im not a very big fan of today)</td>
+      <td>NW of Calamus Reservoir, NE</td>
+      <td>41.94183</td>
+      <td>-99.38546</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>214</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:26:50</td>
+      <td>Blake Brink</td>
+      <td>Somewhere in the middle of nowhere</td>
+      <td>42.207271</td>
+      <td>-98.971488</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:32:25</td>
+      <td>Sam Romshek</td>
+      <td>Burwell, NE</td>
+      <td>41.77</td>
+      <td>-99.18</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>NoTor</td>
+      <td>2024-06-07 14:55:38</td>
+      <td>Samuel G</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>NoTor</td>
+      <td>2024-06-07 14:36:47</td>
+      <td>Clarence Smith</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>NoTor</td>
+      <td>2024-06-07 14:40:44</td>
+      <td>Mitchell Morehead</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:50:20</td>
+      <td>Chad Griffin</td>
+      <td>Taylor, NE</td>
+      <td>41.79</td>
+      <td>-99.4</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>YesTor</td>
+      <td>2024-06-07 14:54:35</td>
+      <td>Brandon Black</td>
+      <td>Ericson, NE</td>
+      <td>41.7828</td>
+      <td>-98.6794</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:11:39</td>
+      <td>Joey Krastel</td>
+      <td>11 NNW Brewster, NE</td>
+      <td>42.0438983</td>
+      <td>-100.0179184</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:25:32</td>
+      <td>Jacob Stichter</td>
+      <td>Polk, NE</td>
+      <td>41.07</td>
+      <td>-97.75</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>270</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:26:38</td>
+      <td>timcigar</td>
+      <td>O'Neill, NE</td>
+      <td>42.4547</td>
+      <td>-98.6497</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:31:16</td>
+      <td>Carson Thomas</td>
+      <td>Burwell, NE</td>
+      <td>41.76939</td>
+      <td>-99.15465</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:33:04</td>
+      <td>Josh Jaeger</td>
+      <td>Halsey, NE</td>
+      <td>41.9</td>
+      <td>-100.29</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:38:02</td>
+      <td>Kyle Hugeback</td>
+      <td>NE of Elyria, NE</td>
+      <td>41.72</td>
+      <td>-98.9</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:42:37</td>
+      <td>Jack Zwolinski</td>
+      <td>Almeria, NE</td>
+      <td>41.94</td>
+      <td>-99.47</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:47:32</td>
+      <td>Colin Young</td>
+      <td>Sargent, NE</td>
+      <td>41.667008</td>
+      <td>-99.35132</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:49:26</td>
+      <td>Joseph Patton</td>
+      <td>Anselmo, NE</td>
+      <td>41.6405</td>
+      <td>-99.8652</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>277</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:51:23</td>
+      <td>Karson</td>
+      <td>Overton, NE</td>
+      <td>40.74</td>
+      <td>-99.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:52:46</td>
+      <td>Paul Austin</td>
+      <td>Almeria, NE</td>
+      <td>41.85</td>
+      <td>-99.58</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:53:08</td>
+      <td>Peter Corman</td>
+      <td>Burwell, NE</td>
+      <td>41.7804</td>
+      <td>-99.1399</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:54:07</td>
+      <td>Sam Emmerson</td>
+      <td>Brewster, NE</td>
+      <td>42.0186727</td>
+      <td>-99.8587942</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:54:22</td>
+      <td>TorDrifter</td>
+      <td>North Loup, NE</td>
+      <td>41.484204</td>
+      <td>-98.913516</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:55:21</td>
+      <td>Ethan Treff</td>
+      <td>North Loup, NE</td>
+      <td>41.4953</td>
+      <td>-98.7731</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:55:47</td>
+      <td>Gavin Bird</td>
+      <td>West of W Meeks Ranch Airport</td>
+      <td>41.984</td>
+      <td>-99.489</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:56:27</td>
+      <td>No you</td>
+      <td>Elgin, NE</td>
+      <td>42.0062</td>
+      <td>-98.2308</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:57:09</td>
+      <td>Oliver K</td>
+      <td>Sargent, NE</td>
+      <td>41.6407</td>
+      <td>-99.3701</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>YesTor</td>
+      <td>2024-06-07 15:58:08</td>
+      <td>Lucas Huang</td>
+      <td>Sargent, NE</td>
+      <td>41.6407</td>
+      <td>-99.3706</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>YesTor</td>
+      <td>2024-06-07 16:00:09</td>
+      <td>StarInBox</td>
+      <td>Ord, NE</td>
+      <td>41.6</td>
+      <td>-98.92</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>YesTor</td>
+      <td>2024-06-07 16:00:27</td>
+      <td>Tornado Fajita</td>
+      <td>Brewster, NE</td>
+      <td>41.927701</td>
+      <td>-99.856686</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>267</td>
+      <td>YesTor</td>
+      <td>2024-06-07 16:00:50</td>
+      <td>Chase (AL)</td>
+      <td>Burwell, NE</td>
+      <td>41.78152</td>
+      <td>-99.140897</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>YesTor</td>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>NA</td>
+      <td>41.78792341</td>
+      <td>-99.12603655214286</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>888</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>40.94264092637104</td>
+      <td>-98.72946976461795</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>889</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>41.30838263040102</td>
+      <td>-99.46598633228506</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

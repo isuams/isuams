@@ -1,0 +1,891 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Forecaster</th>
+      <th>Time</th>
+      <th>Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cyclone_95</td>
+      <td>2026-05-13 01:13:19.791356</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blake brink</td>
+      <td>2026-05-13 14:10:32.338789</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joseph Patton</td>
+      <td>2026-05-13 15:45:43.607021</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Karson</td>
+      <td>2026-05-13 13:00:41.245465</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Brennen Round</td>
+      <td>2026-05-13 11:45:24.314813</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>jumpwx</td>
+      <td>2026-05-13 15:43:38.944236</td>
+      <td>YesTor</td>
+      <td>South Park Township, PA</td>
+      <td>40.29</td>
+      <td>-80.02</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WxDrifter</td>
+      <td>2026-05-13 15:38:24.417881</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CPekar</td>
+      <td>2026-05-13 00:56:48.548510</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jim Franc</td>
+      <td>2026-05-13 13:12:13.053932</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah H.</td>
+      <td>2026-05-13 15:13:36.541322</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>The Hawk</td>
+      <td>2026-05-13 15:18:00.663242</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.93</td>
+      <td>-79.74</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Clarence</td>
+      <td>2026-05-13 11:19:23.794018</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Veer</td>
+      <td>2026-05-13 02:20:09.702183</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Braydon P Songer</td>
+      <td>2026-05-13 14:30:00.099725</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TRISTATE POINT MAGIC (gabezwx)</td>
+      <td>2026-05-13 14:46:19.300053</td>
+      <td>YesTor</td>
+      <td>Markleysburg PA - Asher Glade MD - Glade Farms WV</td>
+      <td>39.72</td>
+      <td>-79.48</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Heerok Das</td>
+      <td>2026-05-13 15:24:14.137687</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>That good ship and crew was a bone to be chewed</td>
+      <td>2026-05-13 12:23:24.412017</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Chris Yates</td>
+      <td>2026-05-13 02:51:09.850029</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kay</td>
+      <td>2026-05-13 10:11:51.745708</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>West Virginia truther (maybe i am crazy)</td>
+      <td>2026-05-13 15:55:24.044317</td>
+      <td>YesTor</td>
+      <td>Nutter Fort</td>
+      <td>39.26</td>
+      <td>-80.32</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>SRRadarLoops</td>
+      <td>2026-05-13 12:39:58.130352</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bunger</td>
+      <td>2026-05-13 14:59:36.651112</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>I AM A SURGEON DR. HAN</td>
+      <td>2026-05-13 12:51:25.277181</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Evan St. Clair</td>
+      <td>2026-05-13 04:00:55.538330</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Paul Austin</td>
+      <td>2026-05-13 12:41:30.519778</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MasDogWx</td>
+      <td>2026-05-13 06:06:11.314826</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kyle Hugeback</td>
+      <td>2026-05-13 15:28:28.556820</td>
+      <td>YesTor</td>
+      <td>W of Uniontown, PA</td>
+      <td>39.88</td>
+      <td>-79.79</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jeff Frame</td>
+      <td>2026-05-13 14:13:15.461631</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cold Core Cowboy</td>
+      <td>2026-05-13 05:24:15.138325</td>
+      <td>YesTor</td>
+      <td>Oneida Lake, NY</td>
+      <td>43.34</td>
+      <td>-76.17</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pent</td>
+      <td>2026-05-13 13:09:14.305024</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nick M</td>
+      <td>2026-05-13 02:28:19.209619</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Oliver Knapton</td>
+      <td>2026-05-13 15:18:18.810053</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sam Ritter</td>
+      <td>2026-05-13 14:55:39.828232</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Logan Giles</td>
+      <td>2026-05-13 12:44:49.337389</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Diamond</td>
+      <td>2026-05-13 12:50:37.735336</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sebastian Pelt</td>
+      <td>2026-05-13 11:34:52.704256</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CG15wx</td>
+      <td>2026-05-13 07:52:15.511987</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bookworm</td>
+      <td>2026-05-13 11:24:04.074495</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Garrett Statum</td>
+      <td>2026-05-13 15:49:27.671752</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Manyberries, AB is the real target today</td>
+      <td>2026-05-13 08:13:29.243807</td>
+      <td>YesTor</td>
+      <td>Chester, MT</td>
+      <td>49.40</td>
+      <td>-110.69</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Derecho</td>
+      <td>2026-05-13 15:30:49.742514</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Caleb O'Gara</td>
+      <td>2026-05-13 12:47:44.127839</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ben Price</td>
+      <td>2026-05-13 15:09:38.017940</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>German Aviation</td>
+      <td>2026-05-13 15:05:00.321007</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Gavin Bird</td>
+      <td>2026-05-13 15:25:34.325567</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Andrew Griffiths</td>
+      <td>2026-05-13 03:07:36.799957</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ajax13</td>
+      <td>2026-05-13 14:13:43.550625</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joey Krastel</td>
+      <td>2026-05-13 15:38:11.890020</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>JetStreamJami</td>
+      <td>2026-05-13 15:41:42.857033</td>
+      <td>YesTor</td>
+      <td>Buffington, PA</td>
+      <td>39.94</td>
+      <td>-79.85</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Roch</td>
+      <td>2026-05-13 15:54:38.204351</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joe Schrantz</td>
+      <td>2026-05-13 14:25:51.041041</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bengalsfan</td>
+      <td>2026-05-13 14:31:00.074624</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Richard Cirone</td>
+      <td>2026-05-13 13:38:43.082480</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Berg</td>
+      <td>2026-05-13 15:37:26.606290</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Zegery</td>
+      <td>2026-05-13 14:26:26.944819</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Michael Kubinski</td>
+      <td>2026-05-13 15:35:45.670543</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wxbill</td>
+      <td>2026-05-13 15:29:28.275397</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>nothing ever happens</td>
+      <td>2026-05-13 14:46:24.256831</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sophie Miller</td>
+      <td>2026-05-13 02:02:53.109396</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>AJ Clever</td>
+      <td>2026-05-13 13:14:08.985869</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>wxManSmith</td>
+      <td>2026-05-13 14:56:35.947877</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nathan Erickson</td>
+      <td>2026-05-13 15:18:46.052437</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hoang Do</td>
+      <td>2026-05-13 06:05:40.534975</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Olivia Macko</td>
+      <td>2026-05-13 05:48:24.606314</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Earth Central</td>
+      <td>2026-05-13 12:15:44.063624</td>
+      <td>YesTor</td>
+      <td>Spokane, WA</td>
+      <td>47.68</td>
+      <td>-117.42</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Josh Jaeger</td>
+      <td>2026-05-13 14:02:16.695282</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Roman Fariello</td>
+      <td>2026-05-13 11:40:23.514286</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>EF-Femme</td>
+      <td>2026-05-13 15:29:17.517565</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WxDownYonder</td>
+      <td>2026-05-13 12:04:19.660069</td>
+      <td>YesTor</td>
+      <td>Ogden, UT</td>
+      <td>41.22</td>
+      <td>-111.97</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stephen Szulborski</td>
+      <td>2026-05-13 12:30:50.234192</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>timcigar</td>
+      <td>2026-05-13 14:09:45.082516</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stormchaser007</td>
+      <td>2026-05-13 15:52:51.456258</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Colton Flint</td>
+      <td>2026-05-13 14:32:13.486428</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Donovan Fry</td>
+      <td>2026-05-13 00:12:51.984021</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>IL WF 69</td>
+      <td>2026-05-13 15:21:19.493433</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tobias Leonard</td>
+      <td>2026-05-13 15:20:53.743475</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah Dosedel</td>
+      <td>2026-05-13 15:32:06.158865</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DaveFlo</td>
+      <td>2026-05-13 11:31:58.699583</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ghostfox1</td>
+      <td>2026-05-13 13:34:08.969124</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TDGWx</td>
+      <td>2026-05-13 15:57:20.754946</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Josh Schwarz</td>
+      <td>2026-05-13 14:51:26.470040</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Quincy Vagell</td>
+      <td>2026-05-13 06:49:10.029660</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wyatt Van Dyke</td>
+      <td>2026-05-13 14:37:49.582560</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Forecast Consensus</td>
+      <td>Consensus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.02898489798402</td>
+      <td>-79.78277764874223</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.212078958443044</td>
+      <td>-79.58961889458757</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

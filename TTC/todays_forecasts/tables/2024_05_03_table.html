@@ -1,0 +1,1352 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Number</th>
+      <th>Option</th>
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>33</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:39:48</td>
+      <td>Mason Carneal</td>
+      <td>Sterling City, TX</td>
+      <td>31.842355</td>
+      <td>-100.985612</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>YesTor</td>
+      <td>2024-05-03 00:23:32</td>
+      <td>Alex Hamilton</td>
+      <td>McCaulley, TX</td>
+      <td>32.78</td>
+      <td>-100.2</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>YesTor</td>
+      <td>2024-05-03 01:46:50</td>
+      <td>Veer</td>
+      <td>Fullerville, TX</td>
+      <td>32.926</td>
+      <td>-101.066</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:23:08</td>
+      <td>Lucas Huang</td>
+      <td>Merkel, TX</td>
+      <td>32.4676</td>
+      <td>-100.0194</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>YesTor</td>
+      <td>2024-05-03 02:51:36</td>
+      <td>Caleb O'Gara</td>
+      <td>Robert Lee, TX</td>
+      <td>31.9</td>
+      <td>-100.63</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>275</td>
+      <td>YesTor</td>
+      <td>2024-05-03 02:54:25</td>
+      <td>A Gardener From Alabama</td>
+      <td>Colorado City, TX</td>
+      <td>32.398</td>
+      <td>-100.875</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>246</td>
+      <td>YesTor</td>
+      <td>2024-05-03 02:59:47</td>
+      <td>Chris Yates</td>
+      <td>Sweetwater, TX</td>
+      <td>32.46</td>
+      <td>-100.43</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>YesTor</td>
+      <td>2024-05-03 03:39:45</td>
+      <td>Sam Luthi</td>
+      <td>SE of Roby, TX</td>
+      <td>32.7</td>
+      <td>-100.35</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>YesTor</td>
+      <td>2024-05-03 03:40:20</td>
+      <td>Brady Lyness</td>
+      <td>Snyder, TX</td>
+      <td>32.7249</td>
+      <td>-100.9122</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>YesTor</td>
+      <td>2024-05-03 16:00:11</td>
+      <td>Diamond</td>
+      <td>Hamlin, TX</td>
+      <td>32.8804</td>
+      <td>-100.1471</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>234</td>
+      <td>YesTor</td>
+      <td>2024-05-03 04:49:04</td>
+      <td>Caleb A</td>
+      <td>Hamlin, TX</td>
+      <td>32.89</td>
+      <td>-100.12</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>NoTor</td>
+      <td>2024-05-03 04:59:15</td>
+      <td>Eliot Morrow</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:52:10</td>
+      <td>Gavin Bird</td>
+      <td>Post, TX</td>
+      <td>33.169</td>
+      <td>-101.364</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>YesTor</td>
+      <td>2024-05-03 06:04:12</td>
+      <td>Granada 2.0</td>
+      <td>Granada, CO</td>
+      <td>37.92</td>
+      <td>-102.23</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>YesTor</td>
+      <td>2024-05-03 06:11:19</td>
+      <td>Wheelie weather</td>
+      <td>Junction,TX</td>
+      <td>30.48</td>
+      <td>-99.77</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>YesTor</td>
+      <td>2024-05-03 06:21:42</td>
+      <td>Earth Central</td>
+      <td>Ira, TX</td>
+      <td>32.35</td>
+      <td>-101</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>YesTor</td>
+      <td>2024-05-03 06:32:17</td>
+      <td>Colton Flint</td>
+      <td>Buford, TX</td>
+      <td>32.46</td>
+      <td>-100.86</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>YesTor</td>
+      <td>2024-05-03 08:28:48</td>
+      <td>Lucas Reynolds</td>
+      <td>Rowena, TX</td>
+      <td>31.645</td>
+      <td>-100.049</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>278</td>
+      <td>YesTor</td>
+      <td>2024-05-03 08:37:10</td>
+      <td>JetStreamJami</td>
+      <td>Snyder, TX</td>
+      <td>32.73</td>
+      <td>-100.91</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>YesTor</td>
+      <td>2024-05-03 09:21:53</td>
+      <td>Kazaki</td>
+      <td>post</td>
+      <td>33.1754</td>
+      <td>-101.3644</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>YesTor</td>
+      <td>2024-05-03 09:47:18</td>
+      <td>John Male</td>
+      <td>Merkel, TX</td>
+      <td>32.47</td>
+      <td>-100.0154</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>NoTor</td>
+      <td>2024-05-03 11:03:27</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>YesTor</td>
+      <td>2024-05-03 11:46:00</td>
+      <td>Ghostfox1</td>
+      <td>Sweetwater TX</td>
+      <td>32.4875</td>
+      <td>-100.4404</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>YesTor</td>
+      <td>2024-05-03 11:46:04</td>
+      <td>Colin Young</td>
+      <td>Fluvanna, TX</td>
+      <td>32.901036</td>
+      <td>-101.145607</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:11:36</td>
+      <td>Andrew Liedtke</td>
+      <td>Merkel, TX</td>
+      <td>32.47</td>
+      <td>-100.02</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:19:48</td>
+      <td>Ben Vitek</td>
+      <td>Sweetwater, TX</td>
+      <td>32.54</td>
+      <td>-100.42</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:20:05</td>
+      <td>Samuel G</td>
+      <td>Snyder, TX</td>
+      <td>32.76</td>
+      <td>-100.92</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:20:44</td>
+      <td>Stephen Szulborski</td>
+      <td>Snyder, TX</td>
+      <td>32.72</td>
+      <td>-100.91</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>214</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:25:16</td>
+      <td>Blake Brink</td>
+      <td>Idalou, TX</td>
+      <td>33.671229</td>
+      <td>-101.676329</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>262</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:33:08</td>
+      <td>Adrian Z.</td>
+      <td>Sylvester, TX</td>
+      <td>32.7212</td>
+      <td>-100.2556</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>YesTor</td>
+      <td>2024-05-03 12:54:16</td>
+      <td>Konner Struik</td>
+      <td>Sweetwater, Texas</td>
+      <td>32.4806</td>
+      <td>-100.4139</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:00:22</td>
+      <td>Kevin Mahoney</td>
+      <td>Knott, TX</td>
+      <td>32.4014</td>
+      <td>-101.6387</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>288</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:04:15</td>
+      <td>Alex "fate click truther"</td>
+      <td>Snyder, TX</td>
+      <td>32.7692891</td>
+      <td>-101.0433096</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:10:17</td>
+      <td>Slim Tatman</td>
+      <td>Big Spring, TX</td>
+      <td>32.2978</td>
+      <td>-101.4013</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:20:31</td>
+      <td>MasDogWx</td>
+      <td>Maryneal, TX</td>
+      <td>32.2661</td>
+      <td>-100.41348</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:26:13</td>
+      <td>Carson Thomas</td>
+      <td>Roscoe, TX</td>
+      <td>32.449</td>
+      <td>-100.537</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>252</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:35:39</td>
+      <td>Jim Franc</td>
+      <td>Midway, TX</td>
+      <td>32.67</td>
+      <td>-100.65</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:36:50</td>
+      <td>Riley Johnson</td>
+      <td>Snyder, TX</td>
+      <td>32.71818</td>
+      <td>-100.91913</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:40:45</td>
+      <td>Quincy Vagell</td>
+      <td>Forsan, TX</td>
+      <td>32.0233</td>
+      <td>-101.4003</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:42:32</td>
+      <td>John Massura</td>
+      <td>Sweetwater, TX</td>
+      <td>32.53</td>
+      <td>-100.42</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:44:36</td>
+      <td>Logan Giles</td>
+      <td>Nolan, TX</td>
+      <td>32.3</td>
+      <td>-100.14</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:45:24</td>
+      <td>Clarence Smith</td>
+      <td>Sweetwater, TX</td>
+      <td>32.19</td>
+      <td>-100.21</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:52:24</td>
+      <td>Ben Jablonski</td>
+      <td>Sweetwater, TX</td>
+      <td>32.4653</td>
+      <td>-100.398</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:29:50</td>
+      <td>Marios Wallace</td>
+      <td>Merkel, TX</td>
+      <td>32.518</td>
+      <td>-99.99</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>YesTor</td>
+      <td>2024-05-03 13:59:32</td>
+      <td>Vincent P.</td>
+      <td>Matador, TX</td>
+      <td>34.0071</td>
+      <td>-100.8298</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:01:28</td>
+      <td>GodMosses</td>
+      <td>Sweetwater, TX</td>
+      <td>32.51</td>
+      <td>-100.33</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>244</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:02:24</td>
+      <td>wxManSmith</td>
+      <td>Sweetwater, TX</td>
+      <td>32.471</td>
+      <td>-100.4059</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:04:44</td>
+      <td>Peter Corman</td>
+      <td>Colorado City, TX</td>
+      <td>32.4018</td>
+      <td>-100.8725</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>264</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:06:12</td>
+      <td>Catherine Opalka</td>
+      <td>Snyder, TX</td>
+      <td>32.7153</td>
+      <td>-100.9118</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>277</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:11:28</td>
+      <td>Karson</td>
+      <td>Robert Lee, TX</td>
+      <td>31.89</td>
+      <td>-100.48</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>237</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:12:33</td>
+      <td>Nicholas Kniprath</td>
+      <td>Dunn, TX</td>
+      <td>32.5671</td>
+      <td>-100.8854</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:16:43</td>
+      <td>S T F J I N K I O J D</td>
+      <td>Sweetwater, TX</td>
+      <td>32.44</td>
+      <td>-100.41</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:21:20</td>
+      <td>Jeff Frame</td>
+      <td>Bronte, TX</td>
+      <td>31.8874</td>
+      <td>-100.2918</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:24:15</td>
+      <td>Joshua Evans</td>
+      <td>Anson, TX</td>
+      <td>32.6394</td>
+      <td>-99.8534</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:24:48</td>
+      <td>Hunter Anderson</td>
+      <td>Roby, TX</td>
+      <td>32.66</td>
+      <td>-100.34</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:26:04</td>
+      <td>Jeremy Clarkson</td>
+      <td>Wingate, TX</td>
+      <td>32.04565</td>
+      <td>-100.10991</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:27:44</td>
+      <td>Anthony Haberman</td>
+      <td>Abilene, TX</td>
+      <td>32.45</td>
+      <td>-99.75</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>NoTor</td>
+      <td>2024-05-03 14:28:04</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:32:20</td>
+      <td>Andrew Griffiths</td>
+      <td>Stith, TX</td>
+      <td>32.5465</td>
+      <td>-99.9443</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:34:43</td>
+      <td>Mitchell Morehead</td>
+      <td>MaryNeal, TX</td>
+      <td>32.23</td>
+      <td>-100.45</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:37:03</td>
+      <td>Nathan Erickson</td>
+      <td>Snyder, TX</td>
+      <td>32.73</td>
+      <td>-100.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>227</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:38:18</td>
+      <td>Adler Hanson</td>
+      <td>Grape Creek, TX</td>
+      <td>31.58</td>
+      <td>-100.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:38:37</td>
+      <td>drawablefish</td>
+      <td>Tuscola, TX</td>
+      <td>32.14</td>
+      <td>-99.91</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>235</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:38:40</td>
+      <td>Hoang Do</td>
+      <td>Blackwell, TX</td>
+      <td>32.12331276</td>
+      <td>-100.2938269</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:40:41</td>
+      <td>CPekar</td>
+      <td>Plains, TX</td>
+      <td>32.9087</td>
+      <td>-101.6452</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>209</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:41:01</td>
+      <td>WeatherboySuper</td>
+      <td>Abilene, TX</td>
+      <td>32.36234</td>
+      <td>-100.003296</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:42:27</td>
+      <td>Kay</td>
+      <td>North of Roscoe, TX</td>
+      <td>32.4959</td>
+      <td>-100.5488</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:44:16</td>
+      <td>Joey Krastel</td>
+      <td>5 NE Forsan, TX</td>
+      <td>32.14752</td>
+      <td>-101.2932</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:53:52</td>
+      <td>Josh Schwarz</td>
+      <td>Rotan, TX</td>
+      <td>32.89</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:54:53</td>
+      <td>Oliver K</td>
+      <td>Roscoe, TX</td>
+      <td>32.3701</td>
+      <td>-100.4796</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>208</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:55:12</td>
+      <td>Garrett Nykaza</td>
+      <td>Robert Lee, Texas</td>
+      <td>31.9</td>
+      <td>-100.48</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>YesTor</td>
+      <td>2024-05-03 14:57:41</td>
+      <td>Braydon Songer</td>
+      <td>Colorado City, TX</td>
+      <td>32.4209</td>
+      <td>-100.8598</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:52:06</td>
+      <td>Paul Austin</td>
+      <td>Sweetwater, TX</td>
+      <td>32.4</td>
+      <td>-100.4</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:12:07</td>
+      <td>Chris Jackson (WI)</td>
+      <td>Bronte, TX</td>
+      <td>32.02</td>
+      <td>-100.2</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:15:33</td>
+      <td>Sophie Miller :D</td>
+      <td>Jayton, TX</td>
+      <td>33.19</td>
+      <td>-100.66</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:17:16</td>
+      <td>Josh Jaeger</td>
+      <td>Post, TX</td>
+      <td>33.16</td>
+      <td>-101.35</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:22:53</td>
+      <td>Kevin Smolfront</td>
+      <td>Halfway between Ballinger and Tennyson, TX</td>
+      <td>31.74374</td>
+      <td>-100.138363</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:27:32</td>
+      <td>Jacob Stichter</td>
+      <td>Ballinger, TX</td>
+      <td>31.78</td>
+      <td>-100.04</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:27:34</td>
+      <td>Brandon Black</td>
+      <td></td>
+      <td>32.0316</td>
+      <td>-100.2604</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:27:47</td>
+      <td>MuggieWx</td>
+      <td>Sweetwater, TX</td>
+      <td>32.466</td>
+      <td>-100.4031</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:28:21</td>
+      <td>TorDrifter</td>
+      <td>Blackwell, TX</td>
+      <td>32.096698</td>
+      <td>-100.327933</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:30:11</td>
+      <td>rosiel</td>
+      <td></td>
+      <td>33.58335</td>
+      <td>-90.42422</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:33:22</td>
+      <td>StarInBox</td>
+      <td>Ballinger, TX</td>
+      <td>31.8</td>
+      <td>-99.95</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:35:35</td>
+      <td>Ethan Kerr</td>
+      <td>Sweetwater, TX</td>
+      <td>32.47</td>
+      <td>-100.41</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:35:41</td>
+      <td>jbean45</td>
+      <td>Nolan, TX</td>
+      <td>32.27</td>
+      <td>-100.32</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:35:45</td>
+      <td>Jacob Erhard</td>
+      <td>Aspermont, TX</td>
+      <td>33.1625813</td>
+      <td>-100.2287965</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:36:39</td>
+      <td>Roman Fariello</td>
+      <td>Trent, TX</td>
+      <td>32.48989</td>
+      <td>-100.12567</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:39:06</td>
+      <td>Matt Wilson</td>
+      <td>Silver, TX</td>
+      <td>32.14</td>
+      <td>-100.76</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:39:19</td>
+      <td>Asher Malaschak</td>
+      <td>Winters, TX</td>
+      <td>31.98</td>
+      <td>-99.97</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:40:13</td>
+      <td>Sam Ritter</td>
+      <td>Snyder, TX</td>
+      <td>32.72</td>
+      <td>-100.92</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:41:00</td>
+      <td>Chad Griffin</td>
+      <td>Blackwell, TX</td>
+      <td>32</td>
+      <td>-100.36</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>203</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:41:25</td>
+      <td>Jonah H.</td>
+      <td>Sweetwater, TX</td>
+      <td>32.28</td>
+      <td>-100.33</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:41:54</td>
+      <td>Jason B</td>
+      <td>Snyder, TX</td>
+      <td>32.7198</td>
+      <td>-100.9108</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>270</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:42:06</td>
+      <td>timcigar</td>
+      <td>Sweetwater, TX</td>
+      <td>32.4653</td>
+      <td>-100.4109</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>267</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:42:43</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>Ira, TX</td>
+      <td>32.581923</td>
+      <td>-101.003382</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:43:22</td>
+      <td>Sam Emmerson</td>
+      <td>Blackwell, OK</td>
+      <td>32.0866</td>
+      <td>-100.3173</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:43:28</td>
+      <td>Steve Bergey</td>
+      <td>15 miles east of Pampa, TX</td>
+      <td>35.49</td>
+      <td>-100.7</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:43:56</td>
+      <td>Kyle Schanus</td>
+      <td>Sweetwater, TX</td>
+      <td>32.19</td>
+      <td>-100.32</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:46:15</td>
+      <td>Ryan Rackliffe</td>
+      <td>Blackwell, TX</td>
+      <td>32.09</td>
+      <td>-100.32</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:47:23</td>
+      <td>Sam Romshek</td>
+      <td>Nolan, TX</td>
+      <td>32.28</td>
+      <td>-100.23</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:47:35</td>
+      <td>nadocast&gt;&gt;&gt;&gt;&gt;&gt;&gt;</td>
+      <td>Capitola, TX</td>
+      <td>32.62</td>
+      <td>-100.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:48:30</td>
+      <td>Michael Pagannelli</td>
+      <td>Tuxedo, TX</td>
+      <td>32.93</td>
+      <td>-99.95</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:50:36</td>
+      <td>Chase Brewster</td>
+      <td>Colorado City, TX</td>
+      <td>32.4</td>
+      <td>-100.87</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:50:46</td>
+      <td>Joseph Patton</td>
+      <td>Horace, KS</td>
+      <td>38.4656</td>
+      <td>-101.8031</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:51:19</td>
+      <td>Penitentes</td>
+      <td>N of Ira, TX</td>
+      <td>32.66</td>
+      <td>-101</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:51:54</td>
+      <td>Lizzie went for a walk</td>
+      <td></td>
+      <td>31.89</td>
+      <td>-100.27</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:53:21</td>
+      <td>Samuel Roback</td>
+      <td>Nolan, TX</td>
+      <td>32.29</td>
+      <td>-100.22</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:53:36</td>
+      <td>Koji</td>
+      <td>Sweetwater, TX</td>
+      <td>32.47264</td>
+      <td>-100.40813</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:55:06</td>
+      <td>B-rice</td>
+      <td>Iatan, TX</td>
+      <td>32.38</td>
+      <td>-101.19</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:56:35</td>
+      <td>Bround (always target the highest moisture baybee)</td>
+      <td>Blair, TX</td>
+      <td>32.42056</td>
+      <td>-100.0661</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:56:46</td>
+      <td>Cole Sellers</td>
+      <td>Sweetwater, TX</td>
+      <td>32.47</td>
+      <td>-100.33</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:57:19</td>
+      <td>Tornado Fajita</td>
+      <td>Snyder, TX</td>
+      <td>32.68</td>
+      <td>-100.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>287</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:58:01</td>
+      <td>Bradnado</td>
+      <td>Nolan, TX</td>
+      <td>32.2733</td>
+      <td>-100.14</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>272</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:58:07</td>
+      <td>Drew</td>
+      <td>Snyder,TX</td>
+      <td>32.7</td>
+      <td>-100.91</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:59:09</td>
+      <td>Alex H.</td>
+      <td>Colorado City Texas</td>
+      <td>32.406126</td>
+      <td>-100.798375</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>YesTor</td>
+      <td>2024-05-03 15:59:17</td>
+      <td>Brixton Abad</td>
+      <td>South of Lubbock, TX</td>
+      <td>33.0220243</td>
+      <td>-101.478657</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>YesTor</td>
+      <td>2024-05-03 16:00:31</td>
+      <td>Alex salerno</td>
+      <td>Roscoe, Tx</td>
+      <td>32.2826</td>
+      <td>-100.638</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>YesTor</td>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>NA</td>
+      <td>32.58156968824561</td>
+      <td>-100.48423620175438</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>888</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>32.40442794620524</td>
+      <td>-100.88099777072772</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>889</td>
+      <td>YesTor</td>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>NA</td>
+      <td>32.43982715965493</td>
+      <td>-100.7921486929421</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

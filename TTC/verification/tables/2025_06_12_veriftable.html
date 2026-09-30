@@ -1,0 +1,1092 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-06-12 15:05:04</td>
+      <td>273</td>
+      <td>This isn't gonna work (Nick Markus)</td>
+      <td>YesTor</td>
+      <td>Sheridan, AR</td>
+      <td>34.30</td>
+      <td>-92.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.60</td>
+      <td>LZK, NA</td>
+      <td>22.90</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:06:48</td>
+      <td>201</td>
+      <td>Donovan F</td>
+      <td>YesTor</td>
+      <td>Leola, AR</td>
+      <td>34.17</td>
+      <td>-92.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58.80</td>
+      <td>LZK, NA</td>
+      <td>16.20</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 06:39:29</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Dumas, AR</td>
+      <td>33.88</td>
+      <td>-91.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.70</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>12.10</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:44:49</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Kingsland, AR</td>
+      <td>33.86</td>
+      <td>-92.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.40</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>6.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:31:52</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>TMEM</td>
+      <td>34.80</td>
+      <td>-90.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.80</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 11:23:37</td>
+      <td>163</td>
+      <td>WxDownYonder</td>
+      <td>YesTor</td>
+      <td>Greenville, MS</td>
+      <td>33.40</td>
+      <td>-91.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>99.70</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:57:00</td>
+      <td>200</td>
+      <td>Some bird fart will occur somewhere probably -S. Miller</td>
+      <td>YesTor</td>
+      <td>A place idk</td>
+      <td>32.70</td>
+      <td>-91.10</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>144.60</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.53</td>
+      <td>-94.73</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>149.60</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:18:49</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Bossier Parish, LA</td>
+      <td>32.73</td>
+      <td>-93.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>174.00</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:59:59</td>
+      <td>280</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Shreveport, LA</td>
+      <td>32.56</td>
+      <td>-93.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>189.40</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>32.83</td>
+      <td>-94.29</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>191.10</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 14:56:00</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Leesville, LA</td>
+      <td>31.24</td>
+      <td>-93.19</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>257.20</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 11:44:39</td>
+      <td>221</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>LeesVille, LA</td>
+      <td>31.12</td>
+      <td>-93.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>266.20</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 14:44:37</td>
+      <td>178</td>
+      <td>Nic Anthony</td>
+      <td>YesTor</td>
+      <td>In the middle of nowhere. West of Pierre SD. In the NW part of Lyman County South Dakota</td>
+      <td>44.34</td>
+      <td>-101.08</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>273.70</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:19:00</td>
+      <td>107</td>
+      <td>Kris with the radar</td>
+      <td>YesTor</td>
+      <td>Burr Ferry, LA</td>
+      <td>31.07</td>
+      <td>-93.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>274.50</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:17:36</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>YesTor</td>
+      <td>Oakdale, LA</td>
+      <td>30.79</td>
+      <td>-92.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>279.40</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 14:36:02</td>
+      <td>213</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Vivian, SD</td>
+      <td>43.85</td>
+      <td>-100.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>281.70</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:19:00</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Mamou, LA</td>
+      <td>30.67</td>
+      <td>-92.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>285.80</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:39:47</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Lower Brule, SD</td>
+      <td>44.07</td>
+      <td>-99.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>317.30</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:52:51</td>
+      <td>173</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Starks, LA</td>
+      <td>30.32</td>
+      <td>-93.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>327.20</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 12:01:03</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Beebe, MT</td>
+      <td>46.10</td>
+      <td>-105.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>331.80</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:21:11</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Beaumont, TX</td>
+      <td>30.31</td>
+      <td>-93.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>334.40</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>30.79</td>
+      <td>-95.14</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>336.40</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 07:03:19</td>
+      <td>291</td>
+      <td>#LetsDoIt</td>
+      <td>YesTor</td>
+      <td>Miles City, MT</td>
+      <td>46.34</td>
+      <td>-105.88</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>351.10</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 06:02:17</td>
+      <td>121</td>
+      <td>Brady Lyness</td>
+      <td>YesTor</td>
+      <td>Seymour, TX</td>
+      <td>33.58</td>
+      <td>-99.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>424.10</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:20:30</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>Needville, TX</td>
+      <td>29.41</td>
+      <td>-95.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>441.10</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:31:11</td>
+      <td>286</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Lake Jackson, TX</td>
+      <td>29.02</td>
+      <td>-95.45</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>454.50</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:05:58</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Vanderbilt, TX</td>
+      <td>28.80</td>
+      <td>-96.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>499.90</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:57:21</td>
+      <td>313</td>
+      <td>I will not be taking questions at this time</td>
+      <td>YesTor</td>
+      <td>NW of Windom, MN</td>
+      <td>43.97</td>
+      <td>-95.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>509.70</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:20:15</td>
+      <td>137</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Woodsboro, TX (Birdfart time)</td>
+      <td>28.24</td>
+      <td>-97.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>557.80</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:05:12</td>
+      <td>46</td>
+      <td>Jacob "Skidrow" Stichter</td>
+      <td>YesTor</td>
+      <td>Skidmore, TX,</td>
+      <td>28.34</td>
+      <td>-97.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>559.40</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:09:24</td>
+      <td>166</td>
+      <td>Drifter</td>
+      <td>YesTor</td>
+      <td>Good Thunder, MN</td>
+      <td>44.00</td>
+      <td>-94.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>566.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:21:29</td>
+      <td>149</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Easton, MN</td>
+      <td>43.69</td>
+      <td>-93.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>566.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:20:28</td>
+      <td>3</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>N of Corpus Cristi Bay</td>
+      <td>27.93</td>
+      <td>-97.20</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>572.50</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:46:38</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Wells, MN</td>
+      <td>43.70</td>
+      <td>-93.73</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>577.80</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:58:42</td>
+      <td>12</td>
+      <td>Olivia McCauley</td>
+      <td>YesTor</td>
+      <td>Corpus Chris Christi, TX</td>
+      <td>27.82</td>
+      <td>-97.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>586.70</td>
+      <td>LZK, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:52:15</td>
+      <td>290</td>
+      <td>We ride (doss)</td>
+      <td>YesTor</td>
+      <td>Twin Lakes, MN</td>
+      <td>43.56</td>
+      <td>-93.42</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>590.60</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:21:14</td>
+      <td>113</td>
+      <td>Something something shambles something something</td>
+      <td>YesTor</td>
+      <td>Just north of Albert Lea mn</td>
+      <td>43.70</td>
+      <td>-93.33</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>597.00</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:30:27</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Heckscherville, PA</td>
+      <td>40.72</td>
+      <td>-76.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>937.50</td>
+      <td>3 S Prairie Center, AR</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:48:41</td>
+      <td>262</td>
+      <td>Tyler Williams</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 06:08:50</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 06:02:58</td>
+      <td>289</td>
+      <td>Tornado Fajita</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 01:41:50</td>
+      <td>22</td>
+      <td>Earth Central</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 02:29:48</td>
+      <td>119</td>
+      <td>Catherine Opalka</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 10:28:58</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 10:56:35</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 08:41:33</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 00:52:50</td>
+      <td>75</td>
+      <td>Diamond</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 14:13:56</td>
+      <td>150</td>
+      <td>Blake Brink</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 12:23:40</td>
+      <td>88</td>
+      <td>SRRadarLoops</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:06:05</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 13:19:54</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 12:28:35</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:38:54</td>
+      <td>109</td>
+      <td>Jonah Dosedel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:13:40</td>
+      <td>205</td>
+      <td>Gabriel Keller</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:36:59</td>
+      <td>30</td>
+      <td>Sam Romshek</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:52:57</td>
+      <td>42</td>
+      <td>Peter Corman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:54:39</td>
+      <td>127</td>
+      <td>Sam Ritter</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:45:44</td>
+      <td>247</td>
+      <td>Dave Flo</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:50:33</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:59:14</td>
+      <td>140</td>
+      <td>Caleb O’Gara</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-06-12 15:59:24</td>
+      <td>53</td>
+      <td>The Hawk</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

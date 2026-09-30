@@ -1,0 +1,1633 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-03-20 04:49:03</td>
+      <td>135</td>
+      <td>Brix A</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:37:05</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:30:49</td>
+      <td>171</td>
+      <td>Joey Krastel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:27:57</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:25:35</td>
+      <td>70</td>
+      <td>Alex H.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:21:16</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:12:47</td>
+      <td>151</td>
+      <td>CPekar</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:12:23</td>
+      <td>199</td>
+      <td>Jason B</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:10:46</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:08:50</td>
+      <td>75</td>
+      <td>Richard Sample</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:46:37</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:45:15</td>
+      <td>64</td>
+      <td>Baca</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:44:25</td>
+      <td>44</td>
+      <td>Ben Jablonski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:38:25</td>
+      <td>110</td>
+      <td>Ryan Dreeszen</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:33:40</td>
+      <td>112</td>
+      <td>Brennen Round</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:37:03</td>
+      <td>209</td>
+      <td>WeatherboySuper</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:25:30</td>
+      <td>173</td>
+      <td>Chase Brewster</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:20:32</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:20:08</td>
+      <td>230</td>
+      <td>Aaron P</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:18:56</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:14:05</td>
+      <td>136</td>
+      <td>Slim Tatman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:13:27</td>
+      <td>82</td>
+      <td>Jason Gill</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:07:10</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 13:01:13</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:57:22</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:49:05</td>
+      <td>42</td>
+      <td>Nick Krasznavolgyi</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:46:21</td>
+      <td>1</td>
+      <td>Rob</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:41:54</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:35:05</td>
+      <td>120</td>
+      <td>Peter Corman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:39:27</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:37:49</td>
+      <td>133</td>
+      <td>Kevin Mahoney</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:12:35</td>
+      <td>168</td>
+      <td>Steven Bergey</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:58:53</td>
+      <td>141</td>
+      <td>Ethan Treff</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:45:44</td>
+      <td>33</td>
+      <td>MASEWX</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:38:01</td>
+      <td>273</td>
+      <td>ajax13</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:37:25</td>
+      <td>241</td>
+      <td>bowecho7</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:29:29</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:27:24</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:26:14</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:24:08</td>
+      <td>156</td>
+      <td>Uzair Nizami</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:23:00</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:14:05</td>
+      <td>202</td>
+      <td>Cole Sellers</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:09:58</td>
+      <td>67</td>
+      <td>Braxton Banks</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:39:37</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:08:53</td>
+      <td>138</td>
+      <td>Jack Zwolinski</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:05:36</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:04:51</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:00:05</td>
+      <td>182</td>
+      <td>Braydon Songer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:59:29</td>
+      <td>127</td>
+      <td>Matt Wilson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:56:53</td>
+      <td>9</td>
+      <td>B-rice</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:54:51</td>
+      <td>204</td>
+      <td>Andy Wade</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:53:14</td>
+      <td>51</td>
+      <td>Diego Garcia</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:48:58</td>
+      <td>32</td>
+      <td>stfjinkiojd</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:47:13</td>
+      <td>181</td>
+      <td>Kyle Hugeback</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:46:11</td>
+      <td>203</td>
+      <td>Jonah</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:42:47</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:10:05</td>
+      <td>63</td>
+      <td>Caleb O'Gara</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:39:03</td>
+      <td>262</td>
+      <td>Adrian Z</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:33:25</td>
+      <td>153</td>
+      <td>Madisen Lindholm</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 04:35:06</td>
+      <td>258</td>
+      <td>Clint Hendricks IV</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 04:01:48</td>
+      <td>91</td>
+      <td>Colton Flint</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 03:47:36</td>
+      <td>259</td>
+      <td>Anthony Yattoni</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 03:40:07</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 03:32:14</td>
+      <td>214</td>
+      <td>Blake Brink</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 03:21:45</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 03:08:22</td>
+      <td>244</td>
+      <td>wxManSmith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:44:33</td>
+      <td>186</td>
+      <td>Sophie Miller</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:35:21</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:34:55</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:29:57</td>
+      <td>118</td>
+      <td>Charlie L.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:29:28</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:19:56</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 02:15:24</td>
+      <td>264</td>
+      <td>CATHERINE OPALKA</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:55:43</td>
+      <td>201</td>
+      <td>TheBetterDoge</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:50:51</td>
+      <td>76</td>
+      <td>Ezra</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:34:44</td>
+      <td>145</td>
+      <td>Kai Kerkow</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:33:57</td>
+      <td>148</td>
+      <td>August M</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:33:09</td>
+      <td>107</td>
+      <td>Chief Keef</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:28:34</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:18:20</td>
+      <td>229</td>
+      <td>Addison (He1002)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 01:14:41</td>
+      <td>94</td>
+      <td>Matt Petrulli</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:57:05</td>
+      <td>37</td>
+      <td>Brady Lyness</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:45:10</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:36:58</td>
+      <td>275</td>
+      <td>Benjamin Kiel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:14:56</td>
+      <td>84</td>
+      <td>Richard Hammond</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 10:58:28</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:13:06</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:28:33</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 04:24:55</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 04:37:57</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 08:29:31</td>
+      <td>140</td>
+      <td>Veer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:23:14</td>
+      <td>154</td>
+      <td>jbean45</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:24:57</td>
+      <td>14</td>
+      <td>John Massura</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:16:59</td>
+      <td>213</td>
+      <td>Daniel Schwab</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:16:44</td>
+      <td>60</td>
+      <td>WheelieWeather</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:14:49</td>
+      <td>143</td>
+      <td>Jeff Frame</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:11:43</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:06:27</td>
+      <td>149</td>
+      <td>Malachi</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:05:32</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 11:56:22</td>
+      <td>117</td>
+      <td>Andrew Liedtke</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 04:39:03</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 11:22:12</td>
+      <td>134</td>
+      <td>Bryce Casper</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 07:57:04</td>
+      <td>129</td>
+      <td>Kazaki</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 07:30:38</td>
+      <td>8</td>
+      <td>Sekwof</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 07:29:27</td>
+      <td>188</td>
+      <td>Ben Price</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 07:21:23</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:56:21</td>
+      <td>49</td>
+      <td>zonal</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:52:20</td>
+      <td>234</td>
+      <td>Caleb A</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:31:40</td>
+      <td>270</td>
+      <td>timcigar</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:26:05</td>
+      <td>269</td>
+      <td>FlashJPO</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:18:44</td>
+      <td>30</td>
+      <td>Mason C.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:11:14</td>
+      <td>126</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 05:10:34</td>
+      <td>247</td>
+      <td>lindsay</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 04:41:34</td>
+      <td>184</td>
+      <td>Tornado Fajita</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:22:08</td>
+      <td>24</td>
+      <td>Anthony Haberman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>8.00</td>
+      <td>Correct Negative Forecast!</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:48:20</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Hitchcock, OK</td>
+      <td>35.95</td>
+      <td>-98.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-20 14:09:13</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Hydro, OK</td>
+      <td>35.664</td>
+      <td>-98.544</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:46:23</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Chester, OK</td>
+      <td>36.22</td>
+      <td>-98.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-20 12:57:00</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>YesTor</td>
+      <td>Mutual, OK</td>
+      <td>36.23</td>
+      <td>-99.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-03-20 15:41:54</td>
+      <td>137</td>
+      <td>WX_Rome</td>
+      <td>YesTor</td>
+      <td>Refugio, TX</td>
+      <td>28.322861</td>
+      <td>-97.334056</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>29.18929304608279</td>
+      <td>-96.41529628833894</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
