@@ -1,0 +1,771 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Forecaster</th>
+      <th>Time</th>
+      <th>Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WeathermanSam</td>
+      <td>2026-05-21 14:23:55.161317</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.39</td>
+      <td>-103.58</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MysticVortexNerd</td>
+      <td>2026-05-21 15:40:21.599097</td>
+      <td>YesTor</td>
+      <td>Flagler, CO</td>
+      <td>39.29</td>
+      <td>-103.07</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Surely I'll be the only one up north</td>
+      <td>2026-05-21 13:28:44.064583</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.57</td>
+      <td>-103.27</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joseph Patton</td>
+      <td>2026-05-21 15:57:18.309959</td>
+      <td>YesTor</td>
+      <td>Kit Carson, CO</td>
+      <td>38.76</td>
+      <td>-102.79</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Karson</td>
+      <td>2026-05-21 15:59:53.183840</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Always trust the heating axis (d0ss)</td>
+      <td>2026-05-21 15:03:08.374709</td>
+      <td>YesTor</td>
+      <td>La Junta, CO</td>
+      <td>38.01</td>
+      <td>-103.57</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WxDrifter</td>
+      <td>2026-05-21 14:56:15.703967</td>
+      <td>YesTor</td>
+      <td>Seibert, CO</td>
+      <td>39.33</td>
+      <td>-102.87</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CPekar</td>
+      <td>2026-05-21 14:48:57.273656</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jim Franc</td>
+      <td>2026-05-21 14:15:06.921964</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.54</td>
+      <td>-103.14</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah H.</td>
+      <td>2026-05-21 14:02:15.190907</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>The Hawk</td>
+      <td>2026-05-21 15:41:02.370283</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.50</td>
+      <td>-103.15</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Clarence</td>
+      <td>2026-05-21 14:56:17.984754</td>
+      <td>YesTor</td>
+      <td>Arriba, CO</td>
+      <td>39.30</td>
+      <td>-103.29</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Veer</td>
+      <td>2026-05-21 00:12:53.859918</td>
+      <td>YesTor</td>
+      <td>Last Chance, CO</td>
+      <td>39.74</td>
+      <td>-103.59</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Braydon P Songer</td>
+      <td>2026-05-21 14:35:18.836923</td>
+      <td>YesTor</td>
+      <td>S of Arriba, CO</td>
+      <td>39.27</td>
+      <td>-103.27</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Never doubt Colorado! (Gabezwx)</td>
+      <td>2026-05-21 15:58:42.042847</td>
+      <td>YesTor</td>
+      <td>Arriba, CO - Flagler, CO</td>
+      <td>39.30</td>
+      <td>-103.14</td>
+      <td>No</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Heerok Das</td>
+      <td>2026-05-21 15:57:51.172684</td>
+      <td>YesTor</td>
+      <td>Punkin Center, CO</td>
+      <td>38.89</td>
+      <td>-103.52</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Including some terms with a couple of steel firms</td>
+      <td>2026-05-21 12:26:46.742284</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.30</td>
+      <td>-103.16</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jason B</td>
+      <td>2026-05-21 15:51:01.540258</td>
+      <td>YesTor</td>
+      <td>Arriba, CO ish</td>
+      <td>39.57</td>
+      <td>-103.34</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chris Yates</td>
+      <td>2026-05-21 02:57:12.997120</td>
+      <td>YesTor</td>
+      <td>Palmer Divide or Bust</td>
+      <td>39.32</td>
+      <td>-103.44</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kay</td>
+      <td>2026-05-21 13:31:17.339829</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.10</td>
+      <td>-102.63</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>jbean45</td>
+      <td>2026-05-21 15:48:48.526691</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.42</td>
+      <td>-103.04</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bryce Shelton</td>
+      <td>2026-05-21 14:14:51.686130</td>
+      <td>YesTor</td>
+      <td>Limon, Colorado</td>
+      <td>39.38</td>
+      <td>-103.37</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Evan St. Clair</td>
+      <td>2026-05-21 03:35:42.325665</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Paul Austin</td>
+      <td>2026-05-21 15:58:04.409938</td>
+      <td>YesTor</td>
+      <td>Vilas, CO</td>
+      <td>37.38</td>
+      <td>-102.44</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MasDogWx</td>
+      <td>2026-05-21 07:33:13.447009</td>
+      <td>YesTor</td>
+      <td>Genoa, CO</td>
+      <td>39.30</td>
+      <td>-103.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tumbleweed Timmy</td>
+      <td>2026-05-21 14:07:45.076491</td>
+      <td>YesTor</td>
+      <td>S of Thurman, CO(?)</td>
+      <td>39.57</td>
+      <td>-103.22</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cold Core Cowboy</td>
+      <td>2026-05-21 14:30:30.982448</td>
+      <td>YesTor</td>
+      <td>(It's Hedley!) Lamar, CO</td>
+      <td>38.13</td>
+      <td>-102.73</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>I picked the wrong mode</td>
+      <td>2026-05-21 13:45:48.430825</td>
+      <td>YesTor</td>
+      <td>Arriba, CO</td>
+      <td>39.28</td>
+      <td>-103.28</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Texas sucks</td>
+      <td>2026-05-21 15:59:00.942849</td>
+      <td>YesTor</td>
+      <td>Flagler Aerial Spraying Incorporated Airport, CO</td>
+      <td>39.28</td>
+      <td>-103.07</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Logan Giles</td>
+      <td>2026-05-21 15:48:00.434047</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.58</td>
+      <td>-102.77</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>2026-05-21 01:10:35.232894</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.09</td>
+      <td>-102.60</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>George Washington</td>
+      <td>2026-05-21 15:52:23.702248</td>
+      <td>YesTor</td>
+      <td>Flagler, CO</td>
+      <td>39.30</td>
+      <td>-103.07</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Something Something DCVZ Something Something</td>
+      <td>2026-05-21 15:55:53.335762</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.24</td>
+      <td>-103.64</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Garrett Statum</td>
+      <td>2026-05-21 16:00:00.447890</td>
+      <td>YesTor</td>
+      <td>CO Magic?</td>
+      <td>40.61</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>00z HREF MaxUH2-5km&gt;P99.85 Maxima Truthing</td>
+      <td>2026-05-21 07:09:53.245096</td>
+      <td>YesTor</td>
+      <td>Cope, CO</td>
+      <td>39.67</td>
+      <td>-102.85</td>
+      <td>Yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Caleb O'Gara</td>
+      <td>2026-05-21 15:58:16.196985</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.23</td>
+      <td>-103.27</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Gavin Bird</td>
+      <td>2026-05-21 15:19:35.619380</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.39</td>
+      <td>-102.98</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kaylee</td>
+      <td>2026-05-21 08:02:29.673611</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.12</td>
+      <td>-102.72</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Andrew Griffiths</td>
+      <td>2026-05-21 15:58:34.604165</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.24</td>
+      <td>-102.97</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joey Krastel</td>
+      <td>2026-05-21 15:58:46.571878</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>JetStreamJami</td>
+      <td>2026-05-21 15:25:50.442947</td>
+      <td>YesTor</td>
+      <td>Middle of nowhere, CO</td>
+      <td>39.64</td>
+      <td>-102.94</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Roch</td>
+      <td>2026-05-21 15:54:02.236869</td>
+      <td>YesTor</td>
+      <td>Flagler, CO</td>
+      <td>39.32</td>
+      <td>-103.05</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joe Schrantz</td>
+      <td>2026-05-21 14:04:46.785602</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bengalsfan</td>
+      <td>2026-05-21 14:47:58.040659</td>
+      <td>YesTor</td>
+      <td>Kit Carson, Colorado</td>
+      <td>38.76</td>
+      <td>-102.79</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Richard Cirone</td>
+      <td>2026-05-21 14:36:31.641862</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Berg</td>
+      <td>2026-05-21 15:34:05.887025</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Zegery</td>
+      <td>2026-05-21 07:39:46.944798</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Michael Kubinski</td>
+      <td>2026-05-21 15:34:59.420916</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.38</td>
+      <td>-102.62</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wxbill</td>
+      <td>2026-05-21 15:53:18.548802</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.30</td>
+      <td>-103.10</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>colorado magic trust</td>
+      <td>2026-05-21 15:57:52.874149</td>
+      <td>YesTor</td>
+      <td>Kit Carson, CO</td>
+      <td>38.76</td>
+      <td>-102.79</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>AJ Clever</td>
+      <td>2026-05-21 13:26:22.191910</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Adler Hanson</td>
+      <td>2026-05-21 14:52:21.810772</td>
+      <td>YesTor</td>
+      <td>Middle of nowhere, CO</td>
+      <td>39.48</td>
+      <td>-102.98</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>wxManSmith</td>
+      <td>2026-05-21 14:59:20.940777</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.34</td>
+      <td>-102.78</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>When life gives you limons</td>
+      <td>2026-05-21 13:32:16.665060</td>
+      <td>YesTor</td>
+      <td>Limons, CO</td>
+      <td>39.26</td>
+      <td>-103.69</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Earth Central</td>
+      <td>2026-05-21 11:32:15.871001</td>
+      <td>YesTor</td>
+      <td>Lamar, CO</td>
+      <td>38.06</td>
+      <td>-102.64</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Roman Fariello</td>
+      <td>2026-05-21 01:43:11.443586</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.61</td>
+      <td>-103.13</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TreyTwisterWx</td>
+      <td>2026-05-21 14:11:44.042612</td>
+      <td>YesTor</td>
+      <td>Kirk, CO</td>
+      <td>39.58</td>
+      <td>-103.19</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blake Barber</td>
+      <td>2026-05-21 15:37:30.239056</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.75</td>
+      <td>-103.60</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WxDownYonder</td>
+      <td>2026-05-21 04:14:24.313373</td>
+      <td>YesTor</td>
+      <td>Thurman, CO</td>
+      <td>39.60</td>
+      <td>-103.22</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>JavaHurricane</td>
+      <td>2026-05-21 15:47:39.715723</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stephen Szulborski</td>
+      <td>2026-05-21 12:13:32.530194</td>
+      <td>YesTor</td>
+      <td>Eads, CO</td>
+      <td>38.48</td>
+      <td>-102.78</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stormchaser007</td>
+      <td>2026-05-21 14:54:20.885379</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Alexis Severson</td>
+      <td>2026-05-21 14:03:27.304318</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>2026-05-21 14:26:36.672502</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.42</td>
+      <td>-102.77</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>IL WF 69</td>
+      <td>2026-05-21 15:25:37.758836</td>
+      <td>YesTor</td>
+      <td>Deer Trail, CO</td>
+      <td>39.69</td>
+      <td>-103.69</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tobias Leonard</td>
+      <td>2026-05-21 13:08:34.231956</td>
+      <td>YesTor</td>
+      <td>Denver, CO</td>
+      <td>39.65</td>
+      <td>-102.87</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah Dosedel</td>
+      <td>2026-05-21 15:01:55.284292</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>mehsoscale oopsie day?</td>
+      <td>2026-05-21 13:35:36.081502</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.29</td>
+      <td>-103.40</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Josh Schwarz</td>
+      <td>2026-05-21 15:53:05.703208</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.43</td>
+      <td>-102.87</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Quincy Vagell</td>
+      <td>2026-05-21 14:27:26.464033</td>
+      <td>YesTor</td>
+      <td>Limon, CO</td>
+      <td>39.23</td>
+      <td>-103.75</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wyatt Van Dyke</td>
+      <td>2026-05-21 14:42:45.305442</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.67</td>
+      <td>-102.59</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Forecast Consensus</td>
+      <td>Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.21208035334161</td>
+      <td>-103.10114785126993</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.00832049376458</td>
+      <td>-103.0712798290978</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.473507031118245</td>
+      <td>-101.1995317211084</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

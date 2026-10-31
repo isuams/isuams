@@ -1,0 +1,2309 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-04-03 15:20:37.504688</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.48</td>
+      <td>-89.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>9.20</td>
+      <td>ILX, NA</td>
+      <td>62.00</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:44:06.205788</td>
+      <td>#Tor</td>
+      <td>YesTor</td>
+      <td>Goodfield, Ill</td>
+      <td>40.63</td>
+      <td>-89.26</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>19.80</td>
+      <td>3 SW Hopedale, IL</td>
+      <td>32.70</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:28:08.723517</td>
+      <td>ALL THE MARBLES!!!</td>
+      <td>YesTor</td>
+      <td>Glasford, IL</td>
+      <td>40.55</td>
+      <td>-89.82</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>21.40</td>
+      <td>ILX, NA</td>
+      <td>32.20</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:13:21.537293</td>
+      <td>Josh I</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.35</td>
+      <td>-90.01</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>28.50</td>
+      <td>ILX, NA</td>
+      <td>22.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:33:44.023331</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.29</td>
+      <td>-90.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>29.70</td>
+      <td>ILX, NA</td>
+      <td>22.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 04:47:50.436244</td>
+      <td>Cold Core Cowboy</td>
+      <td>YesTor</td>
+      <td>Lewistown, IL (analogs support it)</td>
+      <td>40.43</td>
+      <td>-90.14</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>35.40</td>
+      <td>ILX, NA</td>
+      <td>20.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:20:56.301946</td>
+      <td>timotheedinkins</td>
+      <td>YesTor</td>
+      <td>Canton, IL</td>
+      <td>40.55</td>
+      <td>-89.99</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>29.20</td>
+      <td>ILX, NA</td>
+      <td>18.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:35:12.314877</td>
+      <td>Tristan White</td>
+      <td>YesTor</td>
+      <td>Lewistown, IL</td>
+      <td>40.30</td>
+      <td>-90.19</td>
+      <td>No</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>38.40</td>
+      <td>ILX, NA</td>
+      <td>16.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:37:05.498650</td>
+      <td>Bunger</td>
+      <td>YesTor</td>
+      <td>Clearmont, MO</td>
+      <td>40.52</td>
+      <td>-95.01</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>291.40</td>
+      <td>ILX, NA</td>
+      <td>16.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:59:01.456740</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>35.06</td>
+      <td>-98.26</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>44.50</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>15.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:10:12.987961</td>
+      <td>Michael Kubinski</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.79</td>
+      <td>-89.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>28.00</td>
+      <td>ILX, NA</td>
+      <td>14.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:59:56.166169</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Secor, IL</td>
+      <td>40.74</td>
+      <td>-89.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.70</td>
+      <td>3 SW Hopedale, IL</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 09:00:32.676246</td>
+      <td>WheelieWeather</td>
+      <td>YesTor</td>
+      <td>Kickapoo,Illinois</td>
+      <td>40.79</td>
+      <td>-89.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.10</td>
+      <td>ILX, NA</td>
+      <td>13.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:38:29.314349</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Kickapoo, IL</td>
+      <td>40.79</td>
+      <td>-89.76</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.70</td>
+      <td>ILX, NA</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:30:06.614408</td>
+      <td>Illinois Slabber</td>
+      <td>YesTor</td>
+      <td>ARE THOSE SUBVORTICES?!?!?!?!?!</td>
+      <td>40.56</td>
+      <td>-90.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.30</td>
+      <td>ILX, NA</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:35:05.521818</td>
+      <td>IL WF 69</td>
+      <td>YesTor</td>
+      <td>Farmington, IL</td>
+      <td>40.69</td>
+      <td>-89.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.90</td>
+      <td>ILX, NA</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:01:23.134756</td>
+      <td>Dylan McDermott</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.88</td>
+      <td>-89.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.90</td>
+      <td>ILX, NA</td>
+      <td>13.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:32:46.539144</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Low Point, IL</td>
+      <td>40.87</td>
+      <td>-89.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.10</td>
+      <td>ILX, NA</td>
+      <td>13.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:35:40.326029</td>
+      <td>Weatherdude4</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.40</td>
+      <td>-95.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>294.80</td>
+      <td>ILX, NA</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:51:34.127900</td>
+      <td>Veer</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.74</td>
+      <td>-88.72</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.70</td>
+      <td>3 SW Hopedale, IL</td>
+      <td>10.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:28:33.553549</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>London Mills, IL</td>
+      <td>40.70</td>
+      <td>-90.27</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.00</td>
+      <td>ILX, NA</td>
+      <td>10.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:45:19.265460</td>
+      <td>toefur</td>
+      <td>YesTor</td>
+      <td>Stillwater, OK</td>
+      <td>36.12</td>
+      <td>-97.06</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.20</td>
+      <td>3 WSW Aydelotte, OK</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:34:50.147938</td>
+      <td>Blake brink</td>
+      <td>YesTor</td>
+      <td>Astoria, IL</td>
+      <td>40.23</td>
+      <td>-90.36</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.20</td>
+      <td>ILX, NA</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:58:30.314639</td>
+      <td>deldotdel</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>34.76</td>
+      <td>-97.98</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.90</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:05:20.973556</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Adair, IL</td>
+      <td>40.39</td>
+      <td>-90.48</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.10</td>
+      <td>ILX, NA</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:47:01.110372</td>
+      <td>CG15wx</td>
+      <td>YesTor</td>
+      <td>Adair, Illinois</td>
+      <td>40.41</td>
+      <td>-90.49</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.60</td>
+      <td>ILX, NA</td>
+      <td>9.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:28:07.156752</td>
+      <td>Luke Chapman</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>41.10</td>
+      <td>-89.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.60</td>
+      <td>ILX, NA</td>
+      <td>9.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:54:00.901956</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Industry, IL</td>
+      <td>40.32</td>
+      <td>-90.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58.50</td>
+      <td>ILX, NA</td>
+      <td>8.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:29:30.426621</td>
+      <td>LaBonteWx</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.18</td>
+      <td>-90.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.70</td>
+      <td>ILX, NA</td>
+      <td>7.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:17:52.990085</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Rushville, IL</td>
+      <td>40.13</td>
+      <td>-90.58</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.30</td>
+      <td>ILX, NA</td>
+      <td>7.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:38:50.729950</td>
+      <td>Reilly Dibble</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.68</td>
+      <td>-90.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.50</td>
+      <td>ILX, NA</td>
+      <td>7.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:09:44.228408</td>
+      <td>jumpwx</td>
+      <td>YesTor</td>
+      <td>Rushville, IL</td>
+      <td>40.15</td>
+      <td>-90.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.30</td>
+      <td>ILX, NA</td>
+      <td>7.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:45:07.109259</td>
+      <td>Braxton Banks</td>
+      <td>YesTor</td>
+      <td>Perry, OK</td>
+      <td>36.31</td>
+      <td>-97.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.70</td>
+      <td>3 WSW Aydelotte, OK</td>
+      <td>7.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:00:37.727763</td>
+      <td>WxDownYonder</td>
+      <td>YesTor</td>
+      <td>Macomb, IL</td>
+      <td>40.47</td>
+      <td>-90.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.90</td>
+      <td>ILX, NA</td>
+      <td>7.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:19:04.075963</td>
+      <td>I'm switching from my NoTor, I'm YesTor O'Toole!</td>
+      <td>YesTor</td>
+      <td>Enid, OK</td>
+      <td>36.29</td>
+      <td>-97.89</td>
+      <td>No</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>64.90</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>7.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:47:02.697798</td>
+      <td>TDGWx</td>
+      <td>YesTor</td>
+      <td>Macomb, IL</td>
+      <td>40.43</td>
+      <td>-90.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.00</td>
+      <td>ILX, NA</td>
+      <td>6.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:58:44.296525</td>
+      <td>Spinny Spinny</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.32</td>
+      <td>-90.80</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.90</td>
+      <td>ILX, NA</td>
+      <td>6.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:17:13.225043</td>
+      <td>Never gonna let you donw</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.96</td>
+      <td>-90.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.60</td>
+      <td>ILX, NA</td>
+      <td>5.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:52:43.555740</td>
+      <td>Kachow backHuge</td>
+      <td>YesTor</td>
+      <td>SW of Camden, IL</td>
+      <td>40.11</td>
+      <td>-90.80</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.70</td>
+      <td>ILX, NA</td>
+      <td>5.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 04:07:57.396967</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Kirkwood, IL</td>
+      <td>40.84</td>
+      <td>-90.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>74.20</td>
+      <td>ILX, NA</td>
+      <td>5.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:53:52.638099</td>
+      <td>MysticVortexNerd (Trusting IL?)</td>
+      <td>YesTor</td>
+      <td>Mount Sterling, IL</td>
+      <td>39.99</td>
+      <td>-90.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.90</td>
+      <td>ILX, NA</td>
+      <td>5.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:56:33.137594</td>
+      <td>Yikes</td>
+      <td>YesTor</td>
+      <td>Huntsville, IL</td>
+      <td>40.19</td>
+      <td>-90.86</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>74.70</td>
+      <td>ILX, NA</td>
+      <td>5.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:56:52.048726</td>
+      <td>tailswx</td>
+      <td>YesTor</td>
+      <td>Tennessee, Illinois</td>
+      <td>40.42</td>
+      <td>-90.93</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.50</td>
+      <td>ILX, NA</td>
+      <td>4.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:28:17.729791</td>
+      <td>Joey Krastel</td>
+      <td>YesTor</td>
+      <td>4 N of Kirkwood, IL</td>
+      <td>40.89</td>
+      <td>-90.80</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>77.50</td>
+      <td>ILX, NA</td>
+      <td>4.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:58:48.836692</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Augusta, IL</td>
+      <td>40.24</td>
+      <td>-90.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>79.10</td>
+      <td>ILX, NA</td>
+      <td>4.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:16:24.138338</td>
+      <td>HYBRIDS GALORE (Doss)</td>
+      <td>YesTor</td>
+      <td>Billings, OK</td>
+      <td>36.53</td>
+      <td>-97.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>79.10</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>4.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:07:40.202002</td>
+      <td>Barty-Party</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.28</td>
+      <td>-94.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>282.50</td>
+      <td>ILX, NA</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:32:53.648840</td>
+      <td>Drawablefish</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.53</td>
+      <td>-94.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>275.50</td>
+      <td>ILX, NA</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:03:23.597379</td>
+      <td>AJ Clever</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.58</td>
+      <td>-94.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>277.50</td>
+      <td>ILX, NA</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:34:45.343736</td>
+      <td>Wxbill</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.48</td>
+      <td>-95.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>316.70</td>
+      <td>ILX, NA</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:56:17.681974</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.34</td>
+      <td>-94.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>283.60</td>
+      <td>ILX, NA</td>
+      <td>4.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:56:41.050801</td>
+      <td>Roch</td>
+      <td>YesTor</td>
+      <td>La Prairie, IL</td>
+      <td>40.15</td>
+      <td>-91.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>82.30</td>
+      <td>ILX, NA</td>
+      <td>3.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:26:42.034490</td>
+      <td>JSchrantz</td>
+      <td>YesTor</td>
+      <td>Golden, IL</td>
+      <td>40.11</td>
+      <td>-91.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.90</td>
+      <td>ILX, NA</td>
+      <td>3.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 05:24:14.336409</td>
+      <td>SKEW-T Crusader</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.41</td>
+      <td>-91.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.50</td>
+      <td>ILX, NA</td>
+      <td>2.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:52:17.373146</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Camp Point, IL</td>
+      <td>40.04</td>
+      <td>-91.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.60</td>
+      <td>ILX, NA</td>
+      <td>2.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:24:45.232324</td>
+      <td>WeathermanSam</td>
+      <td>YesTor</td>
+      <td>Liberty, IL</td>
+      <td>39.84</td>
+      <td>-91.05</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.50</td>
+      <td>ILX, NA</td>
+      <td>1.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:56:26.451015</td>
+      <td>EF-Femme</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.26</td>
+      <td>-91.20</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.70</td>
+      <td>ILX, NA</td>
+      <td>1.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:33:05.501182</td>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.17</td>
+      <td>-91.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.30</td>
+      <td>ILX, NA</td>
+      <td>1.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:53:01.410560</td>
+      <td>Stormchaser007</td>
+      <td>YesTor</td>
+      <td>Mendota, IL</td>
+      <td>41.67</td>
+      <td>-88.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.10</td>
+      <td>ILX, NA</td>
+      <td>1.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:40:38.451628</td>
+      <td>TreyTwisterWx</td>
+      <td>YesTor</td>
+      <td>Loraine, IL</td>
+      <td>40.16</td>
+      <td>-91.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>93.20</td>
+      <td>ILX, NA</td>
+      <td>1.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:40:27.450658</td>
+      <td>Cyclone_95</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.06</td>
+      <td>-94.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>279.20</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:53:03.760975</td>
+      <td>Max Archer</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.96</td>
+      <td>-91.33</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>102.40</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:02:57.311651</td>
+      <td>Addison Bramini</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:38:49.220870</td>
+      <td>TheBetterDoge</td>
+      <td>YesTor</td>
+      <td>Gower, MO</td>
+      <td>39.62</td>
+      <td>-94.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>275.40</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:54:08.963849</td>
+      <td>Griffin134</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.89</td>
+      <td>-91.52</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>113.30</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:57:23.799445</td>
+      <td>WxDrifter</td>
+      <td>YesTor</td>
+      <td>Mound City, MO</td>
+      <td>40.13</td>
+      <td>-95.23</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>304.10</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:55:20.024854</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Forestburg, TX</td>
+      <td>33.52</td>
+      <td>-97.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>129.20</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 11:07:33.255588</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Centerville, IA</td>
+      <td>40.74</td>
+      <td>-92.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>179.10</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 06:33:49.950240</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Mount Ayr, IA</td>
+      <td>40.71</td>
+      <td>-94.21</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>249.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 07:23:12.605202</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.59</td>
+      <td>-92.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>166.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:48:27.318477</td>
+      <td>Malachi (trying to bag another tornado) Dees</td>
+      <td>YesTor</td>
+      <td>Kirksville, MO</td>
+      <td>40.22</td>
+      <td>-92.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>164.60</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:38:40.198993</td>
+      <td>RevelWX</td>
+      <td>YesTor</td>
+      <td>Browning Missouri</td>
+      <td>40.03</td>
+      <td>-93.20</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>198.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:25:42.628130</td>
+      <td>RadarDude86</td>
+      <td>YesTor</td>
+      <td>Monticello, IA</td>
+      <td>42.24</td>
+      <td>-91.19</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>155.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 01:12:14.751042</td>
+      <td>Evan St. Clair</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.59</td>
+      <td>-92.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>168.70</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:00:35.672246</td>
+      <td>GregForbesGlasses</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.88</td>
+      <td>-91.45</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.30</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:50:24.382035</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Sanderson, TX</td>
+      <td>30.14</td>
+      <td>-102.39</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>460.00</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:19:33.357327</td>
+      <td>Reid Buchanan</td>
+      <td>YesTor</td>
+      <td>Albany, MO</td>
+      <td>40.25</td>
+      <td>-94.33</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>256.20</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:55:17.337194</td>
+      <td>Scout</td>
+      <td>YesTor</td>
+      <td>Sanderson Texas</td>
+      <td>30.14</td>
+      <td>-102.39</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>459.90</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:26:23.882054</td>
+      <td>ajax13</td>
+      <td>YesTor</td>
+      <td>Harrisonville, MO</td>
+      <td>38.52</td>
+      <td>-94.55</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>248.10</td>
+      <td>5 WNW Little, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:49:36.528240</td>
+      <td>La Plata BNSF Z train</td>
+      <td>YesTor</td>
+      <td>La Plata, MO</td>
+      <td>40.01</td>
+      <td>-92.50</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>161.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:12:24.474458</td>
+      <td>German Aviation</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:56:22.588383</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Coffey, MO</td>
+      <td>40.11</td>
+      <td>-94.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>239.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:41:05.399481</td>
+      <td>Bookworm</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:41:12.630830</td>
+      <td>Jeremy Clarkson</td>
+      <td>YesTor</td>
+      <td>Canton, MO</td>
+      <td>40.14</td>
+      <td>-91.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 05:13:26.719193</td>
+      <td>brix</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:04:57.896461</td>
+      <td>Aaron Derrick</td>
+      <td>YesTor</td>
+      <td>Osceola, IA</td>
+      <td>41.03</td>
+      <td>-93.76</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>228.70</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:57:18.483145</td>
+      <td>I swear if the pre frontals fail me...</td>
+      <td>YesTor</td>
+      <td>Keokuk, IA</td>
+      <td>40.40</td>
+      <td>-91.39</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 02:30:57.081760</td>
+      <td>Pro Camera Dropper</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.47</td>
+      <td>-93.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>185.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:55:08.549230</td>
+      <td>WHAT A DUMP</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.48</td>
+      <td>-93.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>185.60</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:28:10.622783</td>
+      <td>roonski03</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.79</td>
+      <td>-93.83</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>230.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 10:53:42.242346</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:57:56.023517</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.73</td>
+      <td>-91.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>119.60</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 06:34:36.840253</td>
+      <td>Dylan Crittle</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>38.60</td>
+      <td>-91.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>174.70</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 10:14:32.990126</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Agency, IA</td>
+      <td>41.00</td>
+      <td>-92.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>154.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 07:36:05.821606</td>
+      <td>Tyler Williams</td>
+      <td>YesTor</td>
+      <td>Kirksville, MO</td>
+      <td>40.19</td>
+      <td>-92.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>164.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 08:24:04.365599</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.14</td>
+      <td>-93.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>235.40</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 01:41:36.311824</td>
+      <td>real veer (IOWA WILL NOT FAIL ME AGAIN)</td>
+      <td>YesTor</td>
+      <td>Agency, IA</td>
+      <td>40.99</td>
+      <td>-92.31</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>154.20</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:05:08.741268</td>
+      <td>Somewhere around there IDK</td>
+      <td>YesTor</td>
+      <td>Intersection of IA 2 and 40th St. (Wayne Co. IA)</td>
+      <td>40.76</td>
+      <td>-93.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>212.90</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:44:44.857108</td>
+      <td>Tripping My Point</td>
+      <td>YesTor</td>
+      <td>Akron, MO</td>
+      <td>40.53</td>
+      <td>-93.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>229.90</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:20:48.678639</td>
+      <td>Jonah (I love slop!)</td>
+      <td>YesTor</td>
+      <td>Knob Noster, MO</td>
+      <td>38.77</td>
+      <td>-93.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>244.10</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:09:34.308757</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.45</td>
+      <td>-92.83</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>176.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:49:45.200745</td>
+      <td>Damon Lemke</td>
+      <td>YesTor</td>
+      <td>Ewing</td>
+      <td>39.99</td>
+      <td>-91.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>122.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:45:17.784026</td>
+      <td>ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</td>
+      <td>YesTor</td>
+      <td>I don't know anymore</td>
+      <td>39.97</td>
+      <td>-91.95</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>133.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 09:02:14.822466</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.33</td>
+      <td>-93.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>198.70</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:29:16.384724</td>
+      <td>Berg</td>
+      <td>YesTor</td>
+      <td>Trenton, MO</td>
+      <td>40.08</td>
+      <td>-93.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>220.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:14:32.443710</td>
+      <td>Zegery</td>
+      <td>YesTor</td>
+      <td>Cameron, MO</td>
+      <td>39.74</td>
+      <td>-94.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>256.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 06:31:21.876970</td>
+      <td>SLOP</td>
+      <td>YesTor</td>
+      <td>Sullivan</td>
+      <td>38.22</td>
+      <td>-91.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>175.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:01:59.524048</td>
+      <td>gambling</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.19</td>
+      <td>-92.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>164.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 11:06:03.034495</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Barnard, MO</td>
+      <td>40.15</td>
+      <td>-94.82</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>282.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:28:35.126135</td>
+      <td>Bengalsfan</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-04-03 02:25:57.381834</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.58</td>
+      <td>-93.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>224.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:19:14.872877</td>
+      <td>Alex Honeycutt (I see you)</td>
+      <td>YesTor</td>
+      <td>SW Sanderson TX</td>
+      <td>29.98</td>
+      <td>-102.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>473.80</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:09:55.711371</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Hillsboro, IA</td>
+      <td>40.79</td>
+      <td>-91.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120.10</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:48:30.137669</td>
+      <td>Alexander Hunt</td>
+      <td>YesTor</td>
+      <td>Corydon, IA</td>
+      <td>40.76</td>
+      <td>-93.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>207.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 11:35:39.032227</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Columbia, MO</td>
+      <td>38.97</td>
+      <td>-92.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>178.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:05:43.975249</td>
+      <td>WeatherboySuper</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.48</td>
+      <td>-93.01</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>186.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:53:45.339141</td>
+      <td>three ingredients method</td>
+      <td>YesTor</td>
+      <td>Raymore, MO</td>
+      <td>38.80</td>
+      <td>-94.46</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>267.60</td>
+      <td>5 WNW Little, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 04:00:05.307976</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Leon, IA</td>
+      <td>40.73</td>
+      <td>-93.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>225.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:54:29.609659</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Van Wert, IA</td>
+      <td>40.87</td>
+      <td>-93.79</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>228.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 07:51:41.565513</td>
+      <td>Hydramane</td>
+      <td>YesTor</td>
+      <td>Bloomfield, IA</td>
+      <td>40.75</td>
+      <td>-92.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>156.40</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:52:13.021255</td>
+      <td>Alex N.</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.71</td>
+      <td>-91.56</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>112.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:03:47.058285</td>
+      <td>wxManSmith</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.71</td>
+      <td>-94.40</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>259.90</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:52:08.419945</td>
+      <td>Trevor Beavers</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.74</td>
+      <td>-93.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>225.90</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:18:33.907154</td>
+      <td>Imperator Must von Busterbaum III</td>
+      <td>YesTor</td>
+      <td>Sewal, IA</td>
+      <td>40.64</td>
+      <td>-93.26</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>199.70</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:16:54.386302</td>
+      <td>the vision</td>
+      <td>YesTor</td>
+      <td>Sanderson TX</td>
+      <td>30.14</td>
+      <td>-102.40</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>460.00</td>
+      <td>6 W Valley Brook, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:35:43.939591</td>
+      <td>Blake Barber</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.34</td>
+      <td>-94.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>262.60</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:12:32.003592</td>
+      <td>Mrcop</td>
+      <td>YesTor</td>
+      <td>Butler,MO</td>
+      <td>38.21</td>
+      <td>-94.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>239.80</td>
+      <td>5 WNW Little, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:29:01.331108</td>
+      <td>im tired of this slop grandpa</td>
+      <td>YesTor</td>
+      <td>Seymour, IA</td>
+      <td>40.69</td>
+      <td>-93.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>189.90</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:38:35.488423</td>
+      <td>Vince</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.89</td>
+      <td>-92.20</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>148.20</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:27:24.219271</td>
+      <td>Dave Gagliano</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.05</td>
+      <td>-94.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>246.10</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:19:52.005779</td>
+      <td>No Forecasters are Greater than Singh.</td>
+      <td>YesTor</td>
+      <td>Princeton MO</td>
+      <td>40.40</td>
+      <td>-93.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>216.20</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:39:09.128316</td>
+      <td>Bridge</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.39</td>
+      <td>-91.37</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.10</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 14:55:09.501066</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Ottumwa, Iowa</td>
+      <td>40.89</td>
+      <td>-92.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>162.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 12:48:14.852131</td>
+      <td>Joey Beachel</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.82</td>
+      <td>-92.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>172.00</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:55:22.489930</td>
+      <td>who wants sloppy joes?</td>
+      <td>YesTor</td>
+      <td>Chariton IA</td>
+      <td>41.02</td>
+      <td>-93.31</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>205.60</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:52:59.558618</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Exline, IA</td>
+      <td>40.65</td>
+      <td>-92.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>177.80</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 13:22:50.802172</td>
+      <td>Wyatt Van Dyke</td>
+      <td>YesTor</td>
+      <td>Exline, IA</td>
+      <td>40.65</td>
+      <td>-92.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>177.90</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:58:54.488978</td>
+      <td>CaprisunWx</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.95</td>
+      <td>-92.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>163.30</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-04-03 15:12:35.941777</td>
+      <td>Kieran MG</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>40.74</td>
+      <td>-93.80</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>228.40</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>39.79</td>
+      <td>-92.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>178.50</td>
+      <td>ILX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>37.66</td>
+      <td>-94.25</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>209.70</td>
+      <td>5 WNW Little, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.59</td>
+      <td>-94.88</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>244.10</td>
+      <td>5 WNW Little, OK</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

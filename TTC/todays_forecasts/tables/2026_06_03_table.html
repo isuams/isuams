@@ -1,0 +1,671 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Forecaster</th>
+      <th>Time</th>
+      <th>Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Colin Young</td>
+      <td>2026-06-03 09:01:05.206273</td>
+      <td>YesTor</td>
+      <td>Webster, SD</td>
+      <td>45.39</td>
+      <td>-97.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Seneca, SD</td>
+      <td>2026-06-03 13:32:29.250076</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.06</td>
+      <td>-99.51</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Karson</td>
+      <td>2026-06-03 15:03:28.149606</td>
+      <td>YesTor</td>
+      <td>Redfield, SD</td>
+      <td>44.88</td>
+      <td>-98.53</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Deviants we ride (D0ss)</td>
+      <td>2026-06-03 13:50:25.287874</td>
+      <td>YesTor</td>
+      <td>Ideal, SD</td>
+      <td>43.54</td>
+      <td>-99.92</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WxDrifter</td>
+      <td>2026-06-03 15:59:42.284869</td>
+      <td>YesTor</td>
+      <td>Dixon, SD</td>
+      <td>43.39</td>
+      <td>-99.47</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CPekar</td>
+      <td>2026-06-03 14:02:20.688375</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.66</td>
+      <td>-97.10</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Sal</td>
+      <td>2026-06-03 15:59:47.025125</td>
+      <td>YesTor</td>
+      <td>Miller, SD</td>
+      <td>44.32</td>
+      <td>-99.06</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jim Franc</td>
+      <td>2026-06-03 13:56:04.422858</td>
+      <td>YesTor</td>
+      <td>Glendale Twp., SD</td>
+      <td>44.30</td>
+      <td>-99.12</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah (HRRR-casting)</td>
+      <td>2026-06-03 13:37:46.335303</td>
+      <td>YesTor</td>
+      <td>Frankfort, SD</td>
+      <td>44.88</td>
+      <td>-98.31</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>The Hawk</td>
+      <td>2026-06-03 15:54:27.859177</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.19</td>
+      <td>-98.65</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Crossover Plot Marks the Spot</td>
+      <td>2026-06-03 13:18:38.292652</td>
+      <td>YesTor</td>
+      <td>Burkmere, SD</td>
+      <td>44.99</td>
+      <td>-99.26</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Veer (idk atp)</td>
+      <td>2026-06-03 15:55:07.141345</td>
+      <td>YesTor</td>
+      <td>Cresbard, SD</td>
+      <td>45.17</td>
+      <td>-98.95</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Braydon P Songer</td>
+      <td>2026-06-03 15:47:50.041255</td>
+      <td>YesTor</td>
+      <td>Aberdeen, SD</td>
+      <td>45.45</td>
+      <td>-98.50</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>South Dakota Magic (gabezwx)</td>
+      <td>2026-06-03 14:35:28.872296</td>
+      <td>YesTor</td>
+      <td>Brentford, SD</td>
+      <td>45.17</td>
+      <td>-98.32</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Heerok Das</td>
+      <td>2026-06-03 08:30:38.077588</td>
+      <td>YesTor</td>
+      <td>Wessington Springs, SD</td>
+      <td>44.14</td>
+      <td>-98.57</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>As the winds of November came slashing</td>
+      <td>2026-06-03 12:23:03.696985</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.28</td>
+      <td>-98.94</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Chris Yates</td>
+      <td>2026-06-03 06:14:14.237971</td>
+      <td>YesTor</td>
+      <td>Leola, SD</td>
+      <td>45.65</td>
+      <td>-98.91</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kay</td>
+      <td>2026-06-03 15:29:43.057310</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.44</td>
+      <td>-98.48</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Barty-Party</td>
+      <td>2026-06-03 15:26:37.405911</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>48.84</td>
+      <td>-97.64</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>jbean45</td>
+      <td>2026-06-03 15:58:38.291929</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.37</td>
+      <td>-99.08</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bryce Shelton</td>
+      <td>2026-06-03 15:31:23.456444</td>
+      <td>YesTor</td>
+      <td>Chamberlain, South Dakota</td>
+      <td>43.62</td>
+      <td>-99.59</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Evan St. Clair</td>
+      <td>2026-06-03 03:55:44.840984</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.81</td>
+      <td>-98.83</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Paul Austin</td>
+      <td>2026-06-03 15:39:21.340073</td>
+      <td>YesTor</td>
+      <td>Brentford, SD</td>
+      <td>45.17</td>
+      <td>-98.39</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Kyle Hugeback</td>
+      <td>2026-06-03 15:59:44.559447</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>43.42</td>
+      <td>-99.72</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cavalier, ND</td>
+      <td>2026-06-03 15:36:24.133862</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>48.82</td>
+      <td>-97.58</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>In RRFS we trust (Nick M)</td>
+      <td>2026-06-03 14:44:04.489163</td>
+      <td>YesTor</td>
+      <td>W of Aberdeen, SD</td>
+      <td>45.46</td>
+      <td>-98.79</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5 hatch? Again?</td>
+      <td>2026-06-03 16:00:21.547113</td>
+      <td>YesTor</td>
+      <td>Aberdeen, SD</td>
+      <td>45.44</td>
+      <td>-98.53</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>George cooper</td>
+      <td>2026-06-03 13:01:34.830264</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.94</td>
+      <td>-97.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sebastian Pelt</td>
+      <td>2026-06-03 13:51:23.524177</td>
+      <td>YesTor</td>
+      <td>Mansfield, ND</td>
+      <td>45.26</td>
+      <td>-98.58</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>John Tyler (CG15Wx)</td>
+      <td>2026-06-03 15:49:59.012990</td>
+      <td>YesTor</td>
+      <td>Near Cresbard, SD</td>
+      <td>45.16</td>
+      <td>-98.89</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Garrett Statum</td>
+      <td>2026-06-03 15:46:25.079799</td>
+      <td>YesTor</td>
+      <td>Huron, SD</td>
+      <td>44.35</td>
+      <td>-98.24</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BabbWx</td>
+      <td>2026-06-03 07:42:25.888754</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>43.41</td>
+      <td>-99.88</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Caleb O'Gara</td>
+      <td>2026-06-03 13:07:31.614737</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.07</td>
+      <td>-96.97</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Gavin Bird</td>
+      <td>2026-06-03 14:15:55.887687</td>
+      <td>YesTor</td>
+      <td>N of Highmore, SD</td>
+      <td>44.68</td>
+      <td>-99.44</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>AMES, South Dakota</td>
+      <td>2026-06-03 05:41:03.630693</td>
+      <td>YesTor</td>
+      <td>Dakata Field</td>
+      <td>44.27</td>
+      <td>-99.05</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ajax13</td>
+      <td>2026-06-03 13:45:42.171368</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>42.82</td>
+      <td>-99.94</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>JetStreamJami</td>
+      <td>2026-06-03 15:52:08.203406</td>
+      <td>YesTor</td>
+      <td>White River, SD</td>
+      <td>43.46</td>
+      <td>-100.45</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Joe Schrantz</td>
+      <td>2026-06-03 15:41:53.068423</td>
+      <td>YesTor</td>
+      <td>Powell Township, SD</td>
+      <td>45.29</td>
+      <td>-99.03</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Richard Cirone</td>
+      <td>2026-06-03 14:18:25.145090</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wxbill</td>
+      <td>2026-06-03 13:17:48.523056</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.11</td>
+      <td>-98.88</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mophie Siller</td>
+      <td>2026-06-03 15:12:51.390978</td>
+      <td>YesTor</td>
+      <td>Miller, SD (omg guys my last name)</td>
+      <td>44.52</td>
+      <td>-98.80</td>
+      <td>Yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Adler Hanson</td>
+      <td>2026-06-03 15:57:56.431773</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hoang Do</td>
+      <td>2026-06-03 12:37:32.983390</td>
+      <td>YesTor</td>
+      <td>Warner, SD</td>
+      <td>45.32</td>
+      <td>-98.53</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Olivia Macko</td>
+      <td>2026-06-03 08:09:04.895912</td>
+      <td>YesTor</td>
+      <td>Ellendale, ND</td>
+      <td>46.00</td>
+      <td>-98.53</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Earth Central</td>
+      <td>2026-06-03 13:56:36.167925</td>
+      <td>YesTor</td>
+      <td>Aberdeen, SD</td>
+      <td>45.45</td>
+      <td>-98.52</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Roman Fariello</td>
+      <td>2026-06-03 15:13:07.435449</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>43.48</td>
+      <td>-99.84</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blake Barber</td>
+      <td>2026-06-03 15:36:20.823583</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.46</td>
+      <td>-98.70</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Random Noodle</td>
+      <td>2026-06-03 13:45:53.520579</td>
+      <td>YesTor</td>
+      <td>Groton, SD</td>
+      <td>45.45</td>
+      <td>-98.10</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Luke Chapman</td>
+      <td>2026-06-03 15:24:07.503255</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>43.41</td>
+      <td>-100.33</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stephen Szulborski</td>
+      <td>2026-06-03 12:18:18.489081</td>
+      <td>YesTor</td>
+      <td>Gettysburg, SD</td>
+      <td>45.01</td>
+      <td>-99.95</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>timcigar</td>
+      <td>2026-06-03 14:37:55.095123</td>
+      <td>YesTor</td>
+      <td>Barnard, SD</td>
+      <td>45.73</td>
+      <td>-98.50</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Tis nearly Bonita(Jacob.S)</td>
+      <td>2026-06-03 14:48:12.515918</td>
+      <td>YesTor</td>
+      <td>Bonilla, SD</td>
+      <td>44.67</td>
+      <td>-98.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Donovan Fry</td>
+      <td>2026-06-03 13:27:25.174215</td>
+      <td>YesTor</td>
+      <td>Zell, SD</td>
+      <td>44.90</td>
+      <td>-98.74</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Alexis Severson</td>
+      <td>2026-06-03 14:35:18.624764</td>
+      <td>YesTor</td>
+      <td>Faulkton, SD</td>
+      <td>45.03</td>
+      <td>-99.13</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>2026-06-03 15:33:24.333470</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.42</td>
+      <td>-97.64</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>IL WF 69</td>
+      <td>2026-06-03 15:49:56.789631</td>
+      <td>YesTor</td>
+      <td>Kimball, SD</td>
+      <td>43.69</td>
+      <td>-98.96</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>The only notable town in the 5% according to SPC</td>
+      <td>2026-06-03 15:42:46.175808</td>
+      <td>YesTor</td>
+      <td>Aberdeen, SD</td>
+      <td>45.46</td>
+      <td>-98.47</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DaveFlo</td>
+      <td>2026-06-03 13:41:02.415308</td>
+      <td>YesTor</td>
+      <td>Aberdeen, SD</td>
+      <td>45.45</td>
+      <td>-98.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ghostfox1</td>
+      <td>2026-06-03 15:39:55.932825</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.58</td>
+      <td>-98.42</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Josh Schwarz</td>
+      <td>2026-06-03 15:18:02.755085</td>
+      <td>YesTor</td>
+      <td>Seneca, SD</td>
+      <td>45.07</td>
+      <td>-99.51</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Quincy Vagell</td>
+      <td>2026-06-03 03:09:09.104299</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Forecast Consensus</td>
+      <td>Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.97896939474878</td>
+      <td>-98.79597793532623</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.85419109897205</td>
+      <td>-98.7744320699626</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.12460316975297</td>
+      <td>-98.51304033701271</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

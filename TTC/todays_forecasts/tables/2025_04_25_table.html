@@ -1,0 +1,1682 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Number</th>
+      <th>Option</th>
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>273</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:23:18</td>
+      <td>Nick Markus</td>
+      <td>Turkey, TX</td>
+      <td>34.402</td>
+      <td>-100.89</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:44:15</td>
+      <td>Silverton, TX pt. 3 June 2nd, 2024 LEVEL UPx2!!!</td>
+      <td>Roaring Springs, TX</td>
+      <td>33.9430398</td>
+      <td>-100.8978917</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>YesTor</td>
+      <td>2025-04-25 03:29:50</td>
+      <td>Chris Yates</td>
+      <td>Spring Lake, TX</td>
+      <td>34.23</td>
+      <td>-102.3</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>YesTor</td>
+      <td>2025-04-25 10:54:25</td>
+      <td>:3</td>
+      <td>Plainview, TX</td>
+      <td>34.171</td>
+      <td>-101.7224</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:04:50</td>
+      <td>Quincy Vagell</td>
+      <td>Tulia, TX</td>
+      <td>34.4197</td>
+      <td>-101.5268</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>NoTor</td>
+      <td>2025-04-25 02:53:44</td>
+      <td>Lucas Hanna</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>284</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:28:29</td>
+      <td>Matthew Teare</td>
+      <td>Tulia, TX</td>
+      <td>34.44</td>
+      <td>-101.77</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>NoTor</td>
+      <td>2025-04-25 04:04:43</td>
+      <td>Lucas Reynolds</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>NoTor</td>
+      <td>2025-04-25 04:13:11</td>
+      <td>Lauren Bader</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:17:54</td>
+      <td>Colton Flint</td>
+      <td>Aiken, TX</td>
+      <td>34.2582</td>
+      <td>-101.5183</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>216</td>
+      <td>YesTor</td>
+      <td>2025-04-25 04:55:39</td>
+      <td>Veer (here we go again boys)</td>
+      <td>Hart Camp, TX</td>
+      <td>34.0266</td>
+      <td>-102.1536</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>YesTor</td>
+      <td>2025-04-25 05:54:51</td>
+      <td>Jeffrey Robert Laymon</td>
+      <td>Matador, TX</td>
+      <td>34.01</td>
+      <td>-100.82</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>YesTor</td>
+      <td>2025-04-25 06:08:33</td>
+      <td>J.M.M.</td>
+      <td>Tulia, TX</td>
+      <td>34.536</td>
+      <td>-101.7767</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>NoTor</td>
+      <td>2025-04-25 06:08:51</td>
+      <td>PR1TP@L</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>YesTor</td>
+      <td>2025-04-25 06:10:35</td>
+      <td>N. Singh</td>
+      <td>Dumas, TX</td>
+      <td>35.8648</td>
+      <td>-101.9659</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>280</td>
+      <td>YesTor</td>
+      <td>2025-04-25 06:20:28</td>
+      <td>Alex Hamilton</td>
+      <td>Panhandle, TX</td>
+      <td>35.3379</td>
+      <td>-101.3827</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:38:11</td>
+      <td>brix</td>
+      <td>Kress, TX</td>
+      <td>34.3669</td>
+      <td>-101.7501</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>230</td>
+      <td>YesTor</td>
+      <td>2025-04-25 06:42:09</td>
+      <td>Hoang Do</td>
+      <td>Hale Center, TX</td>
+      <td>34.0458</td>
+      <td>-101.8335</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>296</td>
+      <td>YesTor</td>
+      <td>2025-04-25 08:33:29</td>
+      <td>Cap Rock Magic</td>
+      <td>Edmonson, TX</td>
+      <td>34.26</td>
+      <td>-101.93</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td>YesTor</td>
+      <td>2025-04-25 08:35:52</td>
+      <td>Mas (I love mesoscale events) DogWx</td>
+      <td>Edmonson, TX</td>
+      <td>34.30054</td>
+      <td>-101.9407</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>NoTor</td>
+      <td>2025-04-25 09:35:29</td>
+      <td>Eliot Morrow</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>YesTor</td>
+      <td>2025-04-25 10:42:02</td>
+      <td>General Java</td>
+      <td>Lubbock, TX</td>
+      <td>33.25</td>
+      <td>-101.79</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>283</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:03:07</td>
+      <td>Sebastian Pelt</td>
+      <td>Lockney, TX</td>
+      <td>34.13</td>
+      <td>-101.53</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>NoTor</td>
+      <td>2025-04-25 11:19:35</td>
+      <td>CloudsterWx</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:38:32</td>
+      <td>Bengalsfan</td>
+      <td>South Plains, TX</td>
+      <td>34.2214432</td>
+      <td>-101.3041771</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:06:03</td>
+      <td>maybe K*rk</td>
+      <td>Dimmit, Texas</td>
+      <td>34.5114569</td>
+      <td>-102.26972</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:26:58</td>
+      <td>Jacob G</td>
+      <td>Anton, TX</td>
+      <td>33.9445</td>
+      <td>-102.0973</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:35:51</td>
+      <td>Ghostfox1</td>
+      <td>Plainview tx</td>
+      <td>34.1855</td>
+      <td>-101.7294</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>291</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:40:32</td>
+      <td>Andrew Griffiths</td>
+      <td>Tulia, TX</td>
+      <td>34.45</td>
+      <td>-101.76</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:44:55</td>
+      <td>Caleb Simms</td>
+      <td>Lubbock, TX</td>
+      <td>33.57</td>
+      <td>-101.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:47:33</td>
+      <td>Caleb K</td>
+      <td>Spur, TX</td>
+      <td>33.5</td>
+      <td>-100.86</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>290</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:56:47</td>
+      <td>had to drop south now (doss)</td>
+      <td>Reese Center, TX</td>
+      <td>33.58282291</td>
+      <td>-102.0906534</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:51:53</td>
+      <td>Stephen Szulborski</td>
+      <td>Tulia, TX</td>
+      <td>34.53</td>
+      <td>-101.76</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>265</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:54:08</td>
+      <td>Logan Giles</td>
+      <td>Lorenzo, TX</td>
+      <td>33.66</td>
+      <td>-101.62</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:57:03</td>
+      <td>Gio</td>
+      <td>Tulia, TX</td>
+      <td>34.522069</td>
+      <td>-101.761501</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>YesTor</td>
+      <td>2025-04-25 12:57:28</td>
+      <td>Colin Young</td>
+      <td>KLBB, TX</td>
+      <td>33.654135</td>
+      <td>-101.814082</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>278</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:07:06</td>
+      <td>Kelly Rose</td>
+      <td>Pampa, TX</td>
+      <td>35.5331</td>
+      <td>-100.9671</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:12:58</td>
+      <td>3CapeTruther</td>
+      <td>Nazareth, TX</td>
+      <td>34.559</td>
+      <td>-101.971</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:18:38</td>
+      <td>Adrian Z.</td>
+      <td>Roydala, TX</td>
+      <td>33.8887</td>
+      <td>-101.51</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:18:56</td>
+      <td>Gabe Zago</td>
+      <td>Aiken, TX</td>
+      <td>34.1839586</td>
+      <td>-101.5740538</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:58:21</td>
+      <td>GodMosses</td>
+      <td>Brownfield, TX</td>
+      <td>33.11</td>
+      <td>-102.35</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:21:19</td>
+      <td>SRRadarLoops</td>
+      <td></td>
+      <td>34.4386</td>
+      <td>-101.7828</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:58:32</td>
+      <td>German Aviation</td>
+      <td>Tahoka, TX</td>
+      <td>33.16</td>
+      <td>-101.79</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:25:01</td>
+      <td>simbasad2</td>
+      <td>lubbock tx</td>
+      <td>33.58</td>
+      <td>-101.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:28:52</td>
+      <td>Nicholas Kniprath</td>
+      <td>Kress, TX</td>
+      <td>34.37</td>
+      <td>-101.75</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>226</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:37:06</td>
+      <td>I would be in Salt Lake City if I wasn't a COWARD</td>
+      <td>Levelland TX</td>
+      <td>33.5844</td>
+      <td>-102.3665</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:44:20</td>
+      <td>Samuel G</td>
+      <td>Plainview, TX</td>
+      <td>34.05</td>
+      <td>-101.653</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:47:58</td>
+      <td>Damon Lemke</td>
+      <td>Ralls, TX</td>
+      <td>33.8</td>
+      <td>-101.28</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:48:42</td>
+      <td>Clarence Smith</td>
+      <td>Kress, TX</td>
+      <td>34.38</td>
+      <td>-101.6</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>282</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:49:31</td>
+      <td>Bill Gallus</td>
+      <td>Tulia, TX</td>
+      <td>34.53</td>
+      <td>-101.76</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:54:15</td>
+      <td>DestroyerXII</td>
+      <td>Tulia, TX</td>
+      <td>34.61</td>
+      <td>-101.64</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:55:41</td>
+      <td>Nemo</td>
+      <td>N/A</td>
+      <td>34.2283</td>
+      <td>-100.8953</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>YesTor</td>
+      <td>2025-04-25 13:56:26</td>
+      <td>Tails Wx</td>
+      <td>Lockney, TX</td>
+      <td>34.0297</td>
+      <td>-101.5144</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:01:48</td>
+      <td>Blake Brink</td>
+      <td>Plainview, TX</td>
+      <td>34.187905</td>
+      <td>-101.750946</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>297</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:07:25</td>
+      <td>Joshua Intini</td>
+      <td>Edmondson, TX</td>
+      <td>34.301133</td>
+      <td>-101.903065</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>286</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:07:52</td>
+      <td>Joe Schrantz</td>
+      <td>Heckville, TX</td>
+      <td>33.75</td>
+      <td>-101.67</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>313</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:08:57</td>
+      <td>Olivia Macko</td>
+      <td>Anton, TX</td>
+      <td>33.85</td>
+      <td>-102.15</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:09:04</td>
+      <td>JetStreamJami</td>
+      <td>Floydada, TX</td>
+      <td>34.12</td>
+      <td>-101.28</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:13:17</td>
+      <td>Roman Fariello</td>
+      <td>Dickens, TX</td>
+      <td>33.621605</td>
+      <td>-100.838426</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:14:04</td>
+      <td>Tobias Leonard</td>
+      <td>Turkey, TX</td>
+      <td>34.4</td>
+      <td>-100.89</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>319</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:17:29</td>
+      <td>Reid Buchanan</td>
+      <td>Plainview, TX</td>
+      <td>34.1849</td>
+      <td>-101.7101</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>195</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:24:24</td>
+      <td>Joey Beachel</td>
+      <td>Silverton, TX</td>
+      <td>34.48</td>
+      <td>-101.52</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:25:55</td>
+      <td>Shadow</td>
+      <td>Vigo Park, TX</td>
+      <td>34.66</td>
+      <td>-101.51</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:31:07</td>
+      <td>TDGWx</td>
+      <td>New Deal, TX</td>
+      <td>33.73</td>
+      <td>-101.84</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:32:58</td>
+      <td>Heerok Das</td>
+      <td>KLBB</td>
+      <td>33.67</td>
+      <td>-101.82</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>262</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:35:02</td>
+      <td>Tyler Williams</td>
+      <td>Lubbock, TX</td>
+      <td>33.564735</td>
+      <td>-101.877793</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:36:11</td>
+      <td>Jim Franc</td>
+      <td>Roundup, TX</td>
+      <td>33.72</td>
+      <td>-102.17</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:36:34</td>
+      <td>Garrett Statum</td>
+      <td>Kress, TX</td>
+      <td>34.369</td>
+      <td>-101.794</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:37:46</td>
+      <td>Kevin Mahoney</td>
+      <td>Littlefield, TX</td>
+      <td>33.9226</td>
+      <td>-102.2249</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>219</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:39:35</td>
+      <td>ain't no way im ever going no tor again</td>
+      <td>Lubbock, TX</td>
+      <td>33.58</td>
+      <td>-101.85</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:40:20</td>
+      <td>Benjamin Kiel</td>
+      <td>SW of Caprock Canyons, HWY 86, TX</td>
+      <td>34.4</td>
+      <td>-101.13</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:44:21</td>
+      <td>William Samson</td>
+      <td>Lubbock, TX</td>
+      <td>33.48</td>
+      <td>-101.96</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:45:45</td>
+      <td>Anthony Haberman</td>
+      <td>South Plains, TX</td>
+      <td>34.224444</td>
+      <td>-101.309722</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:50:40</td>
+      <td>Trey Fulbright</td>
+      <td>Littlefield, TX</td>
+      <td>34.02</td>
+      <td>-102.15</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:51:47</td>
+      <td>Karson</td>
+      <td>Lockney, TX</td>
+      <td>34.12</td>
+      <td>-101.46</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:52:06</td>
+      <td>Braeden Winters</td>
+      <td>2 S Lockney, TX</td>
+      <td>34.091</td>
+      <td>-101.4363</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:54:31</td>
+      <td>First time forecasting in a week!</td>
+      <td>Claredon, TX</td>
+      <td>34.8439</td>
+      <td>-100.8825</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:17:33</td>
+      <td>Ethan Kerr</td>
+      <td>Lockney, TX</td>
+      <td>34.12</td>
+      <td>-101.44</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:56:16</td>
+      <td>Alexander Hunt</td>
+      <td>SE of Amarillo, TX</td>
+      <td>35.084</td>
+      <td>-101.4785</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>292</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:57:19</td>
+      <td>Brandon Black</td>
+      <td>Tulia, TX</td>
+      <td>34.5405</td>
+      <td>-101.7742</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:58:09</td>
+      <td>Nicholas Snider</td>
+      <td>Earth, TX</td>
+      <td>34.28</td>
+      <td>-102.48</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:58:10</td>
+      <td>Richard Cirone</td>
+      <td>Snyder, TX</td>
+      <td>32.7443</td>
+      <td>-101.0079</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>YesTor</td>
+      <td>2025-04-25 14:59:19</td>
+      <td>Alex Honeycutt</td>
+      <td>Silverton, TX</td>
+      <td>34.53</td>
+      <td>-101.2</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:01:46</td>
+      <td>Asher Malaschak</td>
+      <td>Matador, TX</td>
+      <td>34.02</td>
+      <td>-100.82</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>180</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:02:22</td>
+      <td>Dom Dragon</td>
+      <td>Silverton, TX</td>
+      <td>34.36</td>
+      <td>-101.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:02:52</td>
+      <td>Joey Krastel</td>
+      <td>7 SE Floydada, TX</td>
+      <td>33.91133</td>
+      <td>-101.28436</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:05:08</td>
+      <td>WxDownYonder</td>
+      <td>Hale Center, TX</td>
+      <td>34.0504257</td>
+      <td>-101.8526018</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:06:12</td>
+      <td>Gavin Bird</td>
+      <td>Plainview, TX</td>
+      <td>34.225</td>
+      <td>-101.71</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:13:08</td>
+      <td>Nene Roro</td>
+      <td>Dickens, TX</td>
+      <td>33.61761</td>
+      <td>-100.820938</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:06:53</td>
+      <td>Wyatt Bicker</td>
+      <td>Floydada, TX</td>
+      <td>33.9681</td>
+      <td>-101.3544</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:21:35</td>
+      <td>Richard Sample</td>
+      <td>Petersburg, TX</td>
+      <td>33.96</td>
+      <td>-101.69</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:08:49</td>
+      <td>Jacob, "we're gonna need to dig a pit here", Stichter</td>
+      <td>Spade, TX</td>
+      <td>33.81</td>
+      <td>-102.13</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:10:09</td>
+      <td>DaveFlo</td>
+      <td>Seminole, TX</td>
+      <td>32.7097</td>
+      <td>-102.6501</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:11:40</td>
+      <td>ajax13</td>
+      <td>Petersburg, TX</td>
+      <td>33.95</td>
+      <td>-101.65</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:13:22</td>
+      <td>Valerie Hewitt</td>
+      <td>Plainview, TX.</td>
+      <td>34.16</td>
+      <td>-101.69</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:16:01</td>
+      <td>Baja (IN MISSISSIPPI WE TRUST)</td>
+      <td>Carriere, MS</td>
+      <td>30.6321</td>
+      <td>-89.6553</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:16:37</td>
+      <td>Nic Anthony</td>
+      <td>Wayside, TX</td>
+      <td>34.78</td>
+      <td>-101.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>261</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:17:43</td>
+      <td>K</td>
+      <td>West of Silverton, TX</td>
+      <td>34.481</td>
+      <td>-101.344</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>258</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:18:04</td>
+      <td>PotatoPie25</td>
+      <td>Petersburg, TX</td>
+      <td>33.84</td>
+      <td>-101.58</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:19:17</td>
+      <td>jumpwx (matador v3)</td>
+      <td>Matador, TX</td>
+      <td>34.05</td>
+      <td>-100.88</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:19:43</td>
+      <td>Sam Romshek</td>
+      <td>Tulia, TX</td>
+      <td>34.6674</td>
+      <td>-101.8125</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:21:29</td>
+      <td>Victor George</td>
+      <td>Memphis, TX</td>
+      <td>34.59</td>
+      <td>-100.61</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:21:34</td>
+      <td>Chase  Brewster</td>
+      <td>Plainview, TX</td>
+      <td>34.18</td>
+      <td>-101.71</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:21:57</td>
+      <td>Steven Bergey</td>
+      <td>Mt Blanco, TX</td>
+      <td>33.83</td>
+      <td>-101.22</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:22:47</td>
+      <td>Lucas Huang</td>
+      <td>Whitney, TX</td>
+      <td>31.951906</td>
+      <td>-97.320965</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:23:37</td>
+      <td>Brady Lyness</td>
+      <td>Littlefield, TX</td>
+      <td>33.908</td>
+      <td>-102.2827</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>270</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:27:36</td>
+      <td>Braydon Songer</td>
+      <td>Somewhere there, TX</td>
+      <td>34.7419</td>
+      <td>-102.406</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:26:08</td>
+      <td>Alexis Severson</td>
+      <td>Matador, TX</td>
+      <td>34.01273</td>
+      <td>-100.82241</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:29:48</td>
+      <td>Jonah</td>
+      <td>Spur, TX</td>
+      <td>33.53</td>
+      <td>-100.84</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:31:01</td>
+      <td>CPekar</td>
+      <td>Crosbyton, TX</td>
+      <td>33.671888</td>
+      <td>-101.234647</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:31:18</td>
+      <td>WFUM</td>
+      <td>Silverton, TX</td>
+      <td>34.48</td>
+      <td>-101.3</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:33:26</td>
+      <td>Kris with the radar</td>
+      <td>Cedar Hill, TX</td>
+      <td>34.1465</td>
+      <td>-101.2077</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>239</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:35:50</td>
+      <td>Riley Johnson</td>
+      <td>Lone Star, TX</td>
+      <td>34.27837</td>
+      <td>-101.31475</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:36:14</td>
+      <td>Jonah Dosedel</td>
+      <td>New Deal, TX</td>
+      <td>33.729</td>
+      <td>-101.838</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:36:17</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>Plainview, TX</td>
+      <td>34.1846</td>
+      <td>-101.7098</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:36:28</td>
+      <td>Lizzie Hugeback</td>
+      <td></td>
+      <td>34.31</td>
+      <td>-101.39</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:37:00</td>
+      <td>Return of the Panhandle, Kevin Strikes Back</td>
+      <td>Some Grain elevator in between Lockney and Floydata, TX</td>
+      <td>34.0665323</td>
+      <td>-101.39139</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:41:06</td>
+      <td>Gabriel Keller</td>
+      <td>Plainview, TX</td>
+      <td>34.1614</td>
+      <td>-101.6496</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:41:40</td>
+      <td>Ben Price</td>
+      <td>Plainview, TX</td>
+      <td>34.17871</td>
+      <td>-101.72064</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:42:35</td>
+      <td>Drifter</td>
+      <td>Plainview, TX</td>
+      <td>34.25</td>
+      <td>-101.71</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:42:37</td>
+      <td>Roch</td>
+      <td>Tulia, TX</td>
+      <td>34.53555046</td>
+      <td>-101.769527</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:43:57</td>
+      <td>Penitentes</td>
+      <td>Lockney, TX</td>
+      <td>34.05</td>
+      <td>-101.45</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>281</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:46:20</td>
+      <td>StarInBox</td>
+      <td>Plainview, TX</td>
+      <td>34.26</td>
+      <td>-101.74</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:55:32</td>
+      <td>Donovan F</td>
+      <td>Farmer, TX</td>
+      <td>33.78</td>
+      <td>-101.46</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:46:51</td>
+      <td>TheBetterDoge</td>
+      <td>Crosbyton, TX</td>
+      <td>33.6732917</td>
+      <td>-101.2567971</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:47:40</td>
+      <td>Bradnado</td>
+      <td>Crosbyton, TX</td>
+      <td>33.6107</td>
+      <td>-101.2371</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>NoTor</td>
+      <td>2025-04-25 15:48:12</td>
+      <td>Endy O.</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>250</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:48:50</td>
+      <td>Andy Wade</td>
+      <td>NW Panhandle, TX</td>
+      <td>35.39</td>
+      <td>-101.51</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:49:16</td>
+      <td>Tristan White</td>
+      <td>South Plains, TX</td>
+      <td>34.1755</td>
+      <td>-101.3461</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:49:35</td>
+      <td>Joseph Patton</td>
+      <td>Turkey, TX</td>
+      <td>34.38576772</td>
+      <td>-100.8901747</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>279</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:50:38</td>
+      <td>Josh Jaeger</td>
+      <td>Plainview, TX</td>
+      <td>34.02</td>
+      <td>-101.65</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:50:42</td>
+      <td>Olivia McCauley</td>
+      <td>Tulia, TX</td>
+      <td>34.54</td>
+      <td>-101.76</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:51:58</td>
+      <td>We want the ball, we're gonna score</td>
+      <td>Kress, TX</td>
+      <td>34.367</td>
+      <td>-101.749</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:52:38</td>
+      <td>Jeff Frame</td>
+      <td>Hale Center, TX</td>
+      <td>34.065064</td>
+      <td>-101.846027</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:53:14</td>
+      <td>Sal ⚡︎</td>
+      <td>Vinson, OK</td>
+      <td>34.91</td>
+      <td>-99.99</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:53:22</td>
+      <td>Ethan Treff</td>
+      <td>Cereal, TX</td>
+      <td>34.2026</td>
+      <td>-101.5218</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>210</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:54:18</td>
+      <td>toefur</td>
+      <td>Plainview, TX</td>
+      <td>34.18799925</td>
+      <td>-101.7179971</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>218</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:56:39</td>
+      <td>timcigar</td>
+      <td>Levelland, TX</td>
+      <td>33.5886661</td>
+      <td>-102.2871599</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>289</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:56:03</td>
+      <td>Tornado Fajita</td>
+      <td></td>
+      <td>33.8554867</td>
+      <td>-102.0072295</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>249</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:56:04</td>
+      <td>Paul Austin</td>
+      <td>Floydada, TX</td>
+      <td>33.98</td>
+      <td>-101.25</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:56:26</td>
+      <td>Hunter Anderson</td>
+      <td>KPVW</td>
+      <td>34.22</td>
+      <td>-101.67</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:57:15</td>
+      <td>Josh Schwarz</td>
+      <td>Dew Drop Creek</td>
+      <td>32.244</td>
+      <td>-100.599</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:57:24</td>
+      <td>wxManSmith</td>
+      <td>Floydada, TX</td>
+      <td>33.9845</td>
+      <td>-101.3377</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:57:52</td>
+      <td>MYKE</td>
+      <td>Plainview, Texas</td>
+      <td>34.18</td>
+      <td>-101.72</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:59:10</td>
+      <td>Mango</td>
+      <td>Brownfield, TX</td>
+      <td>33.1578</td>
+      <td>-102.2649</td>
+      <td>Yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:59:02</td>
+      <td>Adler Hanson</td>
+      <td>Claytonville, TX</td>
+      <td>34.34</td>
+      <td>-101.54</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:59:16</td>
+      <td>The Hawk</td>
+      <td>Floydada, TX</td>
+      <td>33.95</td>
+      <td>-101.55</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:59:19</td>
+      <td>The Archer</td>
+      <td>Some random Airport between Lubbock and Amarillo</td>
+      <td>34.2303</td>
+      <td>-101.4612</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>243</td>
+      <td>YesTor</td>
+      <td>2025-04-25 15:59:25</td>
+      <td>jbean45</td>
+      <td>Idalou, Tx</td>
+      <td>33.66107701</td>
+      <td>-101.6969367</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>999</td>
+      <td>YesTor</td>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>NA</td>
+      <td>34.069645720774645</td>
+      <td>-101.47246043521127</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

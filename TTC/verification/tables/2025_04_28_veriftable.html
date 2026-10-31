@@ -1,0 +1,2741 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-04-28 15:57:58</td>
+      <td>53</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td>Albert Lea, MN</td>
+      <td>44.19</td>
+      <td>-93.58</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>9.80</td>
+      <td>EF0, NA</td>
+      <td>53.70</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:38:53</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Kilkenny, MN</td>
+      <td>44.31</td>
+      <td>-93.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>10.10</td>
+      <td>3 E Morristown, MN</td>
+      <td>37.50</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-04-28 03:19:49</td>
+      <td>75</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Waseca, MN</td>
+      <td>44.08</td>
+      <td>-93.50</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>11.30</td>
+      <td>EF0, NA</td>
+      <td>36.80</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:44:07</td>
+      <td>295</td>
+      <td>Chad (squidward)</td>
+      <td>YesTor</td>
+      <td>Owatonna, MN</td>
+      <td>44.09</td>
+      <td>-93.24</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>11.90</td>
+      <td>EF0, NA</td>
+      <td>40.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:05:21</td>
+      <td>262</td>
+      <td>Tyler Williams</td>
+      <td>YesTor</td>
+      <td>Owatonna, MN</td>
+      <td>44.09</td>
+      <td>-93.18</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>12.00</td>
+      <td>MPX, NA</td>
+      <td>40.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 01:25:53</td>
+      <td>43</td>
+      <td>ezrags</td>
+      <td>YesTor</td>
+      <td>Owatonna, MN</td>
+      <td>44.09</td>
+      <td>-93.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>12.40</td>
+      <td>MPX, NA</td>
+      <td>40.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:50:29</td>
+      <td>273</td>
+      <td>Nick Markus</td>
+      <td>YesTor</td>
+      <td>Owatonna, MN</td>
+      <td>44.08</td>
+      <td>-93.18</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>12.40</td>
+      <td>MPX, NA</td>
+      <td>40.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 00:15:21</td>
+      <td>280</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Owatonna, MN</td>
+      <td>44.07</td>
+      <td>-93.24</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>13.10</td>
+      <td>EF0, NA</td>
+      <td>39.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:10:47</td>
+      <td>86</td>
+      <td>Wyatt Bicker</td>
+      <td>YesTor</td>
+      <td>Wanamingo, MN</td>
+      <td>44.31</td>
+      <td>-92.79</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>13.60</td>
+      <td>EF1, NA</td>
+      <td>31.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:45:21</td>
+      <td>65</td>
+      <td>Trevor Beavers</td>
+      <td>YesTor</td>
+      <td>waseca</td>
+      <td>44.03</td>
+      <td>-93.44</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>13.70</td>
+      <td>EF0, NA</td>
+      <td>31.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.43</td>
+      <td>-93.47</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14.50</td>
+      <td>3 E Morristown, MN</td>
+      <td>23.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:39:00</td>
+      <td>239</td>
+      <td>Riley Johnson</td>
+      <td>YesTor</td>
+      <td>Lonsdale, MN</td>
+      <td>44.44</td>
+      <td>-93.40</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>14.60</td>
+      <td>3 E Morristown, MN</td>
+      <td>27.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:21:20</td>
+      <td>116</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Pratt, MN</td>
+      <td>44.02</td>
+      <td>-93.16</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>16.40</td>
+      <td>MPX, NA</td>
+      <td>26.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:21:40</td>
+      <td>134</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Zumbrota, MN</td>
+      <td>44.30</td>
+      <td>-92.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>18.00</td>
+      <td>EF1, NA</td>
+      <td>29.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:46:03</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Pratt, MN</td>
+      <td>43.99</td>
+      <td>-93.21</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>18.50</td>
+      <td>EF0, NA</td>
+      <td>21.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:46:36</td>
+      <td>319</td>
+      <td>Reid Buchanan</td>
+      <td>YesTor</td>
+      <td>Cannon Falls, MN</td>
+      <td>44.51</td>
+      <td>-92.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>18.50</td>
+      <td>EF1, NA</td>
+      <td>25.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:49:39</td>
+      <td>301</td>
+      <td>Nene Roro</td>
+      <td>YesTor</td>
+      <td>Downsvillie, Wisconsin</td>
+      <td>44.77</td>
+      <td>-91.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.50</td>
+      <td>EF1, NA</td>
+      <td>16.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:42:48</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Le Center, MN</td>
+      <td>44.38</td>
+      <td>-93.73</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>19.80</td>
+      <td>3 E Morristown, MN</td>
+      <td>16.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:53:43</td>
+      <td>201</td>
+      <td>Donovan F</td>
+      <td>YesTor</td>
+      <td>Le Center, MN</td>
+      <td>44.40</td>
+      <td>-93.74</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.00</td>
+      <td>3 E Morristown, MN</td>
+      <td>16.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:59:10</td>
+      <td>221</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Saint Paul, MN</td>
+      <td>44.47</td>
+      <td>-93.75</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.40</td>
+      <td>3 E Morristown, MN</td>
+      <td>15.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:03:24</td>
+      <td>13</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Holton, KS</td>
+      <td>39.45</td>
+      <td>-95.73</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.10</td>
+      <td>EF0, NA</td>
+      <td>15.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:12:47</td>
+      <td>167</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>KRRL</td>
+      <td>45.20</td>
+      <td>-89.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.10</td>
+      <td>EF0, NA</td>
+      <td>15.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:29:09</td>
+      <td>44</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Waldorf, MN</td>
+      <td>43.93</td>
+      <td>-93.70</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>25.20</td>
+      <td>EF0, NA</td>
+      <td>27.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:58:15</td>
+      <td>225</td>
+      <td>Lieowa</td>
+      <td>YesTor</td>
+      <td>Geneva, MN</td>
+      <td>43.83</td>
+      <td>-93.25</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>28.40</td>
+      <td>EF0, NA</td>
+      <td>18.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 04:09:03</td>
+      <td>154</td>
+      <td>William Gaylord</td>
+      <td>YesTor</td>
+      <td>Granton, WI</td>
+      <td>44.52</td>
+      <td>-90.42</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>28.70</td>
+      <td>EF1, NA</td>
+      <td>18.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.52</td>
+      <td>-92.23</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.90</td>
+      <td>EF1, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:55:26</td>
+      <td>166</td>
+      <td>Drifter</td>
+      <td>YesTor</td>
+      <td>Le Sueur, MN</td>
+      <td>44.45</td>
+      <td>-93.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.00</td>
+      <td>3 E Morristown, MN</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 03:34:14</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Mankato, MN</td>
+      <td>44.15</td>
+      <td>-94.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>30.80</td>
+      <td>EF0, NA</td>
+      <td>17.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:12:26</td>
+      <td>287</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>Redwing MN</td>
+      <td>44.54</td>
+      <td>-92.57</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>30.90</td>
+      <td>EF1, NA</td>
+      <td>17.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:53:47</td>
+      <td>127</td>
+      <td>Pneumonia</td>
+      <td>YesTor</td>
+      <td>Clarks Grove, MN</td>
+      <td>43.76</td>
+      <td>-93.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>32.00</td>
+      <td>EF0, NA</td>
+      <td>21.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:47:20</td>
+      <td>200</td>
+      <td>chasing Iowa today MN is bait</td>
+      <td>YesTor</td>
+      <td>S of Mankato, MN</td>
+      <td>44.01</td>
+      <td>-93.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>32.10</td>
+      <td>EF0, NA</td>
+      <td>21.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:40:25</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Clarks Grove , MN</td>
+      <td>43.76</td>
+      <td>-93.32</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>32.10</td>
+      <td>EF0, NA</td>
+      <td>21.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:35:31</td>
+      <td>186</td>
+      <td>Endy O.</td>
+      <td>YesTor</td>
+      <td>Apple Valley, MN</td>
+      <td>44.73</td>
+      <td>-93.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.90</td>
+      <td>6 W Kenyon, MN</td>
+      <td>13.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:59:05</td>
+      <td>311</td>
+      <td>Stefff</td>
+      <td>YesTor</td>
+      <td>Alpha, MN</td>
+      <td>43.64</td>
+      <td>-94.87</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>33.20</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>17.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:43:49</td>
+      <td>24</td>
+      <td>German Aviation</td>
+      <td>YesTor</td>
+      <td>Freeborn, MN</td>
+      <td>43.76</td>
+      <td>-93.56</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>33.20</td>
+      <td>EF0, NA</td>
+      <td>21.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:53:43</td>
+      <td>205</td>
+      <td>Gabriel Keller</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>43.93</td>
+      <td>-92.56</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.60</td>
+      <td>EF1, NA</td>
+      <td>13.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 02:22:53</td>
+      <td>177</td>
+      <td>Vince</td>
+      <td>YesTor</td>
+      <td>Hammond, MN</td>
+      <td>44.22</td>
+      <td>-92.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>33.90</td>
+      <td>EF1, NA</td>
+      <td>17.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:08:55</td>
+      <td>18</td>
+      <td>Valerie Hewitt</td>
+      <td>YesTor</td>
+      <td>Rochester, MN</td>
+      <td>44.00</td>
+      <td>-92.47</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.30</td>
+      <td>EF1, NA</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:26:09</td>
+      <td>113</td>
+      <td>Level 99 dumpsterfire vs mdt, who wins</td>
+      <td>YesTor</td>
+      <td>Rochester, MN</td>
+      <td>44.01</td>
+      <td>-92.46</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.40</td>
+      <td>EF1, NA</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:50:59</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Albert Lea, MN</td>
+      <td>43.77</td>
+      <td>-92.91</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.80</td>
+      <td>MPX, NA</td>
+      <td>13.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:34:14</td>
+      <td>69</td>
+      <td>Lizzie Hugeback</td>
+      <td>YesTor</td>
+      <td>Sargeant, MN</td>
+      <td>43.78</td>
+      <td>-92.84</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>35.00</td>
+      <td>MPX, NA</td>
+      <td>13.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:22:48</td>
+      <td>212</td>
+      <td>Benjamin Kiel</td>
+      <td>YesTor</td>
+      <td>Lansing, MN</td>
+      <td>43.74</td>
+      <td>-92.97</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.30</td>
+      <td>MPX, NA</td>
+      <td>12.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:23:39</td>
+      <td>187</td>
+      <td>3CapeTruther</td>
+      <td>YesTor</td>
+      <td>Hollandale, MN</td>
+      <td>43.71</td>
+      <td>-93.22</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>36.70</td>
+      <td>EF0, NA</td>
+      <td>16.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 07:21:54</td>
+      <td>296</td>
+      <td>They get outbreaks here?</td>
+      <td>YesTor</td>
+      <td>Garden City, MN</td>
+      <td>44.04</td>
+      <td>-94.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>36.70</td>
+      <td>EF0, NA</td>
+      <td>20.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 04:16:44</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>YesTor</td>
+      <td>Good Thunder, MN</td>
+      <td>44.00</td>
+      <td>-94.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>37.30</td>
+      <td>EF0, NA</td>
+      <td>20.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:24:34</td>
+      <td>137</td>
+      <td>My Car</td>
+      <td>YesTor</td>
+      <td>Good Thunder, MN</td>
+      <td>44.00</td>
+      <td>-94.07</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>37.40</td>
+      <td>EF0, NA</td>
+      <td>20.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:51:59</td>
+      <td>173</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Galesville, WI</td>
+      <td>44.08</td>
+      <td>-91.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.10</td>
+      <td>EF1, NA</td>
+      <td>12.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:46:40</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>Brownsdale, MN</td>
+      <td>43.72</td>
+      <td>-92.90</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.30</td>
+      <td>MPX, NA</td>
+      <td>12.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:20:02</td>
+      <td>17</td>
+      <td>Nemo</td>
+      <td>YesTor</td>
+      <td>N/A</td>
+      <td>43.69</td>
+      <td>-93.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>38.40</td>
+      <td>EF0, NA</td>
+      <td>16.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:54:45</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>YesTor</td>
+      <td>Armstrong, MN</td>
+      <td>43.66</td>
+      <td>-93.48</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>39.30</td>
+      <td>EF0, NA</td>
+      <td>20.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:21:39</td>
+      <td>139</td>
+      <td>Caleb K</td>
+      <td>YesTor</td>
+      <td>Albert Lea, MN</td>
+      <td>43.65</td>
+      <td>-93.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>39.80</td>
+      <td>EF0, NA</td>
+      <td>20.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:47:51</td>
+      <td>247</td>
+      <td>DaveFlo</td>
+      <td>YesTor</td>
+      <td>Estherville, IA</td>
+      <td>43.39</td>
+      <td>-94.84</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>39.90</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>16.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:24:24</td>
+      <td>85</td>
+      <td>Cole Sellers</td>
+      <td>YesTor</td>
+      <td>Alden, MN</td>
+      <td>43.66</td>
+      <td>-93.54</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>40.00</td>
+      <td>EF0, NA</td>
+      <td>20.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:33:30</td>
+      <td>210</td>
+      <td>toefur</td>
+      <td>YesTor</td>
+      <td>Albert Lea, MN</td>
+      <td>43.64</td>
+      <td>-93.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>40.40</td>
+      <td>EF0, NA</td>
+      <td>19.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:43:51</td>
+      <td>30</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Austin, MN</td>
+      <td>43.67</td>
+      <td>-93.03</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.00</td>
+      <td>MPX, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:46:12</td>
+      <td>32</td>
+      <td>Oliver Knapton</td>
+      <td>YesTor</td>
+      <td>Austin, MN</td>
+      <td>43.67</td>
+      <td>-92.97</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.20</td>
+      <td>MPX, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:44:42</td>
+      <td>8</td>
+      <td>Caleb Simms</td>
+      <td>YesTor</td>
+      <td>Austin, MN</td>
+      <td>43.66</td>
+      <td>-92.96</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.90</td>
+      <td>MPX, NA</td>
+      <td>11.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:07:20</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>YesTor</td>
+      <td>Austin, MN</td>
+      <td>43.65</td>
+      <td>-93.01</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.30</td>
+      <td>MPX, NA</td>
+      <td>11.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:02:29</td>
+      <td>47</td>
+      <td>Shadow</td>
+      <td>YesTor</td>
+      <td>Arlington, MN</td>
+      <td>44.60</td>
+      <td>-94.07</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.40</td>
+      <td>3 E Morristown, MN</td>
+      <td>11.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:03:46</td>
+      <td>36</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>Blue Earth, MN</td>
+      <td>43.69</td>
+      <td>-93.84</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>43.20</td>
+      <td>EF0, NA</td>
+      <td>19.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:40:13</td>
+      <td>60</td>
+      <td>Drewskie</td>
+      <td>YesTor</td>
+      <td>Lewiston, mn</td>
+      <td>43.98</td>
+      <td>-91.86</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.30</td>
+      <td>EF1, NA</td>
+      <td>11.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:35:40</td>
+      <td>114</td>
+      <td>Baja™ (WILSONNNNNNN)</td>
+      <td>YesTor</td>
+      <td>Wilson, MN</td>
+      <td>43.95</td>
+      <td>-91.68</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.70</td>
+      <td>EF1, NA</td>
+      <td>11.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 06:25:56</td>
+      <td>105</td>
+      <td>Braeden Winters</td>
+      <td>YesTor</td>
+      <td>New Amsterdam, WI</td>
+      <td>43.99</td>
+      <td>-91.31</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.00</td>
+      <td>EF1, NA</td>
+      <td>11.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 06:46:06</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>KMPX</td>
+      <td>44.85</td>
+      <td>-93.57</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.00</td>
+      <td>3 E Morristown, MN</td>
+      <td>11.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 04:01:30</td>
+      <td>291</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Green Isle, MN</td>
+      <td>44.67</td>
+      <td>-94.03</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.00</td>
+      <td>3 E Morristown, MN</td>
+      <td>11.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 07:24:30</td>
+      <td>163</td>
+      <td>WxDownYonder</td>
+      <td>YesTor</td>
+      <td>4 SE Elgin, MN</td>
+      <td>44.08</td>
+      <td>-92.20</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.50</td>
+      <td>EF1, NA</td>
+      <td>11.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:44:51</td>
+      <td>288</td>
+      <td>Joshua P</td>
+      <td>YesTor</td>
+      <td>Elkton, MN</td>
+      <td>43.66</td>
+      <td>-92.73</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.70</td>
+      <td>EF1, NA</td>
+      <td>11.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:57:04</td>
+      <td>261</td>
+      <td>K</td>
+      <td>YesTor</td>
+      <td>Eyota, MN</td>
+      <td>43.99</td>
+      <td>-92.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>45.20</td>
+      <td>EF1, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:40:47</td>
+      <td>241</td>
+      <td>Koji Lemke</td>
+      <td>YesTor</td>
+      <td>Glenville, MN</td>
+      <td>43.57</td>
+      <td>-93.28</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>45.40</td>
+      <td>EF0, NA</td>
+      <td>18.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:38:05</td>
+      <td>218</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Glenville, MN</td>
+      <td>43.57</td>
+      <td>-93.27</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>45.50</td>
+      <td>EF0, NA</td>
+      <td>18.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:18:24</td>
+      <td>77</td>
+      <td>Michael Beccio</td>
+      <td>YesTor</td>
+      <td>Grand Meadow, MN</td>
+      <td>43.69</td>
+      <td>-92.55</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>46.90</td>
+      <td>EF1, NA</td>
+      <td>10.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:36:15</td>
+      <td>2</td>
+      <td>Alex Honeycutt</td>
+      <td>YesTor</td>
+      <td>Myrtle, MN</td>
+      <td>43.57</td>
+      <td>-93.13</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>47.10</td>
+      <td>EF0, NA</td>
+      <td>14.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 03:31:44</td>
+      <td>153</td>
+      <td>Dan Smith, BYU</td>
+      <td>YesTor</td>
+      <td>Blue Earth, MN</td>
+      <td>43.76</td>
+      <td>-94.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>47.40</td>
+      <td>EF0, NA</td>
+      <td>22.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 10:37:16</td>
+      <td>302</td>
+      <td>Self explanatory</td>
+      <td>YesTor</td>
+      <td>Cummingsville, MN</td>
+      <td>43.87</td>
+      <td>-92.26</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.80</td>
+      <td>EF1, NA</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 04:22:24</td>
+      <td>22</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Maplewood, MN</td>
+      <td>44.95</td>
+      <td>-93.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.90</td>
+      <td>MPX, NA</td>
+      <td>10.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:42:33</td>
+      <td>215</td>
+      <td>Gio</td>
+      <td>YesTor</td>
+      <td>Emmons, MN</td>
+      <td>43.51</td>
+      <td>-93.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>49.60</td>
+      <td>EF0, NA</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:54:27</td>
+      <td>68</td>
+      <td>Kevin Mahoney</td>
+      <td>YesTor</td>
+      <td>St. James, MN</td>
+      <td>43.98</td>
+      <td>-94.63</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.70</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:36:11</td>
+      <td>119</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Emmons, MN</td>
+      <td>43.51</td>
+      <td>-93.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>49.90</td>
+      <td>EF0, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:40:00</td>
+      <td>76</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>I-35 at the MN/IA border</td>
+      <td>43.50</td>
+      <td>-93.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>50.00</td>
+      <td>EF0, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:45:29</td>
+      <td>52</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Emmons, MN</td>
+      <td>43.50</td>
+      <td>-93.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>50.30</td>
+      <td>EF0, NA</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:22:06</td>
+      <td>297</td>
+      <td>Joshua Intini</td>
+      <td>YesTor</td>
+      <td>Kiester, MN</td>
+      <td>43.52</td>
+      <td>-93.62</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>50.50</td>
+      <td>EF0, NA</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:32:29</td>
+      <td>148</td>
+      <td>WFUM</td>
+      <td>YesTor</td>
+      <td>Spring Valley, MN</td>
+      <td>43.69</td>
+      <td>-92.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.60</td>
+      <td>EF1, NA</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:47:02</td>
+      <td>223</td>
+      <td>Bengalsfan</td>
+      <td>YesTor</td>
+      <td>Chatfield, MN</td>
+      <td>43.85</td>
+      <td>-92.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.70</td>
+      <td>EF1, NA</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:05:59</td>
+      <td>203</td>
+      <td>Caleb @ CMU SoM</td>
+      <td>YesTor</td>
+      <td>Chatfield MN</td>
+      <td>43.85</td>
+      <td>-92.18</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.00</td>
+      <td>EF1, NA</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:36:48</td>
+      <td>117</td>
+      <td>Gabe Zago</td>
+      <td>YesTor</td>
+      <td>Kiester MN</td>
+      <td>43.50</td>
+      <td>-93.67</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>52.00</td>
+      <td>EF0, NA</td>
+      <td>13.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:32:32</td>
+      <td>185</td>
+      <td>J.M.M.</td>
+      <td>YesTor</td>
+      <td>Chatfield, MN</td>
+      <td>43.84</td>
+      <td>-92.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.10</td>
+      <td>EF1, NA</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:40:35</td>
+      <td>130</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>YesTor</td>
+      <td>Lyle, MN</td>
+      <td>43.50</td>
+      <td>-92.95</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.00</td>
+      <td>MPX, NA</td>
+      <td>9.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:57:14</td>
+      <td>289</td>
+      <td>Tornado Fajita</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>44.55</td>
+      <td>-94.38</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.90</td>
+      <td>3 E Morristown, MN</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:55:22</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Blue Earth, MN</td>
+      <td>43.62</td>
+      <td>-94.08</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>54.60</td>
+      <td>EF0, NA</td>
+      <td>21.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:35:11</td>
+      <td>118</td>
+      <td>TDGWx</td>
+      <td>YesTor</td>
+      <td>Northwood, IA</td>
+      <td>43.44</td>
+      <td>-93.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>55.00</td>
+      <td>EF0, NA</td>
+      <td>13.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:13:52</td>
+      <td>88</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>43.17</td>
+      <td>-94.69</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>55.30</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>12.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:34:01</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Northwood, IA</td>
+      <td>43.45</td>
+      <td>-93.08</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>55.80</td>
+      <td>EF0, NA</td>
+      <td>8.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:55:24</td>
+      <td>129</td>
+      <td>Roch</td>
+      <td>YesTor</td>
+      <td>Lake Mills, IA</td>
+      <td>43.42</td>
+      <td>-93.54</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>56.20</td>
+      <td>EF0, NA</td>
+      <td>12.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:59:41</td>
+      <td>276</td>
+      <td>Luke Hatton</td>
+      <td>YesTor</td>
+      <td>Lake Mills, IA</td>
+      <td>43.42</td>
+      <td>-93.53</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>56.20</td>
+      <td>EF0, NA</td>
+      <td>12.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:15:35</td>
+      <td>80</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Lake Mills, IA</td>
+      <td>43.41</td>
+      <td>-93.54</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>56.90</td>
+      <td>EF0, NA</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 03:59:00</td>
+      <td>178</td>
+      <td>Nic Anthony</td>
+      <td>YesTor</td>
+      <td>Boardman, Wi</td>
+      <td>45.06</td>
+      <td>-92.59</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.50</td>
+      <td>EF1, NA</td>
+      <td>8.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:53:10</td>
+      <td>100</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>East Chain, MN</td>
+      <td>43.57</td>
+      <td>-94.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>57.80</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>20.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:30:54</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Rake, IA</td>
+      <td>43.47</td>
+      <td>-93.93</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>58.90</td>
+      <td>EF0, NA</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:21:10</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Saint Ansgar, IA</td>
+      <td>43.41</td>
+      <td>-92.98</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.00</td>
+      <td>MPX, NA</td>
+      <td>8.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:57:01</td>
+      <td>214</td>
+      <td>Julian Miller</td>
+      <td>YesTor</td>
+      <td>McIntire, IA</td>
+      <td>43.47</td>
+      <td>-92.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.60</td>
+      <td>EF1, NA</td>
+      <td>8.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:57:53</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Elmore, Mn</td>
+      <td>43.50</td>
+      <td>-94.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>60.90</td>
+      <td>EF0, NA</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:03:59</td>
+      <td>46</td>
+      <td>Jacob Stichter</td>
+      <td>YesTor</td>
+      <td>Kensett, IA</td>
+      <td>43.35</td>
+      <td>-93.21</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.20</td>
+      <td>EF0, NA</td>
+      <td>7.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:54:51</td>
+      <td>270</td>
+      <td>Braydon Songer</td>
+      <td>YesTor</td>
+      <td>E of Leland, IA</td>
+      <td>43.35</td>
+      <td>-93.57</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.50</td>
+      <td>EF0, NA</td>
+      <td>7.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:35:45</td>
+      <td>107</td>
+      <td>Kris with the radar</td>
+      <td>YesTor</td>
+      <td>Saint Ansgar, IA</td>
+      <td>43.38</td>
+      <td>-92.92</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.50</td>
+      <td>MPX, NA</td>
+      <td>7.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:02:01</td>
+      <td>286</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>St. Ansgar</td>
+      <td>43.37</td>
+      <td>-92.94</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.00</td>
+      <td>MPX, NA</td>
+      <td>7.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:13:12</td>
+      <td>290</td>
+      <td>we ride at dawn (doss)</td>
+      <td>YesTor</td>
+      <td>Thompson, IA</td>
+      <td>43.37</td>
+      <td>-93.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.40</td>
+      <td>EF0, NA</td>
+      <td>7.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:32:01</td>
+      <td>292</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Buffalo Center, IA</td>
+      <td>43.39</td>
+      <td>-93.95</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>64.10</td>
+      <td>EF0, NA</td>
+      <td>11.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:38:36</td>
+      <td>109</td>
+      <td>Jonah Dosedel</td>
+      <td>YesTor</td>
+      <td>Manly, IA</td>
+      <td>43.29</td>
+      <td>-93.20</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>65.70</td>
+      <td>EF0, NA</td>
+      <td>6.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:26:05</td>
+      <td>3</td>
+      <td>Kyle loves Liowa</td>
+      <td>YesTor</td>
+      <td>S Buffalo Center, IA</td>
+      <td>43.36</td>
+      <td>-93.95</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>66.40</td>
+      <td>EF0, NA</td>
+      <td>10.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:52:28</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>Forest City, IA</td>
+      <td>43.26</td>
+      <td>-93.63</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.70</td>
+      <td>EF0, NA</td>
+      <td>6.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:58:22</td>
+      <td>42</td>
+      <td>I'M FEELIN' 22</td>
+      <td>YesTor</td>
+      <td>Lakota, Iowa</td>
+      <td>43.38</td>
+      <td>-94.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>68.00</td>
+      <td>EF0, NA</td>
+      <td>14.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:46:16</td>
+      <td>176</td>
+      <td>AustinR_Wx</td>
+      <td>YesTor</td>
+      <td>Forest City, IA</td>
+      <td>43.25</td>
+      <td>-93.63</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.40</td>
+      <td>EF0, NA</td>
+      <td>6.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:09:32</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>Ledyard, IA</td>
+      <td>43.43</td>
+      <td>-94.20</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>68.40</td>
+      <td>EF0, NA</td>
+      <td>14.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:49:29</td>
+      <td>54</td>
+      <td>RIP ICE CREAM</td>
+      <td>YesTor</td>
+      <td>Le Mars, IA</td>
+      <td>42.80</td>
+      <td>-96.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.60</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>6.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:45:49</td>
+      <td>146</td>
+      <td>PR1TP@L</td>
+      <td>YesTor</td>
+      <td>Osage, IA</td>
+      <td>43.28</td>
+      <td>-92.81</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.10</td>
+      <td>MPX, NA</td>
+      <td>6.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:54:11</td>
+      <td>229</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>YesTor</td>
+      <td>Andover, MN</td>
+      <td>45.25</td>
+      <td>-93.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.40</td>
+      <td>6 W Kenyon, MN</td>
+      <td>6.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:49:37</td>
+      <td>51</td>
+      <td>Alexander Hunt</td>
+      <td>YesTor</td>
+      <td>Forest City, IA</td>
+      <td>43.23</td>
+      <td>-93.59</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.40</td>
+      <td>EF0, NA</td>
+      <td>6.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:27:53</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Lakota, IA</td>
+      <td>43.36</td>
+      <td>-94.11</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>70.10</td>
+      <td>EF0, NA</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:10:21</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Bancroft, IA</td>
+      <td>43.29</td>
+      <td>-94.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>71.30</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:43:03</td>
+      <td>165</td>
+      <td>Adrian Z.</td>
+      <td>YesTor</td>
+      <td>Rock Creek, IA</td>
+      <td>43.22</td>
+      <td>-92.93</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.10</td>
+      <td>MPX, NA</td>
+      <td>5.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:34:17</td>
+      <td>147</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>Burt, IA</td>
+      <td>43.20</td>
+      <td>-94.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>73.80</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 09:38:40</td>
+      <td>48</td>
+      <td>Lucas Reynolds</td>
+      <td>YesTor</td>
+      <td>Burt, IA</td>
+      <td>43.20</td>
+      <td>-94.22</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>74.10</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:42:49</td>
+      <td>161</td>
+      <td>Alex</td>
+      <td>YesTor</td>
+      <td>Mason City, IA</td>
+      <td>43.15</td>
+      <td>-93.20</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>74.80</td>
+      <td>EF0, NA</td>
+      <td>5.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:03:03</td>
+      <td>188</td>
+      <td>The one time there's a dry line in Iowa....</td>
+      <td>YesTor</td>
+      <td>Burrrrrrrrrrrt, IA</td>
+      <td>43.15</td>
+      <td>-94.23</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>75.00</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>9.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:32:34</td>
+      <td>313</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Clear Lake, IA</td>
+      <td>43.14</td>
+      <td>-93.36</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.10</td>
+      <td>EF0, NA</td>
+      <td>5.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:45:41</td>
+      <td>258</td>
+      <td>PotatoPie25</td>
+      <td>YesTor</td>
+      <td>New Albin, IA</td>
+      <td>43.50</td>
+      <td>-91.31</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>76.80</td>
+      <td>EF1, NA</td>
+      <td>4.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 07:23:06</td>
+      <td>0</td>
+      <td>Nicholas Snider</td>
+      <td>YesTor</td>
+      <td>Pocahontas, IA</td>
+      <td>42.74</td>
+      <td>-94.67</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>78.60</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>4.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 00:44:27</td>
+      <td>14</td>
+      <td>Eliot Morrow</td>
+      <td>YesTor</td>
+      <td>lalalala</td>
+      <td>43.18</td>
+      <td>-94.07</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>80.00</td>
+      <td>EF0, NA</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:13:24</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Garner, IA</td>
+      <td>43.07</td>
+      <td>-93.60</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>80.70</td>
+      <td>EF0, NA</td>
+      <td>3.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>43.03</td>
+      <td>-93.59</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>82.90</td>
+      <td>EF0, NA</td>
+      <td>3.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:47:08</td>
+      <td>87</td>
+      <td>WARMONGER</td>
+      <td>YesTor</td>
+      <td>Savannah, MO</td>
+      <td>39.93</td>
+      <td>-94.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.30</td>
+      <td>EF0, NA</td>
+      <td>3.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:20:12</td>
+      <td>174</td>
+      <td>Alexis Severson</td>
+      <td>YesTor</td>
+      <td>De Soto</td>
+      <td>43.42</td>
+      <td>-91.20</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.40</td>
+      <td>EF1, NA</td>
+      <td>3.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:37:25</td>
+      <td>194</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Sexton, IA</td>
+      <td>43.08</td>
+      <td>-94.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>83.60</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>3.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:20:36</td>
+      <td>10</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Klemme, IA</td>
+      <td>43.02</td>
+      <td>-93.62</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>84.20</td>
+      <td>EF0, NA</td>
+      <td>3.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:08:30</td>
+      <td>11</td>
+      <td>Joey Krastel</td>
+      <td>YesTor</td>
+      <td>3 S Union Star, MO</td>
+      <td>39.90</td>
+      <td>-94.61</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.30</td>
+      <td>TOP, NA</td>
+      <td>1.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:33:03</td>
+      <td>61</td>
+      <td>WX_Rome</td>
+      <td>YesTor</td>
+      <td>New Hampton, IA</td>
+      <td>43.03</td>
+      <td>-92.32</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.60</td>
+      <td>EF1, NA</td>
+      <td>1.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:29:18</td>
+      <td>66</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Belmond, IA</td>
+      <td>42.85</td>
+      <td>-93.60</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96.00</td>
+      <td>EF0, NA</td>
+      <td>0.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:55:48</td>
+      <td>157</td>
+      <td>Sal⚡︎</td>
+      <td>YesTor</td>
+      <td>Hampton, IA</td>
+      <td>42.81</td>
+      <td>-93.08</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>99.20</td>
+      <td>EF0, NA</td>
+      <td>0.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:40:12</td>
+      <td>111</td>
+      <td>Clarence Smith</td>
+      <td>YesTor</td>
+      <td>Alexander, IA</td>
+      <td>42.79</td>
+      <td>-93.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>99.50</td>
+      <td>EF0, NA</td>
+      <td>0.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:23:30</td>
+      <td>202</td>
+      <td>wxManSmith</td>
+      <td>YesTor</td>
+      <td>Maryville, MO</td>
+      <td>40.35</td>
+      <td>-94.87</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>101.00</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:28:29</td>
+      <td>92</td>
+      <td>Jonah (OMEGA don't fail us now)</td>
+      <td>YesTor</td>
+      <td>Cameron, MO</td>
+      <td>39.74</td>
+      <td>-94.24</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>105.50</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:05:12</td>
+      <td>149</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Clarion, IA</td>
+      <td>42.69</td>
+      <td>-93.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>107.40</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:08:57</td>
+      <td>278</td>
+      <td>Kelly Rose</td>
+      <td>YesTor</td>
+      <td>Prairie Du Chien, WS</td>
+      <td>43.05</td>
+      <td>-91.14</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.00</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:55:42</td>
+      <td>150</td>
+      <td>Blake Brink</td>
+      <td>YesTor</td>
+      <td>Shell Rock, IA</td>
+      <td>42.72</td>
+      <td>-92.58</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>109.70</td>
+      <td>MPX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 12:51:12</td>
+      <td>145</td>
+      <td>Damon Lemke</td>
+      <td>YesTor</td>
+      <td>Webster City, IA</td>
+      <td>42.43</td>
+      <td>-93.89</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>120.00</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:20:45</td>
+      <td>195</td>
+      <td>Joey Beachel</td>
+      <td>YesTor</td>
+      <td>Cleves, IA</td>
+      <td>42.42</td>
+      <td>-93.04</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>126.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:39:15</td>
+      <td>219</td>
+      <td>Iowa shortwave trough has done it before, and it'll do it again</td>
+      <td>YesTor</td>
+      <td>Ames, IA</td>
+      <td>42.03</td>
+      <td>-93.61</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>150.20</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 03:48:41</td>
+      <td>251</td>
+      <td>go follow The Badger Breeze on facebook</td>
+      <td>YesTor</td>
+      <td>Magnolia, WI</td>
+      <td>42.72</td>
+      <td>-89.29</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>153.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:58:36</td>
+      <td>255</td>
+      <td>Steven Bergey</td>
+      <td>YesTor</td>
+      <td>Arkansas City, KS</td>
+      <td>37.09</td>
+      <td>-97.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>154.60</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:36:02</td>
+      <td>254</td>
+      <td>Kam</td>
+      <td>YesTor</td>
+      <td>Huxley, IA</td>
+      <td>41.90</td>
+      <td>-93.60</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>157.80</td>
+      <td>3 WSW Brewster, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:56:55</td>
+      <td>140</td>
+      <td>Caleb O’Gara</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>40.32</td>
+      <td>-92.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>196.30</td>
+      <td>TOP, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:35:21</td>
+      <td>274</td>
+      <td>Comrade Chasing</td>
+      <td>YesTor</td>
+      <td>Hinton, OK</td>
+      <td>35.47</td>
+      <td>-98.35</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>284.90</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 11:43:54</td>
+      <td>1</td>
+      <td>N. Singh</td>
+      <td>YesTor</td>
+      <td>Binger, OK</td>
+      <td>35.31</td>
+      <td>-98.34</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>294.90</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:32:05</td>
+      <td>184</td>
+      <td>simbasad2</td>
+      <td>YesTor</td>
+      <td>Hobart oklahoma</td>
+      <td>35.03</td>
+      <td>-99.09</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>330.60</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:58:31</td>
+      <td>19</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Loveland, OK</td>
+      <td>34.23</td>
+      <td>-98.80</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373.70</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:39:11</td>
+      <td>197</td>
+      <td>Please happen near here. I can't chase up north</td>
+      <td>YesTor</td>
+      <td>Wichita Falls, TX</td>
+      <td>34.00</td>
+      <td>-98.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>382.60</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 13:19:20</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Vernon TX</td>
+      <td>34.16</td>
+      <td>-99.29</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>389.50</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 15:39:52</td>
+      <td>180</td>
+      <td>Dom Dragon</td>
+      <td>YesTor</td>
+      <td>Vernon, TX</td>
+      <td>34.13</td>
+      <td>-99.28</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>391.20</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-04-28 14:42:24</td>
+      <td>207</td>
+      <td>Bradnado</td>
+      <td>YesTor</td>
+      <td>Electra, TX</td>
+      <td>33.97</td>
+      <td>-99.12</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>397.50</td>
+      <td>EF0, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

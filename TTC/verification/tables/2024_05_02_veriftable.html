@@ -1,0 +1,1959 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-05-02 15:12:51</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Cisco, TX</td>
+      <td>32.39</td>
+      <td>-99.02</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.80</td>
+      <td>EF3, NA</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 02:07:38</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 02:20:32</td>
+      <td>275</td>
+      <td>Tornado Yesterday? Nope, Go Fish</td>
+      <td>YesTor</td>
+      <td>Megargel, TX</td>
+      <td>33.45</td>
+      <td>-98.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>70.80</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>5.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:59:44</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Harrisonville, MO</td>
+      <td>38.67</td>
+      <td>-94.33</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>103.60</td>
+      <td>Carl Junction, MO</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 03:03:03</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 03:19:05</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 03:29:50</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 04:40:39</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>YesTor</td>
+      <td>Lawton, Oklahoma</td>
+      <td>34.60</td>
+      <td>-98.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>148.50</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 04:40:52</td>
+      <td>48</td>
+      <td>Max Archer</td>
+      <td>YesTor</td>
+      <td>Dekalb, IL</td>
+      <td>41.83</td>
+      <td>-88.73</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>445.90</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 04:47:13</td>
+      <td>126</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>YesTor</td>
+      <td>Gibsland, LA</td>
+      <td>32.55</td>
+      <td>-93.06</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>163.70</td>
+      <td>3.5 SW Welsh, LA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 04:50:49</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 06:07:37</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Anson, TX</td>
+      <td>32.76</td>
+      <td>-99.89</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5.60</td>
+      <td>4 ENE Truby, TX</td>
+      <td>56.70</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 06:17:33</td>
+      <td>135</td>
+      <td>Brixton Abad</td>
+      <td>YesTor</td>
+      <td>Troy, MO</td>
+      <td>38.99</td>
+      <td>-90.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>232.60</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 06:25:03</td>
+      <td>91</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Throckmorton, TX</td>
+      <td>33.17</td>
+      <td>-99.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.60</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>10.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 08:37:14</td>
+      <td>80</td>
+      <td>Eliot Morrow</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 09:00:42</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:06:32</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>Throckmorton, tx</td>
+      <td>33.30</td>
+      <td>-99.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.50</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:19:20</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Seymour, TX</td>
+      <td>33.60</td>
+      <td>-99.26</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.60</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>7.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:19:53</td>
+      <td>278</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Vera, TX</td>
+      <td>33.63</td>
+      <td>-99.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.30</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>8.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:29:04</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:36:41</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>YesTor</td>
+      <td>View, TX</td>
+      <td>32.34</td>
+      <td>-99.88</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>17.40</td>
+      <td>EF3, NA</td>
+      <td>29.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:37:43</td>
+      <td>183</td>
+      <td>Ben Vitek</td>
+      <td>YesTor</td>
+      <td>Romney, TX</td>
+      <td>32.20</td>
+      <td>-99.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>55.80</td>
+      <td>EF3, NA</td>
+      <td>8.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:43:54</td>
+      <td>244</td>
+      <td>wxManSmith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 12:58:32</td>
+      <td>283</td>
+      <td>Ghostfox1</td>
+      <td>YesTor</td>
+      <td>NE of Kerryville TX</td>
+      <td>30.26</td>
+      <td>-99.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>81.70</td>
+      <td>2 NNW Doole, TX</td>
+      <td>3.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:12:30</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Monday, TX</td>
+      <td>33.26</td>
+      <td>-99.37</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.30</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>11.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:23:57</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:34:50</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>Hamby, TX</td>
+      <td>32.52</td>
+      <td>-99.63</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>12.80</td>
+      <td>EF3, NA</td>
+      <td>39.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:29:51</td>
+      <td>28</td>
+      <td>Sam Luthi</td>
+      <td>YesTor</td>
+      <td>SW of Brownwood, TX</td>
+      <td>31.60</td>
+      <td>-99.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.00</td>
+      <td>2 NE Stacy, TX</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:30:29</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:45:45</td>
+      <td>189</td>
+      <td>GodMosses</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:48:28</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Avoca, TX</td>
+      <td>32.85</td>
+      <td>-99.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>13.00</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>35.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:52:07</td>
+      <td>16</td>
+      <td>WxZach</td>
+      <td>YesTor</td>
+      <td>Seymour, TX</td>
+      <td>33.49</td>
+      <td>-99.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.50</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>11.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:53:04</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>W of Albany, TX</td>
+      <td>32.69</td>
+      <td>-99.46</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>22.80</td>
+      <td>SJT, NA</td>
+      <td>19.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 13:54:42</td>
+      <td>182</td>
+      <td>braydon Songer</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:00:35</td>
+      <td>277</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Throckmorton, TX</td>
+      <td>33.18</td>
+      <td>-99.18</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.80</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:06:50</td>
+      <td>206</td>
+      <td>drawablefish</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:47:53</td>
+      <td>32</td>
+      <td>Stfjinkiojd “no models mobile win here we go”</td>
+      <td>YesTor</td>
+      <td>Albany, TX</td>
+      <td>32.68</td>
+      <td>-99.29</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>32.40</td>
+      <td>SJT, NA</td>
+      <td>17.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:14:13</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:14:46</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:16:06</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Winters, TX</td>
+      <td>32.00</td>
+      <td>-100.00</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17.40</td>
+      <td>EF2, NA</td>
+      <td>17.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:17:55</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Rochester, TX</td>
+      <td>33.31</td>
+      <td>-99.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.50</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:28:48</td>
+      <td>84</td>
+      <td>Richard Hammond</td>
+      <td>YesTor</td>
+      <td>Cross Plains, TX</td>
+      <td>32.12</td>
+      <td>-99.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.90</td>
+      <td>2 NE Stacy, TX</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:29:55</td>
+      <td>281</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Goree, TX</td>
+      <td>33.44</td>
+      <td>-99.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.90</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:33:03</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Abilene, TX</td>
+      <td>32.44</td>
+      <td>-99.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>16.20</td>
+      <td>EF3, NA</td>
+      <td>34.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:37:05</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>YesTor</td>
+      <td>Tye, TX</td>
+      <td>32.42</td>
+      <td>-99.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>11.70</td>
+      <td>EF3, NA</td>
+      <td>40.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:37:37</td>
+      <td>171</td>
+      <td>Joey Krastel</td>
+      <td>YesTor</td>
+      <td>5 N Winters, TX</td>
+      <td>32.02</td>
+      <td>-99.95</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18.10</td>
+      <td>EF2, NA</td>
+      <td>17.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:41:02</td>
+      <td>35</td>
+      <td>RoamingMirrorBB</td>
+      <td>YesTor</td>
+      <td>North of Abilene, TX</td>
+      <td>32.65</td>
+      <td>-99.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>15.30</td>
+      <td>SJT, NA</td>
+      <td>38.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:41:16</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:45:09</td>
+      <td>253</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Albany, TX</td>
+      <td>32.72</td>
+      <td>-99.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>32.40</td>
+      <td>SJT, NA</td>
+      <td>17.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:46:55</td>
+      <td>136</td>
+      <td>Slim Tatman</td>
+      <td>YesTor</td>
+      <td>Haskell, TX</td>
+      <td>33.15</td>
+      <td>-99.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.60</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>15.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:51:09</td>
+      <td>143</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Baird, TX</td>
+      <td>32.40</td>
+      <td>-99.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>29.00</td>
+      <td>EF3, NA</td>
+      <td>22.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:20:39</td>
+      <td>282</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>Lueders, TX</td>
+      <td>32.77</td>
+      <td>-99.58</td>
+      <td>No</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>17.50</td>
+      <td>4 ENE Truby, TX</td>
+      <td>37.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:53:10</td>
+      <td>70</td>
+      <td>Alex H.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:54:22</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>31.74</td>
+      <td>-98.78</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.90</td>
+      <td>2 NE Stacy, TX</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:56:13</td>
+      <td>133</td>
+      <td>Kevin Mahoney</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 14:56:42</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:03:07</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Clyde, TX</td>
+      <td>32.40</td>
+      <td>-99.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>21.60</td>
+      <td>EF3, NA</td>
+      <td>28.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:05:42</td>
+      <td>209</td>
+      <td>WeatherboySuper</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:05:49</td>
+      <td>262</td>
+      <td>Adrian Z.</td>
+      <td>YesTor</td>
+      <td>Albany, TX</td>
+      <td>32.77</td>
+      <td>-99.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>34.20</td>
+      <td>4 ENE Truby, TX</td>
+      <td>17.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:06:07</td>
+      <td>168</td>
+      <td>Ice Bergey</td>
+      <td>YesTor</td>
+      <td>3 SE Munday, TX</td>
+      <td>33.44</td>
+      <td>-99.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.30</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>11.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:08:22</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Avoca, TX</td>
+      <td>32.87</td>
+      <td>-99.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>13.40</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>27.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:08:43</td>
+      <td>112</td>
+      <td>bround (3cape + lapse + vort we trust because the wind profiles suck)</td>
+      <td>YesTor</td>
+      <td>Haskell, TX</td>
+      <td>33.16</td>
+      <td>-99.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.30</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>15.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:29:00</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Abilene, TX</td>
+      <td>32.45</td>
+      <td>-99.73</td>
+      <td>No</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>11.30</td>
+      <td>EF3, NA</td>
+      <td>40.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:09:51</td>
+      <td>229</td>
+      <td>Addison (He1002)</td>
+      <td>YesTor</td>
+      <td>Aledo, IL</td>
+      <td>42.21</td>
+      <td>-90.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>401.40</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:11:38</td>
+      <td>194</td>
+      <td>Michael Pagnanelli</td>
+      <td>YesTor</td>
+      <td>Munday, TX</td>
+      <td>33.45</td>
+      <td>-99.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.70</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>11.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:14:35</td>
+      <td>203</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>Comanche, TX</td>
+      <td>31.88</td>
+      <td>-98.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.20</td>
+      <td>2 NE Stacy, TX</td>
+      <td>8.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:16:05</td>
+      <td>268</td>
+      <td>Luke Hatton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:16:59</td>
+      <td>208</td>
+      <td>Garrett Nykaza</td>
+      <td>YesTor</td>
+      <td>Manlius, Illinois</td>
+      <td>41.48</td>
+      <td>-89.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>395.00</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:19:07</td>
+      <td>199</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Hamlin, TX</td>
+      <td>32.88</td>
+      <td>-100.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>9.60</td>
+      <td>4 SE Neinda, TX</td>
+      <td>29.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:27:54</td>
+      <td>51</td>
+      <td>Diego Garcia</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:23:40</td>
+      <td>63</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>Aspermont, TX</td>
+      <td>33.14</td>
+      <td>-100.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.80</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>12.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:45:23</td>
+      <td>270</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Throckmorton County, TX</td>
+      <td>33.18</td>
+      <td>-99.32</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.50</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:24:08</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Cross Plains, TX</td>
+      <td>32.12</td>
+      <td>-99.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.20</td>
+      <td>2 NE Stacy, TX</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:26:26</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Benjamin, TX</td>
+      <td>33.58</td>
+      <td>-99.81</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.10</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:26:35</td>
+      <td>266</td>
+      <td>Zach McDaniel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:28:58</td>
+      <td>113</td>
+      <td>Jacob Stichter</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:28:03</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>YesTor</td>
+      <td>Cisco, TX</td>
+      <td>32.39</td>
+      <td>-98.98</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.80</td>
+      <td>EF3, NA</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:28:28</td>
+      <td>151</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Energy, TX</td>
+      <td>31.76</td>
+      <td>-98.37</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.60</td>
+      <td>2 NE Stacy, TX</td>
+      <td>5.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:29:10</td>
+      <td>14</td>
+      <td>John Massura</td>
+      <td>YesTor</td>
+      <td>Baird, TX</td>
+      <td>32.29</td>
+      <td>-99.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>33.20</td>
+      <td>EF3, NA</td>
+      <td>17.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:29:36</td>
+      <td>127</td>
+      <td>Matt Wilson</td>
+      <td>YesTor</td>
+      <td>Talpa, TX</td>
+      <td>31.77</td>
+      <td>-99.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>9.70</td>
+      <td>SJT, NA</td>
+      <td>25.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:33:01</td>
+      <td>45</td>
+      <td>Sam Ritter</td>
+      <td>YesTor</td>
+      <td>Abilene, TX</td>
+      <td>32.45</td>
+      <td>-99.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>11.30</td>
+      <td>EF3, NA</td>
+      <td>40.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:34:26</td>
+      <td>60</td>
+      <td>Wheelieweather</td>
+      <td>YesTor</td>
+      <td>JonesBoro,la</td>
+      <td>32.24</td>
+      <td>-92.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>142.20</td>
+      <td>3.5 SW Welsh, LA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:35:05</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Impact, TX</td>
+      <td>32.51</td>
+      <td>-99.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>7.70</td>
+      <td>EF3, NA</td>
+      <td>43.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:35:21</td>
+      <td>181</td>
+      <td>Texas Toast</td>
+      <td>YesTor</td>
+      <td>Near Albany, TX</td>
+      <td>32.73</td>
+      <td>-99.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>33.80</td>
+      <td>SJT, NA</td>
+      <td>17.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:35:45</td>
+      <td>164</td>
+      <td>Chad Griffin</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:35:51</td>
+      <td>62</td>
+      <td>Kay</td>
+      <td>YesTor</td>
+      <td>Impact, TX</td>
+      <td>32.50</td>
+      <td>-99.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>8.20</td>
+      <td>EF3, NA</td>
+      <td>42.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:36:06</td>
+      <td>186</td>
+      <td>Sophie Miller :D</td>
+      <td>YesTor</td>
+      <td>Cisco, TX</td>
+      <td>32.46</td>
+      <td>-98.95</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.30</td>
+      <td>EF3, NA</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:38:02</td>
+      <td>120</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>Coleman, TX</td>
+      <td>31.84</td>
+      <td>-99.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.40</td>
+      <td>2 NE Stacy, TX</td>
+      <td>14.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:40:17</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Clyde, TX</td>
+      <td>32.41</td>
+      <td>-99.49</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>23.60</td>
+      <td>EF3, NA</td>
+      <td>27.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:40:38</td>
+      <td>241</td>
+      <td>bowecho7</td>
+      <td>YesTor</td>
+      <td>Baird, TX</td>
+      <td>32.40</td>
+      <td>-99.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>28.50</td>
+      <td>EF3, NA</td>
+      <td>22.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:57:03</td>
+      <td>279</td>
+      <td>alexis</td>
+      <td>YesTor</td>
+      <td>Benjamin, tx</td>
+      <td>33.58</td>
+      <td>-99.79</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.30</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>10.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:40:53</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Albany, TX</td>
+      <td>32.74</td>
+      <td>-99.31</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>32.20</td>
+      <td>SJT, NA</td>
+      <td>17.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:41:46</td>
+      <td>154</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Clyde, TX</td>
+      <td>32.40</td>
+      <td>-99.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>24.00</td>
+      <td>EF3, NA</td>
+      <td>27.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:42:55</td>
+      <td>33</td>
+      <td>Mason Carneal</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:47:09</td>
+      <td>24</td>
+      <td>Anthony Haberman</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:47:19</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>Rockford, IL</td>
+      <td>42.26</td>
+      <td>-89.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>453.20</td>
+      <td>EF1, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:47:38</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>YesTor</td>
+      <td>Abilene, TX</td>
+      <td>32.70</td>
+      <td>-99.90</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2.70</td>
+      <td>4 ENE Truby, TX</td>
+      <td>67.20</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:48:35</td>
+      <td>75</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Lueders, TX</td>
+      <td>32.69</td>
+      <td>-99.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+      <td>10.00</td>
+      <td>4 ENE Truby, TX</td>
+      <td>49.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:49:14</td>
+      <td>285</td>
+      <td>TorDrifter</td>
+      <td>YesTor</td>
+      <td>Coleman, TX</td>
+      <td>31.84</td>
+      <td>-99.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.30</td>
+      <td>2 NE Stacy, TX</td>
+      <td>14.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:52:22</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Abilene, TX</td>
+      <td>32.44</td>
+      <td>-99.75</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>11.00</td>
+      <td>EF3, NA</td>
+      <td>40.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:56:01</td>
+      <td>288</td>
+      <td>Alex</td>
+      <td>YesTor</td>
+      <td>Seymour, TX</td>
+      <td>33.58</td>
+      <td>-99.23</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.40</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>7.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:53:58</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Avoca, TX</td>
+      <td>32.87</td>
+      <td>-99.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>13.00</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>31.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:54:06</td>
+      <td>101</td>
+      <td>Koji</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:55:25</td>
+      <td>161</td>
+      <td>Vincent P.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:56:46</td>
+      <td>36</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Potosi, TX</td>
+      <td>32.33</td>
+      <td>-99.62</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>22.10</td>
+      <td>EF3, NA</td>
+      <td>23.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:56:54</td>
+      <td>202</td>
+      <td>Cole Sellers</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:58:15</td>
+      <td>141</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Weinert, TX</td>
+      <td>33.32</td>
+      <td>-99.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.40</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 15:59:06</td>
+      <td>184</td>
+      <td>Tornado Fajita</td>
+      <td>YesTor</td>
+      <td>Stamford Independent School District, TX</td>
+      <td>32.96</td>
+      <td>-99.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6.00</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>28.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 16:00:03</td>
+      <td>106</td>
+      <td>Joshua Evans</td>
+      <td>YesTor</td>
+      <td>Vernon, TX</td>
+      <td>34.11</td>
+      <td>-99.10</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>98.10</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>0.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-02 16:00:57</td>
+      <td>140</td>
+      <td>Veer</td>
+      <td>YesTor</td>
+      <td>Guthrie TX</td>
+      <td>33.62</td>
+      <td>-100.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>55.90</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>8.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>33.33</td>
+      <td>-98.64</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>78.80</td>
+      <td>4 S Tuxedo, TX</td>
+      <td>4.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>31.24</td>
+      <td>-94.26</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>111.20</td>
+      <td>3.5 SW Welsh, LA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>32.64</td>
+      <td>-99.79</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3.50</td>
+      <td>EF3, NA</td>
+      <td>62.50</td>
+      <td>2nd Place</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

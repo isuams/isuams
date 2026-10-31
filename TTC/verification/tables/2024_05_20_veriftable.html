@@ -1,0 +1,1925 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-05-20 15:38:08</td>
+      <td>279</td>
+      <td>tri point co-op slabbing</td>
+      <td>YesTor</td>
+      <td>wano,co</td>
+      <td>40.00</td>
+      <td>-102.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2.10</td>
+      <td>5 S Laird, CO</td>
+      <td>47.80</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:29:19</td>
+      <td>160</td>
+      <td>flappy787</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.00</td>
+      <td>-102.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5.10</td>
+      <td>5 S Laird, CO</td>
+      <td>41.10</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:26:51</td>
+      <td>115</td>
+      <td>Samuel Roback</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>40.06</td>
+      <td>-102.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5.60</td>
+      <td>5 S Laird, CO</td>
+      <td>36.70</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.02</td>
+      <td>-102.20</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6.00</td>
+      <td>5 S Laird, CO</td>
+      <td>32.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:43:39</td>
+      <td>35</td>
+      <td>Grace Hansen</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.07</td>
+      <td>-102.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.00</td>
+      <td>5 S Laird, CO</td>
+      <td>30.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:58:41</td>
+      <td>239</td>
+      <td>Oliver K</td>
+      <td>YesTor</td>
+      <td>Haigler, NE</td>
+      <td>40.03</td>
+      <td>-101.94</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.30</td>
+      <td>5 S Laird, CO</td>
+      <td>30.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:39:41</td>
+      <td>267</td>
+      <td>Chase (Huntsville, AL)</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.08</td>
+      <td>-102.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>8.50</td>
+      <td>5 S Laird, CO</td>
+      <td>26.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 05:16:48</td>
+      <td>275</td>
+      <td>Benjamin Kiel</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.07</td>
+      <td>-102.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.80</td>
+      <td>5 S Laird, CO</td>
+      <td>30.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:56:37</td>
+      <td>241</td>
+      <td>bowecho7</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.07</td>
+      <td>-102.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.80</td>
+      <td>5 S Laird, CO</td>
+      <td>30.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:20:48</td>
+      <td>282</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>S of Wray, CO</td>
+      <td>39.95</td>
+      <td>-102.25</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>9.10</td>
+      <td>5 S Laird, CO</td>
+      <td>26.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:41:34</td>
+      <td>264</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.07</td>
+      <td>-102.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>9.50</td>
+      <td>5 S Laird, CO</td>
+      <td>25.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 00:52:07</td>
+      <td>203</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.09</td>
+      <td>-102.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>9.70</td>
+      <td>5 S Laird, CO</td>
+      <td>25.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:50:56</td>
+      <td>240</td>
+      <td>Kyle Schanus</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.08</td>
+      <td>-102.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>9.70</td>
+      <td>5 S Laird, CO</td>
+      <td>25.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:22:56</td>
+      <td>253</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Haigler, NE</td>
+      <td>40.08</td>
+      <td>-101.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>10.10</td>
+      <td>5 S Laird, CO</td>
+      <td>29.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:44:28</td>
+      <td>125</td>
+      <td>MuggieWx</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.10</td>
+      <td>-102.24</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10.60</td>
+      <td>5 S Laird, CO</td>
+      <td>25.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:04:32</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.08</td>
+      <td>-102.32</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>13.40</td>
+      <td>5 S Laird, CO</td>
+      <td>23.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:53:12</td>
+      <td>14</td>
+      <td>John Massura</td>
+      <td>YesTor</td>
+      <td>Wray, CO</td>
+      <td>40.09</td>
+      <td>-102.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>14.90</td>
+      <td>5 S Laird, CO</td>
+      <td>22.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:21:51</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>YesTor</td>
+      <td>Colorado</td>
+      <td>40.22</td>
+      <td>-102.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17.90</td>
+      <td>5 S Laird, CO</td>
+      <td>17.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:49:57</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Eckley, CO</td>
+      <td>40.08</td>
+      <td>-102.47</td>
+      <td>No</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>20.60</td>
+      <td>5 S Laird, CO</td>
+      <td>24.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:48:29</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>Alvin, CO</td>
+      <td>40.30</td>
+      <td>-102.10</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.70</td>
+      <td>5 S Laird, CO</td>
+      <td>16.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:36:43</td>
+      <td>285</td>
+      <td>TorDrifter</td>
+      <td>YesTor</td>
+      <td>Parks, NE</td>
+      <td>40.13</td>
+      <td>-101.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.40</td>
+      <td>5 S Laird, CO</td>
+      <td>16.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:54:51</td>
+      <td>62</td>
+      <td>Kay</td>
+      <td>YesTor</td>
+      <td>North of Wray, CO</td>
+      <td>40.31</td>
+      <td>-102.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>22.80</td>
+      <td>5 S Laird, CO</td>
+      <td>15.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:56:50</td>
+      <td>202</td>
+      <td>Cole Sellers</td>
+      <td>YesTor</td>
+      <td>Imperial, NE</td>
+      <td>40.27</td>
+      <td>-101.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.20</td>
+      <td>5 S Laird, CO</td>
+      <td>15.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:29:20</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Wano, KS</td>
+      <td>39.75</td>
+      <td>-101.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.20</td>
+      <td>5 S Laird, CO</td>
+      <td>15.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 06:38:14</td>
+      <td>48</td>
+      <td>TOTY #356 in SW Nebraska/NE Colorado</td>
+      <td>YesTor</td>
+      <td>Benkelman, NE</td>
+      <td>40.08</td>
+      <td>-101.61</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26.00</td>
+      <td>5 S Laird, CO</td>
+      <td>14.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:32:32</td>
+      <td>127</td>
+      <td>Matt Wilson</td>
+      <td>YesTor</td>
+      <td>Eckley, CO</td>
+      <td>40.31</td>
+      <td>-102.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.30</td>
+      <td>5 S Laird, CO</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:59:19</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>YesTor</td>
+      <td>Wheeler, KS</td>
+      <td>39.76</td>
+      <td>-101.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.30</td>
+      <td>5 S Laird, CO</td>
+      <td>14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:09:49</td>
+      <td>138</td>
+      <td>Jack Zwolinski</td>
+      <td>YesTor</td>
+      <td>Eckley, CO</td>
+      <td>40.31</td>
+      <td>-102.46</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.00</td>
+      <td>5 S Laird, CO</td>
+      <td>14.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:36:36</td>
+      <td>36</td>
+      <td>Sam Emmerson</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.39</td>
+      <td>-102.31</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.40</td>
+      <td>5 S Laird, CO</td>
+      <td>14.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:30:22</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Benkelman, NE</td>
+      <td>40.04</td>
+      <td>-101.53</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.80</td>
+      <td>5 S Laird, CO</td>
+      <td>14.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 04:59:11</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Abarr, CO</td>
+      <td>39.91</td>
+      <td>-102.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>31.10</td>
+      <td>5 S Laird, CO</td>
+      <td>25.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:27:16</td>
+      <td>164</td>
+      <td>Chad Griffin</td>
+      <td>YesTor</td>
+      <td>Ough, NE</td>
+      <td>40.26</td>
+      <td>-101.60</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.50</td>
+      <td>5 S Laird, CO</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 10:22:15</td>
+      <td>278</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.43</td>
+      <td>-102.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.70</td>
+      <td>5 S Laird, CO</td>
+      <td>13.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 12:28:42</td>
+      <td>183</td>
+      <td>Ben Vitek</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.47</td>
+      <td>-102.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32.50</td>
+      <td>5 S Laird, CO</td>
+      <td>13.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:52:16</td>
+      <td>19</td>
+      <td>Kieran Mohindra-Green</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.14</td>
+      <td>-102.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>33.20</td>
+      <td>5 S Laird, CO</td>
+      <td>25.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:57:08</td>
+      <td>32</td>
+      <td>TSJFINFISOLK</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.11</td>
+      <td>-102.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>33.30</td>
+      <td>5 S Laird, CO</td>
+      <td>25.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:02:08</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.11</td>
+      <td>-102.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>33.60</td>
+      <td>5 S Laird, CO</td>
+      <td>25.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:21:46</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.22</td>
+      <td>-102.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>34.20</td>
+      <td>5 S Laird, CO</td>
+      <td>21.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 03:08:41</td>
+      <td>43</td>
+      <td>Konner Struik</td>
+      <td>YesTor</td>
+      <td>Fairfield, Nebraska</td>
+      <td>40.43</td>
+      <td>-98.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.40</td>
+      <td>4 SSW Grand Island, NE</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:45:09</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>Ough, NE</td>
+      <td>40.26</td>
+      <td>-101.53</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.50</td>
+      <td>5 S Laird, CO</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:44:20</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.12</td>
+      <td>-102.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>34.60</td>
+      <td>5 S Laird, CO</td>
+      <td>29.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:10:31</td>
+      <td>193</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.12</td>
+      <td>-102.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>34.70</td>
+      <td>5 S Laird, CO</td>
+      <td>29.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:36:14</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.20</td>
+      <td>-102.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>36.00</td>
+      <td>5 S Laird, CO</td>
+      <td>24.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:45:28</td>
+      <td>151</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Some Field, near Yuma, CO</td>
+      <td>40.12</td>
+      <td>-102.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>36.20</td>
+      <td>5 S Laird, CO</td>
+      <td>28.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:17:14</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Yuma, CO</td>
+      <td>40.18</td>
+      <td>-102.74</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>36.30</td>
+      <td>5 S Laird, CO</td>
+      <td>24.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:39:19</td>
+      <td>25</td>
+      <td>Mr. T</td>
+      <td>YesTor</td>
+      <td>Imperial, NE</td>
+      <td>40.40</td>
+      <td>-101.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>36.60</td>
+      <td>5 S Laird, CO</td>
+      <td>12.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:24:47</td>
+      <td>181</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>BFN, CO</td>
+      <td>40.40</td>
+      <td>-102.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>39.30</td>
+      <td>5 S Laird, CO</td>
+      <td>12.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:44:34</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>Yuma co</td>
+      <td>40.31</td>
+      <td>-102.72</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>39.60</td>
+      <td>5 S Laird, CO</td>
+      <td>20.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:17:10</td>
+      <td>84</td>
+      <td>Richard Hammond</td>
+      <td>YesTor</td>
+      <td>Lamar, NE</td>
+      <td>40.58</td>
+      <td>-102.05</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.20</td>
+      <td>5 S Laird, CO</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:08:19</td>
+      <td>186</td>
+      <td>Mophie Siller (Colorado Magic)</td>
+      <td>YesTor</td>
+      <td>Amherst, CO</td>
+      <td>40.59</td>
+      <td>-102.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.50</td>
+      <td>5 S Laird, CO</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:23:42</td>
+      <td>116</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Holyoke</td>
+      <td>40.57</td>
+      <td>-102.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.20</td>
+      <td>5 S Laird, CO</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:46:44</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.57</td>
+      <td>-102.33</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.20</td>
+      <td>5 S Laird, CO</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:31:13</td>
+      <td>5</td>
+      <td>Joe Acord</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.58</td>
+      <td>-102.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.60</td>
+      <td>5 S Laird, CO</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:29:08</td>
+      <td>90</td>
+      <td>Ryan Rackliffe</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.58</td>
+      <td>-102.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.60</td>
+      <td>5 S Laird, CO</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:38:18</td>
+      <td>33</td>
+      <td>Mason Carneal</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.58</td>
+      <td>-102.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>41.60</td>
+      <td>5 S Laird, CO</td>
+      <td>11.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:33:31</td>
+      <td>171</td>
+      <td>Jowey Kwastel</td>
+      <td>YesTor</td>
+      <td>4 SE Max, NE</td>
+      <td>40.08</td>
+      <td>-101.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.10</td>
+      <td>5 S Laird, CO</td>
+      <td>11.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:46:36</td>
+      <td>266</td>
+      <td>Zach McDaniel</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.60</td>
+      <td>-102.31</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.00</td>
+      <td>5 S Laird, CO</td>
+      <td>11.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:35:16</td>
+      <td>45</td>
+      <td>Sam Ritter</td>
+      <td>YesTor</td>
+      <td>Imperial, NE</td>
+      <td>40.52</td>
+      <td>-101.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43.10</td>
+      <td>5 S Laird, CO</td>
+      <td>11.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:05:11</td>
+      <td>126</td>
+      <td>Nick (Green Bay, WI)</td>
+      <td>YesTor</td>
+      <td>Loup City, NE</td>
+      <td>41.26</td>
+      <td>-99.09</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>44.80</td>
+      <td>GID, NA</td>
+      <td>11.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:23:59</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Imperial, NE</td>
+      <td>40.59</td>
+      <td>-101.63</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.40</td>
+      <td>5 S Laird, CO</td>
+      <td>10.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 06:30:46</td>
+      <td>228</td>
+      <td>Tristan White</td>
+      <td>YesTor</td>
+      <td>Otis, CO</td>
+      <td>40.27</td>
+      <td>-102.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>48.40</td>
+      <td>5 S Laird, CO</td>
+      <td>22.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:31:11</td>
+      <td>184</td>
+      <td>Tornado Fajita</td>
+      <td>YesTor</td>
+      <td>Haxtun, CO</td>
+      <td>40.59</td>
+      <td>-102.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>51.60</td>
+      <td>5 S Laird, CO</td>
+      <td>9.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 11:40:21</td>
+      <td>21</td>
+      <td>Riley Johnson</td>
+      <td>YesTor</td>
+      <td>Haxtun, CO</td>
+      <td>40.64</td>
+      <td>-102.62</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.00</td>
+      <td>5 S Laird, CO</td>
+      <td>9.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:37:12</td>
+      <td>237</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Holyoke, CO</td>
+      <td>40.74</td>
+      <td>-102.29</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.30</td>
+      <td>5 S Laird, CO</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:49:27</td>
+      <td>59</td>
+      <td>John Male</td>
+      <td>YesTor</td>
+      <td>Venango, NE</td>
+      <td>40.76</td>
+      <td>-102.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.70</td>
+      <td>5 S Laird, CO</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:58:34</td>
+      <td>206</td>
+      <td>drawablefish</td>
+      <td>YesTor</td>
+      <td>Haxtun, CO</td>
+      <td>40.56</td>
+      <td>-102.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.70</td>
+      <td>5 S Laird, CO</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:30:59</td>
+      <td>281</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Palisade, NE</td>
+      <td>40.30</td>
+      <td>-101.15</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53.80</td>
+      <td>5 S Laird, CO</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:35:53</td>
+      <td>168</td>
+      <td>Steve Bergey</td>
+      <td>YesTor</td>
+      <td>SW of Grant, NE</td>
+      <td>40.76</td>
+      <td>-101.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>54.00</td>
+      <td>5 S Laird, CO</td>
+      <td>9.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:37:03</td>
+      <td>188</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Rake, IA</td>
+      <td>43.48</td>
+      <td>-93.92</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.40</td>
+      <td>5 NE Blooming Prairie, MN</td>
+      <td>8.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:08:43</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Brandon, NE</td>
+      <td>40.81</td>
+      <td>-101.91</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.80</td>
+      <td>5 S Laird, CO</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 07:54:15</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>YesTor</td>
+      <td>Palisade, NE</td>
+      <td>40.34</td>
+      <td>-101.11</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.90</td>
+      <td>5 S Laird, CO</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:00:45</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Akron, Co</td>
+      <td>40.17</td>
+      <td>-103.20</td>
+      <td>No</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>59.80</td>
+      <td>5 S Laird, CO</td>
+      <td>24.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:44:02</td>
+      <td>227</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.16</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>60.20</td>
+      <td>5 S Laird, CO</td>
+      <td>28.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:48:32</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.16</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>60.20</td>
+      <td>5 S Laird, CO</td>
+      <td>28.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:45:57</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Akron, OH</td>
+      <td>40.16</td>
+      <td>-103.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>60.40</td>
+      <td>5 S Laird, CO</td>
+      <td>27.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.45</td>
+      <td>-101.08</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>61.70</td>
+      <td>5 S Laird, CO</td>
+      <td>7.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:17:54</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Akron, CO</td>
+      <td>40.14</td>
+      <td>-103.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>63.60</td>
+      <td>5 S Laird, CO</td>
+      <td>27.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.69</td>
+      <td>-99.62</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>67.00</td>
+      <td>4 SSW Grand Island, NE</td>
+      <td>6.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:35:37</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>YesTor</td>
+      <td>McCook, NE</td>
+      <td>40.05</td>
+      <td>-100.75</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.00</td>
+      <td>5 S Laird, CO</td>
+      <td>5.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 06:08:56</td>
+      <td>234</td>
+      <td>Caleb A</td>
+      <td>YesTor</td>
+      <td>Midway, KS</td>
+      <td>39.83</td>
+      <td>-100.76</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>71.40</td>
+      <td>5 S Laird, CO</td>
+      <td>5.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:42:55</td>
+      <td>199</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Sterling, CO</td>
+      <td>40.63</td>
+      <td>-103.21</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.00</td>
+      <td>5 S Laird, CO</td>
+      <td>5.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:40:52</td>
+      <td>288</td>
+      <td>Alex</td>
+      <td>YesTor</td>
+      <td>Big Springs, NE</td>
+      <td>41.06</td>
+      <td>-102.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.50</td>
+      <td>5 S Laird, CO</td>
+      <td>5.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:38:19</td>
+      <td>182</td>
+      <td>Braydon Songer</td>
+      <td>YesTor</td>
+      <td>South of Roscoe, NE</td>
+      <td>41.05</td>
+      <td>-101.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>77.30</td>
+      <td>5 S Laird, CO</td>
+      <td>4.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:55:47</td>
+      <td>209</td>
+      <td>WeatherboySuper</td>
+      <td>YesTor</td>
+      <td>Elwood, NE</td>
+      <td>40.59</td>
+      <td>-99.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>78.90</td>
+      <td>4 SSW Grand Island, NE</td>
+      <td>4.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 11:44:30</td>
+      <td>283</td>
+      <td>Ghostfox1</td>
+      <td>YesTor</td>
+      <td>Ogallala ne</td>
+      <td>41.13</td>
+      <td>-101.74</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>80.30</td>
+      <td>5 S Laird, CO</td>
+      <td>3.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:12:04</td>
+      <td>214</td>
+      <td>Blake Brink</td>
+      <td>YesTor</td>
+      <td>Eustis, NE</td>
+      <td>40.67</td>
+      <td>-100.03</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.40</td>
+      <td>4 SSW Grand Island, NE</td>
+      <td>2.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:36:04</td>
+      <td>113</td>
+      <td>Jacob Stichter</td>
+      <td>YesTor</td>
+      <td>Holbrook, NE</td>
+      <td>40.43</td>
+      <td>-100.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.20</td>
+      <td>4 SSW Grand Island, NE</td>
+      <td>1.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 11:53:14</td>
+      <td>172</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Lincoln Way and Ames Avenue, Cheyenne, WY</td>
+      <td>41.13</td>
+      <td>-104.83</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>163.40</td>
+      <td>5 S Laird, CO</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 12:50:01</td>
+      <td>229</td>
+      <td>Addison (He1002)</td>
+      <td>YesTor</td>
+      <td>Madison, WI</td>
+      <td>43.13</td>
+      <td>-89.42</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>185.00</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:20:55</td>
+      <td>10</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>Orangeville, IL</td>
+      <td>42.47</td>
+      <td>-89.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>194.50</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 16:00:23</td>
+      <td>101</td>
+      <td>Koji</td>
+      <td>YesTor</td>
+      <td>Beloit, WI</td>
+      <td>42.51</td>
+      <td>-89.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>220.00</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:05:49</td>
+      <td>112</td>
+      <td>Bround (MCV truthers stand UP)</td>
+      <td>YesTor</td>
+      <td>Foxhollow, WI</td>
+      <td>42.51</td>
+      <td>-88.91</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>225.70</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:55:49</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Loves Park, IL</td>
+      <td>42.27</td>
+      <td>-88.96</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>231.50</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:23:49</td>
+      <td>140</td>
+      <td>Veer</td>
+      <td>YesTor</td>
+      <td>Sharon, WI</td>
+      <td>42.50</td>
+      <td>-88.73</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>234.20</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 03:31:02</td>
+      <td>189</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Rockford, IL</td>
+      <td>42.16</td>
+      <td>-88.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>235.50</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:36:10</td>
+      <td>154</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Delavan lake, WI</td>
+      <td>42.58</td>
+      <td>-88.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>236.00</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:58:58</td>
+      <td>141</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Elkhorn, WI</td>
+      <td>42.67</td>
+      <td>-88.54</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>237.90</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:57:28</td>
+      <td>51</td>
+      <td>Diego Garcia</td>
+      <td>YesTor</td>
+      <td>Elkhorn, WI</td>
+      <td>42.66</td>
+      <td>-88.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>238.60</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:32:16</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Harvard, IL</td>
+      <td>42.43</td>
+      <td>-88.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>239.80</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 16:00:10</td>
+      <td>88</td>
+      <td>Alex salerno</td>
+      <td>YesTor</td>
+      <td>Hebron, IL</td>
+      <td>42.48</td>
+      <td>-88.49</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>245.80</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 03:41:29</td>
+      <td>262</td>
+      <td>Adrian Z. (Andrew Griffiths Will Catch A Tornado Today)</td>
+      <td>YesTor</td>
+      <td>Genoa, IL</td>
+      <td>42.12</td>
+      <td>-88.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>248.60</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:47:18</td>
+      <td>210</td>
+      <td>John White</td>
+      <td>YesTor</td>
+      <td>Burlington, WI</td>
+      <td>42.68</td>
+      <td>-88.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>250.50</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:02:07</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>Spring Grove, IL</td>
+      <td>42.45</td>
+      <td>-88.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>258.40</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:13:08</td>
+      <td>270</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>McHenry, IL</td>
+      <td>42.35</td>
+      <td>-88.28</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>259.70</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 15:10:02</td>
+      <td>238</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>Plato Center, IL</td>
+      <td>42.04</td>
+      <td>-88.40</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>264.30</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 06:39:44</td>
+      <td>135</td>
+      <td>Alexander "The Dragon Slayer" Burrows</td>
+      <td>YesTor</td>
+      <td>Minooka, IL</td>
+      <td>41.44</td>
+      <td>-88.25</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>294.30</td>
+      <td>5 WNW Hayfield, MN</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 14:52:30</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Joplin, MO</td>
+      <td>37.08</td>
+      <td>-94.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>309.70</td>
+      <td>OAX, NA</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-05-20 06:12:10</td>
+      <td>80</td>
+      <td>Eliot Morrow</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:15:27</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-20 12:24:04</td>
+      <td>161</td>
+      <td>Vincent P.</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-05-20 13:02:28</td>
+      <td>180</td>
+      <td>Stefff</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

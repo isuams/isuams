@@ -1,0 +1,601 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Forecaster</th>
+      <th>Time</th>
+      <th>Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>Sig</th>
+      <th>Amendments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WeathermanSam</td>
+      <td>2026-05-29 15:56:04.677034</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Colin Young</td>
+      <td>2026-05-29 15:33:24.846491</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Aint no one going here I swear (I think)</td>
+      <td>2026-05-29 13:17:07.758247</td>
+      <td>YesTor</td>
+      <td>Mulhall, OK</td>
+      <td>36.06</td>
+      <td>-97.41</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>deviants or whatever (d0ss)</td>
+      <td>2026-05-29 02:13:35.586993</td>
+      <td>YesTor</td>
+      <td>Sheffield, TX</td>
+      <td>30.69</td>
+      <td>-101.82</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CPekar</td>
+      <td>2026-05-29 05:50:48.756821</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jim Franc</td>
+      <td>2026-05-29 13:33:52.369889</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah H.</td>
+      <td>2026-05-29 14:35:41.807930</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>The Hawk</td>
+      <td>2026-05-29 15:46:37.388227</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.12</td>
+      <td>-97.33</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Clarence</td>
+      <td>2026-05-29 10:54:29.160118</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Veer (another dart throw)</td>
+      <td>2026-05-29 15:52:05.750898</td>
+      <td>YesTor</td>
+      <td>Fairfield, VT</td>
+      <td>44.82</td>
+      <td>-72.93</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Gabe Zago</td>
+      <td>2026-05-29 15:15:30.611396</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Heerok Das</td>
+      <td>2026-05-29 15:02:13.827440</td>
+      <td>YesTor</td>
+      <td>Lamesa, TX</td>
+      <td>32.85</td>
+      <td>-101.90</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>And every man knew as the captain did too</td>
+      <td>2026-05-29 12:08:16.492257</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Chris Yates</td>
+      <td>2026-05-29 13:57:55.560246</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>31.63</td>
+      <td>-101.91</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>emma</td>
+      <td>2026-05-29 13:12:51.720243</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>maybe?</td>
+      <td>2026-05-29 15:59:34.188200</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>35.92</td>
+      <td>-97.53</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bunger</td>
+      <td>2026-05-29 15:09:48.440069</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Last min relying on Texas</td>
+      <td>2026-05-29 15:26:53.636023</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>32.21</td>
+      <td>-101.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Evan St. Clair</td>
+      <td>2026-05-29 03:55:34.322769</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Paul Austin</td>
+      <td>2026-05-29 15:59:11.425358</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>36.65</td>
+      <td>-97.53</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Kyle Hugeback</td>
+      <td>2026-05-29 15:45:13.070461</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cold Core Cowboy</td>
+      <td>2026-05-29 15:17:21.815397</td>
+      <td>YesTor</td>
+      <td>Marshall, OK</td>
+      <td>36.17</td>
+      <td>-97.63</td>
+      <td>Yes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nick M</td>
+      <td>2026-05-29 15:28:40.859100</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sam Ritter</td>
+      <td>2026-05-29 15:37:48.768294</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>2026-05-29 14:57:20.787537</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>31.77</td>
+      <td>-102.18</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sebastian Pelt</td>
+      <td>2026-05-29 07:56:36.434699</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Andrew Jackson (CG15Wx)</td>
+      <td>2026-05-29 15:52:45.891993</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>another bad decision</td>
+      <td>2026-05-29 15:59:17.266216</td>
+      <td>YesTor</td>
+      <td>nw kansas</td>
+      <td>39.34</td>
+      <td>-100.44</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Monkey Butt</td>
+      <td>2026-05-29 14:37:54.209289</td>
+      <td>YesTor</td>
+      <td>Moore, Ok</td>
+      <td>35.34</td>
+      <td>-97.49</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Caleb O'Gara</td>
+      <td>2026-05-29 14:38:54.845276</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Andrew Griffiths</td>
+      <td>2026-05-29 15:49:12.842705</td>
+      <td>YesTor</td>
+      <td>Rural Oklahoma</td>
+      <td>35.93</td>
+      <td>-97.38</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Joey Krastel</td>
+      <td>2026-05-29 15:33:41.814786</td>
+      <td>YesTor</td>
+      <td>10 SE Midkiff, TX</td>
+      <td>31.52</td>
+      <td>-101.74</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>JetStreamJami</td>
+      <td>2026-05-29 10:08:59.817747</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Season 2: Season of Darts JS</td>
+      <td>2026-05-29 14:11:58.942020</td>
+      <td>YesTor</td>
+      <td>Slaton, TX</td>
+      <td>33.43</td>
+      <td>-101.66</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Bengalsfan</td>
+      <td>2026-05-29 13:57:46.621968</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Richard Cirone</td>
+      <td>2026-05-29 14:21:49.002015</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Michael Kubinski</td>
+      <td>2026-05-29 15:53:28.173026</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>34.23</td>
+      <td>-101.71</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wxbill</td>
+      <td>2026-05-29 13:49:18.897796</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>34.77</td>
+      <td>-101.21</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sophie Miller</td>
+      <td>2026-05-29 05:55:28.802402</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hoang Do</td>
+      <td>2026-05-29 01:43:35.695422</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Olivia Macko</td>
+      <td>2026-05-29 04:16:14.316559</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Earth Central</td>
+      <td>2026-05-29 05:45:32.601745</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Roman Fariello</td>
+      <td>2026-05-29 02:07:57.007671</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Blake Barber</td>
+      <td>2026-05-29 15:31:38.991100</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Red Dirt Rodeo</td>
+      <td>2026-05-29 12:49:59.986266</td>
+      <td>YesTor</td>
+      <td>Littlefield, TX</td>
+      <td>33.92</td>
+      <td>-102.33</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>timcigar</td>
+      <td>2026-05-29 14:57:10.259385</td>
+      <td>YesTor</td>
+      <td>Slaton, TX</td>
+      <td>33.47</td>
+      <td>-101.67</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stormchaser007</td>
+      <td>2026-05-29 15:04:00.461127</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Alexis Severson</td>
+      <td>2026-05-29 14:05:48.342431</td>
+      <td>YesTor</td>
+      <td>Lamesa, TX</td>
+      <td>32.73</td>
+      <td>-101.95</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>IL WF 69</td>
+      <td>2026-05-29 15:04:40.724679</td>
+      <td>YesTor</td>
+      <td>Manchester, OK</td>
+      <td>36.96</td>
+      <td>-97.96</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jonah Dosedel</td>
+      <td>2026-05-29 15:17:40.332014</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DaveFlo</td>
+      <td>2026-05-29 15:55:39.211993</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>31.80</td>
+      <td>-102.40</td>
+      <td>No</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ghostfox1</td>
+      <td>2026-05-29 12:13:42.413309</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Quincy Vagell</td>
+      <td>2026-05-29 15:52:00.323925</td>
+      <td>YesTor</td>
+      <td>Cleo Springs, OK</td>
+      <td>36.38</td>
+      <td>-98.42</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Wyatt Van Dyke</td>
+      <td>2026-05-29 14:30:01.928202</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Forecast Consensus</td>
+      <td>Consensus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>12Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.2592889802821</td>
+      <td>-96.50381665853126</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14Z Nadocast Centroid</td>
+      <td>Nadocast</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>38.05929427065362</td>
+      <td>-95.71422469050125</td>
+      <td>NA</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

@@ -1,0 +1,956 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-06-13 13:44:00</td>
+      <td>72</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Bloomington, IL</td>
+      <td>40.30</td>
+      <td>-88.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14.30</td>
+      <td>LOT, NA</td>
+      <td>31.10</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:50:41</td>
+      <td>124</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Canton, IL</td>
+      <td>40.57</td>
+      <td>-90.07</td>
+      <td>No</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>25.60</td>
+      <td>EFU, NA</td>
+      <td>26.90</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:33:07</td>
+      <td>138</td>
+      <td>Jack Zwolinski</td>
+      <td>YesTor</td>
+      <td>Woodville, IL</td>
+      <td>40.19</td>
+      <td>-91.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.40</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>17.10</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 12:49:43</td>
+      <td>56</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Nauvoo, IL</td>
+      <td>40.55</td>
+      <td>-91.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>12.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:17:09</td>
+      <td>267</td>
+      <td>Chase (AL)</td>
+      <td>YesTor</td>
+      <td>Danville, IA</td>
+      <td>40.86</td>
+      <td>-91.31</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.90</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>11.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:10:02</td>
+      <td>190</td>
+      <td>Marios Wallace</td>
+      <td>YesTor</td>
+      <td>Standard, IL</td>
+      <td>41.26</td>
+      <td>-89.19</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.00</td>
+      <td>EF1, NA</td>
+      <td>10.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:19:00</td>
+      <td>277</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Mason City, IL</td>
+      <td>40.20</td>
+      <td>-89.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.90</td>
+      <td>EFU, NA</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:49:47</td>
+      <td>212</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>Koesauqua, iowa</td>
+      <td>40.80</td>
+      <td>-91.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.20</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.02</td>
+      <td>-91.53</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.80</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 13:27:28</td>
+      <td>185</td>
+      <td>Samuel G</td>
+      <td>YesTor</td>
+      <td>Farmington,IA</td>
+      <td>40.65</td>
+      <td>-91.79</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.20</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>8.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 02:56:39</td>
+      <td>121</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Wayland, IA</td>
+      <td>41.14</td>
+      <td>-91.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.70</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>6.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:10:21</td>
+      <td>282</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>Kilbourn, IA</td>
+      <td>40.80</td>
+      <td>-91.93</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.30</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>6.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:43:40</td>
+      <td>120</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>Keosauqa, Iowa</td>
+      <td>40.74</td>
+      <td>-91.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>69.90</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>6.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.09</td>
+      <td>-91.96</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>74.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>5.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:30:20</td>
+      <td>152</td>
+      <td>Sam Romshek</td>
+      <td>YesTor</td>
+      <td>Knox City, MO</td>
+      <td>40.15</td>
+      <td>-92.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>75.60</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>4.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:39:54</td>
+      <td>177</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>Kalona, IA</td>
+      <td>41.45</td>
+      <td>-91.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>82.50</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>3.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>40.72</td>
+      <td>-92.34</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>89.30</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>2.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:09:31</td>
+      <td>113</td>
+      <td>Jacob Stichter</td>
+      <td>YesTor</td>
+      <td>Iowa City, IA</td>
+      <td>41.66</td>
+      <td>-91.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>89.90</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>2.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 08:37:59</td>
+      <td>79</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Floris, IA</td>
+      <td>40.86</td>
+      <td>-92.34</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>91.10</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>1.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 13:46:14</td>
+      <td>186</td>
+      <td>Sophie Miller</td>
+      <td>YesTor</td>
+      <td>Agency, IA</td>
+      <td>41.00</td>
+      <td>-92.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>92.10</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>1.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:44:46</td>
+      <td>227</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Bloomfield, IA</td>
+      <td>40.74</td>
+      <td>-92.42</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>93.70</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>1.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 08:55:58</td>
+      <td>235</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Bloomfield, IA</td>
+      <td>40.73</td>
+      <td>-92.45</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>95.20</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>1.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 13:00:34</td>
+      <td>283</td>
+      <td>Ghostfox1</td>
+      <td>YesTor</td>
+      <td>Ottumwa IA</td>
+      <td>41.02</td>
+      <td>-92.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.40</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:43:25</td>
+      <td>199</td>
+      <td>Jason B</td>
+      <td>YesTor</td>
+      <td>Ottumwa, IA</td>
+      <td>41.01</td>
+      <td>-92.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>97.70</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:48:16</td>
+      <td>164</td>
+      <td>Chad Griffin</td>
+      <td>YesTor</td>
+      <td>Lancaster, MO</td>
+      <td>40.53</td>
+      <td>-92.56</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>99.80</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:44:32</td>
+      <td>69</td>
+      <td>Lizzie Tirone</td>
+      <td>YesTor</td>
+      <td>Somehow it'll be Creston...</td>
+      <td>40.74</td>
+      <td>-92.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.50</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:58:08</td>
+      <td>141</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Moulton, IA</td>
+      <td>40.69</td>
+      <td>-92.68</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>106.60</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:28:45</td>
+      <td>214</td>
+      <td>Blake Brink</td>
+      <td>YesTor</td>
+      <td>Moravia, IA</td>
+      <td>40.89</td>
+      <td>-92.82</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.00</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 12:26:26</td>
+      <td>13</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Centerville, IA</td>
+      <td>40.72</td>
+      <td>-92.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.90</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 11:28:26</td>
+      <td>264</td>
+      <td>Catherine Opalka</td>
+      <td>YesTor</td>
+      <td>Centerville, IA</td>
+      <td>40.73</td>
+      <td>-92.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>117.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:57:38</td>
+      <td>114</td>
+      <td>Lucas Huang</td>
+      <td>YesTor</td>
+      <td>Centerville, IA</td>
+      <td>40.73</td>
+      <td>-92.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>117.20</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:10:43</td>
+      <td>278</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Albia, IA</td>
+      <td>41.02</td>
+      <td>-92.81</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>117.50</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:43:45</td>
+      <td>191</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Mystic, IA</td>
+      <td>40.78</td>
+      <td>-92.94</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121.10</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:52:04</td>
+      <td>285</td>
+      <td>TorDrifter</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.49</td>
+      <td>-93.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 07:57:10</td>
+      <td>132</td>
+      <td>Lucas Reynolds</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.47</td>
+      <td>-93.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.10</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:43:56</td>
+      <td>184</td>
+      <td>Tornado fajita</td>
+      <td>YesTor</td>
+      <td>Union, MO</td>
+      <td>40.29</td>
+      <td>-92.99</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.50</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:59:07</td>
+      <td>47</td>
+      <td>Carson Thomas</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.47</td>
+      <td>-93.01</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>123.70</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:20:39</td>
+      <td>281</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.47</td>
+      <td>-93.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>124.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 09:38:38</td>
+      <td>203</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.55</td>
+      <td>-93.02</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>124.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:42:54</td>
+      <td>207</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Melrose, IA</td>
+      <td>40.96</td>
+      <td>-93.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>128.40</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:59:12</td>
+      <td>158</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Marysville, IA</td>
+      <td>41.18</td>
+      <td>-92.97</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>128.50</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:13:11</td>
+      <td>17</td>
+      <td>Chris Jackson (WI)</td>
+      <td>YesTor</td>
+      <td>Unionville, MO</td>
+      <td>40.49</td>
+      <td>-93.12</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>129.30</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:02:09</td>
+      <td>112</td>
+      <td>Bround (Lumbering giants today (probably not tors))</td>
+      <td>YesTor</td>
+      <td>Confidence, IA</td>
+      <td>40.86</td>
+      <td>-93.12</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>131.40</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 16:00:33</td>
+      <td>181</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>W of Confidence, IA</td>
+      <td>40.86</td>
+      <td>-93.16</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>133.50</td>
+      <td>1 ESE Good Hope, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 12:32:06</td>
+      <td>255</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Corydon, IA</td>
+      <td>40.75</td>
+      <td>-93.30</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>139.50</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:59:13</td>
+      <td>242</td>
+      <td>Liv McCauley</td>
+      <td>YesTor</td>
+      <td>Corydon, IA</td>
+      <td>40.76</td>
+      <td>-93.32</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>140.50</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 10:30:15</td>
+      <td>128</td>
+      <td>Asher Malaschak</td>
+      <td>YesTor</td>
+      <td>Newton, MO</td>
+      <td>40.39</td>
+      <td>-93.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>140.60</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:51:48</td>
+      <td>46</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Clio, IA</td>
+      <td>40.64</td>
+      <td>-93.42</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>145.00</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 15:48:39</td>
+      <td>154</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Cilo, IA</td>
+      <td>40.63</td>
+      <td>-93.45</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146.70</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:54:42</td>
+      <td>252</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Princeton, MO</td>
+      <td>40.36</td>
+      <td>-93.50</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>149.70</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 04:37:12</td>
+      <td>246</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Spickard, MO</td>
+      <td>40.23</td>
+      <td>-93.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>155.40</td>
+      <td>1 SSW Macomb Municipal, IL</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024-06-13 14:51:51</td>
+      <td>236</td>
+      <td>Joseph Patton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 10:27:02</td>
+      <td>119</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 13:19:40</td>
+      <td>179</td>
+      <td>Clarence Smith</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

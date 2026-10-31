@@ -1,0 +1,1874 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster_Number</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-05-14 14:13:04</td>
+      <td>109</td>
+      <td>Jonah Dosedel</td>
+      <td>YesTor</td>
+      <td>North Platte, NE</td>
+      <td>41.14</td>
+      <td>-100.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>5.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>52.80</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:07:08</td>
+      <td>75</td>
+      <td>Diamond</td>
+      <td>YesTor</td>
+      <td>North platte NE</td>
+      <td>41.15</td>
+      <td>-100.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>5.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>48.70</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:51:23</td>
+      <td>34</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>North Platte, NE</td>
+      <td>41.15</td>
+      <td>-100.76</td>
+      <td>No</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>5.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>44.50</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:22:38</td>
+      <td>88</td>
+      <td>SRRadarLoops</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>41.26</td>
+      <td>-100.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>10.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>37.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:20:29</td>
+      <td>113</td>
+      <td>Season 2 dumpster filler</td>
+      <td>YesTor</td>
+      <td>North Platte NE</td>
+      <td>41.19</td>
+      <td>-100.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>15.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>26.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:23:09</td>
+      <td>147</td>
+      <td>Anthony Haberman</td>
+      <td>YesTor</td>
+      <td>Stapleton, NE</td>
+      <td>41.48</td>
+      <td>-100.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:59:27</td>
+      <td>36</td>
+      <td>mercy forecast</td>
+      <td>YesTor</td>
+      <td>Stapleton, NE</td>
+      <td>41.48</td>
+      <td>-100.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:41:54</td>
+      <td>282</td>
+      <td>Bill Gallus</td>
+      <td>YesTor</td>
+      <td>Stapleton, NE</td>
+      <td>41.48</td>
+      <td>-100.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>30.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>13.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:54:13</td>
+      <td>283</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Brady, NE</td>
+      <td>41.00</td>
+      <td>-100.30</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>13.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:26:35</td>
+      <td>140</td>
+      <td>Caleb O’Gara</td>
+      <td>YesTor</td>
+      <td>Brewster, NE</td>
+      <td>41.62</td>
+      <td>-100.94</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.10</td>
+      <td>5 W North Platte, NE</td>
+      <td>13.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:56:17</td>
+      <td>279</td>
+      <td>Josh Jaeger</td>
+      <td>YesTor</td>
+      <td>Maywood, NE</td>
+      <td>40.66</td>
+      <td>-100.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>13.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:49:25</td>
+      <td>80</td>
+      <td>Trey Fulbright</td>
+      <td>YesTor</td>
+      <td>Gothenburg, NE</td>
+      <td>41.04</td>
+      <td>-100.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>12.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:36:44</td>
+      <td>240</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Elim Twp, NE</td>
+      <td>41.22</td>
+      <td>-100.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>12.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:05:09</td>
+      <td>0</td>
+      <td>Nicholas Snider</td>
+      <td>YesTor</td>
+      <td>Stapleton, NE</td>
+      <td>41.63</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>12.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:17:30</td>
+      <td>47</td>
+      <td>Shadow</td>
+      <td>YesTor</td>
+      <td>Gothenburg, NE</td>
+      <td>40.91</td>
+      <td>-100.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>12.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:09:36</td>
+      <td>114</td>
+      <td>Baja™ (Thanks Scholl)</td>
+      <td>YesTor</td>
+      <td>SSE Arnold, NE</td>
+      <td>41.39</td>
+      <td>-100.18</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.30</td>
+      <td>5 W North Platte, NE</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:45:26</td>
+      <td>76</td>
+      <td>Jeff Frame</td>
+      <td>YesTor</td>
+      <td>Arnold, NE</td>
+      <td>41.42</td>
+      <td>-100.19</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:55:12</td>
+      <td>107</td>
+      <td>Kris with the radar</td>
+      <td>YesTor</td>
+      <td>Arnold, NE</td>
+      <td>41.42</td>
+      <td>-100.19</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>11.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:30:48</td>
+      <td>297</td>
+      <td>Joshua Intini</td>
+      <td>YesTor</td>
+      <td>Arnold, NE</td>
+      <td>41.43</td>
+      <td>-100.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>11.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:12:43</td>
+      <td>31</td>
+      <td>Tristan White</td>
+      <td>YesTor</td>
+      <td>Cozad, NE</td>
+      <td>40.90</td>
+      <td>-100.04</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>46.10</td>
+      <td>5 W North Platte, NE</td>
+      <td>10.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:14:50</td>
+      <td>287</td>
+      <td>Mitchell Morehead</td>
+      <td>YesTor</td>
+      <td>Callaway</td>
+      <td>41.25</td>
+      <td>-99.97</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>10.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:55:44</td>
+      <td>127</td>
+      <td>SPC and RRFS made me do this</td>
+      <td>YesTor</td>
+      <td>near Arnold, NE</td>
+      <td>41.38</td>
+      <td>-100.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>10.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:35:04</td>
+      <td>134</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Cozad, NE</td>
+      <td>40.87</td>
+      <td>-100.00</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>10.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:58:38</td>
+      <td>230</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>Callaway, NE</td>
+      <td>41.30</td>
+      <td>-99.94</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>10.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:55:26</td>
+      <td>201</td>
+      <td>Donovan F</td>
+      <td>YesTor</td>
+      <td>Callaway, NE</td>
+      <td>41.29</td>
+      <td>-99.93</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>50.30</td>
+      <td>5 W North Platte, NE</td>
+      <td>9.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:50:46</td>
+      <td>195</td>
+      <td>Joey Beachel</td>
+      <td>YesTor</td>
+      <td>Seneca, NE</td>
+      <td>41.88</td>
+      <td>-101.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>52.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>9.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:29:18</td>
+      <td>242</td>
+      <td>Penitentes</td>
+      <td>YesTor</td>
+      <td>Oconto, NE</td>
+      <td>41.15</td>
+      <td>-99.78</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>56.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>8.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:43:27</td>
+      <td>101</td>
+      <td>Nicholas Kniprath</td>
+      <td>YesTor</td>
+      <td>Oconto, NE</td>
+      <td>41.14</td>
+      <td>-99.76</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>57.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>8.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:53:45</td>
+      <td>205</td>
+      <td>Gabriel Keller</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>41.96</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>8.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:15:57</td>
+      <td>319</td>
+      <td>Reid Buchanan</td>
+      <td>YesTor</td>
+      <td>Thedford, NE</td>
+      <td>41.98</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>60.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>7.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 04:58:04</td>
+      <td>10</td>
+      <td>Adler Hanson</td>
+      <td>YesTor</td>
+      <td>Anselmo, NE</td>
+      <td>41.62</td>
+      <td>-99.87</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>7.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:49:16</td>
+      <td>129</td>
+      <td>Roch</td>
+      <td>YesTor</td>
+      <td>Anselmo, NE</td>
+      <td>41.62</td>
+      <td>-99.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>7.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:35:29</td>
+      <td>3</td>
+      <td>Nebraska looks mid imo</td>
+      <td>YesTor</td>
+      <td>Merna, NE</td>
+      <td>41.50</td>
+      <td>-99.77</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>62.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>7.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:56:07</td>
+      <td>313</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>Mullen, NE</td>
+      <td>42.04</td>
+      <td>-101.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>7.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:47:49</td>
+      <td>167</td>
+      <td>Hunter Anderson</td>
+      <td>YesTor</td>
+      <td>BBW</td>
+      <td>41.40</td>
+      <td>-99.70</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>63.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>7.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:48:00</td>
+      <td>247</td>
+      <td>Dave Flo</td>
+      <td>YesTor</td>
+      <td>Lexington, NE</td>
+      <td>40.73</td>
+      <td>-99.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>65.70</td>
+      <td>5 W North Platte, NE</td>
+      <td>6.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:43:43</td>
+      <td>210</td>
+      <td>toefur</td>
+      <td>YesTor</td>
+      <td>Broken Bow, NE</td>
+      <td>41.40</td>
+      <td>-99.64</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>6.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>888</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.49</td>
+      <td>-99.68</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>6.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:54:18</td>
+      <td>44</td>
+      <td>Colton Flint</td>
+      <td>YesTor</td>
+      <td>Broken Bow, NE</td>
+      <td>41.40</td>
+      <td>-99.64</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>66.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>6.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:41:27</td>
+      <td>149</td>
+      <td>Richard Sample</td>
+      <td>YesTor</td>
+      <td>Lexington, NE</td>
+      <td>40.69</td>
+      <td>-99.69</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>68.70</td>
+      <td>5 W North Platte, NE</td>
+      <td>6.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:32:15</td>
+      <td>213</td>
+      <td>Quincy Vagell</td>
+      <td>YesTor</td>
+      <td>Bertrand, NE</td>
+      <td>40.66</td>
+      <td>-99.63</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>5.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:40:31</td>
+      <td>137</td>
+      <td>CPekar</td>
+      <td>YesTor</td>
+      <td>Spin-Up in the Sandhills, N of Hyannis, NE</td>
+      <td>42.01</td>
+      <td>-101.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>72.80</td>
+      <td>6 S Sutherland, NE</td>
+      <td>5.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:40:40</td>
+      <td>46</td>
+      <td>Jacob st</td>
+      <td>YesTor</td>
+      <td>Milburn, NE</td>
+      <td>41.68</td>
+      <td>-99.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>73.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>5.30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:56:11</td>
+      <td>217</td>
+      <td>MasDogWx</td>
+      <td>YesTor</td>
+      <td>Brewster, NE</td>
+      <td>41.93</td>
+      <td>-99.91</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>74.30</td>
+      <td>5 W North Platte, NE</td>
+      <td>5.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:17:58</td>
+      <td>300</td>
+      <td>maybe K*rk</td>
+      <td>YesTor</td>
+      <td>Miller, NE</td>
+      <td>40.93</td>
+      <td>-99.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>78.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>4.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:10:13</td>
+      <td>286</td>
+      <td>Joe Schrantz</td>
+      <td>YesTor</td>
+      <td>Wells Precinct, NE</td>
+      <td>42.35</td>
+      <td>-101.04</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>84.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>3.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:45:59</td>
+      <td>310</td>
+      <td>ajax13</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>41.82</td>
+      <td>-99.51</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>85.10</td>
+      <td>5 W North Platte, NE</td>
+      <td>3.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:31:44</td>
+      <td>199</td>
+      <td>Gavin Bird</td>
+      <td>YesTor</td>
+      <td>Sargent, NE</td>
+      <td>41.64</td>
+      <td>-99.37</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>85.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:35:34</td>
+      <td>153</td>
+      <td>brix</td>
+      <td>YesTor</td>
+      <td>Sargent, NE</td>
+      <td>41.65</td>
+      <td>-99.36</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.10</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>999</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.61</td>
+      <td>-99.37</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.30</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 04:21:55</td>
+      <td>291</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Mason City, NE</td>
+      <td>41.24</td>
+      <td>-99.21</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>86.70</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:28:10</td>
+      <td>66</td>
+      <td>GodMosses</td>
+      <td>YesTor</td>
+      <td>Cherry County, NE</td>
+      <td>42.38</td>
+      <td>-100.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>87.10</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:22:29</td>
+      <td>206</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Taylor, NE</td>
+      <td>41.76</td>
+      <td>-99.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>88.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:53:33</td>
+      <td>52</td>
+      <td>Ethan Treff</td>
+      <td>YesTor</td>
+      <td>Taylor, NE</td>
+      <td>41.77</td>
+      <td>-99.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>89.10</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:36:42</td>
+      <td>212</td>
+      <td>Sand Fritter</td>
+      <td>YesTor</td>
+      <td>N of Comstock, NE</td>
+      <td>41.60</td>
+      <td>-99.27</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>89.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>2.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:56:30</td>
+      <td>131</td>
+      <td>TheBetterDoge</td>
+      <td>YesTor</td>
+      <td>Loup City, NE</td>
+      <td>41.28</td>
+      <td>-98.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>99.70</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:46:11</td>
+      <td>115</td>
+      <td>Ben Price</td>
+      <td>YesTor</td>
+      <td>Burwell, NE</td>
+      <td>41.78</td>
+      <td>-99.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:06:00</td>
+      <td>139</td>
+      <td>Caleb K</td>
+      <td>YesTor</td>
+      <td>Burwell, NE</td>
+      <td>41.78</td>
+      <td>-99.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:53:38</td>
+      <td>116</td>
+      <td>Ethan Kerr</td>
+      <td>YesTor</td>
+      <td>Burrell, NE</td>
+      <td>41.78</td>
+      <td>-99.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>100.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:45:33</td>
+      <td>311</td>
+      <td>Stefff</td>
+      <td>YesTor</td>
+      <td>Axtell, NE</td>
+      <td>40.46</td>
+      <td>-99.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>102.60</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:59:14</td>
+      <td>243</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>Elyria, NE</td>
+      <td>41.68</td>
+      <td>-99.01</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>103.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:24:35</td>
+      <td>69</td>
+      <td>Lizzie Hugeback</td>
+      <td>YesTor</td>
+      <td></td>
+      <td>42.26</td>
+      <td>-99.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>110.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:57:49</td>
+      <td>197</td>
+      <td>Josh Schwarz</td>
+      <td>YesTor</td>
+      <td>Middle of nowhere Nebraska</td>
+      <td>42.02</td>
+      <td>-99.08</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>111.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:36:03</td>
+      <td>226</td>
+      <td>Mount Baldy Mountain Waves apparently!!</td>
+      <td>YesTor</td>
+      <td>Ainsworth, NE</td>
+      <td>42.55</td>
+      <td>-99.85</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>111.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:31:08</td>
+      <td>173</td>
+      <td>Karson</td>
+      <td>YesTor</td>
+      <td>Boelus, NE</td>
+      <td>41.08</td>
+      <td>-98.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>111.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>889</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>41.61</td>
+      <td>-98.80</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>112.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:57:52</td>
+      <td>284</td>
+      <td>Matthew Teare</td>
+      <td>YesTor</td>
+      <td>Long Pine, NE</td>
+      <td>42.55</td>
+      <td>-99.75</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>113.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:50:44</td>
+      <td>218</td>
+      <td>timcigar</td>
+      <td>YesTor</td>
+      <td>Long Pine, NE</td>
+      <td>42.59</td>
+      <td>-99.74</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>116.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:41:53</td>
+      <td>128</td>
+      <td>Tails Wx</td>
+      <td>YesTor</td>
+      <td>N of Mason City, NE</td>
+      <td>41.78</td>
+      <td>-98.77</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>117.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:45:20</td>
+      <td>285</td>
+      <td>Tobias Leonard</td>
+      <td>YesTor</td>
+      <td>Inez, NE</td>
+      <td>42.25</td>
+      <td>-99.12</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>119.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:25:20</td>
+      <td>262</td>
+      <td>Tyler Williams</td>
+      <td>YesTor</td>
+      <td>Bassett, NE</td>
+      <td>42.58</td>
+      <td>-99.54</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 03:16:21</td>
+      <td>290</td>
+      <td>we ride at squall line (doss)</td>
+      <td>YesTor</td>
+      <td>Crookston, NE</td>
+      <td>42.93</td>
+      <td>-100.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>124.40</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:20:34</td>
+      <td>216</td>
+      <td>Veer T</td>
+      <td>YesTor</td>
+      <td>Amelia, NE</td>
+      <td>42.24</td>
+      <td>-98.91</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>126.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:34:17</td>
+      <td>254</td>
+      <td>Kam</td>
+      <td>YesTor</td>
+      <td>Stuart, NE</td>
+      <td>42.60</td>
+      <td>-99.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>135.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:26:27</td>
+      <td>292</td>
+      <td>Brandon Black</td>
+      <td>YesTor</td>
+      <td>Atkinson, NE</td>
+      <td>42.53</td>
+      <td>-98.98</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>137.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:03:46</td>
+      <td>124</td>
+      <td>Sekwof</td>
+      <td>YesTor</td>
+      <td>Atkinson, NE</td>
+      <td>42.53</td>
+      <td>-98.96</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>137.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:44:40</td>
+      <td>79</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>KUEX</td>
+      <td>40.32</td>
+      <td>-98.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>139.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:32:01</td>
+      <td>112</td>
+      <td>Wyatt Huber</td>
+      <td>YesTor</td>
+      <td>Burton, NE</td>
+      <td>42.91</td>
+      <td>-99.59</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>139.70</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 09:40:25</td>
+      <td>221</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>O'Neill, NE</td>
+      <td>42.35</td>
+      <td>-98.67</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>141.50</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 03:08:06</td>
+      <td>163</td>
+      <td>WxDownYonder</td>
+      <td>YesTor</td>
+      <td>O’Neill, NE</td>
+      <td>42.47</td>
+      <td>-98.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:56:38</td>
+      <td>209</td>
+      <td>freakyreeky</td>
+      <td>YesTor</td>
+      <td>Corner, NE</td>
+      <td>42.14</td>
+      <td>-98.35</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>147.80</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 04:59:26</td>
+      <td>280</td>
+      <td>Alex Hamilton</td>
+      <td>YesTor</td>
+      <td>Running Water, SD</td>
+      <td>42.77</td>
+      <td>-97.98</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>186.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 10:00:43</td>
+      <td>178</td>
+      <td>Nic Anthony</td>
+      <td>YesTor</td>
+      <td>Wayne, NE</td>
+      <td>42.22</td>
+      <td>-97.01</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>213.20</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 05:33:55</td>
+      <td>185</td>
+      <td>J.M.M.</td>
+      <td>YesTor</td>
+      <td>Hooper, NE</td>
+      <td>41.61</td>
+      <td>-96.55</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>226.70</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:12:48</td>
+      <td>219</td>
+      <td>Keaton Croatt</td>
+      <td>YesTor</td>
+      <td>Sioux Falls, SD</td>
+      <td>43.55</td>
+      <td>-96.73</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>270.00</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 05:54:27</td>
+      <td>22</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Sioux Falls, SD</td>
+      <td>43.32</td>
+      <td>-96.44</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>272.90</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:52:05</td>
+      <td>251</td>
+      <td>Nick (Madison, WI)</td>
+      <td>YesTor</td>
+      <td>Pantego, NC</td>
+      <td>35.68</td>
+      <td>-76.66</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1358.30</td>
+      <td>5 W North Platte, NE</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2025-05-14 02:07:39</td>
+      <td>20</td>
+      <td>Lauren Bader</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 10:28:26</td>
+      <td>249</td>
+      <td>Paul Austin</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:58:49</td>
+      <td>188</td>
+      <td>James Summers</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:49:43</td>
+      <td>63</td>
+      <td>Chris Yates</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:24:11</td>
+      <td>33</td>
+      <td>JavaHurricane</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:17:38</td>
+      <td>223</td>
+      <td>Bengalsfan</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 12:53:59</td>
+      <td>145</td>
+      <td>Damon Lemke</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:05:49</td>
+      <td>265</td>
+      <td>Logan Giles</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:38:25</td>
+      <td>100</td>
+      <td>Richard Cirone</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:13:07</td>
+      <td>179</td>
+      <td>William Samson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:11:46</td>
+      <td>11</td>
+      <td>Joey Krastel</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:21:41</td>
+      <td>174</td>
+      <td>Alexis Severson</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 13:44:31</td>
+      <td>71</td>
+      <td>Roman Fariello</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 14:10:02</td>
+      <td>273</td>
+      <td>Nick Markus</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 03:15:25</td>
+      <td>154</td>
+      <td>William Gaylord</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 00:04:17</td>
+      <td>125</td>
+      <td>Anthony Yattoni</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:29:45</td>
+      <td>150</td>
+      <td>Blake Brink</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:54:49</td>
+      <td>45</td>
+      <td>Joseph Patton</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:46:01</td>
+      <td>301</td>
+      <td>Nene Roro</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:39:48</td>
+      <td>53</td>
+      <td>The Hawk</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2025-05-14 15:43:13</td>
+      <td>130</td>
+      <td>Antonio Ruiz Núñez</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>

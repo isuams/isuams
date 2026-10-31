@@ -1,0 +1,917 @@
+
+    <html>
+    <head>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+    
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
+    </script>
+    <table border="1" class="dataframe table table-striped table-hover" id="myTable">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Time</th>
+      <th>Forecaster</th>
+      <th>Forecast_Option</th>
+      <th>City</th>
+      <th>Lat</th>
+      <th>Lon</th>
+      <th>SigTor</th>
+      <th>Amendments</th>
+      <th>Num_of_warnings_nearby</th>
+      <th>Num_of_warnings_intersected</th>
+      <th>Distance_to_Tornado_Report</th>
+      <th>Closest_Tornado</th>
+      <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-06-02 15:46:09.839859</td>
+      <td>Heerok Das</td>
+      <td>YesTor</td>
+      <td>Fort Lupton, CO</td>
+      <td>40.11</td>
+      <td>-104.85</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>101.50</td>
+      <td>11 NNW Horse Creek, WY</td>
+      <td>12.00</td>
+      <td>1st Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:59:28.741749</td>
+      <td>jbean45</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>39.69</td>
+      <td>-104.71</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>131.80</td>
+      <td>11 NNW Horse Creek, WY</td>
+      <td>8.00</td>
+      <td>2nd Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:27:57.734229</td>
+      <td>In Colorado we trust</td>
+      <td>YesTor</td>
+      <td>idk man somewhere in NE Colorado</td>
+      <td>40.53</td>
+      <td>-102.84</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>146.30</td>
+      <td>11 NNW Horse Creek, WY</td>
+      <td>4.00</td>
+      <td>3rd Place</td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:44:34.570724</td>
+      <td>WxDrifter</td>
+      <td>YesTor</td>
+      <td>Leith, SD</td>
+      <td>46.22</td>
+      <td>-101.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>371.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:30:51.852008</td>
+      <td>Jim Franc</td>
+      <td>YesTor</td>
+      <td>Rapid City, SD</td>
+      <td>44.37</td>
+      <td>-102.68</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>235.60</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:54:34.413816</td>
+      <td>Colin Young</td>
+      <td>YesTor</td>
+      <td>Faith, SD</td>
+      <td>45.19</td>
+      <td>-102.12</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>298.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:14:49.081391</td>
+      <td>My bet is on the Canadian side of the boarder(d0s)</td>
+      <td>YesTor</td>
+      <td>Rolla, ND</td>
+      <td>48.86</td>
+      <td>-99.61</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>579.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 16:00:05.958429</td>
+      <td>The Hawk</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>48.77</td>
+      <td>-100.33</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>557.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:34:08.513550</td>
+      <td>Jonah H.</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>45.78</td>
+      <td>-102.17</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>332.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:10:20.513921</td>
+      <td>Braydon P Songer</td>
+      <td>YesTor</td>
+      <td>Middle of Nowhere, SD</td>
+      <td>46.52</td>
+      <td>-101.39</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>395.90</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:14:27.633498</td>
+      <td>Clarence</td>
+      <td>YesTor</td>
+      <td>Clough, SD</td>
+      <td>44.61</td>
+      <td>-102.98</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>242.00</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:22:05.294898</td>
+      <td>Gabe Zago</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.86</td>
+      <td>-102.58</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>266.90</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 12:23:20.760608</td>
+      <td>The dawn came late and the breakfast had to wait</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>46.48</td>
+      <td>-101.47</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>391.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:10:36.509089</td>
+      <td>Chris Yates</td>
+      <td>YesTor</td>
+      <td>Volunteer, SD</td>
+      <td>44.53</td>
+      <td>-103.11</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>233.70</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 04:52:08.021442</td>
+      <td>Veer</td>
+      <td>YesTor</td>
+      <td>Northeast of Sturgis, SD</td>
+      <td>44.52</td>
+      <td>-103.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>226.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:18:34.016121</td>
+      <td>Kay</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>45.52</td>
+      <td>-102.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>309.40</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:47:54.059645</td>
+      <td>I have FAITH in this TTC target</td>
+      <td>YesTor</td>
+      <td>Faith, SD</td>
+      <td>45.02</td>
+      <td>-102.11</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>289.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 03:55:30.897150</td>
+      <td>Evan St. Clair</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>45.21</td>
+      <td>-102.36</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>293.60</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:46:07.473779</td>
+      <td>Paul Austin</td>
+      <td>YesTor</td>
+      <td>Lark, ND</td>
+      <td>46.45</td>
+      <td>-101.40</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>391.40</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:37:17.010759</td>
+      <td>Kyle Hugeback</td>
+      <td>YesTor</td>
+      <td>Along SD-34</td>
+      <td>44.57</td>
+      <td>-102.75</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>245.50</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:03:35.637160</td>
+      <td>Cold Core Cowboy</td>
+      <td>YesTor</td>
+      <td>Faith, SD</td>
+      <td>45.14</td>
+      <td>-102.20</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>293.60</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:59:50.387428</td>
+      <td>A shot in the dark (Nick M)</td>
+      <td>YesTor</td>
+      <td>North central ND</td>
+      <td>48.51</td>
+      <td>-100.57</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>536.60</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:59:06.212775</td>
+      <td>Mmmmm chips</td>
+      <td>YesTor</td>
+      <td>Buffalo Chip, SD</td>
+      <td>44.41</td>
+      <td>-103.41</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>219.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 07:48:21.811570</td>
+      <td>Sebastian Pelt</td>
+      <td>YesTor</td>
+      <td>Mott, ND</td>
+      <td>46.51</td>
+      <td>-102.14</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>378.20</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:59:13.039796</td>
+      <td>William Henry Harrison (CG15Wx)</td>
+      <td>YesTor</td>
+      <td>Unincorporated Community of Maurine, SD</td>
+      <td>45.02</td>
+      <td>-102.56</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>277.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:51:39.058171</td>
+      <td>Peter Corman</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.69</td>
+      <td>-103.86</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>228.90</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:38:17.785219</td>
+      <td>Garrett Statum</td>
+      <td>YesTor</td>
+      <td>East Butte, SD</td>
+      <td>44.84</td>
+      <td>-103.13</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>252.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 09:41:50.829508</td>
+      <td>BabbWx</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.56</td>
+      <td>-102.67</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>247.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:19:47.349755</td>
+      <td>Caleb O'Gara</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.68</td>
+      <td>-103.16</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>242.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 04:09:05.631379</td>
+      <td>Andrew Griffiths</td>
+      <td>YesTor</td>
+      <td>Castle Rock, SD</td>
+      <td>44.95</td>
+      <td>-103.33</td>
+      <td>Yes</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>255.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:38:14.513692</td>
+      <td>ajax13</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:02:28.777250</td>
+      <td>Stefff</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:41:47.146236</td>
+      <td>JetStreamJami</td>
+      <td>YesTor</td>
+      <td>Faith, SD</td>
+      <td>44.99</td>
+      <td>-102.93</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>266.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:26:33.576179</td>
+      <td>Hey It's My State JS</td>
+      <td>YesTor</td>
+      <td>Hettinger, ND</td>
+      <td>45.99</td>
+      <td>-102.65</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>335.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 09:28:28.358834</td>
+      <td>Bengalsfan</td>
+      <td>NoTor</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>No</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99999.00</td>
+      <td>NA</td>
+      <td>0.00</td>
+      <td>Missed Forecast</td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:54:31.048007</td>
+      <td>Richard Cirone</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>45.88</td>
+      <td>-101.27</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>361.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:43:30.952591</td>
+      <td>Wxbill</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>45.89</td>
+      <td>-102.40</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>334.00</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:36:33.213223</td>
+      <td>CHASE CHASE CHASE</td>
+      <td>YesTor</td>
+      <td>Mophie ah ah</td>
+      <td>46.30</td>
+      <td>-101.72</td>
+      <td>No</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>374.90</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 14:25:41.718982</td>
+      <td>Hoang Do</td>
+      <td>YesTor</td>
+      <td>NE of Rapid City, SD</td>
+      <td>44.59</td>
+      <td>-102.73</td>
+      <td>No</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>247.40</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 10:46:09.673367</td>
+      <td>Olivia Macko</td>
+      <td>YesTor</td>
+      <td>White Owl, SD</td>
+      <td>44.59</td>
+      <td>-102.43</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>255.60</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:35:04.336586</td>
+      <td>Earth Central</td>
+      <td>YesTor</td>
+      <td>Bismarck, ND</td>
+      <td>46.82</td>
+      <td>-100.78</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>429.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:04:27.173738</td>
+      <td>Roman Fariello</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.25</td>
+      <td>-103.03</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>219.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:39:08.372961</td>
+      <td>Blake Barber</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.61</td>
+      <td>-102.24</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>262.30</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 12:26:19.747413</td>
+      <td>Stephen Szulborski</td>
+      <td>YesTor</td>
+      <td>Bison, SD</td>
+      <td>45.51</td>
+      <td>-102.45</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>309.40</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:13:18.609546</td>
+      <td>Im wearing my Duprees today! (Jacob.S)</td>
+      <td>YesTor</td>
+      <td>Dupree, SD</td>
+      <td>45.05</td>
+      <td>-101.64</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>304.90</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:44:01.962288</td>
+      <td>Donovan Fry</td>
+      <td>YesTor</td>
+      <td>Flasher, ND</td>
+      <td>46.46</td>
+      <td>-101.23</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>395.90</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 13:57:09.155707</td>
+      <td>Alexis Severson</td>
+      <td>YesTor</td>
+      <td>Bison, SD</td>
+      <td>45.52</td>
+      <td>-102.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>309.70</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:39:17.564237</td>
+      <td>Lizzie Tirone-Hugeback</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.54</td>
+      <td>-102.78</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>243.00</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:32:44.089035</td>
+      <td>IL WF 69</td>
+      <td>YesTor</td>
+      <td>Almont, ND</td>
+      <td>46.69</td>
+      <td>-101.69</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>399.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:38:07.764154</td>
+      <td>Whatdidthemommabuffalosaywhenhersonleftforschool?</td>
+      <td>YesTor</td>
+      <td>Bison, SD</td>
+      <td>45.53</td>
+      <td>-102.47</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>309.80</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 15:55:43.284322</td>
+      <td>DaveFlo</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>44.41</td>
+      <td>-102.35</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>248.10</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2026-06-02 12:46:27.269453</td>
+      <td>Ghostfox1</td>
+      <td>YesTor</td>
+      <td>NaN</td>
+      <td>45.63</td>
+      <td>-103.53</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>296.00</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Consensus</td>
+      <td>Forecast Consensus</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>45.19</td>
+      <td>-102.38</td>
+      <td>No</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>291.60</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>12Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>44.98</td>
+      <td>-102.30</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>281.20</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nadocast</td>
+      <td>14Z Nadocast Centroid</td>
+      <td>YesTor</td>
+      <td>NA</td>
+      <td>46.85</td>
+      <td>-100.37</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>442.00</td>
+      <td>12 NNW Horse Creek, WY</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><style>table.table > thead > tr:nth-child(1) > th{background: white;position: sticky;top:0;}</style><style>.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: #c7eae5;}</style><style>td {text-align: center;}</style></body></html>
