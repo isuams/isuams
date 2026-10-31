@@ -7,6 +7,7 @@ section: about
 **Most recent:** [September 29th, 2026]({{site.baseurl }}/uploads/minutes/2026-27/260929.pdf)
 ---
 **2026-2027**
+- [October 27th, 2026]({{site.baseurl }}/uploads/minutes/2026-27/261027.pdf)
 - [September 29th, 2026]({{site.baseurl }}/uploads/minutes/2026-27/260929.pdf)
 - [August 25th, 2026]({{site.baseurl }}/uploads/minutes/2026-27/260826.pdf)
 
